@@ -1,0 +1,18 @@
+{
+  "_id": "xrrswroxxuxq0y4l",
+  "name": "Caméléon",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": false,
+    "difficulty": 10,
+    "duration": "RU minutes",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "Cible +1 ou Durée x2",
+    "damage": "",
+    "effect": "<p>Vous distordez la réalité autour de la cible qui se fond dans l’environnement et obtient un bonus de +20 en DIS.</p>",
+    "source": "L1"
+  }
+}

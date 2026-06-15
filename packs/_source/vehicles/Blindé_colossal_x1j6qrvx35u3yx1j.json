@@ -1,0 +1,27 @@
+{
+  "_id": "x1j6qrvx35u3yx1j",
+  "name": "Blindé colossal",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "terrestre",
+    "size": 5,
+    "maneuver": 0,
+    "speed": -3,
+    "places": 6,
+    "pilotsMin": 3,
+    "pv": {
+      "value": 55,
+      "max": 55,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 6,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 25000,
+    "specialText": "",
+    "biography": ""
+  }
+}

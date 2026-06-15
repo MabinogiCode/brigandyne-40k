@@ -1,0 +1,27 @@
+{
+  "_id": "wmz5s6138t08ry82",
+  "name": "Cuirassé",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "spatial",
+    "size": 5,
+    "maneuver": -15,
+    "speed": 0,
+    "places": 700000,
+    "pilotsMin": 120,
+    "pv": {
+      "value": 60,
+      "max": 60,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 6,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 1200000,
+    "specialText": "",
+    "biography": ""
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "brigandyne-40k",
+  "version": "0.1.0",
+  "description": "Système Foundry VTT — Warhammer 40,000 : Brigandyne",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "pack": "node tools/compile-packs.mjs",
+    "unpack": "node tools/extract-packs.mjs",
+    "import": "node tools/import-content.mjs"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^1.0.3"
+  }
+}

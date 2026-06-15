@@ -1,0 +1,87 @@
+{
+  "_id": "xuqqx32l5uwz4xzv",
+  "name": "Culexus",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "characteristics": {
+      "com": {
+        "value": 65,
+        "mod": 0
+      },
+      "cns": {
+        "value": 25,
+        "mod": 0
+      },
+      "dis": {
+        "value": 50,
+        "mod": 0
+      },
+      "end": {
+        "value": 60,
+        "mod": 0
+      },
+      "for": {
+        "value": 60,
+        "mod": 0
+      },
+      "tec": {
+        "value": 25,
+        "mod": 0
+      },
+      "psy": {
+        "value": 0,
+        "mod": 0
+      },
+      "mou": {
+        "value": 65,
+        "mod": 0
+      },
+      "per": {
+        "value": 60,
+        "mod": 0
+      },
+      "soc": {
+        "value": 25,
+        "mod": 0
+      },
+      "sur": {
+        "value": 25,
+        "mod": 0
+      },
+      "tir": {
+        "value": 50,
+        "mod": 0
+      },
+      "vol": {
+        "value": 70,
+        "mod": 0
+      }
+    },
+    "subtitle": "Le prédateur naturel des Psykers, un crâne souriant en guise de casque.",
+    "faction": "imperium",
+    "pv": {
+      "value": 10,
+      "max": 10,
+      "bonus": 0
+    },
+    "sf": {
+      "value": 10,
+      "max": 10,
+      "bonus": 0
+    },
+    "initiative": {
+      "base": null,
+      "mod": 0
+    },
+    "protection": {
+      "base": 0,
+      "mod": 0
+    },
+    "fear": 3,
+    "isSwarm": false,
+    "attacksText": "<p>Couteau de combat +5 / Grenades Psy +*PSY* de la cible / Animus speculum +2 +*PSY* de la cible</p>",
+    "specialAbilities": "<p>- Animus speculum : Ignore les armures. - PEUR (3) - Gène du paria : +10% pour résister aux effets du Warp et des pouvoirs psy. -10% pour les tests de PSY des Psykers à proximité.</p>",
+    "biography": "<p>Le prédateur naturel des Psykers, un crâne souriant en guise de casque.</p>"
+  }
+}

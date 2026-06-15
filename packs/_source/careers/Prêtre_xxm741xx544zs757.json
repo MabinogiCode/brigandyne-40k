@@ -1,0 +1,55 @@
+{
+  "_id": "xxm741xx544zs757",
+  "name": "Prêtre",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "ministorum",
+    "quote": "“Le berger qui guide le troupeau.”",
+    "advances": {
+      "com": 0,
+      "cns": 5,
+      "dis": 1,
+      "end": 2,
+      "for": 0,
+      "tec": 2,
+      "psy": 0,
+      "mou": 0,
+      "per": 2,
+      "soc": 6,
+      "sur": 1,
+      "tir": 0,
+      "vol": 5
+    },
+    "lifestyle": "aise",
+    "specialties": [
+      "Vraie Foi",
+      "Charme",
+      "Discours",
+      "Écoute",
+      "Intuition",
+      "Lettres",
+      "Noblesse et politique",
+      "Persuasion",
+      "Renseignements",
+      "Religion",
+      "Se cacher"
+    ],
+    "talents": [
+      "Calme",
+      "Chance insolente",
+      "Mensonge éhonté",
+      "Dévoué serviteur",
+      "Doué (CNS)",
+      "Doué (SOC)",
+      "Doué (VOL)",
+      "Fascination",
+      "Inoffensif",
+      "Inspiration",
+      "Polyglotte"
+    ],
+    "startingEquipment": "<p>Icone religieux précieux, Nécessaire d’écriture, Livre Saint, Bure religieuse de qualité, *CNS* ouvrages reliés</p>",
+    "description": "<p>Les Prêtres sont le cœur de l’Ecclésiarchie impériale. Ils prêchent dans les sombres ruelles des mondes-ruches, officient dans les églises d’une planète isolée et sont les agents qui apportent la sainte parole de l’Empereur.</p>",
+    "source": "L1"
+  }
+}

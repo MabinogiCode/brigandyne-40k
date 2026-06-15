@@ -1,0 +1,17 @@
+{
+  "_id": "xtuw7jzw0touwx2l",
+  "name": "Casque",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 1,
+    "coverage": "bonus",
+    "initiativeMod": 0,
+    "mouMod": 0,
+    "longToDon": false,
+    "qualities": [],
+    "specialText": "",
+    "price": 50,
+    "source": "L1"
+  }
+}

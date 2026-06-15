@@ -1,0 +1,27 @@
+{
+  "_id": "sw4kqs6j1vx1mw5o",
+  "name": "Intercepteur",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "spatial",
+    "size": 1,
+    "maneuver": 0,
+    "speed": 4,
+    "places": 2,
+    "pilotsMin": 1,
+    "pv": {
+      "value": 15,
+      "max": 15,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 2,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 27500,
+    "specialText": "",
+    "biography": ""
+  }
+}

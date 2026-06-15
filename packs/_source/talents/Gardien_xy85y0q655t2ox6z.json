@@ -1,0 +1,10 @@
+{
+  "_id": "xy85y0q655t2ox6z",
+  "name": "Gardien",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

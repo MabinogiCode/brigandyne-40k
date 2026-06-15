@@ -1,0 +1,13 @@
+{
+  "_id": "x7lovmnxw5vry1k0",
+  "name": "Désagrément",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Vous donnez une envie irrésistible à une cible (figurant ou second rôle) de bâiller, tousser, éternuer ou se gratter. Ce désagrément ne dure qu’une seconde, mais peut s’avérer précieux au bon moment. La cible agacée subit 1 Désavantage pour ce pouvoir. Main spectrale : Vous pouvez déplacer et manipuler un objet de *PSY* kilo dans une portée courte. L’objet ne peut pas être projeté avec violence. Malédiction mineure : Ce sort affuble une cible d’un inconvénient mineur : un zézaiement, des verrues, une odeur désagréable, une pilosité gênante, des boutons, etc. Ce qui lui cause une perte de 5% en SOC pendant *PSY* jours. Murmures Warp : Vous faite retentir d’étranges murmures ou sons jusqu’à *PSY* mètres de vous. Ruse : La cible gagne 1 Avantage aux tests impliquant des jeux de hasard pendant *PSY* tours. Tour de main : La cible gagne 1 Avantage aux tests de TEC pendant *PSY* tours.</p>",
+    "source": "L1"
+  }
+}

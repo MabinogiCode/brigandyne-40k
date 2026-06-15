@@ -1,0 +1,21 @@
+{
+  "_id": "x0j3j4z1pxn14x5x",
+  "name": "Balle M",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 2,
+    "reach": "C",
+    "hands": 1,
+    "range": 5,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 0,
+    "qualities": [],
+    "specialText": "",
+    "source": "L1"
+  }
+}

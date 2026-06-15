@@ -1,0 +1,11 @@
+{
+  "_id": "x2xswqwz4qowvxy7",
+  "name": "Arts",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

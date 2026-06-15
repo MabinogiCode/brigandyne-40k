@@ -1,0 +1,21 @@
+{
+  "_id": "83yt5sw382q1xvn5",
+  "name": "Réservoir L",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 0,
+    "reach": "C",
+    "hands": 1,
+    "range": 7,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 0,
+    "qualities": [],
+    "specialText": "",
+    "source": "L1"
+  }
+}

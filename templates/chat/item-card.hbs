@@ -1,0 +1,11 @@
+{{!-- Fiche descriptive d'un objet en chat --}}
+<div class="brigandyne-40k chat-card item-card">
+  <header class="card-header">
+    <img class="card-portrait" src="{{item.img}}" alt="{{item.name}}" />
+    <div class="card-titles">
+      <h3 class="card-title">{{item.name}}</h3>
+      <span class="card-subtitle">{{localize (concat "TYPES.Item." item.type)}}</span>
+    </div>
+  </header>
+  {{#if system.description}}<div class="card-description">{{{system.description}}}</div>{{/if}}
+</div>

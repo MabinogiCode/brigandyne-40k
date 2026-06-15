@@ -1,0 +1,11 @@
+{
+  "_id": "wz2n252lvu03pz61",
+  "name": "Contorsion",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

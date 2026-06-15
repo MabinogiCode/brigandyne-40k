@@ -1,0 +1,26 @@
+{
+  "_id": "xz3l5u8xl7pkyup8",
+  "name": "Catapulte shuriken",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "xeno",
+    "damageBase": "flat",
+    "damageMod": 4,
+    "reach": "C",
+    "hands": 1,
+    "range": 30,
+    "magazine": 25,
+    "ammoType": "Cylindre M",
+    "price": 0,
+    "qualities": [
+      {
+        "key": "semiAutomatique",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Xéno"
+  }
+}

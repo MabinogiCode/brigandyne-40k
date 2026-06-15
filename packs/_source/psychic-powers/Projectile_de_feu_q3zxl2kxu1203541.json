@@ -1,0 +1,18 @@
+{
+  "_id": "q3zxl2kxu1203541",
+  "name": "Projectile de feu",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "pyromancie",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "Instantanée",
+    "range": "Extrême",
+    "resistance": "MOU",
+    "rPlus": "Cible +1",
+    "damage": "",
+    "effect": "<p>Vous projetez de votre main un projectile d’énergie en fusion qui inflige à votre cible RU+6 dégâts de feu.</p>",
+    "source": "L1"
+  }
+}

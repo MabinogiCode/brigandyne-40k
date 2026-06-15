@@ -1,0 +1,312 @@
+{
+  "TYPES": {
+    "Actor": {
+      "character": "Personnage",
+      "npc": "PNJ / Créature",
+      "vehicle": "Véhicule / Vaisseau"
+    },
+    "Item": {
+      "weapon": "Arme",
+      "armor": "Armure",
+      "ammunition": "Munition",
+      "equipment": "Équipement",
+      "specialty": "Spécialité",
+      "talent": "Talent",
+      "species": "Espèce",
+      "career": "Carrière",
+      "psychicPower": "Pouvoir psychique",
+      "faithAct": "Acte de Foi",
+      "augmentation": "Augmentation",
+      "mutation": "Mutation",
+      "criticalInjury": "Blessure grave",
+      "trait": "Trait"
+    }
+  },
+  "BRIG": {
+    "system": "Warhammer 40 000 : Brigandyne",
+    "Char": {
+      "com": { "long": "Combat", "abbr": "COM" },
+      "cns": { "long": "Connaissances", "abbr": "CNS" },
+      "dis": { "long": "Discrétion", "abbr": "DIS" },
+      "end": { "long": "Endurance", "abbr": "END" },
+      "for": { "long": "Force", "abbr": "FOR" },
+      "tec": { "long": "Technique", "abbr": "TEC" },
+      "psy": { "long": "Psychisme", "abbr": "PSY" },
+      "mou": { "long": "Mouvement", "abbr": "MOU" },
+      "per": { "long": "Perception", "abbr": "PER" },
+      "soc": { "long": "Sociabilité", "abbr": "SOC" },
+      "sur": { "long": "Survie", "abbr": "SUR" },
+      "tir": { "long": "Tir", "abbr": "TIR" },
+      "vol": { "long": "Volonté", "abbr": "VOL" }
+    },
+    "CharGroup": {
+      "martial": "Martial",
+      "physique": "Physique",
+      "mental": "Mental",
+      "occulte": "Occulte"
+    },
+    "Degree": {
+      "critSuccess": "Réussite critique",
+      "majorSuccess": "Réussite majeure",
+      "minorSuccess": "Réussite",
+      "minorFailure": "Échec",
+      "majorFailure": "Échec majeur",
+      "critFailure": "Échec critique"
+    },
+    "Difficulty": {
+      "label": "Difficulté",
+      "simple": "Simple (+30)",
+      "aisee": "Aisée (+20)",
+      "faisable": "Faisable (+10)",
+      "assezDifficile": "Assez difficile (0)",
+      "difficile": "Difficile (−10)",
+      "tresDifficile": "Très difficile (−20)",
+      "complexe": "Complexe (−30)"
+    },
+    "Range": {
+      "contact": "Contact (1 m)",
+      "courte": "Courte (5 m)",
+      "moyenne": "Moyenne (20 m)",
+      "longue": "Longue (50 m)",
+      "extreme": "Extrême (100 m)"
+    },
+    "Quality": {
+      "perceArmure": "Perce-armure",
+      "destruction": "Destruction",
+      "ignoreBoucliers": "Ignore boucliers",
+      "ignoreArmures": "Ignore les armures",
+      "espace": "Espace",
+      "choc": "Choc",
+      "charge": "Charge",
+      "saisie": "Saisie",
+      "force": "Force",
+      "electrique": "Électrique",
+      "risquee": "Risquée",
+      "corpsACorps": "Corps-à-corps",
+      "initiative": "Initiative",
+      "tronconneuse": "Tronçonneuse",
+      "degatsTemporaires": "Dégâts temporaires",
+      "automatique": "Automatique",
+      "semiAutomatique": "Semi-automatique",
+      "chargement": "Chargement",
+      "lourde": "Lourde",
+      "precis": "Précis",
+      "souffle": "Souffle",
+      "surchauffe": "Surchauffe",
+      "rayon": "Rayon",
+      "poison": "Poison",
+      "viseur": "Viseur",
+      "maniable": "Maniable"
+    },
+    "WeaponType": {
+      "melee": "Mêlée",
+      "ranged": "Distance"
+    },
+    "WeaponGroup": {
+      "improvisee": "Improvisée",
+      "lame": "Couteaux & lames courtes",
+      "epee": "Épées",
+      "hacheMasse": "Haches & masses",
+      "articulee": "Armes articulées",
+      "hast": "Armes d'hast",
+      "tronconneuse": "Armes tronçonneuses",
+      "energetique": "Armes énergétiques",
+      "force": "Armes de force",
+      "primitive": "Armes primitives",
+      "solide": "Munitions solides",
+      "laser": "Armes laser",
+      "bolt": "Armes à bolts",
+      "plasma": "Armes à plasma",
+      "flamme": "Lance-flammes",
+      "fusion": "Armes à fusion",
+      "explosif": "Explosifs",
+      "xeno": "Xéno"
+    },
+    "Armor": {
+      "partielle": "Partielle",
+      "complete": "Complète",
+      "bonus": "Bonus"
+    },
+    "Ammo": {
+      "carreaux": "Carreaux",
+      "balleP": "Balle P",
+      "balleM": "Balle M",
+      "balleL": "Balle L",
+      "cartouche": "Cartouche",
+      "aiguilles": "Aiguilles",
+      "celluleP": "Cellule P",
+      "celluleM": "Cellule M",
+      "celluleL": "Cellule L",
+      "bolt": "Bolt",
+      "flasqueP": "Flasque P",
+      "flasqueM": "Flasque M",
+      "flasqueL": "Flasque L",
+      "reservoir": "Réservoir",
+      "fusion": "Charge à fusion"
+    },
+    "Damage": {
+      "physique": "Physique",
+      "feu": "Feu",
+      "froid": "Froid",
+      "electrique": "Électrique",
+      "psychique": "Psychique",
+      "acide": "Acide",
+      "asphyxiant": "Asphyxiant",
+      "chute": "Chute",
+      "temporaire": "Temporaire"
+    },
+    "Condition": {
+      "affaibli": "Affaibli",
+      "apeure": "Apeuré",
+      "aterre": "À terre",
+      "aveugle": "Aveuglé",
+      "confus": "Confus",
+      "demoralise": "Démoralisé",
+      "ensanglante": "Ensanglanté",
+      "essouffle": "Essoufflé",
+      "paralyse": "Paralysé",
+      "ralenti": "Ralenti",
+      "sonne": "Sonné",
+      "terrorise": "Terrorisé"
+    },
+    "Discipline": {
+      "generique": "Pouvoirs génériques",
+      "biomancie": "Biomancie",
+      "divination": "Divination",
+      "pyromancie": "Pyromancie",
+      "telekinesie": "Télékinésie",
+      "telepathie": "Télépathie"
+    },
+    "Vice": {
+      "colerique": "Colérique",
+      "cruel": "Cruel",
+      "orgueilleux": "Orgueilleux",
+      "avare": "Avare",
+      "gourmand": "Gourmand",
+      "luxurieux": "Luxurieux",
+      "paresseux": "Paresseux",
+      "lache": "Lâche",
+      "envieux": "Envieux",
+      "trompeur": "Trompeur"
+    },
+    "Virtue": {
+      "genereux": "Généreux",
+      "bienveillant": "Bienveillant",
+      "valeureux": "Valeureux",
+      "chaste": "Chaste",
+      "loyal": "Loyal"
+    },
+    "ChaosGod": {
+      "khorne": "Khorne",
+      "slaanesh": "Slaanesh",
+      "nurgle": "Nurgle",
+      "tzeentch": "Tzeentch"
+    },
+    "Lifestyle": {
+      "miserable": "Misérable",
+      "pauvre": "Pauvre",
+      "ordinaire": "Ordinaire",
+      "aise": "Aisé",
+      "riche": "Riche",
+      "royal": "Royal"
+    },
+    "Species": {
+      "humain": "Humain",
+      "squat": "Squat",
+      "ratling": "Ratling",
+      "ogryn": "Ogryn",
+      "mutant": "Mutant",
+      "aeldari": "Aeldari",
+      "paria": "Paria"
+    },
+    "SpeciesTrait": {
+      "nyctalopie": "Nyctalopie",
+      "mutations": "Mutations",
+      "geneParia": "Gène du Paria",
+      "sfPlus1": "Sang-Froid +1",
+      "pvPlus1": "PV +1",
+      "pvPlus2": "PV +2",
+      "resMaladies": "Résistance aux maladies"
+    },
+    "Faction": {
+      "administratum": "Adeptus Administratum",
+      "arbites": "Adeptus Arbites",
+      "mechanicus": "Adeptus Mechanicus",
+      "ministorum": "Adeptus Ministorum",
+      "militarum": "Astra Militarum",
+      "civils": "Civils / Hors institutions",
+      "assassinorum": "Officio Assassinorum",
+      "psykana": "Scholastica Psykana",
+      "inquisition": "Inquisition",
+      "xenos": "Xénos",
+      "chaos": "Chaos"
+    },
+    "SpecialtyType": {
+      "standard": "Spécialité (+10 / +20)",
+      "martiale": "Spécialité martiale (+5)",
+      "occulte": "Spécialité occulte (+5)"
+    },
+    "TraitType": {
+      "vice": "Vice",
+      "vertu": "Vertu",
+      "capacite": "Capacité",
+      "particularite": "Particularité"
+    },
+    "Role": {
+      "figurant": "Figurant",
+      "secondRole": "Second rôle",
+      "premierRole": "Premier rôle"
+    },
+    "Tab": {
+      "main": "Caractéristiques",
+      "combat": "Combat",
+      "skills": "Atouts",
+      "powers": "Pouvoirs",
+      "bio": "Biographie",
+      "statblock": "Profil"
+    },
+    "Test": {
+      "of": "Test de {name}",
+      "situational": "Mod. situationnel"
+    },
+    "Dialog": {
+      "title": "Configurer le test",
+      "base": "Base",
+      "advantage": "Avantage",
+      "disadvantage": "Désavantage",
+      "roll": "Lancer",
+      "cancel": "Annuler"
+    },
+    "Confirm": {
+      "deleteTitle": "Confirmer la suppression",
+      "deleteItem": "Supprimer « {name} » ?"
+    },
+    "Warn": {
+      "noDestin": "Aucun point de Destin disponible.",
+      "notOwner": "Vous n'êtes pas propriétaire de cet acteur.",
+      "noXp": "XP insuffisante (coût : {cost}).",
+      "noOperator": "Aucun personnage opérateur : assignez-vous un personnage ou sélectionnez un jeton."
+    },
+    "Info": {
+      "advanced": "{char} améliorée (−{cost} XP)."
+    },
+    "Vehicle": {
+      "maneuver": "Test de manœuvre",
+      "maneuverability": "Maniabilité"
+    },
+    "Chat": {
+      "noDamageOnFail": "Le test est un échec : aucun dégât.",
+      "damageDealt": "Dégâts infligés"
+    },
+    "CharGen": {
+      "title": "Assistant de création",
+      "done": "Personnage « {name} » initialisé."
+    },
+    "Sheet": {
+      "character": "Personnage Brigandyne 40K",
+      "npc": "PNJ Brigandyne 40K",
+      "vehicle": "Véhicule Brigandyne 40K",
+      "item": "Objet Brigandyne 40K"
+    }
+  }
+}

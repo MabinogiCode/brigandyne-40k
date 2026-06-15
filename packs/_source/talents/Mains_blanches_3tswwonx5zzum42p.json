@@ -1,0 +1,10 @@
+{
+  "_id": "3tswwonx5zzum42p",
+  "name": "Mains blanches",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

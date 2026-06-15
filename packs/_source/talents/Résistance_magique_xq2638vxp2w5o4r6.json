@@ -1,0 +1,10 @@
+{
+  "_id": "xq2638vxp2w5o4r6",
+  "name": "Résistance magique",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

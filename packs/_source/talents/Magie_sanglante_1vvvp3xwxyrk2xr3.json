@@ -1,0 +1,10 @@
+{
+  "_id": "1vvvp3xwxyrk2xr3",
+  "name": "Magie sanglante",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "_id": "jwxv30t83mrx38xy",
+  "name": "Doué (VOL)",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

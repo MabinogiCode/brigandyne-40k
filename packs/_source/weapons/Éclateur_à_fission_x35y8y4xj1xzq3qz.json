@@ -1,0 +1,34 @@
+{
+  "_id": "x35y8y4xj1xzq3qz",
+  "name": "Éclateur à fission",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "xeno",
+    "damageBase": "flat",
+    "damageMod": 6,
+    "reach": "C",
+    "hands": 1,
+    "range": 50,
+    "magazine": 0,
+    "ammoType": "-",
+    "price": 0,
+    "qualities": [
+      {
+        "key": "perceArmure",
+        "value": 5
+      },
+      {
+        "key": "destruction",
+        "value": null
+      },
+      {
+        "key": "lourde",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Xéno"
+  }
+}

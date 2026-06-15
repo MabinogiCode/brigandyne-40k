@@ -1,0 +1,27 @@
+{
+  "_id": "y2oy1k430nz6q556",
+  "name": "Chasseur",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "spatial",
+    "size": 1,
+    "maneuver": 5,
+    "speed": 5,
+    "places": 2,
+    "pilotsMin": 1,
+    "pv": {
+      "value": 10,
+      "max": 10,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 1,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 25000,
+    "specialText": "",
+    "biography": ""
+  }
+}

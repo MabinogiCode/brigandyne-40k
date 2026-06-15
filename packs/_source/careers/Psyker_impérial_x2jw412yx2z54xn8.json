@@ -1,0 +1,58 @@
+{
+  "_id": "x2jw412yx2z54xn8",
+  "name": "Psyker impérial",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "psykana",
+    "quote": "“Les Psykers assermentés se doivent de servir l’Imperium.”",
+    "advances": {
+      "com": 0,
+      "cns": 5,
+      "dis": 0,
+      "end": 2,
+      "for": 2,
+      "tec": 1,
+      "psy": 5,
+      "mou": 0,
+      "per": 1,
+      "soc": 3,
+      "sur": 0,
+      "tir": 0,
+      "vol": 5
+    },
+    "lifestyle": "aise",
+    "specialties": [
+      "Domaine Psychique (au choix)",
+      "Domaine Psychique (au choix)",
+      "Diplomatie",
+      "Discours",
+      "Intimidation",
+      "Légendes",
+      "Lettres",
+      "Occultisme",
+      "Persuasion",
+      "Résistance au Warp",
+      "Vigilance"
+    ],
+    "talents": [
+      "Calme",
+      "Coup surnaturel",
+      "Compagnon animal",
+      "Dévoué serviteur",
+      "Doué (CNS)",
+      "Doué (VOL)",
+      "Esprit gardien",
+      "Magie contrôlée",
+      "Magie destructrice",
+      "Magie sanglante",
+      "Magie invisible",
+      "Magie innée",
+      "Nyctalopie",
+      "Sort fétiche"
+    ],
+    "startingEquipment": "<p>Uniforme de Psyker impérial</p>",
+    "description": "<p>Les Psykers qui sont assez forts pour être formés à la maîtrise de leurs facultés sont tous façonnés au service de l’Imperium d’une manière ou d’une autre, selon la nature de leur talent et leur puissance brute.</p>",
+    "source": "L1"
+  }
+}

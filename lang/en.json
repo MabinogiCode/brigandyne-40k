@@ -1,0 +1,28 @@
+{
+  "TYPES": {
+    "Actor": {
+      "character": "Character",
+      "npc": "NPC / Creature",
+      "vehicle": "Vehicle / Ship"
+    },
+    "Item": {
+      "weapon": "Weapon",
+      "armor": "Armor",
+      "ammunition": "Ammunition",
+      "equipment": "Equipment",
+      "specialty": "Specialty",
+      "talent": "Talent",
+      "species": "Species",
+      "career": "Career",
+      "psychicPower": "Psychic Power",
+      "faithAct": "Act of Faith",
+      "augmentation": "Augmentation",
+      "mutation": "Mutation",
+      "criticalInjury": "Critical Injury",
+      "trait": "Trait"
+    }
+  },
+  "BRIG": {
+    "system": "Warhammer 40,000: Brigandyne"
+  }
+}

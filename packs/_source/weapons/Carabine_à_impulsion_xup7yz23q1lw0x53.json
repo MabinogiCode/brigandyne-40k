@@ -1,0 +1,30 @@
+{
+  "_id": "xup7yz23q1lw0x53",
+  "name": "Carabine à impulsion",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "xeno",
+    "damageBase": "flat",
+    "damageMod": 4,
+    "reach": "C",
+    "hands": 1,
+    "range": 60,
+    "magazine": 50,
+    "ammoType": "Cellule de puissance",
+    "price": 0,
+    "qualities": [
+      {
+        "key": "automatique",
+        "value": null
+      },
+      {
+        "key": "perceArmure",
+        "value": 2
+      }
+    ],
+    "specialText": "",
+    "source": "Xéno"
+  }
+}

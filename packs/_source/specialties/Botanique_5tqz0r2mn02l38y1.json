@@ -1,0 +1,11 @@
+{
+  "_id": "5tqz0r2mn02l38y1",
+  "name": "Botanique",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

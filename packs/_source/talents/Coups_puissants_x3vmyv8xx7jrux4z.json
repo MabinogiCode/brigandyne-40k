@@ -1,0 +1,10 @@
+{
+  "_id": "x3vmyv8xx7jrux4z",
+  "name": "Coups puissants",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

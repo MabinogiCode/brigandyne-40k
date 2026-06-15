@@ -1,0 +1,21 @@
+{
+  "_id": "04kv4yxx0s051x1l",
+  "name": "Carabine",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 5,
+    "reach": "C",
+    "hands": 1,
+    "range": 40,
+    "magazine": 8,
+    "ammoType": "Balle L",
+    "price": 75,
+    "qualities": [],
+    "specialText": "",
+    "source": "L1"
+  }
+}

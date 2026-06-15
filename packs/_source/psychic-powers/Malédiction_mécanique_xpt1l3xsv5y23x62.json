@@ -1,0 +1,18 @@
+{
+  "_id": "xpt1l3xsv5y23x62",
+  "name": "Malédiction mécanique",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "RU tours",
+    "range": "Moyenne",
+    "resistance": "-",
+    "rPlus": "Bulle ou Durée x2",
+    "damage": "",
+    "effect": "<p>Votre esprit se répand dans un appareil qui cesse de fonctionner pendant la durée du pouvoir. Il peut s’agir d’une arme.</p>",
+    "source": "L1"
+  }
+}

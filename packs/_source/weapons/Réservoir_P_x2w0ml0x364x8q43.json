@@ -1,0 +1,21 @@
+{
+  "_id": "x2w0ml0x364x8q43",
+  "name": "Réservoir P",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 0,
+    "reach": "C",
+    "hands": 1,
+    "range": 25,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 0,
+    "qualities": [],
+    "specialText": "",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_id": "xqnww6xsw3xm8xww",
+  "name": "Armure primitive",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 1,
+    "coverage": "partielle",
+    "initiativeMod": 0,
+    "mouMod": 0,
+    "longToDon": false,
+    "qualities": [],
+    "specialText": "",
+    "price": 10,
+    "source": "L1"
+  }
+}

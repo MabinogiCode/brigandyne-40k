@@ -1,0 +1,87 @@
+{
+  "_id": "2x2x02my513wyzoz",
+  "name": "Eversor",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "characteristics": {
+      "com": {
+        "value": 80,
+        "mod": 0
+      },
+      "cns": {
+        "value": 25,
+        "mod": 0
+      },
+      "dis": {
+        "value": 25,
+        "mod": 0
+      },
+      "end": {
+        "value": 75,
+        "mod": 0
+      },
+      "for": {
+        "value": 70,
+        "mod": 0
+      },
+      "tec": {
+        "value": 25,
+        "mod": 0
+      },
+      "psy": {
+        "value": 0,
+        "mod": 0
+      },
+      "mou": {
+        "value": 70,
+        "mod": 0
+      },
+      "per": {
+        "value": 65,
+        "mod": 0
+      },
+      "soc": {
+        "value": 25,
+        "mod": 0
+      },
+      "sur": {
+        "value": 25,
+        "mod": 0
+      },
+      "tir": {
+        "value": 50,
+        "mod": 0
+      },
+      "vol": {
+        "value": 70,
+        "mod": 0
+      }
+    },
+    "subtitle": "Un tueur qui ne laisse que des cadavres sanglants derrière lui.",
+    "faction": "imperium",
+    "pv": {
+      "value": 20,
+      "max": 20,
+      "bonus": 0
+    },
+    "sf": {
+      "value": 10,
+      "max": 10,
+      "bonus": 0
+    },
+    "initiative": {
+      "base": 21,
+      "mod": 0
+    },
+    "protection": {
+      "base": 4,
+      "mod": 0
+    },
+    "fear": 1,
+    "isSwarm": false,
+    "attacksText": "<p>Neuro-gantelet +5 / Épée courte énergétique +6 / Pistolet Executor +5</p>",
+    "specialAbilities": "<p>- Poison : Neuro-gantelet/Pistolet Executor. - Furie - Attaques supplémentaires (2) - PEUR (1) - Explosion : Si l’Eversor meurt, toutes les créatures autour de lui doivent réussir un test de MOU ou subir RU+6 points de dégâts d’acide.</p>",
+    "biography": "<p>Un tueur qui ne laisse que des cadavres sanglants derrière lui.</p>"
+  }
+}

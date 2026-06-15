@@ -1,0 +1,13 @@
+{
+  "_id": "x3p3s100zouospnx",
+  "name": "Télépathie +5",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "occulte",
+    "bonus": 5,
+    "effect": "Employer la discipline de la Télépathie, la comprendre, en apprendre les secrets et la ressentir",
+    "description": "<p>Employer la discipline de la Télépathie, la comprendre, en apprendre les secrets et la ressentir</p>",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "x723o0yx0yy2343n",
+  "name": "Véhicule fétiche",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "scene",
+    "effect": "<p>Vous avez un don pour piloter un véhicule précis (Moto, Chasseur, Char, Marcheur…). Une fois par scène, après le test, vous pouvez inverser les chiffres obtenus. Ainsi, un 90 peut devenir un 09.</p>",
+    "source": "L1"
+  }
+}

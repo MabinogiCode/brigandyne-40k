@@ -1,0 +1,18 @@
+{
+  "_id": "xz02330y0yqlrxxm",
+  "name": "Examen mental",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telepathie",
+    "isMinor": false,
+    "difficulty": -10,
+    "duration": "RU minutes",
+    "range": "Courte",
+    "resistance": "VOL",
+    "rPlus": "Flux d’énergie",
+    "damage": "",
+    "effect": "<p>Vous lisez les pensées de votre cible et découvrez immédiatement ce qu’elle pense au moment où vous posez votre question.</p>",
+    "source": "L1"
+  }
+}

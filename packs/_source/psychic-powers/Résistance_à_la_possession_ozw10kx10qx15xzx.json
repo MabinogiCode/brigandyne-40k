@@ -1,0 +1,18 @@
+{
+  "_id": "ozw10kx10qx15xzx",
+  "name": "Résistance à la possession",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": false,
+    "difficulty": 10,
+    "duration": "RU heures",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "Flux d’énergie",
+    "damage": "",
+    "effect": "<p>Vous érigez des barrières mentales pour vous protéger d’influences extérieures. Pendant la durée du pouvoir, vous obteniez un bonus de +20% pour résister à la possession d’un pouvoir psychique ou d’un démon.</p>",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "xzuuzw0x24024jy8",
+  "name": "Blindé lourd",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "terrestre",
+    "size": 4,
+    "maneuver": 0,
+    "speed": 0,
+    "places": 6,
+    "pilotsMin": 2,
+    "pv": {
+      "value": 45,
+      "max": 45,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 5,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 14000,
+    "specialText": "",
+    "biography": ""
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "x50x2mxxx30s87ll",
+  "name": "Cellule M",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 0,
+    "reach": "C",
+    "hands": 1,
+    "range": 15,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 0,
+    "qualities": [],
+    "specialText": "",
+    "source": "L1"
+  }
+}

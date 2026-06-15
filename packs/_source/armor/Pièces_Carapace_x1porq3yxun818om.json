@@ -1,0 +1,17 @@
+{
+  "_id": "x1porq3yxun818om",
+  "name": "Pièces Carapace",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 3,
+    "coverage": "partielle",
+    "initiativeMod": 0,
+    "mouMod": 0,
+    "longToDon": false,
+    "qualities": [],
+    "specialText": "",
+    "price": 100,
+    "source": "L1"
+  }
+}

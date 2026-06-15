@@ -1,0 +1,30 @@
+{
+  "_id": "k6vx0xk0no0jm146",
+  "name": "Fusil synaptique",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "xeno",
+    "damageBase": "flat",
+    "damageMod": 3,
+    "reach": "C",
+    "hands": 1,
+    "range": 200,
+    "magazine": 0,
+    "ammoType": "-",
+    "price": 0,
+    "qualities": [
+      {
+        "key": "ignoreArmures",
+        "value": null
+      },
+      {
+        "key": "lourde",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Xéno"
+  }
+}

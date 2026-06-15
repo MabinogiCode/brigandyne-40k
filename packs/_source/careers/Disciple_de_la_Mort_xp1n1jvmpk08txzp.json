@@ -1,0 +1,54 @@
+{
+  "_id": "xp1n1jvmpk08txzp",
+  "name": "Disciple de la Mort",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "assassinorum",
+    "quote": "« Vos cris évoquent une mélodie et votre sang a le goût du vin. »",
+    "advances": {
+      "com": 5,
+      "cns": 0,
+      "dis": 1,
+      "end": 3,
+      "for": 4,
+      "tec": 0,
+      "psy": 0,
+      "mou": 3,
+      "per": 2,
+      "soc": 0,
+      "sur": 0,
+      "tir": 3,
+      "vol": 3
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Arme de mêlée (au choix)",
+      "Arme à distance (au choix)",
+      "Acrobaties",
+      "Escalade",
+      "Intimidation",
+      "Milieu naturel",
+      "Réflexes",
+      "Torture",
+      "Travaux de force",
+      "Vigilance"
+    ],
+    "talents": [
+      "Agile",
+      "Arme fétiche",
+      "Bagarre",
+      "Brute",
+      "Coup de maître",
+      "Coups précis",
+      "Coups puissants",
+      "Esquive",
+      "Maître d’armes",
+      "Pattes de chat",
+      "Solidité"
+    ],
+    "startingEquipment": "<p>Combi-blindée (remplace l’armure pare-balles), Griffes</p>",
+    "description": "<p>Les Disciples de la Mort ont fait du meurtre leur raison de vivre, si bien qu’ils cherchent à se tracer une voie sanglante à travers le Temple Eversor. Plus que pour l’argent, ils tuent par plaisir et de la façon la plus horrible qui soit.</p>",
+    "source": "L1"
+  }
+}

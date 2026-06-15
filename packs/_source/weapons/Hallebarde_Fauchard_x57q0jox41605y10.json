@@ -1,0 +1,30 @@
+{
+  "_id": "x57q0jox41605y10",
+  "name": "Hallebarde, Fauchard",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": 0,
+    "reach": "A",
+    "hands": 2,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 75,
+    "qualities": [
+      {
+        "key": "charge",
+        "value": null
+      },
+      {
+        "key": "espace",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

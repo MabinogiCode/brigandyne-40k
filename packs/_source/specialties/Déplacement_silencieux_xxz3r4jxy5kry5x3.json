@@ -1,0 +1,11 @@
+{
+  "_id": "xxz3r4jxy5kry5x3",
+  "name": "Déplacement silencieux",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

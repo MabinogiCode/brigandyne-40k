@@ -1,0 +1,26 @@
+{
+  "_id": "x46n0s12t3tsx5jx",
+  "name": "Hache à deux mains",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": 2,
+    "reach": "C",
+    "hands": 2,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 100,
+    "qualities": [
+      {
+        "key": "initiative",
+        "value": -1
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "rz06ywmxvppm3zy7",
+  "name": "Répéteurs laser",
+  "type": "weapon",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "vehicle",
+    "damageBase": "flat",
+    "damageMod": 1,
+    "range": 60,
+    "magazine": 8,
+    "ammoType": "",
+    "price": 300,
+    "qualities": [
+      {
+        "key": "automatique",
+        "value": null
+      },
+      {
+        "key": "precis",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Véhicule"
+  }
+}

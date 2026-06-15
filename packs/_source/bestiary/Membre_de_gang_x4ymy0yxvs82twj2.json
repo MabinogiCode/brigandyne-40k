@@ -1,0 +1,87 @@
+{
+  "_id": "x4ymy0yxvs82twj2",
+  "name": "Membre de gang",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "characteristics": {
+      "com": {
+        "value": 35,
+        "mod": 0
+      },
+      "cns": {
+        "value": 25,
+        "mod": 0
+      },
+      "dis": {
+        "value": 40,
+        "mod": 0
+      },
+      "end": {
+        "value": 25,
+        "mod": 0
+      },
+      "for": {
+        "value": 25,
+        "mod": 0
+      },
+      "tec": {
+        "value": 25,
+        "mod": 0
+      },
+      "psy": {
+        "value": 0,
+        "mod": 0
+      },
+      "mou": {
+        "value": 40,
+        "mod": 0
+      },
+      "per": {
+        "value": 25,
+        "mod": 0
+      },
+      "soc": {
+        "value": 25,
+        "mod": 0
+      },
+      "sur": {
+        "value": 40,
+        "mod": 0
+      },
+      "tir": {
+        "value": 35,
+        "mod": 0
+      },
+      "vol": {
+        "value": 25,
+        "mod": 0
+      }
+    },
+    "subtitle": "Des vêtements usés, des armes de piètre qualité mais la volonté de nuire est bien présente.",
+    "faction": "imperium",
+    "pv": {
+      "value": 10,
+      "max": 10,
+      "bonus": 0
+    },
+    "sf": {
+      "value": 10,
+      "max": 10,
+      "bonus": 0
+    },
+    "initiative": {
+      "base": 10,
+      "mod": 0
+    },
+    "protection": {
+      "base": 2,
+      "mod": 0
+    },
+    "fear": 0,
+    "isSwarm": false,
+    "attacksText": "<p>Couteau, épée courte +2 / Mitraillette +3</p>",
+    "specialAbilities": "<p></p>",
+    "biography": "<p>Des vêtements usés, des armes de piètre qualité mais la volonté de nuire est bien présente.</p>"
+  }
+}

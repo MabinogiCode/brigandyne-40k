@@ -1,0 +1,10 @@
+{
+  "_id": "uwyk3nlus63p1skp",
+  "name": "Chance insolente",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

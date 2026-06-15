@@ -1,0 +1,56 @@
+{
+  "_id": "xo3zo8rxr4zl4t61",
+  "name": "Croisé",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "ministorum",
+    "quote": "“Seul la mort met fin au devoir.”",
+    "advances": {
+      "com": 4,
+      "cns": 3,
+      "dis": 0,
+      "end": 3,
+      "for": 3,
+      "tec": 0,
+      "psy": 0,
+      "mou": 2,
+      "per": 1,
+      "soc": 1,
+      "sur": 0,
+      "tir": 3,
+      "vol": 4
+    },
+    "lifestyle": "aise",
+    "specialties": [
+      "Arme lourde (au choix)",
+      "Arme de mêlée (au choix)",
+      "Courage",
+      "Diplomatie",
+      "Étiquette",
+      "Lettres",
+      "Repérage",
+      "Premiers soins",
+      "Religion",
+      "Résistance au Warp",
+      "Stratégie"
+    ],
+    "talents": [
+      "Calme",
+      "Coups précis",
+      "Coups puissants",
+      "Doué (END)",
+      "Doué (VOL)",
+      "Gardien",
+      "Maîtrise du bouclier",
+      "Maître d’armes",
+      "Port d’armure",
+      "Résilience",
+      "Solidité",
+      "Souffle de vie"
+    ],
+    "startingEquipment": "<p>Livre saint, Deux armes de mêlées standards (au choix), un bouclier, Armure d’adamantium, Casque intégral</p>",
+    "description": "<p>Les Croisés impériaux sont des guerriers qui appartiennent à une Coterie fermée, regroupant d’une dizaine à plusieurs milliers de membres. Souvent proche d’une forteresse inquisitoriale dont ils accompagnent les agents sur le terrain afin de les protéger.</p>",
+    "source": "L1"
+  }
+}

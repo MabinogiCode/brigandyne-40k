@@ -1,0 +1,87 @@
+{
+  "_id": "vmz27nxuzpjol8xy",
+  "name": "Sanguinaire de Khorne",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "characteristics": {
+      "com": {
+        "value": 55,
+        "mod": 0
+      },
+      "cns": {
+        "value": 25,
+        "mod": 0
+      },
+      "dis": {
+        "value": 25,
+        "mod": 0
+      },
+      "end": {
+        "value": 50,
+        "mod": 0
+      },
+      "for": {
+        "value": 55,
+        "mod": 0
+      },
+      "tec": {
+        "value": 25,
+        "mod": 0
+      },
+      "psy": {
+        "value": 0,
+        "mod": 0
+      },
+      "mou": {
+        "value": 45,
+        "mod": 0
+      },
+      "per": {
+        "value": 40,
+        "mod": 0
+      },
+      "soc": {
+        "value": 25,
+        "mod": 0
+      },
+      "sur": {
+        "value": 25,
+        "mod": 0
+      },
+      "tir": {
+        "value": 25,
+        "mod": 0
+      },
+      "vol": {
+        "value": 50,
+        "mod": 0
+      }
+    },
+    "subtitle": "La peau rouge comme le sang, des cornes affutées, des crocs acérés et une lame noire sanguinolente.",
+    "faction": "chaos",
+    "pv": {
+      "value": 15,
+      "max": 15,
+      "bonus": 0
+    },
+    "sf": {
+      "value": 10,
+      "max": 10,
+      "bonus": 0
+    },
+    "initiative": {
+      "base": 12,
+      "mod": 0
+    },
+    "protection": {
+      "base": 0,
+      "mod": 0
+    },
+    "fear": 1,
+    "isSwarm": false,
+    "attacksText": "<p>Lame infernale +7</p>",
+    "specialAbilities": "<p>- PEUR (1). - Démon. - Résistance (dégâts physiques).</p>",
+    "biography": "<p>La peau rouge comme le sang, des cornes affutées, des crocs acérés et une lame noire sanguinolente.</p>"
+  }
+}

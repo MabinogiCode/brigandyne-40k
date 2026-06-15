@@ -1,0 +1,18 @@
+{
+  "_id": "x6r1z03r57kr4xo8",
+  "name": "Bioéclair",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "biomancie",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "Instantanée",
+    "range": "Moyenne",
+    "resistance": "MOU",
+    "rPlus": "Dégâts +1",
+    "damage": "RU+PSY",
+    "effect": "<p>Des éclairs psychiques sortent des doigts du Psyker, infligeant RU+*PSY* dégâts électriques à la cible.</p>",
+    "source": "L1"
+  }
+}

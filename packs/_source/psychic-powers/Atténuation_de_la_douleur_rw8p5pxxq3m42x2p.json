@@ -1,0 +1,18 @@
+{
+  "_id": "rw8p5pxxq3m42x2p",
+  "name": "Atténuation de la douleur",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": false,
+    "difficulty": -10,
+    "duration": "Instantanée",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "SF +1",
+    "damage": "",
+    "effect": "<p>La douleur de la cible se calme. Elle regagne *PSY* points de SF. Il faut 1 heure pour obtenir les effets de ce pouvoir. Ne peut être effectué qu’une seule fois toutes les 24 heures par cible.</p>",
+    "source": "L1"
+  }
+}

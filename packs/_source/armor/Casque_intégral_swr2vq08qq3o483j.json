@@ -1,0 +1,17 @@
+{
+  "_id": "swr2vq08qq3o483j",
+  "name": "Casque intégral",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 1,
+    "coverage": "bonus",
+    "initiativeMod": 0,
+    "mouMod": 0,
+    "longToDon": false,
+    "qualities": [],
+    "specialText": "",
+    "price": 75,
+    "source": "L1"
+  }
+}

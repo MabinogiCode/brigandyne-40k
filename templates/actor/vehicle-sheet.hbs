@@ -1,0 +1,63 @@
+{{!-- Feuille véhicule / vaisseau --}}
+<div class="brig-root vehicle-root">
+<header class="sheet-header vehicle-header">
+  <img class="profile-img" src="{{actor.img}}" data-action="editImage" data-edit="img" alt="{{actor.name}}" />
+  <div class="header-fields">
+    <input class="actor-name" type="text" name="name" value="{{actor.name}}" placeholder="Nom" />
+    <input type="text" name="system.subtitle" value="{{system.subtitle}}" placeholder="Description courte" />
+    <div class="header-line">
+      <select name="system.vehicleType">
+        <option value="terrestre" {{#if (eq system.vehicleType 'terrestre')}}selected{{/if}}>Terrestre</option>
+        <option value="volant" {{#if (eq system.vehicleType 'volant')}}selected{{/if}}>Volant</option>
+        <option value="spatial" {{#if (eq system.vehicleType 'spatial')}}selected{{/if}}>Spatial</option>
+      </select>
+      <label class="inline">Gabarit <input type="number" name="system.size" value="{{system.size}}" min="1" max="5" /></label>
+    </div>
+    <div class="header-resources">
+      <div class="resource pv"><label>Structure</label><input type="number" name="system.pv.value" value="{{system.pv.value}}" />/<input type="number" name="system.pv.max" value="{{system.pv.max}}" /></div>
+      <div class="resource"><label>Blindage</label><input type="number" name="system.protection.base" value="{{system.protection.base}}" /></div>
+      <div class="resource"><label>Manœuvre</label><input type="number" name="system.maneuver" value="{{system.maneuver}}" /></div>
+    </div>
+  </div>
+</header>
+
+<nav class="sheet-tabs">
+  {{#each tabs}}<a class="tab-link {{#if active}}active{{/if}}" data-action="tab" data-tab="{{id}}"><i class="{{icon}}"></i> {{localize label}}</a>{{/each}}
+</nav>
+
+<section class="sheet-body">
+  <div class="tab {{#if (eq activeTab 'main')}}active{{/if}}" data-tab="main">
+    <div class="secondary-stats">
+      <div class="stat"><label>Vitesse</label><input type="number" name="system.speed" value="{{system.speed}}" /></div>
+      <div class="stat"><label>Places</label><input type="number" name="system.places" value="{{system.places}}" /></div>
+      <div class="stat"><label>Pilotes min.</label><input type="number" name="system.pilotsMin" value="{{system.pilotsMin}}" /></div>
+      <div class="stat"><label>Prix</label><input type="number" name="system.price" value="{{system.price}}" /></div>
+      <button type="button" class="maneuver-btn" data-action="vehicleManeuver"><i class="fa-solid fa-gauge-high"></i> Test de manœuvre (TEC)</button>
+    </div>
+
+    <div class="items-section">
+      <div class="section-head"><h3><i class="fa-solid fa-crosshairs"></i> Armement (max {{system.size}})</h3><button type="button" data-action="itemCreate" data-type="weapon"><i class="fa-solid fa-plus"></i></button></div>
+      <ol class="items-list">
+        {{#each items.weapon as |i|}}
+          <li class="item" data-item-id="{{i.id}}">
+            <span class="item-name" data-action="vehicleFire" data-tooltip="Tirer (TIR du tireur)">{{i.name}}</span>
+            <span class="item-detail">{{i.system.damageLabel}}</span>
+            <span class="item-detail">{{#if i.system.range}}{{i.system.range}}m{{/if}}</span>
+            <span class="item-controls">
+              <a data-action="vehicleFire" data-tooltip="Tirer"><i class="fa-solid fa-burst"></i></a>
+              <a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a>
+              <a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a>
+            </span>
+          </li>
+        {{/each}}
+      </ol>
+    </div>
+
+    <label class="field-block">Spécial <input type="text" name="system.specialText" value="{{system.specialText}}" /></label>
+  </div>
+
+  <div class="tab {{#if (eq activeTab 'bio')}}active{{/if}}" data-tab="bio">
+    <prose-mirror name="system.biography" value="{{system.biography}}">{{{enrichedBio}}}</prose-mirror>
+  </div>
+</section>
+</div>

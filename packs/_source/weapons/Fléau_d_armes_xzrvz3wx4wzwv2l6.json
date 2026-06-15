@@ -1,0 +1,34 @@
+{
+  "_id": "xzrvz3wx4wzwv2l6",
+  "name": "Fléau d’armes",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": 1,
+    "reach": "C",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 50,
+    "qualities": [
+      {
+        "key": "espace",
+        "value": null
+      },
+      {
+        "key": "ignoreBoucliers",
+        "value": null
+      },
+      {
+        "key": "risquee",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

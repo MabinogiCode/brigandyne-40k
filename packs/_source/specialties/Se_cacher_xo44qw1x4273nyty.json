@@ -1,0 +1,11 @@
+{
+  "_id": "xo44qw1x4273nyty",
+  "name": "Se cacher",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "228r55j4yyzsujzn",
+  "name": "Faire pitié",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

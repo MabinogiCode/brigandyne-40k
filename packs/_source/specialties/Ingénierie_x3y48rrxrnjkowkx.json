@@ -1,0 +1,11 @@
+{
+  "_id": "x3y48rrxrnjkowkx",
+  "name": "Ingénierie",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

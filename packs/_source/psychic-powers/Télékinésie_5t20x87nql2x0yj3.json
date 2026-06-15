@@ -1,0 +1,18 @@
+{
+  "_id": "5t20x87nql2x0yj3",
+  "name": "Télékinésie",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telekinesie",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "RU tours",
+    "range": "Moyenne",
+    "resistance": "MOU",
+    "rPlus": "Dégâts +1 ou Flux d’énergie",
+    "damage": "RU+PSY",
+    "effect": "<p>Le Psyker peut soulever un objet, jusqu’à *PSY*x10 kilo. Il peut le déplacer ou le projeter avec force sur une cible pour lui infliger RU+*PSY* dégâts.</p>",
+    "source": "L1"
+  }
+}

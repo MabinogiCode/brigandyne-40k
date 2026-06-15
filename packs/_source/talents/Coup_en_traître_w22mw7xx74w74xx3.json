@@ -1,0 +1,10 @@
+{
+  "_id": "w22mw7xx74w74xx3",
+  "name": "Coup en traître",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

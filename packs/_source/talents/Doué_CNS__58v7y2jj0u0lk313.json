@@ -1,0 +1,10 @@
+{
+  "_id": "58v7y2jj0u0lk313",
+  "name": "Doué (CNS)",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

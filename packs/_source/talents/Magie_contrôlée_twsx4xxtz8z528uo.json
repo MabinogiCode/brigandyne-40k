@@ -1,0 +1,10 @@
+{
+  "_id": "twsx4xxtz8z528uo",
+  "name": "Magie contrôlée",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

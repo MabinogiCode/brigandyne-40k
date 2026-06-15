@@ -1,0 +1,18 @@
+{
+  "_id": "40wpvwx670qk3xzq",
+  "name": "Flash aveuglant",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "pyromancie",
+    "isMinor": false,
+    "difficulty": -10,
+    "duration": "RU tours",
+    "range": "Courte",
+    "resistance": "-",
+    "rPlus": "Flux d’énergie",
+    "damage": "",
+    "effect": "<p>Vous générez une explosion de lumière incandescente qui aveugle toutes les créatures dans la portée du pouvoir et qui peuvent la voir pendant la durée du pouvoir. Le Psyker n’est pas immunisé.</p>",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "m1w4k6x75m3z563j",
+  "name": "Vigilante",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_id": "xwwy72jm0v5otx65",
+  "name": "Grenade à plasma",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 8,
+    "reach": "C",
+    "hands": 1,
+    "range": 0,
+    "magazine": 0,
+    "ammoType": "-",
+    "price": 50,
+    "qualities": [
+      {
+        "key": "rayon",
+        "value": 5
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

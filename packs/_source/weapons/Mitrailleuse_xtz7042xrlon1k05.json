@@ -1,0 +1,30 @@
+{
+  "_id": "xtz7042xrlon1k05",
+  "name": "Mitrailleuse",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 5,
+    "reach": "C",
+    "hands": 1,
+    "range": 35,
+    "magazine": 60,
+    "ammoType": "Balle L",
+    "price": 400,
+    "qualities": [
+      {
+        "key": "automatique",
+        "value": null
+      },
+      {
+        "key": "chargement",
+        "value": 2
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

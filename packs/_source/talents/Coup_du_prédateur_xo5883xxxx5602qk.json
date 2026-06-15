@@ -1,0 +1,10 @@
+{
+  "_id": "xo5883xxxx5602qk",
+  "name": "Coup du prédateur",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

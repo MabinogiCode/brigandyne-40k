@@ -1,0 +1,10 @@
+{
+  "_id": "xz3srwq82xlu0x37",
+  "name": "Festoyeur",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

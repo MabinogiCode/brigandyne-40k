@@ -1,0 +1,11 @@
+{
+  "_id": "ullmsyvs6z2z44xw",
+  "name": "Commerce",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

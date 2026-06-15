@@ -1,0 +1,10 @@
+{
+  "_id": "x03nx4xx0w1uxz40",
+  "name": "Mensonge éhonté",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

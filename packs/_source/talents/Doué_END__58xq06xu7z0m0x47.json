@@ -1,0 +1,10 @@
+{
+  "_id": "58xq06xu7z0m0x47",
+  "name": "Doué (END)",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

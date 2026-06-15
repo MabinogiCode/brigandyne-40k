@@ -1,0 +1,10 @@
+{
+  "_id": "k81w2sr72o3u35s0",
+  "name": "Provocation",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

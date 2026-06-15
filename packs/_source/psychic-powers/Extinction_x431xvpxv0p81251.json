@@ -1,0 +1,18 @@
+{
+  "_id": "x431xvpxv0p81251",
+  "name": "Extinction",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "pyromancie",
+    "isMinor": false,
+    "difficulty": 10,
+    "duration": "RU tours",
+    "range": "Courte",
+    "resistance": "-",
+    "rPlus": "Durée x2",
+    "damage": "",
+    "effect": "<p>Vous étouffez toute flamme située dans la portée du sort. La zone vous suit et éteint aussitôt les flammes qui se retrouvent à l’intérieur. Les armes lance-flammes sont également impactés.</p>",
+    "source": "L1"
+  }
+}

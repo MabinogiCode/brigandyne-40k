@@ -1,0 +1,18 @@
+{
+  "_id": "x64s13xvy4q0oxnr",
+  "name": "Distortion visuelle",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": false,
+    "difficulty": -10,
+    "duration": "RU tours",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "Durée x2",
+    "damage": "",
+    "effect": "<p>Vous manipulez la réalité pour distordre votre image qui devient trouble et semble refléter plusieurs échos de vous-mêmes autour de vous. Les attaques de contact vous ciblant subissent un malus de -10% et les attaques à distance un malus de -20% pendant la durée du pouvoir.</p>",
+    "source": "L1"
+  }
+}

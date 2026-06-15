@@ -1,0 +1,17 @@
+{
+  "_id": "y0u5014mzxts3z72",
+  "name": "Armure Carapace légère",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 3,
+    "coverage": "complete",
+    "initiativeMod": 0,
+    "mouMod": 0,
+    "longToDon": true,
+    "qualities": [],
+    "specialText": "Longue à mettre",
+    "price": 155,
+    "source": "L1"
+  }
+}

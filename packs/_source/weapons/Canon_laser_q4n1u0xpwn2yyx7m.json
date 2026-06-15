@@ -1,0 +1,34 @@
+{
+  "_id": "q4n1u0xpwn2yyx7m",
+  "name": "Canon laser",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 6,
+    "reach": "C",
+    "hands": 1,
+    "range": 300,
+    "magazine": 10,
+    "ammoType": "Cellule L",
+    "price": 2000,
+    "qualities": [
+      {
+        "key": "lourde",
+        "value": null
+      },
+      {
+        "key": "precis",
+        "value": null
+      },
+      {
+        "key": "ignoreBoucliers",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

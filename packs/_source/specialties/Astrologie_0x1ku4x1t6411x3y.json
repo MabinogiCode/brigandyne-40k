@@ -1,0 +1,11 @@
+{
+  "_id": "0x1ku4x1t6411x3y",
+  "name": "Astrologie",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

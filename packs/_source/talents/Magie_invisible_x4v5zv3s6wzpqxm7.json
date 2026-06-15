@@ -1,0 +1,10 @@
+{
+  "_id": "x4v5zv3s6wzpqxm7",
+  "name": "Magie invisible",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

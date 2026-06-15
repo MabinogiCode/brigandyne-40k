@@ -1,0 +1,38 @@
+{
+  "_id": "n0w011xx4mq28x30",
+  "name": "Electrofléau",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": -1,
+    "reach": "C",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 75,
+    "qualities": [
+      {
+        "key": "electrique",
+        "value": null
+      },
+      {
+        "key": "espace",
+        "value": null
+      },
+      {
+        "key": "ignoreBoucliers",
+        "value": null
+      },
+      {
+        "key": "risquee",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

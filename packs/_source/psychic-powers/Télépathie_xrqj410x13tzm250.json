@@ -1,0 +1,18 @@
+{
+  "_id": "xrqj410x13tzm250",
+  "name": "Télépathie",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telepathie",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "RU heures",
+    "range": "Courte",
+    "resistance": "-",
+    "rPlus": "Cible +1 ou Flux d’énergie",
+    "damage": "",
+    "effect": "<p>Vous lié les esprits consentants de *PSY* personnes dans la portée du pouvoir. Pendant toute la durée du pouvoir, les personnes liées peuvent communiquer télépathiquement entre elle, jusqu’à *PSY* kilomètres de distance.</p>",
+    "source": "L1"
+  }
+}

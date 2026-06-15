@@ -1,0 +1,87 @@
+{
+  "_id": "xml3201053t30x4q",
+  "name": "Callidus",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "characteristics": {
+      "com": {
+        "value": 75,
+        "mod": 0
+      },
+      "cns": {
+        "value": 25,
+        "mod": 0
+      },
+      "dis": {
+        "value": 60,
+        "mod": 0
+      },
+      "end": {
+        "value": 50,
+        "mod": 0
+      },
+      "for": {
+        "value": 60,
+        "mod": 0
+      },
+      "tec": {
+        "value": 25,
+        "mod": 0
+      },
+      "psy": {
+        "value": 0,
+        "mod": 0
+      },
+      "mou": {
+        "value": 80,
+        "mod": 0
+      },
+      "per": {
+        "value": 60,
+        "mod": 0
+      },
+      "soc": {
+        "value": 60,
+        "mod": 0
+      },
+      "sur": {
+        "value": 25,
+        "mod": 0
+      },
+      "tir": {
+        "value": 50,
+        "mod": 0
+      },
+      "vol": {
+        "value": 70,
+        "mod": 0
+      }
+    },
+    "subtitle": "Une silhouette agile, à la lame luisant d’un éclat verdâtre.",
+    "faction": "imperium",
+    "pv": {
+      "value": 10,
+      "max": 10,
+      "bonus": 0
+    },
+    "sf": {
+      "value": 10,
+      "max": 10,
+      "bonus": 0
+    },
+    "initiative": {
+      "base": null,
+      "mod": 0
+    },
+    "protection": {
+      "base": 0,
+      "mod": 0
+    },
+    "fear": 0,
+    "isSwarm": false,
+    "attacksText": "<p>Lame d’hyperphase +6 / Aiguilles +4 / Neuro-lacérateur +2</p>",
+    "specialAbilities": "<p>- Neuro-lacérateur : Ignore les armures. - Lame d’hyperphase : Perce-armure (4). - Changeforme : Un assassin Callidus peut prendre n’importe quelle forme humanoïde, même celle d’un Xeno.</p>",
+    "biography": "<p>Une silhouette agile, à la lame luisant d’un éclat verdâtre.</p>"
+  }
+}

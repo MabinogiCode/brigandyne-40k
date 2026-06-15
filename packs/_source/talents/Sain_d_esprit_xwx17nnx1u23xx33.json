@@ -1,0 +1,10 @@
+{
+  "_id": "xwx17nnx1u23xx33",
+  "name": "Sain d’esprit",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

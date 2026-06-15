@@ -1,0 +1,17 @@
+{
+  "_id": "xkt4p31k42t4zxwm",
+  "name": "Cuirasse d’adamantium",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 4,
+    "coverage": "partielle",
+    "initiativeMod": 0,
+    "mouMod": 0,
+    "longToDon": false,
+    "qualities": [],
+    "specialText": "",
+    "price": 350,
+    "source": "L1"
+  }
+}

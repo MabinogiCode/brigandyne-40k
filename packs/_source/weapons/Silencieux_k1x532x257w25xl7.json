@@ -1,0 +1,21 @@
+{
+  "_id": "k1x532x257w25xl7",
+  "name": "Silencieux",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 15,
+    "reach": "C",
+    "hands": 1,
+    "range": 0,
+    "magazine": 30,
+    "ammoType": "",
+    "price": 0,
+    "qualities": [],
+    "specialText": "",
+    "source": "L1"
+  }
+}

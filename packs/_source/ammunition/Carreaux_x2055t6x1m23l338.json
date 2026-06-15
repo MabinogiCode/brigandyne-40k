@@ -1,0 +1,12 @@
+{
+  "_id": "x2055t6x1m23l338",
+  "name": "Carreaux",
+  "type": "ammunition",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "ammoType": "Carreaux",
+    "effect": "",
+    "price": 5,
+    "source": "L1"
+  }
+}

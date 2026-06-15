@@ -1,0 +1,30 @@
+{
+  "_id": "x1zr2v841l67uxy4",
+  "name": "Écorcheur à fission",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "xeno",
+    "damageBase": "flat",
+    "damageMod": 4,
+    "reach": "C",
+    "hands": 1,
+    "range": 35,
+    "magazine": 0,
+    "ammoType": "-",
+    "price": 0,
+    "qualities": [
+      {
+        "key": "perceArmure",
+        "value": 5
+      },
+      {
+        "key": "destruction",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Xéno"
+  }
+}

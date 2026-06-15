@@ -1,0 +1,27 @@
+{
+  "_id": "l14r2y6p250ow0wl",
+  "name": "Voiture",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "terrestre",
+    "size": 2,
+    "maneuver": 0,
+    "speed": 1,
+    "places": 4,
+    "pilotsMin": 1,
+    "pv": {
+      "value": 25,
+      "max": 25,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 0,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 2500,
+    "specialText": "",
+    "biography": ""
+  }
+}

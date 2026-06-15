@@ -1,0 +1,26 @@
+{
+  "_id": "x5z70jqxy7kmo4mx",
+  "name": "Matraque",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": -1,
+    "reach": "D",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 10,
+    "qualities": [
+      {
+        "key": "choc",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

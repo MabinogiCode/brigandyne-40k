@@ -1,0 +1,10 @@
+{
+  "_id": "u6kx4p7wvsj2nn54",
+  "name": "Douée (MOU)",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

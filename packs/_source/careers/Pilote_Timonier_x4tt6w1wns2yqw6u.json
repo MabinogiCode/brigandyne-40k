@@ -1,0 +1,54 @@
+{
+  "_id": "x4tt6w1wns2yqw6u",
+  "name": "Pilote, Timonier",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "civils",
+    "quote": "“Abaissez les écoutilles, saut Warp dans 3… 2… 1…”",
+    "advances": {
+      "com": 2,
+      "cns": 0,
+      "dis": 1,
+      "end": 2,
+      "for": 2,
+      "tec": 4,
+      "psy": 0,
+      "mou": 2,
+      "per": 2,
+      "soc": 3,
+      "sur": 2,
+      "tir": 2,
+      "vol": 2
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Artillerie",
+      "Astrogation",
+      "Cartographie",
+      "Pilotage (Au choix)",
+      "Commandement",
+      "Courage",
+      "Gestion",
+      "Informatique",
+      "Orientation",
+      "Repérage",
+      "Vigilance"
+    ],
+    "talents": [
+      "Calme",
+      "Chance insolente",
+      "Doué (MOU)",
+      "Doué (SOC)",
+      "Recharge rapide",
+      "Réflexes éclairs",
+      "Second souffle",
+      "Sixième sens",
+      "Solidité",
+      "Véhicule fétiche"
+    ],
+    "startingEquipment": "<p>Pistolet ou Revolver ou Pistolet Laser, Munition : Chargeurs x2, Combinaison moulante</p>",
+    "description": "<p>L’Imperium est vaste et les milliers de vaisseaux et véhicules qui en arpentent les territoires doivent nécessairement être dirigés par des légions de pilotes formés pour les voyages aussi bien terrestres, qu’aériens ou spatiaux.</p>",
+    "source": "L1"
+  }
+}

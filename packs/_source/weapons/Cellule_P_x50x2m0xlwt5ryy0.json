@@ -1,0 +1,21 @@
+{
+  "_id": "x50x2m0xlwt5ryy0",
+  "name": "Cellule P",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 0,
+    "reach": "C",
+    "hands": 1,
+    "range": 10,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 0,
+    "qualities": [],
+    "specialText": "",
+    "source": "L1"
+  }
+}

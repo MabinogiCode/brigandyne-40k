@@ -1,0 +1,30 @@
+{
+  "_id": "r62518l4j56q2p2w",
+  "name": "Fusil laser",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 3,
+    "reach": "C",
+    "hands": 1,
+    "range": 100,
+    "magazine": 80,
+    "ammoType": "Cellule M",
+    "price": 75,
+    "qualities": [
+      {
+        "key": "automatique",
+        "value": null
+      },
+      {
+        "key": "precis",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

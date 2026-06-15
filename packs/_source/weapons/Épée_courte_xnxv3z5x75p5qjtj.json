@@ -1,0 +1,26 @@
+{
+  "_id": "xnxv3z5x75p5qjtj",
+  "name": "Épée courte",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": -1,
+    "reach": "C",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 20,
+    "qualities": [
+      {
+        "key": "corpsACorps",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

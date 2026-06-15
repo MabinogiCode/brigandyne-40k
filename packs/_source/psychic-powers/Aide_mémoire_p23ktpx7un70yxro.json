@@ -1,0 +1,13 @@
+{
+  "_id": "p23ktpx7un70yxro",
+  "name": "Aide-mémoire",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "divination",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>La cible gagne 1 Avantage aux tests de CNS pendant *PSY* tours. Connaissance du temps écoulé : Ce pouvoir a une double utilité : connaître l’âge d’une chose ou d’une personne, et connaître le temps exact qui s’est écoulé à partir d’un moment précis. Mauvais oeil : La cible perd D10% pendant *PSY* heures dans une compétence au choix (sauf COM et PSY). Présage : Ce pouvoir vous permet de lancer un d100 et de garder le résultat « en réserve » pendant une heure. Vous pourrez utiliser ce résultat (ou non) à un prochain test demandé par le MJ. Attention : si vous obtenez un double un revers de fortune vous fera perdre 1 PV. Vous ne pouvez lancer ce pouvoir qu’une fois par jour. Vision de nuit : Ce tour vous confère pendant *PSY* minutes une vision nocturne qui vous prémunit des malus dus à l’obscurité. Ce sort est inutile dans le noir total. Voir les démons invisibles : Vous pouvez voir les démons autour de vous pendant *PSY* minutes. Ainsi, les démons camouflés, déguisés ou bien qui possèdent un corps de mortel seront découverts.</p>",
+    "source": "L1"
+  }
+}

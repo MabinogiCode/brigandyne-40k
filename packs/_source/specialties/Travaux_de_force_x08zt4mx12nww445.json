@@ -1,0 +1,11 @@
+{
+  "_id": "x08zt4mx12nww445",
+  "name": "Travaux de force",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "rzz751t7sn6zy7lx",
+  "name": "Escalade",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "xx2vzvy7zx330xjw",
+  "name": "Automatik’",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "xeno",
+    "damageBase": "flat",
+    "damageMod": 4,
+    "reach": "C",
+    "hands": 1,
+    "range": 20,
+    "magazine": 10,
+    "ammoType": "Balle M",
+    "price": 0,
+    "qualities": [],
+    "specialText": "",
+    "source": "Xéno"
+  }
+}

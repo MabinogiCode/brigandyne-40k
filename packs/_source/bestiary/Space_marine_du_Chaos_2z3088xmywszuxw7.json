@@ -1,0 +1,87 @@
+{
+  "_id": "2z3088xmywszuxw7",
+  "name": "Space marine du Chaos",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "characteristics": {
+      "com": {
+        "value": 75,
+        "mod": 0
+      },
+      "cns": {
+        "value": 25,
+        "mod": 0
+      },
+      "dis": {
+        "value": 25,
+        "mod": 0
+      },
+      "end": {
+        "value": 75,
+        "mod": 0
+      },
+      "for": {
+        "value": 80,
+        "mod": 0
+      },
+      "tec": {
+        "value": 25,
+        "mod": 0
+      },
+      "psy": {
+        "value": 0,
+        "mod": 0
+      },
+      "mou": {
+        "value": 50,
+        "mod": 0
+      },
+      "per": {
+        "value": 50,
+        "mod": 0
+      },
+      "soc": {
+        "value": 25,
+        "mod": 0
+      },
+      "sur": {
+        "value": 25,
+        "mod": 0
+      },
+      "tir": {
+        "value": 70,
+        "mod": 0
+      },
+      "vol": {
+        "value": 75,
+        "mod": 0
+      }
+    },
+    "subtitle": "Un ange déchu, à l’armure souillée par les forces du Chaos, bouillant de fureur.",
+    "faction": "chaos",
+    "pv": {
+      "value": 20,
+      "max": 20,
+      "bonus": 0
+    },
+    "sf": {
+      "value": 10,
+      "max": 10,
+      "bonus": 0
+    },
+    "initiative": {
+      "base": 17,
+      "mod": 0
+    },
+    "protection": {
+      "base": 7,
+      "mod": 0
+    },
+    "fear": 0,
+    "isSwarm": false,
+    "attacksText": "<p>Couteau de combat astartes +7 / Bolter +6</p>",
+    "specialAbilities": "<p>- Infatigable</p>",
+    "biography": "<p>Un ange déchu, à l’armure souillée par les forces du Chaos, bouillant de fureur.</p>"
+  }
+}

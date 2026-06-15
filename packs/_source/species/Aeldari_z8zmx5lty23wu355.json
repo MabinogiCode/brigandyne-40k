@@ -1,0 +1,44 @@
+{
+  "_id": "z8zmx5lty23wu355",
+  "name": "Aeldari",
+  "type": "species",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "base": {
+      "com": 25,
+      "cns": 25,
+      "dis": 25,
+      "end": 20,
+      "for": 20,
+      "tec": 25,
+      "psy": 10,
+      "mou": 30,
+      "per": 25,
+      "soc": 25,
+      "sur": 20,
+      "tir": 30,
+      "vol": 20
+    },
+    "limits": {
+      "com": null,
+      "cns": null,
+      "dis": null,
+      "end": null,
+      "for": 60,
+      "tec": null,
+      "psy": null,
+      "mou": null,
+      "per": null,
+      "soc": null,
+      "sur": null,
+      "tir": null,
+      "vol": null
+    },
+    "destin": 2,
+    "special": [
+      "nyctalopie"
+    ],
+    "noPsy": false,
+    "source": "L1"
+  }
+}

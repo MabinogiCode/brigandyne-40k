@@ -1,0 +1,24 @@
+{
+  "_id": "z5suw5x5lw4z4x55",
+  "name": "Auto-canons",
+  "type": "weapon",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "ship",
+    "damageBase": "flat",
+    "damageMod": 2,
+    "range": 200,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 2000,
+    "qualities": [
+      {
+        "key": "semiAutomatique",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Vaisseau"
+  }
+}

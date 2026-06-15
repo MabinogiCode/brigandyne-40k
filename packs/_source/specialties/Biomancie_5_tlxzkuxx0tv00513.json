@@ -1,0 +1,13 @@
+{
+  "_id": "tlxzkuxx0tv00513",
+  "name": "Biomancie +5",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "occulte",
+    "bonus": 5,
+    "effect": "Employer la discipline de la Biomancie, la comprendre, en apprendre les secrets et la ressentir",
+    "description": "<p>Employer la discipline de la Biomancie, la comprendre, en apprendre les secrets et la ressentir</p>",
+    "source": "L1"
+  }
+}

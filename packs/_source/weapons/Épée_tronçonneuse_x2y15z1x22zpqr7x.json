@@ -1,0 +1,26 @@
+{
+  "_id": "x2y15z1x22zpqr7x",
+  "name": "Épée tronçonneuse",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": 2,
+    "reach": "C",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 125,
+    "qualities": [
+      {
+        "key": "initiative",
+        "value": -1
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

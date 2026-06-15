@@ -1,0 +1,13 @@
+{
+  "_id": "xk44rm6xwmzm4kkp",
+  "name": "Arme de poing +5",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "martiale",
+    "bonus": 5,
+    "effect": "Tirer avec une arme de poing, un pistolet, les manipuler et les réparer",
+    "description": "<p>Tirer avec une arme de poing, un pistolet, les manipuler et les réparer</p>",
+    "source": "L1"
+  }
+}

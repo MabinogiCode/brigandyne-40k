@@ -1,0 +1,18 @@
+{
+  "_id": "xxrm1kwxz2q122yn",
+  "name": "Poussée",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telekinesie",
+    "isMinor": false,
+    "difficulty": 20,
+    "duration": "Instantanée",
+    "range": "Courte",
+    "resistance": "FOR",
+    "rPlus": "Dégâts +1",
+    "damage": "",
+    "effect": "<p>Vous projetez une vague d’énergie télékinétique vers votre cible qui est repoussée de RU mètres et subit *PSY* dégâts. Si la cible est repoussée de 3 mètres, elle tombe à terre.</p>",
+    "source": "L1"
+  }
+}

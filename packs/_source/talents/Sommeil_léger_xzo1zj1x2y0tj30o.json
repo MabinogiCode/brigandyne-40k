@@ -1,0 +1,10 @@
+{
+  "_id": "xzo1zj1x2y0tj30o",
+  "name": "Sommeil léger",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

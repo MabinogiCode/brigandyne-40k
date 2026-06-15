@@ -1,0 +1,24 @@
+{
+  "_id": "3z4oowx0z5ws7x7u",
+  "name": "Lance-missiles",
+  "type": "weapon",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "vehicle",
+    "damageBase": "flat",
+    "damageMod": 5,
+    "range": 90,
+    "magazine": 6,
+    "ammoType": "",
+    "price": 2500,
+    "qualities": [
+      {
+        "key": "rayon",
+        "value": 10
+      }
+    ],
+    "specialText": "",
+    "source": "Véhicule"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "_id": "xwo411ys2vut4xsy",
+  "name": "Soeur de bataille",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "ministorum",
+    "quote": "“A moi mes Soeurs ! Nous sommes la fureur de l’Empereur !”",
+    "advances": {
+      "com": 3,
+      "cns": 0,
+      "dis": 0,
+      "end": 3,
+      "for": 3,
+      "tec": 2,
+      "psy": 0,
+      "mou": 2,
+      "per": 1,
+      "soc": 2,
+      "sur": 0,
+      "tir": 3,
+      "vol": 5
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Arme de de mêlée",
+      "Arme de tir (au choix)",
+      "Courage",
+      "Intimidation",
+      "Musique et chant",
+      "Premiers soins",
+      "Résistance au Warp",
+      "Résistance aux privations",
+      "Travaux de force",
+      "Vigilance"
+    ],
+    "talents": [
+      "Arme fétiche",
+      "Confiance en soi",
+      "Gardien",
+      "Guérison rapide",
+      "Maître d’armes",
+      "Résilience",
+      "Sauvegarde",
+      "Second souffle",
+      "Solidité",
+      "Tir ciblé"
+    ],
+    "startingEquipment": "<p>Armure énergétique légère, une épée-tronçonneuse, un Bolter</p>",
+    "description": "<p>Les Soeurs de bataille forment le bras armé de l’Adepta Sororitas qui sont envoyées partout dans l’Imperium pour combattre lors d’immenses croisades ou pour soutenir le reste des légions de l’Imperium. De manière générale, les Soeurs de bataille combattant avec une fureur sans égale l’hérésie et le manque de piété, tout en apportant leur soutient aux populations civiles.</p>",
+    "source": "L1"
+  }
+}

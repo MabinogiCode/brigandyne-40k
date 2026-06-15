@@ -1,0 +1,12 @@
+{
+  "_id": "4vzq00xj7wq07xx0",
+  "name": "Réservoir à fusion",
+  "type": "ammunition",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "ammoType": "Réservoir à fusion",
+    "effect": "Un réservoir correspond au nombre de munitions de l’arme.",
+    "price": 125,
+    "source": "L1"
+  }
+}

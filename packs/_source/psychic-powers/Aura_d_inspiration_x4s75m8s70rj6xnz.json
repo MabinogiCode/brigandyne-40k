@@ -1,0 +1,18 @@
+{
+  "_id": "x4s75m8s70rj6xnz",
+  "name": "Aura d’inspiration",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": false,
+    "difficulty": 10,
+    "duration": "RU tours",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "Durée x2",
+    "damage": "",
+    "effect": "<p>Vous irradiez d’une présence rassurante. Tous les alliés qui peuvent vous voir obtiennent un bonus de +20 pour résister à l’effet de PEUR.</p>",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "_id": "1xwjrpz4xo0z34vy",
+  "name": "Licteur",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "characteristics": {
+      "com": {
+        "value": 40,
+        "mod": 0
+      },
+      "cns": {
+        "value": 25,
+        "mod": 0
+      },
+      "dis": {
+        "value": 25,
+        "mod": 0
+      },
+      "end": {
+        "value": 40,
+        "mod": 0
+      },
+      "for": {
+        "value": 40,
+        "mod": 0
+      },
+      "tec": {
+        "value": 25,
+        "mod": 0
+      },
+      "psy": {
+        "value": 0,
+        "mod": 0
+      },
+      "mou": {
+        "value": 25,
+        "mod": 0
+      },
+      "per": {
+        "value": 25,
+        "mod": 0
+      },
+      "soc": {
+        "value": 25,
+        "mod": 0
+      },
+      "sur": {
+        "value": 25,
+        "mod": 0
+      },
+      "tir": {
+        "value": 35,
+        "mod": 0
+      },
+      "vol": {
+        "value": 40,
+        "mod": 0
+      }
+    },
+    "subtitle": "Un défenseur de la paix impériale, matraque et bouclier anti-émeute en main.",
+    "faction": "imperium",
+    "pv": {
+      "value": 12,
+      "max": 12,
+      "bonus": 0
+    },
+    "sf": {
+      "value": 10,
+      "max": 10,
+      "bonus": 0
+    },
+    "initiative": {
+      "base": 8,
+      "mod": 0
+    },
+    "protection": {
+      "base": 4,
+      "mod": 0
+    },
+    "fear": 0,
+    "isSwarm": false,
+    "attacksText": "<p>Matraque +3 / Pistolet +3</p>",
+    "specialAbilities": "<p></p>",
+    "biography": "<p>Un défenseur de la paix impériale, matraque et bouclier anti-émeute en main.</p>"
+  }
+}

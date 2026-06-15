@@ -1,0 +1,58 @@
+{
+  "_id": "x3wxz10xqm5746y3",
+  "name": "Spadassin",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "assassinorum",
+    "quote": "“Tuer, je fais ça bien.”",
+    "advances": {
+      "com": 4,
+      "cns": 0,
+      "dis": 4,
+      "end": 1,
+      "for": 2,
+      "tec": 1,
+      "psy": 0,
+      "mou": 3,
+      "per": 2,
+      "soc": 1,
+      "sur": 0,
+      "tir": 4,
+      "vol": 2
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Acrobaties",
+      "Arme à distance (au choix)",
+      "Arme de mêlée (au choix)",
+      "Crochetage",
+      "Course",
+      "Contorsion",
+      "Déplacement silencieux",
+      "Escalade",
+      "Poisons",
+      "Repérage",
+      "Se cacher"
+    ],
+    "talents": [
+      "Calme",
+      "Coup en traître",
+      "Coups précis",
+      "Tir précis",
+      "Doué (DIS)",
+      "Doué (MOU)",
+      "Esquive",
+      "Réflexes éclairs",
+      "Insaisissable",
+      "Mensonge éhonté",
+      "Nyctalopie",
+      "Pattes de chat",
+      "Sauvegarde",
+      "Vivacité"
+    ],
+    "startingEquipment": "<p>Trois petites fioles de poison, Masque, Bottes de cuir souple</p>",
+    "description": "<p>Les Spadassin sont des tueurs indépendants à la recherche d’une place dans l’un des Temples de l’Officio Assassinorum. Ils remplissent des contrats pour faire leurs preuves.</p>",
+    "source": "L1"
+  }
+}

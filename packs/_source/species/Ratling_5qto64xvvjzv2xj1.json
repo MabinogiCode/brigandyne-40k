@@ -1,0 +1,42 @@
+{
+  "_id": "5qto64xvvjzv2xj1",
+  "name": "Ratling",
+  "type": "species",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "base": {
+      "com": 25,
+      "cns": 20,
+      "dis": 30,
+      "end": 20,
+      "for": 15,
+      "tec": 30,
+      "psy": 0,
+      "mou": 30,
+      "per": 30,
+      "soc": 20,
+      "sur": 25,
+      "tir": 30,
+      "vol": 25
+    },
+    "limits": {
+      "com": 75,
+      "cns": null,
+      "dis": null,
+      "end": null,
+      "for": 45,
+      "tec": null,
+      "psy": null,
+      "mou": null,
+      "per": null,
+      "soc": null,
+      "sur": null,
+      "tir": null,
+      "vol": null
+    },
+    "destin": 3,
+    "special": [],
+    "noPsy": false,
+    "source": "L1"
+  }
+}

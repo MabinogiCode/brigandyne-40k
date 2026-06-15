@@ -1,0 +1,21 @@
+{
+  "_id": "xz2tzo6x5xlm336j",
+  "name": "Monomoléculaire - Pointe/ en diamantine",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 1,
+    "reach": "C",
+    "hands": 1,
+    "range": 0,
+    "magazine": 200,
+    "ammoType": "",
+    "price": 0,
+    "qualities": [],
+    "specialText": "",
+    "source": "L1"
+  }
+}

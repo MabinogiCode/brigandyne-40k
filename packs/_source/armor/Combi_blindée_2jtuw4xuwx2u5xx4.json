@@ -1,0 +1,17 @@
+{
+  "_id": "2jtuw4xuwx2u5xx4",
+  "name": "Combi-blindée",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 2,
+    "coverage": "complete",
+    "initiativeMod": 0,
+    "mouMod": 0,
+    "longToDon": false,
+    "qualities": [],
+    "specialText": "",
+    "price": 75,
+    "source": "L1"
+  }
+}

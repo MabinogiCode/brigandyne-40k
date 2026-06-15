@@ -1,0 +1,17 @@
+{
+  "_id": "o5q6o1x4wtpwwxt2",
+  "name": "Bénédiction",
+  "type": "faithAct",
+  "img": "icons/svg/angel.svg",
+  "system": {
+    "isMiracle": false,
+    "difficulty": 10,
+    "duration": "RU heures",
+    "range": "Courte",
+    "resistance": "-",
+    "rPlus": "Cible +1",
+    "damage": "",
+    "effect": "<p>Le prêcheur canalise la foi impériale dans le métal d’une arme. Une arme bénie offre un bonus de +5% en COM ou TIR et infligent 1 dégât supplémentaire. Les armes bénies peuvent atteindre les créatures immatérielles comme les démons.</p>",
+    "source": "L1"
+  }
+}

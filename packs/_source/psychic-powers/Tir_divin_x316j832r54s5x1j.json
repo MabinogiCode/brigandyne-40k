@@ -1,0 +1,18 @@
+{
+  "_id": "x316j832r54s5x1j",
+  "name": "Tir divin",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "divination",
+    "isMinor": false,
+    "difficulty": -20,
+    "duration": "Instantanée",
+    "range": "Courte",
+    "resistance": "-",
+    "rPlus": "Dégâts +1",
+    "damage": "",
+    "effect": "<p>Vous insufflez votre esprit dans une arme afin de découvrir les trajectoires possibles de ses munitions. Le prochain tir unique de l’arme ne peut échouer d’aucune façon. Le joueur se contente ainsi de lancer un D10 pour déterminer les dégâts.</p>",
+    "source": "L1"
+  }
+}

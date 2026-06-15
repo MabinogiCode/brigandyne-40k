@@ -1,0 +1,30 @@
+{
+  "_id": "05r3r0yk3ttutx8w",
+  "name": "Fuseur",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 8,
+    "reach": "C",
+    "hands": 1,
+    "range": 20,
+    "magazine": 6,
+    "ammoType": "Charge à fusion",
+    "price": 2500,
+    "qualities": [
+      {
+        "key": "destruction",
+        "value": null
+      },
+      {
+        "key": "perceArmure",
+        "value": 4
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

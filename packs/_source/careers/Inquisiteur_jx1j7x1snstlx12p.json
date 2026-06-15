@@ -1,0 +1,54 @@
+{
+  "_id": "jx1j7x1snstlx12p",
+  "name": "Inquisiteur",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "ministorum",
+    "quote": "“Nul n’est innocent !”",
+    "advances": {
+      "com": 4,
+      "cns": 3,
+      "dis": 0,
+      "end": 2,
+      "for": 3,
+      "tec": 0,
+      "psy": 0,
+      "mou": 1,
+      "per": 2,
+      "soc": 2,
+      "sur": 0,
+      "tir": 3,
+      "vol": 4
+    },
+    "lifestyle": "aise",
+    "specialties": [
+      "Arme de mêlée (au choix)",
+      "Arme à distance (au choix)",
+      "Courage",
+      "Intimidation",
+      "Intuition",
+      "Occultisme",
+      "Persuasion",
+      "Religion",
+      "Repérage",
+      "Renseignements",
+      "Torture"
+    ],
+    "talents": [
+      "Calme",
+      "Coups de maître",
+      "Coups précis",
+      "Dévoué serviteur",
+      "Doué (CNS)",
+      "Doué (VOL)",
+      "Résilience",
+      "Résistance magique",
+      "Sain d’esprit",
+      "Tir précis"
+    ],
+    "startingEquipment": "<p>Rosette inquisitoriale, Épée, Revolver, Pièces Carapace, Manteau, Menottes et clé, Nécessaire d’écriture, Munitions : 18 Balles P</p>",
+    "description": "<p>Les Inquisiteurs forment le gros des agents d’élite de l’Adeptus Ministorum. Ils sont dépêchés pour enquêter, espionner et agir lorsqu’une hérésie est suspectée, souvent avec un zêle fanatique.</p>",
+    "source": "L1"
+  }
+}

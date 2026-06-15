@@ -1,0 +1,10 @@
+{
+  "_id": "1015u20z5yztxw53",
+  "name": "Instinct de survie",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

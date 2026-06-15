@@ -1,0 +1,87 @@
+{
+  "_id": "x252ywz0yj2wxx0y",
+  "name": "Hormagaunt",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "characteristics": {
+      "com": {
+        "value": 30,
+        "mod": 0
+      },
+      "cns": {
+        "value": 25,
+        "mod": 0
+      },
+      "dis": {
+        "value": 25,
+        "mod": 0
+      },
+      "end": {
+        "value": 35,
+        "mod": 0
+      },
+      "for": {
+        "value": 30,
+        "mod": 0
+      },
+      "tec": {
+        "value": 25,
+        "mod": 0
+      },
+      "psy": {
+        "value": 0,
+        "mod": 0
+      },
+      "mou": {
+        "value": 45,
+        "mod": 0
+      },
+      "per": {
+        "value": 40,
+        "mod": 0
+      },
+      "soc": {
+        "value": 25,
+        "mod": 0
+      },
+      "sur": {
+        "value": 25,
+        "mod": 0
+      },
+      "tir": {
+        "value": 15,
+        "mod": 0
+      },
+      "vol": {
+        "value": 25,
+        "mod": 0
+      }
+    },
+    "subtitle": "Créature de taille modeste, aux lames acérées. Il siffle, cherchant sa proie.",
+    "faction": "xenos",
+    "pv": {
+      "value": 9,
+      "max": 9,
+      "bonus": 0
+    },
+    "sf": {
+      "value": 10,
+      "max": 10,
+      "bonus": 0
+    },
+    "initiative": {
+      "base": 10,
+      "mod": 0
+    },
+    "protection": {
+      "base": 0,
+      "mod": 0
+    },
+    "fear": 0,
+    "isSwarm": false,
+    "attacksText": "<p>Lames acérées +3</p>",
+    "specialAbilities": "<p></p>",
+    "biography": "<p>Créature de taille modeste, aux lames acérées. Il siffle, cherchant sa proie.</p>"
+  }
+}

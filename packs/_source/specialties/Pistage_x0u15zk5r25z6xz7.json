@@ -1,0 +1,11 @@
+{
+  "_id": "x0u15zk5r25z6xz7",
+  "name": "Pistage",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

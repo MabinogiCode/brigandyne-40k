@@ -1,0 +1,21 @@
+{
+  "_id": "l7r2vy4pt3l1mskw",
+  "name": "Baïonnette",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": -1,
+    "reach": "C",
+    "hands": 1,
+    "range": 0,
+    "magazine": 5,
+    "ammoType": "",
+    "price": 0,
+    "qualities": [],
+    "specialText": "",
+    "source": "L1"
+  }
+}

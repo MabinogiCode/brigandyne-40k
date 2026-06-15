@@ -1,0 +1,87 @@
+{
+  "_id": "5ppvv3zk8pxx6tmw",
+  "name": "Boy ork",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "characteristics": {
+      "com": {
+        "value": 50,
+        "mod": 0
+      },
+      "cns": {
+        "value": 25,
+        "mod": 0
+      },
+      "dis": {
+        "value": 25,
+        "mod": 0
+      },
+      "end": {
+        "value": 50,
+        "mod": 0
+      },
+      "for": {
+        "value": 55,
+        "mod": 0
+      },
+      "tec": {
+        "value": 25,
+        "mod": 0
+      },
+      "psy": {
+        "value": 0,
+        "mod": 0
+      },
+      "mou": {
+        "value": 40,
+        "mod": 0
+      },
+      "per": {
+        "value": 25,
+        "mod": 0
+      },
+      "soc": {
+        "value": 25,
+        "mod": 0
+      },
+      "sur": {
+        "value": 25,
+        "mod": 0
+      },
+      "tir": {
+        "value": 35,
+        "mod": 0
+      },
+      "vol": {
+        "value": 45,
+        "mod": 0
+      }
+    },
+    "subtitle": "Créature simiesque à la peau verte, aux crocs proéminents, armés de toutes sortes d’armes artisanales.",
+    "faction": "xenos",
+    "pv": {
+      "value": 15,
+      "max": 15,
+      "bonus": 0
+    },
+    "sf": {
+      "value": 10,
+      "max": 10,
+      "bonus": 0
+    },
+    "initiative": {
+      "base": 12,
+      "mod": 0
+    },
+    "protection": {
+      "base": 2,
+      "mod": 0
+    },
+    "fear": 0,
+    "isSwarm": false,
+    "attacksText": "<p>Kikoup +5 / Fling’ +5</p>",
+    "specialAbilities": "<p>- Infatigable.</p>",
+    "biography": "<p>Créature simiesque à la peau verte, aux crocs proéminents, armés de toutes sortes d’armes artisanales.</p>"
+  }
+}

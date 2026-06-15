@@ -1,0 +1,21 @@
+{
+  "_id": "t4t3u7132x81lty1",
+  "name": "ATH",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 10,
+    "reach": "C",
+    "hands": 1,
+    "range": 0,
+    "magazine": 750,
+    "ammoType": "",
+    "price": 0,
+    "qualities": [],
+    "specialText": "",
+    "source": "L1"
+  }
+}

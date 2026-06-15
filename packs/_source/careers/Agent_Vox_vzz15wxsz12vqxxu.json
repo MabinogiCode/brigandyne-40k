@@ -1,0 +1,54 @@
+{
+  "_id": "vzz15wxsz12vqxxu",
+  "name": "Agent Vox",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "civils",
+    "quote": "“Capitaine ? J’ai une transmission urgente à votre attention.”",
+    "advances": {
+      "com": 0,
+      "cns": 3,
+      "dis": 0,
+      "end": 1,
+      "for": 1,
+      "tec": 3,
+      "psy": 0,
+      "mou": 1,
+      "per": 4,
+      "soc": 5,
+      "sur": 1,
+      "tir": 1,
+      "vol": 4
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Diplomatie",
+      "Discours",
+      "Droit et usages",
+      "Écoute",
+      "Étiquette",
+      "Informatique",
+      "Intuition",
+      "Lettres",
+      "Noblesse et politique",
+      "Renseignements",
+      "Technomaîtrise"
+    ],
+    "talents": [
+      "Calme",
+      "Chance insolente",
+      "Distraction",
+      "Doué (SOC)",
+      "Fascination",
+      "Inoffensif",
+      "Mémoire sans faille",
+      "Panache",
+      "Provocation",
+      "Suivre l’exemple"
+    ],
+    "startingEquipment": "<p>Augmentations : Vox implanté</p>",
+    "description": "<p>Les Agents Vox sont employés partout dans l’Imperium. Aussi bien dans l’armée que dans les hautes sphères, jusque dans les plus grands vaisseaux spatiaux ou bien encore dans toutes les villes importantes. Ils sont équipés d’implants capables de recevoir et d’émettre des messages à travers les stations Vox de l’Imperium et sont ainsi les premiers moyens de communication d’un système stellaire.</p>",
+    "source": "L1"
+  }
+}

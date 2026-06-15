@@ -1,0 +1,18 @@
+{
+  "_id": "q522xkxy0841qxts",
+  "name": "Bouclier télékinétique",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telekinesie",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "RU tours",
+    "range": "Courte",
+    "resistance": "-",
+    "rPlus": "Cible +1",
+    "damage": "RU+PSY",
+    "effect": "<p>La cible du pouvoir est recouvert d’un champ de force télékinésique de RU+*PSY* PV. Le pouvoir cesse de faire effet une fois le bouclier détruit.</p>",
+    "source": "L1"
+  }
+}

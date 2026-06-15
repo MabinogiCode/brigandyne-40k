@@ -1,0 +1,21 @@
+{
+  "_id": "xo5n237yzyxn0xqy",
+  "name": "Outils (Pelle, pioche…)",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": 0,
+    "reach": "C",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 15,
+    "qualities": [],
+    "specialText": "",
+    "source": "L1"
+  }
+}

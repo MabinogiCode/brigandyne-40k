@@ -1,0 +1,12 @@
+{
+  "_id": "xyyz5500kt43rxp2",
+  "name": "Réservoir M",
+  "type": "ammunition",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "ammoType": "Réservoir M",
+    "effect": "Un réservoir correspond au nombre de munitions de l’arme.",
+    "price": 50,
+    "source": "L1"
+  }
+}

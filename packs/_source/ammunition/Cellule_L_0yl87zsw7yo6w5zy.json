@@ -1,0 +1,12 @@
+{
+  "_id": "0yl87zsw7yo6w5zy",
+  "name": "Cellule L",
+  "type": "ammunition",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "ammoType": "Cellule L",
+    "effect": "Une cellule énergétique correspond au nombre de munitions de l’arme.",
+    "price": 30,
+    "source": "L1"
+  }
+}

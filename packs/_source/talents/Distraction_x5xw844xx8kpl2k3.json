@@ -1,0 +1,10 @@
+{
+  "_id": "x5xw844xx8kpl2k3",
+  "name": "Distraction",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

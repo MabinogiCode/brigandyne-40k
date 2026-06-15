@@ -1,0 +1,11 @@
+{
+  "_id": "48s6l85nk0yqq5z6",
+  "name": "Religion",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

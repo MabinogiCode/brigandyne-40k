@@ -1,0 +1,55 @@
+{
+  "_id": "3wn2yzx1x0u46x6n",
+  "name": "Scribe",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "administratum",
+    "quote": "“La connaissance fait parfois la différence entre la vie et la mort.”",
+    "advances": {
+      "com": 1,
+      "cns": 4,
+      "dis": 2,
+      "end": 2,
+      "for": 1,
+      "tec": 1,
+      "psy": 0,
+      "mou": 2,
+      "per": 2,
+      "soc": 1,
+      "sur": 3,
+      "tir": 2,
+      "vol": 3
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Arts",
+      "Astrologie",
+      "Botanique",
+      "Droits et usage",
+      "Langue étrangère",
+      "Légendes",
+      "Potions et remèdes",
+      "Lettres",
+      "Milieu naturel",
+      "Occultisme",
+      "Religion",
+      "Vigilance"
+    ],
+    "talents": [
+      "Calme",
+      "Confiance en soi",
+      "Esquive",
+      "Fascination",
+      "Guérison rapide",
+      "Insaisissable",
+      "Instinct de survie",
+      "Mémoire sans faille",
+      "Résilience",
+      "Sixième sens"
+    ],
+    "startingEquipment": "<p>Vêtements de voyage, Poignard, Armure primitive, Écritoire portative, Encrier supplémentaire</p>",
+    "description": "<p>Les Scribes sont des traqueurs de connaissance, doués en cet art byzantin qui consiste à chercher des renseignements dans toutes sortes de sources. Beaucoup craignent secrètement de ne jamais s’élever dans la hiérarchie de l’Administratum, ce qui explique certainement pourquoi ils sont prêts à prendre de si gros risques en arpentant les recoins les plus dangereux de la galaxie en quête de savoirs.</p>",
+    "source": "L1"
+  }
+}

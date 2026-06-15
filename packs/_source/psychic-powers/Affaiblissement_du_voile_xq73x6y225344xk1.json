@@ -1,0 +1,18 @@
+{
+  "_id": "xq73x6y225344xk1",
+  "name": "Affaiblissement du voile",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "RU tours",
+    "range": "Longue",
+    "resistance": "-",
+    "rPlus": "Durée x2 ou Flux d’énergie",
+    "damage": "",
+    "effect": "<p>Vous affaiblissez le voile de l’Immaterium dans la portée du pouvoir. Pendant la durée du pouvoir, tous les Psykers gagnent 1 Avantage pour lancer leurs pouvoirs. Cependant, tout échec entraîne un Phénomène psychique et tout échec majeur entraîne un Péril du Warp.</p>",
+    "source": "L1"
+  }
+}

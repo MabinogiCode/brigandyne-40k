@@ -1,0 +1,21 @@
+{
+  "_id": "6m214rxm5o574xs8",
+  "name": "Revolver",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 4,
+    "reach": "C",
+    "hands": 1,
+    "range": 30,
+    "magazine": 6,
+    "ammoType": "Balle M",
+    "price": 75,
+    "qualities": [],
+    "specialText": "",
+    "source": "L1"
+  }
+}

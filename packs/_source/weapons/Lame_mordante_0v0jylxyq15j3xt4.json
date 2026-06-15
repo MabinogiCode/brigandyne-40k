@@ -1,0 +1,26 @@
+{
+  "_id": "0v0jylxyq15j3xt4",
+  "name": "Lame mordante",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "xeno",
+    "damageBase": "for",
+    "damageMod": 2,
+    "reach": "B",
+    "hands": 2,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 0,
+    "qualities": [
+      {
+        "key": "perceArmure",
+        "value": 1
+      }
+    ],
+    "specialText": "",
+    "source": "Xéno"
+  }
+}

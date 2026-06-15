@@ -1,0 +1,34 @@
+{
+  "_id": "uq15u030jky2xw05",
+  "name": "Marteau énergétique",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": 1,
+    "reach": "C",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 325,
+    "qualities": [
+      {
+        "key": "choc",
+        "value": null
+      },
+      {
+        "key": "perceArmure",
+        "value": 2
+      },
+      {
+        "key": "destruction",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

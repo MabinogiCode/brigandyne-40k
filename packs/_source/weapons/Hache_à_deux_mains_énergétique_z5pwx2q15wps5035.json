@@ -1,0 +1,30 @@
+{
+  "_id": "z5pwx2q15wps5035",
+  "name": "Hache à deux mains énergétique",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": 2,
+    "reach": "C",
+    "hands": 2,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 475,
+    "qualities": [
+      {
+        "key": "initiative",
+        "value": -1
+      },
+      {
+        "key": "perceArmure",
+        "value": 5
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

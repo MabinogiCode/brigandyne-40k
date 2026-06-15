@@ -1,0 +1,10 @@
+{
+  "_id": "zww310xs2k02uxrk",
+  "name": "Bagarre",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

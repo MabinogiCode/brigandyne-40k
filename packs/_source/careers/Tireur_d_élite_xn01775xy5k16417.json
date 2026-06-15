@@ -1,0 +1,54 @@
+{
+  "_id": "xn01775xy5k16417",
+  "name": "Tireur d’élite",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "militarum",
+    "quote": "“Un tir bien placé peut remporter une victoire.”",
+    "advances": {
+      "com": 2,
+      "cns": 0,
+      "dis": 3,
+      "end": 2,
+      "for": 2,
+      "tec": 0,
+      "psy": 0,
+      "mou": 1,
+      "per": 4,
+      "soc": 0,
+      "sur": 2,
+      "tir": 5,
+      "vol": 3
+    },
+    "lifestyle": "pauvre",
+    "specialties": [
+      "Arme à distance (Longue portée)",
+      "Arme de tir (au choix)",
+      "Courage",
+      "Déplacement silencieux",
+      "Escalade",
+      "Réflexes",
+      "Résistance aux privations",
+      "Résistance à la chaleur/au froid",
+      "Se cacher",
+      "Vigilance"
+    ],
+    "talents": [
+      "Arme fétiche",
+      "Calme",
+      "Chance insolente",
+      "Doué (PER)",
+      "Insaisissable",
+      "Nyctalopie",
+      "Prudent",
+      "Tir précis",
+      "Tireur d’élite",
+      "Tir du chasseur",
+      "Tir ciblé"
+    ],
+    "startingEquipment": "<p>Armure Carapace légère, Fusil de précision, Munitions : Chargeurs x2 (Au choix)</p>",
+    "description": "<p>Les tireurs d’élite de l’Astra Militarum sont des soldats qui ont fait la preuve de leurs talents au tir. Ils sont alors formés pour assurer des missions d’élimination et sont déployés pour supprimer ou bien assurer la protection de cibles de grande importance.</p>",
+    "source": "L1"
+  }
+}

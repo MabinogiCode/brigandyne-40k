@@ -1,0 +1,13 @@
+{
+  "_id": "x5vpxuwx6o6wo6z0",
+  "name": "Pilotage terrestre +10",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "effect": "Conduire des véhicules terrestres, se diriger sur des terrains accidentés",
+    "description": "<p>Conduire des véhicules terrestres, se diriger sur des terrains accidentés</p>",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "t44t34x0yw871xlq",
+  "name": "Grenade Psy",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 0,
+    "reach": "C",
+    "hands": 1,
+    "range": 0,
+    "magazine": 0,
+    "ammoType": "-",
+    "price": 75,
+    "qualities": [
+      {
+        "key": "rayon",
+        "value": 5
+      },
+      {
+        "key": "ignoreArmures",
+        "value": null
+      }
+    ],
+    "specialText": "Inflige RU+*PSY* (Caractéristique de la cible)",
+    "source": "L1"
+  }
+}

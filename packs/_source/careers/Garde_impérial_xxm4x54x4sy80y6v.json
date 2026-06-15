@@ -1,0 +1,54 @@
+{
+  "_id": "xxm4x54x4sy80y6v",
+  "name": "Garde impérial",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "militarum",
+    "quote": "“La chair à canon de l’Imperium…”",
+    "advances": {
+      "com": 4,
+      "cns": 0,
+      "dis": 0,
+      "end": 3,
+      "for": 3,
+      "tec": 1,
+      "psy": 0,
+      "mou": 2,
+      "per": 3,
+      "soc": 0,
+      "sur": 2,
+      "tir": 4,
+      "vol": 2
+    },
+    "lifestyle": "pauvre",
+    "specialties": [
+      "Arme de mêlée (au choix)",
+      "Arme à distance (au choix)",
+      "Courage",
+      "Course",
+      "Pièges",
+      "Pistage",
+      "Réflexes",
+      "Résistance aux privations",
+      "Résistance à la chaleur/au froid",
+      "Vigilance"
+    ],
+    "talents": [
+      "Arme fétiche",
+      "Coups précis",
+      "Esquive",
+      "Esprit de compétition",
+      "Gardien",
+      "Inspiration",
+      "Recharge rapide",
+      "Surnombre",
+      "Travail d’équipe",
+      "Tir précis",
+      "Tir ciblé"
+    ],
+    "startingEquipment": "<p>Armure Carapace légère, Casque, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix)</p>",
+    "description": "<p>Les gardes impériaux sont le cœur de l’armée impériale. À l’instar de celle des autres soldats de l’Imperium, la vie des Gardes Impériaux est faite de discipline, de devoirs et d’honneur. Cependant c’est une vie incroyablement dure, car la vie d’un garde impérial n’est rien et lorsqu’un meurt, mille supplémentaires sont prêts à le remplacer.</p>",
+    "source": "L1"
+  }
+}

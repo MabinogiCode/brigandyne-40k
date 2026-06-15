@@ -1,0 +1,55 @@
+{
+  "_id": "2q2yv0x5pwmmqxzw",
+  "name": "Infiltrator",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "militarum",
+    "quote": "“Pas un bruit. On pose les charges et on s’tire.”",
+    "advances": {
+      "com": 3,
+      "cns": 0,
+      "dis": 4,
+      "end": 2,
+      "for": 2,
+      "tec": 1,
+      "psy": 0,
+      "mou": 2,
+      "per": 3,
+      "soc": 0,
+      "sur": 3,
+      "tir": 3,
+      "vol": 1
+    },
+    "lifestyle": "pauvre",
+    "specialties": [
+      "Arme de tir (Au choix)",
+      "Arme de mêlée (au choix)",
+      "Cartographie",
+      "Déplacement silencieux",
+      "Milieu naturel",
+      "Orientation",
+      "Piège",
+      "Pistage",
+      "Premiers soins",
+      "Se cacher",
+      "Vigilante"
+    ],
+    "talents": [
+      "Calme",
+      "Coup du prédateur",
+      "Coup en traître",
+      "Distraction",
+      "Insaisissable",
+      "Instinct de survie",
+      "Nyctalopie",
+      "Prudent",
+      "Sixième sens",
+      "Tireur d’élite",
+      "Vivacité"
+    ],
+    "startingEquipment": "<p>Armure Carapace légère, Cape de camouflage, Micro-Vox, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix)</p>",
+    "description": "<p>Les Infiltrators sont les éclaireurs de l’Astra Militarum. Ils sont envoyés accomplir toutes sortes de missions au-delà des lignes ennemies. Qu’elles consistent à saboter des lignes d’approvisionnement, des places fortes, ou bien à assassiner des cibles prioritaires.</p>",
+    "source": "L1"
+  }
+}

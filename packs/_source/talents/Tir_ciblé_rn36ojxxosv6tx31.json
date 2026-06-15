@@ -1,0 +1,10 @@
+{
+  "_id": "rn36ojxxosv6tx31",
+  "name": "Tir ciblé",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

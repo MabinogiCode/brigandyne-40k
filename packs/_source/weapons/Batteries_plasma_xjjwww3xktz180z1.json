@@ -1,0 +1,32 @@
+{
+  "_id": "xjjwww3xktz180z1",
+  "name": "Batteries plasma",
+  "type": "weapon",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "ship",
+    "damageBase": "flat",
+    "damageMod": 8,
+    "range": 300,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 10000,
+    "qualities": [
+      {
+        "key": "destruction",
+        "value": null
+      },
+      {
+        "key": "surchauffe",
+        "value": null
+      },
+      {
+        "key": "perceArmure",
+        "value": 2
+      }
+    ],
+    "specialText": "",
+    "source": "Vaisseau"
+  }
+}

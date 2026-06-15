@@ -1,0 +1,69 @@
+{
+  "id": "brigandyne-40k",
+  "title": "Warhammer 40,000 : Brigandyne",
+  "description": "Adaptation du système Brigandyne 2e édition (James Tornade) à l'univers de Warhammer 40,000. Simulateur grimdark « Chair & Sang » : d100 sous caractéristique, six degrés de réussite, Destin, Psykers du Warp et Vraie Foi. Système non officiel et non commercial.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "Florent Menot",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "module/brigandyne40k.mjs"
+  ],
+  "styles": [
+    "styles/brigandyne40k.css"
+  ],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [
+    { "name": "weapons", "label": "Armes", "path": "packs/weapons", "type": "Item", "system": "brigandyne-40k", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
+    { "name": "armor", "label": "Armures", "path": "packs/armor", "type": "Item", "system": "brigandyne-40k" },
+    { "name": "ammunition", "label": "Munitions", "path": "packs/ammunition", "type": "Item", "system": "brigandyne-40k" },
+    { "name": "species", "label": "Espèces", "path": "packs/species", "type": "Item", "system": "brigandyne-40k" },
+    { "name": "careers", "label": "Carrières", "path": "packs/careers", "type": "Item", "system": "brigandyne-40k" },
+    { "name": "specialties", "label": "Spécialités", "path": "packs/specialties", "type": "Item", "system": "brigandyne-40k" },
+    { "name": "talents", "label": "Talents", "path": "packs/talents", "type": "Item", "system": "brigandyne-40k" },
+    { "name": "psychic-powers", "label": "Pouvoirs psychiques", "path": "packs/psychic-powers", "type": "Item", "system": "brigandyne-40k" },
+    { "name": "faith-acts", "label": "Actes de Foi", "path": "packs/faith-acts", "type": "Item", "system": "brigandyne-40k" },
+    { "name": "bestiary", "label": "Bestiaire", "path": "packs/bestiary", "type": "Actor", "system": "brigandyne-40k" },
+    { "name": "vehicles", "label": "Véhicules", "path": "packs/vehicles", "type": "Actor", "system": "brigandyne-40k" }
+  ],
+  "packFolders": [
+    { "name": "Warhammer 40K : Brigandyne", "sorting": "m", "color": "#32404d", "packs": [
+      "weapons", "armor", "ammunition", "careers", "species", "specialties", "talents", "psychic-powers", "faith-acts", "bestiary", "vehicles"
+    ] }
+  ],
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "pv",
+  "secondaryTokenAttribute": "sf",
+  "background": "",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "flags": {
+    "brigandyne-40k": {
+      "note": "Système développé avec Claude Code. Brigandyne © James Tornade. Warhammer 40,000 © Games Workshop. Projet personnel non commercial."
+    }
+  }
+}

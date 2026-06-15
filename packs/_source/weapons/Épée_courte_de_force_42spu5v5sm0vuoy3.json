@@ -1,0 +1,30 @@
+{
+  "_id": "42spu5v5sm0vuoy3",
+  "name": "Épée courte de force",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": -1,
+    "reach": "E",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 125,
+    "qualities": [
+      {
+        "key": "corpsACorps",
+        "value": null
+      },
+      {
+        "key": "force",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

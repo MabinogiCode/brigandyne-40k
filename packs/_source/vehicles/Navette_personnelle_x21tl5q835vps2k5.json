@@ -1,0 +1,27 @@
+{
+  "_id": "x21tl5q835vps2k5",
+  "name": "Navette personnelle",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "volant",
+    "size": 2,
+    "maneuver": 0,
+    "speed": 3,
+    "places": 6,
+    "pilotsMin": 1,
+    "pv": {
+      "value": 20,
+      "max": 20,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 0,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 5000,
+    "specialText": "",
+    "biography": ""
+  }
+}

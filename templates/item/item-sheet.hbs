@@ -1,0 +1,222 @@
+{{!-- Feuille d'objet générique --}}
+<div class="brig-root item-root">
+<header class="sheet-header item-header">
+  <img class="profile-img" src="{{item.img}}" data-action="editImage" data-edit="img" alt="{{item.name}}" />
+  <div class="header-fields">
+    <input class="item-name" type="text" name="name" value="{{item.name}}" placeholder="Nom" />
+    <span class="item-type">{{localize (concat "TYPES.Item." type)}}</span>
+  </div>
+</header>
+
+<section class="sheet-body">
+
+  {{#if isPhysical}}
+  <div class="field-row">
+    <label>Quantité <input type="number" name="system.quantity" value="{{system.quantity}}" /></label>
+    <label>Poids <input type="number" step="0.1" name="system.weight" value="{{system.weight}}" /></label>
+    <label>Prix (TG) <input type="number" name="system.price" value="{{system.price}}" /></label>
+    <label class="check">Équipé <input type="checkbox" name="system.equipped" {{#if system.equipped}}checked{{/if}} /></label>
+  </div>
+  {{/if}}
+
+  {{#if flags.weapon}}
+  <div class="field-row">
+    <label>Type
+      <select name="system.weaponType">
+        <option value="melee" {{#if (eq system.weaponType 'melee')}}selected{{/if}}>Mêlée</option>
+        <option value="ranged" {{#if (eq system.weaponType 'ranged')}}selected{{/if}}>Distance</option>
+      </select>
+    </label>
+    <label>Base dégâts
+      <select name="system.damageBase">
+        <option value="for" {{#if (eq system.damageBase 'for')}}selected{{/if}}>FOR</option>
+        <option value="flat" {{#if (eq system.damageBase 'flat')}}selected{{/if}}>Fixe</option>
+      </select>
+    </label>
+    <label>Mod. dégâts <input type="number" name="system.damageMod" value="{{system.damageMod}}" /></label>
+    <label>Type dégâts
+      <select name="system.damageType">{{#each config.damageTypes as |d key|}}<option value="{{key}}" {{#if (eq key ../system.damageType)}}selected{{/if}}>{{localize d.label}}</option>{{/each}}</select>
+    </label>
+  </div>
+  <div class="field-row">
+    {{#if (eq system.weaponType 'melee')}}
+      <label>Allonge <input type="text" name="system.reach" value="{{system.reach}}" /></label>
+      <label>Mains <input type="number" name="system.hands" value="{{system.hands}}" min="1" max="2" /></label>
+    {{else}}
+      <label>Portée (m) <input type="number" name="system.range" value="{{system.range}}" /></label>
+      <label>Chargeur <input type="number" name="system.magazine" value="{{system.magazine}}" /></label>
+      <label>Munitions <input type="number" name="system.currentAmmo" value="{{system.currentAmmo}}" /></label>
+      <label>Type munition <input type="text" name="system.ammoType" value="{{system.ammoType}}" /></label>
+    {{/if}}
+  </div>
+  {{> qualities-editor}}
+  {{/if}}
+
+  {{#if flags.armor}}
+  <div class="field-row">
+    <label>Protection <input type="number" name="system.protection" value="{{system.protection}}" /></label>
+    <label>Couverture
+      <select name="system.coverage">{{#each config.armorCoverage as |c key|}}<option value="{{key}}" {{#if (eq key ../system.coverage)}}selected{{/if}}>{{localize c}}</option>{{/each}}</select>
+    </label>
+    <label>Init <input type="number" name="system.initiativeMod" value="{{system.initiativeMod}}" /></label>
+    <label>MOU % <input type="number" name="system.mouMod" value="{{system.mouMod}}" /></label>
+  </div>
+  {{> qualities-editor}}
+  {{/if}}
+
+  {{#if flags.ammunition}}
+  <div class="field-row">
+    <label>Type <input type="text" name="system.ammoType" value="{{system.ammoType}}" /></label>
+    <label class="grow">Effet <input type="text" name="system.effect" value="{{system.effect}}" /></label>
+  </div>
+  {{/if}}
+
+  {{#if flags.equipment}}
+  <div class="field-row">
+    <label>Catégorie <input type="text" name="system.category" value="{{system.category}}" /></label>
+    <label class="grow">Effet <input type="text" name="system.effect" value="{{system.effect}}" /></label>
+  </div>
+  {{/if}}
+
+  {{#if flags.augmentation}}
+  <div class="field-row">
+    <label>Type
+      <select name="system.augType">
+        <option value="prothese" {{#if (eq system.augType 'prothese')}}selected{{/if}}>Prothèse</option>
+        <option value="organe" {{#if (eq system.augType 'organe')}}selected{{/if}}>Organe bionique</option>
+        <option value="systeme" {{#if (eq system.augType 'systeme')}}selected{{/if}}>Système implanté</option>
+      </select>
+    </label>
+    <label>Emplacement <input type="text" name="system.location" value="{{system.location}}" /></label>
+  </div>
+  {{/if}}
+
+  {{#if flags.specialty}}
+  <div class="field-row">
+    <label>Type
+      <select name="system.specialtyType">{{#each config.specialtyTypes as |s key|}}<option value="{{key}}" {{#if (eq key ../system.specialtyType)}}selected{{/if}}>{{localize s}}</option>{{/each}}</select>
+    </label>
+    <label>Caractéristique
+      <select name="system.characteristic"><option value=""></option>{{#each charChoices as |c key|}}<option value="{{key}}" {{#if (eq key ../system.characteristic)}}selected{{/if}}>{{localize c.abbrev}}</option>{{/each}}</select>
+    </label>
+    <label>Bonus <input type="number" name="system.bonus" value="{{system.bonus}}" step="5" /></label>
+  </div>
+  {{/if}}
+
+  {{#if flags.talent}}
+  <div class="field-row">
+    <label>Usage
+      <select name="system.usage">
+        <option value="permanent" {{#if (eq system.usage 'permanent')}}selected{{/if}}>Permanent</option>
+        <option value="scene" {{#if (eq system.usage 'scene')}}selected{{/if}}>1×/scène</option>
+        <option value="jour" {{#if (eq system.usage 'jour')}}selected{{/if}}>1×/jour</option>
+        <option value="combat" {{#if (eq system.usage 'combat')}}selected{{/if}}>Combat</option>
+        <option value="autre" {{#if (eq system.usage 'autre')}}selected{{/if}}>Autre</option>
+      </select>
+    </label>
+    <label>Caractéristique liée
+      <select name="system.characteristic"><option value=""></option>{{#each charChoices as |c key|}}<option value="{{key}}" {{#if (eq key ../system.characteristic)}}selected{{/if}}>{{localize c.abbrev}}</option>{{/each}}</select>
+    </label>
+  </div>
+  {{/if}}
+
+  {{#if flags.trait}}
+  <div class="field-row">
+    <label>Type
+      <select name="system.traitType">{{#each config.traitTypes as |t key|}}<option value="{{key}}" {{#if (eq key ../system.traitType)}}selected{{/if}}>{{localize t}}</option>{{/each}}</select>
+    </label>
+    <label>Rang <input type="number" name="system.rating" value="{{system.rating}}" /></label>
+    <label>Dieu (Vice) <input type="text" name="system.god" value="{{system.god}}" /></label>
+  </div>
+  {{/if}}
+
+  {{#if flags.mutation}}
+  <div class="field-row">
+    <label>Type
+      <select name="system.mutationType">
+        <option value="grace" {{#if (eq system.mutationType 'grace')}}selected{{/if}}>Grâce</option>
+        <option value="fardeau" {{#if (eq system.mutationType 'fardeau')}}selected{{/if}}>Fardeau</option>
+      </select>
+    </label>
+  </div>
+  {{/if}}
+
+  {{#if flags.criticalInjury}}
+  <div class="field-row">
+    <label>Localisation <input type="text" name="system.location" value="{{system.location}}" /></label>
+    <label>Gravité <input type="number" name="system.severity" value="{{system.severity}}" /></label>
+    <label>Condition <input type="text" name="system.condition" value="{{system.condition}}" /></label>
+  </div>
+  {{/if}}
+
+  {{#if flags.psychicPower}}
+  <div class="field-row">
+    <label>Discipline
+      <select name="system.discipline">{{#each config.psychicDisciplines as |d key|}}<option value="{{key}}" {{#if (eq key ../system.discipline)}}selected{{/if}}>{{localize d}}</option>{{/each}}</select>
+    </label>
+    <label class="check">Mineur <input type="checkbox" name="system.isMinor" {{#if system.isMinor}}checked{{/if}} /></label>
+    <label>Difficulté <input type="number" name="system.difficulty" value="{{system.difficulty}}" step="10" /></label>
+  </div>
+  <div class="field-row">
+    <label>Durée <input type="text" name="system.duration" value="{{system.duration}}" /></label>
+    <label>Portée <input type="text" name="system.range" value="{{system.range}}" /></label>
+    <label>Résistance <input type="text" name="system.resistance" value="{{system.resistance}}" /></label>
+  </div>
+  <div class="field-row">
+    <label class="grow">R+ <input type="text" name="system.rPlus" value="{{system.rPlus}}" /></label>
+    <label>Dégâts <input type="text" name="system.damage" value="{{system.damage}}" placeholder="RU+PSY" /></label>
+  </div>
+  {{/if}}
+
+  {{#if flags.faithAct}}
+  <div class="field-row">
+    <label class="check">Miracle <input type="checkbox" name="system.isMiracle" {{#if system.isMiracle}}checked{{/if}} /></label>
+    <label>Difficulté <input type="number" name="system.difficulty" value="{{system.difficulty}}" step="10" /></label>
+    <label>Durée <input type="text" name="system.duration" value="{{system.duration}}" /></label>
+    <label>Portée <input type="text" name="system.range" value="{{system.range}}" /></label>
+  </div>
+  <div class="field-row">
+    <label>Résistance <input type="text" name="system.resistance" value="{{system.resistance}}" /></label>
+    <label class="grow">R+ <input type="text" name="system.rPlus" value="{{system.rPlus}}" /></label>
+    <label>Dégâts <input type="text" name="system.damage" value="{{system.damage}}" /></label>
+  </div>
+  {{/if}}
+
+  {{#if flags.species}}
+  <div class="field-row">
+    <label>Destin <input type="number" name="system.destin" value="{{system.destin}}" /></label>
+    <label class="grow">Espérance de vie <input type="text" name="system.lifespan" value="{{system.lifespan}}" /></label>
+    <label class="check">Sans PSY <input type="checkbox" name="system.noPsy" {{#if system.noPsy}}checked{{/if}} /></label>
+  </div>
+  <p class="hint">Caractéristiques de départ</p>
+  <div class="char-mini-grid">
+    {{#each charChoices as |c key|}}<label>{{localize c.abbr}}<input type="number" name="system.base.{{key}}" value="{{lookup ../system.base key}}" /></label>{{/each}}
+  </div>
+  {{/if}}
+
+  {{#if flags.career}}
+  <div class="field-row">
+    <label>Faction
+      <select name="system.faction">{{#each config.factions as |f key|}}<option value="{{key}}" {{#if (eq key ../system.faction)}}selected{{/if}}>{{localize f}}</option>{{/each}}</select>
+    </label>
+    <label>Niveau de vie
+      <select name="system.lifestyle">{{#each config.lifestyles as |l key|}}<option value="{{key}}" {{#if (eq key ../system.lifestyle)}}selected{{/if}}>{{localize l.label}}</option>{{/each}}</select>
+    </label>
+  </div>
+  <label class="field-block">Citation <input type="text" name="system.quote" value="{{system.quote}}" /></label>
+  <p class="hint">Avancées (0–6 par caractéristique)</p>
+  <div class="char-mini-grid">
+    {{#each charChoices as |c key|}}<label>{{localize c.abbr}}<input type="number" name="system.advances.{{key}}" value="{{lookup ../system.advances key}}" min="0" max="6" /></label>{{/each}}
+  </div>
+  {{/if}}
+
+  <div class="item-source">
+    <label>Source <input type="text" name="system.source" value="{{system.source}}" placeholder="Réf. / page" /></label>
+  </div>
+
+  <div class="item-description">
+    <label>Description</label>
+    <prose-mirror name="system.description" value="{{system.description}}">{{{enrichedDescription}}}</prose-mirror>
+  </div>
+</section>
+</div>

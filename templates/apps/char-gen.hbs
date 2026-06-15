@@ -1,0 +1,38 @@
+{{!-- Assistant de création de personnage --}}
+<div class="char-gen-body">
+  {{#if noPacks}}
+    <p class="warn">Les compendiums (Espèces, Carrières) ne sont pas disponibles.</p>
+  {{else}}
+    <p class="intro">Choisis une espèce et une carrière pour <strong>{{actorName}}</strong>. Les caractéristiques de base, le Destin, le niveau de vie, les spécialités et talents de la carrière seront appliqués.</p>
+
+    <div class="form-grid two">
+      <div class="form-group">
+        <label><i class="fa-solid fa-dna"></i> Espèce</label>
+        <select name="species" data-action="preview">
+          <option value="">—</option>
+          {{#each species}}<option value="{{id}}" {{#if (eq id ../selSpecies)}}selected{{/if}}>{{name}}</option>{{/each}}
+        </select>
+      </div>
+      <div class="form-group">
+        <label><i class="fa-solid fa-briefcase"></i> Carrière</label>
+        <select name="career" data-action="preview">
+          <option value="">—</option>
+          {{#each careers}}<option value="{{id}}" {{#if (eq id ../selCareer)}}selected{{/if}}>{{name}}</option>{{/each}}
+        </select>
+      </div>
+    </div>
+
+    {{#if preview}}
+      <div class="preview">
+        <h4>{{preview.speciesName}} — Destin {{preview.destin}}</h4>
+        <div class="char-mini-grid">
+          {{#each preview.chars}}<div class="mini"><span class="k">{{localize abbr}}</span><span class="v">{{value}}</span></div>{{/each}}
+        </div>
+      </div>
+    {{/if}}
+
+    <footer class="cg-buttons">
+      <button type="submit"><i class="fa-solid fa-check"></i> Appliquer</button>
+    </footer>
+  {{/if}}
+</div>

@@ -1,0 +1,28 @@
+{
+  "_id": "uvuy0wxxu2ljxx2z",
+  "name": "Tourelle Bolter",
+  "type": "weapon",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "vehicle",
+    "damageBase": "flat",
+    "damageMod": 4,
+    "range": 30,
+    "magazine": 4,
+    "ammoType": "",
+    "price": 5000,
+    "qualities": [
+      {
+        "key": "automatique",
+        "value": null
+      },
+      {
+        "key": "chargement",
+        "value": 2
+      }
+    ],
+    "specialText": "",
+    "source": "Véhicule"
+  }
+}

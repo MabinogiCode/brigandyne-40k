@@ -1,0 +1,17 @@
+{
+  "_id": "u64vw1z0xunvm23r",
+  "name": "Armure Carapace",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 4,
+    "coverage": "complete",
+    "initiativeMod": -1,
+    "mouMod": 0,
+    "longToDon": true,
+    "qualities": [],
+    "specialText": "Longue à mettre",
+    "price": 200,
+    "source": "L1"
+  }
+}

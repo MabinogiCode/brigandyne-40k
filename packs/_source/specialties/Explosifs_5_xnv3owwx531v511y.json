@@ -1,0 +1,13 @@
+{
+  "_id": "xnv3owwx531v511y",
+  "name": "Explosifs +5",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "martiale",
+    "bonus": 5,
+    "effect": "Utiliser des grenades, manipuler des explosifs, désamorcer des explosifs.",
+    "description": "<p>Utiliser des grenades, manipuler des explosifs, désamorcer des explosifs.</p>",
+    "source": "L1"
+  }
+}

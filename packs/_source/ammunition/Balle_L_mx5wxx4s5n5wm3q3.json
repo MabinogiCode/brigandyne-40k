@@ -1,0 +1,12 @@
+{
+  "_id": "mx5wxx4s5n5wm3q3",
+  "name": "Balle L",
+  "type": "ammunition",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "ammoType": "Balle L",
+    "effect": "- Balle tueuse : Perce-Armure (2), Prix : x2.",
+    "price": 10,
+    "source": "L1"
+  }
+}

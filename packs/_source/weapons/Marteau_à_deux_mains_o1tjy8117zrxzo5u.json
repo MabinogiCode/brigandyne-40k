@@ -1,0 +1,34 @@
+{
+  "_id": "o1tjy8117zrxzo5u",
+  "name": "Marteau à deux mains",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": 1,
+    "reach": "B",
+    "hands": 2,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 150,
+    "qualities": [
+      {
+        "key": "choc",
+        "value": null
+      },
+      {
+        "key": "destruction",
+        "value": null
+      },
+      {
+        "key": "initiative",
+        "value": -1
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

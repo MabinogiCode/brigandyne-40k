@@ -1,0 +1,18 @@
+{
+  "_id": "x11u55zx32ynmx05",
+  "name": "Prédiction",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "divination",
+    "isMinor": false,
+    "difficulty": -20,
+    "duration": "Instantanée",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "1 Avantage (Au choix)",
+    "damage": "",
+    "effect": "<p>Ce puissant pouvoir permet de rejouer entièrement une scène. En effet, toute la scène qui vient d’être jouée n’était qu’une vision d’une des possibilités du futur, une illusion. Quand le joueur décide de lancer le sort, c’est que son personnage a déjà pris cette décision bien avant, en amont. Ainsi, la scène qui vient d’être jouée (un combat, une course-poursuite, une discussion…) n’a jamais existé et il faut la refaire depuis le départ. On ne peut jeter ce sort plus d’une fois par mois sans subir le courroux du Destin (et perdre 1 point de Destin définitif).</p>",
+    "source": "L1"
+  }
+}

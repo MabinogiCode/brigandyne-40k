@@ -1,0 +1,11 @@
+{
+  "_id": "jjzt7ulz37w4yq2o",
+  "name": "Premiers soins",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

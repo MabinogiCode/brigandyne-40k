@@ -1,0 +1,10 @@
+{
+  "_id": "x01q00xvy76y5xx3",
+  "name": "Magie destructrice",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

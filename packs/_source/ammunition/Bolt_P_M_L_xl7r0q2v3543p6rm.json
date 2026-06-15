@@ -1,0 +1,12 @@
+{
+  "_id": "xl7r0q2v3543p6rm",
+  "name": "Bolt P/M/L",
+  "type": "ammunition",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "ammoType": "Bolt P/M/L",
+    "effect": "",
+    "price": 5,
+    "source": "L1"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "qpwwz7x7zqkxlxq7",
+  "name": "Blindé léger",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "terrestre",
+    "size": 3,
+    "maneuver": 0,
+    "speed": -1,
+    "places": 5,
+    "pilotsMin": 1,
+    "pv": {
+      "value": 35,
+      "max": 35,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 4,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 7000,
+    "specialText": "",
+    "biography": ""
+  }
+}

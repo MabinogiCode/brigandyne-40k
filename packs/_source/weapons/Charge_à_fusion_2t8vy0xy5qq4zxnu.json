@@ -1,0 +1,26 @@
+{
+  "_id": "2t8vy0xy5qq4zxnu",
+  "name": "Charge à fusion",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 10,
+    "reach": "C",
+    "hands": 1,
+    "range": 0,
+    "magazine": 0,
+    "ammoType": "-",
+    "price": 100,
+    "qualities": [
+      {
+        "key": "rayon",
+        "value": 10
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

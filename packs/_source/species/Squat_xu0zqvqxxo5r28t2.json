@@ -1,0 +1,46 @@
+{
+  "_id": "xu0zqvqxxo5r28t2",
+  "name": "Squat",
+  "type": "species",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "base": {
+      "com": 30,
+      "cns": 25,
+      "dis": 25,
+      "end": 30,
+      "for": 25,
+      "tec": 30,
+      "psy": 0,
+      "mou": 20,
+      "per": 20,
+      "soc": 20,
+      "sur": 20,
+      "tir": 20,
+      "vol": 30
+    },
+    "limits": {
+      "com": null,
+      "cns": null,
+      "dis": null,
+      "end": null,
+      "for": null,
+      "tec": null,
+      "psy": null,
+      "mou": 60,
+      "per": null,
+      "soc": null,
+      "sur": null,
+      "tir": null,
+      "vol": null
+    },
+    "destin": 2,
+    "special": [
+      "nyctalopie",
+      "sfPlus1",
+      "pvPlus1"
+    ],
+    "noPsy": false,
+    "source": "L1"
+  }
+}

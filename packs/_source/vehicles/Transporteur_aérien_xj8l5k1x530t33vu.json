@@ -1,0 +1,27 @@
+{
+  "_id": "xj8l5k1x530t33vu",
+  "name": "Transporteur aérien",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "volant",
+    "size": 3,
+    "maneuver": 0,
+    "speed": 2,
+    "places": 12,
+    "pilotsMin": 1,
+    "pv": {
+      "value": 35,
+      "max": 35,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 0,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 7000,
+    "specialText": "",
+    "biography": ""
+  }
+}

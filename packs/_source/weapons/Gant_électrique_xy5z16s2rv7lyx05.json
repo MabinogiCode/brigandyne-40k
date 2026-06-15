@@ -1,0 +1,34 @@
+{
+  "_id": "xy5z16s2rv7lyx05",
+  "name": "Gant électrique",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 2,
+    "reach": "F",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 25,
+    "qualities": [
+      {
+        "key": "saisie",
+        "value": null
+      },
+      {
+        "key": "electrique",
+        "value": null
+      },
+      {
+        "key": "degatsTemporaires",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

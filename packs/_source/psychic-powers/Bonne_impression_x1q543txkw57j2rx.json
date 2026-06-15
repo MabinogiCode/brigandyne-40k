@@ -1,0 +1,13 @@
+{
+  "_id": "x1q543txkw57j2rx",
+  "name": "Bonne impression",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telepathie",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Vous insufflez une impression de vous positive dans l’esprit de la cible. Vous gagnez 1 Avantage en SOC contre la cible pendant *PSY* tours. Désagrément : Vous donnez une envie irrésistible à une cible (figurant ou second rôle) de bâiller, tousser, éternuer ou se gratter. Ce désagrément ne dure qu’une seconde, mais peut s’avérer précieux au bon moment. La cible agacée subit 1 Désavantage pour ce tour. Murmures Warp : Vous faite retentir d’étranges murmures ou sons jusqu’à *PSY* mètres de vous. Télépathie mineure : Vous pouvez communiquer dans l’esprit d’une personne mais vous êtes limité à une phrase courte. La personne peut vous répondre de la même manière. Voix désincarnée : Vous « projetez » votre voix à une dizaine de pas, et vous pouvez donc vous exprimer même si vous êtes bâillonné. Ce tour dure *PSY* minutes. Lecture des émotions : Vous pouvez connaître l’état d’esprit d’une personne. Si elle est en colère, triste, joyeuse, etc.</p>",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "_id": "v52l24xpul05ux3k",
+  "name": "Canon à plasma",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 10,
+    "reach": "C",
+    "hands": 1,
+    "range": 100,
+    "magazine": 6,
+    "ammoType": "Flasque L",
+    "price": 3500,
+    "qualities": [
+      {
+        "key": "destruction",
+        "value": null
+      },
+      {
+        "key": "lourde",
+        "value": null
+      },
+      {
+        "key": "surchauffe",
+        "value": null
+      },
+      {
+        "key": "ignoreBoucliers",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

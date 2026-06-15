@@ -1,0 +1,17 @@
+{
+  "_id": "4y5yk3v1sr0w5w35",
+  "name": "Armure d’adamantium",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 5,
+    "coverage": "complete",
+    "initiativeMod": -2,
+    "mouMod": -10,
+    "longToDon": true,
+    "qualities": [],
+    "specialText": "Longue à mettre",
+    "price": 500,
+    "source": "L1"
+  }
+}

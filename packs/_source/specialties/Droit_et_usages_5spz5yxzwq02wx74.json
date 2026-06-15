@@ -1,0 +1,11 @@
+{
+  "_id": "5spz5yxzwq02wx74",
+  "name": "Droit et usages",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

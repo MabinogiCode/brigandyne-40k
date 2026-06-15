@@ -1,0 +1,11 @@
+{
+  "_id": "xtptzylx3505vzvl",
+  "name": "Dissimulation d’objet",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

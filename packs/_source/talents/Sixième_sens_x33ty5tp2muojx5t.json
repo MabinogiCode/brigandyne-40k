@@ -1,0 +1,10 @@
+{
+  "_id": "x33ty5tp2muojx5t",
+  "name": "Sixième sens",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

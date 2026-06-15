@@ -1,0 +1,10 @@
+{
+  "_id": "xx0wk3tjr15qnxl5",
+  "name": "Maître d’armes",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

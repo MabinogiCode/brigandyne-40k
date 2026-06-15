@@ -1,0 +1,30 @@
+{
+  "_id": "40sxw0xq5v455x4r",
+  "name": "Multi-fuseur",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 12,
+    "reach": "C",
+    "hands": 1,
+    "range": 30,
+    "magazine": 4,
+    "ammoType": "Charge à fusion",
+    "price": 5000,
+    "qualities": [
+      {
+        "key": "destruction",
+        "value": null
+      },
+      {
+        "key": "perceArmure",
+        "value": 4
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

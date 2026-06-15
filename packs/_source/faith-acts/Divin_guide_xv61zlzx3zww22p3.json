@@ -1,0 +1,17 @@
+{
+  "_id": "xv61zlzx3zww22p3",
+  "name": "Divin guide",
+  "type": "faithAct",
+  "img": "icons/svg/angel.svg",
+  "system": {
+    "isMiracle": false,
+    "difficulty": -10,
+    "duration": "RU heures",
+    "range": "Moyenne",
+    "resistance": "-",
+    "rPlus": "Cible +1 ou Durée x2",
+    "damage": "",
+    "effect": "<p>L’Empereur-Dieu guide les pas de la cible de l’Acte de Foi. Elle reçoit un bonus de +20% à l’une de ses compétences (Sauf COM, PSY et TIR).</p>",
+    "source": "L1"
+  }
+}

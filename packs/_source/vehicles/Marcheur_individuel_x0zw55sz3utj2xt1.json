@@ -1,0 +1,27 @@
+{
+  "_id": "x0zw55sz3utj2xt1",
+  "name": "Marcheur individuel",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "terrestre",
+    "size": 1,
+    "maneuver": 10,
+    "speed": -2,
+    "places": 1,
+    "pilotsMin": 1,
+    "pv": {
+      "value": 15,
+      "max": 15,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 2,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 2000,
+    "specialText": "",
+    "biography": ""
+  }
+}

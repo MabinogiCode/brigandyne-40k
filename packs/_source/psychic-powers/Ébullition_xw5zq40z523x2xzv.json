@@ -1,0 +1,18 @@
+{
+  "_id": "xw5zq40z523x2xzv",
+  "name": "Ébullition",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "biomancie",
+    "isMinor": false,
+    "difficulty": 10,
+    "duration": "RU tours",
+    "range": "Courtes",
+    "resistance": "-",
+    "rPlus": "Cible +1 ou Durée x2",
+    "damage": "",
+    "effect": "<p>Vous manipulez la pression artérielle et les palpitations des muscles de votre cible qui devient Essoufflée et Affaiblie pendant la durée du pouvoir.</p>",
+    "source": "L1"
+  }
+}

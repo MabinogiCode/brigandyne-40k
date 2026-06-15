@@ -1,0 +1,26 @@
+{
+  "_id": "4zu0jzx71y3kxxzz",
+  "name": "Fling’",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "xeno",
+    "damageBase": "flat",
+    "damageMod": 5,
+    "reach": "C",
+    "hands": 1,
+    "range": 30,
+    "magazine": 20,
+    "ammoType": "Balle L",
+    "price": 0,
+    "qualities": [
+      {
+        "key": "automatique",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Xéno"
+  }
+}

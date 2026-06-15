@@ -1,0 +1,18 @@
+{
+  "_id": "312mxyxjluy514z8",
+  "name": "Détection des présences",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": false,
+    "difficulty": 20,
+    "duration": "Instantanée",
+    "range": "Longue",
+    "resistance": "-",
+    "rPlus": "Flux d’énergie",
+    "damage": "",
+    "effect": "<p>Vous déployez votre perception mentale pour obtenir un vague aperçu des créatures vivantes dans la portée du pouvoir.</p>",
+    "source": "L1"
+  }
+}

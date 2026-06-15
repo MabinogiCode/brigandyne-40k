@@ -1,0 +1,11 @@
+{
+  "_id": "x1x4s6yx41tkto63",
+  "name": "Intuition",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

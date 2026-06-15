@@ -1,0 +1,21 @@
+{
+  "_id": "x3tj64xxzz5p0zz4",
+  "name": "Outils légers (Clé à molette, tournevis, marteau…)",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": -1,
+    "reach": "D",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 5,
+    "qualities": [],
+    "specialText": "",
+    "source": "L1"
+  }
+}

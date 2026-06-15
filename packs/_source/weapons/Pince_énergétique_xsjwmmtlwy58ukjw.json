@@ -1,0 +1,34 @@
+{
+  "_id": "xsjwmmtlwy58ukjw",
+  "name": "Pince énergétique",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "xeno",
+    "damageBase": "for",
+    "damageMod": 2,
+    "reach": "E",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 0,
+    "qualities": [
+      {
+        "key": "perceArmure",
+        "value": 3
+      },
+      {
+        "key": "destruction",
+        "value": null
+      },
+      {
+        "key": "initiative",
+        "value": -1
+      }
+    ],
+    "specialText": "",
+    "source": "Xéno"
+  }
+}

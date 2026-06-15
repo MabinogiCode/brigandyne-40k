@@ -1,0 +1,10 @@
+{
+  "_id": "ux5yyoxy47ms2xsp",
+  "name": "Second souffle",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

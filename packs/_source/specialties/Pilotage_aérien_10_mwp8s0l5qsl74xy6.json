@@ -1,0 +1,13 @@
+{
+  "_id": "mwp8s0l5qsl74xy6",
+  "name": "Pilotage aérien +10",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "effect": "Piloter des véhicules aériens, effectuer des manoeuvres aériennes",
+    "description": "<p>Piloter des véhicules aériens, effectuer des manoeuvres aériennes</p>",
+    "source": "L1"
+  }
+}

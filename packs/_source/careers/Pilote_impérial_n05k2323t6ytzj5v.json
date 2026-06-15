@@ -1,0 +1,55 @@
+{
+  "_id": "n05k2323t6ytzj5v",
+  "name": "Pilote impérial",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "militarum",
+    "quote": "“Faites le plein ! Chargez les obus !",
+    "advances": {
+      "com": 2,
+      "cns": 0,
+      "dis": 0,
+      "end": 2,
+      "for": 2,
+      "tec": 4,
+      "psy": 0,
+      "mou": 2,
+      "per": 3,
+      "soc": 0,
+      "sur": 2,
+      "tir": 4,
+      "vol": 3
+    },
+    "lifestyle": "pauvre",
+    "specialties": [
+      "Arme de tir (au choix)",
+      "Artillerie",
+      "Pilotage (au choix)",
+      "Cartographie",
+      "Commandement",
+      "Ingénierie",
+      "Navigation",
+      "Repérage",
+      "Résistance aux privations",
+      "Stratégie",
+      "Vigilance"
+    ],
+    "talents": [
+      "Calme",
+      "Chance insolante",
+      "Doué (TEC)",
+      "Esprit de compétition",
+      "Prudent",
+      "Sixième sens",
+      "Sommeil léger",
+      "Travail d’équipe",
+      "Tir précis",
+      "Tireur d’élite",
+      "Tir ciblé"
+    ],
+    "startingEquipment": "<p>Armure Carapace légère, Outils de mécanique, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix)</p>",
+    "description": "<p>Chars d’assaut, aéronefs, marcheurs tout-terrains… Nombreux sont les véhicules déployés par l’Astra Militarum pour écraser les ennemis de l’Imperium. Les pilotes sont là pour les diriger et les manoeuvrer, seuls ou en équipe, afin de les mener à la victoire.</p>",
+    "source": "L1"
+  }
+}

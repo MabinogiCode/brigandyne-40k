@@ -1,0 +1,27 @@
+{
+  "_id": "x7w3yyzxr68140oy",
+  "name": "Véhicule individuel",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "terrestre",
+    "size": 1,
+    "maneuver": 0,
+    "speed": 3,
+    "places": 2,
+    "pilotsMin": 1,
+    "pv": {
+      "value": 15,
+      "max": 15,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 0,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 1500,
+    "specialText": "",
+    "biography": ""
+  }
+}

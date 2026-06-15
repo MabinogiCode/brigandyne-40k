@@ -1,0 +1,26 @@
+{
+  "_id": "xtz70yq4vwxmwxvy",
+  "name": "Mitraillette",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 3,
+    "reach": "C",
+    "hands": 1,
+    "range": 20,
+    "magazine": 24,
+    "ammoType": "Balle P",
+    "price": 75,
+    "qualities": [
+      {
+        "key": "automatique",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

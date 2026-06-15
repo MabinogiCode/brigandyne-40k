@@ -1,0 +1,28 @@
+{
+  "_id": "x65tyxwxxyyk2n8y",
+  "name": "Canon Nova",
+  "type": "weapon",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "ship",
+    "damageBase": "flat",
+    "damageMod": 12,
+    "range": 1000,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 25000,
+    "qualities": [
+      {
+        "key": "perceArmure",
+        "value": 2
+      },
+      {
+        "key": "destruction",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Vaisseau"
+  }
+}

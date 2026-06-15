@@ -1,0 +1,11 @@
+{
+  "_id": "jz34xtxq5x0nrx2s",
+  "name": "Vol à la tir",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

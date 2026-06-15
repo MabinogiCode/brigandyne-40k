@@ -1,0 +1,30 @@
+{
+  "_id": "0t1ywm3u1tlkzy04",
+  "name": "Gros Kikoup’",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "xeno",
+    "damageBase": "for",
+    "damageMod": 2,
+    "reach": "B",
+    "hands": 2,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 0,
+    "qualities": [
+      {
+        "key": "destruction",
+        "value": null
+      },
+      {
+        "key": "initiative",
+        "value": -2
+      }
+    ],
+    "specialText": "MOU -5%",
+    "source": "Xéno"
+  }
+}

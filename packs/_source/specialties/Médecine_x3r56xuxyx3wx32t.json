@@ -1,0 +1,11 @@
+{
+  "_id": "x3r56xuxyx3wx32t",
+  "name": "Médecine",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

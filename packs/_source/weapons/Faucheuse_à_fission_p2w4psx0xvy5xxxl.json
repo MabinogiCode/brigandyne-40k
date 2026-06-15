@@ -1,0 +1,34 @@
+{
+  "_id": "p2w4psx0xvy5xxxl",
+  "name": "Faucheuse à fission",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "xeno",
+    "damageBase": "flat",
+    "damageMod": 3,
+    "reach": "C",
+    "hands": 1,
+    "range": 25,
+    "magazine": 0,
+    "ammoType": "-",
+    "price": 0,
+    "qualities": [
+      {
+        "key": "perceArmure",
+        "value": 4
+      },
+      {
+        "key": "destruction",
+        "value": null
+      },
+      {
+        "key": "semiAutomatique",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Xéno"
+  }
+}

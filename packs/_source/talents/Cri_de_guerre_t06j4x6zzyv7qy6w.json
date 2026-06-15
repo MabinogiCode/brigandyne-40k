@@ -1,0 +1,10 @@
+{
+  "_id": "t06j4x6zzyv7qy6w",
+  "name": "Cri de guerre",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

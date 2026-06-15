@@ -1,0 +1,26 @@
+{
+  "_id": "065n4x4154rw11w3",
+  "name": "Pistolet à aiguilles",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 2,
+    "reach": "C",
+    "hands": 1,
+    "range": 20,
+    "magazine": 8,
+    "ammoType": "Aiguilles P",
+    "price": 100,
+    "qualities": [
+      {
+        "key": "poison",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

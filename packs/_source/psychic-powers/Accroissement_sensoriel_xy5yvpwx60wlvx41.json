@@ -1,0 +1,18 @@
+{
+  "_id": "xy5yvpwx60wlvx41",
+  "name": "Accroissement sensoriel",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "biomancie",
+    "isMinor": false,
+    "difficulty": 10,
+    "duration": "RU heures",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "Flux d’énergie",
+    "damage": "",
+    "effect": "<p>Vous développez l’un des sens de votre cible de façon extraordinaire. Elle gagne un bonus de +20 en PER avec ce sens. Son regard peut voir à des distances très éloignées, percer les ténèbres, son ouïe ou son odorat peuvent devenir aussi efficaces que des capteurs biomécaniques.</p>",
+    "source": "L1"
+  }
+}

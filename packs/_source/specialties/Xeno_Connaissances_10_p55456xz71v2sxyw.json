@@ -1,0 +1,13 @@
+{
+  "_id": "p55456xz71v2sxyw",
+  "name": "Xeno-Connaissances +10",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "effect": "Connaissances des espèces xeno, de leurs cultures, de leurs technologies.",
+    "description": "<p>Connaissances des espèces xeno, de leurs cultures, de leurs technologies.</p>",
+    "source": "L1"
+  }
+}

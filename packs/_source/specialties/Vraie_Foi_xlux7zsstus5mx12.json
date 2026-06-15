@@ -1,0 +1,11 @@
+{
+  "_id": "xlux7zsstus5mx12",
+  "name": "Vraie Foi",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

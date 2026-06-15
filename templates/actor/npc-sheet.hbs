@@ -1,0 +1,73 @@
+{{!-- Feuille PNJ / créature --}}
+<div class="brig-root npc-root">
+<header class="sheet-header npc-header">
+  <img class="profile-img" src="{{actor.img}}" data-action="editImage" data-edit="img" alt="{{actor.name}}" />
+  <div class="header-fields">
+    <input class="actor-name" type="text" name="name" value="{{actor.name}}" placeholder="Nom" />
+    <input type="text" name="system.subtitle" value="{{system.subtitle}}" placeholder="Description courte" />
+    <div class="header-line">
+      <select name="system.faction">
+        {{#each config.factions as |label key|}}<option value="{{key}}" {{#if (eq key ../system.faction)}}selected{{/if}}>{{localize label}}</option>{{/each}}
+      </select>
+      <select name="system.role">
+        {{#each config.roles as |label key|}}<option value="{{key}}" {{#if (eq key ../system.role)}}selected{{/if}}>{{localize label}}</option>{{/each}}
+      </select>
+      <label class="inline">PEUR <input type="number" name="system.fear" value="{{system.fear}}" /></label>
+    </div>
+    <div class="header-resources">
+      <div class="resource pv"><label>PV</label><input type="number" name="system.pv.value" value="{{system.pv.value}}" />/<input type="number" name="system.pv.max" value="{{system.pv.max}}" /></div>
+      <div class="resource"><label>Init</label><input type="number" name="system.initiative.base" value="{{system.initiative.base}}" placeholder="{{system.initiative.derived}}" /></div>
+      <div class="resource"><label>Prot</label><input type="number" name="system.protection.base" value="{{system.protection.base}}" /></div>
+      <div class="resource sf"><label>SF</label><input type="number" name="system.sf.value" value="{{system.sf.value}}" />/<input type="number" name="system.sf.max" value="{{system.sf.max}}" /></div>
+    </div>
+  </div>
+</header>
+
+<nav class="sheet-tabs">
+  {{#each tabs}}<a class="tab-link {{#if active}}active{{/if}}" data-action="tab" data-tab="{{id}}"><i class="{{icon}}"></i> {{localize label}}</a>{{/each}}
+</nav>
+
+<section class="sheet-body">
+  <div class="tab {{#if (eq activeTab 'main')}}active{{/if}}" data-tab="main">
+    <div class="characteristics-grid compact">
+      {{#each characteristics as |c|}}
+        <div class="characteristic" data-char="{{c.key}}">
+          <button type="button" class="char-name" data-action="rollChar" data-char="{{c.key}}" data-tooltip="{{localize c.label}}">{{localize c.abbrev}}</button>
+          <input class="char-value" type="number" name="system.characteristics.{{c.key}}.value" value="{{c.value}}" />
+        </div>
+      {{/each}}
+    </div>
+
+    <div class="items-section">
+      <div class="section-head"><h3>Dégâts / armes</h3><button type="button" data-action="itemCreate" data-type="weapon"><i class="fa-solid fa-plus"></i></button></div>
+      <ol class="items-list">
+        {{#each items.weapon as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="rollItem" data-tooltip="Attaque">{{i.name}}</span><span class="item-detail">{{i.system.damageLabel}}</span><span class="item-controls"><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+      </ol>
+      <label class="field-block">Dégâts (texte)
+        <textarea name="system.attacksText">{{system.attacksText}}</textarea>
+      </label>
+    </div>
+
+    <div class="items-section">
+      <div class="section-head"><h3>Capacités spéciales / Traits</h3><button type="button" data-action="itemCreate" data-type="trait"><i class="fa-solid fa-plus"></i></button></div>
+      <ol class="items-list">
+        {{#each items.trait as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="itemEdit">{{i.name}}</span><span class="item-detail">{{i.system.rating}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+      </ol>
+      <label class="field-block">Spécial (texte)
+        <textarea name="system.specialAbilities">{{system.specialAbilities}}</textarea>
+      </label>
+    </div>
+  </div>
+
+  <div class="tab {{#if (eq activeTab 'powers')}}active{{/if}}" data-tab="powers">
+    <div class="items-section">
+      <div class="section-head"><h3>Pouvoirs psychiques</h3><button type="button" data-action="itemCreate" data-type="psychicPower"><i class="fa-solid fa-plus"></i></button></div>
+      <ol class="items-list">{{#each items.psychicPower as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="rollItem">{{i.name}}</span><span class="item-controls"><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}</ol>
+    </div>
+  </div>
+
+  <div class="tab {{#if (eq activeTab 'bio')}}active{{/if}}" data-tab="bio">
+    <prose-mirror name="system.biography" value="{{system.biography}}">{{{enrichedBio}}}</prose-mirror>
+  </div>
+</section>
+</div>

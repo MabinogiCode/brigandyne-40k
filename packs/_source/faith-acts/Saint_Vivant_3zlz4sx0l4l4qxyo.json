@@ -1,0 +1,17 @@
+{
+  "_id": "3zlz4sx0l4l4qxyo",
+  "name": "Saint-Vivant",
+  "type": "faithAct",
+  "img": "icons/svg/angel.svg",
+  "system": {
+    "isMiracle": true,
+    "difficulty": -30,
+    "duration": "RU tours",
+    "range": "Courte",
+    "resistance": "-",
+    "rPlus": "Durée x2",
+    "damage": "",
+    "effect": "<p>La Volonté de l’Empereur-Dieu se manifeste physiquement en passant par le corps du Prêcheur qui illumine de lumière. Il obtient des ailes radieuses lui permettant de voler et obtient un bonus de +20% en COM et en TIR. De plus, les créatures hérétiques et démoniaques subissent *VOL* dégâts par tour.</p>",
+    "source": "L1"
+  }
+}

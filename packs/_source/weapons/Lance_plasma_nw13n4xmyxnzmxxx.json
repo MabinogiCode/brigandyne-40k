@@ -1,0 +1,34 @@
+{
+  "_id": "nw13n4xmyxnzmxxx",
+  "name": "Lance-plasma",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 8,
+    "reach": "C",
+    "hands": 1,
+    "range": 45,
+    "magazine": 12,
+    "ammoType": "Flasque M",
+    "price": 1000,
+    "qualities": [
+      {
+        "key": "destruction",
+        "value": null
+      },
+      {
+        "key": "surchauffe",
+        "value": null
+      },
+      {
+        "key": "ignoreBoucliers",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,62 @@
+{{!-- Carte de résultat d'un test d100 --}}
+<div class="brigandyne-40k chat-card test-card {{result.css}}" data-roll-type="{{data.rollType}}">
+
+  <header class="card-header">
+    {{#if actor}}<img class="card-portrait" src="{{actor.img}}" alt="{{actor.name}}" />{{/if}}
+    <div class="card-titles">
+      <h3 class="card-title">{{data.label}}</h3>
+      {{#if data.characteristic}}<span class="card-subtitle">{{data.flavor}}</span>{{/if}}
+    </div>
+  </header>
+
+  <div class="card-result">
+    <div class="result-roll">
+      <span class="roll-total" data-tooltip="Dizaine {{result.tens}} · Unité {{result.units}}">{{result.total}}</span>
+      <span class="roll-vs">/ {{result.target}}</span>
+    </div>
+    <div class="result-degree {{result.css}}">{{localize result.degreeLabel}}</div>
+  </div>
+
+  <div class="card-meta">
+    {{#if result.net}}
+      <div class="meta-line dice-pool">
+        <span class="meta-label">{{#if (gt result.net 0)}}Avantage ×{{result.net}}{{else}}Désavantage ×{{abs result.net}}{{/if}}</span>
+        <span class="tens-pool">
+          {{#each result.tensVals}}<span class="tens-die {{#if (eq @index ../result.chosenIdx)}}chosen{{else}}discarded{{/if}}">{{this}}</span>{{/each}}
+        </span>
+      </div>
+    {{/if}}
+
+    <div class="meta-line">
+      <span class="meta-label">RU (dé d'unité)</span>
+      <span class="meta-value ru">{{result.ru}}</span>
+    </div>
+
+    {{#if modifiers.length}}
+      <div class="meta-line modifiers">
+        <span class="meta-label">Modificateurs</span>
+        <span class="meta-value">
+          {{#each modifiers}}<span class="mod-chip {{#if (gt value 0)}}pos{{else}}neg{{/if}}">{{label}} {{#if (gt value 0)}}+{{/if}}{{value}}</span>{{/each}}
+        </span>
+      </div>
+    {{/if}}
+
+    <div class="meta-line">
+      <span class="meta-label">Marge</span>
+      <span class="meta-value">{{result.margin}}</span>
+    </div>
+  </div>
+
+  <footer class="card-buttons">
+    {{#if hasDamage}}
+      <button type="button" class="card-button" data-action="damage" data-tooltip="Calculer les dégâts (RU + bonus)">
+        <i class="fa-solid fa-burst"></i> Dégâts
+      </button>
+    {{/if}}
+    {{#if canReroll}}
+      <button type="button" class="card-button destin" data-action="destin-reroll" data-tooltip="Dépenser 1 point de Destin pour relancer">
+        <i class="fa-solid fa-dice"></i> Destin
+      </button>
+    {{/if}}
+  </footer>
+</div>

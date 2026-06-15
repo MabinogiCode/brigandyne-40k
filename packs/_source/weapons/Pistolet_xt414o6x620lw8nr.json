@@ -1,0 +1,21 @@
+{
+  "_id": "xt414o6x620lw8nr",
+  "name": "Pistolet",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 3,
+    "reach": "C",
+    "hands": 1,
+    "range": 20,
+    "magazine": 12,
+    "ammoType": "Balle P",
+    "price": 50,
+    "qualities": [],
+    "specialText": "",
+    "source": "L1"
+  }
+}

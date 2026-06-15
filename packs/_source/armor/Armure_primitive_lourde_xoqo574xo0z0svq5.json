@@ -1,0 +1,17 @@
+{
+  "_id": "xoqo574xo0z0svq5",
+  "name": "Armure primitive lourde",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 3,
+    "coverage": "complete",
+    "initiativeMod": -2,
+    "mouMod": -10,
+    "longToDon": true,
+    "qualities": [],
+    "specialText": "Longue à mettre",
+    "price": 50,
+    "source": "L1"
+  }
+}

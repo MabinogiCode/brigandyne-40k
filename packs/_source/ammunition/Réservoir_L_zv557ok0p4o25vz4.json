@@ -1,0 +1,12 @@
+{
+  "_id": "zv557ok0p4o25vz4",
+  "name": "Réservoir L",
+  "type": "ammunition",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "ammoType": "Réservoir L",
+    "effect": "Un réservoir correspond au nombre de munitions de l’arme.",
+    "price": 7,
+    "source": "L1"
+  }
+}

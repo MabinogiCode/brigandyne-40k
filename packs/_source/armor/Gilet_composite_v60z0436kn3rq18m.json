@@ -1,0 +1,17 @@
+{
+  "_id": "v60z0436kn3rq18m",
+  "name": "Gilet composite",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 2,
+    "coverage": "partielle",
+    "initiativeMod": 0,
+    "mouMod": 0,
+    "longToDon": false,
+    "qualities": [],
+    "specialText": "",
+    "price": 50,
+    "source": "L1"
+  }
+}

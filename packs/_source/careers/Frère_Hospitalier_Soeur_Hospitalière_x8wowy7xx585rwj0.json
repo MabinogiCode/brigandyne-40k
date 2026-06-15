@@ -1,0 +1,55 @@
+{
+  "_id": "x8wowy7xx585rwj0",
+  "name": "Frère Hospitalier / Soeur Hospitalière",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "ministorum",
+    "quote": "“Les mots guérissent l’âme, les soins guérissent le corps.”",
+    "advances": {
+      "com": 0,
+      "cns": 4,
+      "dis": 0,
+      "end": 2,
+      "for": 2,
+      "tec": 4,
+      "psy": 0,
+      "mou": 0,
+      "per": 2,
+      "soc": 4,
+      "sur": 2,
+      "tir": 0,
+      "vol": 4
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Courage",
+      "Cuisine",
+      "Diplomatie",
+      "Écoute",
+      "Médecine",
+      "Milieu naturel",
+      "Musique et chant",
+      "Persuasion",
+      "Potions et remèdes",
+      "Premiers soins",
+      "Religion"
+    ],
+    "talents": [
+      "Calme",
+      "Doué (CNS)",
+      "Doué (TEC)",
+      "Fascination",
+      "Inspiration",
+      "Mains blanches",
+      "Prudent",
+      "Résilience",
+      "Sain d’esprit",
+      "Suivre l’exemple",
+      "Travail d’équipe"
+    ],
+    "startingEquipment": "<p>Trousse médicale</p>",
+    "description": "<p>Le corps du Ministorum (ou de l’Adepta Sororitas) qui parcourent les territoires de l’Imperium pour soutenir ceux qui en ont besoin, qu’ils soient des soldats sur un champ de bataille ou des citoyens affaiblis dans une cité-ruche. Ce sont des guérisseurs du corps et de l’âme.</p>",
+    "source": "L1"
+  }
+}

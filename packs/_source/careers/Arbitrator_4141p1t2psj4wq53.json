@@ -1,0 +1,54 @@
+{
+  "_id": "4141p1t2psj4wq53",
+  "name": "Arbitrator",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "arbites",
+    "quote": "“On va casser de la vermine !”",
+    "advances": {
+      "com": 5,
+      "cns": 0,
+      "dis": 0,
+      "end": 3,
+      "for": 4,
+      "tec": 0,
+      "psy": 0,
+      "mou": 2,
+      "per": 2,
+      "soc": 0,
+      "sur": 0,
+      "tir": 4,
+      "vol": 4
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Arme de mêlée (au choix)",
+      "Arme à distance (au choix)",
+      "Courage",
+      "Commandement",
+      "Fouille",
+      "Droit et usages",
+      "Intimidation",
+      "Pistage",
+      "Réflexes",
+      "Torture",
+      "Vigilance"
+    ],
+    "talents": [
+      "Arme fétiche",
+      "Brute",
+      "Coups précis",
+      "Coups puissants",
+      "Gardien",
+      "Inspiration",
+      "Maître d’armes",
+      "Riposte",
+      "Solidité",
+      "Tir ciblé"
+    ],
+    "startingEquipment": "<p>Insigne d’Arbitrator, Bouclier anti-émeute, Armure Carapace, Menottes et clé, Lampe torche, Fusil à pompe, Munitions : 2 chargeurs complets.</p>",
+    "description": "<p>Les Arbitrators forment le corps des légions de l’Adeptus Arbites. Ils sont chargés de toutes sortes de missions à travers l’Imperium. Parfois employés par centaines pour faire respecter la loi dans une Cité-Ruche ou bien, une poignée peut assurer l’ordre au sein d’un monde éloigné au nom de la Lex Imperialis.</p>",
+    "source": "L1"
+  }
+}

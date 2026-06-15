@@ -1,0 +1,10 @@
+{
+  "_id": "5850u532wk7wt2z1",
+  "name": "Doué (PER)",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

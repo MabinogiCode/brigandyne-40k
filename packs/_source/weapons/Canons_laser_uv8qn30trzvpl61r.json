@@ -1,0 +1,24 @@
+{
+  "_id": "uv8qn30trzvpl61r",
+  "name": "Canons laser",
+  "type": "weapon",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "ship",
+    "damageBase": "flat",
+    "damageMod": 1,
+    "range": 600,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 1500,
+    "qualities": [
+      {
+        "key": "semiAutomatique",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Vaisseau"
+  }
+}

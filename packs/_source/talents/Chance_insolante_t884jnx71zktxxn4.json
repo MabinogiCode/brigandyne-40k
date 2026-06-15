@@ -1,0 +1,10 @@
+{
+  "_id": "t884jnx71zktxxn4",
+  "name": "Chance insolante",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

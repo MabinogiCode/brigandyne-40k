@@ -1,0 +1,10 @@
+{
+  "_id": "xkj43yqx4myzwon4",
+  "name": "Brute",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_id": "x56n5rou5q051x1x",
+  "name": "Flasque M",
+  "type": "ammunition",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "ammoType": "Flasque M",
+    "effect": "Une flasque correspond au nombre de munitions de l’arme.",
+    "price": 75,
+    "source": "L1"
+  }
+}

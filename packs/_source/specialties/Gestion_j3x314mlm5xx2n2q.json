@@ -1,0 +1,11 @@
+{
+  "_id": "j3x314mlm5xx2n2q",
+  "name": "Gestion",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

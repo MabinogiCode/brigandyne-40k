@@ -1,0 +1,30 @@
+{
+  "_id": "z3y37u1x5xkz3z70",
+  "name": "Matraque électrique",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": -1,
+    "reach": "D",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 75,
+    "qualities": [
+      {
+        "key": "choc",
+        "value": null
+      },
+      {
+        "key": "electrique",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

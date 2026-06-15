@@ -1,0 +1,18 @@
+{
+  "_id": "xzo4813xkqzz61jk",
+  "name": "Projectile de force",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telekinesie",
+    "isMinor": false,
+    "difficulty": 10,
+    "duration": "Instantanée",
+    "range": "M0yenne",
+    "resistance": "-",
+    "rPlus": "Dégâts +1",
+    "damage": "",
+    "effect": "<p>Vous invoquez une force invisible au creux de vos mains avant de la relâcher vers votre cible pour lui infliger RU+2 dégâts. Si le pouvoir inflige 6 dégâts, la cible tombe à terre.</p>",
+    "source": "L1"
+  }
+}

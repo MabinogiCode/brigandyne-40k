@@ -1,0 +1,30 @@
+{
+  "_id": "423r5qkw5lmzn677",
+  "name": "Carabine laser",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 2,
+    "reach": "C",
+    "hands": 1,
+    "range": 100,
+    "magazine": 80,
+    "ammoType": "Cellule P",
+    "price": 50,
+    "qualities": [
+      {
+        "key": "automatique",
+        "value": null
+      },
+      {
+        "key": "precis",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

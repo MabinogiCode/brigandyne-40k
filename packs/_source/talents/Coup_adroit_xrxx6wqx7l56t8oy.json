@@ -1,0 +1,10 @@
+{
+  "_id": "xrxx6wqx7l56t8oy",
+  "name": "Coup adroit",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

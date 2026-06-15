@@ -1,0 +1,24 @@
+{
+  "_id": "sox5r5xvtx0j0x1l",
+  "name": "Lanceurs de torpilles",
+  "type": "weapon",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "ship",
+    "damageBase": "flat",
+    "damageMod": 6,
+    "range": 500,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 8000,
+    "qualities": [
+      {
+        "key": "destruction",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Vaisseau"
+  }
+}

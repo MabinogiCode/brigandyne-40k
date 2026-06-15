@@ -1,0 +1,18 @@
+{
+  "_id": "x1s5yw8xx5qu161o",
+  "name": "Aura effrayante",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": false,
+    "difficulty": -10,
+    "duration": "RU tours",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "PEUR (2)",
+    "damage": "",
+    "effect": "<p>Vous irradiez d’une présence terrifiante. Vous obtenez l’effet PEUR (1).</p>",
+    "source": "L1"
+  }
+}

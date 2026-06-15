@@ -1,0 +1,26 @@
+{
+  "_id": "xz5zzo7xo7j43tx3",
+  "name": "Fusil à pompe",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 5,
+    "reach": "C",
+    "hands": 1,
+    "range": 5,
+    "magazine": 6,
+    "ammoType": "Cartouche",
+    "price": 100,
+    "qualities": [
+      {
+        "key": "chargement",
+        "value": 2
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

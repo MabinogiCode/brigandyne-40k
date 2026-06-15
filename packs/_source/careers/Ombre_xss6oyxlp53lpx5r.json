@@ -1,0 +1,53 @@
+{
+  "_id": "xss6oyxlp53lpx5r",
+  "name": "Ombre",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "assassinorum",
+    "quote": "“Une balle, un mort.”",
+    "advances": {
+      "com": 2,
+      "cns": 0,
+      "dis": 4,
+      "end": 1,
+      "for": 1,
+      "tec": 1,
+      "psy": 0,
+      "mou": 3,
+      "per": 4,
+      "soc": 0,
+      "sur": 0,
+      "tir": 5,
+      "vol": 3
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Fusil de précision",
+      "Arme (au choix)",
+      "Crochetage",
+      "Déplacement silencieux",
+      "Escalade",
+      "Milieu naturel",
+      "Pièges",
+      "Se cacher",
+      "Repérage",
+      "Vigilance"
+    ],
+    "talents": [
+      "Agile",
+      "Arme fétiche",
+      "Calme",
+      "Doué (PER)",
+      "Insaisissable",
+      "Pattes de chat",
+      "Rechargement rapide",
+      "Tir précis",
+      "Tireur d’élite",
+      "Tir ciblé"
+    ],
+    "startingEquipment": "<p>Fusil de précision, Tenue composite (remplace l’armure pare-balle), Munitions : 4 chargeurs complets (au choix)</p>",
+    "description": "<p>Les Ombres sont les adeptes en devenir du Temple Vindicare. Ils se spécialisent dans l’élimination de cibles sur de longues distances.</p>",
+    "source": "L1"
+  }
+}

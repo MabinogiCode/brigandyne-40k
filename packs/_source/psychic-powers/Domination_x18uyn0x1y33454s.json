@@ -1,0 +1,18 @@
+{
+  "_id": "x18uyn0x1y33454s",
+  "name": "Domination",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telepathie",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "RU minutes",
+    "range": "Courte",
+    "resistance": "VOL",
+    "rPlus": "Cible +1",
+    "damage": "",
+    "effect": "<p>Vous contrôlez une cible qui obéira au doigt et à l’oeil. Ce n’est pas un pantin et elle continue à agir de façon naturelle quand elle vous obéit. Elle ne commettra pas d’acte suicidaire ou d’automutilation, mais pourra attaquer un de ses alliés. Si elle est blessée, ce choc met immédiatement fin au sort.</p>",
+    "source": "L1"
+  }
+}

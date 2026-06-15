@@ -1,0 +1,26 @@
+{
+  "_id": "37jpqv46sy3w4wzs",
+  "name": "Fusil d’assaut",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 4,
+    "reach": "C",
+    "hands": 1,
+    "range": 35,
+    "magazine": 30,
+    "ammoType": "Balle M",
+    "price": 100,
+    "qualities": [
+      {
+        "key": "automatique",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

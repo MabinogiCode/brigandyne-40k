@@ -1,0 +1,10 @@
+{
+  "_id": "xtzu0mtx41mx77ou",
+  "name": "Mémoire sans faille",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

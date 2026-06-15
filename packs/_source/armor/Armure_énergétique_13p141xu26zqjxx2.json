@@ -1,0 +1,17 @@
+{
+  "_id": "13p141xu26zqjxx2",
+  "name": "Armure énergétique",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 6,
+    "coverage": "complete",
+    "initiativeMod": -1,
+    "mouMod": -5,
+    "longToDon": true,
+    "qualities": [],
+    "specialText": "Décupleur, Longue à mettre",
+    "price": 3500,
+    "source": "L1"
+  }
+}

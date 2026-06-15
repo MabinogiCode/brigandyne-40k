@@ -1,0 +1,27 @@
+{
+  "_id": "5yys6lxzkzo23x1p",
+  "name": "Avion léger",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "volant",
+    "size": 2,
+    "maneuver": 0,
+    "speed": 6,
+    "places": 2,
+    "pilotsMin": 1,
+    "pv": {
+      "value": 25,
+      "max": 25,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 2,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 8500,
+    "specialText": "",
+    "biography": ""
+  }
+}

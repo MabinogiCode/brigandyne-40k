@@ -1,0 +1,18 @@
+{
+  "_id": "2yq57wxmkutxjxk1",
+  "name": "Maître des flammes",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "pyromancie",
+    "isMinor": false,
+    "difficulty": 10,
+    "duration": "1 heure",
+    "range": "Longue",
+    "resistance": "MOU",
+    "rPlus": "Dégâts +1",
+    "damage": "",
+    "effect": "<p>Vous pouvez au choix : - Créer des effets pyrotechniques spectaculaires à partir d’un feu existant (formes dans la fumée ou les flammes, agrandissement d’une flamme, étincelles, petites explosions…). Si le feu touche une cible, elle subira *PSY* dégâts de feu. - Éteindre un feu existant : un feu de camp s’éteint en un tour, un brasier en une minute, un grand incendie en une heure.</p>",
+    "source": "L1"
+  }
+}

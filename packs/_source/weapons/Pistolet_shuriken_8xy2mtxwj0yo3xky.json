@@ -1,0 +1,26 @@
+{
+  "_id": "8xy2mtxwj0yo3xky",
+  "name": "Pistolet shuriken",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "xeno",
+    "damageBase": "flat",
+    "damageMod": 3,
+    "reach": "C",
+    "hands": 1,
+    "range": 20,
+    "magazine": 15,
+    "ammoType": "Cylindre P",
+    "price": 0,
+    "qualities": [
+      {
+        "key": "semiAutomatique",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Xéno"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "_id": "xmqpvloxxovwu2nv",
+  "name": "Pistolet Lance-flamme",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 4,
+    "reach": "C",
+    "hands": 1,
+    "range": 4,
+    "magazine": 6,
+    "ammoType": "Réservoir P",
+    "price": 200,
+    "qualities": [
+      {
+        "key": "souffle",
+        "value": 2
+      },
+      {
+        "key": "chargement",
+        "value": 2
+      },
+      {
+        "key": "ignoreBoucliers",
+        "value": null
+      }
+    ],
+    "specialText": "Dégâts de feu",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "_id": "pzzr44z6z8y5nw03",
+  "name": "Historiographe",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "administratum",
+    "quote": "“Si vous devez creuser un sujet, un historiographe est l’outil indispensable.”",
+    "advances": {
+      "com": 0,
+      "cns": 6,
+      "dis": 2,
+      "end": 2,
+      "for": 1,
+      "tec": 0,
+      "psy": 0,
+      "mou": 2,
+      "per": 4,
+      "soc": 2,
+      "sur": 0,
+      "tir": 0,
+      "vol": 5
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Architecture",
+      "Astrologie",
+      "Diplomatie",
+      "Discours",
+      "Droit et usage",
+      "Estimation",
+      "Histoire",
+      "Légendes",
+      "Noblesse et politique",
+      "Occultisme"
+    ],
+    "talents": [
+      "Dévoué serviteur",
+      "Distraction",
+      "Doué (CNS)",
+      "Doué (SOC)",
+      "Doué (VOL)",
+      "Esprit de compétition",
+      "Fascination",
+      "Inoffensif",
+      "Mémoire sans faille",
+      "Relations"
+    ],
+    "startingEquipment": "<p>-</p>",
+    "description": "<p>Les Historiographes sont des membres de confiance de l’Administratum, initiés à certains de ses plus grands secrets. Même les connaissances d’autres Adepta ne sont pas à l’abri de leur regard scrutateur. Les Historiographes sont de fervents érudits qui arpentent les archives des plus grandes bibliothèques de l’Imperium et enseignent dans les établissements culturels.</p>",
+    "source": "L1"
+  }
+}

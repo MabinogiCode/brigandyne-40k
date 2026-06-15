@@ -1,0 +1,11 @@
+{
+  "_id": "xop405x0zs4xsx1r",
+  "name": "Étiquette",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

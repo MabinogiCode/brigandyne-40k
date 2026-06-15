@@ -1,0 +1,11 @@
+{
+  "_id": "xp8o0q4x33my5zux",
+  "name": "Esprit de la Machine",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "scene",
+    "effect": "<p>Vous faites appel à l’Esprit de la Machine. Une fois par scène, vous pouvez remplacer un test de TEC, de TIR ou de COM par un test de VOL pour manipuler des objets technologiques de l’Imperium.</p>",
+    "source": "L1"
+  }
+}

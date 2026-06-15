@@ -1,0 +1,87 @@
+{
+  "_id": "wutym6pr433o3w1z",
+  "name": "Guerrier Tyranide",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "characteristics": {
+      "com": {
+        "value": 45,
+        "mod": 0
+      },
+      "cns": {
+        "value": 25,
+        "mod": 0
+      },
+      "dis": {
+        "value": 25,
+        "mod": 0
+      },
+      "end": {
+        "value": 60,
+        "mod": 0
+      },
+      "for": {
+        "value": 65,
+        "mod": 0
+      },
+      "tec": {
+        "value": 25,
+        "mod": 0
+      },
+      "psy": {
+        "value": 0,
+        "mod": 0
+      },
+      "mou": {
+        "value": 40,
+        "mod": 0
+      },
+      "per": {
+        "value": 50,
+        "mod": 0
+      },
+      "soc": {
+        "value": 25,
+        "mod": 0
+      },
+      "sur": {
+        "value": 25,
+        "mod": 0
+      },
+      "tir": {
+        "value": 40,
+        "mod": 0
+      },
+      "vol": {
+        "value": 45,
+        "mod": 0
+      }
+    },
+    "subtitle": "Monstre de plus de deux mètres, aux lames acérées et portant un lourd canon vivant.",
+    "faction": "xenos",
+    "pv": {
+      "value": 20,
+      "max": 20,
+      "bonus": 0
+    },
+    "sf": {
+      "value": 10,
+      "max": 10,
+      "bonus": 0
+    },
+    "initiative": {
+      "base": null,
+      "mod": 0
+    },
+    "protection": {
+      "base": 2,
+      "mod": 0
+    },
+    "fear": 0,
+    "isSwarm": false,
+    "attacksText": "<p>Lames tranchantes +6 / Dévoreur +4</p>",
+    "specialAbilities": "<p>- Poison.</p>",
+    "biography": "<p>Monstre de plus de deux mètres, aux lames acérées et portant un lourd canon vivant.</p>"
+  }
+}

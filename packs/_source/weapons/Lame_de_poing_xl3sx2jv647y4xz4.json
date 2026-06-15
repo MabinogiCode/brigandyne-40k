@@ -1,0 +1,21 @@
+{
+  "_id": "xl3sx2jv647y4xz4",
+  "name": "Lame de poing",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": -1,
+    "reach": "E",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 5,
+    "qualities": [],
+    "specialText": "Poing faible",
+    "source": "L1"
+  }
+}

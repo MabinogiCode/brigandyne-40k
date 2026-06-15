@@ -1,0 +1,11 @@
+{
+  "_id": "xr4p715xq121yx3y",
+  "name": "Technologie (Imperium)",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

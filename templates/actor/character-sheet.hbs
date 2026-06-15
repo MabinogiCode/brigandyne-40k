@@ -1,0 +1,205 @@
+{{!-- Feuille de Personnage — Warhammer 40K : Brigandyne --}}
+<div class="brig-root character-root">
+<header class="sheet-header">
+  <img class="profile-img" src="{{actor.img}}" data-action="editImage" data-edit="img" alt="{{actor.name}}" />
+  <div class="header-fields">
+    <input class="actor-name" type="text" name="name" value="{{actor.name}}" placeholder="Nom" />
+    <div class="header-line">
+      <input type="text" name="system.speciesName" value="{{system.speciesName}}" placeholder="Espèce" />
+      <input type="text" name="system.careerName" value="{{system.careerName}}" placeholder="Carrière" />
+      <select name="system.role">
+        {{#each config.roles as |label key|}}<option value="{{key}}" {{#if (eq key ../system.role)}}selected{{/if}}>{{localize label}}</option>{{/each}}
+      </select>
+      <button type="button" class="char-gen-btn" data-action="charGen" data-tooltip="Assistant de création"><i class="fa-solid fa-wand-magic-sparkles"></i></button>
+    </div>
+    <div class="header-resources">
+      <div class="resource pv">
+        <label>PV</label>
+        <input type="number" name="system.pv.value" value="{{system.pv.value}}" /><span>/</span>
+        <input type="number" name="system.pv.max" value="{{system.pv.max}}" />
+      </div>
+      <div class="resource sf">
+        <label>SF</label>
+        <input type="number" name="system.sf.value" value="{{system.sf.value}}" /><span>/</span>
+        <input type="number" name="system.sf.max" value="{{system.sf.max}}" />
+      </div>
+      <div class="resource destin">
+        <label>Destin</label>
+        <input type="number" name="system.destin.value" value="{{system.destin.value}}" /><span>/</span>
+        <input type="number" name="system.destin.max" value="{{system.destin.max}}" />
+      </div>
+      <div class="resource corruption">
+        <label>Corruption</label>
+        <input type="number" name="system.corruption.value" value="{{system.corruption.value}}" /><span>seuil</span>
+        <input type="number" name="system.corruption.threshold" value="{{system.corruption.threshold}}" />
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="sheet-tabs">
+  {{#each tabs}}
+    <a class="tab-link {{#if active}}active{{/if}}" data-action="tab" data-tab="{{id}}"><i class="{{icon}}"></i> {{localize label}}</a>
+  {{/each}}
+</nav>
+
+<section class="sheet-body">
+
+  {{!-- ===== Caractéristiques ===== --}}
+  <div class="tab {{#if (eq activeTab 'main')}}active{{/if}}" data-tab="main">
+    <div class="characteristics-grid">
+      {{#each characteristics as |c|}}
+        <div class="characteristic" data-char="{{c.key}}">
+          <button type="button" class="char-name" data-action="rollChar" data-char="{{c.key}}" data-tooltip="{{localize c.label}}">{{localize c.abbrev}}</button>
+          <input class="char-value" type="number" name="system.characteristics.{{c.key}}.value" value="{{c.value}}" />
+          <div class="char-bonus" data-tooltip="Bonus (dizaine)">+{{c.bonus}}</div>
+          <div class="char-adv">
+            <a data-action="refundChar" data-char="{{c.key}}" data-tooltip="Annuler une amélioration"><i class="fa-solid fa-caret-down"></i></a>
+            <span class="adv-count" data-tooltip="Améliorations achetées">{{c.advances}}</span>
+            <a data-action="advanceChar" data-char="{{c.key}}" data-tooltip="Améliorer (+5%, coûte de l'XP)"><i class="fa-solid fa-caret-up"></i></a>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+
+    <div class="secondary-stats">
+      <div class="stat"><label>Initiative</label><span>{{system.initiative.value}}</span></div>
+      <div class="stat"><label>Protection</label><span>{{system.protection.value}}</span></div>
+      <div class="stat"><label>Encombrement</label><span>{{system.encumbrance.value}}</span></div>
+      <div class="stat"><label>Niveau de vie</label>
+        <select name="system.lifestyle">
+          {{#each config.lifestyles as |l key|}}<option value="{{key}}" {{#if (eq key ../system.lifestyle)}}selected{{/if}}>{{localize l.label}}</option>{{/each}}
+        </select>
+      </div>
+      <div class="stat"><label>Trônes Gelt</label><input type="number" name="system.wealth.gelt" value="{{system.wealth.gelt}}" /></div>
+      <div class="stat"><label>XP dispo</label><span>{{system.xp.available}}</span> / <input type="number" name="system.xp.total" value="{{system.xp.total}}" /></div>
+    </div>
+  </div>
+
+  {{!-- ===== Combat ===== --}}
+  <div class="tab {{#if (eq activeTab 'combat')}}active{{/if}}" data-tab="combat">
+    <div class="items-section">
+      <div class="section-head"><h3><i class="fa-solid fa-gun"></i> Armes</h3><button type="button" data-action="itemCreate" data-type="weapon"><i class="fa-solid fa-plus"></i></button></div>
+      <ol class="items-list weapons">
+        {{#each items.weapon as |i|}}
+          <li class="item" data-item-id="{{i.id}}">
+            <img class="item-img" src="{{i.img}}" data-action="rollItem" data-tooltip="Attaquer" />
+            <span class="item-name" data-action="itemEdit">{{i.name}}</span>
+            <span class="item-detail">{{i.system.damageLabel}}</span>
+            <span class="item-detail">{{#if i.system.isMelee}}All. {{i.system.reach}}{{else}}Port. {{i.system.range}}m{{/if}}</span>
+            <span class="item-controls">
+              <a data-action="rollItem" data-tooltip="Attaque"><i class="fa-solid fa-dice-d10"></i></a>
+              <a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a>
+              <a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a>
+            </span>
+          </li>
+        {{/each}}
+      </ol>
+    </div>
+
+    <div class="items-section">
+      <div class="section-head"><h3><i class="fa-solid fa-shield-halved"></i> Armures</h3><button type="button" data-action="itemCreate" data-type="armor"><i class="fa-solid fa-plus"></i></button></div>
+      <ol class="items-list">
+        {{#each items.armor as |i|}}
+          <li class="item {{#if i.system.equipped}}equipped{{/if}}" data-item-id="{{i.id}}">
+            <img class="item-img" src="{{i.img}}" data-action="toggleEquip" data-tooltip="Équiper/Retirer" />
+            <span class="item-name" data-action="itemEdit">{{i.name}}</span>
+            <span class="item-detail">Prot. {{i.system.protection}}</span>
+            <span class="item-detail">{{localize (concat "BRIG.Armor." i.system.coverage)}}</span>
+            <span class="item-controls">
+              <a data-action="toggleEquip"><i class="fa-solid fa-shirt"></i></a>
+              <a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a>
+              <a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a>
+            </span>
+          </li>
+        {{/each}}
+      </ol>
+    </div>
+
+    <div class="items-section">
+      <div class="section-head"><h3><i class="fa-solid fa-box"></i> Équipement, munitions, augmentations</h3>
+        <span><button type="button" data-action="itemCreate" data-type="equipment"><i class="fa-solid fa-plus"></i> Objet</button>
+        <button type="button" data-action="itemCreate" data-type="ammunition"><i class="fa-solid fa-plus"></i> Munition</button>
+        <button type="button" data-action="itemCreate" data-type="augmentation"><i class="fa-solid fa-plus"></i> Augm.</button></span>
+      </div>
+      <ol class="items-list">
+        {{#each items.equipment as |i|}}<li class="item" data-item-id="{{i.id}}"><img class="item-img" src="{{i.img}}" data-action="itemEdit" /><span class="item-name" data-action="itemEdit">{{i.name}}</span><span class="item-detail">×{{i.system.quantity}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+        {{#each items.ammunition as |i|}}<li class="item" data-item-id="{{i.id}}"><img class="item-img" src="{{i.img}}" data-action="itemEdit" /><span class="item-name" data-action="itemEdit">{{i.name}}</span><span class="item-detail">×{{i.system.quantity}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+        {{#each items.augmentation as |i|}}<li class="item" data-item-id="{{i.id}}"><img class="item-img" src="{{i.img}}" data-action="itemEdit" /><span class="item-name" data-action="itemEdit">{{i.name}}</span><span class="item-detail">{{i.system.location}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+      </ol>
+    </div>
+  </div>
+
+  {{!-- ===== Compétences / Atouts ===== --}}
+  <div class="tab {{#if (eq activeTab 'skills')}}active{{/if}}" data-tab="skills">
+    <div class="two-col">
+      <div class="items-section">
+        <div class="section-head"><h3>Spécialités</h3><button type="button" data-action="itemCreate" data-type="specialty"><i class="fa-solid fa-plus"></i></button></div>
+        <ol class="items-list">
+          {{#each items.specialty as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="rollItem" data-tooltip="Tester">{{i.name}}</span><span class="item-detail">+{{i.system.bonus}}</span><span class="item-controls"><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+        </ol>
+      </div>
+      <div class="items-section">
+        <div class="section-head"><h3>Talents</h3><button type="button" data-action="itemCreate" data-type="talent"><i class="fa-solid fa-plus"></i></button></div>
+        <ol class="items-list">
+          {{#each items.talent as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="itemEdit">{{i.name}}</span><span class="item-detail">{{i.system.usage}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+        </ol>
+      </div>
+    </div>
+    <div class="two-col">
+      <div class="items-section">
+        <div class="section-head"><h3>Vices / Vertus / Traits</h3><button type="button" data-action="itemCreate" data-type="trait"><i class="fa-solid fa-plus"></i></button></div>
+        <ol class="items-list">
+          {{#each items.trait as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="itemEdit">{{i.name}}</span><span class="item-detail">{{#if i.system.rating}}{{i.system.rating}}{{/if}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+        </ol>
+      </div>
+      <div class="items-section">
+        <div class="section-head"><h3>Mutations / Blessures</h3><span><button type="button" data-action="itemCreate" data-type="mutation"><i class="fa-solid fa-plus"></i></button><button type="button" data-action="itemCreate" data-type="criticalInjury"><i class="fa-solid fa-plus"></i></button></span></div>
+        <ol class="items-list">
+          {{#each items.mutation as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="itemEdit">{{i.name}}</span><span class="item-detail">{{i.system.mutationType}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+          {{#each items.criticalInjury as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="itemEdit">{{i.name}}</span><span class="item-detail">{{i.system.location}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  {{!-- ===== Pouvoirs ===== --}}
+  <div class="tab {{#if (eq activeTab 'powers')}}active{{/if}}" data-tab="powers">
+    <div class="powers-info">
+      <span>PSY : <strong>{{system.psy.rating}}</strong></span>
+      <span>Pouvoirs/jour : <strong>{{system.psy.powersPerDay}}</strong></span>
+      <label class="faith-toggle"><input type="checkbox" name="system.faith.devoted" {{#if system.faith.devoted}}checked{{/if}} /> Vraie Foi</label>
+      <span>Actes/jour : <strong>{{system.faith.actsPerDay}}</strong></span>
+    </div>
+    <div class="items-section">
+      <div class="section-head"><h3><i class="fa-solid fa-brain"></i> Pouvoirs psychiques</h3><button type="button" data-action="itemCreate" data-type="psychicPower"><i class="fa-solid fa-plus"></i></button></div>
+      <ol class="items-list">
+        {{#each items.psychicPower as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="rollItem" data-tooltip="Manifester">{{i.name}}</span><span class="item-detail">{{localize (concat "BRIG.Discipline." i.system.discipline)}}</span><span class="item-detail">{{signed i.system.difficulty}}</span><span class="item-controls"><a data-action="rollItem"><i class="fa-solid fa-dice-d10"></i></a><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+      </ol>
+    </div>
+    <div class="items-section">
+      <div class="section-head"><h3><i class="fa-solid fa-cross"></i> Actes de Foi</h3><button type="button" data-action="itemCreate" data-type="faithAct"><i class="fa-solid fa-plus"></i></button></div>
+      <ol class="items-list">
+        {{#each items.faithAct as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="rollItem" data-tooltip="Invoquer">{{i.name}}</span><span class="item-detail">{{signed i.system.difficulty}}</span><span class="item-controls"><a data-action="rollItem"><i class="fa-solid fa-dice-d10"></i></a><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+      </ol>
+    </div>
+  </div>
+
+  {{!-- ===== Biographie ===== --}}
+  <div class="tab {{#if (eq activeTab 'bio')}}active{{/if}}" data-tab="bio">
+    <div class="details-grid">
+      <label>Âge <input type="text" name="system.details.age" value="{{system.details.age}}" /></label>
+      <label>Taille <input type="text" name="system.details.height" value="{{system.details.height}}" /></label>
+      <label>Poids <input type="text" name="system.details.weight" value="{{system.details.weight}}" /></label>
+      <label>Yeux <input type="text" name="system.details.eyes" value="{{system.details.eyes}}" /></label>
+      <label>Cheveux <input type="text" name="system.details.hair" value="{{system.details.hair}}" /></label>
+      <label>Monde natal <input type="text" name="system.details.homeworld" value="{{system.details.homeworld}}" /></label>
+    </div>
+    <div class="biography">
+      <label>Biographie</label>
+      <prose-mirror name="system.biography" value="{{system.biography}}">{{{enrichedBio}}}</prose-mirror>
+    </div>
+  </div>
+
+</section>
+</div>

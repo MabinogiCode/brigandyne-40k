@@ -1,0 +1,10 @@
+{
+  "_id": "588j10ouzmn13212",
+  "name": "Doué (SOC)",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

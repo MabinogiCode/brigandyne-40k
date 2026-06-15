@@ -1,0 +1,38 @@
+{
+  "_id": "vxupjo1yl63myr4w",
+  "name": "Bolter lourd",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 7,
+    "reach": "C",
+    "hands": 1,
+    "range": 100,
+    "magazine": 30,
+    "ammoType": "Bolt L",
+    "price": 3000,
+    "qualities": [
+      {
+        "key": "lourde",
+        "value": null
+      },
+      {
+        "key": "perceArmure",
+        "value": 2
+      },
+      {
+        "key": "chargement",
+        "value": 2
+      },
+      {
+        "key": "ignoreBoucliers",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

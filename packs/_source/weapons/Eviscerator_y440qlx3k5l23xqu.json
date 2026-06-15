@@ -1,0 +1,30 @@
+{
+  "_id": "y440qlx3k5l23xqu",
+  "name": "Eviscerator",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": 3,
+    "reach": "A",
+    "hands": 2,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 200,
+    "qualities": [
+      {
+        "key": "espace",
+        "value": null
+      },
+      {
+        "key": "initiative",
+        "value": -2
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

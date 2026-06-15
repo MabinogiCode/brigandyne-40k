@@ -1,0 +1,28 @@
+{
+  "_id": "7vv2xj6tu1xlx160",
+  "name": "Mitrailleuse lourde",
+  "type": "weapon",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "vehicle",
+    "damageBase": "flat",
+    "damageMod": 3,
+    "range": 40,
+    "magazine": 6,
+    "ammoType": "",
+    "price": 400,
+    "qualities": [
+      {
+        "key": "automatique",
+        "value": null
+      },
+      {
+        "key": "chargement",
+        "value": 2
+      }
+    ],
+    "specialText": "",
+    "source": "Véhicule"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "x7xm5t2x3x1lq01l",
+  "name": "Technoprêtre",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "mechanicus",
+    "quote": "“La chair est faible…”",
+    "advances": {
+      "com": 1,
+      "cns": 5,
+      "dis": 0,
+      "end": 3,
+      "for": 2,
+      "tec": 5,
+      "psy": 0,
+      "mou": 0,
+      "per": 2,
+      "soc": 0,
+      "sur": 0,
+      "tir": 1,
+      "vol": 5
+    },
+    "lifestyle": "aise",
+    "specialties": [
+      "Arme (au choix)",
+      "Commerce",
+      "Courage",
+      "Discours",
+      "Dissimulation d’objet",
+      "Estimation",
+      "Légendes",
+      "Lettres",
+      "Religion",
+      "Technomaîtrise",
+      "Travail du métal"
+    ],
+    "talents": [
+      "Calme",
+      "Coup adroit",
+      "Esprit de la Machine",
+      "Dévoué serviteur",
+      "Guérison rapide",
+      "Musique et chant",
+      "Prudent",
+      "Résilience",
+      "Sain d’esprit",
+      "Solidité",
+      "Technologie (au choix)"
+    ],
+    "startingEquipment": "<p>Bure de Technoprêtre, Auto-plume, Outils d’ingénierie, Augmentations : Unité d’Impulsion Mentale et trois au choix</p>",
+    "description": "<p>Les Technoprêtres sont initiés aux plus grands mystères de la technologie et connaissent de nombreux rites de maintenance, de mise à feu et de redémarrage. Des simples mécanismes de porte aux technologies anciennes sorties de ruines désagrégées, ils cherchent les nombreuses formes de l’Omnimessie pour ajouter de nouvelles connaissances aux cryptes de données de l’Adeptus Mechanicus.</p>",
+    "source": "L1"
+  }
+}

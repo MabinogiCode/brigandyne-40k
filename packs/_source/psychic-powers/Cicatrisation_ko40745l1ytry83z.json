@@ -1,0 +1,18 @@
+{
+  "_id": "ko40745l1ytry83z",
+  "name": "Cicatrisation",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "biomancie",
+    "isMinor": false,
+    "difficulty": -10,
+    "duration": "Instantanée",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "Cible +1",
+    "damage": "RU+PSY",
+    "effect": "<p>Vous modelez chair et os pour guérir les blessures de votre cible qui regagne RU+*PSY* PV.</p>",
+    "source": "L1"
+  }
+}

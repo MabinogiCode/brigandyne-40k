@@ -1,0 +1,10 @@
+{
+  "_id": "360842xwz42zzxts",
+  "name": "Esquive",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "_id": "xow0s0464kzp2xqk",
+  "name": "Contrebandier",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "civils",
+    "quote": "“Ces trucs Xenos vont se vendre à prix d’or !”",
+    "advances": {
+      "com": 2,
+      "cns": 2,
+      "dis": 3,
+      "end": 2,
+      "for": 2,
+      "tec": 3,
+      "psy": 0,
+      "mou": 2,
+      "per": 2,
+      "soc": 3,
+      "sur": 0,
+      "tir": 2,
+      "vol": 2
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Arts",
+      "Astrogation",
+      "Commerce",
+      "Diplomatie",
+      "Discours",
+      "Dissimulation d’objets",
+      "Estimation",
+      "Persuasion",
+      "Pilotage (au choix)",
+      "Technologie (Imperium)"
+    ],
+    "talents": [
+      "Chance insolente",
+      "Confiance en soi",
+      "Doué (SOC)",
+      "Douée (MOU)",
+      "Fascination",
+      "Mensonge éhonté",
+      "Prudent",
+      "Relations",
+      "Travail d’équipe",
+      "Vivacité"
+    ],
+    "startingEquipment": "<p>Vêtements civils, Pistolet, Munitions : 30 Balles P, Vaisseau personnel (Léger), *SOC* tonnes de cargaison (de valeur modeste, à décider avec le MJ)</p>",
+    "description": "<p>Nombreuses sont les marchandises interdites dans l’Imperium que beaucoup s’arracheraient à prix d’or. C’est là que les contrebandiers entrent en jeu, trafiquant à travers tout l’espace impérial pour revendre des marchandises illégales.</p>",
+    "source": "L1"
+  }
+}

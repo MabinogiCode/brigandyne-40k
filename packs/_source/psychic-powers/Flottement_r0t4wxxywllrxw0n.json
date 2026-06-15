@@ -1,0 +1,18 @@
+{
+  "_id": "r0t4wxxywllrxw0n",
+  "name": "Flottement",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telekinesie",
+    "isMinor": false,
+    "difficulty": 10,
+    "duration": "RU tours",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "Durée x2",
+    "damage": "",
+    "effect": "<p>Vous canalisez votre concentration pour vous élever dans les airs jusqu’à *PSY* mètres de haut.</p>",
+    "source": "L1"
+  }
+}

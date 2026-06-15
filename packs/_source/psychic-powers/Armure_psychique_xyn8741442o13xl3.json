@@ -1,0 +1,18 @@
+{
+  "_id": "xyn8741442o13xl3",
+  "name": "Armure psychique",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telekinesie",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "RU tours",
+    "range": "Courte",
+    "resistance": "-",
+    "rPlus": "Cible +1 ou Durée x2",
+    "damage": "",
+    "effect": "<p>La cible du pouvoir reçoit *PSY* points de protection.</p>",
+    "source": "L1"
+  }
+}

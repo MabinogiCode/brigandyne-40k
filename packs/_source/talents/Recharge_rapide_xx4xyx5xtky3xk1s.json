@@ -1,0 +1,10 @@
+{
+  "_id": "xx4xyx5xtky3xk1s",
+  "name": "Recharge rapide",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

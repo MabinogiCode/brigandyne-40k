@@ -1,0 +1,18 @@
+{
+  "_id": "x43040323wxuxxyw",
+  "name": "Étranglement",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "biomancie",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "RU tours",
+    "range": "Courte",
+    "resistance": "END",
+    "rPlus": "Dégâts +1",
+    "damage": "",
+    "effect": "<p>Vous contractez la chair de votre adversaire qui devient Affaibli et subit *PSY* dégâts asphyxiants par tour.</p>",
+    "source": "L1"
+  }
+}

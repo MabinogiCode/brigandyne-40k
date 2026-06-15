@@ -1,0 +1,18 @@
+{
+  "_id": "xxvwjw2z6312txpw",
+  "name": "Maître des bêtes",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telepathie",
+    "isMinor": false,
+    "difficulty": 10,
+    "duration": "RU minutes",
+    "range": "Longue",
+    "resistance": "VOL",
+    "rPlus": "Flux d’énergie",
+    "damage": "",
+    "effect": "<p>Vous commandez un maximum de *PSY* animaux qui pourront se battre pour vous et qui vous obéiront au doigt et à l’oeil pendant toute la durée du sort.</p>",
+    "source": "L1"
+  }
+}

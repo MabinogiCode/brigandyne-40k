@@ -1,0 +1,10 @@
+{
+  "_id": "15x5243l347q8nn6",
+  "name": "Inspiration",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

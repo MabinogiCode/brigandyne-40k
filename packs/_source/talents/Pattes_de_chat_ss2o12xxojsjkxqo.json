@@ -1,0 +1,10 @@
+{
+  "_id": "ss2o12xxojsjkxqo",
+  "name": "Pattes de chat",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

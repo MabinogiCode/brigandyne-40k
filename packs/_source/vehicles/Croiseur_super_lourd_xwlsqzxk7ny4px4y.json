@@ -1,0 +1,27 @@
+{
+  "_id": "xwlsqzxk7ny4px4y",
+  "name": "Croiseur super lourd",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "spatial",
+    "size": 5,
+    "maneuver": -10,
+    "speed": 0,
+    "places": 150000,
+    "pilotsMin": 80,
+    "pv": {
+      "value": 50,
+      "max": 50,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 6,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 750000,
+    "specialText": "",
+    "biography": ""
+  }
+}

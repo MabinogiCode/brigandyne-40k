@@ -1,0 +1,30 @@
+{
+  "_id": "x41t7z3x0u3q56n3",
+  "name": "Fusil laser long",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 3,
+    "reach": "C",
+    "hands": 1,
+    "range": 500,
+    "magazine": 80,
+    "ammoType": "Cellule M",
+    "price": 100,
+    "qualities": [
+      {
+        "key": "automatique",
+        "value": null
+      },
+      {
+        "key": "precis",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

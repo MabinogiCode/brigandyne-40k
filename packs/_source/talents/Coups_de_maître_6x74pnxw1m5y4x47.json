@@ -1,0 +1,10 @@
+{
+  "_id": "6x74pnxw1m5y4x47",
+  "name": "Coups de maître",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

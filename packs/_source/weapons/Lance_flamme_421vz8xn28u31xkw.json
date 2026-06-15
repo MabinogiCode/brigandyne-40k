@@ -1,0 +1,34 @@
+{
+  "_id": "421vz8xn28u31xkw",
+  "name": "Lance-flamme",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 5,
+    "reach": "C",
+    "hands": 1,
+    "range": 8,
+    "magazine": 10,
+    "ammoType": "Réservoir M",
+    "price": 350,
+    "qualities": [
+      {
+        "key": "souffle",
+        "value": 4
+      },
+      {
+        "key": "chargement",
+        "value": 2
+      },
+      {
+        "key": "ignoreBoucliers",
+        "value": null
+      }
+    ],
+    "specialText": "Dégâts de feu",
+    "source": "L1"
+  }
+}

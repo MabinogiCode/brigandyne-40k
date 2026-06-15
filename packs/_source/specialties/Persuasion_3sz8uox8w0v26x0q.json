@@ -1,0 +1,11 @@
+{
+  "_id": "3sz8uox8w0v26x0q",
+  "name": "Persuasion",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

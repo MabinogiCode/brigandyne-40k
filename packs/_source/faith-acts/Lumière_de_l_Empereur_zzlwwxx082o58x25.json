@@ -1,0 +1,17 @@
+{
+  "_id": "zzlwwxx082o58x25",
+  "name": "Lumière de l’Empereur",
+  "type": "faithAct",
+  "img": "icons/svg/angel.svg",
+  "system": {
+    "isMiracle": false,
+    "difficulty": -10,
+    "duration": "RU minutes",
+    "range": "Extrême",
+    "resistance": "-",
+    "rPlus": "Vous bénéficiez des bonus",
+    "damage": "",
+    "effect": "<p>Un halo de lumière émane du prêcheur. Tous les personnages alliés qui baignent dans cette lumière deviennent insensibles à la peur ou au découragement. Ils gagnent également un bonus de +10% en COM et en TIR et infligent 2 dégâts supplémentaires.</p>",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "_id": "x33k476q04x6wxjy",
+  "name": "Télékinésie de précision",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telekinesie",
+    "isMinor": false,
+    "difficulty": -10,
+    "duration": "RU minutes",
+    "range": "Moyenne",
+    "resistance": "-",
+    "rPlus": "Flux d’énergie",
+    "damage": "",
+    "effect": "<p>Pendant la durée du pouvoir, le Psyker peut utiliser PSY pour effectuer des tests de TEC.</p>",
+    "source": "L1"
+  }
+}

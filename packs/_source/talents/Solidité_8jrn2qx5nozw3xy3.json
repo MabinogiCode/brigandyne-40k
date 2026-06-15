@@ -1,0 +1,10 @@
+{
+  "_id": "8jrn2qx5nozw3xy3",
+  "name": "Solidité",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

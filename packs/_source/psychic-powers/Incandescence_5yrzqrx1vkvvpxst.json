@@ -1,0 +1,18 @@
+{
+  "_id": "5yrzqrx1vkvvpxst",
+  "name": "Incandescence",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "pyromancie",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "*PSY* tours",
+    "range": "Moyenne",
+    "resistance": "-",
+    "rPlus": "Dégâts +1",
+    "damage": "",
+    "effect": "<p>Ce pouvoir chauffe une pièce de métal jusqu’à la rendre incandescente. Vous pouvez au choix : - Chauffer une lame qui infligera des dégâts de feu, et ajoutera 2 à ses dégâts. - Chauffer une pièce métallique (bijou, pièce d’amure…) qui fera se tordre de douleur son porteur qui subira 2 points de par tour tant qu’il ne l’aura pas retirée.</p>",
+    "source": "L1"
+  }
+}

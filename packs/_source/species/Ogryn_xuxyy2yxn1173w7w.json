@@ -1,0 +1,45 @@
+{
+  "_id": "xuxyy2yxn1173w7w",
+  "name": "Ogryn",
+  "type": "species",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "base": {
+      "com": 35,
+      "cns": 10,
+      "dis": 10,
+      "end": 40,
+      "for": 50,
+      "tec": 15,
+      "psy": 0,
+      "mou": 20,
+      "per": 20,
+      "soc": 15,
+      "sur": 30,
+      "tir": 25,
+      "vol": 30
+    },
+    "limits": {
+      "com": null,
+      "cns": 30,
+      "dis": null,
+      "end": null,
+      "for": null,
+      "tec": null,
+      "psy": null,
+      "mou": null,
+      "per": null,
+      "soc": 50,
+      "sur": null,
+      "tir": null,
+      "vol": null
+    },
+    "destin": 1,
+    "special": [
+      "pvPlus2",
+      "resMaladies"
+    ],
+    "noPsy": false,
+    "source": "L1"
+  }
+}

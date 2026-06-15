@@ -1,0 +1,18 @@
+{
+  "_id": "xl4015wxsw5s1710",
+  "name": "Mur de feu",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "pyromancie",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "RU minutes",
+    "range": "Courte",
+    "resistance": "-",
+    "rPlus": "Dégâts +1",
+    "damage": "",
+    "effect": "<p>Vous invoquez une barrière de feu de *PSY* mètres de long et de haut au maximum. Ceux qui le traversent encaissent automatiquement *PSY*+5 dégâts de feu. La chaleur qu’il dégage est insoutenable et cause *PSY* dégâts de feu par tour à tout individu à moins de 3 mètres.</p>",
+    "source": "L1"
+  }
+}

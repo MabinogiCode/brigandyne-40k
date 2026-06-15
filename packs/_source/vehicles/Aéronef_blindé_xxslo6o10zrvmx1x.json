@@ -1,0 +1,27 @@
+{
+  "_id": "xxslo6o10zrvmx1x",
+  "name": "Aéronef blindé",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "volant",
+    "size": 3,
+    "maneuver": 0,
+    "speed": 4,
+    "places": 12,
+    "pilotsMin": 2,
+    "pv": {
+      "value": 35,
+      "max": 35,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 3,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 12000,
+    "specialText": "",
+    "biography": ""
+  }
+}

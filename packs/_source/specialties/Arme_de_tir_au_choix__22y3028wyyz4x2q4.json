@@ -1,0 +1,11 @@
+{
+  "_id": "22y3028wyyz4x2q4",
+  "name": "Arme de tir (au choix)",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

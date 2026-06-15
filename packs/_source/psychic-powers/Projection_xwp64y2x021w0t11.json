@@ -1,0 +1,18 @@
+{
+  "_id": "xwp64y2x021w0t11",
+  "name": "Projection",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telepathie",
+    "isMinor": false,
+    "difficulty": -20,
+    "duration": "RU minutes",
+    "range": "Spécial",
+    "resistance": "-",
+    "rPlus": "Flux d’énergie",
+    "damage": "",
+    "effect": "<p>Vous parvenez à séparer votre esprit de votre corps qui prendra une forme éthérée de votre choix. Votre esprit se déplace à la vitesse de la pensée et peut se matérialiser dans le monde physique (bien qu’il soit toujours immatériel). Durant la projection, votre corps est inconscient et vous ne le sentez plus. Les attaques physiques ne font rien à votre esprit cependant, les créatures de l’Immaterium peuvent toujours l’atteindre.</p>",
+    "source": "L1"
+  }
+}

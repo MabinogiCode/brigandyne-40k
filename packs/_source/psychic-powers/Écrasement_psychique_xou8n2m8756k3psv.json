@@ -1,0 +1,18 @@
+{
+  "_id": "xou8n2m8756k3psv",
+  "name": "Écrasement psychique",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telekinesie",
+    "isMinor": false,
+    "difficulty": -10,
+    "duration": "Instantanée",
+    "range": "Moyenne",
+    "resistance": "-",
+    "rPlus": "Dégâts +1",
+    "damage": "",
+    "effect": "<p>Vous écrasez votre cible sous une force cinétique qui lui inflige RU+8 dégâts.</p>",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "_id": "0w1022xu00o2zxk4",
+  "name": "Vision à distance",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "divination",
+    "isMinor": false,
+    "difficulty": 10,
+    "duration": "RU minutes",
+    "range": "Spécial",
+    "resistance": "-",
+    "rPlus": "1 Avantage PER ou TIR",
+    "damage": "",
+    "effect": "<p>Vous pouvez projeter votre regard à une distance de *PSY* kilomètres. Vous pouvez arrêter votre vision sur un détail ou un élément à étudier plus précisément.</p>",
+    "source": "L1"
+  }
+}

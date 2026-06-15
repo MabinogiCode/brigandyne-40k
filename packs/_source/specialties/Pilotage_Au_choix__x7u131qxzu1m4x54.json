@@ -1,0 +1,11 @@
+{
+  "_id": "x7u131qxzu1m4x54",
+  "name": "Pilotage (Au choix)",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

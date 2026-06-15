@@ -1,0 +1,54 @@
+{
+  "_id": "xp0knw2wq012tx2y",
+  "name": "Fanatique",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "ministorum",
+    "quote": "“La vénération envers l’Empereur-Dieu ne soufre d’aucune limite.”",
+    "advances": {
+      "com": 2,
+      "cns": 2,
+      "dis": 1,
+      "end": 4,
+      "for": 2,
+      "tec": 1,
+      "psy": 0,
+      "mou": 2,
+      "per": 1,
+      "soc": 2,
+      "sur": 1,
+      "tir": 2,
+      "vol": 4
+    },
+    "lifestyle": "miserable",
+    "specialties": [
+      "Arme de mêlée (au choix)",
+      "Courage",
+      "Discours",
+      "Occultisme",
+      "Persuasion",
+      "Premiers soins",
+      "Pugilat",
+      "Religion",
+      "Résistance aux privations",
+      "Résistance au Warp"
+    ],
+    "talents": [
+      "Bagarre",
+      "Calme",
+      "Coups puissants",
+      "Cri de guerre",
+      "Doué (END)",
+      "Doué (VOL)",
+      "Gardien",
+      "Inspiration",
+      "Résilience",
+      "Sauvegarde",
+      "Solidité"
+    ],
+    "startingEquipment": "<p>Un livre saint, une arme de mêlée (au choix), une torche ou un tambourin</p>",
+    "description": "<p>Nombreux sont ceux qui vénèrent l’Empereur-Dieu mais certains y vouent leur entière existence, à la suite d’un évènement tragique, une injustice ou une vision mystique. Ils suivent les préceptes de la Foi impériale avec une ferveur décuplée, presque terrifiante, et font une chair à canon remarquable.</p>",
+    "source": "L1"
+  }
+}

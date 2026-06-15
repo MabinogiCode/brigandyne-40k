@@ -1,0 +1,18 @@
+{
+  "_id": "xz61jy1xk4l15y53",
+  "name": "Flash bruyant",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": false,
+    "difficulty": -10,
+    "duration": "Instantanée",
+    "range": "Moyenne",
+    "resistance": "-",
+    "rPlus": "Flux d’énergie",
+    "damage": "",
+    "effect": "<p>Vous produisez un flash de lumière et un bruit assourdissant qui Aveugle et rend les créatures qui le voient Confuses pendant 1 tour. Le Psyker n’est pas immunisé.</p>",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "st5yz0zr078rttp3",
+  "name": "Bâton de lumière (mêlée)",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "xeno",
+    "damageBase": "for",
+    "damageMod": 0,
+    "reach": "A",
+    "hands": 2,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 0,
+    "qualities": [
+      {
+        "key": "perceArmure",
+        "value": 4
+      },
+      {
+        "key": "initiative",
+        "value": -1
+      }
+    ],
+    "specialText": "",
+    "source": "Xéno"
+  }
+}

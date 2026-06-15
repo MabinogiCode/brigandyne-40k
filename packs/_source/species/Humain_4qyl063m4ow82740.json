@@ -1,0 +1,42 @@
+{
+  "_id": "4qyl063m4ow82740",
+  "name": "Humain",
+  "type": "species",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "base": {
+      "com": 25,
+      "cns": 25,
+      "dis": 25,
+      "end": 25,
+      "for": 25,
+      "tec": 25,
+      "psy": 0,
+      "mou": 25,
+      "per": 25,
+      "soc": 25,
+      "sur": 25,
+      "tir": 25,
+      "vol": 25
+    },
+    "limits": {
+      "com": null,
+      "cns": null,
+      "dis": null,
+      "end": null,
+      "for": null,
+      "tec": null,
+      "psy": null,
+      "mou": null,
+      "per": null,
+      "soc": null,
+      "sur": null,
+      "tir": null,
+      "vol": null
+    },
+    "destin": 3,
+    "special": [],
+    "noPsy": false,
+    "source": "L1"
+  }
+}

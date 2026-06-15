@@ -1,0 +1,17 @@
+{
+  "_id": "xwy0kmtlkt577x6z",
+  "name": "Colère de l’Empereur",
+  "type": "faithAct",
+  "img": "icons/svg/angel.svg",
+  "system": {
+    "isMiracle": false,
+    "difficulty": 0,
+    "duration": "Instantanée",
+    "range": "Moyenne",
+    "resistance": "MOU",
+    "rPlus": "Dégâts +1",
+    "damage": "RU+VOL",
+    "effect": "<p>En manifestant la colère de l’Empereur-Dieu, un projectile d’énergie radieuse frappe la cible de l’Acte de Foi qui subit RU+*VOL* dégâts.</p>",
+    "source": "L1"
+  }
+}

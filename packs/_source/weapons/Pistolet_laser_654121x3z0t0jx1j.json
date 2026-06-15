@@ -1,0 +1,30 @@
+{
+  "_id": "654121x3z0t0jx1j",
+  "name": "Pistolet laser",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 2,
+    "reach": "C",
+    "hands": 1,
+    "range": 50,
+    "magazine": 30,
+    "ammoType": "Cellule P",
+    "price": 50,
+    "qualities": [
+      {
+        "key": "precis",
+        "value": null
+      },
+      {
+        "key": "semiAutomatique",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

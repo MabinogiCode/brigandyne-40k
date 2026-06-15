@@ -1,0 +1,18 @@
+{
+  "_id": "01y122xlw04y4xtp",
+  "name": "Poing d’acier",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "biomancie",
+    "isMinor": false,
+    "difficulty": 10,
+    "duration": "RU minutes",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "Durée x2",
+    "damage": "",
+    "effect": "<p>Vous canalisez l’énergie du Warp dans vos membres. Vos poings deviennent des armes qui infligent *FOR*-1 dégâts pendant la durée du pouvoir.</p>",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "ow3z00xkx1xyux4j",
+  "name": "Viseur",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 2,
+    "reach": "C",
+    "hands": 1,
+    "range": 0,
+    "magazine": 35,
+    "ammoType": "",
+    "price": 0,
+    "qualities": [],
+    "specialText": "",
+    "source": "L1"
+  }
+}

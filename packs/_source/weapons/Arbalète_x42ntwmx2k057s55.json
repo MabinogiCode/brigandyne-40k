@@ -1,0 +1,26 @@
+{
+  "_id": "x42ntwmx2k057s55",
+  "name": "Arbalète",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 3,
+    "reach": "C",
+    "hands": 1,
+    "range": 20,
+    "magazine": 1,
+    "ammoType": "Carreaux",
+    "price": 35,
+    "qualities": [
+      {
+        "key": "chargement",
+        "value": 1
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

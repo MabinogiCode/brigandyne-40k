@@ -1,0 +1,11 @@
+{
+  "_id": "x4w4452jk7x3qn4j",
+  "name": "Déguisement",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

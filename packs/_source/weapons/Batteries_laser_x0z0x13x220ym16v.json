@@ -1,0 +1,24 @@
+{
+  "_id": "x0z0x13x220ym16v",
+  "name": "Batteries laser",
+  "type": "weapon",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "ship",
+    "damageBase": "flat",
+    "damageMod": 4,
+    "range": 600,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 4500,
+    "qualities": [
+      {
+        "key": "semiAutomatique",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Vaisseau"
+  }
+}

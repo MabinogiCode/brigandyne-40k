@@ -1,0 +1,11 @@
+{
+  "_id": "7mu5ro14vw2x1s5x",
+  "name": "Résistance à la chaleur/au froid",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "_id": "xyz2zkux48wyw87u",
+  "name": "Insaisissable",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

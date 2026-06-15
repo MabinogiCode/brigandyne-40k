@@ -1,0 +1,337 @@
+/* ============================================================
+   Warhammer 40,000 : Brigandyne — Style grimdark "acier"
+   Palette : bleu-gris / acier / noir / crânes
+   ============================================================ */
+:root {
+  --brig-bg: #0d1013;          /* noir bleuté */
+  --brig-bg-2: #141a20;
+  --brig-panel: #1a232c;       /* acier sombre */
+  --brig-panel-2: #243140;
+  --brig-ink: #d8dee5;         /* acier clair */
+  --brig-muted: #828d98;
+  --brig-gold: #8ea7c0;        /* accent acier (ex-or) */
+  --brig-gold-2: #c4d6e8;      /* acier brillant */
+  --brig-blue: #3f5d7a;
+  --brig-red: #7a2520;         /* sang séché (danger / PV) */
+  --brig-red-2: #b14437;
+  --brig-green: #4f7a5a;
+  --brig-border: #32404d;      /* liseré acier */
+  --brig-rivet: #485a6b;
+  --brig-shadow: rgba(0,0,0,.6);
+  --brig-font: "Signika", "Roboto", sans-serif;
+  --brig-title: "Signika", "Roboto Condensed", sans-serif;
+}
+
+/* ---------- Fenêtres / feuilles ---------- */
+.brigandyne-40k.sheet .window-content {
+  background: linear-gradient(180deg, var(--brig-bg-2), var(--brig-bg));
+  color: var(--brig-ink);
+  font-family: var(--brig-font);
+  padding: 0;
+}
+.brigandyne-40k .brig-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+.brigandyne-40k .sheet-body { flex: 1 1 auto; min-height: 0; }
+.brigandyne-40k.sheet .sheet-header {
+  display: flex;
+  gap: .6rem;
+  padding: .6rem;
+  background: linear-gradient(180deg, #243140, #141a20);
+  border-bottom: 2px solid var(--brig-gold);
+  box-shadow: 0 2px 6px var(--brig-shadow);
+  position: relative;
+  overflow: hidden;
+}
+/* Crâne en filigrane (motif 40K) */
+.brigandyne-40k.sheet .sheet-header::after {
+  content: "\f54c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 66px;
+  color: rgba(142, 167, 192, .07);
+  pointer-events: none;
+  z-index: 0;
+}
+.brigandyne-40k.sheet .header-fields { position: relative; z-index: 1; }
+/* Liseré "rivets" acier sous l'en-tête */
+.brigandyne-40k .sheet-tabs { box-shadow: inset 0 2px 0 rgba(72,90,107,.25); }
+.brigandyne-40k .profile-img {
+  flex: 0 0 84px;
+  width: 84px; height: 84px;
+  object-fit: cover;
+  border: 2px solid var(--brig-border);
+  border-radius: 6px;
+  background: #000;
+  cursor: pointer;
+}
+.brigandyne-40k .header-fields { flex: 1; display: flex; flex-direction: column; gap: .3rem; }
+.brigandyne-40k .actor-name, .brigandyne-40k .item-name {
+  font-family: var(--brig-title);
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--brig-border);
+  color: var(--brig-gold-2);
+  letter-spacing: .5px;
+}
+.brigandyne-40k .header-line { display: flex; gap: .4rem; }
+.brigandyne-40k .header-line input, .brigandyne-40k .header-line select { flex: 1; min-width: 0; }
+
+/* ---------- Champs ---------- */
+.brigandyne-40k input, .brigandyne-40k select, .brigandyne-40k textarea {
+  background: rgba(0,0,0,.25);
+  border: 1px solid var(--brig-border);
+  border-radius: 3px;
+  color: var(--brig-ink);
+  padding: 2px 4px;
+}
+.brigandyne-40k input:focus, .brigandyne-40k select:focus, .brigandyne-40k textarea:focus {
+  outline: none;
+  border-color: var(--brig-gold);
+  box-shadow: 0 0 4px rgba(201,162,39,.4);
+}
+.brigandyne-40k label { color: var(--brig-muted); font-size: .82rem; }
+
+/* ---------- Ressources d'en-tête ---------- */
+.brigandyne-40k .header-resources { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: .2rem; }
+.brigandyne-40k .resource {
+  display: flex; align-items: center; gap: 3px;
+  background: rgba(0,0,0,.3);
+  border: 1px solid var(--brig-border);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+.brigandyne-40k .resource label { font-weight: 700; color: var(--brig-gold); text-transform: uppercase; font-size: .7rem; }
+.brigandyne-40k .resource input { width: 38px; text-align: center; }
+.brigandyne-40k .resource.pv label { color: var(--brig-red-2); }
+.brigandyne-40k .resource.corruption label { color: #7a4fb0; }
+
+/* ---------- Onglets ---------- */
+.brigandyne-40k .sheet-tabs {
+  display: flex; gap: 2px;
+  padding: 0 .5rem;
+  background: #0f141a;
+  border-bottom: 1px solid var(--brig-border);
+}
+.brigandyne-40k .tab-link {
+  padding: .35rem .7rem;
+  color: var(--brig-muted);
+  font-family: var(--brig-title);
+  text-transform: uppercase;
+  font-size: .85rem;
+  letter-spacing: .5px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+.brigandyne-40k .tab-link:hover { color: var(--brig-gold-2); }
+.brigandyne-40k .tab-link.active { color: var(--brig-gold); border-bottom-color: var(--brig-gold); }
+.brigandyne-40k .sheet-body { padding: .6rem; overflow-y: auto; }
+.brigandyne-40k .tab { display: none; }
+.brigandyne-40k .tab.active { display: block; }
+
+/* ---------- Caractéristiques ---------- */
+.brigandyne-40k .characteristics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+  gap: .4rem;
+}
+.brigandyne-40k .characteristics-grid.compact { grid-template-columns: repeat(auto-fit, minmax(72px, 1fr)); }
+.brigandyne-40k .characteristic {
+  display: flex; flex-direction: column; align-items: center;
+  background: var(--brig-panel);
+  border: 1px solid var(--brig-border);
+  border-radius: 6px;
+  padding: .35rem;
+  position: relative;
+}
+.brigandyne-40k .char-name {
+  font-family: var(--brig-title);
+  font-weight: 700;
+  color: var(--brig-gold);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: .95rem;
+  letter-spacing: 1px;
+}
+.brigandyne-40k .char-name:hover { color: var(--brig-gold-2); text-shadow: 0 0 6px rgba(232,199,90,.6); }
+.brigandyne-40k .char-value {
+  width: 56px; text-align: center; font-size: 1.3rem; font-weight: 700;
+  color: var(--brig-ink); background: rgba(0,0,0,.35);
+}
+.brigandyne-40k .char-bonus {
+  position: absolute; top: 2px; right: 4px;
+  font-size: .72rem; color: var(--brig-muted);
+}
+.brigandyne-40k .char-adv {
+  display: flex; align-items: center; justify-content: center; gap: .35rem; margin-top: .2rem;
+}
+.brigandyne-40k .char-adv a { color: var(--brig-muted); cursor: pointer; line-height: 1; }
+.brigandyne-40k .char-adv a:hover { color: var(--brig-gold-2); }
+.brigandyne-40k .char-adv .adv-count { font-size: .72rem; color: var(--brig-gold); min-width: 10px; text-align: center; }
+
+.brigandyne-40k .secondary-stats {
+  display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .8rem;
+  padding-top: .6rem; border-top: 1px dashed var(--brig-border);
+}
+.brigandyne-40k .secondary-stats .stat { display: flex; align-items: center; gap: 4px; }
+.brigandyne-40k .secondary-stats .stat label { font-weight: 700; color: var(--brig-gold); }
+.brigandyne-40k .secondary-stats .stat span { font-size: 1.1rem; }
+
+/* ---------- Listes d'objets ---------- */
+.brigandyne-40k .items-section { margin-top: .7rem; }
+.brigandyne-40k .section-head {
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--brig-gold);
+  margin-bottom: .25rem;
+}
+.brigandyne-40k .section-head h3, .brigandyne-40k .section-head h4 {
+  font-family: var(--brig-title); color: var(--brig-gold-2);
+  font-size: 1rem; margin: 0; text-transform: uppercase; letter-spacing: .5px;
+}
+.brigandyne-40k .section-head button {
+  width: auto; background: var(--brig-red); border: 1px solid var(--brig-border);
+  color: var(--brig-ink); border-radius: 3px; cursor: pointer; padding: 1px 6px; line-height: 1.4;
+}
+.brigandyne-40k .section-head button:hover { background: var(--brig-red-2); }
+.brigandyne-40k .items-list { list-style: none; margin: 0; padding: 0; }
+.brigandyne-40k .item {
+  display: flex; align-items: center; gap: .4rem;
+  padding: .2rem .3rem;
+  border-bottom: 1px solid rgba(74,63,48,.5);
+}
+.brigandyne-40k .item:hover { background: rgba(201,162,39,.08); }
+.brigandyne-40k .item.equipped { box-shadow: inset 3px 0 0 var(--brig-green); }
+.brigandyne-40k .item-img { width: 24px; height: 24px; object-fit: cover; border-radius: 3px; cursor: pointer; }
+.brigandyne-40k .item-name { flex: 1; cursor: pointer; }
+.brigandyne-40k .item-name:hover { color: var(--brig-gold-2); }
+.brigandyne-40k .item-detail { color: var(--brig-muted); font-size: .82rem; min-width: 48px; text-align: right; }
+.brigandyne-40k .item-controls { display: flex; gap: 5px; }
+.brigandyne-40k .item-controls a { color: var(--brig-muted); cursor: pointer; }
+.brigandyne-40k .item-controls a:hover { color: var(--brig-gold-2); }
+
+.brigandyne-40k .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+.brigandyne-40k .details-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: .4rem; margin-bottom: .6rem; }
+.brigandyne-40k .details-grid label { display: flex; flex-direction: column; }
+
+/* ---------- Pouvoirs ---------- */
+.brigandyne-40k .powers-info {
+  display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;
+  background: var(--brig-panel); border: 1px solid var(--brig-border);
+  border-radius: 6px; padding: .4rem .6rem; margin-bottom: .5rem;
+}
+
+/* ---------- Feuille d'objet ---------- */
+.brigandyne-40k.item .field-row { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: .4rem; }
+.brigandyne-40k.item .field-row label { display: flex; flex-direction: column; flex: 1; }
+.brigandyne-40k.item .field-row label.grow { flex: 2; }
+.brigandyne-40k.item .field-row label.check { flex: 0 0 auto; }
+.brigandyne-40k .char-mini-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: .25rem; }
+.brigandyne-40k .char-mini-grid label { display: flex; flex-direction: column; align-items: center; font-size: .7rem; }
+.brigandyne-40k .char-mini-grid input { width: 100%; text-align: center; }
+.brigandyne-40k .hint { color: var(--brig-muted); font-style: italic; font-size: .78rem; margin: .4rem 0 .2rem; }
+.brigandyne-40k .item-type { color: var(--brig-muted); font-style: italic; }
+.brigandyne-40k .qualities-list { list-style: none; margin: 0; padding: 0; }
+.brigandyne-40k .quality-row { display: flex; gap: .3rem; align-items: center; margin-bottom: 2px; }
+.brigandyne-40k .quality-row input { width: 56px; }
+
+/* ---------- ProseMirror ---------- */
+.brigandyne-40k prose-mirror { display: block; min-height: 120px; background: rgba(0,0,0,.2); border: 1px solid var(--brig-border); border-radius: 4px; padding: 4px; }
+
+/* ============================================================
+   Cartes de chat
+   ============================================================ */
+.brigandyne-40k.chat-card {
+  border: 1px solid var(--brig-border);
+  border-radius: 6px;
+  background: linear-gradient(180deg, var(--brig-bg-2), var(--brig-bg));
+  color: var(--brig-ink);
+  overflow: hidden;
+}
+.brigandyne-40k.chat-card .card-header {
+  display: flex; align-items: center; gap: .5rem;
+  padding: .35rem .5rem;
+  background: linear-gradient(180deg, #243140, #141a20);
+  border-bottom: 1px solid var(--brig-gold);
+}
+.brigandyne-40k.chat-card .card-portrait { width: 36px; height: 36px; object-fit: cover; border-radius: 4px; border: 1px solid var(--brig-border); }
+.brigandyne-40k.chat-card .card-title { font-family: var(--brig-title); color: var(--brig-gold-2); margin: 0; font-size: 1.05rem; }
+.brigandyne-40k.chat-card .card-subtitle { color: var(--brig-muted); font-size: .78rem; }
+.brigandyne-40k.chat-card .card-result {
+  display: flex; align-items: center; justify-content: center; gap: .6rem;
+  padding: .4rem; text-align: center;
+}
+.brigandyne-40k.chat-card .roll-total { font-size: 2.2rem; font-weight: 800; font-family: var(--brig-title); }
+.brigandyne-40k.chat-card .roll-vs { color: var(--brig-muted); }
+.brigandyne-40k.chat-card .result-degree { font-weight: 700; text-transform: uppercase; letter-spacing: .5px; padding: .15rem .4rem; border-radius: 3px; }
+.brigandyne-40k.chat-card .result-degree.crit-success { color: #0c0; background: rgba(0,200,0,.12); }
+.brigandyne-40k.chat-card .result-degree.major-success { color: #6c6; }
+.brigandyne-40k.chat-card .result-degree.minor-success { color: var(--brig-green); }
+.brigandyne-40k.chat-card .result-degree.minor-failure { color: #c87; }
+.brigandyne-40k.chat-card .result-degree.major-failure { color: var(--brig-red-2); }
+.brigandyne-40k.chat-card .result-degree.crit-failure { color: #fff; background: var(--brig-red); }
+.brigandyne-40k.chat-card.crit-success { box-shadow: inset 0 0 0 2px rgba(0,200,0,.4); }
+.brigandyne-40k.chat-card.crit-failure { box-shadow: inset 0 0 0 2px var(--brig-red); }
+.brigandyne-40k.chat-card .card-meta { padding: .3rem .5rem; font-size: .82rem; }
+.brigandyne-40k.chat-card .meta-line { display: flex; justify-content: space-between; gap: .5rem; padding: 1px 0; }
+.brigandyne-40k.chat-card .meta-label { color: var(--brig-muted); }
+.brigandyne-40k.chat-card .ru { font-weight: 700; color: var(--brig-gold-2); }
+.brigandyne-40k.chat-card .tens-pool { display: inline-flex; gap: 3px; }
+.brigandyne-40k.chat-card .tens-die { padding: 0 5px; border: 1px solid var(--brig-border); border-radius: 3px; }
+.brigandyne-40k.chat-card .tens-die.chosen { background: var(--brig-gold); color: #000; font-weight: 700; }
+.brigandyne-40k.chat-card .tens-die.discarded { opacity: .4; text-decoration: line-through; }
+.brigandyne-40k.chat-card .mod-chip { display: inline-block; padding: 0 5px; border-radius: 3px; font-size: .75rem; margin-left: 3px; }
+.brigandyne-40k.chat-card .mod-chip.pos { background: rgba(79,122,58,.4); }
+.brigandyne-40k.chat-card .mod-chip.neg { background: rgba(140,28,19,.4); }
+.brigandyne-40k.chat-card .card-buttons { display: flex; gap: .4rem; padding: .4rem .5rem; border-top: 1px solid var(--brig-border); }
+.brigandyne-40k.chat-card .card-button {
+  flex: 1; background: var(--brig-panel); border: 1px solid var(--brig-border);
+  color: var(--brig-ink); border-radius: 4px; cursor: pointer; padding: .25rem;
+}
+.brigandyne-40k.chat-card .card-button:hover { background: var(--brig-red); }
+.brigandyne-40k.chat-card .card-button.destin:hover { background: var(--brig-gold); color: #000; }
+
+/* ---------- Véhicule ---------- */
+.brigandyne-40k .maneuver-btn {
+  width: auto; background: var(--brig-panel-2); color: var(--brig-ink);
+  border: 1px solid var(--brig-border); border-radius: 4px; cursor: pointer; padding: .3rem .7rem;
+}
+.brigandyne-40k .maneuver-btn:hover { background: var(--brig-blue); color: #fff; }
+
+/* ---------- Assistant de création ---------- */
+.brigandyne-40k.char-gen { font-family: var(--brig-font); }
+.brigandyne-40k.char-gen .char-gen-body { padding: .6rem; color: var(--brig-ink); }
+.brigandyne-40k.char-gen .intro { color: var(--brig-muted); font-size: .85rem; }
+.brigandyne-40k.char-gen .form-grid.two { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
+.brigandyne-40k.char-gen .preview { margin-top: .6rem; padding: .5rem; background: var(--brig-panel); border: 1px solid var(--brig-border); border-radius: 6px; }
+.brigandyne-40k.char-gen .preview h4 { font-family: var(--brig-title); color: var(--brig-gold-2); margin: 0 0 .4rem; }
+.brigandyne-40k.char-gen .char-mini-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: .25rem; }
+.brigandyne-40k.char-gen .mini { display: flex; flex-direction: column; align-items: center; background: rgba(0,0,0,.25); border-radius: 4px; padding: 2px; }
+.brigandyne-40k.char-gen .mini .k { font-size: .7rem; color: var(--brig-gold); }
+.brigandyne-40k.char-gen .cg-buttons { margin-top: .8rem; display: flex; justify-content: flex-end; }
+.brigandyne-40k.char-gen .cg-buttons button { background: var(--brig-red); color: var(--brig-ink); border: 1px solid var(--brig-border); border-radius: 4px; padding: .35rem .9rem; cursor: pointer; }
+.brigandyne-40k.char-gen .cg-buttons button:hover { background: var(--brig-red-2); }
+.brigandyne-40k .char-gen-btn { width: auto; flex: 0 0 auto; background: var(--brig-gold); color: #000; border: none; border-radius: 4px; cursor: pointer; padding: 0 8px; }
+.brigandyne-40k .char-gen-btn:hover { background: var(--brig-gold-2); }
+
+/* ---------- Cartes Warp ---------- */
+.brigandyne-40k.warp-card .card-header { background: linear-gradient(180deg, #2a1838, #1a1020); border-bottom-color: #7a4fb0; }
+.brigandyne-40k.warp-card .card-title { color: #c89cff; }
+.brigandyne-40k.warp-card.peril .card-header { background: linear-gradient(180deg, #3a0e0e, #1a0808); border-bottom-color: var(--brig-red-2); }
+.brigandyne-40k.warp-card.peril .card-title { color: #ff6b5e; }
+.brigandyne-40k.warp-card .roll-total { font-size: 1.6rem; }
+
+/* ---------- Dialogue de test ---------- */
+.brigandyne-40k.test-dialog .form-group { display: flex; flex-direction: column; margin-bottom: .4rem; }
+.brigandyne-40k.test-dialog .form-grid.two { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; }
+.brigandyne-40k.test-dialog .dialog-target { text-align: center; font-size: 1.05rem; }
+.brigandyne-40k.test-dialog .preset { color: var(--brig-muted); }

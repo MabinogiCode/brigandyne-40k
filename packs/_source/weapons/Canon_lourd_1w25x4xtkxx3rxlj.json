@@ -1,0 +1,32 @@
+{
+  "_id": "1w25x4xtkxx3rxlj",
+  "name": "Canon lourd",
+  "type": "weapon",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "vehicle",
+    "damageBase": "flat",
+    "damageMod": 8,
+    "range": 60,
+    "magazine": 1,
+    "ammoType": "",
+    "price": 5000,
+    "qualities": [
+      {
+        "key": "rayon",
+        "value": 10
+      },
+      {
+        "key": "destruction",
+        "value": null
+      },
+      {
+        "key": "perceArmure",
+        "value": 2
+      }
+    ],
+    "specialText": "",
+    "source": "Véhicule"
+  }
+}

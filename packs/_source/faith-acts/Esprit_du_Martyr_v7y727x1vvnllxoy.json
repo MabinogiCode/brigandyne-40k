@@ -1,0 +1,17 @@
+{
+  "_id": "v7y727x1vvnllxoy",
+  "name": "Esprit du Martyr",
+  "type": "faithAct",
+  "img": "icons/svg/angel.svg",
+  "system": {
+    "isMiracle": false,
+    "difficulty": 0,
+    "duration": "RU tours",
+    "range": "Moyenne",
+    "resistance": "-",
+    "rPlus": "Protection +1",
+    "damage": "",
+    "effect": "<p>Les coups et les projectiles semblent absorber ou dévier par une force supérieure qui protège la cible. Elle reçoit 2 point de Protection.</p>",
+    "source": "L1"
+  }
+}

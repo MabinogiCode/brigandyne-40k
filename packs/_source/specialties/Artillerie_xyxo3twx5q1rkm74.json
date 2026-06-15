@@ -1,0 +1,11 @@
+{
+  "_id": "xyxo3twx5q1rkm74",
+  "name": "Artillerie",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

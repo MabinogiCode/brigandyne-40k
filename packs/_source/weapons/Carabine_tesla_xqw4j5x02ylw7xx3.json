@@ -1,0 +1,30 @@
+{
+  "_id": "xqw4j5x02ylw7xx3",
+  "name": "Carabine tesla",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "xeno",
+    "damageBase": "flat",
+    "damageMod": 4,
+    "reach": "C",
+    "hands": 1,
+    "range": 30,
+    "magazine": 0,
+    "ammoType": "-",
+    "price": 0,
+    "qualities": [
+      {
+        "key": "automatique",
+        "value": null
+      },
+      {
+        "key": "lourde",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Xéno"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "_id": "1tvu13qs02mlx5yr",
+  "name": "Étanchement",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": false,
+    "difficulty": 10,
+    "duration": "Instantanée",
+    "range": "Courte",
+    "resistance": "-",
+    "rPlus": "Soins",
+    "damage": "",
+    "effect": "<p>Vous faites cesser le Handicap Ensanglanté d’une cible.</p>",
+    "source": "L1"
+  }
+}

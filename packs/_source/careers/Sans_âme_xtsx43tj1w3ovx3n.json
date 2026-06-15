@@ -1,0 +1,53 @@
+{
+  "_id": "xtsx43tj1w3ovx3n",
+  "name": "Sans-âme",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "assassinorum",
+    "quote": "“Pas d’âme à pervertir.”",
+    "advances": {
+      "com": 2,
+      "cns": 2,
+      "dis": 1,
+      "end": 2,
+      "for": 2,
+      "tec": 0,
+      "psy": 0,
+      "mou": 3,
+      "per": 4,
+      "soc": 0,
+      "sur": 1,
+      "tir": 2,
+      "vol": 5
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Arme de mêlée (au choix)",
+      "Arme à distance (au choix)",
+      "Courage",
+      "Course",
+      "Déplacement silencieux",
+      "Intimidation",
+      "Milieu naturel",
+      "Réflexes",
+      "Résistance au Warp",
+      "Vigilance"
+    ],
+    "talents": [
+      "Agile",
+      "Calme",
+      "Distraction",
+      "Cri de guerre",
+      "Esquive",
+      "Mémoire sans faille",
+      "Résilience",
+      "Réflexes éclairs",
+      "Sixième sens",
+      "Vivacité"
+    ],
+    "startingEquipment": "<p>Combi-blindée (remplace l’armure pare-balles), Grenades Psy x2</p>",
+    "description": "<p>Les Sans-âmes n’ont pas de présence dans l’immense toile qu’est le Warp. Leur don rare fait d’eux les prédateurs naturels des Psykers et de futurs assassins du Temple Culexus. Note : Seul un Paria peut choisir cette carrière.</p>",
+    "source": "L1"
+  }
+}

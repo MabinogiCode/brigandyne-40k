@@ -1,0 +1,53 @@
+{
+  "_id": "xjlmt32mxu18ox1y",
+  "name": "Sicaire",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "assassinorum",
+    "quote": "“Ils ne verront rien venir.”",
+    "advances": {
+      "com": 2,
+      "cns": 0,
+      "dis": 3,
+      "end": 2,
+      "for": 2,
+      "tec": 3,
+      "psy": 0,
+      "mou": 3,
+      "per": 1,
+      "soc": 4,
+      "sur": 0,
+      "tir": 2,
+      "vol": 2
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Arme de mêlée (au choix)",
+      "Arme à distance (au choix)",
+      "Acrobaties",
+      "Charme",
+      "Contorsion",
+      "Danse",
+      "Déguisement",
+      "Étiquette",
+      "Poisons",
+      "Réflexes"
+    ],
+    "talents": [
+      "Agile",
+      "Calme",
+      "Distraction",
+      "Doué (SOC)",
+      "Esquive",
+      "Fascination",
+      "Pattes de chat",
+      "Relations",
+      "Réflexes éclairs",
+      "Vivacité"
+    ],
+    "startingEquipment": "<p>Vêtements civils, Kit de déguisement, *SOC* doses de poisons</p>",
+    "description": "<p>Les Sicaires sont les adeptes entraînés dans l’art du déguisement et de l’infiltration du Temple Callidus. Contrairement aux autres assassins, ils sont patients, ils cherchent des informations et puis finissent par frapper lorsque la cible s’y attend le moins.</p>",
+    "source": "L1"
+  }
+}

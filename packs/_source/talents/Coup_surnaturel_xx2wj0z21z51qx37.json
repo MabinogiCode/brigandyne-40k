@@ -1,0 +1,10 @@
+{
+  "_id": "xx2wj0z21z51qx37",
+  "name": "Coup surnaturel",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

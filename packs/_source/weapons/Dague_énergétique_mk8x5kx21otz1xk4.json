@@ -1,0 +1,26 @@
+{
+  "_id": "mk8x5kx21otz1xk4",
+  "name": "Dague énergétique",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": -1,
+    "reach": "E",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 200,
+    "qualities": [
+      {
+        "key": "perceArmure",
+        "value": 3
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

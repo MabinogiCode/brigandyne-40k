@@ -1,0 +1,55 @@
+{
+  "_id": "1x602p01ssv7x4w4",
+  "name": "Médic",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "militarum",
+    "quote": "“Il est touché ! Ramenez-le par ici !”",
+    "advances": {
+      "com": 4,
+      "cns": 1,
+      "dis": 0,
+      "end": 3,
+      "for": 3,
+      "tec": 3,
+      "psy": 0,
+      "mou": 1,
+      "per": 2,
+      "soc": 0,
+      "sur": 1,
+      "tir": 4,
+      "vol": 2
+    },
+    "lifestyle": "pauvre",
+    "specialties": [
+      "Arme de mêlée (au choix)",
+      "Arme à distance (au choix)",
+      "Courage",
+      "Course",
+      "Médecine",
+      "Persuasion",
+      "Premiers soins",
+      "Réflexes",
+      "Résistance aux maladies",
+      "Résistance à la chaleur/au froid",
+      "Vigilance"
+    ],
+    "talents": [
+      "Arme fétiche",
+      "Coups précis",
+      "Esquive",
+      "Esprit de compétition",
+      "Gardien",
+      "Inspiration",
+      "Mains blanches",
+      "Recharge rapide",
+      "Travail d’équipe",
+      "Tir précis",
+      "Tir ciblé"
+    ],
+    "startingEquipment": "<p>Armure Carapace légère, Trousse médicale, Brassard de Médic, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix)</p>",
+    "description": "<p>Les soldats de la Garde impériale n’ont aucune idée de ce qu’ils vont rencontrer mais la seule chose qu’ils savent, c’est qu’ils vont devoir combattre. C’est pour s’assurer qu’ils combattant le plus longtemps possible que sont formés les Médics, en tant que médecins de guerre et chirurgiens-combattants. Ils sont ainsi capable d’apporter des soins aux blessés lors des conflits.</p>",
+    "source": "L1"
+  }
+}

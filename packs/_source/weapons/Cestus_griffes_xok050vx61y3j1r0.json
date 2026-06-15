@@ -1,0 +1,26 @@
+{
+  "_id": "xok050vx61y3j1r0",
+  "name": "Cestus, griffes",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": -2,
+    "reach": "F",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 5,
+    "qualities": [
+      {
+        "key": "saisie",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

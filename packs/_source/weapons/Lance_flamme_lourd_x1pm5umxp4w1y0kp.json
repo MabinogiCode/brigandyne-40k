@@ -1,0 +1,34 @@
+{
+  "_id": "x1pm5umxp4w1y0kp",
+  "name": "Lance-flamme lourd",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 6,
+    "reach": "C",
+    "hands": 1,
+    "range": 12,
+    "magazine": 15,
+    "ammoType": "Réservoir L",
+    "price": 700,
+    "qualities": [
+      {
+        "key": "souffle",
+        "value": 6
+      },
+      {
+        "key": "chargement",
+        "value": 2
+      },
+      {
+        "key": "ignoreBoucliers",
+        "value": null
+      }
+    ],
+    "specialText": "Dégâts de feu",
+    "source": "L1"
+  }
+}

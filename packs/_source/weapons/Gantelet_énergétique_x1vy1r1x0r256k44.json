@@ -1,0 +1,38 @@
+{
+  "_id": "x1vy1r1x0r256k44",
+  "name": "Gantelet énergétique",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": 0,
+    "reach": "F",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 300,
+    "qualities": [
+      {
+        "key": "choc",
+        "value": null
+      },
+      {
+        "key": "perceArmure",
+        "value": 3
+      },
+      {
+        "key": "destruction",
+        "value": null
+      },
+      {
+        "key": "saisie",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

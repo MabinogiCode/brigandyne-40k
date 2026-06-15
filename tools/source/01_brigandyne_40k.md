@@ -1,0 +1,1680 @@
+
+# Warhammer 40.000 : Brigandyne
+Ce document est une adaptation du système Brigandyne - V2 à l’univers de Warhammer 40K.
+Brigandyne est un système de jeu de rôle générique écrit par James Tornade, conçu pour s’adapter à de nombreux univers, principalement médiévaux-fantastiques. Mais avant tout, Brigandyne est un simulateur d’ambiance “Chair et Sang”, offrant un réalisme brutal, parfois cruel. Il met en scène des personnages loin d’être des héros surpuissants, mais plutôt des individus ordinaires confrontés à la violence d’un monde impitoyable.
+C’est précisément ce ton sombre et cette approche mortelle qui en font un système parfaitement adapté à l’univers dystopique, désespéré et implacable de Warhammer 40K. Un univers où la survie ne tient qu’à un fil, où la foi, la peur et la folie dictent bien souvent les décisions, et où chaque affrontement peut être le dernier.
+Le système de Brigandyne est relativement simple à prendre en main pour des MJ expérimentés (et reste accessible pour des débutants motivés).
+Sur ce document, il n’y aura que de l’adaptation à l’univers Warhammer 40.000. Les règles de base se trouvent donc dans le Livre 1er de Brigandyne - V2, trouvable ici :
+https://www.lulu.com/fr/shop/james-tornade/brigandyne-2e-%C3%A9dition-livre-premier/ebook/product-q96zwz.html?q=Brigandyne&page=1&pageSize=4
+Les règles concernant le Bestiaire sont dans le Livre 2nd :
+https://www.lulu.com/fr/shop/james-tornade/brigandyne-2e-%C3%A9dition-livre-second-pdf/ebook/product-7pvddk.html?q=&page=1&pageSize=4
+Un lien vers le site officiel de Brigandyne : https://brigandyne.wordpress.com/
+
+# Premiers pas
+
+## Compétences
+Combat [COM] : Capacité du personnage à se battre au corps à corps : attaquer et se défendre, qu’il soit armé ou à mains nues. C’est aussi sa combativité et son expérience sur le champ de bataille.
+Connaissances [CNS] : L’érudition du personnage : sa connaissance de l’Histoire, des sciences, de la géographie, des religions, de l’occultisme, des arts, de la technologie, de la noblesse… C’est aussi sa capacité d’apprentissage et la mémoire.
+Discrétion [DIS] : Faculté à se cacher, se déplacer silencieusement, dissimuler un objet sur soi ou suivre quelqu’un.
+Endurance [END] : Souffle du personnage, mais surtout son système immunitaire : sa résistance aux maladies, aux poisons ou à l’alcool.
+Force [FOR] : Gabarit, muscles, puissance physique du personnage. C’est aussi sa capacité à intimider. Une haute valeur en Force désigne un colosse.
+Technique [TEC] : Connaissance pratique et doigté du personnage. Bricoler, subtiliser une bourse, crocheter une serrure, pratiquer les premiers soins ou pratiquer une activité artistique dépend de cette compétence. C’est également la compétence pour piloter des véhicules motorisés.
+Psychisme [PSY] : La capacité psychique du personnage : Sa capacité à pouvoir manipuler les énergies du Warp pour utiliser des pouvoirs psychiques. C’est la seule compétence qui commence à 0%. Toute mention de MAGIE dans les règles de base de Brigandyne est remplacée par le PSYCHISME.
+Mouvement [MOU] :  Courir, grimper, nager, sauter, monter à cheval… Un personnage avec une haute valeur de Mouvement est un athlète accompli.
+Perception [PER] : Les cinq sens, la vigilance et le sens de l’orientation. C’est la compétence utilisée pour fouiller un endroit, mais aussi pour lire les émotions des gens, détecter un mensonge…
+Sociabilité [SOC] : Bagout et aisance sociale du personnage. Persuader, négocier, séduire, se renseigner, baratiner, dépend de cette compétence. On l’utilise également pour faire bonne impression dès la première rencontre.
+Survie [SUR] : Capacité du personnage à s’adapter et se nourrir en milieu hostile : connaître le climat, les plantes comestibles, les habitudes des animaux, savoir allumer un feu, identifier des traces…
+Tir [TIR] : Précision avec une arme à distance.
+Volonté [VOL] : Force mentale, sang-froid, courage et capacité à commander. La volonté est primordiale pour résister à la peur et au stress. C’est aussi la compétence utilisée pour manipuler certaines Augmentations, dissimuler ses émotions ainsi que pour faire preuve de Foi.
+
+# Création de personnage
+
+### Humain
+L’espèce majoritaire au sein de l’Imperium. Les Humains se sont considérablement développés à travers la galaxie, s’adaptant à toutes sortes d’environnements. Malgré leur appartenance à une puissance unique, les cultures humaines à travers le cosmos sont innombrables. Ils sont adaptables, tenaces mais avides de pouvoirs et de conquêtes.
+Espérance de vie : 60 ans Taille, poids : environ 1m70, 65 kg (H) , 1m60, 50 kg (F) Cheveux : blonds, roux, bruns, noirs Yeux : marrons, bleus, verts, noirs.
+
+### Squat
+Ces Abhumains ont évolué sur des mondes à forte gravité et, de fait, sont plus épais, trapus et petits qu’un homme normal. Ce sont des individus vaillants et déterminés, connus pour leur opiniâtreté, leur constitution robuste et d’impressionnants talents d’ingénieurs.
+Espérance de vie : 100 ans Taille, poids : environ 1m50, 70 kg (H) , 1m40, 60 kg (F) Cheveux : blonds, roux, bruns, noirs Yeux : marrons, bleus, verts, noirs.
+
+### Ratling
+Petits Abhumains dans les régiments des Militarum Auxilla, ce sont pour beaucoup des vauriens grossiers et sans-gêne, dépourvus de chasteté et d’hygiène personnelle ; toutefois, se sont des tireurs d’élite inégalés et des survivants tenaces capables de supporter les zones de combat les plus infernales avec une aisance déconcertante. En apprenant à dépasser les préjugés, on peut exploiter leurs talents. Outre leur précision avec un fusil de sniper, ils ont une perception exhaustive des moindres intrigues et écueils qui minent un front.
+Espérance de vie : 60 ans Taille, poids : environ 1m30, 50 kg (H) , 1m25, 45 kg (F) Cheveux : blonds, roux, bruns, noirs Yeux : marrons, bleus, verts, noirs.
+
+### Ogryn
+Probablement la souche d’Abhumains la plus répandue, les Ogryns sont des simplets patauds qu’on croise sur presque tous les fronts impériaux. Leur force est aussi légendaire que leur stupidité, et certains sont si imposants et puissants qu’ils portent des maillons de chenilles de chars et des plaques de blindage en guise d’armure. À dire vrai, cette force est autant une bénédiction qu’une malédiction, et la conception des armes des Ogryns (fusils ripeurs, mantelets, etc.) a été prévue pour être la plus simple et la plus robuste possible afin de résister aux manipulations de ces colosses maladroits.
+Espérance de vie : 60 ans Taille, poids : environ 2m50, 120 kg (H) , 2m30, 100 kg (F) Cheveux : blonds, roux, bruns, noirs Yeux : marrons, bleus, verts, noirs.
+
+### Mutant
+La différence entre la mutation hérétique et les souches acceptables d’Abhumains réside dans la stabilité de la déviance génétique. Un Abhumain standard n’est pas plus susceptible de dévier de sa norme génétique qu’un humain standard. Bien que tolérés, les Mutants sont considérés comme les plus impies des Abhumains. Ils sont très souvent rejetés et occupent les places les moins estimées dans l’Imperium.
+Espérance de vie : 60 ans Taille, poids : environ 1m70, 65 kg (H) , 1m60, 50 kg (F) Cheveux : blonds, roux, bruns, noirs Yeux : marrons, bleus, verts, noirs.
+
+### Aeldari
+Au premier regard, les Aeldaris sont semblables aux humains, mais un examen approfondi met en lumière plusieurs différences. Leur silhouette est plus élancée, leurs traits sont fins et leurs yeux en amande leur donnent un regard pénétrant. Leurs oreilles sont pointues et leur peau d’albâtre est immaculée. Mais la différence fondamentale est la façon dont un Aeldari bouge, car l’élégance de ses mouvements n’a rien d’humain. Cela est manifeste dans la grâce avec laquelle il combat et la dextérité avec laquelle il manipule ses armes.
+Il n’est pas si rare que certains Aeldari se retrouvent au milieu de l’Imperium, vivant au sein de la civilisation humaine, bien qu’ils soient alors, au mieux, considérés comme des parias et des abhumains, ou dans le pire des cas, rejetés et détestés.
+Espérance de vie : 900 ans  Taille, poids : environ 1m70, 60 kg (H) , 1m60, 50 kg (F) Cheveux : blonds, roux, bruns, noirs Yeux : marrons, bleus, verts, noirs, violets.
+
+### Paria
+Les êtres vivants possèdent tous un écho à travers le Warp. Ceux qui possèdent des pouvoirs psychiques brillent d’autant plus qu’ils sont puissants. Mais certains possèdent le Gène du Paria. Ces êtres rarissimes n’ont aucune trace visible à travers le Warp, désorientant les Psykers qui se trouvent à proximité.
+Espérance de vie : 60 ans Taille, poids : environ 1m70, 65 kg (H) , 1m60, 50 kg (F) Cheveux : blonds, roux, bruns, noirs Yeux : noirs.
+
+|  | Humain | Squat | Ratling | Ogryn |
+| --- | --- | --- | --- | --- |
+| Combat | 25 | 30 | 25 | 35 |
+| Connaissance | 25 | 25 | 20 | 10 |
+| Discrétion | 25 | 25 | 30 | 10 |
+| Endurance | 25 | 30 | 20 | 40 |
+| Force | 25 | 25 | 15 | 50 |
+| Technique | 25 | 30 | 30 | 15 |
+| Psychisme | 0 | 0 | 0 | 0 |
+| Mouvement | 25 | 20 | 30 | 20 |
+| Perception | 25 | 20 | 30 | 20 |
+| Sociabilité | 25 | 20 | 20 | 15 |
+| Survie | 25 | 20 | 25 | 30 |
+| Tir | 25 | 20 | 30 | 25 |
+| Volonté | 25 | 30 | 25 | 30 |
+| Spécial | - | SF+1, PV+1 Nyctalopie | - | PV+2 Rés. maladies |
+| Limitations | - | MOU 60 | COM 75 FOR 45 | CNS 30, SOC 50 |
+| Destin | 3 | 2 | 3 | 1 |
+
+
+|  | Mutant | Aeldari | Paria |
+| --- | --- | --- | --- |
+| Combat | 25 | 25 | 25 |
+| Connaissance | 25 | 25 | 25 |
+| Discrétion | 25 | 25 | 25 |
+| Endurance | 30 | 20 | 25 |
+| Force | 25 | 20 | 25 |
+| Technique | 25 | 25 | 25 |
+| Psychisme | 0 | 10 | X |
+| Mouvement | 25 | 30 | 25 |
+| Perception | 25 | 25 | 25 |
+| Sociabilité | 15 | 25 | 15 |
+| Survie | 25 | 20 | 25 |
+| Tir | 25 | 30 | 25 |
+| Volonté | 30 | 20 | 35 |
+| Spécial | Mutations | Nyctalopie | Gêne du Paria |
+| Limitations | SOC 50 | FOR 60 | - |
+| Destin | 2 | 2 | 1 |
+
+
+### Spécialités
+Nyctalopie : Capacité de voir de nuit sans malus, mais pas dans le noir total.
+Mutations : Un mutant peut développer une Grâce. Il peut développer une seconde Grâce en sacrifiant un Point de Destin mais il subit un Fardeau en contrepartie.
+Gêne du Paria : Les Parias ont un bonus de 10% pour résister aux effets du Warp. Et tous les Psyker qui veulent manifester un pouvoir à proximité d’un Paria subissent un Désavantage.
+
+# Carrières
+Mondes féodaux : Il existe des millions de planètes colonisées par l’Imperium. Certaines sont encore à un stade peu avancé technologiquement et leur fonctionnement s’apparente à un système féodal, presque moyenâgeux. Les Carrières de Base de Brigandyne peuvent s’adapter à ses planètes.
+Masse grouillante : De la même manière, nombreuse sont les Carrières de Base de Brigandyne qui peuvent s’adapter à la masse, parmi les millions d’âmes qui peuplent une cité ruche ou une planète moins évolué.
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Niveau de vie | Niveau de vie |  |  |  |  |  |  | Niveau de vie | Niveau de vie |  |  |  |  |  |
+| Spécialités | Spécialités |  |  |  |  |  |  | Spécialités | Spécialités |  |  |  |  |  |
+| Talents | Talents |  |  |  |  |  |  | Talents | Talents |  |  |  |  |  |
+| Equipements additionnels | Equipements additionnels |  |  |  |  |  |  | Equipements additionnels | Equipements additionnels |  |  |  |  |  |
+
+
+## Adeptus Administratum
+L’Adeptus Terra est divisé en une multitude incalculable de départements et bureaux de taille variable. L’ensemble est tellement vaste que personne ne peut énumérer avec certitude les noms et les missions de chacun d’eux. Les innombrables scribes, assesseurs, clercs et fonctionnaires de l’Adeptus Terra sont connus sous le terme d’Adeptus Administratum (aussi appelé simplement Administratum), qui est la bureaucratie galactique par l’intermédiaire de laquelle l’Imperium dirige et gouverne.
+Possessions de départ :
+Bure d’adepte
+Vêtements civils
+Nécessaire d’écriture, 1D10 parchemins
+Trois plumes et deux encriers, main de papier (20 pages)
+*CNS* livres reliés
+Bésicles
+Gibecière avec couverture, bol en bois, et 1D10 rations supérieures
+Gourde contenant du bon vin
+Bourse contenant 3D10 x *CNS* Trônes Gelt
+
+| Historiographe | Historiographe | Historiographe | Historiographe | Historiographe | Historiographe | Historiographe |  | Scribe | Scribe | Scribe | Scribe | Scribe | Scribe | Scribe |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “Si vous devez creuser un sujet, un historiographe est l’outil indispensable.” | “Si vous devez creuser un sujet, un historiographe est l’outil indispensable.” | “Si vous devez creuser un sujet, un historiographe est l’outil indispensable.” | “Si vous devez creuser un sujet, un historiographe est l’outil indispensable.” | “Si vous devez creuser un sujet, un historiographe est l’outil indispensable.” | “Si vous devez creuser un sujet, un historiographe est l’outil indispensable.” | “Si vous devez creuser un sujet, un historiographe est l’outil indispensable.” |  | “La connaissance fait parfois la différence entre la vie et la mort.” | “La connaissance fait parfois la différence entre la vie et la mort.” | “La connaissance fait parfois la différence entre la vie et la mort.” | “La connaissance fait parfois la différence entre la vie et la mort.” | “La connaissance fait parfois la différence entre la vie et la mort.” | “La connaissance fait parfois la différence entre la vie et la mort.” | “La connaissance fait parfois la différence entre la vie et la mort.” |
+| Les Historiographes sont des membres de confiance de l’Administratum, initiés à certains de ses plus grands secrets. Même les connaissances d’autres Adepta ne sont pas à l’abri de leur regard scrutateur. Les Historiographes sont de fervents érudits qui arpentent les archives des plus grandes bibliothèques de l’Imperium et enseignent dans les établissements culturels. | Les Historiographes sont des membres de confiance de l’Administratum, initiés à certains de ses plus grands secrets. Même les connaissances d’autres Adepta ne sont pas à l’abri de leur regard scrutateur. Les Historiographes sont de fervents érudits qui arpentent les archives des plus grandes bibliothèques de l’Imperium et enseignent dans les établissements culturels. | Les Historiographes sont des membres de confiance de l’Administratum, initiés à certains de ses plus grands secrets. Même les connaissances d’autres Adepta ne sont pas à l’abri de leur regard scrutateur. Les Historiographes sont de fervents érudits qui arpentent les archives des plus grandes bibliothèques de l’Imperium et enseignent dans les établissements culturels. | Les Historiographes sont des membres de confiance de l’Administratum, initiés à certains de ses plus grands secrets. Même les connaissances d’autres Adepta ne sont pas à l’abri de leur regard scrutateur. Les Historiographes sont de fervents érudits qui arpentent les archives des plus grandes bibliothèques de l’Imperium et enseignent dans les établissements culturels. | Les Historiographes sont des membres de confiance de l’Administratum, initiés à certains de ses plus grands secrets. Même les connaissances d’autres Adepta ne sont pas à l’abri de leur regard scrutateur. Les Historiographes sont de fervents érudits qui arpentent les archives des plus grandes bibliothèques de l’Imperium et enseignent dans les établissements culturels. | Les Historiographes sont des membres de confiance de l’Administratum, initiés à certains de ses plus grands secrets. Même les connaissances d’autres Adepta ne sont pas à l’abri de leur regard scrutateur. Les Historiographes sont de fervents érudits qui arpentent les archives des plus grandes bibliothèques de l’Imperium et enseignent dans les établissements culturels. | Les Historiographes sont des membres de confiance de l’Administratum, initiés à certains de ses plus grands secrets. Même les connaissances d’autres Adepta ne sont pas à l’abri de leur regard scrutateur. Les Historiographes sont de fervents érudits qui arpentent les archives des plus grandes bibliothèques de l’Imperium et enseignent dans les établissements culturels. |  | Les Scribes sont des traqueurs de connaissance, doués en cet art byzantin qui consiste à chercher des renseignements dans toutes sortes de sources. Beaucoup craignent secrètement de ne jamais s’élever dans la hiérarchie de l’Administratum, ce qui explique certainement pourquoi ils sont prêts à prendre de si gros risques en arpentant les recoins les plus dangereux de la galaxie en quête de savoirs. | Les Scribes sont des traqueurs de connaissance, doués en cet art byzantin qui consiste à chercher des renseignements dans toutes sortes de sources. Beaucoup craignent secrètement de ne jamais s’élever dans la hiérarchie de l’Administratum, ce qui explique certainement pourquoi ils sont prêts à prendre de si gros risques en arpentant les recoins les plus dangereux de la galaxie en quête de savoirs. | Les Scribes sont des traqueurs de connaissance, doués en cet art byzantin qui consiste à chercher des renseignements dans toutes sortes de sources. Beaucoup craignent secrètement de ne jamais s’élever dans la hiérarchie de l’Administratum, ce qui explique certainement pourquoi ils sont prêts à prendre de si gros risques en arpentant les recoins les plus dangereux de la galaxie en quête de savoirs. | Les Scribes sont des traqueurs de connaissance, doués en cet art byzantin qui consiste à chercher des renseignements dans toutes sortes de sources. Beaucoup craignent secrètement de ne jamais s’élever dans la hiérarchie de l’Administratum, ce qui explique certainement pourquoi ils sont prêts à prendre de si gros risques en arpentant les recoins les plus dangereux de la galaxie en quête de savoirs. | Les Scribes sont des traqueurs de connaissance, doués en cet art byzantin qui consiste à chercher des renseignements dans toutes sortes de sources. Beaucoup craignent secrètement de ne jamais s’élever dans la hiérarchie de l’Administratum, ce qui explique certainement pourquoi ils sont prêts à prendre de si gros risques en arpentant les recoins les plus dangereux de la galaxie en quête de savoirs. | Les Scribes sont des traqueurs de connaissance, doués en cet art byzantin qui consiste à chercher des renseignements dans toutes sortes de sources. Beaucoup craignent secrètement de ne jamais s’élever dans la hiérarchie de l’Administratum, ce qui explique certainement pourquoi ils sont prêts à prendre de si gros risques en arpentant les recoins les plus dangereux de la galaxie en quête de savoirs. | Les Scribes sont des traqueurs de connaissance, doués en cet art byzantin qui consiste à chercher des renseignements dans toutes sortes de sources. Beaucoup craignent secrètement de ne jamais s’élever dans la hiérarchie de l’Administratum, ce qui explique certainement pourquoi ils sont prêts à prendre de si gros risques en arpentant les recoins les plus dangereux de la galaxie en quête de savoirs. |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 0 | 6 | 2 | 2 | 1 | 0 | 0 |  | 1 | 4 | 2 | 2 | 1 | 1 | 0 |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 2 | 4 | 2 | 0 | 0 | 5 |  |  | 2 | 2 | 1 | 3 | 2 | 3 |  |
+| Niveau de vie | Niveau de vie | Ordinaire | Ordinaire | Ordinaire | Ordinaire | Ordinaire |  | Niveau de vie | Niveau de vie | Ordinaire | Ordinaire | Ordinaire | Ordinaire | Ordinaire |
+| Spécialités | Spécialités | Architecture, Astrologie, Diplomatie, Discours, Droit et usage, Estimation, Histoire, Légendes, Noblesse et politique, Occultisme | Architecture, Astrologie, Diplomatie, Discours, Droit et usage, Estimation, Histoire, Légendes, Noblesse et politique, Occultisme | Architecture, Astrologie, Diplomatie, Discours, Droit et usage, Estimation, Histoire, Légendes, Noblesse et politique, Occultisme | Architecture, Astrologie, Diplomatie, Discours, Droit et usage, Estimation, Histoire, Légendes, Noblesse et politique, Occultisme | Architecture, Astrologie, Diplomatie, Discours, Droit et usage, Estimation, Histoire, Légendes, Noblesse et politique, Occultisme |  | Spécialités | Spécialités | Arts, Astrologie ou Botanique, Droits et usage, Langue étrangère, Légendes, Potions et remèdes, Lettres, Milieu naturel, Occultisme, Religion, Vigilance | Arts, Astrologie ou Botanique, Droits et usage, Langue étrangère, Légendes, Potions et remèdes, Lettres, Milieu naturel, Occultisme, Religion, Vigilance | Arts, Astrologie ou Botanique, Droits et usage, Langue étrangère, Légendes, Potions et remèdes, Lettres, Milieu naturel, Occultisme, Religion, Vigilance | Arts, Astrologie ou Botanique, Droits et usage, Langue étrangère, Légendes, Potions et remèdes, Lettres, Milieu naturel, Occultisme, Religion, Vigilance | Arts, Astrologie ou Botanique, Droits et usage, Langue étrangère, Légendes, Potions et remèdes, Lettres, Milieu naturel, Occultisme, Religion, Vigilance |
+| Talents | Talents | Dévoué serviteur, Distraction, Doué (CNS), Doué (SOC), Doué (VOL), Esprit de compétition, Fascination, Inoffensif, Mémoire sans faille, Relations | Dévoué serviteur, Distraction, Doué (CNS), Doué (SOC), Doué (VOL), Esprit de compétition, Fascination, Inoffensif, Mémoire sans faille, Relations | Dévoué serviteur, Distraction, Doué (CNS), Doué (SOC), Doué (VOL), Esprit de compétition, Fascination, Inoffensif, Mémoire sans faille, Relations | Dévoué serviteur, Distraction, Doué (CNS), Doué (SOC), Doué (VOL), Esprit de compétition, Fascination, Inoffensif, Mémoire sans faille, Relations | Dévoué serviteur, Distraction, Doué (CNS), Doué (SOC), Doué (VOL), Esprit de compétition, Fascination, Inoffensif, Mémoire sans faille, Relations |  | Talents | Talents | Calme, Confiance en soi, Esquive, Fascination, Guérison rapide, Insaisissable, Instinct de survie, Mémoire sans faille, Résilience, Sixième sens | Calme, Confiance en soi, Esquive, Fascination, Guérison rapide, Insaisissable, Instinct de survie, Mémoire sans faille, Résilience, Sixième sens | Calme, Confiance en soi, Esquive, Fascination, Guérison rapide, Insaisissable, Instinct de survie, Mémoire sans faille, Résilience, Sixième sens | Calme, Confiance en soi, Esquive, Fascination, Guérison rapide, Insaisissable, Instinct de survie, Mémoire sans faille, Résilience, Sixième sens | Calme, Confiance en soi, Esquive, Fascination, Guérison rapide, Insaisissable, Instinct de survie, Mémoire sans faille, Résilience, Sixième sens |
+| Equipements additionnels | Equipements additionnels | - | - | - | - | - |  | Equipements additionnels | Equipements additionnels | Vêtements de voyage, Poignard, Armure primitive, Écritoire portative,  Encrier supplémentaire | Vêtements de voyage, Poignard, Armure primitive, Écritoire portative,  Encrier supplémentaire | Vêtements de voyage, Poignard, Armure primitive, Écritoire portative,  Encrier supplémentaire | Vêtements de voyage, Poignard, Armure primitive, Écritoire portative,  Encrier supplémentaire | Vêtements de voyage, Poignard, Armure primitive, Écritoire portative,  Encrier supplémentaire |
+
+
+| Praticien | Praticien | Praticien | Praticien | Praticien | Praticien | Praticien |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “Le corps n’a plus aucun secret.” | “Le corps n’a plus aucun secret.” | “Le corps n’a plus aucun secret.” | “Le corps n’a plus aucun secret.” | “Le corps n’a plus aucun secret.” | “Le corps n’a plus aucun secret.” | “Le corps n’a plus aucun secret.” |  |  |  |  |  |  |  |  |
+| Les Praticiens de l’Adeptus Administratum sont des scientifiques et des médecins qui vouent leurs vies à l’art de guérir.  Son savoir n’est réservé qu’à l’élite, car les tarifs son élevés pour la consultation d’un docteur. Il diagnostique les maladies, prescrit des remèdes et pratique la chirurgie, quitte à déléguer cette tâche à un assistant barbier. | Les Praticiens de l’Adeptus Administratum sont des scientifiques et des médecins qui vouent leurs vies à l’art de guérir.  Son savoir n’est réservé qu’à l’élite, car les tarifs son élevés pour la consultation d’un docteur. Il diagnostique les maladies, prescrit des remèdes et pratique la chirurgie, quitte à déléguer cette tâche à un assistant barbier. | Les Praticiens de l’Adeptus Administratum sont des scientifiques et des médecins qui vouent leurs vies à l’art de guérir.  Son savoir n’est réservé qu’à l’élite, car les tarifs son élevés pour la consultation d’un docteur. Il diagnostique les maladies, prescrit des remèdes et pratique la chirurgie, quitte à déléguer cette tâche à un assistant barbier. | Les Praticiens de l’Adeptus Administratum sont des scientifiques et des médecins qui vouent leurs vies à l’art de guérir.  Son savoir n’est réservé qu’à l’élite, car les tarifs son élevés pour la consultation d’un docteur. Il diagnostique les maladies, prescrit des remèdes et pratique la chirurgie, quitte à déléguer cette tâche à un assistant barbier. | Les Praticiens de l’Adeptus Administratum sont des scientifiques et des médecins qui vouent leurs vies à l’art de guérir.  Son savoir n’est réservé qu’à l’élite, car les tarifs son élevés pour la consultation d’un docteur. Il diagnostique les maladies, prescrit des remèdes et pratique la chirurgie, quitte à déléguer cette tâche à un assistant barbier. | Les Praticiens de l’Adeptus Administratum sont des scientifiques et des médecins qui vouent leurs vies à l’art de guérir.  Son savoir n’est réservé qu’à l’élite, car les tarifs son élevés pour la consultation d’un docteur. Il diagnostique les maladies, prescrit des remèdes et pratique la chirurgie, quitte à déléguer cette tâche à un assistant barbier. | Les Praticiens de l’Adeptus Administratum sont des scientifiques et des médecins qui vouent leurs vies à l’art de guérir.  Son savoir n’est réservé qu’à l’élite, car les tarifs son élevés pour la consultation d’un docteur. Il diagnostique les maladies, prescrit des remèdes et pratique la chirurgie, quitte à déléguer cette tâche à un assistant barbier. |  |  |  |  |  |  |  |  |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 0 | 6 | 0 | 2 | 0 | 5 | 0 |  |  |  |  |  |  |  |  |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 1 | 2 | 4 | 1 | 0 | 4 |  |  |  |  |  |  |  |  |  |
+| Niveau de vie | Niveau de vie | Aisé | Aisé | Aisé | Aisé | Aisé |  | Niveau de vie | Niveau de vie |  |  |  |  |  |
+| Spécialités | Spécialités | Botanique, Commerce, Intuition, Lettres, Médecine, Persuasion, Potions et remèdes, Premiers soins, Repérage, Résistance aux maladies | Botanique, Commerce, Intuition, Lettres, Médecine, Persuasion, Potions et remèdes, Premiers soins, Repérage, Résistance aux maladies | Botanique, Commerce, Intuition, Lettres, Médecine, Persuasion, Potions et remèdes, Premiers soins, Repérage, Résistance aux maladies | Botanique, Commerce, Intuition, Lettres, Médecine, Persuasion, Potions et remèdes, Premiers soins, Repérage, Résistance aux maladies | Botanique, Commerce, Intuition, Lettres, Médecine, Persuasion, Potions et remèdes, Premiers soins, Repérage, Résistance aux maladies |  | Spécialités | Spécialités |  |  |  |  |  |
+| Talents | Talents | Calme, Confiance en soi, Dévoué serviteur, Doué (CNS), Doué (TEC) ou Doué (VOL), Mains blanches, Mémoire sans faille, Relations, Sain d’esprit, Second souffle | Calme, Confiance en soi, Dévoué serviteur, Doué (CNS), Doué (TEC) ou Doué (VOL), Mains blanches, Mémoire sans faille, Relations, Sain d’esprit, Second souffle | Calme, Confiance en soi, Dévoué serviteur, Doué (CNS), Doué (TEC) ou Doué (VOL), Mains blanches, Mémoire sans faille, Relations, Sain d’esprit, Second souffle | Calme, Confiance en soi, Dévoué serviteur, Doué (CNS), Doué (TEC) ou Doué (VOL), Mains blanches, Mémoire sans faille, Relations, Sain d’esprit, Second souffle | Calme, Confiance en soi, Dévoué serviteur, Doué (CNS), Doué (TEC) ou Doué (VOL), Mains blanches, Mémoire sans faille, Relations, Sain d’esprit, Second souffle |  | Talents | Talents |  |  |  |  |  |
+| Equipements additionnels | Equipements additionnels | Tablier aseptisé, Gants de chirurgie, Outils de chirurgie, Trousse médicale, Injecteur, *CNS* doses de drogues ou stimulants | Tablier aseptisé, Gants de chirurgie, Outils de chirurgie, Trousse médicale, Injecteur, *CNS* doses de drogues ou stimulants | Tablier aseptisé, Gants de chirurgie, Outils de chirurgie, Trousse médicale, Injecteur, *CNS* doses de drogues ou stimulants | Tablier aseptisé, Gants de chirurgie, Outils de chirurgie, Trousse médicale, Injecteur, *CNS* doses de drogues ou stimulants | Tablier aseptisé, Gants de chirurgie, Outils de chirurgie, Trousse médicale, Injecteur, *CNS* doses de drogues ou stimulants |  | Equipements additionnels | Equipements additionnels |  |  |  |  |  |
+
+
+## Adeptus Arbites
+L’Adeptus Arbites est le principal garant de la loi de l’Empereur, et son rôle est de s’assurer que les mondes de l’Imperium se plient tous à la législation impériale. L’Adeptus Arbites est présent sur la plupart des planètes, où les Arbitrators garantissent que les lois de l’Imperium ont préséance sur les règlements et les soucis des dirigeants planétaires. Ils sont la première ligne de défense contre la rébellion et l’anarchie, l’incarnation droite et impassible de l’ordre de l’Imperium. Généralement, les Arbitrators sont basés dans d’austères Forteresses de District dont l’aspect sinistre est censé rappeler l’inflexibilité de la loi impériale aux populations.
+Possessions de départ :
+Vêtements civils
+Uniforme de l’Adeptus Arbites
+Matraque
+Pistolet laser
+Gourde d’eau ou de vin
+Munitions : Cellules P x2
+1D10 x *COM*ou *TIR* Trônes Gelt
+
+| Investigateur | Investigateur | Investigateur | Investigateur | Investigateur | Investigateur | Investigateur |  | Arbitrator | Arbitrator | Arbitrator | Arbitrator | Arbitrator | Arbitrator | Arbitrator |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “Nulle vérité n’est secrète.” | “Nulle vérité n’est secrète.” | “Nulle vérité n’est secrète.” | “Nulle vérité n’est secrète.” | “Nulle vérité n’est secrète.” | “Nulle vérité n’est secrète.” | “Nulle vérité n’est secrète.” |  | “On va casser de la vermine !” | “On va casser de la vermine !” | “On va casser de la vermine !” | “On va casser de la vermine !” | “On va casser de la vermine !” | “On va casser de la vermine !” | “On va casser de la vermine !” |
+| Les Investigateurs apprennent l’art de l’enquête, usant de contacts, de charmes et de vilains tours pour découvrir la vérité. | Les Investigateurs apprennent l’art de l’enquête, usant de contacts, de charmes et de vilains tours pour découvrir la vérité. | Les Investigateurs apprennent l’art de l’enquête, usant de contacts, de charmes et de vilains tours pour découvrir la vérité. | Les Investigateurs apprennent l’art de l’enquête, usant de contacts, de charmes et de vilains tours pour découvrir la vérité. | Les Investigateurs apprennent l’art de l’enquête, usant de contacts, de charmes et de vilains tours pour découvrir la vérité. | Les Investigateurs apprennent l’art de l’enquête, usant de contacts, de charmes et de vilains tours pour découvrir la vérité. | Les Investigateurs apprennent l’art de l’enquête, usant de contacts, de charmes et de vilains tours pour découvrir la vérité. |  | Les Arbitrators forment le corps des légions de l’Adeptus Arbites. Ils sont chargés de toutes sortes de missions à travers l’Imperium. Parfois employés par centaines pour faire respecter la loi dans une Cité-Ruche ou bien, une poignée peut assurer l’ordre au sein d’un monde éloigné au nom de la Lex Imperialis. | Les Arbitrators forment le corps des légions de l’Adeptus Arbites. Ils sont chargés de toutes sortes de missions à travers l’Imperium. Parfois employés par centaines pour faire respecter la loi dans une Cité-Ruche ou bien, une poignée peut assurer l’ordre au sein d’un monde éloigné au nom de la Lex Imperialis. | Les Arbitrators forment le corps des légions de l’Adeptus Arbites. Ils sont chargés de toutes sortes de missions à travers l’Imperium. Parfois employés par centaines pour faire respecter la loi dans une Cité-Ruche ou bien, une poignée peut assurer l’ordre au sein d’un monde éloigné au nom de la Lex Imperialis. | Les Arbitrators forment le corps des légions de l’Adeptus Arbites. Ils sont chargés de toutes sortes de missions à travers l’Imperium. Parfois employés par centaines pour faire respecter la loi dans une Cité-Ruche ou bien, une poignée peut assurer l’ordre au sein d’un monde éloigné au nom de la Lex Imperialis. | Les Arbitrators forment le corps des légions de l’Adeptus Arbites. Ils sont chargés de toutes sortes de missions à travers l’Imperium. Parfois employés par centaines pour faire respecter la loi dans une Cité-Ruche ou bien, une poignée peut assurer l’ordre au sein d’un monde éloigné au nom de la Lex Imperialis. | Les Arbitrators forment le corps des légions de l’Adeptus Arbites. Ils sont chargés de toutes sortes de missions à travers l’Imperium. Parfois employés par centaines pour faire respecter la loi dans une Cité-Ruche ou bien, une poignée peut assurer l’ordre au sein d’un monde éloigné au nom de la Lex Imperialis. | Les Arbitrators forment le corps des légions de l’Adeptus Arbites. Ils sont chargés de toutes sortes de missions à travers l’Imperium. Parfois employés par centaines pour faire respecter la loi dans une Cité-Ruche ou bien, une poignée peut assurer l’ordre au sein d’un monde éloigné au nom de la Lex Imperialis. |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 2 | 0 | 2 | 2 | 2 | 3 | 0 |  | 5 | 0 | 0 | 3 | 4 | 0 | 0 |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 2 | 3 | 4 | 0 | 2 | 2 |  |  | 2 | 2 | 0 | 0 | 4 | 4 |  |
+| Niveau de vie | Niveau de vie | Ordinaire | Ordinaire | Ordinaire | Ordinaire | Ordinaire |  | Niveau de vie | Niveau de vie | Ordinaire | Ordinaire | Ordinaire | Ordinaire | Ordinaire |
+| Spécialités | Spécialités | Arme de mêlée (au choix), Arme à distance (au choix), Crochetage, Déplacement silencieux, Diplomatie, Écoute, Fouille, Intimidation, Persuasion, Renseignements, Torture | Arme de mêlée (au choix), Arme à distance (au choix), Crochetage, Déplacement silencieux, Diplomatie, Écoute, Fouille, Intimidation, Persuasion, Renseignements, Torture | Arme de mêlée (au choix), Arme à distance (au choix), Crochetage, Déplacement silencieux, Diplomatie, Écoute, Fouille, Intimidation, Persuasion, Renseignements, Torture | Arme de mêlée (au choix), Arme à distance (au choix), Crochetage, Déplacement silencieux, Diplomatie, Écoute, Fouille, Intimidation, Persuasion, Renseignements, Torture | Arme de mêlée (au choix), Arme à distance (au choix), Crochetage, Déplacement silencieux, Diplomatie, Écoute, Fouille, Intimidation, Persuasion, Renseignements, Torture |  | Spécialités | Spécialités | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Commandement, Fouille, Droit et usages, Intimidation, Pistage, Réflexes, Torture, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Commandement, Fouille, Droit et usages, Intimidation, Pistage, Réflexes, Torture, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Commandement, Fouille, Droit et usages, Intimidation, Pistage, Réflexes, Torture, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Commandement, Fouille, Droit et usages, Intimidation, Pistage, Réflexes, Torture, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Commandement, Fouille, Droit et usages, Intimidation, Pistage, Réflexes, Torture, Vigilance |
+| Talents | Talents | Coups précis, Distraction, Esquive, Fascination, Mémoire sans faille, Panache, Prudent, Relations, Sain d’esprit, Sixième sens | Coups précis, Distraction, Esquive, Fascination, Mémoire sans faille, Panache, Prudent, Relations, Sain d’esprit, Sixième sens | Coups précis, Distraction, Esquive, Fascination, Mémoire sans faille, Panache, Prudent, Relations, Sain d’esprit, Sixième sens | Coups précis, Distraction, Esquive, Fascination, Mémoire sans faille, Panache, Prudent, Relations, Sain d’esprit, Sixième sens | Coups précis, Distraction, Esquive, Fascination, Mémoire sans faille, Panache, Prudent, Relations, Sain d’esprit, Sixième sens |  | Talents | Talents | Arme fétiche, Brute, Coups précis, Coups puissants, Gardien, Inspiration, Maître d’armes, Riposte, Solidité, Tir ciblé | Arme fétiche, Brute, Coups précis, Coups puissants, Gardien, Inspiration, Maître d’armes, Riposte, Solidité, Tir ciblé | Arme fétiche, Brute, Coups précis, Coups puissants, Gardien, Inspiration, Maître d’armes, Riposte, Solidité, Tir ciblé | Arme fétiche, Brute, Coups précis, Coups puissants, Gardien, Inspiration, Maître d’armes, Riposte, Solidité, Tir ciblé | Arme fétiche, Brute, Coups précis, Coups puissants, Gardien, Inspiration, Maître d’armes, Riposte, Solidité, Tir ciblé |
+| Equipements additionnels | Equipements additionnels | Menottes et clé, Crochets (x2), Revolver (remplace le Pistolet laser), Munitions : 18 balles M | Menottes et clé, Crochets (x2), Revolver (remplace le Pistolet laser), Munitions : 18 balles M | Menottes et clé, Crochets (x2), Revolver (remplace le Pistolet laser), Munitions : 18 balles M | Menottes et clé, Crochets (x2), Revolver (remplace le Pistolet laser), Munitions : 18 balles M | Menottes et clé, Crochets (x2), Revolver (remplace le Pistolet laser), Munitions : 18 balles M |  | Equipements additionnels | Equipements additionnels | Insigne d’Arbitrator, Bouclier anti-émeute, Armure Carapace, Menottes et clé, Lampe torche, Fusil à pompe, Munitions : 2 chargeurs complets. | Insigne d’Arbitrator, Bouclier anti-émeute, Armure Carapace, Menottes et clé, Lampe torche, Fusil à pompe, Munitions : 2 chargeurs complets. | Insigne d’Arbitrator, Bouclier anti-émeute, Armure Carapace, Menottes et clé, Lampe torche, Fusil à pompe, Munitions : 2 chargeurs complets. | Insigne d’Arbitrator, Bouclier anti-émeute, Armure Carapace, Menottes et clé, Lampe torche, Fusil à pompe, Munitions : 2 chargeurs complets. | Insigne d’Arbitrator, Bouclier anti-émeute, Armure Carapace, Menottes et clé, Lampe torche, Fusil à pompe, Munitions : 2 chargeurs complets. |
+
+
+## Adeptus Mechanicus
+L’une des organisations les plus puissantes et indépendantes de l’Imperium, l’Adeptus Mechanicus est en charge de l’intégralité des technologies qui permettent à celui-ci de prospérer à travers la galaxie. Les agents en robe rouge de cette organisation apparaissent sur tous les mondes impériaux et à bord de tous ses navires. Elle possède des mondes entiers placés sous sa seule autorité, contrôle pratiquement toutes les installations nécessaires pour que l’Imperium puisse mener la guerre, tout en conservant une autonomie et un pouvoir sans précédent.
+Possessions de départ :
+Vêtements simples.
+Outils de mécanique.
+Nécessaire d’écriture, 1D10 parchemins
+Trois plumes et deux encriers, main de papier (20 pages)
+Gibecière avec couverture, bol en bois, et 1D10 rations supérieures
+Gourde contenant du bon vin
+Bourse contenant 3D10 x *CNS* Trônes Gelt
+
+| Technoprêtre | Technoprêtre | Technoprêtre | Technoprêtre | Technoprêtre | Technoprêtre | Technoprêtre |  | Ranger Skitarii | Ranger Skitarii | Ranger Skitarii | Ranger Skitarii | Ranger Skitarii | Ranger Skitarii | Ranger Skitarii |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “La chair est faible…” | “La chair est faible…” | “La chair est faible…” | “La chair est faible…” | “La chair est faible…” | “La chair est faible…” | “La chair est faible…” |  | “Tuez les tous ! L’Omnimessie reconnaîtra les siens !” | “Tuez les tous ! L’Omnimessie reconnaîtra les siens !” | “Tuez les tous ! L’Omnimessie reconnaîtra les siens !” | “Tuez les tous ! L’Omnimessie reconnaîtra les siens !” | “Tuez les tous ! L’Omnimessie reconnaîtra les siens !” | “Tuez les tous ! L’Omnimessie reconnaîtra les siens !” | “Tuez les tous ! L’Omnimessie reconnaîtra les siens !” |
+| Les Technoprêtres sont initiés aux plus grands mystères de la technologie et connaissent de nombreux rites de maintenance, de mise à feu et de redémarrage. Des simples mécanismes de porte aux technologies anciennes sorties de ruines désagrégées, ils cherchent les nombreuses formes de l’Omnimessie pour ajouter de nouvelles connaissances aux cryptes de données de l’Adeptus Mechanicus. | Les Technoprêtres sont initiés aux plus grands mystères de la technologie et connaissent de nombreux rites de maintenance, de mise à feu et de redémarrage. Des simples mécanismes de porte aux technologies anciennes sorties de ruines désagrégées, ils cherchent les nombreuses formes de l’Omnimessie pour ajouter de nouvelles connaissances aux cryptes de données de l’Adeptus Mechanicus. | Les Technoprêtres sont initiés aux plus grands mystères de la technologie et connaissent de nombreux rites de maintenance, de mise à feu et de redémarrage. Des simples mécanismes de porte aux technologies anciennes sorties de ruines désagrégées, ils cherchent les nombreuses formes de l’Omnimessie pour ajouter de nouvelles connaissances aux cryptes de données de l’Adeptus Mechanicus. | Les Technoprêtres sont initiés aux plus grands mystères de la technologie et connaissent de nombreux rites de maintenance, de mise à feu et de redémarrage. Des simples mécanismes de porte aux technologies anciennes sorties de ruines désagrégées, ils cherchent les nombreuses formes de l’Omnimessie pour ajouter de nouvelles connaissances aux cryptes de données de l’Adeptus Mechanicus. | Les Technoprêtres sont initiés aux plus grands mystères de la technologie et connaissent de nombreux rites de maintenance, de mise à feu et de redémarrage. Des simples mécanismes de porte aux technologies anciennes sorties de ruines désagrégées, ils cherchent les nombreuses formes de l’Omnimessie pour ajouter de nouvelles connaissances aux cryptes de données de l’Adeptus Mechanicus. | Les Technoprêtres sont initiés aux plus grands mystères de la technologie et connaissent de nombreux rites de maintenance, de mise à feu et de redémarrage. Des simples mécanismes de porte aux technologies anciennes sorties de ruines désagrégées, ils cherchent les nombreuses formes de l’Omnimessie pour ajouter de nouvelles connaissances aux cryptes de données de l’Adeptus Mechanicus. | Les Technoprêtres sont initiés aux plus grands mystères de la technologie et connaissent de nombreux rites de maintenance, de mise à feu et de redémarrage. Des simples mécanismes de porte aux technologies anciennes sorties de ruines désagrégées, ils cherchent les nombreuses formes de l’Omnimessie pour ajouter de nouvelles connaissances aux cryptes de données de l’Adeptus Mechanicus. |  | Les Skitarii forment le bloc armé de l’Adeptus Mechanicus. Ils sont chargés de poursuivre la Quête du Savoir en avant-garde, d’accompagner les expéditions du Mechanicus, de protéger les Mondes-Forge de l’Imperium.  Pour les Skitarii, chaque blessure est une nouvelle occasion de renforcer leurs augmentations. | Les Skitarii forment le bloc armé de l’Adeptus Mechanicus. Ils sont chargés de poursuivre la Quête du Savoir en avant-garde, d’accompagner les expéditions du Mechanicus, de protéger les Mondes-Forge de l’Imperium.  Pour les Skitarii, chaque blessure est une nouvelle occasion de renforcer leurs augmentations. | Les Skitarii forment le bloc armé de l’Adeptus Mechanicus. Ils sont chargés de poursuivre la Quête du Savoir en avant-garde, d’accompagner les expéditions du Mechanicus, de protéger les Mondes-Forge de l’Imperium.  Pour les Skitarii, chaque blessure est une nouvelle occasion de renforcer leurs augmentations. | Les Skitarii forment le bloc armé de l’Adeptus Mechanicus. Ils sont chargés de poursuivre la Quête du Savoir en avant-garde, d’accompagner les expéditions du Mechanicus, de protéger les Mondes-Forge de l’Imperium.  Pour les Skitarii, chaque blessure est une nouvelle occasion de renforcer leurs augmentations. | Les Skitarii forment le bloc armé de l’Adeptus Mechanicus. Ils sont chargés de poursuivre la Quête du Savoir en avant-garde, d’accompagner les expéditions du Mechanicus, de protéger les Mondes-Forge de l’Imperium.  Pour les Skitarii, chaque blessure est une nouvelle occasion de renforcer leurs augmentations. | Les Skitarii forment le bloc armé de l’Adeptus Mechanicus. Ils sont chargés de poursuivre la Quête du Savoir en avant-garde, d’accompagner les expéditions du Mechanicus, de protéger les Mondes-Forge de l’Imperium.  Pour les Skitarii, chaque blessure est une nouvelle occasion de renforcer leurs augmentations. | Les Skitarii forment le bloc armé de l’Adeptus Mechanicus. Ils sont chargés de poursuivre la Quête du Savoir en avant-garde, d’accompagner les expéditions du Mechanicus, de protéger les Mondes-Forge de l’Imperium.  Pour les Skitarii, chaque blessure est une nouvelle occasion de renforcer leurs augmentations. |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 1 | 5 | 0 | 3 | 2 | 5 | 0 |  | 3 | 2 | 0 | 3 | 3 | 2 | 0 |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 0 | 2 | 0 | 0 | 1 | 5 |  |  | 3 | 1 | 0 | 0 | 3 | 4 |  |
+| Niveau de vie | Niveau de vie | Aisé | Aisé | Aisé | Aisé | Aisé |  | Niveau de vie | Niveau de vie | Ordinaire | Ordinaire | Ordinaire | Ordinaire | Ordinaire |
+| Spécialités | Spécialités | Arme (au choix), Commerce, Courage, Discours, Dissimulation d’objet, Estimation, Légendes, Lettres, Religion, Technomaîtrise, Travail du métal | Arme (au choix), Commerce, Courage, Discours, Dissimulation d’objet, Estimation, Légendes, Lettres, Religion, Technomaîtrise, Travail du métal | Arme (au choix), Commerce, Courage, Discours, Dissimulation d’objet, Estimation, Légendes, Lettres, Religion, Technomaîtrise, Travail du métal | Arme (au choix), Commerce, Courage, Discours, Dissimulation d’objet, Estimation, Légendes, Lettres, Religion, Technomaîtrise, Travail du métal | Arme (au choix), Commerce, Courage, Discours, Dissimulation d’objet, Estimation, Légendes, Lettres, Religion, Technomaîtrise, Travail du métal |  | Spécialités | Spécialités | Arme (au choix), Courage, Course, Pièges, Premiers soins, Réflexes, Résistance aux privations, Souffle, Stratégie, Technomaîtrise, Vigilance | Arme (au choix), Courage, Course, Pièges, Premiers soins, Réflexes, Résistance aux privations, Souffle, Stratégie, Technomaîtrise, Vigilance | Arme (au choix), Courage, Course, Pièges, Premiers soins, Réflexes, Résistance aux privations, Souffle, Stratégie, Technomaîtrise, Vigilance | Arme (au choix), Courage, Course, Pièges, Premiers soins, Réflexes, Résistance aux privations, Souffle, Stratégie, Technomaîtrise, Vigilance | Arme (au choix), Courage, Course, Pièges, Premiers soins, Réflexes, Résistance aux privations, Souffle, Stratégie, Technomaîtrise, Vigilance |
+| Talents | Talents | Calme, Coup adroit, Esprit de la Machine, Dévoué serviteur, Guérison rapide, Musique et chant, Prudent, Résilience, Sain d’esprit, Solidité, Technologie (au choix) | Calme, Coup adroit, Esprit de la Machine, Dévoué serviteur, Guérison rapide, Musique et chant, Prudent, Résilience, Sain d’esprit, Solidité, Technologie (au choix) | Calme, Coup adroit, Esprit de la Machine, Dévoué serviteur, Guérison rapide, Musique et chant, Prudent, Résilience, Sain d’esprit, Solidité, Technologie (au choix) | Calme, Coup adroit, Esprit de la Machine, Dévoué serviteur, Guérison rapide, Musique et chant, Prudent, Résilience, Sain d’esprit, Solidité, Technologie (au choix) | Calme, Coup adroit, Esprit de la Machine, Dévoué serviteur, Guérison rapide, Musique et chant, Prudent, Résilience, Sain d’esprit, Solidité, Technologie (au choix) |  | Talents | Talents | Agile, Arme fétiche, Coups précis ou Coups puissants, Doué (END ou MOU), Port d’armure, Réflexes éclairs, Riposte, Sain d’esprit, Solidité, Tir précis, Tireur d’élite | Agile, Arme fétiche, Coups précis ou Coups puissants, Doué (END ou MOU), Port d’armure, Réflexes éclairs, Riposte, Sain d’esprit, Solidité, Tir précis, Tireur d’élite | Agile, Arme fétiche, Coups précis ou Coups puissants, Doué (END ou MOU), Port d’armure, Réflexes éclairs, Riposte, Sain d’esprit, Solidité, Tir précis, Tireur d’élite | Agile, Arme fétiche, Coups précis ou Coups puissants, Doué (END ou MOU), Port d’armure, Réflexes éclairs, Riposte, Sain d’esprit, Solidité, Tir précis, Tireur d’élite | Agile, Arme fétiche, Coups précis ou Coups puissants, Doué (END ou MOU), Port d’armure, Réflexes éclairs, Riposte, Sain d’esprit, Solidité, Tir précis, Tireur d’élite |
+| Equipements additionnels | Equipements additionnels | Bure de Technoprêtre, Auto-plume, Outils d’ingénierie, Augmentations : Unité d’Impulsion Mentale et trois au choix | Bure de Technoprêtre, Auto-plume, Outils d’ingénierie, Augmentations : Unité d’Impulsion Mentale et trois au choix | Bure de Technoprêtre, Auto-plume, Outils d’ingénierie, Augmentations : Unité d’Impulsion Mentale et trois au choix | Bure de Technoprêtre, Auto-plume, Outils d’ingénierie, Augmentations : Unité d’Impulsion Mentale et trois au choix | Bure de Technoprêtre, Auto-plume, Outils d’ingénierie, Augmentations : Unité d’Impulsion Mentale et trois au choix |  | Equipements additionnels | Equipements additionnels | Manteau de Skitarii, Carabine et 2 chargeurs complets, Augmentations : Organes bioniques, Jambe bionique x2 | Manteau de Skitarii, Carabine et 2 chargeurs complets, Augmentations : Organes bioniques, Jambe bionique x2 | Manteau de Skitarii, Carabine et 2 chargeurs complets, Augmentations : Organes bioniques, Jambe bionique x2 | Manteau de Skitarii, Carabine et 2 chargeurs complets, Augmentations : Organes bioniques, Jambe bionique x2 | Manteau de Skitarii, Carabine et 2 chargeurs complets, Augmentations : Organes bioniques, Jambe bionique x2 |
+
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Niveau de vie | Niveau de vie |  |  |  |  |  |  | Niveau de vie | Niveau de vie |  |  |  |  |  |
+| Spécialités | Spécialités |  |  |  |  |  |  | Spécialités | Spécialités |  |  |  |  |  |
+| Talents | Talents |  |  |  |  |  |  | Talents | Talents |  |  |  |  |  |
+| Equipements additionnels | Equipements additionnels |  |  |  |  |  |  | Equipements additionnels | Equipements additionnels |  |  |  |  |  |
+
+
+## Adeptus Ministorum/Adepta Sororitas
+L’Adeptus Ministorum, plus connu en tant qu’Ecclésiarchie, est une institution tentaculaire, qui, d’une façon ou d’une autre, est présente dans chaque recoin de l’Imperium, des plus opulentes spires des Ruches aux plus spartiates cabanes frontalières. Des milliards de fonctionnaires composent ses rouages, depuis le puissant Cardinal Palatin responsable du destin de planètes entières, jusqu’au plus humble des copistes, susceptible de consacrer toute sa vie à la transcription d’un seul volume d’une encyclopédie hagiographique.
+L’Adepta Sororitas est une branche armée et complètement indépendante du Ministorum, qui accueillent les Filles de l’Empereur, des soeurs appartenant à différents Ordres aux fonctions diverses à travers l’Imperium. Certains de ces Ordres sont versés dans la diplomatie ou l’enseignement, tandis que d’autres accueillent les puissantes Soeurs de bataille qui sont une force armée redoutable, chargée de combattre au nom de l’Empereur.
+Possessions de départ :
+Habits religieux.
+Vêtements de voyage.
+Symbole sacré.
+Chapelet.
+Sac en toile contenant un bol en bois, et 1d10 rations.
+Gourde d’eau ou de vin.
+Bourse avec 5D10 x*CNS* Trônes Gelt.
+
+| Prêtre | Prêtre | Prêtre | Prêtre | Prêtre | Prêtre | Prêtre |  | Exorciste | Exorciste | Exorciste | Exorciste | Exorciste | Exorciste | Exorciste |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “Le berger qui guide le troupeau.” | “Le berger qui guide le troupeau.” | “Le berger qui guide le troupeau.” | “Le berger qui guide le troupeau.” | “Le berger qui guide le troupeau.” | “Le berger qui guide le troupeau.” | “Le berger qui guide le troupeau.” |  | “Mieux vaut que le corps meurt pur, plutôt que l’âme soit souillée…” | “Mieux vaut que le corps meurt pur, plutôt que l’âme soit souillée…” | “Mieux vaut que le corps meurt pur, plutôt que l’âme soit souillée…” | “Mieux vaut que le corps meurt pur, plutôt que l’âme soit souillée…” | “Mieux vaut que le corps meurt pur, plutôt que l’âme soit souillée…” | “Mieux vaut que le corps meurt pur, plutôt que l’âme soit souillée…” | “Mieux vaut que le corps meurt pur, plutôt que l’âme soit souillée…” |
+| Les Prêtres sont le cœur de l’Ecclésiarchie impériale. Ils prêchent dans les sombres ruelles des mondes-ruches, officient dans les églises d’une planète isolée et sont les agents qui apportent la sainte parole de l’Empereur. | Les Prêtres sont le cœur de l’Ecclésiarchie impériale. Ils prêchent dans les sombres ruelles des mondes-ruches, officient dans les églises d’une planète isolée et sont les agents qui apportent la sainte parole de l’Empereur. | Les Prêtres sont le cœur de l’Ecclésiarchie impériale. Ils prêchent dans les sombres ruelles des mondes-ruches, officient dans les églises d’une planète isolée et sont les agents qui apportent la sainte parole de l’Empereur. | Les Prêtres sont le cœur de l’Ecclésiarchie impériale. Ils prêchent dans les sombres ruelles des mondes-ruches, officient dans les églises d’une planète isolée et sont les agents qui apportent la sainte parole de l’Empereur. | Les Prêtres sont le cœur de l’Ecclésiarchie impériale. Ils prêchent dans les sombres ruelles des mondes-ruches, officient dans les églises d’une planète isolée et sont les agents qui apportent la sainte parole de l’Empereur. | Les Prêtres sont le cœur de l’Ecclésiarchie impériale. Ils prêchent dans les sombres ruelles des mondes-ruches, officient dans les églises d’une planète isolée et sont les agents qui apportent la sainte parole de l’Empereur. | Les Prêtres sont le cœur de l’Ecclésiarchie impériale. Ils prêchent dans les sombres ruelles des mondes-ruches, officient dans les églises d’une planète isolée et sont les agents qui apportent la sainte parole de l’Empereur. |  | L’Exorciste apprend des connaissances interdites, corrompues et démoniaques pour anéantir ce qui est susceptible de nuire à l’Imperium. | L’Exorciste apprend des connaissances interdites, corrompues et démoniaques pour anéantir ce qui est susceptible de nuire à l’Imperium. | L’Exorciste apprend des connaissances interdites, corrompues et démoniaques pour anéantir ce qui est susceptible de nuire à l’Imperium. | L’Exorciste apprend des connaissances interdites, corrompues et démoniaques pour anéantir ce qui est susceptible de nuire à l’Imperium. | L’Exorciste apprend des connaissances interdites, corrompues et démoniaques pour anéantir ce qui est susceptible de nuire à l’Imperium. | L’Exorciste apprend des connaissances interdites, corrompues et démoniaques pour anéantir ce qui est susceptible de nuire à l’Imperium. | L’Exorciste apprend des connaissances interdites, corrompues et démoniaques pour anéantir ce qui est susceptible de nuire à l’Imperium. |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 0 | 5 | 1 | 2 | 0 | 2 | 0 |  | 1 | 4 | 0 | 3 | 2 | 2 | 3 |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 0 | 2 | 6 | 1 | 0 | 5 |  |  | 1 | 3 | 0 | 1 | 0 | 4 |  |
+| Niveau de vie | Niveau de vie | Aisé | Aisé | Aisé | Aisé | Aisé |  | Niveau de vie | Niveau de vie | Ordinaire | Ordinaire | Ordinaire | Ordinaire | Ordinaire |
+| Spécialités | Spécialités | Vraie Foi, Charme, Discours, Écoute, Intuition, Lettres, Noblesse et politique, Persuasion, Renseignements, Religion, Se cacher | Vraie Foi, Charme, Discours, Écoute, Intuition, Lettres, Noblesse et politique, Persuasion, Renseignements, Religion, Se cacher | Vraie Foi, Charme, Discours, Écoute, Intuition, Lettres, Noblesse et politique, Persuasion, Renseignements, Religion, Se cacher | Vraie Foi, Charme, Discours, Écoute, Intuition, Lettres, Noblesse et politique, Persuasion, Renseignements, Religion, Se cacher | Vraie Foi, Charme, Discours, Écoute, Intuition, Lettres, Noblesse et politique, Persuasion, Renseignements, Religion, Se cacher |  | Spécialités | Spécialités | Domaine Psychique (au choix), Astrologie, Courage, Discours, Écoute, Intimidation, Langage-Démon, Légendes, Occultisme, Résistance au Warp | Domaine Psychique (au choix), Astrologie, Courage, Discours, Écoute, Intimidation, Langage-Démon, Légendes, Occultisme, Résistance au Warp | Domaine Psychique (au choix), Astrologie, Courage, Discours, Écoute, Intimidation, Langage-Démon, Légendes, Occultisme, Résistance au Warp | Domaine Psychique (au choix), Astrologie, Courage, Discours, Écoute, Intimidation, Langage-Démon, Légendes, Occultisme, Résistance au Warp | Domaine Psychique (au choix), Astrologie, Courage, Discours, Écoute, Intimidation, Langage-Démon, Légendes, Occultisme, Résistance au Warp |
+| Talents | Talents | Calme, Chance insolente ou Mensonge éhonté, Dévoué serviteur, Doué (CNS), Doué (SOC), Doué (VOL), Fascination, Inoffensif, Inspiration, Polyglotte | Calme, Chance insolente ou Mensonge éhonté, Dévoué serviteur, Doué (CNS), Doué (SOC), Doué (VOL), Fascination, Inoffensif, Inspiration, Polyglotte | Calme, Chance insolente ou Mensonge éhonté, Dévoué serviteur, Doué (CNS), Doué (SOC), Doué (VOL), Fascination, Inoffensif, Inspiration, Polyglotte | Calme, Chance insolente ou Mensonge éhonté, Dévoué serviteur, Doué (CNS), Doué (SOC), Doué (VOL), Fascination, Inoffensif, Inspiration, Polyglotte | Calme, Chance insolente ou Mensonge éhonté, Dévoué serviteur, Doué (CNS), Doué (SOC), Doué (VOL), Fascination, Inoffensif, Inspiration, Polyglotte |  | Talents | Talents | Calme, Coup surnaturel, Résistance magique, Doué (PER), Doué (VOL), Esprit gardien, Magie contrôlée, Mémoire sans faille ou Sain d’esprit, Solidité, Souffle de vie | Calme, Coup surnaturel, Résistance magique, Doué (PER), Doué (VOL), Esprit gardien, Magie contrôlée, Mémoire sans faille ou Sain d’esprit, Solidité, Souffle de vie | Calme, Coup surnaturel, Résistance magique, Doué (PER), Doué (VOL), Esprit gardien, Magie contrôlée, Mémoire sans faille ou Sain d’esprit, Solidité, Souffle de vie | Calme, Coup surnaturel, Résistance magique, Doué (PER), Doué (VOL), Esprit gardien, Magie contrôlée, Mémoire sans faille ou Sain d’esprit, Solidité, Souffle de vie | Calme, Coup surnaturel, Résistance magique, Doué (PER), Doué (VOL), Esprit gardien, Magie contrôlée, Mémoire sans faille ou Sain d’esprit, Solidité, Souffle de vie |
+| Equipements additionnels | Equipements additionnels | Icone religieux précieux, Nécessaire d’écriture, Livre Saint, Bure religieuse de qualité, *CNS* ouvrages reliés | Icone religieux précieux, Nécessaire d’écriture, Livre Saint, Bure religieuse de qualité, *CNS* ouvrages reliés | Icone religieux précieux, Nécessaire d’écriture, Livre Saint, Bure religieuse de qualité, *CNS* ouvrages reliés | Icone religieux précieux, Nécessaire d’écriture, Livre Saint, Bure religieuse de qualité, *CNS* ouvrages reliés | Icone religieux précieux, Nécessaire d’écriture, Livre Saint, Bure religieuse de qualité, *CNS* ouvrages reliés |  | Equipements additionnels | Equipements additionnels | Nécessaire d’écriture, Combi-blindée, Psyconduit, *CNS* ouvrages ésotériques reliés | Nécessaire d’écriture, Combi-blindée, Psyconduit, *CNS* ouvrages ésotériques reliés | Nécessaire d’écriture, Combi-blindée, Psyconduit, *CNS* ouvrages ésotériques reliés | Nécessaire d’écriture, Combi-blindée, Psyconduit, *CNS* ouvrages ésotériques reliés | Nécessaire d’écriture, Combi-blindée, Psyconduit, *CNS* ouvrages ésotériques reliés |
+
+
+| Inquisiteur | Inquisiteur | Inquisiteur | Inquisiteur | Inquisiteur | Inquisiteur | Inquisiteur |  | Fanatique | Fanatique | Fanatique | Fanatique | Fanatique | Fanatique | Fanatique |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “Nul n’est innocent !” | “Nul n’est innocent !” | “Nul n’est innocent !” | “Nul n’est innocent !” | “Nul n’est innocent !” | “Nul n’est innocent !” | “Nul n’est innocent !” |  | “La vénération envers l’Empereur-Dieu ne soufre d’aucune limite.” | “La vénération envers l’Empereur-Dieu ne soufre d’aucune limite.” | “La vénération envers l’Empereur-Dieu ne soufre d’aucune limite.” | “La vénération envers l’Empereur-Dieu ne soufre d’aucune limite.” | “La vénération envers l’Empereur-Dieu ne soufre d’aucune limite.” | “La vénération envers l’Empereur-Dieu ne soufre d’aucune limite.” | “La vénération envers l’Empereur-Dieu ne soufre d’aucune limite.” |
+| Les Inquisiteurs forment le gros des agents d’élite de l’Adeptus Ministorum. Ils sont dépêchés pour enquêter, espionner et agir lorsqu’une hérésie est suspectée, souvent avec un zêle fanatique. | Les Inquisiteurs forment le gros des agents d’élite de l’Adeptus Ministorum. Ils sont dépêchés pour enquêter, espionner et agir lorsqu’une hérésie est suspectée, souvent avec un zêle fanatique. | Les Inquisiteurs forment le gros des agents d’élite de l’Adeptus Ministorum. Ils sont dépêchés pour enquêter, espionner et agir lorsqu’une hérésie est suspectée, souvent avec un zêle fanatique. | Les Inquisiteurs forment le gros des agents d’élite de l’Adeptus Ministorum. Ils sont dépêchés pour enquêter, espionner et agir lorsqu’une hérésie est suspectée, souvent avec un zêle fanatique. | Les Inquisiteurs forment le gros des agents d’élite de l’Adeptus Ministorum. Ils sont dépêchés pour enquêter, espionner et agir lorsqu’une hérésie est suspectée, souvent avec un zêle fanatique. | Les Inquisiteurs forment le gros des agents d’élite de l’Adeptus Ministorum. Ils sont dépêchés pour enquêter, espionner et agir lorsqu’une hérésie est suspectée, souvent avec un zêle fanatique. | Les Inquisiteurs forment le gros des agents d’élite de l’Adeptus Ministorum. Ils sont dépêchés pour enquêter, espionner et agir lorsqu’une hérésie est suspectée, souvent avec un zêle fanatique. |  | Nombreux sont ceux qui vénèrent l’Empereur-Dieu mais certains y vouent leur entière existence, à la suite d’un évènement tragique, une injustice ou une vision mystique.  Ils suivent les préceptes de la Foi impériale avec une ferveur décuplée, presque terrifiante, et font une chair à canon remarquable. | Nombreux sont ceux qui vénèrent l’Empereur-Dieu mais certains y vouent leur entière existence, à la suite d’un évènement tragique, une injustice ou une vision mystique.  Ils suivent les préceptes de la Foi impériale avec une ferveur décuplée, presque terrifiante, et font une chair à canon remarquable. | Nombreux sont ceux qui vénèrent l’Empereur-Dieu mais certains y vouent leur entière existence, à la suite d’un évènement tragique, une injustice ou une vision mystique.  Ils suivent les préceptes de la Foi impériale avec une ferveur décuplée, presque terrifiante, et font une chair à canon remarquable. | Nombreux sont ceux qui vénèrent l’Empereur-Dieu mais certains y vouent leur entière existence, à la suite d’un évènement tragique, une injustice ou une vision mystique.  Ils suivent les préceptes de la Foi impériale avec une ferveur décuplée, presque terrifiante, et font une chair à canon remarquable. | Nombreux sont ceux qui vénèrent l’Empereur-Dieu mais certains y vouent leur entière existence, à la suite d’un évènement tragique, une injustice ou une vision mystique.  Ils suivent les préceptes de la Foi impériale avec une ferveur décuplée, presque terrifiante, et font une chair à canon remarquable. | Nombreux sont ceux qui vénèrent l’Empereur-Dieu mais certains y vouent leur entière existence, à la suite d’un évènement tragique, une injustice ou une vision mystique.  Ils suivent les préceptes de la Foi impériale avec une ferveur décuplée, presque terrifiante, et font une chair à canon remarquable. | Nombreux sont ceux qui vénèrent l’Empereur-Dieu mais certains y vouent leur entière existence, à la suite d’un évènement tragique, une injustice ou une vision mystique.  Ils suivent les préceptes de la Foi impériale avec une ferveur décuplée, presque terrifiante, et font une chair à canon remarquable. |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 4 | 3 | 0 | 2 | 3 | 0 | 0 |  | 2 | 2 | 1 | 4 | 2 | 1 | 0 |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 1 | 2 | 2 | 0 | 3 | 4 |  |  | 2 | 1 | 2 | 1 | 2 | 4 |  |
+| Niveau de vie | Niveau de vie | Aisé | Aisé | Aisé | Aisé | Aisé |  | Niveau de vie | Niveau de vie | Misérable | Misérable | Misérable | Misérable | Misérable |
+| Spécialités | Spécialités | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Intimidation, Intuition, Occultisme ou Persuasion, Religion, Repérage, Renseignements, Torture | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Intimidation, Intuition, Occultisme ou Persuasion, Religion, Repérage, Renseignements, Torture | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Intimidation, Intuition, Occultisme ou Persuasion, Religion, Repérage, Renseignements, Torture | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Intimidation, Intuition, Occultisme ou Persuasion, Religion, Repérage, Renseignements, Torture | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Intimidation, Intuition, Occultisme ou Persuasion, Religion, Repérage, Renseignements, Torture |  | Spécialités | Spécialités | Arme de mêlée (au choix), Courage, Discours, Occultisme, Persuasion, Premiers soins, Pugilat, Religion, Résistance aux privations, Résistance au Warp | Arme de mêlée (au choix), Courage, Discours, Occultisme, Persuasion, Premiers soins, Pugilat, Religion, Résistance aux privations, Résistance au Warp | Arme de mêlée (au choix), Courage, Discours, Occultisme, Persuasion, Premiers soins, Pugilat, Religion, Résistance aux privations, Résistance au Warp | Arme de mêlée (au choix), Courage, Discours, Occultisme, Persuasion, Premiers soins, Pugilat, Religion, Résistance aux privations, Résistance au Warp | Arme de mêlée (au choix), Courage, Discours, Occultisme, Persuasion, Premiers soins, Pugilat, Religion, Résistance aux privations, Résistance au Warp |
+| Talents | Talents | Calme, Coups de maître, Coups précis, Dévoué serviteur, Doué (CNS) ou Doué (VOL), Résilience, Résistance magique, Sain d’esprit, Tir précis | Calme, Coups de maître, Coups précis, Dévoué serviteur, Doué (CNS) ou Doué (VOL), Résilience, Résistance magique, Sain d’esprit, Tir précis | Calme, Coups de maître, Coups précis, Dévoué serviteur, Doué (CNS) ou Doué (VOL), Résilience, Résistance magique, Sain d’esprit, Tir précis | Calme, Coups de maître, Coups précis, Dévoué serviteur, Doué (CNS) ou Doué (VOL), Résilience, Résistance magique, Sain d’esprit, Tir précis | Calme, Coups de maître, Coups précis, Dévoué serviteur, Doué (CNS) ou Doué (VOL), Résilience, Résistance magique, Sain d’esprit, Tir précis |  | Talents | Talents | Bagarre ou Calme, Coups puissants, Cri de guerre, Doué (END), Doué (VOL), Gardien, Inspiration, Résilience, Sauvegarde, Solidité | Bagarre ou Calme, Coups puissants, Cri de guerre, Doué (END), Doué (VOL), Gardien, Inspiration, Résilience, Sauvegarde, Solidité | Bagarre ou Calme, Coups puissants, Cri de guerre, Doué (END), Doué (VOL), Gardien, Inspiration, Résilience, Sauvegarde, Solidité | Bagarre ou Calme, Coups puissants, Cri de guerre, Doué (END), Doué (VOL), Gardien, Inspiration, Résilience, Sauvegarde, Solidité | Bagarre ou Calme, Coups puissants, Cri de guerre, Doué (END), Doué (VOL), Gardien, Inspiration, Résilience, Sauvegarde, Solidité |
+| Equipements additionnels | Equipements additionnels | Rosette inquisitoriale, Épée, Revolver, Pièces Carapace, Manteau, Menottes et clé, Nécessaire d’écriture, Munitions : 18 Balles P | Rosette inquisitoriale, Épée, Revolver, Pièces Carapace, Manteau, Menottes et clé, Nécessaire d’écriture, Munitions : 18 Balles P | Rosette inquisitoriale, Épée, Revolver, Pièces Carapace, Manteau, Menottes et clé, Nécessaire d’écriture, Munitions : 18 Balles P | Rosette inquisitoriale, Épée, Revolver, Pièces Carapace, Manteau, Menottes et clé, Nécessaire d’écriture, Munitions : 18 Balles P | Rosette inquisitoriale, Épée, Revolver, Pièces Carapace, Manteau, Menottes et clé, Nécessaire d’écriture, Munitions : 18 Balles P |  | Equipements additionnels | Equipements additionnels | Un livre saint, une arme de mêlée (au choix), une torche ou un tambourin | Un livre saint, une arme de mêlée (au choix), une torche ou un tambourin | Un livre saint, une arme de mêlée (au choix), une torche ou un tambourin | Un livre saint, une arme de mêlée (au choix), une torche ou un tambourin | Un livre saint, une arme de mêlée (au choix), une torche ou un tambourin |
+
+
+| Croisé | Croisé | Croisé | Croisé | Croisé | Croisé | Croisé |  | Frère Hospitalier / Soeur Hospitalière | Frère Hospitalier / Soeur Hospitalière | Frère Hospitalier / Soeur Hospitalière | Frère Hospitalier / Soeur Hospitalière | Frère Hospitalier / Soeur Hospitalière | Frère Hospitalier / Soeur Hospitalière | Frère Hospitalier / Soeur Hospitalière |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “Seul la mort met fin au devoir.” | “Seul la mort met fin au devoir.” | “Seul la mort met fin au devoir.” | “Seul la mort met fin au devoir.” | “Seul la mort met fin au devoir.” | “Seul la mort met fin au devoir.” | “Seul la mort met fin au devoir.” |  | “Les mots guérissent l’âme, les soins guérissent le corps.” | “Les mots guérissent l’âme, les soins guérissent le corps.” | “Les mots guérissent l’âme, les soins guérissent le corps.” | “Les mots guérissent l’âme, les soins guérissent le corps.” | “Les mots guérissent l’âme, les soins guérissent le corps.” | “Les mots guérissent l’âme, les soins guérissent le corps.” | “Les mots guérissent l’âme, les soins guérissent le corps.” |
+| Les Croisés impériaux sont des guerriers qui appartiennent à une Coterie fermée, regroupant d’une dizaine à plusieurs milliers de membres. Souvent proche d’une forteresse inquisitoriale dont ils accompagnent les agents sur le terrain afin de les protéger. | Les Croisés impériaux sont des guerriers qui appartiennent à une Coterie fermée, regroupant d’une dizaine à plusieurs milliers de membres. Souvent proche d’une forteresse inquisitoriale dont ils accompagnent les agents sur le terrain afin de les protéger. | Les Croisés impériaux sont des guerriers qui appartiennent à une Coterie fermée, regroupant d’une dizaine à plusieurs milliers de membres. Souvent proche d’une forteresse inquisitoriale dont ils accompagnent les agents sur le terrain afin de les protéger. | Les Croisés impériaux sont des guerriers qui appartiennent à une Coterie fermée, regroupant d’une dizaine à plusieurs milliers de membres. Souvent proche d’une forteresse inquisitoriale dont ils accompagnent les agents sur le terrain afin de les protéger. | Les Croisés impériaux sont des guerriers qui appartiennent à une Coterie fermée, regroupant d’une dizaine à plusieurs milliers de membres. Souvent proche d’une forteresse inquisitoriale dont ils accompagnent les agents sur le terrain afin de les protéger. | Les Croisés impériaux sont des guerriers qui appartiennent à une Coterie fermée, regroupant d’une dizaine à plusieurs milliers de membres. Souvent proche d’une forteresse inquisitoriale dont ils accompagnent les agents sur le terrain afin de les protéger. | Les Croisés impériaux sont des guerriers qui appartiennent à une Coterie fermée, regroupant d’une dizaine à plusieurs milliers de membres. Souvent proche d’une forteresse inquisitoriale dont ils accompagnent les agents sur le terrain afin de les protéger. |  | Le corps du Ministorum (ou de l’Adepta Sororitas) qui parcourent les territoires de l’Imperium pour soutenir ceux qui en ont besoin, qu’ils soient des soldats sur un champ de bataille ou des citoyens affaiblis dans une cité-ruche. Ce sont des guérisseurs du corps et de l’âme. | Le corps du Ministorum (ou de l’Adepta Sororitas) qui parcourent les territoires de l’Imperium pour soutenir ceux qui en ont besoin, qu’ils soient des soldats sur un champ de bataille ou des citoyens affaiblis dans une cité-ruche. Ce sont des guérisseurs du corps et de l’âme. | Le corps du Ministorum (ou de l’Adepta Sororitas) qui parcourent les territoires de l’Imperium pour soutenir ceux qui en ont besoin, qu’ils soient des soldats sur un champ de bataille ou des citoyens affaiblis dans une cité-ruche. Ce sont des guérisseurs du corps et de l’âme. | Le corps du Ministorum (ou de l’Adepta Sororitas) qui parcourent les territoires de l’Imperium pour soutenir ceux qui en ont besoin, qu’ils soient des soldats sur un champ de bataille ou des citoyens affaiblis dans une cité-ruche. Ce sont des guérisseurs du corps et de l’âme. | Le corps du Ministorum (ou de l’Adepta Sororitas) qui parcourent les territoires de l’Imperium pour soutenir ceux qui en ont besoin, qu’ils soient des soldats sur un champ de bataille ou des citoyens affaiblis dans une cité-ruche. Ce sont des guérisseurs du corps et de l’âme. | Le corps du Ministorum (ou de l’Adepta Sororitas) qui parcourent les territoires de l’Imperium pour soutenir ceux qui en ont besoin, qu’ils soient des soldats sur un champ de bataille ou des citoyens affaiblis dans une cité-ruche. Ce sont des guérisseurs du corps et de l’âme. | Le corps du Ministorum (ou de l’Adepta Sororitas) qui parcourent les territoires de l’Imperium pour soutenir ceux qui en ont besoin, qu’ils soient des soldats sur un champ de bataille ou des citoyens affaiblis dans une cité-ruche. Ce sont des guérisseurs du corps et de l’âme. |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 4 | 3 | 0 | 3 | 3 | 0 | 0 |  | 0 | 4 | 0 | 2 | 2 | 4 | 0 |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 2 | 1 | 1 | 0 | 3 | 4 |  |  | 0 | 2 | 4 | 2 | 0 | 4 |  |
+| Niveau de vie | Niveau de vie | Aisé | Aisé | Aisé | Aisé | Aisé |  | Niveau de vie | Niveau de vie | Ordinaire | Ordinaire | Ordinaire | Ordinaire | Ordinaire |
+| Spécialités | Spécialités | Arme lourde (au choix), Arme de mêlée (au choix), Courage, Diplomatie, Étiquette, Lettres ou Repérage, Premiers soins, Religion, Résistance au Warp, Stratégie | Arme lourde (au choix), Arme de mêlée (au choix), Courage, Diplomatie, Étiquette, Lettres ou Repérage, Premiers soins, Religion, Résistance au Warp, Stratégie | Arme lourde (au choix), Arme de mêlée (au choix), Courage, Diplomatie, Étiquette, Lettres ou Repérage, Premiers soins, Religion, Résistance au Warp, Stratégie | Arme lourde (au choix), Arme de mêlée (au choix), Courage, Diplomatie, Étiquette, Lettres ou Repérage, Premiers soins, Religion, Résistance au Warp, Stratégie | Arme lourde (au choix), Arme de mêlée (au choix), Courage, Diplomatie, Étiquette, Lettres ou Repérage, Premiers soins, Religion, Résistance au Warp, Stratégie |  | Spécialités | Spécialités | Courage, Cuisine, Diplomatie, Écoute, Médecine, Milieu naturel, Musique et chant, Persuasion, Potions et remèdes, Premiers soins, Religion | Courage, Cuisine, Diplomatie, Écoute, Médecine, Milieu naturel, Musique et chant, Persuasion, Potions et remèdes, Premiers soins, Religion | Courage, Cuisine, Diplomatie, Écoute, Médecine, Milieu naturel, Musique et chant, Persuasion, Potions et remèdes, Premiers soins, Religion | Courage, Cuisine, Diplomatie, Écoute, Médecine, Milieu naturel, Musique et chant, Persuasion, Potions et remèdes, Premiers soins, Religion | Courage, Cuisine, Diplomatie, Écoute, Médecine, Milieu naturel, Musique et chant, Persuasion, Potions et remèdes, Premiers soins, Religion |
+| Talents | Talents | Calme, Coups précis, Coups puissants, Doué (END), Doué (VOL), Gardien, Maîtrise du bouclier, Maître d’armes ou Port d’armure, Résilience, Solidité ou Souffle de vie | Calme, Coups précis, Coups puissants, Doué (END), Doué (VOL), Gardien, Maîtrise du bouclier, Maître d’armes ou Port d’armure, Résilience, Solidité ou Souffle de vie | Calme, Coups précis, Coups puissants, Doué (END), Doué (VOL), Gardien, Maîtrise du bouclier, Maître d’armes ou Port d’armure, Résilience, Solidité ou Souffle de vie | Calme, Coups précis, Coups puissants, Doué (END), Doué (VOL), Gardien, Maîtrise du bouclier, Maître d’armes ou Port d’armure, Résilience, Solidité ou Souffle de vie | Calme, Coups précis, Coups puissants, Doué (END), Doué (VOL), Gardien, Maîtrise du bouclier, Maître d’armes ou Port d’armure, Résilience, Solidité ou Souffle de vie |  | Talents | Talents | Calme, Doué (CNS) ou Doué (TEC), Fascination, Inspiration, Mains blanches, Prudent, Résilience, Sain d’esprit, Suivre l’exemple, Travail d’équipe | Calme, Doué (CNS) ou Doué (TEC), Fascination, Inspiration, Mains blanches, Prudent, Résilience, Sain d’esprit, Suivre l’exemple, Travail d’équipe | Calme, Doué (CNS) ou Doué (TEC), Fascination, Inspiration, Mains blanches, Prudent, Résilience, Sain d’esprit, Suivre l’exemple, Travail d’équipe | Calme, Doué (CNS) ou Doué (TEC), Fascination, Inspiration, Mains blanches, Prudent, Résilience, Sain d’esprit, Suivre l’exemple, Travail d’équipe | Calme, Doué (CNS) ou Doué (TEC), Fascination, Inspiration, Mains blanches, Prudent, Résilience, Sain d’esprit, Suivre l’exemple, Travail d’équipe |
+| Equipements additionnels | Equipements additionnels | Livre saint, Deux armes de mêlées standards (au choix), un bouclier, Armure d’adamantium, Casque intégral | Livre saint, Deux armes de mêlées standards (au choix), un bouclier, Armure d’adamantium, Casque intégral | Livre saint, Deux armes de mêlées standards (au choix), un bouclier, Armure d’adamantium, Casque intégral | Livre saint, Deux armes de mêlées standards (au choix), un bouclier, Armure d’adamantium, Casque intégral | Livre saint, Deux armes de mêlées standards (au choix), un bouclier, Armure d’adamantium, Casque intégral |  | Equipements additionnels | Equipements additionnels | Trousse médicale | Trousse médicale | Trousse médicale | Trousse médicale | Trousse médicale |
+
+
+| Soeur de bataille | Soeur de bataille | Soeur de bataille | Soeur de bataille | Soeur de bataille | Soeur de bataille | Soeur de bataille |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “A moi mes Soeurs ! Nous sommes la fureur de l’Empereur !” | “A moi mes Soeurs ! Nous sommes la fureur de l’Empereur !” | “A moi mes Soeurs ! Nous sommes la fureur de l’Empereur !” | “A moi mes Soeurs ! Nous sommes la fureur de l’Empereur !” | “A moi mes Soeurs ! Nous sommes la fureur de l’Empereur !” | “A moi mes Soeurs ! Nous sommes la fureur de l’Empereur !” | “A moi mes Soeurs ! Nous sommes la fureur de l’Empereur !” |  |  |  |  |  |  |  |  |
+| Les Soeurs de bataille forment le bras armé de l’Adepta Sororitas qui sont envoyées partout dans l’Imperium pour combattre lors d’immenses croisades ou pour soutenir le reste des légions de l’Imperium. De manière générale, les Soeurs de bataille combattant avec une fureur sans égale l’hérésie et le manque de piété, tout en apportant leur soutient aux populations civiles. | Les Soeurs de bataille forment le bras armé de l’Adepta Sororitas qui sont envoyées partout dans l’Imperium pour combattre lors d’immenses croisades ou pour soutenir le reste des légions de l’Imperium. De manière générale, les Soeurs de bataille combattant avec une fureur sans égale l’hérésie et le manque de piété, tout en apportant leur soutient aux populations civiles. | Les Soeurs de bataille forment le bras armé de l’Adepta Sororitas qui sont envoyées partout dans l’Imperium pour combattre lors d’immenses croisades ou pour soutenir le reste des légions de l’Imperium. De manière générale, les Soeurs de bataille combattant avec une fureur sans égale l’hérésie et le manque de piété, tout en apportant leur soutient aux populations civiles. | Les Soeurs de bataille forment le bras armé de l’Adepta Sororitas qui sont envoyées partout dans l’Imperium pour combattre lors d’immenses croisades ou pour soutenir le reste des légions de l’Imperium. De manière générale, les Soeurs de bataille combattant avec une fureur sans égale l’hérésie et le manque de piété, tout en apportant leur soutient aux populations civiles. | Les Soeurs de bataille forment le bras armé de l’Adepta Sororitas qui sont envoyées partout dans l’Imperium pour combattre lors d’immenses croisades ou pour soutenir le reste des légions de l’Imperium. De manière générale, les Soeurs de bataille combattant avec une fureur sans égale l’hérésie et le manque de piété, tout en apportant leur soutient aux populations civiles. | Les Soeurs de bataille forment le bras armé de l’Adepta Sororitas qui sont envoyées partout dans l’Imperium pour combattre lors d’immenses croisades ou pour soutenir le reste des légions de l’Imperium. De manière générale, les Soeurs de bataille combattant avec une fureur sans égale l’hérésie et le manque de piété, tout en apportant leur soutient aux populations civiles. | Les Soeurs de bataille forment le bras armé de l’Adepta Sororitas qui sont envoyées partout dans l’Imperium pour combattre lors d’immenses croisades ou pour soutenir le reste des légions de l’Imperium. De manière générale, les Soeurs de bataille combattant avec une fureur sans égale l’hérésie et le manque de piété, tout en apportant leur soutient aux populations civiles. |  |  |  |  |  |  |  |  |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 3 | 0 | 0 | 3 | 3 | 2 | 0 |  |  |  |  |  |  |  |  |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 2 | 1 | 2 | 0 | 3 | 5 |  |  |  |  |  |  |  |  |  |
+| Niveau de vie | Niveau de vie | Ordinaire | Ordinaire | Ordinaire | Ordinaire | Ordinaire |  | Niveau de vie | Niveau de vie |  |  |  |  |  |
+| Spécialités | Spécialités | Arme de de mêlée ou Arme de tir (au choix), Courage, Intimidation, Musique et chant, Premiers soins, Résistance au Warp, Résistance aux privations, Travaux de force, Vigilance | Arme de de mêlée ou Arme de tir (au choix), Courage, Intimidation, Musique et chant, Premiers soins, Résistance au Warp, Résistance aux privations, Travaux de force, Vigilance | Arme de de mêlée ou Arme de tir (au choix), Courage, Intimidation, Musique et chant, Premiers soins, Résistance au Warp, Résistance aux privations, Travaux de force, Vigilance | Arme de de mêlée ou Arme de tir (au choix), Courage, Intimidation, Musique et chant, Premiers soins, Résistance au Warp, Résistance aux privations, Travaux de force, Vigilance | Arme de de mêlée ou Arme de tir (au choix), Courage, Intimidation, Musique et chant, Premiers soins, Résistance au Warp, Résistance aux privations, Travaux de force, Vigilance |  | Spécialités | Spécialités |  |  |  |  |  |
+| Talents | Talents | Arme fétiche, Confiance en soi, Gardien, Guérison rapide, Maître d’armes, Résilience, Sauvegarde, Second souffle, Solidité, Tir ciblé | Arme fétiche, Confiance en soi, Gardien, Guérison rapide, Maître d’armes, Résilience, Sauvegarde, Second souffle, Solidité, Tir ciblé | Arme fétiche, Confiance en soi, Gardien, Guérison rapide, Maître d’armes, Résilience, Sauvegarde, Second souffle, Solidité, Tir ciblé | Arme fétiche, Confiance en soi, Gardien, Guérison rapide, Maître d’armes, Résilience, Sauvegarde, Second souffle, Solidité, Tir ciblé | Arme fétiche, Confiance en soi, Gardien, Guérison rapide, Maître d’armes, Résilience, Sauvegarde, Second souffle, Solidité, Tir ciblé |  | Talents | Talents |  |  |  |  |  |
+| Equipements additionnels | Equipements additionnels | Armure énergétique légère, une épée-tronçonneuse, un Bolter | Armure énergétique légère, une épée-tronçonneuse, un Bolter | Armure énergétique légère, une épée-tronçonneuse, un Bolter | Armure énergétique légère, une épée-tronçonneuse, un Bolter | Armure énergétique légère, une épée-tronçonneuse, un Bolter |  | Equipements additionnels | Equipements additionnels |  |  |  |  |  |
+
+
+## Astra Militarum
+Surnommée le Marteau de l’Empereur, la Garde Impériale est la plus importante force de combat de l’histoire de la galaxie. Elle est constituée de milliards de soldats, tous recrutés sur les nombreux mondes de l’Imperium. Le Departmento Munitorum est chargé de superviser, d’approvisionner et de ravitailler les régiments de la Garde Impériale, mais même cette organisation n’a pas la moindre idée du nombre exact d’hommes qui la servent, car les pertes et recrutements impliquent chaque jour des millions de soldats. Les régiments de la Garde sont issus de nombreuses planètes et d’autant de cultures différentes, ce qui multiplie les tenues vestimentaires, connaissances technologiques et traditions martiales. La Garde n’impose même pas d’uniforme standard, préférant de loin s’appuyer sur les forces distinctes des compagnies, qu’elles soient constituées de clans de guerriers tribaux ou d’unités cadiennes parfaitement disciplinées.
+Possessions de départ :
+Plaques d’identification.
+Couteau de combat.
+Pistolet ou Pistolet laser
+Sac à dos qui contient 1d10 rations militaires.
+Gourde d’eau ou de Tord-Boyaux.
+Vêtements militaires.
+Uniforme de garde.
+Munitions : Balles P x24 ou Cellule P x2
+1d10 x *COM* ou *TIR* Trônes Gelt.
+
+| Garde impérial | Garde impérial | Garde impérial | Garde impérial | Garde impérial | Garde impérial | Garde impérial |  | Médic | Médic | Médic | Médic | Médic | Médic | Médic |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “La chair à canon de l’Imperium…” | “La chair à canon de l’Imperium…” | “La chair à canon de l’Imperium…” | “La chair à canon de l’Imperium…” | “La chair à canon de l’Imperium…” | “La chair à canon de l’Imperium…” | “La chair à canon de l’Imperium…” |  | “Il est touché ! Ramenez-le par ici !” | “Il est touché ! Ramenez-le par ici !” | “Il est touché ! Ramenez-le par ici !” | “Il est touché ! Ramenez-le par ici !” | “Il est touché ! Ramenez-le par ici !” | “Il est touché ! Ramenez-le par ici !” | “Il est touché ! Ramenez-le par ici !” |
+| Les gardes impériaux sont le cœur de l’armée impériale. À l’instar de celle des autres soldats de l’Imperium, la vie des Gardes Impériaux est faite de discipline, de devoirs et d’honneur. Cependant c’est une vie incroyablement dure, car la vie d’un garde impérial n’est rien et lorsqu’un meurt, mille supplémentaires sont prêts à le remplacer. | Les gardes impériaux sont le cœur de l’armée impériale. À l’instar de celle des autres soldats de l’Imperium, la vie des Gardes Impériaux est faite de discipline, de devoirs et d’honneur. Cependant c’est une vie incroyablement dure, car la vie d’un garde impérial n’est rien et lorsqu’un meurt, mille supplémentaires sont prêts à le remplacer. | Les gardes impériaux sont le cœur de l’armée impériale. À l’instar de celle des autres soldats de l’Imperium, la vie des Gardes Impériaux est faite de discipline, de devoirs et d’honneur. Cependant c’est une vie incroyablement dure, car la vie d’un garde impérial n’est rien et lorsqu’un meurt, mille supplémentaires sont prêts à le remplacer. | Les gardes impériaux sont le cœur de l’armée impériale. À l’instar de celle des autres soldats de l’Imperium, la vie des Gardes Impériaux est faite de discipline, de devoirs et d’honneur. Cependant c’est une vie incroyablement dure, car la vie d’un garde impérial n’est rien et lorsqu’un meurt, mille supplémentaires sont prêts à le remplacer. | Les gardes impériaux sont le cœur de l’armée impériale. À l’instar de celle des autres soldats de l’Imperium, la vie des Gardes Impériaux est faite de discipline, de devoirs et d’honneur. Cependant c’est une vie incroyablement dure, car la vie d’un garde impérial n’est rien et lorsqu’un meurt, mille supplémentaires sont prêts à le remplacer. | Les gardes impériaux sont le cœur de l’armée impériale. À l’instar de celle des autres soldats de l’Imperium, la vie des Gardes Impériaux est faite de discipline, de devoirs et d’honneur. Cependant c’est une vie incroyablement dure, car la vie d’un garde impérial n’est rien et lorsqu’un meurt, mille supplémentaires sont prêts à le remplacer. | Les gardes impériaux sont le cœur de l’armée impériale. À l’instar de celle des autres soldats de l’Imperium, la vie des Gardes Impériaux est faite de discipline, de devoirs et d’honneur. Cependant c’est une vie incroyablement dure, car la vie d’un garde impérial n’est rien et lorsqu’un meurt, mille supplémentaires sont prêts à le remplacer. |  | Les soldats de la Garde impériale n’ont aucune idée de ce qu’ils vont rencontrer mais la seule chose qu’ils savent, c’est qu’ils vont devoir combattre. C’est pour s’assurer qu’ils combattant le plus longtemps possible que sont formés les Médics, en tant que médecins de guerre et chirurgiens-combattants. Ils sont ainsi capable d’apporter des soins aux blessés lors des conflits. | Les soldats de la Garde impériale n’ont aucune idée de ce qu’ils vont rencontrer mais la seule chose qu’ils savent, c’est qu’ils vont devoir combattre. C’est pour s’assurer qu’ils combattant le plus longtemps possible que sont formés les Médics, en tant que médecins de guerre et chirurgiens-combattants. Ils sont ainsi capable d’apporter des soins aux blessés lors des conflits. | Les soldats de la Garde impériale n’ont aucune idée de ce qu’ils vont rencontrer mais la seule chose qu’ils savent, c’est qu’ils vont devoir combattre. C’est pour s’assurer qu’ils combattant le plus longtemps possible que sont formés les Médics, en tant que médecins de guerre et chirurgiens-combattants. Ils sont ainsi capable d’apporter des soins aux blessés lors des conflits. | Les soldats de la Garde impériale n’ont aucune idée de ce qu’ils vont rencontrer mais la seule chose qu’ils savent, c’est qu’ils vont devoir combattre. C’est pour s’assurer qu’ils combattant le plus longtemps possible que sont formés les Médics, en tant que médecins de guerre et chirurgiens-combattants. Ils sont ainsi capable d’apporter des soins aux blessés lors des conflits. | Les soldats de la Garde impériale n’ont aucune idée de ce qu’ils vont rencontrer mais la seule chose qu’ils savent, c’est qu’ils vont devoir combattre. C’est pour s’assurer qu’ils combattant le plus longtemps possible que sont formés les Médics, en tant que médecins de guerre et chirurgiens-combattants. Ils sont ainsi capable d’apporter des soins aux blessés lors des conflits. | Les soldats de la Garde impériale n’ont aucune idée de ce qu’ils vont rencontrer mais la seule chose qu’ils savent, c’est qu’ils vont devoir combattre. C’est pour s’assurer qu’ils combattant le plus longtemps possible que sont formés les Médics, en tant que médecins de guerre et chirurgiens-combattants. Ils sont ainsi capable d’apporter des soins aux blessés lors des conflits. | Les soldats de la Garde impériale n’ont aucune idée de ce qu’ils vont rencontrer mais la seule chose qu’ils savent, c’est qu’ils vont devoir combattre. C’est pour s’assurer qu’ils combattant le plus longtemps possible que sont formés les Médics, en tant que médecins de guerre et chirurgiens-combattants. Ils sont ainsi capable d’apporter des soins aux blessés lors des conflits. |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 4 | 0 | 0 | 3 | 3 | 1 | 0 |  | 4 | 1 | 0 | 3 | 3 | 3 | 0 |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 2 | 3 | 0 | 2 | 4 | 2 |  |  | 1 | 2 | 0 | 1 | 4 | 2 |  |
+| Niveau de vie | Niveau de vie | Pauvre | Pauvre | Pauvre | Pauvre | Pauvre |  | Niveau de vie | Niveau de vie | Pauvre | Pauvre | Pauvre | Pauvre | Pauvre |
+| Spécialités | Spécialités | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Course, Pièges, Pistage, Réflexes, Résistance aux privations, Résistance à la chaleur/au froid, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Course, Pièges, Pistage, Réflexes, Résistance aux privations, Résistance à la chaleur/au froid, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Course, Pièges, Pistage, Réflexes, Résistance aux privations, Résistance à la chaleur/au froid, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Course, Pièges, Pistage, Réflexes, Résistance aux privations, Résistance à la chaleur/au froid, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Course, Pièges, Pistage, Réflexes, Résistance aux privations, Résistance à la chaleur/au froid, Vigilance |  | Spécialités | Spécialités | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Course, Médecine, Persuasion, Premiers soins, Réflexes, Résistance aux maladies, Résistance à la chaleur/au froid, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Course, Médecine, Persuasion, Premiers soins, Réflexes, Résistance aux maladies, Résistance à la chaleur/au froid, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Course, Médecine, Persuasion, Premiers soins, Réflexes, Résistance aux maladies, Résistance à la chaleur/au froid, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Course, Médecine, Persuasion, Premiers soins, Réflexes, Résistance aux maladies, Résistance à la chaleur/au froid, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Course, Médecine, Persuasion, Premiers soins, Réflexes, Résistance aux maladies, Résistance à la chaleur/au froid, Vigilance |
+| Talents | Talents | Arme fétiche, Coups précis, Esquive, Esprit de compétition, Gardien, Inspiration, Recharge rapide, Surnombre, Travail d’équipe, Tir précis, Tir ciblé | Arme fétiche, Coups précis, Esquive, Esprit de compétition, Gardien, Inspiration, Recharge rapide, Surnombre, Travail d’équipe, Tir précis, Tir ciblé | Arme fétiche, Coups précis, Esquive, Esprit de compétition, Gardien, Inspiration, Recharge rapide, Surnombre, Travail d’équipe, Tir précis, Tir ciblé | Arme fétiche, Coups précis, Esquive, Esprit de compétition, Gardien, Inspiration, Recharge rapide, Surnombre, Travail d’équipe, Tir précis, Tir ciblé | Arme fétiche, Coups précis, Esquive, Esprit de compétition, Gardien, Inspiration, Recharge rapide, Surnombre, Travail d’équipe, Tir précis, Tir ciblé |  | Talents | Talents | Arme fétiche, Coups précis, Esquive, Esprit de compétition, Gardien, Inspiration, Mains blanches, Recharge rapide, Travail d’équipe, Tir précis, Tir ciblé | Arme fétiche, Coups précis, Esquive, Esprit de compétition, Gardien, Inspiration, Mains blanches, Recharge rapide, Travail d’équipe, Tir précis, Tir ciblé | Arme fétiche, Coups précis, Esquive, Esprit de compétition, Gardien, Inspiration, Mains blanches, Recharge rapide, Travail d’équipe, Tir précis, Tir ciblé | Arme fétiche, Coups précis, Esquive, Esprit de compétition, Gardien, Inspiration, Mains blanches, Recharge rapide, Travail d’équipe, Tir précis, Tir ciblé | Arme fétiche, Coups précis, Esquive, Esprit de compétition, Gardien, Inspiration, Mains blanches, Recharge rapide, Travail d’équipe, Tir précis, Tir ciblé |
+| Equipements additionnels | Equipements additionnels | Armure Carapace légère, Casque, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Armure Carapace légère, Casque, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Armure Carapace légère, Casque, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Armure Carapace légère, Casque, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Armure Carapace légère, Casque, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) |  | Equipements additionnels | Equipements additionnels | Armure Carapace légère, Trousse médicale, Brassard de Médic, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Armure Carapace légère, Trousse médicale, Brassard de Médic, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Armure Carapace légère, Trousse médicale, Brassard de Médic, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Armure Carapace légère, Trousse médicale, Brassard de Médic, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Armure Carapace légère, Trousse médicale, Brassard de Médic, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) |
+
+
+| Pilote impérial | Pilote impérial | Pilote impérial | Pilote impérial | Pilote impérial | Pilote impérial | Pilote impérial |  | Infiltrator | Infiltrator | Infiltrator | Infiltrator | Infiltrator | Infiltrator | Infiltrator |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “Faites le plein ! Chargez les obus ! | “Faites le plein ! Chargez les obus ! | “Faites le plein ! Chargez les obus ! | “Faites le plein ! Chargez les obus ! | “Faites le plein ! Chargez les obus ! | “Faites le plein ! Chargez les obus ! | “Faites le plein ! Chargez les obus ! |  | “Pas un bruit. On pose les charges et on s’tire.” | “Pas un bruit. On pose les charges et on s’tire.” | “Pas un bruit. On pose les charges et on s’tire.” | “Pas un bruit. On pose les charges et on s’tire.” | “Pas un bruit. On pose les charges et on s’tire.” | “Pas un bruit. On pose les charges et on s’tire.” | “Pas un bruit. On pose les charges et on s’tire.” |
+| Chars d’assaut, aéronefs, marcheurs tout-terrains… Nombreux sont les véhicules déployés par l’Astra Militarum pour écraser les ennemis de l’Imperium.  Les pilotes sont là pour les diriger et les manoeuvrer, seuls ou en équipe, afin de les mener à la victoire. | Chars d’assaut, aéronefs, marcheurs tout-terrains… Nombreux sont les véhicules déployés par l’Astra Militarum pour écraser les ennemis de l’Imperium.  Les pilotes sont là pour les diriger et les manoeuvrer, seuls ou en équipe, afin de les mener à la victoire. | Chars d’assaut, aéronefs, marcheurs tout-terrains… Nombreux sont les véhicules déployés par l’Astra Militarum pour écraser les ennemis de l’Imperium.  Les pilotes sont là pour les diriger et les manoeuvrer, seuls ou en équipe, afin de les mener à la victoire. | Chars d’assaut, aéronefs, marcheurs tout-terrains… Nombreux sont les véhicules déployés par l’Astra Militarum pour écraser les ennemis de l’Imperium.  Les pilotes sont là pour les diriger et les manoeuvrer, seuls ou en équipe, afin de les mener à la victoire. | Chars d’assaut, aéronefs, marcheurs tout-terrains… Nombreux sont les véhicules déployés par l’Astra Militarum pour écraser les ennemis de l’Imperium.  Les pilotes sont là pour les diriger et les manoeuvrer, seuls ou en équipe, afin de les mener à la victoire. | Chars d’assaut, aéronefs, marcheurs tout-terrains… Nombreux sont les véhicules déployés par l’Astra Militarum pour écraser les ennemis de l’Imperium.  Les pilotes sont là pour les diriger et les manoeuvrer, seuls ou en équipe, afin de les mener à la victoire. | Chars d’assaut, aéronefs, marcheurs tout-terrains… Nombreux sont les véhicules déployés par l’Astra Militarum pour écraser les ennemis de l’Imperium.  Les pilotes sont là pour les diriger et les manoeuvrer, seuls ou en équipe, afin de les mener à la victoire. |  | Les Infiltrators sont les éclaireurs de l’Astra Militarum. Ils sont envoyés accomplir toutes sortes de missions au-delà des lignes ennemies. Qu’elles consistent à saboter des lignes d’approvisionnement, des places fortes, ou bien à assassiner des cibles prioritaires. | Les Infiltrators sont les éclaireurs de l’Astra Militarum. Ils sont envoyés accomplir toutes sortes de missions au-delà des lignes ennemies. Qu’elles consistent à saboter des lignes d’approvisionnement, des places fortes, ou bien à assassiner des cibles prioritaires. | Les Infiltrators sont les éclaireurs de l’Astra Militarum. Ils sont envoyés accomplir toutes sortes de missions au-delà des lignes ennemies. Qu’elles consistent à saboter des lignes d’approvisionnement, des places fortes, ou bien à assassiner des cibles prioritaires. | Les Infiltrators sont les éclaireurs de l’Astra Militarum. Ils sont envoyés accomplir toutes sortes de missions au-delà des lignes ennemies. Qu’elles consistent à saboter des lignes d’approvisionnement, des places fortes, ou bien à assassiner des cibles prioritaires. | Les Infiltrators sont les éclaireurs de l’Astra Militarum. Ils sont envoyés accomplir toutes sortes de missions au-delà des lignes ennemies. Qu’elles consistent à saboter des lignes d’approvisionnement, des places fortes, ou bien à assassiner des cibles prioritaires. | Les Infiltrators sont les éclaireurs de l’Astra Militarum. Ils sont envoyés accomplir toutes sortes de missions au-delà des lignes ennemies. Qu’elles consistent à saboter des lignes d’approvisionnement, des places fortes, ou bien à assassiner des cibles prioritaires. | Les Infiltrators sont les éclaireurs de l’Astra Militarum. Ils sont envoyés accomplir toutes sortes de missions au-delà des lignes ennemies. Qu’elles consistent à saboter des lignes d’approvisionnement, des places fortes, ou bien à assassiner des cibles prioritaires. |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 2 | 0 | 0 | 2 | 2 | 4 | 0 |  | 3 | 0 | 4 | 2 | 2 | 1 | 0 |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 2 | 3 | 0 | 2 | 4 | 3 |  |  | 2 | 3 | 0 | 3 | 3 | 1 |  |
+| Niveau de vie | Niveau de vie | Pauvre | Pauvre | Pauvre | Pauvre | Pauvre |  | Niveau de vie | Niveau de vie | Pauvre | Pauvre | Pauvre | Pauvre | Pauvre |
+| Spécialités | Spécialités | Arme de tir (au choix), Artillerie, Pilotage (au choix), Cartographie, Commandement, Ingénierie, Navigation, Repérage, Résistance aux privations, Stratégie, Vigilance | Arme de tir (au choix), Artillerie, Pilotage (au choix), Cartographie, Commandement, Ingénierie, Navigation, Repérage, Résistance aux privations, Stratégie, Vigilance | Arme de tir (au choix), Artillerie, Pilotage (au choix), Cartographie, Commandement, Ingénierie, Navigation, Repérage, Résistance aux privations, Stratégie, Vigilance | Arme de tir (au choix), Artillerie, Pilotage (au choix), Cartographie, Commandement, Ingénierie, Navigation, Repérage, Résistance aux privations, Stratégie, Vigilance | Arme de tir (au choix), Artillerie, Pilotage (au choix), Cartographie, Commandement, Ingénierie, Navigation, Repérage, Résistance aux privations, Stratégie, Vigilance |  | Spécialités | Spécialités | Arme de tir (Au choix), Arme de mêlée (au choix), Cartographie, Déplacement silencieux, Milieu naturel, Orientation, Piège, Pistage, Premiers soins, Se cacher, Vigilante | Arme de tir (Au choix), Arme de mêlée (au choix), Cartographie, Déplacement silencieux, Milieu naturel, Orientation, Piège, Pistage, Premiers soins, Se cacher, Vigilante | Arme de tir (Au choix), Arme de mêlée (au choix), Cartographie, Déplacement silencieux, Milieu naturel, Orientation, Piège, Pistage, Premiers soins, Se cacher, Vigilante | Arme de tir (Au choix), Arme de mêlée (au choix), Cartographie, Déplacement silencieux, Milieu naturel, Orientation, Piège, Pistage, Premiers soins, Se cacher, Vigilante | Arme de tir (Au choix), Arme de mêlée (au choix), Cartographie, Déplacement silencieux, Milieu naturel, Orientation, Piège, Pistage, Premiers soins, Se cacher, Vigilante |
+| Talents | Talents | Calme, Chance insolante, Doué (TEC), Esprit de compétition, Prudent, Sixième sens, Sommeil léger, Travail d’équipe, Tir précis, Tireur d’élite, Tir  ciblé | Calme, Chance insolante, Doué (TEC), Esprit de compétition, Prudent, Sixième sens, Sommeil léger, Travail d’équipe, Tir précis, Tireur d’élite, Tir  ciblé | Calme, Chance insolante, Doué (TEC), Esprit de compétition, Prudent, Sixième sens, Sommeil léger, Travail d’équipe, Tir précis, Tireur d’élite, Tir  ciblé | Calme, Chance insolante, Doué (TEC), Esprit de compétition, Prudent, Sixième sens, Sommeil léger, Travail d’équipe, Tir précis, Tireur d’élite, Tir  ciblé | Calme, Chance insolante, Doué (TEC), Esprit de compétition, Prudent, Sixième sens, Sommeil léger, Travail d’équipe, Tir précis, Tireur d’élite, Tir  ciblé |  | Talents | Talents | Calme, Coup du prédateur, Coup en traître, Distraction, Insaisissable, Instinct de survie, Nyctalopie, Prudent, Sixième sens, Tireur d’élite, Vivacité | Calme, Coup du prédateur, Coup en traître, Distraction, Insaisissable, Instinct de survie, Nyctalopie, Prudent, Sixième sens, Tireur d’élite, Vivacité | Calme, Coup du prédateur, Coup en traître, Distraction, Insaisissable, Instinct de survie, Nyctalopie, Prudent, Sixième sens, Tireur d’élite, Vivacité | Calme, Coup du prédateur, Coup en traître, Distraction, Insaisissable, Instinct de survie, Nyctalopie, Prudent, Sixième sens, Tireur d’élite, Vivacité | Calme, Coup du prédateur, Coup en traître, Distraction, Insaisissable, Instinct de survie, Nyctalopie, Prudent, Sixième sens, Tireur d’élite, Vivacité |
+| Equipements additionnels | Equipements additionnels | Armure Carapace légère, Outils de mécanique, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Armure Carapace légère, Outils de mécanique, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Armure Carapace légère, Outils de mécanique, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Armure Carapace légère, Outils de mécanique, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Armure Carapace légère, Outils de mécanique, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) |  | Equipements additionnels | Equipements additionnels | Armure Carapace légère, Cape de camouflage, Micro-Vox, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Armure Carapace légère, Cape de camouflage, Micro-Vox, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Armure Carapace légère, Cape de camouflage, Micro-Vox, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Armure Carapace légère, Cape de camouflage, Micro-Vox, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Armure Carapace légère, Cape de camouflage, Micro-Vox, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) |
+
+
+| Tireur d’élite | Tireur d’élite | Tireur d’élite | Tireur d’élite | Tireur d’élite | Tireur d’élite | Tireur d’élite |  | Légionnaire pénal | Légionnaire pénal | Légionnaire pénal | Légionnaire pénal | Légionnaire pénal | Légionnaire pénal | Légionnaire pénal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “Un tir bien placé peut remporter une victoire.” | “Un tir bien placé peut remporter une victoire.” | “Un tir bien placé peut remporter une victoire.” | “Un tir bien placé peut remporter une victoire.” | “Un tir bien placé peut remporter une victoire.” | “Un tir bien placé peut remporter une victoire.” | “Un tir bien placé peut remporter une victoire.” |  | “Même pour la vermine, le devoir ne disparaît que dans la mort.” | “Même pour la vermine, le devoir ne disparaît que dans la mort.” | “Même pour la vermine, le devoir ne disparaît que dans la mort.” | “Même pour la vermine, le devoir ne disparaît que dans la mort.” | “Même pour la vermine, le devoir ne disparaît que dans la mort.” | “Même pour la vermine, le devoir ne disparaît que dans la mort.” | “Même pour la vermine, le devoir ne disparaît que dans la mort.” |
+| Les tireurs d’élite de l’Astra Militarum sont des soldats qui ont fait la preuve de leurs talents au tir. Ils sont alors formés pour assurer des missions d’élimination et sont déployés pour supprimer ou bien assurer la protection de cibles de grande importance. | Les tireurs d’élite de l’Astra Militarum sont des soldats qui ont fait la preuve de leurs talents au tir. Ils sont alors formés pour assurer des missions d’élimination et sont déployés pour supprimer ou bien assurer la protection de cibles de grande importance. | Les tireurs d’élite de l’Astra Militarum sont des soldats qui ont fait la preuve de leurs talents au tir. Ils sont alors formés pour assurer des missions d’élimination et sont déployés pour supprimer ou bien assurer la protection de cibles de grande importance. | Les tireurs d’élite de l’Astra Militarum sont des soldats qui ont fait la preuve de leurs talents au tir. Ils sont alors formés pour assurer des missions d’élimination et sont déployés pour supprimer ou bien assurer la protection de cibles de grande importance. | Les tireurs d’élite de l’Astra Militarum sont des soldats qui ont fait la preuve de leurs talents au tir. Ils sont alors formés pour assurer des missions d’élimination et sont déployés pour supprimer ou bien assurer la protection de cibles de grande importance. | Les tireurs d’élite de l’Astra Militarum sont des soldats qui ont fait la preuve de leurs talents au tir. Ils sont alors formés pour assurer des missions d’élimination et sont déployés pour supprimer ou bien assurer la protection de cibles de grande importance. | Les tireurs d’élite de l’Astra Militarum sont des soldats qui ont fait la preuve de leurs talents au tir. Ils sont alors formés pour assurer des missions d’élimination et sont déployés pour supprimer ou bien assurer la protection de cibles de grande importance. |  | Nombreux sont ceux qui bafouent les textes sacrés de la Lex Imperialis et sont ensuite enfermés sur l’une des nombreuses planètes carcérales de l’Imperium. Ces prisonniers sont une ressource sacrifiable  pour toutes sortes de tâche, y compris la guerre. Ils sont armés et envoyés sur les fronts les plus abominables ou bien sacrifiés dans des missions suicides. | Nombreux sont ceux qui bafouent les textes sacrés de la Lex Imperialis et sont ensuite enfermés sur l’une des nombreuses planètes carcérales de l’Imperium. Ces prisonniers sont une ressource sacrifiable  pour toutes sortes de tâche, y compris la guerre. Ils sont armés et envoyés sur les fronts les plus abominables ou bien sacrifiés dans des missions suicides. | Nombreux sont ceux qui bafouent les textes sacrés de la Lex Imperialis et sont ensuite enfermés sur l’une des nombreuses planètes carcérales de l’Imperium. Ces prisonniers sont une ressource sacrifiable  pour toutes sortes de tâche, y compris la guerre. Ils sont armés et envoyés sur les fronts les plus abominables ou bien sacrifiés dans des missions suicides. | Nombreux sont ceux qui bafouent les textes sacrés de la Lex Imperialis et sont ensuite enfermés sur l’une des nombreuses planètes carcérales de l’Imperium. Ces prisonniers sont une ressource sacrifiable  pour toutes sortes de tâche, y compris la guerre. Ils sont armés et envoyés sur les fronts les plus abominables ou bien sacrifiés dans des missions suicides. | Nombreux sont ceux qui bafouent les textes sacrés de la Lex Imperialis et sont ensuite enfermés sur l’une des nombreuses planètes carcérales de l’Imperium. Ces prisonniers sont une ressource sacrifiable  pour toutes sortes de tâche, y compris la guerre. Ils sont armés et envoyés sur les fronts les plus abominables ou bien sacrifiés dans des missions suicides. | Nombreux sont ceux qui bafouent les textes sacrés de la Lex Imperialis et sont ensuite enfermés sur l’une des nombreuses planètes carcérales de l’Imperium. Ces prisonniers sont une ressource sacrifiable  pour toutes sortes de tâche, y compris la guerre. Ils sont armés et envoyés sur les fronts les plus abominables ou bien sacrifiés dans des missions suicides. | Nombreux sont ceux qui bafouent les textes sacrés de la Lex Imperialis et sont ensuite enfermés sur l’une des nombreuses planètes carcérales de l’Imperium. Ces prisonniers sont une ressource sacrifiable  pour toutes sortes de tâche, y compris la guerre. Ils sont armés et envoyés sur les fronts les plus abominables ou bien sacrifiés dans des missions suicides. |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 2 | 0 | 3 | 2 | 2 | 0 | 0 |  | 4 | 0 | 1 | 3 | 3 | 2 | 0 |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 1 | 4 | 0 | 2 | 5 | 3 |  |  | 2 | 1 | 0 | 3 | 2 | 3 |  |
+| Niveau de vie | Niveau de vie | Pauvre | Pauvre | Pauvre | Pauvre | Pauvre |  | Niveau de vie | Niveau de vie | Misérable | Misérable | Misérable | Misérable | Misérable |
+| Spécialités | Spécialités | Arme à distance (Longue portée), Arme de tir (au choix), Courage, Déplacement silencieux, Escalade, Réflexes, Résistance aux privations, Résistance à la chaleur/au froid, Se cacher, Vigilance | Arme à distance (Longue portée), Arme de tir (au choix), Courage, Déplacement silencieux, Escalade, Réflexes, Résistance aux privations, Résistance à la chaleur/au froid, Se cacher, Vigilance | Arme à distance (Longue portée), Arme de tir (au choix), Courage, Déplacement silencieux, Escalade, Réflexes, Résistance aux privations, Résistance à la chaleur/au froid, Se cacher, Vigilance | Arme à distance (Longue portée), Arme de tir (au choix), Courage, Déplacement silencieux, Escalade, Réflexes, Résistance aux privations, Résistance à la chaleur/au froid, Se cacher, Vigilance | Arme à distance (Longue portée), Arme de tir (au choix), Courage, Déplacement silencieux, Escalade, Réflexes, Résistance aux privations, Résistance à la chaleur/au froid, Se cacher, Vigilance |  | Spécialités | Spécialités | Arme de mêlée (au choix), Arme à distance (au choix), Acrobaties, Course, Escalade, Faire pitié,  Intimidation, Réflexes, Repérage, Vigilance, Vol à la tir | Arme de mêlée (au choix), Arme à distance (au choix), Acrobaties, Course, Escalade, Faire pitié,  Intimidation, Réflexes, Repérage, Vigilance, Vol à la tir | Arme de mêlée (au choix), Arme à distance (au choix), Acrobaties, Course, Escalade, Faire pitié,  Intimidation, Réflexes, Repérage, Vigilance, Vol à la tir | Arme de mêlée (au choix), Arme à distance (au choix), Acrobaties, Course, Escalade, Faire pitié,  Intimidation, Réflexes, Repérage, Vigilance, Vol à la tir | Arme de mêlée (au choix), Arme à distance (au choix), Acrobaties, Course, Escalade, Faire pitié,  Intimidation, Réflexes, Repérage, Vigilance, Vol à la tir |
+| Talents | Talents | Arme fétiche, Calme, Chance insolente, Doué (PER), Insaisissable, Nyctalopie, Prudent, Tir précis, Tireur d’élite, Tir du chasseur, Tir ciblé | Arme fétiche, Calme, Chance insolente, Doué (PER), Insaisissable, Nyctalopie, Prudent, Tir précis, Tireur d’élite, Tir du chasseur, Tir ciblé | Arme fétiche, Calme, Chance insolente, Doué (PER), Insaisissable, Nyctalopie, Prudent, Tir précis, Tireur d’élite, Tir du chasseur, Tir ciblé | Arme fétiche, Calme, Chance insolente, Doué (PER), Insaisissable, Nyctalopie, Prudent, Tir précis, Tireur d’élite, Tir du chasseur, Tir ciblé | Arme fétiche, Calme, Chance insolente, Doué (PER), Insaisissable, Nyctalopie, Prudent, Tir précis, Tireur d’élite, Tir du chasseur, Tir ciblé |  | Talents | Talents | Agile, Bagarre, Brute, Coups puissants, Esprit de compétition, Guérison rapide, Instinct de survie, Mensonge éhonté, Surnombre, Tireur d’élite, Vivacité | Agile, Bagarre, Brute, Coups puissants, Esprit de compétition, Guérison rapide, Instinct de survie, Mensonge éhonté, Surnombre, Tireur d’élite, Vivacité | Agile, Bagarre, Brute, Coups puissants, Esprit de compétition, Guérison rapide, Instinct de survie, Mensonge éhonté, Surnombre, Tireur d’élite, Vivacité | Agile, Bagarre, Brute, Coups puissants, Esprit de compétition, Guérison rapide, Instinct de survie, Mensonge éhonté, Surnombre, Tireur d’élite, Vivacité | Agile, Bagarre, Brute, Coups puissants, Esprit de compétition, Guérison rapide, Instinct de survie, Mensonge éhonté, Surnombre, Tireur d’élite, Vivacité |
+| Equipements additionnels | Equipements additionnels | Armure Carapace légère, Fusil de précision, Munitions : Chargeurs x2 (Au choix) | Armure Carapace légère, Fusil de précision, Munitions : Chargeurs x2 (Au choix) | Armure Carapace légère, Fusil de précision, Munitions : Chargeurs x2 (Au choix) | Armure Carapace légère, Fusil de précision, Munitions : Chargeurs x2 (Au choix) | Armure Carapace légère, Fusil de précision, Munitions : Chargeurs x2 (Au choix) |  | Equipements additionnels | Equipements additionnels | Pièces Carapace, Brassard de la Légion pénale, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Pièces Carapace, Brassard de la Légion pénale, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Pièces Carapace, Brassard de la Légion pénale, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Pièces Carapace, Brassard de la Légion pénale, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) | Pièces Carapace, Brassard de la Légion pénale, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix) |
+
+
+## Civils/Hors institutions
+Les civils qui vivent dans l’Imperium se doivent de servir d’une manière ou d’une autre. Producteur sur un monde agricole, ouvrier sur un monde-forge, ingénieur dans une usine planétaire et même les membres de la haute-société impériale. Tous doivent obéissance et servitude à l’Imperium et à l’Empereur. De plus, bien d’autres groupuscules sont au service de l’Imperium sans faire partie de ses institutions, comme les Libres-Marchands par exemple.
+
+### Agents, domestiques et fidèles
+Si l’organisation des infrastructures gargantuesques de l’Imperium est gérée par ses très nombreuses institutions. Il faut tout de même des millions de mains se charger de son exécution. Qu’ils soient des agents au service d’un gouverneur, des fonctionnaires chargés de prélever un impôt sur les terres d’un noble ou des officiers de haut rang dans un vaisseau spatial.
+Les agents et domestiques sont fiers de leur fonction et apprécient leur position bien plus élevées que la masse grouillante.
+Possession de départ :
+Vêtements de roturier en bon état
+Uniforme ou insigne
+Arme de mêlée légère
+Gourde d’eau ou d’amasec
+Bourse contenant l’équivalent de 2D10 x *SOC* Trônes Gelt
+
+| Agent Vox | Agent Vox | Agent Vox | Agent Vox | Agent Vox | Agent Vox | Agent Vox |  | Domestique | Domestique | Domestique | Domestique | Domestique | Domestique | Domestique |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “Capitaine ? J’ai une transmission urgente à votre attention.” | “Capitaine ? J’ai une transmission urgente à votre attention.” | “Capitaine ? J’ai une transmission urgente à votre attention.” | “Capitaine ? J’ai une transmission urgente à votre attention.” | “Capitaine ? J’ai une transmission urgente à votre attention.” | “Capitaine ? J’ai une transmission urgente à votre attention.” | “Capitaine ? J’ai une transmission urgente à votre attention.” |  |  |  |  |  |  |  |  |
+| Les Agents Vox sont employés partout dans l’Imperium. Aussi bien dans l’armée que dans les hautes sphères, jusque dans les plus grands vaisseaux spatiaux ou bien encore dans toutes les villes importantes.  Ils sont équipés d’implants capables de recevoir et d’émettre des messages à travers les stations Vox de l’Imperium et sont ainsi les premiers moyens de communication d’un système stellaire. | Les Agents Vox sont employés partout dans l’Imperium. Aussi bien dans l’armée que dans les hautes sphères, jusque dans les plus grands vaisseaux spatiaux ou bien encore dans toutes les villes importantes.  Ils sont équipés d’implants capables de recevoir et d’émettre des messages à travers les stations Vox de l’Imperium et sont ainsi les premiers moyens de communication d’un système stellaire. | Les Agents Vox sont employés partout dans l’Imperium. Aussi bien dans l’armée que dans les hautes sphères, jusque dans les plus grands vaisseaux spatiaux ou bien encore dans toutes les villes importantes.  Ils sont équipés d’implants capables de recevoir et d’émettre des messages à travers les stations Vox de l’Imperium et sont ainsi les premiers moyens de communication d’un système stellaire. | Les Agents Vox sont employés partout dans l’Imperium. Aussi bien dans l’armée que dans les hautes sphères, jusque dans les plus grands vaisseaux spatiaux ou bien encore dans toutes les villes importantes.  Ils sont équipés d’implants capables de recevoir et d’émettre des messages à travers les stations Vox de l’Imperium et sont ainsi les premiers moyens de communication d’un système stellaire. | Les Agents Vox sont employés partout dans l’Imperium. Aussi bien dans l’armée que dans les hautes sphères, jusque dans les plus grands vaisseaux spatiaux ou bien encore dans toutes les villes importantes.  Ils sont équipés d’implants capables de recevoir et d’émettre des messages à travers les stations Vox de l’Imperium et sont ainsi les premiers moyens de communication d’un système stellaire. | Les Agents Vox sont employés partout dans l’Imperium. Aussi bien dans l’armée que dans les hautes sphères, jusque dans les plus grands vaisseaux spatiaux ou bien encore dans toutes les villes importantes.  Ils sont équipés d’implants capables de recevoir et d’émettre des messages à travers les stations Vox de l’Imperium et sont ainsi les premiers moyens de communication d’un système stellaire. | Les Agents Vox sont employés partout dans l’Imperium. Aussi bien dans l’armée que dans les hautes sphères, jusque dans les plus grands vaisseaux spatiaux ou bien encore dans toutes les villes importantes.  Ils sont équipés d’implants capables de recevoir et d’émettre des messages à travers les stations Vox de l’Imperium et sont ainsi les premiers moyens de communication d’un système stellaire. |  | Homme ou femme à tout faire auprès d’un maître, qu’il soit simple bourgeois ou noble. Ils assurent toutes sortes de tâches quotidiennes comme la cuisine, le ménage ou bien les achats généraux. Ils sont nourris et logés chez leur employeur, et bénéficient d’une maigre paye en supplément.  Les valets peuvent nouer une relation privilégiée avec leur employeur basée sur la confiance et la bonté, comme une relation difficile si le maître est violent et tyrannique. | Homme ou femme à tout faire auprès d’un maître, qu’il soit simple bourgeois ou noble. Ils assurent toutes sortes de tâches quotidiennes comme la cuisine, le ménage ou bien les achats généraux. Ils sont nourris et logés chez leur employeur, et bénéficient d’une maigre paye en supplément.  Les valets peuvent nouer une relation privilégiée avec leur employeur basée sur la confiance et la bonté, comme une relation difficile si le maître est violent et tyrannique. | Homme ou femme à tout faire auprès d’un maître, qu’il soit simple bourgeois ou noble. Ils assurent toutes sortes de tâches quotidiennes comme la cuisine, le ménage ou bien les achats généraux. Ils sont nourris et logés chez leur employeur, et bénéficient d’une maigre paye en supplément.  Les valets peuvent nouer une relation privilégiée avec leur employeur basée sur la confiance et la bonté, comme une relation difficile si le maître est violent et tyrannique. | Homme ou femme à tout faire auprès d’un maître, qu’il soit simple bourgeois ou noble. Ils assurent toutes sortes de tâches quotidiennes comme la cuisine, le ménage ou bien les achats généraux. Ils sont nourris et logés chez leur employeur, et bénéficient d’une maigre paye en supplément.  Les valets peuvent nouer une relation privilégiée avec leur employeur basée sur la confiance et la bonté, comme une relation difficile si le maître est violent et tyrannique. | Homme ou femme à tout faire auprès d’un maître, qu’il soit simple bourgeois ou noble. Ils assurent toutes sortes de tâches quotidiennes comme la cuisine, le ménage ou bien les achats généraux. Ils sont nourris et logés chez leur employeur, et bénéficient d’une maigre paye en supplément.  Les valets peuvent nouer une relation privilégiée avec leur employeur basée sur la confiance et la bonté, comme une relation difficile si le maître est violent et tyrannique. | Homme ou femme à tout faire auprès d’un maître, qu’il soit simple bourgeois ou noble. Ils assurent toutes sortes de tâches quotidiennes comme la cuisine, le ménage ou bien les achats généraux. Ils sont nourris et logés chez leur employeur, et bénéficient d’une maigre paye en supplément.  Les valets peuvent nouer une relation privilégiée avec leur employeur basée sur la confiance et la bonté, comme une relation difficile si le maître est violent et tyrannique. | Homme ou femme à tout faire auprès d’un maître, qu’il soit simple bourgeois ou noble. Ils assurent toutes sortes de tâches quotidiennes comme la cuisine, le ménage ou bien les achats généraux. Ils sont nourris et logés chez leur employeur, et bénéficient d’une maigre paye en supplément.  Les valets peuvent nouer une relation privilégiée avec leur employeur basée sur la confiance et la bonté, comme une relation difficile si le maître est violent et tyrannique. |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 0 | 3 | 0 | 1 | 1 | 3 | 0 |  | 1 | 2 | 2 | 2 | 1 | 3 | 0 |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 1 | 4 | 5 | 1 | 1 | 4 |  |  | 2 | 4 | 4 | 1 | 0 | 2 |  |
+| Niveau de vie | Niveau de vie | Ordinaire | Ordinaire | Ordinaire | Ordinaire | Ordinaire |  | Niveau de vie | Niveau de vie | Pauvre | Pauvre | Pauvre | Pauvre | Pauvre |
+| Spécialités | Spécialités | Diplomatie, Discours, Droit et usages, Écoute, Étiquette, Informatique, Intuition, Lettres, Noblesse et politique, Renseignements, Technomaîtrise | Diplomatie, Discours, Droit et usages, Écoute, Étiquette, Informatique, Intuition, Lettres, Noblesse et politique, Renseignements, Technomaîtrise | Diplomatie, Discours, Droit et usages, Écoute, Étiquette, Informatique, Intuition, Lettres, Noblesse et politique, Renseignements, Technomaîtrise | Diplomatie, Discours, Droit et usages, Écoute, Étiquette, Informatique, Intuition, Lettres, Noblesse et politique, Renseignements, Technomaîtrise | Diplomatie, Discours, Droit et usages, Écoute, Étiquette, Informatique, Intuition, Lettres, Noblesse et politique, Renseignements, Technomaîtrise |  | Spécialités | Spécialités | Charme, Commerce, Cuisine, Dissimulation d’objets, Écoute, Intuition, Persuasion, Renseignements, Repérage, Se cacher | Charme, Commerce, Cuisine, Dissimulation d’objets, Écoute, Intuition, Persuasion, Renseignements, Repérage, Se cacher | Charme, Commerce, Cuisine, Dissimulation d’objets, Écoute, Intuition, Persuasion, Renseignements, Repérage, Se cacher | Charme, Commerce, Cuisine, Dissimulation d’objets, Écoute, Intuition, Persuasion, Renseignements, Repérage, Se cacher | Charme, Commerce, Cuisine, Dissimulation d’objets, Écoute, Intuition, Persuasion, Renseignements, Repérage, Se cacher |
+| Talents | Talents | Calme, Chance insolente, Distraction, Doué (SOC), Fascination, Inoffensif, Mémoire sans faille, Panache, Provocation, Suivre l’exemple | Calme, Chance insolente, Distraction, Doué (SOC), Fascination, Inoffensif, Mémoire sans faille, Panache, Provocation, Suivre l’exemple | Calme, Chance insolente, Distraction, Doué (SOC), Fascination, Inoffensif, Mémoire sans faille, Panache, Provocation, Suivre l’exemple | Calme, Chance insolente, Distraction, Doué (SOC), Fascination, Inoffensif, Mémoire sans faille, Panache, Provocation, Suivre l’exemple | Calme, Chance insolente, Distraction, Doué (SOC), Fascination, Inoffensif, Mémoire sans faille, Panache, Provocation, Suivre l’exemple |  | Talents | Talents | Chance insolente, Distraction, Doué (TEC), Doué (PER), Doué (SOC), Festoyeur ou Prudent, Gardien, Inoffensif, Mensonge éhonté ou Second souffle, Vivacité | Chance insolente, Distraction, Doué (TEC), Doué (PER), Doué (SOC), Festoyeur ou Prudent, Gardien, Inoffensif, Mensonge éhonté ou Second souffle, Vivacité | Chance insolente, Distraction, Doué (TEC), Doué (PER), Doué (SOC), Festoyeur ou Prudent, Gardien, Inoffensif, Mensonge éhonté ou Second souffle, Vivacité | Chance insolente, Distraction, Doué (TEC), Doué (PER), Doué (SOC), Festoyeur ou Prudent, Gardien, Inoffensif, Mensonge éhonté ou Second souffle, Vivacité | Chance insolente, Distraction, Doué (TEC), Doué (PER), Doué (SOC), Festoyeur ou Prudent, Gardien, Inoffensif, Mensonge éhonté ou Second souffle, Vivacité |
+| Equipements additionnels | Equipements additionnels | Augmentations : Vox implanté | Augmentations : Vox implanté | Augmentations : Vox implanté | Augmentations : Vox implanté | Augmentations : Vox implanté |  | Equipements additionnels | Equipements additionnels | Costume de bourgeois, Lanterne, Fiole de parfum | Costume de bourgeois, Lanterne, Fiole de parfum | Costume de bourgeois, Lanterne, Fiole de parfum | Costume de bourgeois, Lanterne, Fiole de parfum | Costume de bourgeois, Lanterne, Fiole de parfum |
+
+
+| Pilote, Timonier | Pilote, Timonier | Pilote, Timonier | Pilote, Timonier | Pilote, Timonier | Pilote, Timonier | Pilote, Timonier |  | Sénéchal | Sénéchal | Sénéchal | Sénéchal | Sénéchal | Sénéchal | Sénéchal |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “Abaissez les écoutilles, saut Warp dans 3… 2… 1…” | “Abaissez les écoutilles, saut Warp dans 3… 2… 1…” | “Abaissez les écoutilles, saut Warp dans 3… 2… 1…” | “Abaissez les écoutilles, saut Warp dans 3… 2… 1…” | “Abaissez les écoutilles, saut Warp dans 3… 2… 1…” | “Abaissez les écoutilles, saut Warp dans 3… 2… 1…” | “Abaissez les écoutilles, saut Warp dans 3… 2… 1…” |  | “Assurez-vous que les préparatifs de l’expédition soient prêts !” | “Assurez-vous que les préparatifs de l’expédition soient prêts !” | “Assurez-vous que les préparatifs de l’expédition soient prêts !” | “Assurez-vous que les préparatifs de l’expédition soient prêts !” | “Assurez-vous que les préparatifs de l’expédition soient prêts !” | “Assurez-vous que les préparatifs de l’expédition soient prêts !” | “Assurez-vous que les préparatifs de l’expédition soient prêts !” |
+| L’Imperium est vaste et les milliers de vaisseaux et véhicules qui en arpentent les territoires doivent nécessairement être dirigés par des légions de pilotes formés pour les voyages aussi bien terrestres, qu’aériens ou spatiaux. | L’Imperium est vaste et les milliers de vaisseaux et véhicules qui en arpentent les territoires doivent nécessairement être dirigés par des légions de pilotes formés pour les voyages aussi bien terrestres, qu’aériens ou spatiaux. | L’Imperium est vaste et les milliers de vaisseaux et véhicules qui en arpentent les territoires doivent nécessairement être dirigés par des légions de pilotes formés pour les voyages aussi bien terrestres, qu’aériens ou spatiaux. | L’Imperium est vaste et les milliers de vaisseaux et véhicules qui en arpentent les territoires doivent nécessairement être dirigés par des légions de pilotes formés pour les voyages aussi bien terrestres, qu’aériens ou spatiaux. | L’Imperium est vaste et les milliers de vaisseaux et véhicules qui en arpentent les territoires doivent nécessairement être dirigés par des légions de pilotes formés pour les voyages aussi bien terrestres, qu’aériens ou spatiaux. | L’Imperium est vaste et les milliers de vaisseaux et véhicules qui en arpentent les territoires doivent nécessairement être dirigés par des légions de pilotes formés pour les voyages aussi bien terrestres, qu’aériens ou spatiaux. | L’Imperium est vaste et les milliers de vaisseaux et véhicules qui en arpentent les territoires doivent nécessairement être dirigés par des légions de pilotes formés pour les voyages aussi bien terrestres, qu’aériens ou spatiaux. |  | Si un aristocrate, un gouverneur ou encore un Libre-Marchand est le coeur d’une Maison noble, les Sénéchaux sont ses mains. Il s’occupe de toutes sortes d’affaires à la place de son employeur, que ce soit l’organisation d’un territoire ou d’un vaisseau, des discussions commerciales auprès de marchands ou autres guildes ou encore l’entretient de réseaux d’espionnage pour les plus importants. | Si un aristocrate, un gouverneur ou encore un Libre-Marchand est le coeur d’une Maison noble, les Sénéchaux sont ses mains. Il s’occupe de toutes sortes d’affaires à la place de son employeur, que ce soit l’organisation d’un territoire ou d’un vaisseau, des discussions commerciales auprès de marchands ou autres guildes ou encore l’entretient de réseaux d’espionnage pour les plus importants. | Si un aristocrate, un gouverneur ou encore un Libre-Marchand est le coeur d’une Maison noble, les Sénéchaux sont ses mains. Il s’occupe de toutes sortes d’affaires à la place de son employeur, que ce soit l’organisation d’un territoire ou d’un vaisseau, des discussions commerciales auprès de marchands ou autres guildes ou encore l’entretient de réseaux d’espionnage pour les plus importants. | Si un aristocrate, un gouverneur ou encore un Libre-Marchand est le coeur d’une Maison noble, les Sénéchaux sont ses mains. Il s’occupe de toutes sortes d’affaires à la place de son employeur, que ce soit l’organisation d’un territoire ou d’un vaisseau, des discussions commerciales auprès de marchands ou autres guildes ou encore l’entretient de réseaux d’espionnage pour les plus importants. | Si un aristocrate, un gouverneur ou encore un Libre-Marchand est le coeur d’une Maison noble, les Sénéchaux sont ses mains. Il s’occupe de toutes sortes d’affaires à la place de son employeur, que ce soit l’organisation d’un territoire ou d’un vaisseau, des discussions commerciales auprès de marchands ou autres guildes ou encore l’entretient de réseaux d’espionnage pour les plus importants. | Si un aristocrate, un gouverneur ou encore un Libre-Marchand est le coeur d’une Maison noble, les Sénéchaux sont ses mains. Il s’occupe de toutes sortes d’affaires à la place de son employeur, que ce soit l’organisation d’un territoire ou d’un vaisseau, des discussions commerciales auprès de marchands ou autres guildes ou encore l’entretient de réseaux d’espionnage pour les plus importants. | Si un aristocrate, un gouverneur ou encore un Libre-Marchand est le coeur d’une Maison noble, les Sénéchaux sont ses mains. Il s’occupe de toutes sortes d’affaires à la place de son employeur, que ce soit l’organisation d’un territoire ou d’un vaisseau, des discussions commerciales auprès de marchands ou autres guildes ou encore l’entretient de réseaux d’espionnage pour les plus importants. |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 2 | 0 | 1 | 2 | 2 | 4 | 0 |  | 2 | 3 | 0 | 2 | 2 | 0 | 0 |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 2 | 2 | 3 | 2 | 2 | 2 |  |  | 0 | 3 | 5 | 0 | 3 | 4 |  |
+| Niveau de vie | Niveau de vie | Ordinaire | Ordinaire | Ordinaire | Ordinaire | Ordinaire |  | Niveau de vie | Niveau de vie | Aisé | Aisé | Aisé | Aisé | Aisé |
+| Spécialités | Spécialités | Artillerie, Astrogation, Cartographie, Pilotage (Au choix), Commandement,  Courage, Gestion, Informatique, Orientation, Repérage, Vigilance | Artillerie, Astrogation, Cartographie, Pilotage (Au choix), Commandement,  Courage, Gestion, Informatique, Orientation, Repérage, Vigilance | Artillerie, Astrogation, Cartographie, Pilotage (Au choix), Commandement,  Courage, Gestion, Informatique, Orientation, Repérage, Vigilance | Artillerie, Astrogation, Cartographie, Pilotage (Au choix), Commandement,  Courage, Gestion, Informatique, Orientation, Repérage, Vigilance | Artillerie, Astrogation, Cartographie, Pilotage (Au choix), Commandement,  Courage, Gestion, Informatique, Orientation, Repérage, Vigilance |  | Spécialités | Spécialités | Arme à distance (au choix), Arme de mêlée (au choix), Commerce, Commandement, Diplomatie, Droit et usages, Gestion, Etiquettes, Histoire, Noblesse et politique, Renseignements | Arme à distance (au choix), Arme de mêlée (au choix), Commerce, Commandement, Diplomatie, Droit et usages, Gestion, Etiquettes, Histoire, Noblesse et politique, Renseignements | Arme à distance (au choix), Arme de mêlée (au choix), Commerce, Commandement, Diplomatie, Droit et usages, Gestion, Etiquettes, Histoire, Noblesse et politique, Renseignements | Arme à distance (au choix), Arme de mêlée (au choix), Commerce, Commandement, Diplomatie, Droit et usages, Gestion, Etiquettes, Histoire, Noblesse et politique, Renseignements | Arme à distance (au choix), Arme de mêlée (au choix), Commerce, Commandement, Diplomatie, Droit et usages, Gestion, Etiquettes, Histoire, Noblesse et politique, Renseignements |
+| Talents | Talents | Calme, Chance insolente, Doué (MOU), Doué (SOC), Recharge rapide, Réflexes éclairs, Second souffle, Sixième sens, Solidité, Véhicule fétiche | Calme, Chance insolente, Doué (MOU), Doué (SOC), Recharge rapide, Réflexes éclairs, Second souffle, Sixième sens, Solidité, Véhicule fétiche | Calme, Chance insolente, Doué (MOU), Doué (SOC), Recharge rapide, Réflexes éclairs, Second souffle, Sixième sens, Solidité, Véhicule fétiche | Calme, Chance insolente, Doué (MOU), Doué (SOC), Recharge rapide, Réflexes éclairs, Second souffle, Sixième sens, Solidité, Véhicule fétiche | Calme, Chance insolente, Doué (MOU), Doué (SOC), Recharge rapide, Réflexes éclairs, Second souffle, Sixième sens, Solidité, Véhicule fétiche |  | Talents | Talents | Arme fétiche, Calme, Coup de maître, Dévoué serviteur, Doué (SOC), Fascination, Inspiration, Résilience, Sain d’esprit, Travail d’équipe, Vivacité | Arme fétiche, Calme, Coup de maître, Dévoué serviteur, Doué (SOC), Fascination, Inspiration, Résilience, Sain d’esprit, Travail d’équipe, Vivacité | Arme fétiche, Calme, Coup de maître, Dévoué serviteur, Doué (SOC), Fascination, Inspiration, Résilience, Sain d’esprit, Travail d’équipe, Vivacité | Arme fétiche, Calme, Coup de maître, Dévoué serviteur, Doué (SOC), Fascination, Inspiration, Résilience, Sain d’esprit, Travail d’équipe, Vivacité | Arme fétiche, Calme, Coup de maître, Dévoué serviteur, Doué (SOC), Fascination, Inspiration, Résilience, Sain d’esprit, Travail d’équipe, Vivacité |
+| Equipements additionnels | Equipements additionnels | Pistolet ou Revolver ou Pistolet Laser, Munition : Chargeurs x2, Combinaison moulante | Pistolet ou Revolver ou Pistolet Laser, Munition : Chargeurs x2, Combinaison moulante | Pistolet ou Revolver ou Pistolet Laser, Munition : Chargeurs x2, Combinaison moulante | Pistolet ou Revolver ou Pistolet Laser, Munition : Chargeurs x2, Combinaison moulante | Pistolet ou Revolver ou Pistolet Laser, Munition : Chargeurs x2, Combinaison moulante |  | Equipements additionnels | Equipements additionnels | Costume de bourgeois, Arme de mêlée (au choix) ou Arme à distance (au choix) et munitions : Chargeurs x2 | Costume de bourgeois, Arme de mêlée (au choix) ou Arme à distance (au choix) et munitions : Chargeurs x2 | Costume de bourgeois, Arme de mêlée (au choix) ou Arme à distance (au choix) et munitions : Chargeurs x2 | Costume de bourgeois, Arme de mêlée (au choix) ou Arme à distance (au choix) et munitions : Chargeurs x2 | Costume de bourgeois, Arme de mêlée (au choix) ou Arme à distance (au choix) et munitions : Chargeurs x2 |
+
+
+### Nobles et aristocrates
+La haute noblesse de l’Imperium est une élite infiniment riche et infiniment puissante, une race à part, très au-dessus des masses populaires qu’elle dirige. De nombreuses maisons aristocratiques étendent leur influence d’étoile en étoile, grâce à un réseau complexe de filiations, d’unions arrangées et d’alliances politiques conçues pour que leur pouvoir et leur influence ne faiblissent jamais, même face à la faillite d’un monde. Issus de siècles, et même de millénaires, de raffinement culturel et de reproduction techno-assistée, ces nobles lignages ont fait l’Imperium et ils sont la crème de l’Humanité… tout du moins, c’est ce qu’ils aimeraient vous faire croire.
+Possessions de départ :
+Vêtements riches
+Arme de mêlée d’excellente facture (Épée ou dague énergétique)
+Bourse contenant l’équivalent de 1D100 x *SOC* Trônes Gelt
+
+| Noble | Noble | Noble | Noble | Noble | Noble | Noble |  | Gouverneur | Gouverneur | Gouverneur | Gouverneur | Gouverneur | Gouverneur | Gouverneur |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “Savez-vous qui je suis ?” | “Savez-vous qui je suis ?” | “Savez-vous qui je suis ?” | “Savez-vous qui je suis ?” | “Savez-vous qui je suis ?” | “Savez-vous qui je suis ?” | “Savez-vous qui je suis ?” |  | “Ils règnent en Son nom.” | “Ils règnent en Son nom.” | “Ils règnent en Son nom.” | “Ils règnent en Son nom.” | “Ils règnent en Son nom.” | “Ils règnent en Son nom.” | “Ils règnent en Son nom.” |
+| De nombreux aristocrates appartiennent à la noblesse de l’Imperium, qu’ils soient les notables d’une cité-ruche, ou bien les propriétaires d’une planète voir de tout un système. Ils sont chargés de régenter et administrer les territoires de l’Imperium. | De nombreux aristocrates appartiennent à la noblesse de l’Imperium, qu’ils soient les notables d’une cité-ruche, ou bien les propriétaires d’une planète voir de tout un système. Ils sont chargés de régenter et administrer les territoires de l’Imperium. | De nombreux aristocrates appartiennent à la noblesse de l’Imperium, qu’ils soient les notables d’une cité-ruche, ou bien les propriétaires d’une planète voir de tout un système. Ils sont chargés de régenter et administrer les territoires de l’Imperium. | De nombreux aristocrates appartiennent à la noblesse de l’Imperium, qu’ils soient les notables d’une cité-ruche, ou bien les propriétaires d’une planète voir de tout un système. Ils sont chargés de régenter et administrer les territoires de l’Imperium. | De nombreux aristocrates appartiennent à la noblesse de l’Imperium, qu’ils soient les notables d’une cité-ruche, ou bien les propriétaires d’une planète voir de tout un système. Ils sont chargés de régenter et administrer les territoires de l’Imperium. | De nombreux aristocrates appartiennent à la noblesse de l’Imperium, qu’ils soient les notables d’une cité-ruche, ou bien les propriétaires d’une planète voir de tout un système. Ils sont chargés de régenter et administrer les territoires de l’Imperium. | De nombreux aristocrates appartiennent à la noblesse de l’Imperium, qu’ils soient les notables d’une cité-ruche, ou bien les propriétaires d’une planète voir de tout un système. Ils sont chargés de régenter et administrer les territoires de l’Imperium. |  | Seule une poignée de planètes est administrée directement par l’Adeptus Terra et Ministorum. Mais face à l’immensité de l’Imperium, il est nécessaire de nommer des dirigeants afin d’assurer leur fonctionnement.   Les gouverneurs impériaux sont chargés de diriger des planètes entières au nom de l’Empereur-Dieu. Leur titre est héréditaire et souvent octroyé par les hautes sphères de Terra (ou par un Libre-Marchand sur son territoire). | Seule une poignée de planètes est administrée directement par l’Adeptus Terra et Ministorum. Mais face à l’immensité de l’Imperium, il est nécessaire de nommer des dirigeants afin d’assurer leur fonctionnement.   Les gouverneurs impériaux sont chargés de diriger des planètes entières au nom de l’Empereur-Dieu. Leur titre est héréditaire et souvent octroyé par les hautes sphères de Terra (ou par un Libre-Marchand sur son territoire). | Seule une poignée de planètes est administrée directement par l’Adeptus Terra et Ministorum. Mais face à l’immensité de l’Imperium, il est nécessaire de nommer des dirigeants afin d’assurer leur fonctionnement.   Les gouverneurs impériaux sont chargés de diriger des planètes entières au nom de l’Empereur-Dieu. Leur titre est héréditaire et souvent octroyé par les hautes sphères de Terra (ou par un Libre-Marchand sur son territoire). | Seule une poignée de planètes est administrée directement par l’Adeptus Terra et Ministorum. Mais face à l’immensité de l’Imperium, il est nécessaire de nommer des dirigeants afin d’assurer leur fonctionnement.   Les gouverneurs impériaux sont chargés de diriger des planètes entières au nom de l’Empereur-Dieu. Leur titre est héréditaire et souvent octroyé par les hautes sphères de Terra (ou par un Libre-Marchand sur son territoire). | Seule une poignée de planètes est administrée directement par l’Adeptus Terra et Ministorum. Mais face à l’immensité de l’Imperium, il est nécessaire de nommer des dirigeants afin d’assurer leur fonctionnement.   Les gouverneurs impériaux sont chargés de diriger des planètes entières au nom de l’Empereur-Dieu. Leur titre est héréditaire et souvent octroyé par les hautes sphères de Terra (ou par un Libre-Marchand sur son territoire). | Seule une poignée de planètes est administrée directement par l’Adeptus Terra et Ministorum. Mais face à l’immensité de l’Imperium, il est nécessaire de nommer des dirigeants afin d’assurer leur fonctionnement.   Les gouverneurs impériaux sont chargés de diriger des planètes entières au nom de l’Empereur-Dieu. Leur titre est héréditaire et souvent octroyé par les hautes sphères de Terra (ou par un Libre-Marchand sur son territoire). | Seule une poignée de planètes est administrée directement par l’Adeptus Terra et Ministorum. Mais face à l’immensité de l’Imperium, il est nécessaire de nommer des dirigeants afin d’assurer leur fonctionnement.   Les gouverneurs impériaux sont chargés de diriger des planètes entières au nom de l’Empereur-Dieu. Leur titre est héréditaire et souvent octroyé par les hautes sphères de Terra (ou par un Libre-Marchand sur son territoire). |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 3 | 4 | 1 | 2 | 1 | 0 | 0 |  | 3 | 3 | 0 | 2 | 2 | 0 | 0 |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 1 | 2 | 5 | 0 | 2 | 3 |  |  | 2 | 2 | 4 | 0 | 3 | 3 |  |
+| Niveau de vie | Niveau de vie | Riche | Riche | Riche | Riche | Riche |  | Niveau de vie | Niveau de vie | Royal | Royal | Royal | Royal | Royal |
+| Spécialités | Spécialités | Arme à distance (au choix), Arme de mêlée (au choix), Discours, Droit et usages, Gestion, Intimidation, Noblesse et politique, Persuasion, Pilotage (au choix),  Renseignements | Arme à distance (au choix), Arme de mêlée (au choix), Discours, Droit et usages, Gestion, Intimidation, Noblesse et politique, Persuasion, Pilotage (au choix),  Renseignements | Arme à distance (au choix), Arme de mêlée (au choix), Discours, Droit et usages, Gestion, Intimidation, Noblesse et politique, Persuasion, Pilotage (au choix),  Renseignements | Arme à distance (au choix), Arme de mêlée (au choix), Discours, Droit et usages, Gestion, Intimidation, Noblesse et politique, Persuasion, Pilotage (au choix),  Renseignements | Arme à distance (au choix), Arme de mêlée (au choix), Discours, Droit et usages, Gestion, Intimidation, Noblesse et politique, Persuasion, Pilotage (au choix),  Renseignements |  | Spécialités | Spécialités | Arme à distance (au choix), Arme de mêlée (au choix), Discours, Droit et usages, Gestion, Intimidation, Noblesse et politique, Persuasion, Renseignements | Arme à distance (au choix), Arme de mêlée (au choix), Discours, Droit et usages, Gestion, Intimidation, Noblesse et politique, Persuasion, Renseignements | Arme à distance (au choix), Arme de mêlée (au choix), Discours, Droit et usages, Gestion, Intimidation, Noblesse et politique, Persuasion, Renseignements | Arme à distance (au choix), Arme de mêlée (au choix), Discours, Droit et usages, Gestion, Intimidation, Noblesse et politique, Persuasion, Renseignements | Arme à distance (au choix), Arme de mêlée (au choix), Discours, Droit et usages, Gestion, Intimidation, Noblesse et politique, Persuasion, Renseignements |
+| Talents | Talents | Calme, Coups puissants ou Coups précis, Dévoué serviteur, Doué (CNS) ou Doué (SOC), Prudent, Riposte, Second souffle, Sixième sens, Solidité, Tireur d’élite ou Tir précis | Calme, Coups puissants ou Coups précis, Dévoué serviteur, Doué (CNS) ou Doué (SOC), Prudent, Riposte, Second souffle, Sixième sens, Solidité, Tireur d’élite ou Tir précis | Calme, Coups puissants ou Coups précis, Dévoué serviteur, Doué (CNS) ou Doué (SOC), Prudent, Riposte, Second souffle, Sixième sens, Solidité, Tireur d’élite ou Tir précis | Calme, Coups puissants ou Coups précis, Dévoué serviteur, Doué (CNS) ou Doué (SOC), Prudent, Riposte, Second souffle, Sixième sens, Solidité, Tireur d’élite ou Tir précis | Calme, Coups puissants ou Coups précis, Dévoué serviteur, Doué (CNS) ou Doué (SOC), Prudent, Riposte, Second souffle, Sixième sens, Solidité, Tireur d’élite ou Tir précis |  | Talents | Talents | Calme, Coups puissants ou Coups précis, Dévoué serviteur, Doué (CNS) ou Doué (SOC), Prudent, Riposte, Second souffle, Sixième sens, Solidité, Tireur d’élite ou Tir précis | Calme, Coups puissants ou Coups précis, Dévoué serviteur, Doué (CNS) ou Doué (SOC), Prudent, Riposte, Second souffle, Sixième sens, Solidité, Tireur d’élite ou Tir précis | Calme, Coups puissants ou Coups précis, Dévoué serviteur, Doué (CNS) ou Doué (SOC), Prudent, Riposte, Second souffle, Sixième sens, Solidité, Tireur d’élite ou Tir précis | Calme, Coups puissants ou Coups précis, Dévoué serviteur, Doué (CNS) ou Doué (SOC), Prudent, Riposte, Second souffle, Sixième sens, Solidité, Tireur d’élite ou Tir précis | Calme, Coups puissants ou Coups précis, Dévoué serviteur, Doué (CNS) ou Doué (SOC), Prudent, Riposte, Second souffle, Sixième sens, Solidité, Tireur d’élite ou Tir précis |
+| Equipements additionnels | Equipements additionnels | Armure légère ou moyenne, Arme de mêlée (au choix), Arme à distance (au choix), Munitions : 2 chargeurs complets | Armure légère ou moyenne, Arme de mêlée (au choix), Arme à distance (au choix), Munitions : 2 chargeurs complets | Armure légère ou moyenne, Arme de mêlée (au choix), Arme à distance (au choix), Munitions : 2 chargeurs complets | Armure légère ou moyenne, Arme de mêlée (au choix), Arme à distance (au choix), Munitions : 2 chargeurs complets | Armure légère ou moyenne, Arme de mêlée (au choix), Arme à distance (au choix), Munitions : 2 chargeurs complets |  | Equipements additionnels | Equipements additionnels | Arme de mêlée (au choix), Arme à distance (au choix), Munitions : 2 chargeurs complets, Un vaisseau personnel, Une planète | Arme de mêlée (au choix), Arme à distance (au choix), Munitions : 2 chargeurs complets, Un vaisseau personnel, Une planète | Arme de mêlée (au choix), Arme à distance (au choix), Munitions : 2 chargeurs complets, Un vaisseau personnel, Une planète | Arme de mêlée (au choix), Arme à distance (au choix), Munitions : 2 chargeurs complets, Un vaisseau personnel, Une planète | Arme de mêlée (au choix), Arme à distance (au choix), Munitions : 2 chargeurs complets, Un vaisseau personnel, Une planète |
+
+
+### Pègre
+Malgré les codes et règles stricts de l’Imperium, la criminalité est particulièrement prospère en son sein. Des planètes délaissées sont des repères parfaits pour les pirates et les contrebandiers, des mondes-ruches entiers sont sous le joug de gangs criminels et des cartels jouissent de nombreuses relations dans les plus hautes strates de l’Imperium.
+Possessions de départ :
+Vêtements de vilain sales
+Arme de mêlée (légère ou simple)
+Armure primitive
+Couteau
+Sac en toile contenant un bol en bois, et 1d10 rations (volées à sa dernière victime)
+Gourde d’eau ou de vin
+Bourse avec l’équivalent de 1D10 x *COM* ou *TIR* pièces d’argent
+
+| Truand | Truand | Truand | Truand | Truand | Truand | Truand |  | Contrebandier | Contrebandier | Contrebandier | Contrebandier | Contrebandier | Contrebandier | Contrebandier |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “Faire le sale boulot, c’est le meilleur moyen de survivre.” | “Faire le sale boulot, c’est le meilleur moyen de survivre.” | “Faire le sale boulot, c’est le meilleur moyen de survivre.” | “Faire le sale boulot, c’est le meilleur moyen de survivre.” | “Faire le sale boulot, c’est le meilleur moyen de survivre.” | “Faire le sale boulot, c’est le meilleur moyen de survivre.” | “Faire le sale boulot, c’est le meilleur moyen de survivre.” |  | “Ces trucs Xenos vont se vendre à prix d’or !” | “Ces trucs Xenos vont se vendre à prix d’or !” | “Ces trucs Xenos vont se vendre à prix d’or !” | “Ces trucs Xenos vont se vendre à prix d’or !” | “Ces trucs Xenos vont se vendre à prix d’or !” | “Ces trucs Xenos vont se vendre à prix d’or !” | “Ces trucs Xenos vont se vendre à prix d’or !” |
+| Brigands, dépouilleurs, brutes… Ils sont nombreux ceux qui se tournent vers la criminalité pour espérer survivre. Qu’ils soient des hommes de main pour un baron du crime ou de simples pillards, tous font ce qu’ils peuvent pour prospérer. | Brigands, dépouilleurs, brutes… Ils sont nombreux ceux qui se tournent vers la criminalité pour espérer survivre. Qu’ils soient des hommes de main pour un baron du crime ou de simples pillards, tous font ce qu’ils peuvent pour prospérer. | Brigands, dépouilleurs, brutes… Ils sont nombreux ceux qui se tournent vers la criminalité pour espérer survivre. Qu’ils soient des hommes de main pour un baron du crime ou de simples pillards, tous font ce qu’ils peuvent pour prospérer. | Brigands, dépouilleurs, brutes… Ils sont nombreux ceux qui se tournent vers la criminalité pour espérer survivre. Qu’ils soient des hommes de main pour un baron du crime ou de simples pillards, tous font ce qu’ils peuvent pour prospérer. | Brigands, dépouilleurs, brutes… Ils sont nombreux ceux qui se tournent vers la criminalité pour espérer survivre. Qu’ils soient des hommes de main pour un baron du crime ou de simples pillards, tous font ce qu’ils peuvent pour prospérer. | Brigands, dépouilleurs, brutes… Ils sont nombreux ceux qui se tournent vers la criminalité pour espérer survivre. Qu’ils soient des hommes de main pour un baron du crime ou de simples pillards, tous font ce qu’ils peuvent pour prospérer. | Brigands, dépouilleurs, brutes… Ils sont nombreux ceux qui se tournent vers la criminalité pour espérer survivre. Qu’ils soient des hommes de main pour un baron du crime ou de simples pillards, tous font ce qu’ils peuvent pour prospérer. |  | Nombreuses sont les marchandises interdites dans l’Imperium que beaucoup s’arracheraient à prix d’or. C’est là que les contrebandiers entrent en jeu, trafiquant à travers tout l’espace impérial pour revendre des marchandises illégales. | Nombreuses sont les marchandises interdites dans l’Imperium que beaucoup s’arracheraient à prix d’or. C’est là que les contrebandiers entrent en jeu, trafiquant à travers tout l’espace impérial pour revendre des marchandises illégales. | Nombreuses sont les marchandises interdites dans l’Imperium que beaucoup s’arracheraient à prix d’or. C’est là que les contrebandiers entrent en jeu, trafiquant à travers tout l’espace impérial pour revendre des marchandises illégales. | Nombreuses sont les marchandises interdites dans l’Imperium que beaucoup s’arracheraient à prix d’or. C’est là que les contrebandiers entrent en jeu, trafiquant à travers tout l’espace impérial pour revendre des marchandises illégales. | Nombreuses sont les marchandises interdites dans l’Imperium que beaucoup s’arracheraient à prix d’or. C’est là que les contrebandiers entrent en jeu, trafiquant à travers tout l’espace impérial pour revendre des marchandises illégales. | Nombreuses sont les marchandises interdites dans l’Imperium que beaucoup s’arracheraient à prix d’or. C’est là que les contrebandiers entrent en jeu, trafiquant à travers tout l’espace impérial pour revendre des marchandises illégales. | Nombreuses sont les marchandises interdites dans l’Imperium que beaucoup s’arracheraient à prix d’or. C’est là que les contrebandiers entrent en jeu, trafiquant à travers tout l’espace impérial pour revendre des marchandises illégales. |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 3 | 0 | 3 | 4 | 4 | 1 | 0 |  | 2 | 2 | 3 | 2 | 2 | 3 | 0 |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 2 | 2 | 1 | 0 | 2 | 2 |  |  | 2 | 2 | 3 | 0 | 2 | 2 |  |
+| Niveau de vie | Niveau de vie | Pauvre | Pauvre | Pauvre | Pauvre | Pauvre |  | Niveau de vie | Niveau de vie | Ordinaire | Ordinaire | Ordinaire | Ordinaire | Ordinaire |
+| Spécialités | Spécialités | Arme à distance (Munitions solides au choix), Arme de mêlée (au choix), Déplacement silencieux, Estimation, Fouille, Intimidation, Pugilat, Réflexes, Repérage, Se cacher | Arme à distance (Munitions solides au choix), Arme de mêlée (au choix), Déplacement silencieux, Estimation, Fouille, Intimidation, Pugilat, Réflexes, Repérage, Se cacher | Arme à distance (Munitions solides au choix), Arme de mêlée (au choix), Déplacement silencieux, Estimation, Fouille, Intimidation, Pugilat, Réflexes, Repérage, Se cacher | Arme à distance (Munitions solides au choix), Arme de mêlée (au choix), Déplacement silencieux, Estimation, Fouille, Intimidation, Pugilat, Réflexes, Repérage, Se cacher | Arme à distance (Munitions solides au choix), Arme de mêlée (au choix), Déplacement silencieux, Estimation, Fouille, Intimidation, Pugilat, Réflexes, Repérage, Se cacher |  | Spécialités | Spécialités | Arts, Astrogation, Commerce, Diplomatie, Discours, Dissimulation d’objets, Estimation, Persuasion, Pilotage (au choix), Technologie (Imperium) | Arts, Astrogation, Commerce, Diplomatie, Discours, Dissimulation d’objets, Estimation, Persuasion, Pilotage (au choix), Technologie (Imperium) | Arts, Astrogation, Commerce, Diplomatie, Discours, Dissimulation d’objets, Estimation, Persuasion, Pilotage (au choix), Technologie (Imperium) | Arts, Astrogation, Commerce, Diplomatie, Discours, Dissimulation d’objets, Estimation, Persuasion, Pilotage (au choix), Technologie (Imperium) | Arts, Astrogation, Commerce, Diplomatie, Discours, Dissimulation d’objets, Estimation, Persuasion, Pilotage (au choix), Technologie (Imperium) |
+| Talents | Talents | Bagarre, Coups puissants, Distraction, Doué (END) ou Doué (FOR), Guérison rapide, Nyctalopie, Riposte, Second souffle, Surnombre, Vivacité | Bagarre, Coups puissants, Distraction, Doué (END) ou Doué (FOR), Guérison rapide, Nyctalopie, Riposte, Second souffle, Surnombre, Vivacité | Bagarre, Coups puissants, Distraction, Doué (END) ou Doué (FOR), Guérison rapide, Nyctalopie, Riposte, Second souffle, Surnombre, Vivacité | Bagarre, Coups puissants, Distraction, Doué (END) ou Doué (FOR), Guérison rapide, Nyctalopie, Riposte, Second souffle, Surnombre, Vivacité | Bagarre, Coups puissants, Distraction, Doué (END) ou Doué (FOR), Guérison rapide, Nyctalopie, Riposte, Second souffle, Surnombre, Vivacité |  | Talents | Talents | Chance insolente, Confiance en soi, Doué (SOC), Douée (MOU), Fascination, Mensonge éhonté, Prudent, Relations, Travail d’équipe, Vivacité | Chance insolente, Confiance en soi, Doué (SOC), Douée (MOU), Fascination, Mensonge éhonté, Prudent, Relations, Travail d’équipe, Vivacité | Chance insolente, Confiance en soi, Doué (SOC), Douée (MOU), Fascination, Mensonge éhonté, Prudent, Relations, Travail d’équipe, Vivacité | Chance insolente, Confiance en soi, Doué (SOC), Douée (MOU), Fascination, Mensonge éhonté, Prudent, Relations, Travail d’équipe, Vivacité | Chance insolente, Confiance en soi, Doué (SOC), Douée (MOU), Fascination, Mensonge éhonté, Prudent, Relations, Travail d’équipe, Vivacité |
+| Equipements additionnels | Equipements additionnels | Un objet extorqué il y a quelques jours (de petite valeur, à décider avec le MJ), trois dés en métal. | Un objet extorqué il y a quelques jours (de petite valeur, à décider avec le MJ), trois dés en métal. | Un objet extorqué il y a quelques jours (de petite valeur, à décider avec le MJ), trois dés en métal. | Un objet extorqué il y a quelques jours (de petite valeur, à décider avec le MJ), trois dés en métal. | Un objet extorqué il y a quelques jours (de petite valeur, à décider avec le MJ), trois dés en métal. |  | Equipements additionnels | Equipements additionnels | Vêtements civils, Pistolet, Munitions : 30 Balles P, Vaisseau personnel (Léger), *SOC* tonnes de cargaison (de  valeur modeste, à décider avec le MJ) | Vêtements civils, Pistolet, Munitions : 30 Balles P, Vaisseau personnel (Léger), *SOC* tonnes de cargaison (de  valeur modeste, à décider avec le MJ) | Vêtements civils, Pistolet, Munitions : 30 Balles P, Vaisseau personnel (Léger), *SOC* tonnes de cargaison (de  valeur modeste, à décider avec le MJ) | Vêtements civils, Pistolet, Munitions : 30 Balles P, Vaisseau personnel (Léger), *SOC* tonnes de cargaison (de  valeur modeste, à décider avec le MJ) | Vêtements civils, Pistolet, Munitions : 30 Balles P, Vaisseau personnel (Léger), *SOC* tonnes de cargaison (de  valeur modeste, à décider avec le MJ) |
+
+
+## Officio Assassinorum
+L’Imperium est si vaste que certains territoires peuvent rester des années voir des décennies ou des siècles sans contact avec le reste de l’Imperium, si bien que les dirigeants de ces secteurs et de ces planètes peuvent… Douter, de l’autorité impériale. C’est la raison d’être de l’Officio Assassinorum. Envoyer ses agents à travers tout l’Imperium pour éliminer les cibles stratégiques, les leaders de révoltes, les chefs de cultes hérétiques.
+Possessions de départ :
+Vêtements simples
+Combinaison moulante
+Armure pare-balles
+Arme à distance (Munitions solides) (au choix)
+Munitions : 2 Chargeurs complets (au choix)
+Couteau
+Sac en toile contenant un bol en bois, et 1d10 rations (volées à sa dernière victime)
+Gourde d’eau ou de vin
+Bourse avec l’équivalent de 2D10 x *COM* ou *TIR* Trônes Gelt
+
+| Spadassin | Spadassin | Spadassin | Spadassin | Spadassin | Spadassin | Spadassin |  | Ombre | Ombre | Ombre | Ombre | Ombre | Ombre | Ombre |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “Tuer, je fais ça bien.” | “Tuer, je fais ça bien.” | “Tuer, je fais ça bien.” | “Tuer, je fais ça bien.” | “Tuer, je fais ça bien.” | “Tuer, je fais ça bien.” | “Tuer, je fais ça bien.” |  | “Une balle, un mort.” | “Une balle, un mort.” | “Une balle, un mort.” | “Une balle, un mort.” | “Une balle, un mort.” | “Une balle, un mort.” | “Une balle, un mort.” |
+| Les Spadassin sont des tueurs indépendants à la recherche d’une place dans l’un des Temples de l’Officio Assassinorum. Ils remplissent des contrats pour faire leurs preuves. | Les Spadassin sont des tueurs indépendants à la recherche d’une place dans l’un des Temples de l’Officio Assassinorum. Ils remplissent des contrats pour faire leurs preuves. | Les Spadassin sont des tueurs indépendants à la recherche d’une place dans l’un des Temples de l’Officio Assassinorum. Ils remplissent des contrats pour faire leurs preuves. | Les Spadassin sont des tueurs indépendants à la recherche d’une place dans l’un des Temples de l’Officio Assassinorum. Ils remplissent des contrats pour faire leurs preuves. | Les Spadassin sont des tueurs indépendants à la recherche d’une place dans l’un des Temples de l’Officio Assassinorum. Ils remplissent des contrats pour faire leurs preuves. | Les Spadassin sont des tueurs indépendants à la recherche d’une place dans l’un des Temples de l’Officio Assassinorum. Ils remplissent des contrats pour faire leurs preuves. | Les Spadassin sont des tueurs indépendants à la recherche d’une place dans l’un des Temples de l’Officio Assassinorum. Ils remplissent des contrats pour faire leurs preuves. |  | Les Ombres sont les adeptes en devenir du Temple Vindicare. Ils se spécialisent dans l’élimination de cibles sur de longues distances. | Les Ombres sont les adeptes en devenir du Temple Vindicare. Ils se spécialisent dans l’élimination de cibles sur de longues distances. | Les Ombres sont les adeptes en devenir du Temple Vindicare. Ils se spécialisent dans l’élimination de cibles sur de longues distances. | Les Ombres sont les adeptes en devenir du Temple Vindicare. Ils se spécialisent dans l’élimination de cibles sur de longues distances. | Les Ombres sont les adeptes en devenir du Temple Vindicare. Ils se spécialisent dans l’élimination de cibles sur de longues distances. | Les Ombres sont les adeptes en devenir du Temple Vindicare. Ils se spécialisent dans l’élimination de cibles sur de longues distances. | Les Ombres sont les adeptes en devenir du Temple Vindicare. Ils se spécialisent dans l’élimination de cibles sur de longues distances. |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 4 | 0 | 4 | 1 | 2 | 1 | 0 |  | 2 | 0 | 4 | 1 | 1 | 1 | 0 |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 3 | 2 | 1 | 0 | 4 | 2 |  |  | 3 | 4 | 0 | 0 | 5 | 3 |  |
+| Niveau de vie | Niveau de vie | Ordinaire | Ordinaire | Ordinaire | Ordinaire | Ordinaire |  | Niveau de vie | Niveau de vie | Ordinaire | Ordinaire | Ordinaire | Ordinaire | Ordinaire |
+| Spécialités | Spécialités | Acrobaties, Arme à distance (au choix), Arme de mêlée (au choix), Crochetage, Course ou Contorsion, Déplacement silencieux, Escalade, Poisons, Repérage, Se cacher | Acrobaties, Arme à distance (au choix), Arme de mêlée (au choix), Crochetage, Course ou Contorsion, Déplacement silencieux, Escalade, Poisons, Repérage, Se cacher | Acrobaties, Arme à distance (au choix), Arme de mêlée (au choix), Crochetage, Course ou Contorsion, Déplacement silencieux, Escalade, Poisons, Repérage, Se cacher | Acrobaties, Arme à distance (au choix), Arme de mêlée (au choix), Crochetage, Course ou Contorsion, Déplacement silencieux, Escalade, Poisons, Repérage, Se cacher | Acrobaties, Arme à distance (au choix), Arme de mêlée (au choix), Crochetage, Course ou Contorsion, Déplacement silencieux, Escalade, Poisons, Repérage, Se cacher |  | Spécialités | Spécialités | Fusil de précision, Arme (au choix), Crochetage, Déplacement silencieux, Escalade, Milieu naturel, Pièges, Se cacher, Repérage, Vigilance | Fusil de précision, Arme (au choix), Crochetage, Déplacement silencieux, Escalade, Milieu naturel, Pièges, Se cacher, Repérage, Vigilance | Fusil de précision, Arme (au choix), Crochetage, Déplacement silencieux, Escalade, Milieu naturel, Pièges, Se cacher, Repérage, Vigilance | Fusil de précision, Arme (au choix), Crochetage, Déplacement silencieux, Escalade, Milieu naturel, Pièges, Se cacher, Repérage, Vigilance | Fusil de précision, Arme (au choix), Crochetage, Déplacement silencieux, Escalade, Milieu naturel, Pièges, Se cacher, Repérage, Vigilance |
+| Talents | Talents | Calme, Coup en traître, Coups précis ou Tir précis, Doué (DIS), Doué (MOU), Esquive ou Réflexes éclairs, Insaisissable, Mensonge éhonté ou Nyctalopie, Pattes de chat ou Sauvegarde, Vivacité | Calme, Coup en traître, Coups précis ou Tir précis, Doué (DIS), Doué (MOU), Esquive ou Réflexes éclairs, Insaisissable, Mensonge éhonté ou Nyctalopie, Pattes de chat ou Sauvegarde, Vivacité | Calme, Coup en traître, Coups précis ou Tir précis, Doué (DIS), Doué (MOU), Esquive ou Réflexes éclairs, Insaisissable, Mensonge éhonté ou Nyctalopie, Pattes de chat ou Sauvegarde, Vivacité | Calme, Coup en traître, Coups précis ou Tir précis, Doué (DIS), Doué (MOU), Esquive ou Réflexes éclairs, Insaisissable, Mensonge éhonté ou Nyctalopie, Pattes de chat ou Sauvegarde, Vivacité | Calme, Coup en traître, Coups précis ou Tir précis, Doué (DIS), Doué (MOU), Esquive ou Réflexes éclairs, Insaisissable, Mensonge éhonté ou Nyctalopie, Pattes de chat ou Sauvegarde, Vivacité |  | Talents | Talents | Agile, Arme fétiche, Calme, Doué (PER), Insaisissable, Pattes de chat, Rechargement rapide, Tir précis, Tireur d’élite, Tir ciblé | Agile, Arme fétiche, Calme, Doué (PER), Insaisissable, Pattes de chat, Rechargement rapide, Tir précis, Tireur d’élite, Tir ciblé | Agile, Arme fétiche, Calme, Doué (PER), Insaisissable, Pattes de chat, Rechargement rapide, Tir précis, Tireur d’élite, Tir ciblé | Agile, Arme fétiche, Calme, Doué (PER), Insaisissable, Pattes de chat, Rechargement rapide, Tir précis, Tireur d’élite, Tir ciblé | Agile, Arme fétiche, Calme, Doué (PER), Insaisissable, Pattes de chat, Rechargement rapide, Tir précis, Tireur d’élite, Tir ciblé |
+| Equipements additionnels | Equipements additionnels | Trois petites fioles de poison, Masque, Bottes de cuir souple | Trois petites fioles de poison, Masque, Bottes de cuir souple | Trois petites fioles de poison, Masque, Bottes de cuir souple | Trois petites fioles de poison, Masque, Bottes de cuir souple | Trois petites fioles de poison, Masque, Bottes de cuir souple |  | Equipements additionnels | Equipements additionnels | Fusil de précision, Tenue composite (remplace l’armure pare-balle), Munitions : 4 chargeurs complets (au choix) | Fusil de précision, Tenue composite (remplace l’armure pare-balle), Munitions : 4 chargeurs complets (au choix) | Fusil de précision, Tenue composite (remplace l’armure pare-balle), Munitions : 4 chargeurs complets (au choix) | Fusil de précision, Tenue composite (remplace l’armure pare-balle), Munitions : 4 chargeurs complets (au choix) | Fusil de précision, Tenue composite (remplace l’armure pare-balle), Munitions : 4 chargeurs complets (au choix) |
+
+
+| Disciple de la Mort | Disciple de la Mort | Disciple de la Mort | Disciple de la Mort | Disciple de la Mort | Disciple de la Mort | Disciple de la Mort |  | Sicaire | Sicaire | Sicaire | Sicaire | Sicaire | Sicaire | Sicaire |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| « Vos cris évoquent une mélodie et votre sang a le goût du vin. » | « Vos cris évoquent une mélodie et votre sang a le goût du vin. » | « Vos cris évoquent une mélodie et votre sang a le goût du vin. » | « Vos cris évoquent une mélodie et votre sang a le goût du vin. » | « Vos cris évoquent une mélodie et votre sang a le goût du vin. » | « Vos cris évoquent une mélodie et votre sang a le goût du vin. » | « Vos cris évoquent une mélodie et votre sang a le goût du vin. » |  | “Ils ne verront rien venir.” | “Ils ne verront rien venir.” | “Ils ne verront rien venir.” | “Ils ne verront rien venir.” | “Ils ne verront rien venir.” | “Ils ne verront rien venir.” | “Ils ne verront rien venir.” |
+| Les Disciples de la Mort ont fait du meurtre leur raison de vivre, si bien qu’ils cherchent à se tracer une voie sanglante à travers le Temple Eversor. Plus que pour l’argent, ils tuent par plaisir et de la façon la plus horrible qui soit. | Les Disciples de la Mort ont fait du meurtre leur raison de vivre, si bien qu’ils cherchent à se tracer une voie sanglante à travers le Temple Eversor. Plus que pour l’argent, ils tuent par plaisir et de la façon la plus horrible qui soit. | Les Disciples de la Mort ont fait du meurtre leur raison de vivre, si bien qu’ils cherchent à se tracer une voie sanglante à travers le Temple Eversor. Plus que pour l’argent, ils tuent par plaisir et de la façon la plus horrible qui soit. | Les Disciples de la Mort ont fait du meurtre leur raison de vivre, si bien qu’ils cherchent à se tracer une voie sanglante à travers le Temple Eversor. Plus que pour l’argent, ils tuent par plaisir et de la façon la plus horrible qui soit. | Les Disciples de la Mort ont fait du meurtre leur raison de vivre, si bien qu’ils cherchent à se tracer une voie sanglante à travers le Temple Eversor. Plus que pour l’argent, ils tuent par plaisir et de la façon la plus horrible qui soit. | Les Disciples de la Mort ont fait du meurtre leur raison de vivre, si bien qu’ils cherchent à se tracer une voie sanglante à travers le Temple Eversor. Plus que pour l’argent, ils tuent par plaisir et de la façon la plus horrible qui soit. | Les Disciples de la Mort ont fait du meurtre leur raison de vivre, si bien qu’ils cherchent à se tracer une voie sanglante à travers le Temple Eversor. Plus que pour l’argent, ils tuent par plaisir et de la façon la plus horrible qui soit. |  | Les Sicaires sont les adeptes entraînés dans l’art du déguisement et de l’infiltration du Temple Callidus. Contrairement aux autres assassins, ils sont patients, ils cherchent des informations et puis finissent par frapper lorsque la cible s’y attend le moins. | Les Sicaires sont les adeptes entraînés dans l’art du déguisement et de l’infiltration du Temple Callidus. Contrairement aux autres assassins, ils sont patients, ils cherchent des informations et puis finissent par frapper lorsque la cible s’y attend le moins. | Les Sicaires sont les adeptes entraînés dans l’art du déguisement et de l’infiltration du Temple Callidus. Contrairement aux autres assassins, ils sont patients, ils cherchent des informations et puis finissent par frapper lorsque la cible s’y attend le moins. | Les Sicaires sont les adeptes entraînés dans l’art du déguisement et de l’infiltration du Temple Callidus. Contrairement aux autres assassins, ils sont patients, ils cherchent des informations et puis finissent par frapper lorsque la cible s’y attend le moins. | Les Sicaires sont les adeptes entraînés dans l’art du déguisement et de l’infiltration du Temple Callidus. Contrairement aux autres assassins, ils sont patients, ils cherchent des informations et puis finissent par frapper lorsque la cible s’y attend le moins. | Les Sicaires sont les adeptes entraînés dans l’art du déguisement et de l’infiltration du Temple Callidus. Contrairement aux autres assassins, ils sont patients, ils cherchent des informations et puis finissent par frapper lorsque la cible s’y attend le moins. | Les Sicaires sont les adeptes entraînés dans l’art du déguisement et de l’infiltration du Temple Callidus. Contrairement aux autres assassins, ils sont patients, ils cherchent des informations et puis finissent par frapper lorsque la cible s’y attend le moins. |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 5 | 0 | 1 | 3 | 4 | 0 | 0 |  | 2 | 0 | 3 | 2 | 2 | 3 | 0 |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 3 | 2 | 0 | 0 | 3 | 3 |  |  | 3 | 1 | 4 | 0 | 2 | 2 |  |
+| Niveau de vie | Niveau de vie | Ordinaire | Ordinaire | Ordinaire | Ordinaire | Ordinaire |  | Niveau de vie | Niveau de vie | Ordinaire | Ordinaire | Ordinaire | Ordinaire | Ordinaire |
+| Spécialités | Spécialités | Arme de mêlée (au choix), Arme à distance (au choix), Acrobaties, Escalade, Intimidation, Milieu naturel, Réflexes, Torture, Travaux de force, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Acrobaties, Escalade, Intimidation, Milieu naturel, Réflexes, Torture, Travaux de force, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Acrobaties, Escalade, Intimidation, Milieu naturel, Réflexes, Torture, Travaux de force, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Acrobaties, Escalade, Intimidation, Milieu naturel, Réflexes, Torture, Travaux de force, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Acrobaties, Escalade, Intimidation, Milieu naturel, Réflexes, Torture, Travaux de force, Vigilance |  | Spécialités | Spécialités | Arme de mêlée (au choix), Arme à distance (au choix), Acrobaties, Charme, Contorsion, Danse, Déguisement, Étiquette, Poisons, Réflexes | Arme de mêlée (au choix), Arme à distance (au choix), Acrobaties, Charme, Contorsion, Danse, Déguisement, Étiquette, Poisons, Réflexes | Arme de mêlée (au choix), Arme à distance (au choix), Acrobaties, Charme, Contorsion, Danse, Déguisement, Étiquette, Poisons, Réflexes | Arme de mêlée (au choix), Arme à distance (au choix), Acrobaties, Charme, Contorsion, Danse, Déguisement, Étiquette, Poisons, Réflexes | Arme de mêlée (au choix), Arme à distance (au choix), Acrobaties, Charme, Contorsion, Danse, Déguisement, Étiquette, Poisons, Réflexes |
+| Talents | Talents | Agile, Arme fétiche, Bagarre, Brute, Coup de maître, Coups précis, Coups puissants, Esquive, Maître d’armes, Pattes de chat, Solidité | Agile, Arme fétiche, Bagarre, Brute, Coup de maître, Coups précis, Coups puissants, Esquive, Maître d’armes, Pattes de chat, Solidité | Agile, Arme fétiche, Bagarre, Brute, Coup de maître, Coups précis, Coups puissants, Esquive, Maître d’armes, Pattes de chat, Solidité | Agile, Arme fétiche, Bagarre, Brute, Coup de maître, Coups précis, Coups puissants, Esquive, Maître d’armes, Pattes de chat, Solidité | Agile, Arme fétiche, Bagarre, Brute, Coup de maître, Coups précis, Coups puissants, Esquive, Maître d’armes, Pattes de chat, Solidité |  | Talents | Talents | Agile, Calme, Distraction, Doué (SOC), Esquive, Fascination, Pattes de chat, Relations, Réflexes éclairs, Vivacité | Agile, Calme, Distraction, Doué (SOC), Esquive, Fascination, Pattes de chat, Relations, Réflexes éclairs, Vivacité | Agile, Calme, Distraction, Doué (SOC), Esquive, Fascination, Pattes de chat, Relations, Réflexes éclairs, Vivacité | Agile, Calme, Distraction, Doué (SOC), Esquive, Fascination, Pattes de chat, Relations, Réflexes éclairs, Vivacité | Agile, Calme, Distraction, Doué (SOC), Esquive, Fascination, Pattes de chat, Relations, Réflexes éclairs, Vivacité |
+| Equipements additionnels | Equipements additionnels | Combi-blindée (remplace l’armure pare-balles), Griffes | Combi-blindée (remplace l’armure pare-balles), Griffes | Combi-blindée (remplace l’armure pare-balles), Griffes | Combi-blindée (remplace l’armure pare-balles), Griffes | Combi-blindée (remplace l’armure pare-balles), Griffes |  | Equipements additionnels | Equipements additionnels | Vêtements civils, Kit de déguisement, *SOC* doses de poisons | Vêtements civils, Kit de déguisement, *SOC* doses de poisons | Vêtements civils, Kit de déguisement, *SOC* doses de poisons | Vêtements civils, Kit de déguisement, *SOC* doses de poisons | Vêtements civils, Kit de déguisement, *SOC* doses de poisons |
+
+
+| Sans-âme | Sans-âme | Sans-âme | Sans-âme | Sans-âme | Sans-âme | Sans-âme |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “Pas d’âme à pervertir.” | “Pas d’âme à pervertir.” | “Pas d’âme à pervertir.” | “Pas d’âme à pervertir.” | “Pas d’âme à pervertir.” | “Pas d’âme à pervertir.” | “Pas d’âme à pervertir.” |  |  |  |  |  |  |  |  |
+| Les Sans-âmes n’ont pas de présence dans l’immense toile qu’est le Warp. Leur don rare fait d’eux les prédateurs naturels des Psykers et de futurs assassins du Temple Culexus. Note : Seul un Paria peut choisir cette carrière. | Les Sans-âmes n’ont pas de présence dans l’immense toile qu’est le Warp. Leur don rare fait d’eux les prédateurs naturels des Psykers et de futurs assassins du Temple Culexus. Note : Seul un Paria peut choisir cette carrière. | Les Sans-âmes n’ont pas de présence dans l’immense toile qu’est le Warp. Leur don rare fait d’eux les prédateurs naturels des Psykers et de futurs assassins du Temple Culexus. Note : Seul un Paria peut choisir cette carrière. | Les Sans-âmes n’ont pas de présence dans l’immense toile qu’est le Warp. Leur don rare fait d’eux les prédateurs naturels des Psykers et de futurs assassins du Temple Culexus. Note : Seul un Paria peut choisir cette carrière. | Les Sans-âmes n’ont pas de présence dans l’immense toile qu’est le Warp. Leur don rare fait d’eux les prédateurs naturels des Psykers et de futurs assassins du Temple Culexus. Note : Seul un Paria peut choisir cette carrière. | Les Sans-âmes n’ont pas de présence dans l’immense toile qu’est le Warp. Leur don rare fait d’eux les prédateurs naturels des Psykers et de futurs assassins du Temple Culexus. Note : Seul un Paria peut choisir cette carrière. | Les Sans-âmes n’ont pas de présence dans l’immense toile qu’est le Warp. Leur don rare fait d’eux les prédateurs naturels des Psykers et de futurs assassins du Temple Culexus. Note : Seul un Paria peut choisir cette carrière. |  |  |  |  |  |  |  |  |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 2 | 2 | 1 | 2 | 2 | 0 | 0 |  |  |  |  |  |  |  |  |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 3 | 4 | 0 | 1 | 2 | 5 |  |  |  |  |  |  |  |  |  |
+| Niveau de vie | Niveau de vie | Ordinaire | Ordinaire | Ordinaire | Ordinaire | Ordinaire |  | Niveau de vie | Niveau de vie |  |  |  |  |  |
+| Spécialités | Spécialités | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Course, Déplacement silencieux, Intimidation, Milieu naturel, Réflexes, Résistance au Warp, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Course, Déplacement silencieux, Intimidation, Milieu naturel, Réflexes, Résistance au Warp, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Course, Déplacement silencieux, Intimidation, Milieu naturel, Réflexes, Résistance au Warp, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Course, Déplacement silencieux, Intimidation, Milieu naturel, Réflexes, Résistance au Warp, Vigilance | Arme de mêlée (au choix), Arme à distance (au choix), Courage, Course, Déplacement silencieux, Intimidation, Milieu naturel, Réflexes, Résistance au Warp, Vigilance |  | Spécialités | Spécialités |  |  |  |  |  |
+| Talents | Talents | Agile, Calme, Distraction, Cri de guerre, Esquive, Mémoire sans faille, Résilience, Réflexes éclairs, Sixième sens, Vivacité | Agile, Calme, Distraction, Cri de guerre, Esquive, Mémoire sans faille, Résilience, Réflexes éclairs, Sixième sens, Vivacité | Agile, Calme, Distraction, Cri de guerre, Esquive, Mémoire sans faille, Résilience, Réflexes éclairs, Sixième sens, Vivacité | Agile, Calme, Distraction, Cri de guerre, Esquive, Mémoire sans faille, Résilience, Réflexes éclairs, Sixième sens, Vivacité | Agile, Calme, Distraction, Cri de guerre, Esquive, Mémoire sans faille, Résilience, Réflexes éclairs, Sixième sens, Vivacité |  | Talents | Talents |  |  |  |  |  |
+| Equipements additionnels | Equipements additionnels | Combi-blindée (remplace l’armure pare-balles), Grenades Psy x2 | Combi-blindée (remplace l’armure pare-balles), Grenades Psy x2 | Combi-blindée (remplace l’armure pare-balles), Grenades Psy x2 | Combi-blindée (remplace l’armure pare-balles), Grenades Psy x2 | Combi-blindée (remplace l’armure pare-balles), Grenades Psy x2 |  | Equipements additionnels | Equipements additionnels |  |  |  |  |  |
+
+
+## Scholastica Psykana
+La Scholastica Psykana est une vaste institution d’enseignement dédiée à la formation des capacités psychiques. La plupart des recrues sont tirées au sort lors du prélèvement de la Dîme des Psykers perçu par les Vaisseaux Noirs, alors qu’une minorité de recrues sont remises par l’Inquisition, les Juges ou par d’autres moyens. Le rôle de cette institution est d’enseigner aux jeunes Psykers comment développer et contrôler leurs pouvoirs. L’avenir de chaque Psykers dépend de ses capacités et de son caractère.
+Possessions de départ :
+Vêtements pratiques de qualité
+*CNS* ouvrages ésotériques reliés.
+Nécessaire d’écriture.
+Gibecière contenant une couverture, un bol en bois, et 1D10 rations de bonne qualité
+Gourde contenant du bon vin
+Psyconduit
+Bourse avec 5D10 x*PSY* Trônes Gelt
+
+| Psyker impérial | Psyker impérial | Psyker impérial | Psyker impérial | Psyker impérial | Psyker impérial | Psyker impérial |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| “Les Psykers assermentés se doivent de servir l’Imperium.” | “Les Psykers assermentés se doivent de servir l’Imperium.” | “Les Psykers assermentés se doivent de servir l’Imperium.” | “Les Psykers assermentés se doivent de servir l’Imperium.” | “Les Psykers assermentés se doivent de servir l’Imperium.” | “Les Psykers assermentés se doivent de servir l’Imperium.” | “Les Psykers assermentés se doivent de servir l’Imperium.” |  |  |  |  |  |  |  |  |
+| Les Psykers qui sont assez forts pour être formés à la maîtrise de leurs facultés sont tous façonnés au service de l’Imperium d’une manière ou d’une autre, selon la nature de leur talent et leur puissance brute. | Les Psykers qui sont assez forts pour être formés à la maîtrise de leurs facultés sont tous façonnés au service de l’Imperium d’une manière ou d’une autre, selon la nature de leur talent et leur puissance brute. | Les Psykers qui sont assez forts pour être formés à la maîtrise de leurs facultés sont tous façonnés au service de l’Imperium d’une manière ou d’une autre, selon la nature de leur talent et leur puissance brute. | Les Psykers qui sont assez forts pour être formés à la maîtrise de leurs facultés sont tous façonnés au service de l’Imperium d’une manière ou d’une autre, selon la nature de leur talent et leur puissance brute. | Les Psykers qui sont assez forts pour être formés à la maîtrise de leurs facultés sont tous façonnés au service de l’Imperium d’une manière ou d’une autre, selon la nature de leur talent et leur puissance brute. | Les Psykers qui sont assez forts pour être formés à la maîtrise de leurs facultés sont tous façonnés au service de l’Imperium d’une manière ou d’une autre, selon la nature de leur talent et leur puissance brute. | Les Psykers qui sont assez forts pour être formés à la maîtrise de leurs facultés sont tous façonnés au service de l’Imperium d’une manière ou d’une autre, selon la nature de leur talent et leur puissance brute. |  |  |  |  |  |  |  |  |
+| COM | CNS | DIS | END | FOR | TEC | PSY |  | COM | CNS | DIS | END | FOR | TEC | PSY |
+| 0 | 5 | 0 | 2 | 2 | 1 | 5 |  |  |  |  |  |  |  |  |
+| MOU | PER | SOC | SUR | TIR | VOL |  |  | MOU | PER | SOC | SUR | TIR | VOL |  |
+| 0 | 1 | 3 | 0 | 0 | 5 |  |  |  |  |  |  |  |  |  |
+| Niveau de vie | Niveau de vie | Aisé | Aisé | Aisé | Aisé | Aisé |  | Niveau de vie | Niveau de vie |  |  |  |  |  |
+| Spécialités | Spécialités | Domaine Psychique (au choix), Domaine Psychique (au choix), Diplomatie, Discours, Intimidation, Légendes, Lettres, Occultisme, Persuasion, Résistance au Warp, Vigilance | Domaine Psychique (au choix), Domaine Psychique (au choix), Diplomatie, Discours, Intimidation, Légendes, Lettres, Occultisme, Persuasion, Résistance au Warp, Vigilance | Domaine Psychique (au choix), Domaine Psychique (au choix), Diplomatie, Discours, Intimidation, Légendes, Lettres, Occultisme, Persuasion, Résistance au Warp, Vigilance | Domaine Psychique (au choix), Domaine Psychique (au choix), Diplomatie, Discours, Intimidation, Légendes, Lettres, Occultisme, Persuasion, Résistance au Warp, Vigilance | Domaine Psychique (au choix), Domaine Psychique (au choix), Diplomatie, Discours, Intimidation, Légendes, Lettres, Occultisme, Persuasion, Résistance au Warp, Vigilance |  | Spécialités | Spécialités |  |  |  |  |  |
+| Talents | Talents | Calme ou Coup surnaturel, Compagnon animal ou Dévoué serviteur, Doué (CNS) ou Doué (VOL), Esprit gardien, Magie contrôlée ou Magie destructrice, Magie sanglante, Magie invisible, Magie innée, Nyctalopie, Sort fétiche | Calme ou Coup surnaturel, Compagnon animal ou Dévoué serviteur, Doué (CNS) ou Doué (VOL), Esprit gardien, Magie contrôlée ou Magie destructrice, Magie sanglante, Magie invisible, Magie innée, Nyctalopie, Sort fétiche | Calme ou Coup surnaturel, Compagnon animal ou Dévoué serviteur, Doué (CNS) ou Doué (VOL), Esprit gardien, Magie contrôlée ou Magie destructrice, Magie sanglante, Magie invisible, Magie innée, Nyctalopie, Sort fétiche | Calme ou Coup surnaturel, Compagnon animal ou Dévoué serviteur, Doué (CNS) ou Doué (VOL), Esprit gardien, Magie contrôlée ou Magie destructrice, Magie sanglante, Magie invisible, Magie innée, Nyctalopie, Sort fétiche | Calme ou Coup surnaturel, Compagnon animal ou Dévoué serviteur, Doué (CNS) ou Doué (VOL), Esprit gardien, Magie contrôlée ou Magie destructrice, Magie sanglante, Magie invisible, Magie innée, Nyctalopie, Sort fétiche |  | Talents | Talents |  |  |  |  |  |
+| Equipements additionnels | Equipements additionnels | Uniforme de Psyker impérial | Uniforme de Psyker impérial | Uniforme de Psyker impérial | Uniforme de Psyker impérial | Uniforme de Psyker impérial |  | Equipements additionnels | Equipements additionnels |  |  |  |  |  |
+
+
+# Atouts
+
+## Spécialités (Warhammer)
+
+### Spécialité [+10/+20]
+
+| Spécialité | Effet |
+| --- | --- |
+| Astrogation +20 | Savoir se repérer sur une carte spatiale, connaître les secteurs de la galaxie |
+|  |  |
+|  |  |
+| Pilotage terrestre +10 | Conduire des véhicules terrestres,  se diriger sur des terrains accidentés |
+| Pilotage aérien +10 | Piloter des véhicules aériens, effectuer des manoeuvres aériennes |
+| Pilotage spatial +10 | Piloter des vaisseaux spatiaux, connaître les systèmes d’un vaisseau |
+| Informatique +10 | Accéder à des bases de données informatiques, pirater des ordinateurs |
+| Technomaîtrise +10 | Connaissance sur la technologie de l’Imperium, manipuler les objets technologiques de l’Imperium |
+| Xeno-Connaissances +10 | Connaissances des espèces xeno, de leurs cultures, de leurs technologies. |
+| Résistance au Warp +10 | Résister aux pouvoirs psychiques, aux effets néfastes du Warp et à la corruption du Chaos |
+|  |  |
+|  |  |
+
+
+### Spécialité martiale [+5]
+
+| Spécialité | Effet |
+| --- | --- |
+| Arme de poing +5 | Tirer avec une arme de poing, un pistolet, les manipuler et les réparer |
+| Assaut +5 | Tirer avec une arme d’assaut, un fusil d’assaut, un Bolter, un fusil laser, les manipuler et les réparer |
+| Arme lourde +5 | Tirer avec les armes lourdes comme des canons à plasma ou des Bolters lourds, les manipuler, les réparer |
+| Fusil +5 | Tirer avec des fusils de chasse, des carabines ou des fusils à pompe, les manipuler, les réparer |
+| Fusil de précision +5 | Tirer avec des fusils de précision, les manipuler et les réparer |
+| Artillerie +5 | Tirer avec des pièces d’artillerie, les manipuler, les réparer. |
+| Explosifs +5 | Utiliser des grenades, manipuler des explosifs, désamorcer des explosifs. |
+
+
+### Spécialité occulte [+5]
+
+| Spécialité | Effet |
+| --- | --- |
+| Vraie Foi +5 | Ressentir la présence de l’Empereur, provoquer des Actes de Foi et des Miracles |
+| Biomancie +5 | Employer la discipline de la Biomancie, la comprendre, en apprendre les secrets et la ressentir |
+| Divination +5 | Employer la discipline de la Divination, la comprendre, en apprendre les secrets et la ressentir |
+| Pyromancie +5 | Employer la discipline de la Pyromancie, la comprendre, en apprendre les secrets et la ressentir |
+| Télékinésie +5 | Employer la discipline de la Télékinésie, la comprendre, en apprendre les secrets et la ressentir |
+| Télépathie +5 | Employer la discipline de la Télépathie, la comprendre, en apprendre les secrets et la ressentir |
+|  |  |
+|  |  |
+|  |  |
+
+
+## Talents
+
+| Spécialité | Effet |
+| --- | --- |
+| Esprit de la Machine [1x/S] | Vous faites appel à l’Esprit de la Machine. Une fois par scène, vous pouvez remplacer un test de TEC, de TIR ou de COM par un test de VOL pour manipuler des objets technologiques de l’Imperium. |
+| Véhicule fétiche [1x/S] | Vous avez un don pour piloter un véhicule précis (Moto, Chasseur, Char, Marcheur…). Une fois par scène, après le test, vous pouvez inverser les chiffres obtenus. Ainsi, un 90 peut devenir un 09. |
+|  |  |
+|  |  |
+|  |  |
+
+
+# Corruption
+
+## La Corruption des Dieux sombres
+L’énergie du Chaos est source de corruption. Elle souille la vie, la déforme et fait sombrer les esprits dans la folie. Selon le dieu du chaos auquel cette énergie est liée, les effets peuvent varier sur l’esprit des individus.
+Plusieurs Vices sont attribuées à chaque dieu du Chaos :
+Khorne : Colérique, Cruel, Orgueilleux, Avare.
+Slaanesh : Gourmand, Luxurieux, Avare, Orgueilleux.
+Nurgle : Paresseux, Lâche, Gourmand, Envieux.
+Tzeentch : Trompeur, Envieux, Orgueilleux, Lâche.
+
+### Le test de résistance à la Corruption
+Lorsqu’un personnage est soumis à l’influence corruptrice du Warp, il doit réussir un test de Résistance à la Corruption. Ce test peut être (au choix du Joueur), un test de VOL ou de FOR (car la corruption du Warp touche autant le corps que l’esprit).
+En cas d’échec, le personnage perd autant de points de SF que son Seuil d’instabilité.
+En cas d’E+, le personnage autant de points de SF que son Seuil d’instabilité + 1.
+
+#### Sources de corruption
+Selon l’importance de la corruption, la difficulté du test peut subir des modificateurs.
+Source mineure : Subir plusieurs Pouvoirs Psychiques d’affilée, être en présence prolongée avec un démon mineur… : Test à +10.
+Source médiane : Contact direct avec une relique chaotique, Présence prolongée dans un lieu lié au Chaos… : Test à 0.
+Source majeure : Rencontre avec un démon majeur, Passer un pacte avec un démon, Contact avec un artéfact légendaire du Chaos… : Test à -10.
+
+### Effets secondaires
+Certains individus sont plus fragiles à l’influence de certains dieux que d’autres. Un personnage doté d’un Vice lié à un des Dieux sombres subit toujours 1 désavantage par niveau de Vice pour résister à l’influence de ce dieu.
+Exemple : Un personnage Colérique +1 subit 1 désavantage pour résister à la corruption provenant de la présence d’un démon de Khorne.
+
+## Conséquences
+Si un personnage perd tous ses derniers points de SF à cause de la corruption du Warp, il subit les conséquences classiques liées à la Folie (voir Brigandyne - Folie).
+Cependant, il peut également annuler les effets de la Folie en subissant une mutation. Le joueur lance un D10. Si le résultat est pair, il subit une Grâce. Si le résultat est impair, il subit un Fardeau.
+
+### Purifier les mutations
+Faire disparaître les Mutations d’un personnage n’est pas chose facile. Libre au MJ de décider ce qui est nécessaire pour en guérir. Parfois, la souillure est telle que la victime est définitivement condamnée.
+
+# Mutations
+Les mutations sont d’étranges et terribles afflictions qui frappent ceux qui sont souillés par les énergies chaotiques du Warp.
+Pour avoir une liste des Grâces et des Fardeaux, voir : Brigandyne - Livre 2.
+
+## Règles des Mutations
+Les règles de Mutations contenues dans le Livre 2 de Brigandyne s’appliquent.
+
+# Inventaire et équipement
+
+## Monnaie
+Dans l’Imperium, autant de devises et de monnaies son utilisées à travers les millions de planètes qui sont sous son contrôle. Cependant, toutes ont leur équivalent en Trône Gelt, la monnaie officielle.
+Les Trônes Gelt peuvent prendre de nombreuses formes. De simples pièces de monnaies, de tailles variées, frappées à l’effigie de l’Empereur-Dieu ou de l’Aigle impérial à deux têtes, en passant par d’imposantes lingots d’ un mètre de long, gravés de textes saints.
+
+### Mode de vie
+Voir Mode de vie de Brigandyne.
+
+#### Salaires et rentes
+Correspond au salaire hebdomadaire (7 jours environ), exprimé en Trône Gelt, si le personnage peut exercer son métier.
+
+| TEST | Misérable | Pauvre | Ordinaire | Aisé | Riche | Royal |
+| --- | --- | --- | --- | --- | --- | --- |
+| R. Critique | 30 | 50 | 100 | 1000 | 1500 | 2500 |
+| R. Supérieure | 25 | 35 | 75 | 500 | 1000 | 1500 |
+| R. Normale | 15 | 25 | 50 | 400 | 500 | 1000 |
+| E. Normal | 10 | 20 | 25 | 300 | 400 | 500 |
+| E. Supérieur | 5 | 15 | 20 | 200 | 300 | 400 |
+| E. Critique | Rien | 10 | 15 | 100 | 200 | 300 |
+
+
+## Armes de mêlée
+Prix : Le Prix en Trône Gelt.
+
+| Arme | Dégâts | Allonge | Main | Spécial | Prix |
+| --- | --- | --- | --- | --- | --- |
+| Divers | Divers | Divers | Divers | Divers | Divers |
+| Bagarre | *FOR*-3 | F | - | Saisie, Dégâts temporaires | - |
+| Outils légers (Clé à molette, tournevis, marteau…) | *FOR*-1 | D | 1 |  | 5 |
+| Outils (Pelle, pioche…) | *FOR* | C | 1/2 |  | 15 |
+| Gant électrique | (+2) | F | 1 | Saisie, Électrique, Dégâts temporaires | 25 |
+| Cestus, griffes | *FOR*-2 | F | 1 | Saisie | 5 |
+| Armes standards | Armes standards | Armes standards | Armes standards | Armes standards | Armes standards |
+| Couteaux et lames courtes | Couteaux et lames courtes | Couteaux et lames courtes | Couteaux et lames courtes | Couteaux et lames courtes | Couteaux et lames courtes |
+| Lame de poing | *FOR*-1 | E | 1 | Poing faible | 5 |
+| Couteau, Dague, Poignard | *FOR*-1 | E | 1 |  | 5 |
+| Épées | Épées | Épées | Épées | Épées | Épées |
+| Épée courte | *FOR*-1 | C | 1 | Corps-à-corps | 20 |
+| Épée | *FOR* | C | 1 |  | 50 |
+| Espadon | *FOR*+2 | A | 2 | Espace, Initiative –1 | 100 |
+| Haches et masses | Haches et masses | Haches et masses | Haches et masses | Haches et masses | Haches et masses |
+| Matraque | *FOR*-1 | D | 1 | Choc | 10 |
+| Matraque électrique | *FOR*-1 | D | 1 | Choc, Électrique | 75 |
+| Hache de combat | *FOR*+1 | C | 1 | Initiative -1 | 25 |
+| Hache à deux mains | *FOR*+2 | C | 2 | Initiative -1 | 100 |
+| Marteau de guerre | *FOR* | C | 1 | Choc, Destruction | 50 |
+| Marteau à deux mains | *FOR*+1 | B | 2 | Choc, Destruction, Initiative -1 | 150 |
+| Armes articulées | Armes articulées | Armes articulées | Armes articulées | Armes articulées | Armes articulées |
+| Fléau d’armes | *FOR*+1 | C | 1 | Espace, Ignore boucliers Initiative –1, Risquée | 50 |
+| Electrofléau | *FOR*-1 | C | 1 | Electrique, Espace, Ignore boucliers, Risquée | 75 |
+| Armes d’hast | Armes d’hast | Armes d’hast | Armes d’hast | Armes d’hast | Armes d’hast |
+| Lance | *FOR* | AA | 2 | Charge | 25 |
+| Hallebarde, Fauchard | *FOR* | A | 2 | Charge, Espace | 75 |
+| Armes tronçonneuses | Armes tronçonneuses | Armes tronçonneuses | Armes tronçonneuses | Armes tronçonneuses | Armes tronçonneuses |
+| Épée tronçonneuse | *FOR*+2 | C | 1 | Initiative -1 | 125 |
+| Hache tronçonneuse | *FOR*+2 | C | 1 | Initiative -1 | 175 |
+| Eviscerator | *FOR*+3 | A | 2 | Espace, Initiative -2 | 200 |
+| Armes énergétiques | Armes énergétiques | Armes énergétiques | Armes énergétiques | Armes énergétiques | Armes énergétiques |
+| Dague énergétique | *FOR*-1 | E | 1 | Perce-armure (3) | 200 |
+| Épée courte énergétique | *FOR*-1 | C | 1 | Perce-armure (3) | 275 |
+| Épée énergétique | *FOR* | C | 1 | Perce-armure (4) | 350 |
+| Espadon énergétique | *FOR*+2 | A | 2 | Espace, Initiative –1, Perce-armure (4) | 450 |
+| Hache énergétique | *FOR*+1 | C | 1 | Perce-armure (4) | 375 |
+| Hache à deux mains énergétique | *FOR*+2 | C | 2 | Initiative -1, Perce-armure (5) | 475 |
+| Marteau énergétique | *FOR*+1 | C | 1 | Choc, Perce-armure (2), Destruction | 325 |
+| Marteau à deux mains énergétique | *FOR*+2 | B | 2 | Choc, Initiative -1, Perce-armure (3), Destruction | 400 |
+| Gantelet énergétique | *FOR* | F | 1 | Choc, Perce-armure (3), Destruction, Saisie | 300 |
+| Griffes énergétiques | *FOR*-1 | F | 1 | Perce-armure (3) | 300 |
+| Armes de force | Armes de force | Armes de force | Armes de force | Armes de force | Armes de force |
+| Dague de force | *FOR*-1 | E | 1 | Force | 100 |
+| Épée courte de force | *FOR*-1 | E | 1 | Corps-à-corps, Force | 125 |
+| Épée de force | *FOR* | C | 1 | Force | 200 |
+| Espadon de force | *FOR*+2 | A | 2 | Espace, Initiative –1, Force | 300 |
+| Lance de force | *FOR* | AA | 2 | Charge, Force | 175 |
+
+
+### Spécificités des armes de mêlée
+Électrique : Les armes électriques provoquent des dégâts électriques.
+Espace : L’arme doit bénéficier d’au moins 1m50 pour être maniée. Dans un lieu étroit (couloir, chambre…) l’arme impose 1 Désavantage.
+Destruction : Détruit 1 point d’armure en cas de passe d’arme réussite.
+Force : L’arme inflige *PSY*/2 dégâts supplémentaires qui ignorent l’effet Résistance (dégâts physiques).
+Perce-armure (X) : L’arme ignore X points d’armure de la cible.
+Risquée : le maniement de l’arme est risqué pour son propriétaire. En cas de doublé, il encaisse son *FOR* en dégâts.
+
+## Armes à distance
+Portée : La portée effective de l’arme, en mètres. Au-delà, le tireur a un désavantage.
+Chargeur : Le nombre de balles contenues dans un chargeur standard. (Voir règle des Chargeurs).
+Munition : Le type de munition utilisée par l’arme.
+
+| Arme | Dégâts | Portée | Chargeur | Spécial | Munition | Prix |
+| --- | --- | --- | --- | --- | --- | --- |
+| Armes primitives | Armes primitives | Armes primitives | Armes primitives | Armes primitives | Armes primitives | Armes primitives |
+| Arbalète | +3 | 20 | 1 | Chargement (1) | Carreaux | 35 |
+| Armes à munitions solides | Armes à munitions solides | Armes à munitions solides | Armes à munitions solides | Armes à munitions solides | Armes à munitions solides | Armes à munitions solides |
+| Pistolet | +3 | 20 | 12 |  | Balle P | 50 |
+| Revolver | +4 | 30 | 6 |  | Balle M | 75 |
+| Mitraillette | +3 | 20 | 24 | Automatique | Balle P | 75 |
+| Fusil à pompe | +5 | 5 | 6 | Chargement (2) | Cartouche | 100 |
+| Fusil d’assaut | +4 | 35 | 30 | Automatique | Balle  M | 100 |
+| Carabine | +5 | 40 | 8 |  | Balle L | 75 |
+| Mitrailleuse | +5 | 35 | 60 | Automatique, Chargement (2) | Balle L | 400 |
+| Fusil de précision | +5 | 400 | 4 | Viseur | Balle L | 700 |
+| Pistolet à aiguilles | +2 | 20 | 8 | Poison | Aiguilles P | 100 |
+| Fusil à aguilles | +3 | 50 | 12 | Poison | Aiguille L | 150 |
+| Armes laser | Armes laser | Armes laser | Armes laser | Armes laser | Armes laser | Armes laser |
+| Pistolet laser | +2 | 50 | 30 | Précis, Semi-automatique | Cellule P | 50 |
+| Carabine laser | +2 | 100 | 80 | Automatique, Précis | Cellule P | 50 |
+| Fusil laser | +3 | 100 | 80 | Automatique, Précis | Cellule M | 75 |
+| Fusil laser long | +3 | 500 | 80 | Automatique, Précis | Cellule M | 100 |
+| Canon laser | +6 | 300 | 10 | Lourde, Précis, Ignore boucliers | Cellule L | 2000 |
+| Armes à Bolts | Armes à Bolts | Armes à Bolts | Armes à Bolts | Armes à Bolts | Armes à Bolts | Armes à Bolts |
+| Pistolet Bolter | +5 | 30 | 8 | Perce-armure (2), Ignore boucliers | Bolt P | 500 |
+| Bolter | +6 | 80 | 16 | Lourde, Perce-armure (2), Ignore boucliers | Bolt M | 1500 |
+| Bolter lourd | +7 | 100 | 30 | Lourde, Perce-armure (2), Chargement (2), Ignore boucliers | Bolt L | 3000 |
+| Armes à plasma | Armes à plasma | Armes à plasma | Armes à plasma | Armes à plasma | Armes à plasma | Armes à plasma |
+| Pistolet plasma | +6 | 30 | 8 | Destruction, Surchauffe, Ignore boucliers | Flasque P | 400 |
+| Lance-plasma | +8 | 45 | 12 | Destruction, Surchauffe,  Ignore boucliers | Flasque M | 1000 |
+| Canon à plasma | +10 | 100 | 6 | Destruction, Lourde, Surchauffe,  Ignore boucliers | Flasque L | 3500 |
+| Lances-Flammes | Lances-Flammes | Lances-Flammes | Lances-Flammes | Lances-Flammes | Lances-Flammes | Lances-Flammes |
+| Pistolet Lance-flamme | +4 | 4 | 6 | Dégâts de feu, Souffle (2), Chargement (2), Ignore boucliers | Réservoir P | 200 |
+| Lance-flamme | +5 | 8 | 10 | Dégâts de feu, Souffle (4), Chargement (2), Ignore boucliers | Réservoir M | 350 |
+| Lance-flamme lourd | +6 | 12 | 15 | Dégâts de feu, Souffle (6), Chargement (2), Ignore boucliers | Réservoir L | 700 |
+| Armes à Fusion | Armes à Fusion | Armes à Fusion | Armes à Fusion | Armes à Fusion | Armes à Fusion | Armes à Fusion |
+| Fuseur | +8 | 20 | 6 | Destruction, Perce-armure (4) | Charge à fusion | 2500 |
+| Multi-fuseur | +12 | 30 | 4 | Destruction, Perce-armure (4) | Charge à fusion | 5000 |
+| Explosifs | Explosifs | Explosifs | Explosifs | Explosifs | Explosifs | Explosifs |
+| Grenade à fragmentation | +5 | *FOR*x2 | - | Rayon (5) | - | 25 |
+| Charge à fusion | +10 | *FOR* | - | Rayon (10) | - | 100 |
+| Grenade à plasma | +8 | *FOR*x2 | - | Rayon (5) | - | 50 |
+| Grenade Psy | - | *FOR*x2 | - | Rayon (5), Inflige RU+*PSY* (Caractéristique de la cible), Ignore les armures | - | 75 |
+
+
+### Spécificités des Armes à distance
+Automatique : L’arme peut tirer en Semi-automatique ou en Rafale :
+Semi-automatique : L’arme peut tirer deux fois par tour avec 1 Désavantage pour les deux tirs. Chaque tir consomme 2 munitions.
+Rafale : Le tireur subit 1 Désavantage mais les dégâts totaux du tir sont doublés et peuvent être répartis sur plusieurs cibles. L’arme consomme la moitié totale de ses munitions.
+Chargement (X) : Le nombre de tour nécessaire pour recharger une arme (1 seul par défaut).
+Destruction : Détruit 1 point d’armure en cas de tir réussi.
+Lourde : L’arme est encombrante et lourde. Les personnage qui ont une FOR inférieure à 50 subissent 1 Désavantage pour tirer avec cette arme.
+Perce-armure (X) : L’arme ignore X points d’armure de la cible.
+Précis : L’arme est maniable et précise. Les tirs se font toujours avec 1 Avantage.
+Souffle (X) : L’arme peut toucher X cibles proches.
+Surchauffe : En cas d’E+, l’utilisateur subit les dégâts de l’arme (sans le RU).
+Rayon (X) : L’explosion touche les cibles dans un rayon de X mètres.
+Poison : Une dose de poison peut imbiber un chargeur complet de l’arme.
+
+### Munitions
+
+| Munition | Effet | Prix |
+| --- | --- | --- |
+| Munitions primitives | Munitions primitives | Munitions primitives |
+| Carreaux |  | 5 /10 |
+| Munitions solides | Munitions solides | Munitions solides |
+| Balle P | - Balle tueuse : Perce-Armure (2), Prix : x2. | 5 /10 |
+| Balle M | - Balle tueuse : Perce-Armure (2), Prix : x2. | 5 /10 |
+| Balle L | - Balle tueuse : Perce-Armure (2), Prix : x2. | 10 /5 |
+| Cartouche |  | 2 |
+| Aiguilles P/L |  | 5 /10 |
+| Cellules énergétiques | Cellules énergétiques | Cellules énergétiques |
+| Cellule P | Une cellule énergétique correspond au nombre de munitions de l’arme. | 10 |
+| Cellule M | Une cellule énergétique correspond au nombre de munitions de l’arme. | 15 |
+| Cellule L | Une cellule énergétique correspond au nombre de munitions de l’arme. | 30 |
+| Bolts | Bolts | Bolts |
+| Bolt P/M/L |  | 5 |
+| Flasques à plasma | Flasques à plasma | Flasques à plasma |
+| Flasque P | Une flasque correspond au nombre de munitions de l’arme. | 50 |
+| Flasque M | Une flasque correspond au nombre de munitions de l’arme. | 75 |
+| Flasque L | Une flasque correspond au nombre de munitions de l’arme. | 100 |
+| Réservoir de lance-flamme | Réservoir de lance-flamme | Réservoir de lance-flamme |
+| Réservoir P | Un réservoir correspond au nombre de munitions de l’arme. | 25 |
+| Réservoir M | Un réservoir correspond au nombre de munitions de l’arme. | 50 |
+| Réservoir  L | Un réservoir correspond au nombre de munitions de l’arme. | 7 |
+| Réservoir à fusion | Réservoir à fusion | Réservoir à fusion |
+| Réservoir à fusion | Un réservoir correspond au nombre de munitions de l’arme. | 125 |
+
+
+### Améliorations
+
+| Amélioration | Effet | Description | Prix |
+| --- | --- | --- | --- |
+| Amélioration d’armes de mêlée | Amélioration d’armes de mêlée | Amélioration d’armes de mêlée | Amélioration d’armes de mêlée |
+| Monomoléculaire -  Pointe/ en diamantine | Octroie la caractéristique Perce-armure (1) (ou +1 si l’arme possède déjà la caractéristique). | Les armes monomoléculaires possèdent une ou plusieurs lames dont le tranchant, qui ne s’émousse jamais, traverse facilement les armures.  De la même manière, une pointe en diamantine sur une masse renforce sa perforation. | 200 |
+| Équilibrée | Octroie la caractéristique Équilibrée à l’arme : Bonus de +5% pour les tests de COM avec cette arme. | Une arme bien équilibrée peut devenir une véritable extension du bras. | 175 |
+| Poignée bio-veritor | Intègre la bio-signature du propriétaire qui verrouille tous les systèmes de l’arme pour que seule la personne autorisée puisse l’utiliser. | Populaire au sein des forces de l’ordre ou des porte-flingues paranoïaques. | 250 |
+|  |  |  |  |
+| Amélioration d’armes à distance | Amélioration d’armes à distance | Amélioration d’armes à distance | Amélioration d’armes à distance |
+| Viseur | Octroie la caractéristique Viseur à l’arme : 2 Avantages pour toucher avec l’action viser (au lieu de 1). | Les viseurs aux grossissements plus ou moins importants qui peuvent s’appliquer à la plupart des armes. | 35 |
+| Baïonnette | Octroie la caractéristique Baïonnette à l’arme. Elle peut être utilisée au corps-à-corps avec des dégâts de *FOR*-1. | Une lame attachée au bout du canon de l’arme, permettant de l’utiliser en guise d’arme de mêlée. | 5 |
+| Silencieux | Octroie la caractéristique Silencieux à l’arme : Les tirs de l’arme peuvent être entendus à 15 mètres mais pas au-delà. | Les silencieux réduisent le bruit (et à un certain degré, le cône de flamme) que produisent les armes à feu, ce qui leur évite d’être repérées. | 30 |
+| Pointeur laser | Octroie la caractéristique Pointeur laser à l’arme : Bonus de +5% pour les jets de tir avec cette arme. | Boîtier fixé au canon qui diffuse un rayon laser en ligne droite permettant une meilleure précision. | 45 |
+| Chargeur grande capacité | Uniquement les armes à munitions solides et les armes à Bolt. Double le nombre de munitions de l’arme. | Un chargeur de grande taille pour contenir plus de munitions. | 25 |
+| Poignée bio-veritor | Intègre la bio-signature du propriétaire qui verrouille tous les systèmes de l’arme pour que seule la personne autorisée puisse l’utiliser. | Populaire au sein des forces de l’ordre ou des porte-flingues paranoïaques. | 250 |
+| Amélioration d’armure | Amélioration d’armure | Amélioration d’armure | Amélioration d’armure |
+| ATH | Octroie un bonus de +10% aux tests de tir et aux tests basés sur la vue.  S’applique sur un casque intégral. | L’Affichage Tête Haute est un dispositif qui permet d’afficher toutes sortes d’informations destinées à assister l’utilisateur. | 750 |
+
+
+## Armures
+
+| Armure | Protection | Notes | Spécial | Prix |
+| --- | --- | --- | --- | --- |
+| Armure primitive | 1 | Partielle |  | 10 |
+| Armure primitive en métal | 3 | Partielle | Init -1, MOU -5% | 25 |
+| Gilet composite | 2 | Partielle |  | 50 |
+| Combi-blindée | 2 | Complète |  | 75 |
+| Armure primitive lourde | 3 | Complète | Init -2, MOU -10%, Longue à mettre | 50 |
+| Pièces Carapace | 3 | Partielle |  | 100 |
+| Armure Carapace légère | 3 | Complète | Longue à mettre | 155 |
+| Armure Carapace | 4 | Complète | Init -1, Longue à mettre | 200 |
+| Cuirasse d’adamantium | 4 | Partielle |  | 350 |
+| Armure d’adamantium | 5 | Complète | Init -2, MOU -10%, Longue à mettre | 500 |
+| Armure énergétique légère | 5 | Complète | Init -1, MOU -5%, Longue à mettre | 1500 |
+| Armure énergétique | 6 | Complète | Décupleur, Init -1, MOU -5%, Longue à mettre | 3500 |
+| Combinaison composite | 2/+1 | Complète/Bonus | Peut se porter sous la plupart des armures | 450 |
+| Synthéderme | 4/+2 | Complète/Bonus | Longue à mettre, Peut se porter sous la plupart des armures | 750 |
+| Casque | +1 | Bonus |  | 50 |
+| Casque intégral | +1 | Bonus |  | 75 |
+| Bouclier | +1 | Bonus | Couvert (1), MOU -5%, Init -1 | 30 |
+| Bouclier anti-émeute | +2 | Bonus | Couvert (2), MOU -10%, Init -2 | 45 |
+
+
+### Spécificités des armures
+Couvert (X) : Les boucliers peuvent protéger des tirs. Un adversaire qui tir sur la cible reçoit X désavantage pour tirer.
+Décupleur : Certaines armures énergétiques intègrent une alimentation qui augmente la force de leurs porteurs. Le personnage reçoit un bonus de +10 pour ses tests de FOR et d’END et augmente ses dégâts de mêlées de +1.
+Init -x : l’armure est encombrante et pénalise l’Initiative du personnage du montant indiqué.
+Longue à mettre : L’armure prend 30 minutes à être enfilée.
+MOU -x% : L’armure est encombrante et pénalise les tests de MOU du porteur de -x.
+
+## Equipement & Prix
+
+### Nourriture et boissons
+Tord-boyaux, ½ litre		1
+Bière, ½ litre			1
+Amasec	 frelaté			1
+Amasec de qualité 		2
+Vin, piquette, ½ litre		1
+Vin, bon, ½ litre		3
+Pâte nutritive			1
+Ration				1
+Viande de grox, 1 kilo		2
+Fruits, légumes, 1 kilo		5
+Réca				1
+Repas frugal			2
+Repas copieux			5
+Repas de fête			10
+
+### Logement
+Logement misérable		1/nuit
+Logement vivable		5/nuit
+Logement agréable		15/nuit
+Logement supérieur		50/nuit
+Logement de luxe		100/nuit
+
+### Vêtements
+Chaussures, modestes		5
+Bottes				10
+Bottes de qualité		15
+Pantalon simple		2
+Pantalon de treillis		10
+Haut simple			15
+Haut noble			75
+Veste de treillis			5
+Manteau			10
+Veste isolante			20
+Combinaison moulante		10
+Bure religieuse, modeste	5
+Bure religieuse, riche		35
+Cape						25
+Bijoux, modestes				75
+Bijoux, riches					150
+Cape de caméléonine :  Confère un bonus de +20% aux tests de discrétion.	500
+
+### Objets divers
+Corde, 15 mètres			5
+Icone religieux, précieux		200
+Icone religieux, fer			50
+Icone religieux, bois			5
+Auto-plume : Plume motorisée capable d’écrire automatiquement les paroles de son utilisateur.				70
+Collier explosif + télécommande	85
+Comm-Vox : Poste émetteur/récepteur permettant de communiquer sur de très grandes distances (Jusqu’à un vaisseau en orbite par exemple).	 	250
+Trépied : Annule l’effet “Lourde” sur les armes à distance.	50
+Horologium				65
+Jumelles				100
+Jumelles infrarouges			275
+Jumelles de vision nocturne		200
+Pix-enregistreur : Permet d’enregistrer et de lire des images ou vidéos sous format holographique.				250
+Microvox : Petit instrument de communication qui permet de communiquer sur près d’un kilomètre.				125
+Lampe torche, Lumiglobe		15
+Menottes + clé				50
+Rouleau de parchemin, 5 mètres	75
+Feuilles de parchemin, 20		50
+Nécessaire d’écriture			50
+Instrument de musique, simple		15
+Instrument de musique, précieux	150
+Instrument de musique, Grand		500
+
+### Survie
+Combinaison spatiale : Permet de survivre dans l’espace.			300
+Masque à gaz/Recycleur : Confère un bonus de +20% contre les effets des gaz. 	150
+Filtre nasal : Confère un bonus de +10% pour résister à l’effet d’un gaz.		75
+Bouteille d’oxygène (1 heure)							50
+
+### Outils
+Auspex  : Détecteur fonctionnant sur 100 mètres. Dispose de plusieurs modes de détection (gaz, sources de chaleur, créatures vivantes ou radiation).			175
+Crochets (x2) : Permet de crocheter des serrures manuelles.			10
+Découpeur laser : Outil encombrant pour découper le métal. 			125
+Outils de torture : Permet d’interroger efficacement une cible.			75
+Outils de mécanique : Permet d’effectuer des réparations simples. 		75
+Outils d'ingénierie  : Permet d’effectuer des réparations importantes.		100
+Trousse médicale : Permet de pratique des premier soins de bonne qualité.	85
+Outils de chirurgie : Permet d’effectuer des opérations de chirurgie.		125
+Injecteur : Permet d’injecter des substances.					75
+Kit de déguisement : Permet de modifier son apparence dans les moindres détails voir plus, comme de la Peau synthétique pour modeler son visage.		  		150
+Psyconduit, riche : Bonus de +5% aux tests de PSY pour canaliser un pouvoir.	1000
+Psyconduit, relique : Bonus de +10% aux tests de PSY pour canaliser un pouvoir.	2500
+
+### Technologie
+Batterie, petite			5
+Batterie, moyenne		100
+Batterie, grande		400
+Câbles, 10 mètres		25
+Générateur, léger		250
+Générateur, intermédiaire	750
+Générateur, lourd		1500
+Tablette de données : Permet de stocker des données.		25
+
+### Drogues et substances
+Note : Le prix correspond à une dose.
+(Injecteur) : Nécessite un injecteur pour être utilisée.
+(Drogue) : Peut causer une addiction.
+Dé-tox	(Injecteur)			50
+Frénézon (Injecteur/Drogue)		150
+Slaught	 (Injecteur/Drogue)		75
+Spray moulant				50
+Stimm	(Injecteur)			75
+Encens omnimessique			300
+
+### Services, salaire moyen par jour
+Médecin		25
+Mercenaire		20
+Domestique		10
+Ouvrier			5
+Mécanicien		5
+Ingénieur		25
+Technoprêtre		45
+Assassin		40
+Voleur			10
+
+## Effets des drogues/substances
+
+| Nom | Effet |
+| --- | --- |
+| Dé-tox | Met fin aux effets d’un poison ou d’un gaz persistant qui touche un personnage. |
+| Frénézon | Immunise contre l’effet PEUR et octroie un bonus de +10% aux tests de COM et +1 aux dégâts de mêlée. |
+| Slaught | Confère un bonus de +20% aux tests de perception pendant 10 minutes |
+| Spray moulant | Permet de refermer les plaies et de rendre 2 PV à la cible. Une fois après la fin d’un combat. |
+| Stimm | Permet de stabiliser une personne mourante en lui rendant 1 PV. |
+| Encens omnimessique | Nécessite un Encensoir. Une dose correspond à une scène. Pendant une scène, le porteur peut concentrer les fumées de l’encensoir sur un objet technologique de l’Imperium à la fois. Tout test concernant l’utilisation de l’objet se fait avec un Avantage. |
+
+
+# Augmentations
+“Dans l’Imperium, les implants bioniques et améliorations cybernétiques sont un élément de la vie courante. Ils sont des bienfaits du Dieu-Machine, permettant de remplacer des parties du corps endommagées, d’améliorer les aptitudes et la force, et dans certains cas, de prolonger la vie. De telles greffes ont un prix, et il ne se mesure pas seulement en matière charnelle perdue, mais aussi, diront certains, en humanité et même en santé mentale.”
+Les Augmentations sont une bénédiction pour le corps et la chair, cependant, elles sont également un poids pour l’âme et l’esprit. Un personnage ne peut recevoir, en totalité, que *VOL* augmentations. S’il en reçoit plus, il subit une crise de folie et son score de Sang-froid de base est réduit définitivement d’autant de points que son Instabilité par Augmentation supplémentaire (voir règles de Folie de Brigandyne).
+
+## Prothèses et organes bioniques
+
+| Modèle | Effet | Coût |
+| --- | --- | --- |
+| Augmentation esthétique | Ornementations dorées, yeux lumineux, parties de corps chromées… Nombreux sont les ajouts qui servent à s’embellir. Surtout parmi la haute société.  Les Augmentations esthétiques ne sont pas compris dans le maximum d’Augmentations qu’un personnage peut recevoir.  De plus, chaque Augmentation esthétique octroie un bonus de +5% en SOC. (Pour un maximum de +20%). | 750 |
+| Bras bionique | Votre FOR augmente de 10% par bras bionique. Un bras bionique est une arme : *FOR*-1. | 1000 |
+| Arme implantée | Permet d’implanter n’importe quelle arme dans un Bras bionique ou une Méchadendrite manipulatrice. Le prix correspond au prix de l’arme multiplié par 2.  Nécessite un Bras bionique ou une Méchadendrite manipulatrice. | X |
+| Méchadendrite | Bras articulé et motorisé monté sur l’épaule et terminé par différents outils ou armes. Les tests physiques réalisés grâces à une Méchadendrite peuvent se faire avec VOL :  - Laser : Fonctionne comme un Pistolet laser.  - Médical : Fonctionne comme une trousse médicale, possède du matériel d’injection.  - Optique : Peut être équipée de trois lentilles différentes (voir Oeil bionique).  - Servo-bras : Griffes massives qui confère un bonus de +20% aux tests pour soulever des charges lourdes. (non cumulable) C’est une arme infligeant RU+6 dégâts.  - Utilitaire : Fonctionne comme des outils d'ingénierie.  - Manipulatrice : Pince pouvant manipuler des objets ou être équipée d’armes. | 1000 |
+| Jambe cybernétique | Si les deux jambes sont équipées, votre MOU augmente de 20%. | 1500 |
+| Oeil bionique | Vous accorde un bonus selon la spécificité de l’oeil :  - Oeil d’Augure : Confère les effets d’un Auspex mais ne fonctionne qu’en vue directe. - Oeil nocturne : Pas de malus lié à l’obscurité. - Enregistreur : Permet d’enregistrer des images et vidéos sauvegardées sur une Tablette de données - Oeil balistique : Confère un bonus de +5% aux tests de tir. - Oeil télescopique : Permet de zoomer jusqu’à 500 mètres. Bonus de +10% pour les tests de vue à longue portée. - Oeil microscopique : Agrandissement x400. Bonus de +10% pour les tests nécessitant de la minutie.   Chaque installation permet de cumuler des bonus différents ou deux bonus identiques. | 350 |
+| Viscères augmentées | Améliore l’agencement des organes, réoriente les vaisseaux sanguins en cas de besoin. Confère 2 PV par installation (maximum 5 installations). | 250 |
+| Organes bioniques | Coeur, poumons ou encore estomac renforcés qui offrent un bonus de +20% en END. | 1500 |
+| Vox implanté | Récepteur et émetteur Vox implantés autour de la bouche et des oreilles. Permet de communiquer avec d’autres Vox sur de très longues distances comme un vaisseau en orbite. | 2500 |
+| Augmentique scripturale | Un pack dorsal relié au crâne du personnage, équipé de plumes et d’outils d’écritures automatisés ainsi qu’un rouleau de parchemin de 5 mètres. L’Augmentique permet d’écrire automatiquement les pensées ou les paroles que le personnage entend ou prononce. | 750 |
+| Cyberchape | Ossature de métal, de câbles et de transmetteurs à impulsions, fixée à la colonne vertébrale et à la cage thoracique, qui permet de doubler le nombre d’implants maximum du personnage avant de subir une Crise de folie. | 6000 |
+
+
+## Systèmes implantés
+
+| Modèle | Effet | Coût |
+| --- | --- | --- |
+| Respirateur | Permet d’obtenir les effets d’un Respirateur standard qui n’a pas besoin d’être rechargé. | 750 |
+| Cortex autodogmatique | Nourris l’esprit d’un flot continu d’hymnes, de prières et saintes paroles. Bonus de +10% pour les tests de résistance à la contrainte ou à la peur. | 1000 |
+| Cardioproxy | Bonus de +20% pour résister à l’effet d’un poison ou d’un maladie. | 1000 |
+| Unité d’Impulsion Mentale | Permet de connecter l’esprit humain à l’Esprit de la Machine qui habite chaque technologie de l’Imperium (grâce à des prières et des rituels). Réussir un test de VOL donne 1 Avantage aux tests fait avec l’objet technologique en question. En cas d’E+, l’Esprit est courroucé et octroie 1 Désavantage.   L’Unité d’Impulsion Mentale peut également servir à ceux qui en sont équipés de lier leurs esprits, de partager des informations… | 5000 |
+| Implant cortical | Bonus de +10% à tous les tests de connaissances ou de réflexions. | 750 |
+| Implant de connexion mécanique | Permet au porteur de cet implant de se connecter à un véhicule ou à un vaisseau et ne faire plus qu’un avec lui, comme s’il s’agissait d’une extension de son propre corps. Toutes les manoeuvres ou les tests liés au véhicule reçoivent un bonus de +20%. | 4500 |
+| Tendons renforcés | Bonus de 10%  pour les tests de force physique. | 1500 |
+| Armure subdermique | Augmente la protection de l’utilisateur de 1. | 1500 |
+
+
+# Véhicules et vaisseaux spatiaux
+
+## Règles
+
+### Manoeuvres de base
+Lorsqu’un véhicule doit effectuer une manœuvre risquée (qui nécessite donc un test), le pilote doit effectuer un test de TEC dont la difficulté varie selon l’action entreprise.
+Si le véhicule nécessite deux pilotes ou plus, un seul pilote. S’il n’y a qu’un seul pilote pour un véhicule qui en nécessite plus, il fait un test avec un désavantage (Si la différence entre les pilotes nécessaires et le nombre de pilotes disponibles et de 10, le véhicule ne peut pas être piloté).
+
+### Combat en véhicule
+
+#### Tir
+Utiliser les armes de tir d’un véhicule ou d’un vaisseau nécessite simplement un test de TIR de la part du pilote ou du membre d’équipage qui se trouve aux commandes des armes. Les règles sont identiques au combat de base.
+
+#### Contact
+Un véhicule peut tenter de réaliser une manœuvre pour percuter une cible. Il doit réaliser un test en opposition TEC/TEC ou TEC/MOU s’il s’agit d’un piéton.
+En cas de réussite, la cible subit RU+Taille dégâts qui sont doublés contre les cibles à taille humaine.
+
+### Course-poursuite
+Lorsqu’un véhicule doit en rattraper un autre, il faut utiliser sa Vitesse. Deux véhicules commencent avec un certain écart exprimé en mètres, kilomètres ou autre (selon le type de véhicule, terrestre ou spatial).
+Le pilote fait ensuite un test en opposition TEC/TEC. En cas de réussite, l’écart entre les véhicules diminue ou augmente de RU+Vitesse (Minimum 1).
+Exemple : Une moto située à 20 mètres d’un camion lourd doit le rattraper. Le pilote de la moto (le PJ) fait un test en opposition contre le pilote du camion. Le PJ fait un 37 sur son test (et réussi le test). La moto fait donc diminuer la distance qui sépare les deux véhicules de RU+3 mètres, soit 10 mètres.
+
+## Liste de véhicules
+Taille : Le gabarit du véhicule (Détermine également le nombre d’armes qu’il peut équiper) :
+1 : Petit véhicule : Moto, marcheur personnel, quad, véhicule monoplace…
+2 : Véhicule léger : Voiture civile…
+3 : Véhicule moyen : Tout-terrain, voiture de grande taille, fourgon…
+4 : Véhicule grand : Camion, transporteur…
+5 : Véhicule très grand : Blindé colossal…
+Maniabilité : Bonus ou malus aux tests de manoeuvres.
+Vitesse : S’ajoute au RU lors des manoeuvres d’accélération.
+Spécial : Les caractéristiques spéciales des véhicules.
+Places : Le nombre de passagers en incluant le pilote. Un nombre entre parenthèses indique le nombre de pilote minimum pour piloter le véhicule.
+Protection : Blindages et boucliers des véhicules.
+Structure : Les Points de vie des véhicules. Tous les véhicules ont une Résistance (Armes à munitions solides, Armes à Bolt et Armes laser).
+
+### Véhicules terrestres
+
+| Véhicule | Taille | Maniabilité | Vitesse | Spécial | Places | Protection | Structure | Prix |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Civils | Civils | Civils | Civils | Civils | Civils | Civils | Civils | Civils |
+| Véhicule individuel | 1 | - | +3 |  | 2 | - | 15 | 1.500 |
+| Voiture | 2 | - | +1 |  | 4 | - | 25 | 2.500 |
+| Camion | 4 | - | -1 |  | 8 | - | 40 | 7.500 |
+| Camion lourd | 5 | -5% | -2 |  | 12 | - | 50 | 8.000 |
+| Transporteur léger | 3 | - | - |  | 6 | - | 35 | 4.000 |
+| Tout-terrain léger | 2 | +5% | +2 |  | 4 | - | 20 | 3.000 |
+| Tout-terrain lourd | 3 | +5% | +1 |  | 5 | - | 30 | 3.500 |
+| Militaires | Militaires | Militaires | Militaires | Militaires | Militaires | Militaires | Militaires | Militaires |
+| Marcheur individuel | 1 | +10% | -2 |  | 1 | 2 | 15 | 2.000 |
+| Marcheur lourd | 3 | +5% | -2 |  | 5 | 3 | 30 | 4.500 |
+| Blindé léger | 3 | - | -1 |  | 5 | 4 | 35 | 7.000 |
+| Blindé lourd | 4 | - | - |  | 6 (2) | 5 | 45 | 14.000 |
+| Tout-terrain blindé | 3 | +5% | +2 |  | 10 | 4 | 35 | 12.000 |
+| Blindé colossal | 5 | - | -3 |  | 6 (3) | 6 | 55 | 25.000 |
+|  |  |  |  |  |  |  |  |  |
+
+
+### Véhicules volants
+
+| Véhicule | Taille | Maniabilité | Vitesse | Spécial | Places | Protection | Structure | Prix |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Civils | Civils | Civils | Civils | Civils | Civils | Civils | Civils | Civils |
+| Navette personnelle | 2 | - | +3 |  | 6 | - | 20 | 5.000 |
+| Transporteur aérien | 3 | - | +2 |  | 12 | - | 35 | 7.000 |
+| Militaires | Militaires | Militaires | Militaires | Militaires | Militaires | Militaires | Militaires | Militaires |
+| Avion léger | 2 | - | +6 |  | 2 | 2 | 25 | 8.500 |
+| Avion lourd | 3 | -5% | +5 |  | 2 | 3 | 30 | 10.000 |
+| Aéronef blindé | 3 | - | +4 |  | 12 (2) | 3 | 35 | 12.000 |
+|  |  |  |  |  |  |  |  |  |
+
+
+#### Armements
+Taille : La taille de l’arme. Un véhicule ne peut pas cumuler plus d’armes que sa propre taille. (Exemple : Un véhicule de taille 2 peut cumuler une arme de taille 2 ou deux armes de taille 1).
+Dégâts : Les dégâts de l’arme. Sur des cibles à taille humaine, les dégâts sont doublés.
+Charges : Le nombre de tirs possibles avant de devoir recharger.
+
+| Arme | Taille | Dégâts | Charges | Portée | Spécial | Prix |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mitrailleuse lourde | 1 | +3 | 6 | 40 | Automatique, Chargement (2) | 400 |
+| Répéteurs laser | 1 | +1 | 8 | 60 | Automatique, Précis | 300 |
+| Tourelle Bolter | 1 | +4 | 4 | 30 | Automatique, Chargement (2) | 5000 |
+| Canon à plasma léger | 1 | +6 | 3 | 30 | Perce-armure (2), Destruction, Surchauffe | 4000 |
+| Canon à fusion léger | 1 | +6 | 2 | 40 | Perce-armure (4) | 4500 |
+| Obusier | 1 | +4 | 2 | 80 | Rayon (5) | 1500 |
+| Lance-missiles | 1 | +5 | 6 | 90 | Rayon (10) | 2500 |
+| Canon lourd | 2 | +8 | 1 | 60 | Rayon (10), Destruction, Perce-armure (2) | 5000 |
+
+Spécificités des Armes
+Automatique : L’arme peut tirer en Semi-automatique ou en Rafale :
+Semi-automatique : L’arme peut tirer deux fois par tour avec 1 désavantage pour les deux tirs.
+Rafale : Le tireur subit 1 désavantage mais les dégâts totaux du tir sont doublés et peuvent être répartis sur plusieurs cibles. L’arme consomme la moitié totale de ses charges.
+
+### Vaisseaux spatiaux
+Taille : Le gabarit du véhicule :
+1 : Petit véhicule : Navette, chasseur…
+2 : Véhicule léger : Vaisseau de transport de petite taille, destroyer…
+3 : Véhicule moyen : Frégate, transporteur…
+4 : Véhicule grand : Croiseur…
+5 : Véhicule très grand : Vaisseaux colossaux, cuirassés…
+Maniabilité : Bonus ou malus aux tests de manoeuvres.
+Vitesse : S’ajoute au RU lors des manoeuvres d’accélération.
+Spécial : Les caractéristiques spéciales des véhicules.
+Places : Le nombre de passagers en incluant le pilote. Un nombre entre parenthèses indique le nombre de pilote minimum pour piloter le véhicule.
+Protection : Blindages et boucliers des véhicules.
+Structure : Les Points de vie des vaisseaux. Les vaisseaux sont immunisés à la plupart des armes standards destinées aux combats à échelle humaine.
+
+| Véhicule | Taille | Maniabilité | Vitesse | Spécial | Place | Protection | Structure | Prix |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Très léger | Très léger | Très léger | Très léger | Très léger | Très léger | Très léger | Très léger | Très léger |
+| Chasseur | 1 | +5% | +5 |  | 2 | 1 | 10 | 25.000 |
+| Intercepteur | 1 | - | +4 |  | 2 | 2 | 15 | 27.500 |
+| Léger | Léger | Léger | Léger | Léger | Léger | Léger | Léger | Léger |
+| Transporteur léger | 2 | -5% | - |  | 200 (5) | 2 | 20 | 22.000 |
+| Corvette | 2 | +5 | +1 |  | 350  (15) | 2 | 25 | 60.000 |
+| Destroyer | 2 | - | - |  | 500 (20) | 3 | 28 | 90.000 |
+| Moyen | Moyen | Moyen | Moyen | Moyen | Moyen | Moyen | Moyen | Moyen |
+| Transporteur | 3 | -5% | -1 |  | 400 (10) | 2 | 30 | 50.000 |
+| Frégate | 3 | - | - |  | 1.000 (20) | 3 | 30 | 125.000 |
+| Frégate lourde | 3 | -5% | -1 |  | 1.600 (20) | 4 | 35 | 150.000 |
+| Lourd | Lourd | Lourd | Lourd | Lourd | Lourd | Lourd | Lourd | Lourd |
+| Croiseur léger | 4 | -10% | - |  | 3.500 (30) | 4 | 40 | 250.000 |
+| Croiseur | 4 | -10% | - |  | 4.500 (30) | 5 | 45 | 300.000 |
+| Très lourd | Très lourd | Très lourd | Très lourd | Très lourd | Très lourd | Très lourd | Très lourd | Très lourd |
+| Croiseur super lourd | 5 | -10% | - |  | 150.000 (80) | 6 | 50 | 750.000 |
+| Cuirassé | 5 | -15% | - |  | 700.000 (120) | 6 | 60 | 1.200.000 |
+
+
+#### Armements
+Taille : La taille de l’arme. Un véhicule ne peut pas cumuler plus d’armes que sa propre taille. (Exemple : Un véhicule de taille 2 peut cumuler une arme de taille 2 ou deux armes de taille 1).
+Dégâts : Les dégâts de l’arme.
+
+| Arme | Taille | Dégâts | Portée | Spécial | Prix |
+| --- | --- | --- | --- | --- | --- |
+| Auto-canons | 1 | +2 | 200 | Semi-automatique | 2.000 |
+| Canons laser | 1 | +1 | 600 | Semi-automatique | 1.500 |
+| Macrobatteries | 2 | +5 | 200 | Semi-automatique | 6.000 |
+| Batteries laser | 2 | +4 | 600 | Semi-automatique | 4.500 |
+| Batteries plasma | 2 | +8 | 300 | Destruction, Surchauffe, Perce-armure (2) | 10.000 |
+| Canons à fusion | 2 | +8 | 300 | Perce-armure (4) | 12.000 |
+| Lanceurs de torpilles | 2 | +6 | 500 | Destruction | 8.000 |
+| Canon Nova | 3 | +12 | 1000 | Perce-armure (2), Destruction | 25.000 |
+
+
+# Combat
+
+## Combat à distance
+
+### Règles supplémentaires
+
+#### Chargeurs
+La plupart des armes de tir comportent des chargeurs qui peuvent tirer un certain nombre de coups. Une fois vide, il faut le recharger.
+Lorsqu’un chargeur est vide, il faut 1 tour complet pour le recharger. Selon qu’il soit en combat ou hors combat, le personnage recharge différemment :
+Hors combat, un personnage peut remplacer les balles une par une. Uniquement munitions solides et Bolt.
+En combat, si un personnage recharge, il perd les munitions restantes dans son chargeur.
+
+### Actions spéciales
+Viser : Lors d’un test de tir, un personnage peut passer son round à viser. S’il le fait, il gagne 1 Avantage pour son prochain test de tir. On ne peut cumuler ce bonus qu’une seule fois.
+
+# Pouvoirs
+
+## Psyker
+Les psykers sont considérés de bien des manières différentes sur les innombrables mondes de l’Imperium. Les planètes les plus primitives voient en eux des chamans et des sorciers. Les sociétés les plus évoluées ont généralement conscience de leur nature et se réfèrent aux psykers sous d’autres noms, « les élus », ou les « talentueux ». Mais dans presque tous les cas et sur tous les mondes, les psykers sont craints, pour les ténèbres et le Chaos qu’ils peuvent attirer vers ceux qui les entourent.
+
+### Notes
+De manière générale, les pouvoirs PSY suivent les mêmes règles que la Magie dans Brigandyne. Seules quelques exceptions ne s’appliquent pas. Par exemple, il n’y a pas de formules magiques pour manifester des pouvoirs Psy.
+
+### Lancer un pouvoir psychique
+Pour lancer un pouvoir psychique, le Psyker doit effectuer un jet de PSY et obtenir un résultat inférieur à sa caractéristique.
+(Voir les règles de MAGIE de Brigandyne pour plus de détail).
+
+#### Échouer
+Les règles de MAGIE de Brigandyne s’appliquent également ici.
+Cependant, les Complications mineures deviennent des Phénomènes psychiques et les Complications majeures deviennent des Périls du Warp. (Voir plus bas).
+
+### Limites
+Puiser dans les énergies chaotiques du Warp est dangereux et épuisant. Un Psyker ne peut donc lancer que *PSY* Pouvoirs et Pouvoirs mineurs par jour.
+(Voir les règles de MAGIE de Brigandyne pour plus de détail).
+
+### Psyconduit
+Les Psyconduits sont des reliques ou des objets plus communs comme des sceptres, des bâtons de pouvoir ou plus simplement, des osselets sculptés ou d’autres artéfacts occultes. Ils permettent aux Psyker de mieux canaliser leurs pouvoirs.
+
+### Disciplines psychiques
+Il existe différents groupes de capacités psychiques, désignés par les savants-psykers impériaux sous le terme de « disciplines ». Parce que chaque discipline requiert un certain type d’entraînement et de… discipline, il est bien plus simple pour un psyker d’apprendre plusieurs pouvoirs issus d’une même famille que de s’essayer à ceux d’une autre. Parvenir à la maîtrise d’une discipline est considéré comme un grand accomplissement pour un psyker.
+La biomancie est l’art de remodeler la chair conformément à sa
+volonté.
+La divination est l’art de lire le passé, le présent et le futur dans les
+remous de l’Immaterium.
+La pyromancie est l’art de contrôler le feu et la chaleur.
+La télékinésie est l’art de commuer la pensée en énergie physique.
+La télépathie est l’art de lire et de contrôler les esprits.
+Un Psyker connait initialement le domaine des Pouvoirs génériques et peut connaître d’autres domaines selon sa caractéristique PSY.
+
+| PSY | Discipline |
+| --- | --- |
+| 01-49 | Un |
+| 50-69 | Deux |
+| 70-89 | Trois |
+| 90-99 | Quatre |
+| 100 | Cinq |
+
+
+## Pouvoirs et Domaines
+
+| Générique | Biomancie | Divination |
+| --- | --- | --- |
+| Pouvoirs mineurs Désagrément Main spectrale Malédiction mineure Murmures Warp Ruse Tour de main  Pouvoirs Détection des présences +20 Invocations d’objet +20 Aura d’inspiration +10 Caméléon +10 Étanchement +10 Résistance à la possession +10 Affaiblissement du voile 0 Bruit blanc 0 Flétrissement 0 Infliction de la douleur 0 Invocations de créatures 0 Malédiction mécanique 0 Atténuation de la douleur -10 Aura effrayante -10 Distorsion visuelle -10 Flash bruyant -10 Guérison -10 Spasme -20 | Pouvoirs mineurs Belle figure Dissipation d’ivresse Gonflement Guérison cutanée Malédiction mineure Solide comme un roc  Pouvoirs Accroissement sensoriel +10 Ébullition +10 Poing d’acier +10 Bioéclair 0 Contrôle cellulaire 0 Étranglement 0 Aspiration des toxines -10 Cicatrisation -10 Remodelage charnel -10 Régénération -20 | Pouvoirs mineurs Aide-mémoire Connaissance du temps écoulé Mauvais oeil Présage Vision de nuit Voir les démons invisibles  Pouvoirs Psychométrie +20 Conscience surnaturelle +10 Esquive prémonitoire +10 Vision à distance +10 Vision de l’âme +10 Aperçu 0 Frappe prémonitoire 0 Clairvoyance -10 Prédiction -20 Tir divin -20 |
+| Pyromancie | Télékinésie | Télépathie |
+| Pouvoirs mineurs Chaleur apaisante Feux follets Fumée sans feu Marque brûlante Regard de flammes Torche  Pouvoirs Extinction +10 Maître du feu +10 Poing ardent +10 Incandescence 0 Incinération 0 Mur de feu 0 Projectiles de feu 0 Sécheresse 0 Flash aveuglant -10 Holocauste -30 | Pouvoirs mineurs Ancrage mental Bourrasque Lourdeur Main spectrale Protection de force Pied-léger  Pouvoirs Poussée +20 Flottement +10 Projectile de force +10 Armure psychique 0 Bouclier télékinétique 0 Télékinésie 0 Écrasement psychique -10 Lame psychique -10 Télékinésie de précision -10 Prison télékinétique -20 | Pouvoirs mineurs Bonne impression Désagrément Murmures Warp Télépathie mineure Voix désincarnée Lecture des émotions  Pouvoirs Choc psychique +10 Hurlement psychique +10 Impulsion +10 Maître des bêtes +10 Terreur +10 Domination 0 Télépathie 0 Examen mental -10 Disparition -20 Projection -20 |
+
+
+### Pouvoirs
+
+| Pouvoirs mineurs |
+| --- |
+|  |
+
+
+|  |  |
+| --- | --- |
+| Difficulté :  / Durée :  / Portée : | Difficulté :  / Durée :  / Portée : |
+| Résistance :  / R+ : | Résistance :  / R+ : |
+|  |  |
+
+
+#### Pouvoirs génériques
+
+| Pouvoirs mineurs |
+| --- |
+| Désagrément : Vous donnez une envie irrésistible à une cible (figurant ou second rôle) de bâiller, tousser, éternuer ou se gratter. Ce désagrément ne dure qu’une seconde, mais peut s’avérer précieux au bon moment. La cible agacée subit 1 Désavantage pour ce pouvoir.  Main spectrale : Vous pouvez déplacer et manipuler un objet de *PSY* kilo dans une portée courte. L’objet ne peut pas être projeté avec violence.  Malédiction mineure : Ce sort affuble une cible d’un inconvénient mineur : un zézaiement, des verrues, une odeur désagréable, une pilosité gênante, des boutons, etc. Ce qui lui cause une perte de 5% en SOC pendant *PSY* jours.  Murmures Warp : Vous faite retentir d’étranges murmures ou sons jusqu’à *PSY* mètres de vous.  Ruse : La cible gagne 1 Avantage aux tests impliquant des jeux de hasard pendant *PSY* tours.  Tour de main : La cible gagne 1 Avantage aux tests de TEC pendant *PSY* tours. |
+
+
+| Affaiblissement du voile | Atténuation de la douleur |
+| --- | --- |
+| Difficulté : 0 / Durée : RU tours / Portée : Longue | Difficulté : -10 / Durée : Instantanée / Portée : Contact |
+| Résistance : - / R+ : Durée x2 ou Flux d’énergie | Résistance : - / R+ : SF +1 |
+| Vous affaiblissez le voile de l’Immaterium dans la portée du pouvoir. Pendant la durée du pouvoir, tous les Psykers gagnent 1 Avantage pour lancer leurs pouvoirs.  Cependant, tout échec entraîne un Phénomène psychique et tout échec majeur entraîne un Péril du Warp. | La douleur de la cible se calme. Elle regagne *PSY* points de SF. Il faut 1 heure pour obtenir les effets de ce pouvoir.  Ne peut être effectué qu’une seule fois toutes les 24 heures par cible. |
+
+
+| Aura d’inspiration | Aura effrayante |
+| --- | --- |
+| Difficulté : +10 / Durée : RU tours / Portée : Contact | Difficulté : -10 / Durée : RU tours / Portée : Contact |
+| Résistance : - / R+ : Durée x2 | Résistance : - / R+ : PEUR (2) |
+| Vous irradiez d’une présence rassurante. Tous les alliés qui peuvent vous voir obtiennent un bonus de +20 pour résister à l’effet de PEUR. | Vous irradiez d’une présence terrifiante. Vous obtenez l’effet PEUR (1). |
+
+
+| Bruit blanc | Caméléon |
+| --- | --- |
+| Difficulté : 0 / Durée : RU heures / Portée : Courte | Difficulté : +10 / Durée : RU minutes / Portée : Contact |
+| Résistance : - / R+ : Durée x2 | Résistance : - / R+ : Cible +1 ou Durée x2 |
+| Pendant la durée du pouvoir, vous générez des parasites dans le Warp qui vous entourent. Les appareils détecteurs et les pouvoirs de détections qui essayent de repérer toutes les cibles à l’intérieur de la portée du pouvoir échouent et se mettent à dysfonctionner. | Vous distordez la réalité autour de la cible qui se fond dans l’environnement et obtient un bonus de +20 en DIS. |
+
+
+| Détection des présences | Distortion visuelle |
+| --- | --- |
+| Difficulté : +20 / Durée : Instantanée / Portée :  Longue | Difficulté : -10 / Durée : RU tours / Portée : Contact |
+| Résistance : - / R+ : Flux d’énergie | Résistance : - / R+ : Durée x2 |
+| Vous déployez votre perception mentale pour obtenir un vague aperçu des créatures vivantes dans la portée du pouvoir. | Vous manipulez la réalité pour distordre votre image qui devient trouble et semble refléter plusieurs échos de vous-mêmes autour de vous. Les attaques de contact vous ciblant subissent un malus de -10% et les attaques à distance un malus de -20% pendant la durée du pouvoir. |
+
+
+| Étanchement | Flash bruyant |
+| --- | --- |
+| Difficulté : +10 / Durée : Instantanée / Portée : Courte | Difficulté : -10 / Durée : Instantanée / Portée : Moyenne |
+| Résistance : - / R+ : Soins | Résistance : - / R+ : Flux d’énergie |
+| Vous faites cesser le Handicap Ensanglanté d’une cible. | Vous produisez un flash de lumière et un bruit assourdissant qui Aveugle et rend les créatures qui le voient Confuses pendant 1 tour. Le Psyker n’est pas immunisé. |
+
+
+| Flétrissement | Guérison |
+| --- | --- |
+| Difficulté : 0 / Durée : Instantanée / Portée : Courte | Difficulté : -10 / Durée : Instantanée / Portée : Courte |
+| Résistance : - / R+ : Zone x2 | Résistance : - / R+ : Cible +1 ou Soins |
+| Une onde pestilentielle se répand dans la portée du pouvoir et fait mourir toutes les formes de vie végétale en quelques secondes. | Vous insufflez votre pouvoir pour raccommoder la chair et les os. La cible récupère *PSY* PV. |
+
+
+| Infliction de la douleur | Invocation de créatures |
+| --- | --- |
+| Difficulté : 0 / Durée : RU tours / Portée : Moyenne | Difficulté : 0 / Durée : RU tours / Portée : Moyenne |
+| Résistance : - / R+ : Cible +1 ou Durée x2 | Résistance : - / R+ : Les nuées ont PEUR (1) |
+| Vous infligez une douleur cuisante à une cible qui subit un malus de -10% à toutes ses actions pendant la durée du Pouvoir. | Vous faites sortir de terre, attirez ou invoquer une Nuée de vermines qui peut varier selon l’environnement et vous obéit pendant la durée du pouvoir avant de disparaître ou de s’éparpiller. |
+
+
+| Invocation d’objet | Malédiction mécanique |
+| --- | --- |
+| Difficulté : +20 / Durée : RU heures / Portée : Contact | Difficulté : 0 / Durée : RU tours / Portée : Moyenne |
+| Résistance : - / R+ : Durée x2 ou Flux d’énergie | Résistance : - / R+ : Bulle ou Durée x2 |
+| Le pouvoir permet d’inscrire une glyphe sur un objet. Pendant toute la durée du pouvoir, vous pouvez invoquer l’objet dans votre main d’une simple pensée ou le renvoyer à sa place initiale. Vous ne pouvez marquer qu’un objet à la fois. | Votre esprit se répand dans un appareil qui cesse de fonctionner pendant la durée du pouvoir. Il peut s’agir d’une arme. |
+
+
+| Résistance à la possession | Spasme |
+| --- | --- |
+| Difficulté : +10 / Durée : RU heures / Portée : Contact | Difficulté : -20 / Durée : RU tours / Portée : Moyenne |
+| Résistance : - / R+ : Flux d’énergie | Résistance : - / R+ : Cible +1 |
+| Vous érigez des barrières mentales pour vous protéger d’influences extérieures. Pendant la durée du pouvoir, vous obteniez un bonus de +20% pour résister à la possession d’un pouvoir psychique ou d’un démon. | Vous déclenchez de violents spasmes chez votre cible qui devient Paralysée pendant la durée du pouvoir. |
+
+
+#### Biomancie
+
+| Pouvoirs mineurs |
+| --- |
+| Belle figure : La cible gagne 1 Avantage aux tests de SOC pendant *PSY* tours.  Gonflement : Vous gonflez jusqu’à devenir beaucoup plus impressionnant. Vous gagnez +10% à tous vos tests d’intimidation.  Guérison cutanée : Ce pouvoir guérit instantanément les petits désagréments cutanés (boutons, verrues, rougeurs…) et permet de recouvrer une peau sans défaut. Ce sort ne fonctionne pas sur les furoncles issus de maladies graves comme la peste.  Malédiction mineure : Ce sort affuble une cible d’un inconvénient mineur : un zézaiement, des verrues, une odeur désagréable, une pilosité gênante, des boutons, etc. Ce qui lui cause une perte de 5% en SOC pendant *PSY* jours.  Solide comme un roc : La cible gagne 1 point de protection pendant *PSY* minutes. Ce point est à usage unique et disparaît dès qu’il a été utilisé.  Vision nocturne : Ce pouvoir vous confère pendant *PSY* minutes une vision nocturne qui vous prémunit des malus dus à l’obscurité. Ce sort est inutile dans le noir total. |
+
+
+| Accroissement sensoriel | Aspiration des toxines |
+| --- | --- |
+| Difficulté : +10 / Durée : RU heures / Portée : Contact | Difficulté : -10 / Durée : Instantanée / Portée : Contact |
+| Résistance : - / R+ : Flux d’énergie | Résistance : - / R+ : Soins |
+| Vous développez l’un des sens de votre cible de façon extraordinaire. Elle gagne un bonus de +20 en PER avec ce sens. Son regard peut voir à des distances très éloignées, percer les ténèbres, son ouïe ou son odorat peuvent devenir aussi efficaces que des capteurs biomécaniques. | Vous aspirez le poison de la chair d’une cible. Vous annulez les effets d’un venin, d’un poison ou d’une drogue, cependant, la cible devient Affaiblie jusqu’à pouvoir se reposer quelques heures. |
+
+
+| Bioéclair | Cicatrisation |
+| --- | --- |
+| Difficulté : 0 / Durée : Instantanée / Portée : Moyenne | Difficulté : -10 / Durée : Instantanée / Portée : Contact |
+| Résistance : MOU  / R+ : Dégâts +1 | Résistance : - / R+ : Cible +1 |
+| Des éclairs psychiques sortent des doigts du Psyker, infligeant RU+*PSY* dégâts électriques à la cible. | Vous modelez chair et os pour guérir les blessures de votre cible qui regagne RU+*PSY* PV. |
+
+
+| Contrôle cellulaire | Ébullition |
+| --- | --- |
+| Difficulté : 0 / Durée : RU heures / Portée : Contact | Difficulté : +10 / Durée : RU tours / Portée : Courtes |
+| Résistance : - / R+ : Effet +1 | Résistance : - / R+ : Cible +1 ou Durée x2 |
+| Vous modifier les fluides ou la structure cellulaire d’une cible pour, au choix :  - Développer une immunité à tous les poisons. - Développer une immunité aux températures extrêmes. - Accroître une caractéristique de +10% (sauf COM ou TIR). - Développer une immunité aux handicaps Affaibli, Essoufflé et Ensanglanté. - Développer une résistance au vide de l’espace (mais vous devez avoir de quoi respirer).  Vous pouvez relancer le pouvoir pour bénéficier de plusieurs effets. | Vous manipulez la pression artérielle et les palpitations des muscles de votre cible qui devient Essoufflée et Affaiblie pendant la durée du pouvoir. |
+
+
+| Étranglement | Poing d’acier |
+| --- | --- |
+| Difficulté : 0 / Durée : RU tours / Portée : Courte | Difficulté : +10 / Durée : RU minutes / Portée : Contact |
+| Résistance : END / R+ : Dégâts +1 | Résistance : - / R+ : Durée x2 |
+| Vous contractez la chair de votre adversaire qui devient Affaibli et subit *PSY* dégâts asphyxiants par tour. | Vous canalisez l’énergie du Warp dans vos membres. Vos poings deviennent des armes qui infligent *FOR*-1 dégâts pendant la durée du pouvoir. |
+
+
+| Régénération | Remodelage charnel |
+| --- | --- |
+| Difficulté : -20 / Durée : RU tours / Portée : Courte | Difficulté : -10 / Durée : RU heures / Portée : Contact |
+| Résistance : - / R+ : Durée x2 | Résistance : - / R+ : Durée x2 ou Effet +1 |
+| Le sommet de l’art des Biomanciens. Pendant la durée du pouvoir, la cible récupère *PSY* PV par tour. Ce pouvoir est capable de faire repousser les membres tranchés ou même de régénérer des organes. | Chair et volonté ne font plus qu’un. Vous pouvez choisir *PSY* options parmi celles-ci (les ailes comptent double) :  - Armure naturelle (Écailles, peau épaisse…) Protection : 2. - Armes naturelles (Crocs, griffes…) Dégâts : *FOR*-1. - Ailes : Permet de voler. - Branchies : Permet de respirer sous l’eau. - Nyctalopie : Permet de voir dans le noir. - Aspect terrifiant : PEUR (1). - Modification d’apparence : Permet de changer votre apparence. |
+
+
+#### Divination
+
+| Pouvoirs mineurs |
+| --- |
+| Aide-mémoire : La cible gagne 1 Avantage aux tests de CNS pendant *PSY* tours.  Connaissance du temps écoulé : Ce pouvoir a une double utilité : connaître l’âge d’une chose ou d’une personne, et connaître le temps exact qui s’est écoulé à partir d’un moment précis.  Mauvais oeil : La cible perd D10% pendant *PSY* heures dans une compétence au choix (sauf COM et PSY).  Présage : Ce pouvoir vous permet de lancer un d100 et de garder le résultat « en réserve » pendant une heure. Vous pourrez utiliser ce résultat (ou non) à un prochain test demandé par le MJ. Attention : si vous obtenez un double un revers de fortune vous fera perdre 1 PV. Vous ne pouvez lancer ce pouvoir qu’une fois par jour.  Vision de nuit : Ce tour vous confère pendant *PSY* minutes une vision nocturne qui vous prémunit des malus dus à l’obscurité. Ce sort est inutile dans le noir total.  Voir les démons invisibles : Vous pouvez voir les démons autour de vous pendant *PSY* minutes. Ainsi, les démons camouflés, déguisés ou bien qui possèdent un corps de mortel seront découverts. |
+
+
+| Aperçu | Clairvoyance |
+| --- | --- |
+| Difficulté : 0 / Durée : RU secondes / Portée : Contact | Difficulté : -10 / Durée : RU minutes / Portée : Spécial |
+| Résistance : - / R+ : Flux d’énergie | Résistance : - / R+ : Le pouvoir est si discret qu’il est impossible de repérer le Psyker |
+| Un flash, une vision de quelques secondes vous permet d’avoir un aperçu probable du futur. Cela peut être une métaphore comme une vision précise, à la discrétion du MJ. | En chassant toute distraction extérieure, vous focalisez votre esprit sur un objet ou une personne. Deux possibilités :  - Votre esprit peut rejoindre directement la cible pour l’espionner et inspecter son environnement. Mais un premier rôle peut ressentir qu’il est observé s’il réussit un test de VOL ou MAG (au choix du MJ).  - Vous pouvez projeter une image “aérienne” de votre cible sur une surface comme un bassin, un miroir ou un cristal, pour observer en toute sécurité et en faire profiter vos comparses.    Modificateurs :  Vous entretenez un lien étroit avec le sujet : 1 avantage.  Vous possédez un fragment du sujet : 1 avantage.  Sujet à moins de 100 mètres : 1 avantage. Sujet à plus de 500 mètres : 1 désavantage. |
+
+
+| Conscience surnaturelle | Esquive prémonitoire |
+| --- | --- |
+| Difficulté : +10 / Durée : RU heures / Portée : Courte | Difficulté : +10 / Durée : RU tours / Portée : Contact |
+| Résistance : - / R+ : Durée x2 | Résistance : - / R+ : Cible +1 |
+| Vous étendez vos sens bien au-delà de votre perception physique. Pendant la durée du sort, vous pouvez voir, sentir et entendre depuis n’importe quel angle dans la portée du pouvoir. Vous obtenez un bonus de +20% en PER pour tous vos tests de Vigilance. | Vous manipulez les probabilités pour vous mouvoir avec aisance au milieu des tirs et des coups. Vous obtenez un bonus de +20% en MOU pour éviter des tirs (même d’arme à feu) et pour employer la tactique En défense pendant la durée du pouvoir. |
+
+
+| Frappe prémonitoire | Prédiction |
+| --- | --- |
+| Difficulté : 0 / Durée : RU tours / Portée : Contact | Difficulté : -20 / Durée : Instantanée / Portée : Contact |
+| Résistance : - / R+ : Cible +1 | Résistance : - / R+ : 1 Avantage (Au choix) |
+| Vous observez votre avenir immédiat pour anticiper les mouvements de vos adversaires. Pendant la durée du pouvoir, vous obtenez un bonus de +10% en COM et en TIR. | Ce puissant pouvoir permet de rejouer entièrement une scène. En effet, toute la scène qui vient d’être jouée n’était qu’une vision d’une des possibilités du futur, une illusion.  Quand le joueur décide de lancer le sort, c’est que son personnage a déjà pris cette décision bien avant, en amont. Ainsi, la scène qui vient d’être jouée (un combat, une course-poursuite, une discussion…) n’a jamais existé et il faut la refaire depuis le départ.  On ne peut jeter ce sort plus d’une fois par mois sans subir le courroux du Destin (et perdre 1 point de Destin définitif). |
+
+
+| Psychométrie | Tir divin |
+| --- | --- |
+| Difficulté : +20 / Durée : Instantanée / Portée : Contact | Difficulté : -20 / Durée : Instantanée / Portée : Courte |
+| Résistance : - / R+ : Informations supplémentaires | Résistance : - / R+ : Dégâts +1 |
+| Vous parvenez à ressentir les traces psychiques et les émotions laissées sur un objet ou dans un lieu. Ces informations peuvent prendre la formes d’odeurs, de visions rapides et imprécises, de sons plus ou moins distincts.   Par exemple, il peut avoir une vague vision de la silhouette du propriétaire d’un objet ou bien entendre les hurlements des victimes dans une pièce où s’est déroulé un massacre, etc. | Vous insufflez votre esprit dans une arme afin de découvrir les trajectoires possibles de ses munitions. Le prochain tir unique de l’arme ne peut échouer d’aucune façon.  Le joueur se contente ainsi de lancer un D10 pour déterminer les dégâts. |
+
+
+| Vision à distance | Vision de l’âme |
+| --- | --- |
+| Difficulté : +10 / Durée : RU minutes / Portée : Spécial | Difficulté : +10 / Durée : RU minutes / Portée : Courte |
+| Résistance : - / R+ : 1 Avantage PER ou TIR | Résistance : - / R+ : Cible +1 |
+| Vous pouvez projeter votre regard à une distance de *PSY* kilomètres. Vous pouvez arrêter votre vision sur un détail ou un élément à étudier plus précisément. | Vous percevez les âmes de *PSY* personnes, révélant ainsi leur vraie nature. Les auras prennent la forme de flammes autour des corps, plus ou moins brillantes selon leur bonté. Vous lisez aussi leur état d’esprit actuel : gai, triste, en colère, mélancolique, affamé, envieux, apeuré, etc. |
+
+
+#### Pyromancie
+
+| Pouvoirs mineurs |
+| --- |
+| Chaleur apaisante : Une douce chaleur se répand pendant une heure autour de l’équipe (+1 point de SF pour tous, sauf s’il fait chaud ; Limité à une augmentation toutes les 24h).   Feux follets : Vous créez *PSY* lumières dansantes que vous dirigez à distance pendant une heure. Ces lumières ne brûlent pas, mais elles attirent l’attention.  Fumée sans feu : Une fumée (blanche, grise ou noire) s’échappe du sol et envahit peu à peu une zone de *PSY* mètres de rayon pendant une heure. Cela peut faire croire à un incendie ou l’oeuvre d’un démon.  Marque brûlante : Vous tracez des symboles ou des inscriptions sur une surface solide ou directement sur de la chair (1 dégât).  Regard de flammes : Vos yeux se mettent à brûler d’un éclat de flammes qui vous confère 1 Avantage en intimidation.  Torche : Vous formez une petite sphère de flammes dans votre main qui peut vous éclairer ou bien vous servir à allumer des feux. Si vous touchez une cible avec, elle subit 1 dégât. |
+
+
+| Extinction | Flash aveuglant |
+| --- | --- |
+| Difficulté : +10 / Durée : RU tours / Portée : Courte | Difficulté : -10 / Durée : RU tours / Portée : Courte |
+| Résistance : - / R+ : Durée x2 | Résistance : - / R+ : Flux d’énergie |
+| Vous étouffez toute flamme située dans la portée du sort. La zone vous suit et éteint aussitôt les flammes qui se retrouvent à l’intérieur.  Les armes lance-flammes sont également impactés. | Vous générez une explosion de lumière incandescente qui aveugle toutes les créatures dans la portée du pouvoir et qui peuvent la voir pendant la durée du pouvoir. Le Psyker n’est pas immunisé. |
+
+
+| Holocauste | Incandescence |
+| --- | --- |
+| Difficulté : -30 / Durée : RU tours / Portée : Courte | Difficulté : 0 / Durée : *PSY* tours / Portée : Moyenne |
+| Résistance : - / R+ : Dégâts +1 ou Zone x2 | Résistance : - / R+ : Dégâts +1 |
+| Vous invoquez une tempête de flammes destructrices, attisées par votre âme, qui brûlent à travers les dimensions. Toute personne située dans la portée du pouvoir subit RU+*PSY* dégâts de feu.  Vous pouvez maintenir le pouvoir jusqu’à RU tours. Chaque tour, les créatures encore dans la zone subissent *PSY* dégâts de feu. Cependant, vous subissez également 1 dégât par tour supplémentaire. Les flammes traversent les armures et brûlent les entités du Warp ou les créatures immatérielles. Aucune résistance ne s’applique.  Il faut réussir un test de VOL pour mettre fin au pouvoir prématurément. | Ce pouvoir chauffe une pièce de métal jusqu’à la rendre incandescente. Vous pouvez au choix : - Chauffer une lame qui infligera des dégâts de feu, et ajoutera 2 à ses dégâts. - Chauffer une pièce métallique (bijou, pièce d’amure…) qui fera se tordre de douleur son porteur qui subira 2 points de par tour tant qu’il ne l’aura pas retirée. |
+
+
+| Incinération | Maître des flammes |
+| --- | --- |
+| Difficulté : 0 / Durée : *PSY* tours / Portée : Moyenne | Difficulté : +10 / Durée : 1 heure / Portée : Longue |
+| Résistance : MOU / R+ : Dégâts +1 | Résistance : MOU / R+ : Dégâts +1 |
+| Vous commencez avec un premier test (sans modificateur de Résistance) afin de commencer à canaliser les molécules aux creux de vos mains. Lorsque vous le souhaitez, vous pouvez effectuer un second test (qui ne peut pas provoquer de phénomène psychique ou de péril du Warp) pour relâcher le rayon vers votre cible et lui infliger RU dégâts de feu.  Cependant, vous pouvez maintenir votre concentration et canaliser le pouvoir pendant toute sa durée. Les dégâts augmente de 2 chaque tour pendant lesquels vous le canalisez (Maximum +10). | Vous pouvez au choix : - Créer des effets pyrotechniques spectaculaires à partir d’un feu existant (formes dans la fumée ou les flammes, agrandissement d’une flamme, étincelles, petites explosions…). Si le feu touche une cible, elle subira *PSY* dégâts de feu.  - Éteindre un feu existant : un feu de camp s’éteint en un tour, un brasier en une minute, un grand incendie en une heure. |
+
+
+| Mur de feu | Poing ardent |
+| --- | --- |
+| Difficulté : 0 / Durée : RU minutes / Portée : Courte | Difficulté : +10 / Durée : RU minutes / Portée : Contact |
+| Résistance : - / R+ : Dégâts +1 | Résistance : - / R+ : Dégâts +1 ou Durée x2 |
+| Vous invoquez une barrière de feu de *PSY* mètres de long et de haut au maximum. Ceux qui le traversent encaissent automatiquement *PSY*+5 dégâts de feu. La chaleur qu’il dégage est insoutenable et cause *PSY* dégâts de feu par tour à tout individu à moins de 3 mètres. | Vos mains s’enflamment d’un brasier psychique. Vos attaques à mains nues infligent *PSY* dégâts de feu supplémentaires. |
+
+
+| Projectile de feu | Sécheresse |
+| --- | --- |
+| Difficulté : 0 / Durée : Instantanée / Portée : Extrême | Difficulté : 0 / Durée : Instantanée / Portée : Moyenne |
+| Résistance : MOU / R+ : Cible +1 | Résistance : END / R+ : Cible +1 |
+| Vous projetez de votre main un projectile d’énergie en fusion qui inflige à votre cible RU+6 dégâts de feu. | Vous pouvez au choix : - Assécher un lieu sur une zone de RU mètres de rayon. - Affaiblir une cible dont la peau se flétrit, et subit RU+2 dégâts que l’armure n’absorbe pas. Elle est Affaiblie jusqu’à ce qu’elle se réhydrate. |
+
+
+#### Télékinésie
+
+| Pouvoirs mineurs |
+| --- |
+| Ancrage mental : Vous figez un objet de *PSY* kilo, qui n’est pas tenu, dans sa position pendant 1 minute. Il faut réussir un test de FOR pour pouvoir le déplacer.  Bourrasque : Vous pouvez provoquer de faibles vagues d’énergie cinétique qui peuvent soulever une cape ou éteindre une petite flamme.   Lourdeur : La cible subit 1 Désavantage en MOU pendant *PSY* tours.  Main spectrale : Vous pouvez déplacer et manipuler un objet de *PSY* kilo dans une portée courte. L’objet ne peut pas être projeté avec violence.  Pied-léger : La cible gagne 1 Avantage en MOU pendant *PSY* tours.  Protection de force : La cible gagne 1 point de protection pendant *PSY* minutes. Ce point est à usage unique et disparaît dès qu’il a été utilisé. |
+
+
+| Armure psychique | Bouclier télékinétique |
+| --- | --- |
+| Difficulté : 0 / Durée : RU tours / Portée : Courte | Difficulté : 0 / Durée : RU tours / Portée : Courte |
+| Résistance : - / R+ : Cible +1 ou Durée x2 | Résistance : - / R+ : Cible +1 |
+| La cible du pouvoir reçoit *PSY* points de protection. | La cible du pouvoir est recouvert d’un champ de force télékinésique de RU+*PSY* PV. Le pouvoir cesse de faire effet une fois le bouclier détruit. |
+
+
+| Écrasement psychique | Flottement |
+| --- | --- |
+| Difficulté : -10 / Durée : Instantanée / Portée : Moyenne | Difficulté : +10 / Durée : RU tours / Portée : Contact |
+| Résistance : - / R+ : Dégâts +1 | Résistance : - / R+ : Durée x2 |
+| Vous écrasez votre cible sous une force cinétique qui lui inflige RU+8 dégâts. | Vous canalisez votre concentration pour vous élever dans les airs jusqu’à *PSY* mètres de haut. |
+
+
+| Lame psychique | Poussée |
+| --- | --- |
+| Difficulté : -10 / Durée : RU tours / Portée : Courte | Difficulté : +20 / Durée : Instantanée / Portée : Courte |
+| Résistance : - / R+ : Dégâts +1 | Résistance : FOR / R+ : Dégâts +1 |
+| Vous invoquez une lame d’énergie mentale qui flotte autour de vous. Pendant la durée du tour, vous pouvez l’utiliser pour combattre avec un test en opposition de PSY/COM.  La lame inflige RU+*PSY* dégâts et possède Perce-armure (3). | Vous projetez une vague d’énergie télékinétique vers votre cible qui est repoussée de RU mètres et subit *PSY* dégâts.  Si la cible est repoussée de 3 mètres, elle tombe à terre. |
+
+
+| Prison télékinétique | Projectile de force |
+| --- | --- |
+| Difficulté : -20 / Durée : RU tours / Portée : Courte | Difficulté : +10 / Durée : Instantanée / Portée : M0yenne |
+| Résistance : FOR / R+ : Cible +1 | Résistance : - / R+ : Dégâts +1 |
+| Vous enserrez votre cible avec une poigne télékinésique. Pendant la durée du pouvoir, la cible est paralysée. | Vous invoquez une force invisible au creux de vos mains avant de la relâcher vers votre cible pour lui infliger RU+2 dégâts. Si le pouvoir inflige 6 dégâts, la cible tombe à terre. |
+
+
+| Télékinésie | Télékinésie de précision |
+| --- | --- |
+| Difficulté : 0 / Durée : RU tours / Portée : Moyenne | Difficulté : -10 / Durée : RU minutes / Portée : Moyenne |
+| Résistance : MOU / R+ : Dégâts +1 ou Flux d’énergie | Résistance : - / R+ : Flux d’énergie |
+| Le Psyker peut soulever un objet, jusqu’à *PSY*x10 kilo. Il peut le déplacer ou le projeter avec force sur une cible pour lui infliger RU+*PSY* dégâts. | Pendant la durée du pouvoir, le Psyker peut utiliser PSY pour effectuer des tests de TEC. |
+
+
+#### Télépathie
+
+| Pouvoirs mineurs |
+| --- |
+| Bonne impression : Vous insufflez une impression de vous positive dans l’esprit de la cible. Vous gagnez 1 Avantage en SOC contre la cible pendant *PSY* tours.  Désagrément : Vous donnez une envie irrésistible à une cible (figurant ou second rôle) de bâiller, tousser, éternuer ou se gratter. Ce désagrément ne dure qu’une seconde, mais peut s’avérer précieux au bon moment. La cible agacée subit 1 Désavantage pour ce tour.  Murmures Warp : Vous faite retentir d’étranges murmures ou sons jusqu’à *PSY* mètres de vous.  Télépathie mineure : Vous pouvez communiquer dans l’esprit d’une personne mais vous êtes limité à une phrase courte. La personne peut vous répondre de la même manière.  Voix désincarnée  : Vous « projetez » votre voix à une dizaine de pas, et vous pouvez donc vous exprimer même si vous êtes bâillonné. Ce tour dure *PSY* minutes.  Lecture des émotions : Vous pouvez connaître l’état d’esprit d’une personne. Si elle est en colère, triste, joyeuse, etc. |
+
+
+| Choc psychique | Disparition |
+| --- | --- |
+| Difficulté : +10 / Durée : Instantanée / Portée : Longue | Difficulté : -20 / Durée : RU tours / Portée : Contact |
+| Résistance : VOL / R+ : Dégâts +1 | Résistance : - / R+ : Cible +1 ou Durée x2 |
+| Vous générez une pression mentale dans l’esprit de votre cible qui subit RU dégâts psychiques. | Vous faites disparaître toute trace de vous ou d’une autre personne de l’esprit de *PSY* cibles. Elle ne peut plus vous repérer ni vous percevoir d’aucune manière que ce soit.  Même en étant directement frappée, elle ne pourra pas vous repérer et regardera à travers vous. (Vous lui infligez donc des Attaques d’opportunités). |
+
+
+| Domination | Examen mental |
+| --- | --- |
+| Difficulté : 0 / Durée : RU minutes / Portée : Courte | Difficulté : -10 / Durée : RU minutes / Portée : Courte |
+| Résistance : VOL / R+ : Cible +1 | Résistance : VOL / R+ : Flux d’énergie |
+| Vous contrôlez une cible qui obéira au doigt et à l’oeil. Ce n’est pas un pantin et elle continue à agir de façon naturelle quand elle vous obéit. Elle ne commettra pas d’acte suicidaire ou d’automutilation, mais pourra attaquer un de ses alliés. Si elle est blessée, ce choc met immédiatement fin au sort. | Vous lisez les pensées de votre cible et découvrez immédiatement ce qu’elle pense au moment où vous posez votre question. |
+
+
+| Hurlement psychique | Impulsion |
+| --- | --- |
+| Difficulté : +10 / Durée :  *PSY* tours / Portée : Courte | Difficulté : +10 / Durée : Instantanée / Portée : Moyenne |
+| Résistance : FOR / R+ : Durée x2 | Résistance : VOL / R+ : Cible +1 |
+| Votre esprit se matérialise sous la forme d’une voix hurlante qui frappe les cibles devant vous, qui deviennent Sonnées pendant la durée du pouvoir. | Vous prononcez un ordre simple, qui tient en quelques mots, comme “Fuis”, “Lâche ton arme”.  La cible suivra la directive durant son prochain tour mais ne commettra pas d’actes suicidaires. |
+
+
+| Maître des bêtes | Projection |
+| --- | --- |
+| Difficulté : +10 / Durée : RU minutes / Portée : Longue | Difficulté : -20 / Durée : RU minutes / Portée : Spécial |
+| Résistance : VOL / R+ : Flux d’énergie | Résistance : - / R+ : Flux d’énergie |
+| Vous commandez un maximum de *PSY* animaux qui pourront se battre pour vous et qui vous obéiront au doigt et à l’oeil pendant toute la durée du sort. | Vous parvenez à séparer votre esprit de votre corps qui prendra une forme éthérée de votre choix.  Votre esprit se déplace à la vitesse de la pensée et peut se matérialiser dans le monde physique (bien qu’il soit toujours immatériel).   Durant la projection, votre corps est inconscient et vous ne le sentez plus.  Les attaques physiques ne font rien à votre esprit cependant, les créatures de l’Immaterium peuvent toujours l’atteindre. |
+
+
+| Télépathie | Terreur |
+| --- | --- |
+| Difficulté : 0 / Durée : RU heures / Portée : Courte | Difficulté : +10 / Durée : *PSY* tours / Portée : Courte |
+| Résistance : - / R+ : Cible +1 ou Flux d’énergie | Résistance : - / R+ : Cible +1 |
+| Vous lié les esprits consentants de *PSY* personnes dans la portée du pouvoir. Pendant toute la durée du pouvoir, les personnes liées peuvent communiquer télépathiquement entre elle, jusqu’à *PSY* kilomètres de distance. | La victime de ce maléfice hurle d’effroi : elle est Apeurée pour toute la durée du sort. Tous les personnages qui l’attaquent bénéficient de l’attaque d’opportunité. Elle pourra néanmoins riposter au prochain tour, car le choc lui aura fait reprendre ses esprits. |
+
+
+## Dangers psychiques
+
+### Phénomènes psychiques
+
+| 1D100 | Effets |
+| --- | --- |
+| 01-02 | Sombre pressentiment : Une brise légère souffle tout autour du Psyker et ceux qui l’entourent et tous ont l’intuition qu’une chose tragique vient d’arriver quelque part. Tout le monde perd 1 Point de SF. |
+| 03–05 | Écho du Warp : Des voix et des bruits étranges se mettent à résonner autour du Psyker pendant quelques secondes. |
+| 06–08 | Odeur éthérée : L’air autour du Psyker s’emplit d’une odeur ténue. Elle peut être agréable ou nauséabonde. |
+| 09–11 | Montée de paranoïa : Un frisson glisse le long des omoplates du Psyker. Il perd 1 Point de SF. |
+| 12–14 | Froid sépulcral : La température chute brutalement pendant quelques instants et une fine couche de givre recouvre les environs du Psyker. |
+| 15–17 | Aura d’étrangeté : Tous les animaux présents autour du Psyker se mettent à paniquer et prendre la fuite. |
+| 18–20 | Ver mémoriel : Toutes les personnes ayant le Psyker en ligne de vue oublient quelque chose sans importance. |
+| 21–23 | Rancissement : La nourriture et les boissons autour du Psyker se mettent à pourrir et à tomber en cendre. |
+| 24–26 | Brise inquiétante : Pendant quelques secondes, un vent modéré souffle autour du Psyker et projettent les objets légers dans les airs. |
+| 27–29 | Voile d'obscurité : Pendant *PSY* tours, toutes les créatures autour du Psyker (lui compris) ont l’impression d’être plongés dans l’obscurité et subissent 1 Désavantage à toutes leurs actions. |
+| 30–32 | Distorsion : Les miroirs autour du Psyker se brisent et les surface réfléchissantes se déforment. |
+| 33–35 | Essoufflement : Le Psyker et toutes les créatures autour de lui deviennent essoufflés pendant 1 tour. |
+| 36–38 | Masque démoniaque : Pendant *PSY* tours, le Psyker adopte une apparence démoniaque et obtient l’effet PEUR (1). |
+| 39–41 | Dépérissement surnaturel : Toutes les plantes flétrissent et meurent autour du Psyker. |
+| 42–44 | Bourrasque spectrale : Une violente bourrasque se lève et toutes les créatures autour du Psyker doivent réussir un test de FOR à +10 ou bien être jetés à terre. |
+| 45–47 | Larmes de sang : Du sang se met à suinter de la pierre et du bois, autour du Psyker. Si des statues ou des représentations humanoïdes se trouvent là, elles semblent pleurer des larmes de sang. |
+| 48–50 | Protestation tellurique : Le sol se met à trembler autour du Psyker. Toutes les créatures (le Psyker y compris), doivent réussir un test de MOU ou être jetés à terre. |
+| 51–53 | Décharge psy : L’air se remplit d’électricité statique qui hérisse les cheveux. Le Psyker s’élèvent jusqu’à *PSY* mètres dans les airs pendant quelques secondes avant de retomber. |
+| 54–56 | Fantômes du Warp : Des silhouettes et des manifestations spectrales apparaissent autour du Psyker. Toute personne qui en est témoin doit réussir un test de VOL ou perdre 2 points de SF. |
+| 57–59 | Chute vers le haut : La gravité autour du Psyker s’inverse. Toute chose qui se trouve autour de lui (Psyker compris), s’élèvent de dix mètres dans les airs pendant 1 tour. |
+| 60–62 | Hurlement de mort : Un braillement assourdissant résonne sur 1 kilomètre, faisant voler le verre en éclats et force toute créature (y compris le Psyker) à réussir un test de FOR ou bien être sonnés et assourdis pendant *PSY* tours. |
+| 63–65 | Déchaînement : Le Psyker est jeté au sol par des mains invisibles et est paralysé pendant *PSY* tours pendant que des bourrasques violentes frappent autour de lui. Toutes les personnes autour doivent réussir un test de FOR chaque tour ou bien être jetés à terre. |
+| 66–68 | Aperçu du Warp : Pendant une fraction de seconde, le décor change et tous les individus autour du Psyker ont une vision du Warp. Tout personnage (y compris le Psyker) doivent réussir un test de VOL à -10 ou perdre *PSY* points de SF (PSY du Psyker). |
+| 69–71 | Technodégoût : Cette débauche psychique fait horreur aux esprits de la machine. Tous les objets technologiques autour du Psyker tombent en panne et les armes à distance s’enrayent pendant *PSY* tours. |
+| 72–74 | Démence du Warp : Pendant *PSY* tours, toutes les créatures autour du Psyker (lui compris), sont terrorisés et perdent 5 point de SF. |
+| 75 et + | Périls du Warp : Le pouvoir du Psyker a engendré un maelstrom d’énergie  du Warp. Un péril du Warp se déclenche (D100 à lancer sur le tableau Périls du Warp). |
+
+
+### Périls du Warp
+
+| 1D100 | Effets |
+| --- | --- |
+| 01–05 | Bégaiement incontrôlé : Le Psyker hurle de douleur alors que les énergies du Warp traversent son esprit. Il doit réussir un test de VOL ou perdre *PSY* points de SF. |
+| 06–09 | Brûlure Warp : Une énergie crépitante travers les membres du Psyker qui subit 1 dégât de feu par tour pendant *PSY* tours. |
+| 10–13 | Concussion psychique : Un claquement d’énergie frappe le Psyker qui sombre dans l’inconscience pendant 3 tours. |
+| 14–18 | Psydéflagration : Une déflagration d’énergie psychique frappe le Psyker qui est projeté jusqu’à *PSY* mètres en l’air avant de retomber sur le sol avec fracas. (Il subit des dégâts de chute). |
+| 19–24 | Brûlure de l’âme : La puissance du Warp se répand dans le corps du Psyker et le brûle jusque dans son âme. Il subit *PSY* dégâts de feu et ne peut plus utiliser ses pouvoirs pendant 1 heure. |
+| 25–30 | Claustration : L’esprit du Psyker est enfermé dans une cage immatériel. Il tombe au sol dans un état catatonique pendant *PSY* tours. Il peut tenter un test de VOL chaque tour pour se libérer. |
+| 31–38 | Discontinuité temporelle : Le cours du temps se déforme autour du Psyker. Celui-ci disparaît du plan de l’existence et réapparaît 1 minute plus tard. |
+| 39–46 | Réflexion psychique : Le pouvoir du Psyker se retourne contre lui. Il subit les effets du pouvoir ou *PSY* dégâts psychiques si le pouvoir devait être bénéfique (les effets bénéfiques ne s’appliquent pas). |
+| 47–55 | Murmures du Warp : De sombres voix démoniaques retentissent autour du Psyker. Toutes les créatures présentent doivent réussir un test de VOL à -20 ou perdre RU points de SF. |
+| 56–61 | Damnation de la chair : Les énergies chaotique du Warp se répandent autour du Psyker. Une créature aléatoire subit 1 mutation. |
+| 62–67 | Sombre invocation : Un démon mineur rejoint ce plan d’existence dans les environs du Psyker pendant *PSY* tours ou jusqu’à être tué. Il exècre le Psyker et concentre ses efforts sur l’imbécile qui a eu la mauvaise idée de le pousser à se manifester. |
+| 68–72 | Tempête éthérée : Toutes les créatures conscientes (y compris le Psyker) dans les environs,  subissent *PSY*+2 dégâts qui ignore les armures. |
+| 73–78 | Pluie de sang : Un orage psychique éclate, couvrant les environs d’une pluie de sang et de violentes bourrasques. Mais surtout, tout pouvoir psychique utilisé engendre automatiquement 1 Péril du Warp. La tempête dure *PSY* tours. |
+| 79–82 | Déflagration cataclysmique : Une formidable déferlante d’énergie émerge du Psyker. Toutes créatures situées à 10 mètres du Psyker (lui y compris), subissent 10 dégâts. |
+| 83–86 | Possession de masse : L’esprit du Psyker forme un passage pour les démons. Il doit réussir un test de VOL à -20. En cas d’échec, les esprits des démons se répandent autour de lui et chaque personne présente perd 1 point de SF par tour pendant RU tours (Psyker compris). |
+| 87–90 | Les liens fragiles de la matière : La réalité se déforme et la gravité s’inverse. Toutes les créatures et tout objet non fixé au sol s'élèvent dans les airs pendant *PSY* tours, à une vitesse de 1 mètre par tour. |
+| 91–99 | Possédé : Le Psyker doit réussir un test de VOL à -30 ou devenir l’hôte d’un démon pendant RU tour. Il devient un Possédé qui attaque toute personne autour de lui. Si le Possédé est tué (mais que le Psyker survit) ou une fois l’hôte libéré, le Psyker pert *PSY* points de SF. |
+| 100 | Festin du Warp : Une faille s’ouvre dans la réalité et le Psyker est aspiré par le Warp. Son existence prend fin. |
+
+
+## La Vraie Foi
+Dans tous l’Imperium, il existe de nombreux cultes différents, cependant, la majorité ne font que donner des noms divers et variés à la seule divinité de l’Imperium. L’Empereur-Dieu.
+Et si tous se doivent de le vénérer, ils sont peu ceux qui ont la Vraie Foi et peuvent la manifester réellement. Car lorsque l’Empereur-Dieu entend ses véritables serviteurs, il écoute et répond.
+
+### Canaliser la Vraie Foi
+Nombreux sont ceux qui vénèrent l’Empereur-Dieu. Cependant, en canaliser les pouvoirs nécessite une croyance à toute épreuve et une volonté d’adamantium.
+Seul un personnage qui possède l’une des Vertues Généreux, Bienveillant, Valeureux, Chaste ou Loyal ou le Vice Colérique au niveau +2, peut utiliser le pouvoir de la Vraie Foi. Il doit également posséder un symbole religieux et, évidemment, il doit vouer une vénération absolue envers le culte impérial, prier tous les jours, suivre ses préceptes à la lettre. Généralement, il s’agit d’un membre de l’Adeptus Ministorum.
+Mais plus que tout, il ne doit jamais avoir été touché par la Corruption des Dieux Sombres.
+
+#### Manquer de Foi
+Si le personnage cesse d’agir selon les préceptes du Culte Impérial, qu’il manque de ferveur envers l’Empereur-Dieu, fais preuves d’actes immoraux… Il cesse de recevoir l’attention de l’Empereur-Dieu et ne peut plus manifester d’Actes de Foi tant qu’il n’aura pas prouvé à nouveau sa dévotion.
+
+#### Manifester un Acte de Foi
+Un personnage qui rempli les conditions requises peut tenter de manifester un Acte de Foi dont il a la connaissance.
+Pour cela, il doit passer deux tours complets à réciter les prières adéquates. Au bout du second tour, il peut effectuer un test de VOL. En cas de réussite, l’Acte de Foi se manifeste.
+Le Joueur peut gagner un bonus de +5% s’il prononce réellement une prière et interprète correctement sa demande.
+Miracles
+Les Miracles sont des Actes de Foi particulièrement puissants. Ils sont les plus belles et terribles manifestations de la Vraie Foi envers l’Empereur-Dieu. Un Miracle nécessite trois tours complets pour être manifestés.
+Limite journalière
+Un personnage ne peut manifester que *VOL*/2 Actes de Foi par jour. Au-delà, il subit un malus de -20%.
+
+#### Échouer à manifester un Acte de Foi
+Contrairement aux Pouvoirs psychiques et chaotiques du Warp, les conséquences en cas d’échec ne sont pas cataclysmiques.
+En cas d’échec, l’Acte de Foi ne se manifeste pas.
+En cas d’E+, l’Acte de Foi ne se manifeste pas mais en plus, l’Empereur-Dieu devient sourd aux prières du personnage pendant RU heures.
+
+### Actes de Foi
+
+#### Obtenir un Acte de Foi
+A la création, un personnage qui peut canaliser la Vraie Foi peut sacrifier 1 Point de Destin de manière définitive pour connaître 1 Acte de Foi.
+Par la suite, il faut payer 100 XP pour apprendre un Acte de Foi, à la manière des Pouvoirs Psy. L’apprentissage est aussi long et fastidieux. Le personnage doit prier, apprendre par coeur les sermons et les rites liés à cet Acte de Foi.
+
+#### Liste des Actes de Foi
+
+| Actes de Foi |
+| --- |
+| Bénédiction +10 Colère de l’Empereur 0 Esprit du Martyr 0 Divin guide -10 Lumière de l’Empereur -10 Passion -10 Amour de l’Empereur -20 Saint-vivant -30 |
+
+
+| Colère de l’Empereur | Divin guide |
+| --- | --- |
+| Difficulté : 0 / Durée : Instantanée / Portée : Moyenne | Difficulté : -10 / Durée : RU heures / Portée : Moyenne |
+| Résistance : MOU / R+ : Dégâts +1 | Résistance : - / R+ : Cible +1 ou Durée x2 |
+| En manifestant la colère de l’Empereur-Dieu, un projectile d’énergie radieuse frappe la cible de l’Acte de Foi qui subit RU+*VOL* dégâts. | L’Empereur-Dieu guide les pas de la cible de l’Acte de Foi. Elle reçoit un bonus de +20% à l’une de ses compétences (Sauf COM, PSY et TIR). |
+
+
+| Passion | Esprit du Martyr |
+| --- | --- |
+| Difficulté : -10 / Durée : RU tours / Portée : Courte | Difficulté : 0 / Durée : RU tours / Portée : Moyenne |
+| Résistance : - / R+ : Durée x2 | Résistance : - / R+ : Protection +1 |
+| La ferveur envahit la cible de l’Acte de Foi qui reçoit un bonus de +20% en COM ou TIR (au choix) pendant la durée de l’Acte. | Les coups et les projectiles semblent absorber ou dévier par une force supérieure qui protège la cible. Elle reçoit 2 point de Protection. |
+
+
+| Amour de l’Empereur (Miracle) | Lumière de l’Empereur |
+| --- | --- |
+| Difficulté : -20 / Durée : Instantanée / Portée : Contact | Difficulté : -10 / Durée : RU minutes / Portée : Extrême |
+| Résistance : - / R+ : Bulle | Résistance : - / R+ : Vous bénéficiez des bonus |
+| Une chaleur apaisante et sucrée comme le miel se répand dans le corps de la cible qui sent ses plaies se refermer, ses os se ressouder et ses membres perdues se régénérer alors qu’une lumière chaude semble provenir de son propre corps.  La cible guérit de RU+*VOL* PV. | Un halo de lumière émane du prêcheur. Tous les personnages alliés qui baignent dans cette lumière deviennent insensibles à la peur ou au découragement.  Ils gagnent également un bonus de +10% en COM et en TIR et infligent 2 dégâts supplémentaires. |
+
+
+| Bénédiction | Saint-Vivant (Miracle) |
+| --- | --- |
+| Difficulté : +10 / Durée : RU heures / Portée : Courte | Difficulté : -30 / Durée : RU tours / Portée : Courte |
+| Résistance : - / R+ : Cible +1 | Résistance : - / R+ : Durée x2 |
+| Le prêcheur canalise la foi impériale dans le métal d’une arme. Une arme bénie offre un bonus de +5% en COM ou TIR et infligent 1 dégât supplémentaire.  Les armes bénies peuvent atteindre les créatures immatérielles comme les démons. | La Volonté de l’Empereur-Dieu se manifeste physiquement en passant par le corps du Prêcheur qui illumine de lumière. Il obtient des ailes radieuses lui permettant de voler et obtient un bonus de +20% en COM et en TIR.  De plus, les créatures hérétiques et démoniaques subissent *VOL* dégâts par tour. |
+
+
+# WIP
+
+# Carrière
+Adeptus Administratum
+Adeptus Arbites
+Adeptus Mechanicus
+Adeptus Ministorum
+Astra Militarum
+Civils/Hors institution
+Agents, domestiques et fidèles
+Nobles et aristocrates
+Guerriers et bretteurs
+Mercenaire
+Gladiateur
+Garde du corps
+Érudits et savants
+Chirurgeon, Médecin
+Ingénieur
+Cartographe
+Etudiant
+Pègre
+Pirate
+Artisans, commerçants et manoeuvres
+Aubergiste/Barman
+Mécanicien
+Forgeron
+Manouvrier
+Paysans, marins et forestiers
+Paysan
+Membre d’équipage
+Chasseur
+Parias, gueux et traîne-misères
+Egoutier
+Prostitué
+Chasseur de vermines
+Officio Assassinorum
+Scholastica Psykana

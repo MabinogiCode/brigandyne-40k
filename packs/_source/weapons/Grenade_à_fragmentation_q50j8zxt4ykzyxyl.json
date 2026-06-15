@@ -1,0 +1,26 @@
+{
+  "_id": "q50j8zxt4ykzyxyl",
+  "name": "Grenade à fragmentation",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 5,
+    "reach": "C",
+    "hands": 1,
+    "range": 0,
+    "magazine": 0,
+    "ammoType": "-",
+    "price": 25,
+    "qualities": [
+      {
+        "key": "rayon",
+        "value": 5
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

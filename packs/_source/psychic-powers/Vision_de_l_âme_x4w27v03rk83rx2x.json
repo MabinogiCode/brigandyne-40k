@@ -1,0 +1,18 @@
+{
+  "_id": "x4w27v03rk83rx2x",
+  "name": "Vision de l’âme",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "divination",
+    "isMinor": false,
+    "difficulty": 10,
+    "duration": "RU minutes",
+    "range": "Courte",
+    "resistance": "-",
+    "rPlus": "Cible +1",
+    "damage": "",
+    "effect": "<p>Vous percevez les âmes de *PSY* personnes, révélant ainsi leur vraie nature. Les auras prennent la forme de flammes autour des corps, plus ou moins brillantes selon leur bonté. Vous lisez aussi leur état d’esprit actuel : gai, triste, en colère, mélancolique, affamé, envieux, apeuré, etc.</p>",
+    "source": "L1"
+  }
+}

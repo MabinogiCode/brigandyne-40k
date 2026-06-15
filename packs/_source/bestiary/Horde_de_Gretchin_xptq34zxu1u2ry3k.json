@@ -1,0 +1,87 @@
+{
+  "_id": "xptq34zxu1u2ry3k",
+  "name": "Horde de Gretchin",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "characteristics": {
+      "com": {
+        "value": 30,
+        "mod": 0
+      },
+      "cns": {
+        "value": 25,
+        "mod": 0
+      },
+      "dis": {
+        "value": 45,
+        "mod": 0
+      },
+      "end": {
+        "value": 45,
+        "mod": 0
+      },
+      "for": {
+        "value": 30,
+        "mod": 0
+      },
+      "tec": {
+        "value": 25,
+        "mod": 0
+      },
+      "psy": {
+        "value": 0,
+        "mod": 0
+      },
+      "mou": {
+        "value": 40,
+        "mod": 0
+      },
+      "per": {
+        "value": 25,
+        "mod": 0
+      },
+      "soc": {
+        "value": 25,
+        "mod": 0
+      },
+      "sur": {
+        "value": 25,
+        "mod": 0
+      },
+      "tir": {
+        "value": 25,
+        "mod": 0
+      },
+      "vol": {
+        "value": 30,
+        "mod": 0
+      }
+    },
+    "subtitle": "Une multitude de misérables petites créatures verdâtres, au regard vicieux et cruel.",
+    "faction": "xenos",
+    "pv": {
+      "value": 30,
+      "max": 30,
+      "bonus": 0
+    },
+    "sf": {
+      "value": 10,
+      "max": 10,
+      "bonus": 0
+    },
+    "initiative": {
+      "base": 8,
+      "mod": 0
+    },
+    "protection": {
+      "base": 0,
+      "mod": 0
+    },
+    "fear": 0,
+    "isSwarm": true,
+    "attacksText": "<p>Petites lames +1 / Automatik +4</p>",
+    "specialAbilities": "<p>- Attaque (TOUS). - Nuée.</p>",
+    "biography": "<p>Une multitude de misérables petites créatures verdâtres, au regard vicieux et cruel.</p>"
+  }
+}

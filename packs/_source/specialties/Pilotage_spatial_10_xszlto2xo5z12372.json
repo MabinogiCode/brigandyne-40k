@@ -1,0 +1,13 @@
+{
+  "_id": "xszlto2xo5z12372",
+  "name": "Pilotage spatial +10",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "effect": "Piloter des vaisseaux spatiaux, connaître les systèmes d’un vaisseau",
+    "description": "<p>Piloter des vaisseaux spatiaux, connaître les systèmes d’un vaisseau</p>",
+    "source": "L1"
+  }
+}

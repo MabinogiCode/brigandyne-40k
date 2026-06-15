@@ -1,0 +1,10 @@
+{
+  "_id": "xmk2nu3u13xwxx7l",
+  "name": "Compagnon animal",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

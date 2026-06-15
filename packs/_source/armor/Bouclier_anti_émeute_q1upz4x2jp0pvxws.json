@@ -1,0 +1,17 @@
+{
+  "_id": "q1upz4x2jp0pvxws",
+  "name": "Bouclier anti-émeute",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 2,
+    "coverage": "bonus",
+    "initiativeMod": -2,
+    "mouMod": -10,
+    "longToDon": false,
+    "qualities": [],
+    "specialText": "Couvert (2)",
+    "price": 45,
+    "source": "L1"
+  }
+}

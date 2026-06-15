@@ -1,0 +1,24 @@
+{
+  "_id": "xymqxn15t805rxjy",
+  "name": "Canons à fusion",
+  "type": "weapon",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "ship",
+    "damageBase": "flat",
+    "damageMod": 8,
+    "range": 300,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 12000,
+    "qualities": [
+      {
+        "key": "perceArmure",
+        "value": 4
+      }
+    ],
+    "specialText": "",
+    "source": "Vaisseau"
+  }
+}

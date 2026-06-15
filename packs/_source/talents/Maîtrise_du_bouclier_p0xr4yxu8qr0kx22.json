@@ -1,0 +1,10 @@
+{
+  "_id": "p0xr4yxu8qr0kx22",
+  "name": "Maîtrise du bouclier",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

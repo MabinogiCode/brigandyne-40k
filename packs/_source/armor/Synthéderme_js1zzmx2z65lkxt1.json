@@ -1,0 +1,17 @@
+{
+  "_id": "js1zzmx2z65lkxt1",
+  "name": "Synthéderme",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 4,
+    "coverage": "bonus",
+    "initiativeMod": 0,
+    "mouMod": 0,
+    "longToDon": true,
+    "qualities": [],
+    "specialText": "Longue à mettre, Peut se porter sous la plupart des armures",
+    "price": 750,
+    "source": "L1"
+  }
+}

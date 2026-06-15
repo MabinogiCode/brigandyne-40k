@@ -1,0 +1,11 @@
+{
+  "_id": "0v4z0zv3038prt8w",
+  "name": "Résistance aux maladies",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

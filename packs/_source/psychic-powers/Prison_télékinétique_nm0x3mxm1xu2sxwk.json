@@ -1,0 +1,18 @@
+{
+  "_id": "nm0x3mxm1xu2sxwk",
+  "name": "Prison télékinétique",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telekinesie",
+    "isMinor": false,
+    "difficulty": -20,
+    "duration": "RU tours",
+    "range": "Courte",
+    "resistance": "FOR",
+    "rPlus": "Cible +1",
+    "damage": "",
+    "effect": "<p>Vous enserrez votre cible avec une poigne télékinésique. Pendant la durée du pouvoir, la cible est paralysée.</p>",
+    "source": "L1"
+  }
+}

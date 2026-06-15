@@ -1,0 +1,11 @@
+{
+  "_id": "lsp4qo8407ml6600",
+  "name": "Fusil de précision",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

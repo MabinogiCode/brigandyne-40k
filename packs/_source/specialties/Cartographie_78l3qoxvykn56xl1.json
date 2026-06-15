@@ -1,0 +1,11 @@
+{
+  "_id": "78l3qoxvykn56xl1",
+  "name": "Cartographie",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

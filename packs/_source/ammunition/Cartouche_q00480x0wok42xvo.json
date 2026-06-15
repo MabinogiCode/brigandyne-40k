@@ -1,0 +1,12 @@
+{
+  "_id": "q00480x0wok42xvo",
+  "name": "Cartouche",
+  "type": "ammunition",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "ammoType": "Cartouche",
+    "effect": "",
+    "price": 2,
+    "source": "L1"
+  }
+}

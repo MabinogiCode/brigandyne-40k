@@ -1,0 +1,13 @@
+{
+  "_id": "v5uy531uqxywr5w0",
+  "name": "Astrogation +20",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 20,
+    "effect": "Savoir se repérer sur une carte spatiale, connaître les secteurs de la galaxie",
+    "description": "<p>Savoir se repérer sur une carte spatiale, connaître les secteurs de la galaxie</p>",
+    "source": "L1"
+  }
+}

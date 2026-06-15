@@ -1,0 +1,18 @@
+{
+  "_id": "jvo4t8x54oy6xxvy",
+  "name": "Invocation de créatures",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "RU tours",
+    "range": "Moyenne",
+    "resistance": "-",
+    "rPlus": "Les nuées ont PEUR (1)",
+    "damage": "",
+    "effect": "<p>Vous faites sortir de terre, attirez ou invoquer une Nuée de vermines qui peut varier selon l’environnement et vous obéit pendant la durée du pouvoir avant de disparaître ou de s’éparpiller.</p>",
+    "source": "L1"
+  }
+}

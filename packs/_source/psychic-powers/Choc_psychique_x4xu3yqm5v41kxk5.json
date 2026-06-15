@@ -1,0 +1,18 @@
+{
+  "_id": "x4xu3yqm5v41kxk5",
+  "name": "Choc psychique",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telepathie",
+    "isMinor": false,
+    "difficulty": 10,
+    "duration": "Instantanée",
+    "range": "Longue",
+    "resistance": "VOL",
+    "rPlus": "Dégâts +1",
+    "damage": "",
+    "effect": "<p>Vous générez une pression mentale dans l’esprit de votre cible qui subit RU dégâts psychiques.</p>",
+    "source": "L1"
+  }
+}

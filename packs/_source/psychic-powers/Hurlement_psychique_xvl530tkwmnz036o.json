@@ -1,0 +1,18 @@
+{
+  "_id": "xvl530tkwmnz036o",
+  "name": "Hurlement psychique",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telepathie",
+    "isMinor": false,
+    "difficulty": 10,
+    "duration": "*PSY* tours",
+    "range": "Courte",
+    "resistance": "FOR",
+    "rPlus": "Durée x2",
+    "damage": "",
+    "effect": "<p>Votre esprit se matérialise sous la forme d’une voix hurlante qui frappe les cibles devant vous, qui deviennent Sonnées pendant la durée du pouvoir.</p>",
+    "source": "L1"
+  }
+}

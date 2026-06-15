@@ -1,0 +1,27 @@
+{
+  "_id": "xyy533qxvps15k0y",
+  "name": "Croiseur léger",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "spatial",
+    "size": 4,
+    "maneuver": -10,
+    "speed": 0,
+    "places": 3500,
+    "pilotsMin": 30,
+    "pv": {
+      "value": 40,
+      "max": 40,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 4,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 250000,
+    "specialText": "",
+    "biography": ""
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_id": "xkrlu05xjousw0zo",
+  "name": "Combinaison composite",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 2,
+    "coverage": "bonus",
+    "initiativeMod": 0,
+    "mouMod": 0,
+    "longToDon": false,
+    "qualities": [],
+    "specialText": "Peut se porter sous la plupart des armures",
+    "price": 450,
+    "source": "L1"
+  }
+}

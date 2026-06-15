@@ -1,0 +1,11 @@
+{
+  "_id": "x0y4mv4x38zxvq10",
+  "name": "Pièges",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

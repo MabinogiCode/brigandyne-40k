@@ -1,0 +1,24 @@
+{
+  "_id": "xtkj223xr5r56w02",
+  "name": "Macrobatteries",
+  "type": "weapon",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "ship",
+    "damageBase": "flat",
+    "damageMod": 5,
+    "range": 200,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 6000,
+    "qualities": [
+      {
+        "key": "semiAutomatique",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Vaisseau"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "x2mv6o1x7q0pps23",
+  "name": "Couteau, Dague, Poignard",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "",
+    "damageBase": "for",
+    "damageMod": -1,
+    "reach": "E",
+    "hands": 1,
+    "range": 20,
+    "magazine": 0,
+    "ammoType": "",
+    "price": 5,
+    "qualities": [],
+    "specialText": "",
+    "source": "L1"
+  }
+}

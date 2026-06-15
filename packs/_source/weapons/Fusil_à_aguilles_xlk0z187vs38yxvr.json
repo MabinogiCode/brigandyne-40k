@@ -1,0 +1,26 @@
+{
+  "_id": "xlk0z187vs38yxvr",
+  "name": "Fusil à aguilles",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 3,
+    "reach": "C",
+    "hands": 1,
+    "range": 50,
+    "magazine": 12,
+    "ammoType": "Aiguille L",
+    "price": 150,
+    "qualities": [
+      {
+        "key": "poison",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

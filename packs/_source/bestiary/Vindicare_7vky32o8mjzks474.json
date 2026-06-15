@@ -1,0 +1,87 @@
+{
+  "_id": "7vky32o8mjzks474",
+  "name": "Vindicare",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "characteristics": {
+      "com": {
+        "value": 60,
+        "mod": 0
+      },
+      "cns": {
+        "value": 25,
+        "mod": 0
+      },
+      "dis": {
+        "value": 65,
+        "mod": 0
+      },
+      "end": {
+        "value": 60,
+        "mod": 0
+      },
+      "for": {
+        "value": 60,
+        "mod": 0
+      },
+      "tec": {
+        "value": 45,
+        "mod": 0
+      },
+      "psy": {
+        "value": 0,
+        "mod": 0
+      },
+      "mou": {
+        "value": 65,
+        "mod": 0
+      },
+      "per": {
+        "value": 75,
+        "mod": 0
+      },
+      "soc": {
+        "value": 25,
+        "mod": 0
+      },
+      "sur": {
+        "value": 25,
+        "mod": 0
+      },
+      "tir": {
+        "value": 80,
+        "mod": 0
+      },
+      "vol": {
+        "value": 70,
+        "mod": 0
+      }
+    },
+    "subtitle": "Armé de son fusil de précision, l’ombre attend patiemment sa cible.",
+    "faction": "imperium",
+    "pv": {
+      "value": 18,
+      "max": 18,
+      "bonus": 0
+    },
+    "sf": {
+      "value": 10,
+      "max": 10,
+      "bonus": 0
+    },
+    "initiative": {
+      "base": 19,
+      "mod": 0
+    },
+    "protection": {
+      "base": 4,
+      "mod": 0
+    },
+    "fear": 0,
+    "isSwarm": false,
+    "attacksText": "<p>Couteau de combat +5 / Fusil Exitus +6 / Pistolet Exitus +6</p>",
+    "specialAbilities": "<p>- Munitions Exitus : Une seule balle de chaque par mission. Balle perce-écran : Ignore les Résistances (dégâts physiques). Balle turbo-pénétrante : Ignore les armures. Balle feu d’enfer : -2 PV/tour jusqu’à la réussite d’un test d’END à -10.</p>",
+    "biography": "<p>Armé de son fusil de précision, l’ombre attend patiemment sa cible.</p>"
+  }
+}

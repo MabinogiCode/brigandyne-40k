@@ -1,0 +1,13 @@
+{
+  "_id": "x5zm3yrq3r6l1x27",
+  "name": "Arme lourde +5",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "martiale",
+    "bonus": 5,
+    "effect": "Tirer avec les armes lourdes comme des canons à plasma ou des Bolters lourds, les manipuler, les réparer",
+    "description": "<p>Tirer avec les armes lourdes comme des canons à plasma ou des Bolters lourds, les manipuler, les réparer</p>",
+    "source": "L1"
+  }
+}

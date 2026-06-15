@@ -1,0 +1,17 @@
+{
+  "_id": "x4q21sln32ruvxqk",
+  "name": "Passion",
+  "type": "faithAct",
+  "img": "icons/svg/angel.svg",
+  "system": {
+    "isMiracle": false,
+    "difficulty": -10,
+    "duration": "RU tours",
+    "range": "Courte",
+    "resistance": "-",
+    "rPlus": "Durée x2",
+    "damage": "",
+    "effect": "<p>La ferveur envahit la cible de l’Acte de Foi qui reçoit un bonus de +20% en COM ou TIR (au choix) pendant la durée de l’Acte.</p>",
+    "source": "L1"
+  }
+}

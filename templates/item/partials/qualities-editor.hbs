@@ -1,0 +1,15 @@
+{{!-- Éditeur de qualités d'armes/armures --}}
+<div class="qualities-editor">
+  <div class="section-head"><h4>Qualités</h4><button type="button" data-action="qualityAdd"><i class="fa-solid fa-plus"></i></button></div>
+  <ol class="qualities-list">
+    {{#each system.qualities as |q idx|}}
+      <li class="quality-row">
+        <select name="system.qualities.{{idx}}.key">
+          {{#each ../availableQualities as |aq|}}<option value="{{aq.key}}" {{#if (eq aq.key ../q.key)}}selected{{/if}}>{{localize aq.label}}</option>{{/each}}
+        </select>
+        <input type="number" name="system.qualities.{{idx}}.value" value="{{q.value}}" placeholder="—" />
+        <a data-action="qualityDelete" data-index="{{idx}}"><i class="fa-solid fa-trash"></i></a>
+      </li>
+    {{/each}}
+  </ol>
+</div>

@@ -1,0 +1,18 @@
+{
+  "_id": "s03knu5m1l0o1yn5",
+  "name": "Contrôle cellulaire",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "biomancie",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "RU heures",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "Effet +1",
+    "damage": "",
+    "effect": "<p>Vous modifier les fluides ou la structure cellulaire d’une cible pour, au choix : - Développer une immunité à tous les poisons. - Développer une immunité aux températures extrêmes. - Accroître une caractéristique de +10% (sauf COM ou TIR). - Développer une immunité aux handicaps Affaibli, Essoufflé et Ensanglanté. - Développer une résistance au vide de l’espace (mais vous devez avoir de quoi respirer). Vous pouvez relancer le pouvoir pour bénéficier de plusieurs effets.</p>",
+    "source": "L1"
+  }
+}

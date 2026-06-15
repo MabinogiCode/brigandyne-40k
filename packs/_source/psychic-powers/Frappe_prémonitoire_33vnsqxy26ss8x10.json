@@ -1,0 +1,18 @@
+{
+  "_id": "33vnsqxy26ss8x10",
+  "name": "Frappe prémonitoire",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "divination",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "RU tours",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "Cible +1",
+    "damage": "",
+    "effect": "<p>Vous observez votre avenir immédiat pour anticiper les mouvements de vos adversaires. Pendant la durée du pouvoir, vous obtenez un bonus de +10% en COM et en TIR.</p>",
+    "source": "L1"
+  }
+}

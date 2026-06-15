@@ -1,0 +1,30 @@
+{
+  "_id": "86py4tzm45yzxz4y",
+  "name": "Bâton de lumière (Tir)",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "xeno",
+    "damageBase": "flat",
+    "damageMod": 3,
+    "reach": "C",
+    "hands": 1,
+    "range": 30,
+    "magazine": 0,
+    "ammoType": "-",
+    "price": 0,
+    "qualities": [
+      {
+        "key": "perceArmure",
+        "value": 4
+      },
+      {
+        "key": "lourde",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Xéno"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "w1j301xnno837x1x",
+  "name": "Transporteur léger",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "terrestre",
+    "size": 3,
+    "maneuver": 0,
+    "speed": 0,
+    "places": 6,
+    "pilotsMin": 1,
+    "pv": {
+      "value": 35,
+      "max": 35,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 0,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 4000,
+    "specialText": "",
+    "biography": ""
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_id": "5021t8vu82jm4yos",
+  "name": "Aiguilles P/L",
+  "type": "ammunition",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "ammoType": "Aiguilles P/L",
+    "effect": "",
+    "price": 5,
+    "source": "L1"
+  }
+}

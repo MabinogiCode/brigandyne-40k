@@ -1,0 +1,24 @@
+{
+  "_id": "1ywz18y3ux4mp2rw",
+  "name": "Canon à fusion léger",
+  "type": "weapon",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "vehicle",
+    "damageBase": "flat",
+    "damageMod": 6,
+    "range": 40,
+    "magazine": 2,
+    "ammoType": "",
+    "price": 4500,
+    "qualities": [
+      {
+        "key": "perceArmure",
+        "value": 4
+      }
+    ],
+    "specialText": "",
+    "source": "Véhicule"
+  }
+}

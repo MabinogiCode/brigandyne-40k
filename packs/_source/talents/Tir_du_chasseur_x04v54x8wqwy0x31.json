@@ -1,0 +1,10 @@
+{
+  "_id": "x04v54x8wqwy0x31",
+  "name": "Tir du chasseur",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

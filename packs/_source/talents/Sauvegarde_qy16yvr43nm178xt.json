@@ -1,0 +1,10 @@
+{
+  "_id": "qy16yvr43nm178xt",
+  "name": "Sauvegarde",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

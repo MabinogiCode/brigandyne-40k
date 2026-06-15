@@ -1,0 +1,17 @@
+{
+  "_id": "161x1qos2zu85u0y",
+  "name": "Bouclier",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 1,
+    "coverage": "bonus",
+    "initiativeMod": -1,
+    "mouMod": -5,
+    "longToDon": false,
+    "qualities": [],
+    "specialText": "Couvert (1)",
+    "price": 30,
+    "source": "L1"
+  }
+}

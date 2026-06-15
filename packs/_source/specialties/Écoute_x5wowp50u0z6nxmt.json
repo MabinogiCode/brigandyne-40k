@@ -1,0 +1,11 @@
+{
+  "_id": "x5wowp50u0z6nxmt",
+  "name": "Écoute",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

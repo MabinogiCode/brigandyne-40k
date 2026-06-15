@@ -1,0 +1,27 @@
+{
+  "_id": "xz4rklvxu2mzq0l4",
+  "name": "Camion",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "terrestre",
+    "size": 4,
+    "maneuver": 0,
+    "speed": -1,
+    "places": 8,
+    "pilotsMin": 1,
+    "pv": {
+      "value": 40,
+      "max": 40,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 0,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 7500,
+    "specialText": "",
+    "biography": ""
+  }
+}

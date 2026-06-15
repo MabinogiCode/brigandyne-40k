@@ -1,0 +1,24 @@
+{
+  "_id": "40xxzwzwvoyzrw8w",
+  "name": "Obusier",
+  "type": "weapon",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "vehicle",
+    "damageBase": "flat",
+    "damageMod": 4,
+    "range": 80,
+    "magazine": 2,
+    "ammoType": "",
+    "price": 1500,
+    "qualities": [
+      {
+        "key": "rayon",
+        "value": 5
+      }
+    ],
+    "specialText": "",
+    "source": "Véhicule"
+  }
+}

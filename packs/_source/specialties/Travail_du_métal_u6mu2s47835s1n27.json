@@ -1,0 +1,11 @@
+{
+  "_id": "u6mu2s47835s1n27",
+  "name": "Travail du métal",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "_id": "85vrl5xqy2lxnq4z",
+  "name": "Ranger Skitarii",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "mechanicus",
+    "quote": "“Tuez les tous ! L’Omnimessie reconnaîtra les siens !”",
+    "advances": {
+      "com": 3,
+      "cns": 2,
+      "dis": 0,
+      "end": 3,
+      "for": 3,
+      "tec": 2,
+      "psy": 0,
+      "mou": 3,
+      "per": 1,
+      "soc": 0,
+      "sur": 0,
+      "tir": 3,
+      "vol": 4
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Arme (au choix)",
+      "Courage",
+      "Course",
+      "Pièges",
+      "Premiers soins",
+      "Réflexes",
+      "Résistance aux privations",
+      "Souffle",
+      "Stratégie",
+      "Technomaîtrise",
+      "Vigilance"
+    ],
+    "talents": [
+      "Agile",
+      "Arme fétiche",
+      "Coups précis",
+      "Coups puissants",
+      "Doué (END",
+      "MOU)",
+      "Port d’armure",
+      "Réflexes éclairs",
+      "Riposte",
+      "Sain d’esprit",
+      "Solidité",
+      "Tir précis",
+      "Tireur d’élite"
+    ],
+    "startingEquipment": "<p>Manteau de Skitarii, Carabine et 2 chargeurs complets, Augmentations : Organes bioniques, Jambe bionique x2</p>",
+    "description": "<p>Les Skitarii forment le bloc armé de l’Adeptus Mechanicus. Ils sont chargés de poursuivre la Quête du Savoir en avant-garde, d’accompagner les expéditions du Mechanicus, de protéger les Mondes-Forge de l’Imperium. Pour les Skitarii, chaque blessure est une nouvelle occasion de renforcer leurs augmentations.</p>",
+    "source": "L1"
+  }
+}

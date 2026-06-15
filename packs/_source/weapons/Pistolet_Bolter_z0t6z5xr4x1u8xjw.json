@@ -1,0 +1,30 @@
+{
+  "_id": "z0t6z5xr4x1u8xjw",
+  "name": "Pistolet Bolter",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 5,
+    "reach": "C",
+    "hands": 1,
+    "range": 30,
+    "magazine": 8,
+    "ammoType": "Bolt P",
+    "price": 500,
+    "qualities": [
+      {
+        "key": "perceArmure",
+        "value": 2
+      },
+      {
+        "key": "ignoreBoucliers",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

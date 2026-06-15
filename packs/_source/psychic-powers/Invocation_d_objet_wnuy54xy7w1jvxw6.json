@@ -1,0 +1,18 @@
+{
+  "_id": "wnuy54xy7w1jvxw6",
+  "name": "Invocation d’objet",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": false,
+    "difficulty": 20,
+    "duration": "RU heures",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "Durée x2 ou Flux d’énergie",
+    "damage": "",
+    "effect": "<p>Le pouvoir permet d’inscrire une glyphe sur un objet. Pendant toute la durée du pouvoir, vous pouvez invoquer l’objet dans votre main d’une simple pensée ou le renvoyer à sa place initiale. Vous ne pouvez marquer qu’un objet à la fois.</p>",
+    "source": "L1"
+  }
+}

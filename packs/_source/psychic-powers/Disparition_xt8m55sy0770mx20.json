@@ -1,0 +1,18 @@
+{
+  "_id": "xt8m55sy0770mx20",
+  "name": "Disparition",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telepathie",
+    "isMinor": false,
+    "difficulty": -20,
+    "duration": "RU tours",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "Cible +1 ou Durée x2",
+    "damage": "",
+    "effect": "<p>Vous faites disparaître toute trace de vous ou d’une autre personne de l’esprit de *PSY* cibles. Elle ne peut plus vous repérer ni vous percevoir d’aucune manière que ce soit. Même en étant directement frappée, elle ne pourra pas vous repérer et regardera à travers vous. (Vous lui infligez donc des Attaques d’opportunités).</p>",
+    "source": "L1"
+  }
+}

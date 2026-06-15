@@ -1,0 +1,18 @@
+{
+  "_id": "xkmo68lxv656tj83",
+  "name": "Aperçu",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "divination",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "RU secondes",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "Flux d’énergie",
+    "damage": "",
+    "effect": "<p>Un flash, une vision de quelques secondes vous permet d’avoir un aperçu probable du futur. Cela peut être une métaphore comme une vision précise, à la discrétion du MJ.</p>",
+    "source": "L1"
+  }
+}

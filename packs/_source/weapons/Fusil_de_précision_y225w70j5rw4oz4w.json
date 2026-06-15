@@ -1,0 +1,26 @@
+{
+  "_id": "y225w70j5rw4oz4w",
+  "name": "Fusil de précision",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 5,
+    "reach": "C",
+    "hands": 1,
+    "range": 400,
+    "magazine": 4,
+    "ammoType": "Balle L",
+    "price": 700,
+    "qualities": [
+      {
+        "key": "viseur",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "_id": "x74zr0rxzorplp47",
+  "name": "Guérison",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": false,
+    "difficulty": -10,
+    "duration": "Instantanée",
+    "range": "Courte",
+    "resistance": "-",
+    "rPlus": "Cible +1 ou Soins",
+    "damage": "",
+    "effect": "<p>Vous insufflez votre pouvoir pour raccommoder la chair et les os. La cible récupère *PSY* PV.</p>",
+    "source": "L1"
+  }
+}

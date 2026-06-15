@@ -1,0 +1,11 @@
+{
+  "_id": "zkwm5nx433yo0xk8",
+  "name": "Informatique",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

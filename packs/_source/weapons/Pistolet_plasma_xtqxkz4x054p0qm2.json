@@ -1,0 +1,34 @@
+{
+  "_id": "xtqxkz4x054p0qm2",
+  "name": "Pistolet plasma",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "",
+    "damageBase": "flat",
+    "damageMod": 6,
+    "reach": "C",
+    "hands": 1,
+    "range": 30,
+    "magazine": 8,
+    "ammoType": "Flasque P",
+    "price": 400,
+    "qualities": [
+      {
+        "key": "destruction",
+        "value": null
+      },
+      {
+        "key": "surchauffe",
+        "value": null
+      },
+      {
+        "key": "ignoreBoucliers",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "L1"
+  }
+}

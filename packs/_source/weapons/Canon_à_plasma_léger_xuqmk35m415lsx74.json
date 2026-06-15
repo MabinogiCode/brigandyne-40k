@@ -1,0 +1,32 @@
+{
+  "_id": "xuqmk35m415lsx74",
+  "name": "Canon à plasma léger",
+  "type": "weapon",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "vehicle",
+    "damageBase": "flat",
+    "damageMod": 6,
+    "range": 30,
+    "magazine": 3,
+    "ammoType": "",
+    "price": 4000,
+    "qualities": [
+      {
+        "key": "perceArmure",
+        "value": 2
+      },
+      {
+        "key": "destruction",
+        "value": null
+      },
+      {
+        "key": "surchauffe",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "source": "Véhicule"
+  }
+}

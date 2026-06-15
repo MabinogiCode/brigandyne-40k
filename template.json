@@ -1,0 +1,40 @@
+{
+  "Actor": {
+    "types": ["character", "npc", "vehicle"],
+    "character": {},
+    "npc": {},
+    "vehicle": {}
+  },
+  "Item": {
+    "types": [
+      "weapon",
+      "armor",
+      "ammunition",
+      "equipment",
+      "specialty",
+      "talent",
+      "species",
+      "career",
+      "psychicPower",
+      "faithAct",
+      "augmentation",
+      "mutation",
+      "criticalInjury",
+      "trait"
+    ],
+    "weapon": {},
+    "armor": {},
+    "ammunition": {},
+    "equipment": {},
+    "specialty": {},
+    "talent": {},
+    "species": {},
+    "career": {},
+    "psychicPower": {},
+    "faithAct": {},
+    "augmentation": {},
+    "mutation": {},
+    "criticalInjury": {},
+    "trait": {}
+  }
+}

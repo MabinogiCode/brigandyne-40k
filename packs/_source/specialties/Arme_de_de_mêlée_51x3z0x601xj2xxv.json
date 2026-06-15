@@ -1,0 +1,11 @@
+{
+  "_id": "51x3z0x601xj2xxv",
+  "name": "Arme de de mêlée",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

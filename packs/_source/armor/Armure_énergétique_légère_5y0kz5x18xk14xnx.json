@@ -1,0 +1,17 @@
+{
+  "_id": "5y0kz5x18xk14xnx",
+  "name": "Armure énergétique légère",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 5,
+    "coverage": "complete",
+    "initiativeMod": -1,
+    "mouMod": -5,
+    "longToDon": true,
+    "qualities": [],
+    "specialText": "Longue à mettre",
+    "price": 1500,
+    "source": "L1"
+  }
+}

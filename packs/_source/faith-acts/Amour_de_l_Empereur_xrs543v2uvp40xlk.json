@@ -1,0 +1,17 @@
+{
+  "_id": "xrs543v2uvp40xlk",
+  "name": "Amour de l’Empereur",
+  "type": "faithAct",
+  "img": "icons/svg/angel.svg",
+  "system": {
+    "isMiracle": true,
+    "difficulty": -20,
+    "duration": "Instantanée",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "Bulle",
+    "damage": "RU+VOL",
+    "effect": "<p>Une chaleur apaisante et sucrée comme le miel se répand dans le corps de la cible qui sent ses plaies se refermer, ses os se ressouder et ses membres perdues se régénérer alors qu’une lumière chaude semble provenir de son propre corps. La cible guérit de RU+*VOL* PV.</p>",
+    "source": "L1"
+  }
+}

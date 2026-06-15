@@ -1,0 +1,10 @@
+{
+  "_id": "226s42x58507sx0o",
+  "name": "Prudent",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

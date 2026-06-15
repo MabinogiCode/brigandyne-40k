@@ -1,0 +1,11 @@
+{
+  "_id": "x7776z7xlj13y0vy",
+  "name": "Charme",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Carrière"
+  }
+}

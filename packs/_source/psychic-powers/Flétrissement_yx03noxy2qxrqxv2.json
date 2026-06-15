@@ -1,0 +1,18 @@
+{
+  "_id": "yx03noxy2qxrqxv2",
+  "name": "Flétrissement",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": false,
+    "difficulty": 0,
+    "duration": "Instantanée",
+    "range": "Courte",
+    "resistance": "-",
+    "rPlus": "Zone x2",
+    "damage": "",
+    "effect": "<p>Une onde pestilentielle se répand dans la portée du pouvoir et fait mourir toutes les formes de vie végétale en quelques secondes.</p>",
+    "source": "L1"
+  }
+}

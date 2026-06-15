@@ -1,0 +1,27 @@
+{
+  "_id": "5t164pw1wjqz4uso",
+  "name": "Tout-terrain blindé",
+  "type": "vehicle",
+  "img": "icons/svg/cannon.svg",
+  "system": {
+    "vehicleType": "terrestre",
+    "size": 3,
+    "maneuver": 5,
+    "speed": 2,
+    "places": 10,
+    "pilotsMin": 1,
+    "pv": {
+      "value": 35,
+      "max": 35,
+      "bonus": 0
+    },
+    "protection": {
+      "base": 4,
+      "mod": 0
+    },
+    "resistance": true,
+    "price": 12000,
+    "specialText": "",
+    "biography": ""
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "_id": "ro241sywwm8y4l24",
+  "name": "Aspiration des toxines",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "biomancie",
+    "isMinor": false,
+    "difficulty": -10,
+    "duration": "Instantanée",
+    "range": "Contact",
+    "resistance": "-",
+    "rPlus": "Soins",
+    "damage": "",
+    "effect": "<p>Vous aspirez le poison de la chair d’une cible. Vous annulez les effets d’un venin, d’un poison ou d’une drogue, cependant, la cible devient Affaiblie jusqu’à pouvoir se reposer quelques heures.</p>",
+    "source": "L1"
+  }
+}

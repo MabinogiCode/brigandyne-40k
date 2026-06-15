@@ -1,0 +1,10 @@
+{
+  "_id": "rx2slwxx4kovqx23",
+  "name": "Panache",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Carrière"
+  }
+}

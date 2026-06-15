@@ -1,0 +1,26 @@
+{
+  "_id": "xy7my35xzsmtnk34",
+  "name": "Pistolet à impulsion",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "xeno",
+    "damageBase": "flat",
+    "damageMod": 4,
+    "reach": "C",
+    "hands": 1,
+    "range": 50,
+    "magazine": 50,
+    "ammoType": "Cellule de puissance",
+    "price": 0,
+    "qualities": [
+      {
+        "key": "perceArmure",
+        "value": 2
+      }
+    ],
+    "specialText": "",
+    "source": "Xéno"
+  }
+}
