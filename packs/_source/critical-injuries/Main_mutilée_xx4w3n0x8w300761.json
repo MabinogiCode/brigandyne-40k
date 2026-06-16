@@ -1,0 +1,14 @@
+{
+  "_id": "xx4w3n0x8w300761",
+  "name": "Main mutilée",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "location": "Bras",
+    "severity": 3,
+    "condition": "affaibli",
+    "effect": "<p>Doigts perdus : lâche son arme, 2 Désavantages de cette main.</p>",
+    "description": "<p>Doigts perdus : lâche son arme, 2 Désavantages de cette main.</p>",
+    "source": "Exemple"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "x10zrwyx52kxpw0x",
+  "name": "Hémorragie",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "location": "Torse",
+    "severity": 2,
+    "condition": "ensanglante",
+    "effect": "<p>Ensanglanté : −1 PV/tour jusqu'à un test de TEC (premiers soins).</p>",
+    "description": "<p>Ensanglanté : −1 PV/tour jusqu'à un test de TEC (premiers soins).</p>",
+    "source": "Exemple"
+  }
+}

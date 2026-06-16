@@ -1,0 +1,14 @@
+{
+  "_id": "xykj1kzxyx31z15y",
+  "name": "Tendons renforcés",
+  "type": "augmentation",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "augType": "systeme",
+    "location": "",
+    "effect": "Bonus de 10% pour les tests de force physique.",
+    "description": "<p>Bonus de 10% pour les tests de force physique.</p>",
+    "price": 1500,
+    "source": "L1"
+  }
+}

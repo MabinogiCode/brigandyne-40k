@@ -1,0 +1,18 @@
+{{!-- Carte de jet opposé --}}
+<div class="brigandyne-40k chat-card oppose-card">
+  <header class="card-header">
+    <h3 class="card-title"><i class="fa-solid fa-people-arrows"></i> Jet opposé</h3>
+  </header>
+  <div class="oppose-grid">
+    <div class="side {{#if (eq winner 'att')}}win{{/if}}">
+      <div class="who">{{attacker}}</div><div class="roll">{{attRoll}}</div><div class="deg">{{attDeg}}</div>
+    </div>
+    <div class="vs">VS</div>
+    <div class="side {{#if (eq winner 'def')}}win{{/if}}">
+      <div class="who">{{defender}}</div><div class="roll">{{defRoll}}</div><div class="deg">{{defDeg}}</div>
+    </div>
+  </div>
+  <div class="oppose-winner">
+    {{#if winnerName}}<i class="fa-solid fa-trophy"></i> <strong>{{winnerName}}</strong> l'emporte{{else}}Égalité — aucun vainqueur{{/if}}
+  </div>
+</div>

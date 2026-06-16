@@ -1,0 +1,14 @@
+{
+  "_id": "ox1413xxy3525x20",
+  "name": "Respirateur",
+  "type": "augmentation",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "augType": "systeme",
+    "location": "",
+    "effect": "Permet d’obtenir les effets d’un Respirateur standard qui n’a pas besoin d’être rechargé.",
+    "description": "<p>Permet d’obtenir les effets d’un Respirateur standard qui n’a pas besoin d’être rechargé.</p>",
+    "price": 750,
+    "source": "L1"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "xzky3j236z1jox66",
+  "name": "Unité d’Impulsion Mentale",
+  "type": "augmentation",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "augType": "systeme",
+    "location": "",
+    "effect": "Permet de connecter l’esprit humain à l’Esprit de la Machine qui habite chaque technologie de l’Imperium (grâce à des prières et des rituels). Réussir un test de VOL donne 1 Avantage aux tests fait avec l’objet technologique en question. En cas d’E+, l’Esprit est courroucé et octroie 1 Désavantage. L’Unité d’Impulsion Mentale peut également servir à ceux qui en sont équipés de lier leurs esprits, de partager des informations…",
+    "description": "<p>Permet de connecter l’esprit humain à l’Esprit de la Machine qui habite chaque technologie de l’Imperium (grâce à des prières et des rituels). Réussir un test de VOL donne 1 Avantage aux tests fait avec l’objet technologique en question. En cas d’E+, l’Esprit est courroucé et octroie 1 Désavantage. L’Unité d’Impulsion Mentale peut également servir à ceux qui en sont équipés de lier leurs esprits, de partager des informations…</p>",
+    "price": 5000,
+    "source": "L1"
+  }
+}

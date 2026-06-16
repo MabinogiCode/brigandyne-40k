@@ -1,0 +1,12 @@
+{
+  "_id": "px804w02j46nxo1p",
+  "name": "Murmures intérieurs",
+  "type": "mutation",
+  "img": "icons/svg/downgrade.svg",
+  "system": {
+    "mutationType": "fardeau",
+    "effect": "<p>Voix du Warp : −1 au Sang-Froid maximum.</p>",
+    "description": "<p>Voix du Warp : −1 au Sang-Froid maximum.</p>",
+    "source": "Exemple"
+  }
+}

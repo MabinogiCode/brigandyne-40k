@@ -1,0 +1,14 @@
+{
+  "_id": "xr8p4y5k85x73x20",
+  "name": "Vox implanté",
+  "type": "augmentation",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "augType": "prothese",
+    "location": "",
+    "effect": "Récepteur et émetteur Vox implantés autour de la bouche et des oreilles. Permet de communiquer avec d’autres Vox sur de très longues distances comme un vaisseau en orbite.",
+    "description": "<p>Récepteur et émetteur Vox implantés autour de la bouche et des oreilles. Permet de communiquer avec d’autres Vox sur de très longues distances comme un vaisseau en orbite.</p>",
+    "price": 2500,
+    "source": "L1"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "x0v1rmzxt121ulxo",
+  "name": "Armure subdermique",
+  "type": "augmentation",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "augType": "systeme",
+    "location": "",
+    "effect": "Augmente la protection de l’utilisateur de 1.",
+    "description": "<p>Augmente la protection de l’utilisateur de 1.</p>",
+    "price": 1500,
+    "source": "L1"
+  }
+}

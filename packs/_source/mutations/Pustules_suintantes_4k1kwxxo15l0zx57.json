@@ -1,0 +1,12 @@
+{
+  "_id": "4k1kwxxo15l0zx57",
+  "name": "Pustules suintantes",
+  "type": "mutation",
+  "img": "icons/svg/downgrade.svg",
+  "system": {
+    "mutationType": "fardeau",
+    "effect": "<p>Odeur pestilentielle : −10% en SOC.</p>",
+    "description": "<p>Odeur pestilentielle : −10% en SOC.</p>",
+    "source": "Exemple"
+  }
+}

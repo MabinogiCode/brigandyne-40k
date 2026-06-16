@@ -1,0 +1,12 @@
+{
+  "_id": "3uy8w2tr4171v5zt",
+  "name": "Constitution monstrueuse",
+  "type": "mutation",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "mutationType": "grace",
+    "effect": "<p>Carrure accrue : +2 PV.</p>",
+    "description": "<p>Carrure accrue : +2 PV.</p>",
+    "source": "Exemple"
+  }
+}

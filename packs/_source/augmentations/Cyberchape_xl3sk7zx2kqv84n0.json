@@ -1,0 +1,14 @@
+{
+  "_id": "xl3sk7zx2kqv84n0",
+  "name": "Cyberchape",
+  "type": "augmentation",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "augType": "prothese",
+    "location": "",
+    "effect": "Ossature de métal, de câbles et de transmetteurs à impulsions, fixée à la colonne vertébrale et à la cage thoracique, qui permet de doubler le nombre d’implants maximum du personnage avant de subir une Crise de folie.",
+    "description": "<p>Ossature de métal, de câbles et de transmetteurs à impulsions, fixée à la colonne vertébrale et à la cage thoracique, qui permet de doubler le nombre d’implants maximum du personnage avant de subir une Crise de folie.</p>",
+    "price": 6000,
+    "source": "L1"
+  }
+}

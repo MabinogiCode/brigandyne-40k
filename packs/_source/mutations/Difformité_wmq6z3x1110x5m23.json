@@ -1,0 +1,12 @@
+{
+  "_id": "wmq6z3x1110x5m23",
+  "name": "Difformité",
+  "type": "mutation",
+  "img": "icons/svg/downgrade.svg",
+  "system": {
+    "mutationType": "fardeau",
+    "effect": "<p>Apparence repoussante : −10% en SOC, +5% en intimidation.</p>",
+    "description": "<p>Apparence repoussante : −10% en SOC, +5% en intimidation.</p>",
+    "source": "Exemple"
+  }
+}

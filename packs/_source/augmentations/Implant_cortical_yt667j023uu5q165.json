@@ -1,0 +1,14 @@
+{
+  "_id": "yt667j023uu5q165",
+  "name": "Implant cortical",
+  "type": "augmentation",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "augType": "systeme",
+    "location": "",
+    "effect": "Bonus de +10% à tous les tests de connaissances ou de réflexions.",
+    "description": "<p>Bonus de +10% à tous les tests de connaissances ou de réflexions.</p>",
+    "price": 750,
+    "source": "L1"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "04x1ssz3y7k12lwq",
+  "name": "Augmentique scripturale",
+  "type": "augmentation",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "augType": "prothese",
+    "location": "",
+    "effect": "Un pack dorsal relié au crâne du personnage, équipé de plumes et d’outils d’écritures automatisés ainsi qu’un rouleau de parchemin de 5 mètres. L’Augmentique permet d’écrire automatiquement les pensées ou les paroles que le personnage entend ou prononce.",
+    "description": "<p>Un pack dorsal relié au crâne du personnage, équipé de plumes et d’outils d’écritures automatisés ainsi qu’un rouleau de parchemin de 5 mètres. L’Augmentique permet d’écrire automatiquement les pensées ou les paroles que le personnage entend ou prononce.</p>",
+    "price": 750,
+    "source": "L1"
+  }
+}

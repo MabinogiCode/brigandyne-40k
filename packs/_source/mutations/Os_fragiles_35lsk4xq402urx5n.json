@@ -1,0 +1,12 @@
+{
+  "_id": "35lsk4xq402urx5n",
+  "name": "Os fragiles",
+  "type": "mutation",
+  "img": "icons/svg/downgrade.svg",
+  "system": {
+    "mutationType": "fardeau",
+    "effect": "<p>Les dégâts physiques subis sont augmentés de 1.</p>",
+    "description": "<p>Les dégâts physiques subis sont augmentés de 1.</p>",
+    "source": "Exemple"
+  }
+}

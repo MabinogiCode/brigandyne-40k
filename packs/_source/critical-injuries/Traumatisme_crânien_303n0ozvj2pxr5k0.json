@@ -1,0 +1,14 @@
+{
+  "_id": "303n0ozvj2pxr5k0",
+  "name": "Traumatisme crânien",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "location": "Tête",
+    "severity": 3,
+    "condition": "confus",
+    "effect": "<p>Confus ; perd RU points de SF.</p>",
+    "description": "<p>Confus ; perd RU points de SF.</p>",
+    "source": "Exemple"
+  }
+}

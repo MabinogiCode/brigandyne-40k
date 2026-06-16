@@ -1,0 +1,14 @@
+{
+  "_id": "6jp2vu37ojzw213x",
+  "name": "Entaille au bras",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "location": "Bras",
+    "severity": 1,
+    "condition": "affaibli",
+    "effect": "<p>Le bras saigne : 1 Désavantage avec ce membre jusqu'aux soins.</p>",
+    "description": "<p>Le bras saigne : 1 Désavantage avec ce membre jusqu'aux soins.</p>",
+    "source": "Exemple"
+  }
+}

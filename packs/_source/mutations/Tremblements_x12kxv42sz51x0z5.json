@@ -1,0 +1,12 @@
+{
+  "_id": "x12kxv42sz51x0z5",
+  "name": "Tremblements",
+  "type": "mutation",
+  "img": "icons/svg/downgrade.svg",
+  "system": {
+    "mutationType": "fardeau",
+    "effect": "<p>1 Désavantage aux tests de TEC minutieux.</p>",
+    "description": "<p>1 Désavantage aux tests de TEC minutieux.</p>",
+    "source": "Exemple"
+  }
+}

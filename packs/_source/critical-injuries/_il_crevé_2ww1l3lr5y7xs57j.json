@@ -1,0 +1,14 @@
+{
+  "_id": "2ww1l3lr5y7xs57j",
+  "name": "Œil crevé",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "location": "Tête",
+    "severity": 3,
+    "condition": "aveugle",
+    "effect": "<p>Perte d'un œil : −10% aux tests basés sur la vue (définitif sans bionique).</p>",
+    "description": "<p>Perte d'un œil : −10% aux tests basés sur la vue (définitif sans bionique).</p>",
+    "source": "Exemple"
+  }
+}

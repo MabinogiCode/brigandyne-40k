@@ -1,0 +1,14 @@
+{
+  "_id": "x5mozswxw6vxsyl4",
+  "name": "Jambe cybernétique",
+  "type": "augmentation",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "augType": "prothese",
+    "location": "",
+    "effect": "Si les deux jambes sont équipées, votre MOU augmente de 20%.",
+    "description": "<p>Si les deux jambes sont équipées, votre MOU augmente de 20%.</p>",
+    "price": 1500,
+    "source": "L1"
+  }
+}

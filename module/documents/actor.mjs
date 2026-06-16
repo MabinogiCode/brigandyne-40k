@@ -3,6 +3,8 @@ import { BrigTest } from "../dice/roll.mjs";
 import { promptTest } from "../apps/test-dialog.mjs";
 import { postWarpResult } from "../data/warp-tables.mjs";
 
+const { renderTemplate } = foundry.applications.handlebars;
+
 /**
  * Document Acteur du système.
  */
@@ -201,8 +203,25 @@ export class BrigActor extends Actor {
     const pv = this.system.pv;
     if (!pv) return;
     const newVal = Math.max(0, pv.value - dmg);
+    const wasUp = pv.value > 0;
     await this.update({ "system.pv.value": newVal });
+    if (wasUp && newVal === 0) await this.drawCriticalInjury();
     return dmg;
+  }
+
+  /** Tire une blessure grave du compendium (déclenché à 0 PV). */
+  async drawCriticalInjury() {
+    const pack = game.packs.get("brigandyne-40k.critical-injuries");
+    if (!pack) return;
+    await pack.getIndex();
+    const list = pack.index.contents;
+    if (!list.length) return;
+    const pick = list[Math.floor(Math.random() * list.length)];
+    const doc = await pack.getDocument(pick._id);
+    const content = await renderTemplate("systems/brigandyne-40k/templates/chat/critical-card.hbs", {
+      actorName: this.name, name: doc.name, location: doc.system.location, effect: doc.system.effect
+    });
+    return ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor: this }), content });
   }
 
   /** Améliore une caractéristique de +5% en dépensant de l'XP. */
@@ -235,6 +254,33 @@ export class BrigActor extends Actor {
       [`system.characteristics.${key}.advances`]: (c.advances ?? 0) - 1,
       "system.xp.spent": Math.max(0, (this.system.xp.spent ?? 0) - refund)
     });
+  }
+
+  /** Apprend une spécialité ou un talent depuis le compendium, contre de l'XP. */
+  async learnAtout(kind) {
+    if (!this.system.xp) return;
+    const isTalent = kind === "talent";
+    const packKey = isTalent ? "brigandyne-40k.talents" : "brigandyne-40k.specialties";
+    const cost = isTalent ? BRIGANDYNE.advancement.talentCost : BRIGANDYNE.advancement.specialtyCost;
+    const pack = game.packs.get(packKey);
+    if (!pack) return ui.notifications?.warn("Compendium introuvable.");
+    await pack.getIndex();
+    const options = pack.index.contents.sort((a, b) => a.name.localeCompare(b.name))
+      .map(e => `<option value="${e._id}">${e.name}</option>`).join("");
+    const content = `<form class="brigandyne-40k">
+      <p>Coût : <strong>${cost} XP</strong> — disponible : <strong>${this.system.xp.available}</strong></p>
+      <div class="form-group"><label>${isTalent ? "Talent" : "Spécialité"}</label>
+      <select name="pick">${options}</select></div></form>`;
+    const id = await foundry.applications.api.DialogV2.prompt({
+      window: { title: isTalent ? "Apprendre un talent" : "Apprendre une spécialité", icon: "fa-solid fa-graduation-cap" },
+      content, ok: { label: "Apprendre", callback: (ev, btn) => btn.form.pick.value }, rejectClose: false
+    }).catch(() => null);
+    if (!id) return;
+    if ((this.system.xp.available ?? 0) < cost) return ui.notifications?.warn(game.i18n.format("BRIG.Warn.noXp", { cost }));
+    const doc = await pack.getDocument(id);
+    await this.createEmbeddedDocuments("Item", [doc.toObject()]);
+    await this.update({ "system.xp.spent": (this.system.xp.spent ?? 0) + cost });
+    ui.notifications?.info(game.i18n.format("BRIG.Info.learned", { name: doc.name, cost }));
   }
 
   /** Dépense un point de Destin. */

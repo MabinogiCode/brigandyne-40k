@@ -574,6 +574,76 @@ function importBestiary() {
 }
 
 /* ------------------------------------------------------------------ */
+/*  AUGMENTATIONS                                                      */
+/* ------------------------------------------------------------------ */
+function importAugmentations() {
+  const docs = [];
+  const section = sectionBetween(DOC1, /# Augmentations/, /# Véhicules et vaisseaux/);
+  let augType = "prothese";
+  for (const part of section.split(/^##\s+/m)) {
+    const head = clean(part.split("\n")[0]);
+    if (/Systèmes implantés/i.test(head)) augType = "systeme";
+    else if (/Prothèses|organes bioniques/i.test(head)) augType = "prothese";
+    for (const rows of tablesIn(part)) {
+      if (!rows.length || !/Modèle/i.test(rows[0][0])) continue;
+      for (const r of rows.slice(1)) {
+        const name = clean(r[0]);
+        if (!name) continue;
+        docs.push({
+          _id: makeId("aug", name), name, type: "augmentation", img: "icons/svg/biohazard.svg",
+          system: { augType, location: "", effect: clean(r[1]), description: `<p>${clean(r[1])}</p>`, price: parsePrice(r[2]) || 0, source: "L1" }
+        });
+      }
+    }
+  }
+  return writePack("augmentations", docs);
+}
+
+/* ------------------------------------------------------------------ */
+/*  MUTATIONS & BLESSURES GRAVES (jeux de départ)                      */
+/* ------------------------------------------------------------------ */
+function importMutations() {
+  const data = [
+    ["Chair d'acier", "grace", "La peau se durcit en plaques : +1 point de Protection naturelle."],
+    ["Regard perçant", "grace", "Yeux mutants : +10% aux tests de PER basés sur la vue."],
+    ["Membre atrophié", "grace", "Un bras supplémentaire : 1 Avantage pour saisir ou manipuler."],
+    ["Constitution monstrueuse", "grace", "Carrure accrue : +2 PV."],
+    ["Sens du prédateur", "grace", "Vision nocturne et odorat aiguisé."],
+    ["Glandes adrénales", "grace", "1×/scène, ignorez les malus de blessure pendant RU tours."],
+    ["Pustules suintantes", "fardeau", "Odeur pestilentielle : −10% en SOC."],
+    ["Tremblements", "fardeau", "1 Désavantage aux tests de TEC minutieux."],
+    ["Difformité", "fardeau", "Apparence repoussante : −10% en SOC, +5% en intimidation."],
+    ["Appétit corrompu", "fardeau", "Faim dévorante : test de VOL ou céder à une pulsion."],
+    ["Os fragiles", "fardeau", "Les dégâts physiques subis sont augmentés de 1."],
+    ["Murmures intérieurs", "fardeau", "Voix du Warp : −1 au Sang-Froid maximum."]
+  ];
+  const docs = data.map(([name, type, eff]) => ({
+    _id: makeId("mut", name), name, type: "mutation",
+    img: type === "grace" ? "icons/svg/upgrade.svg" : "icons/svg/downgrade.svg",
+    system: { mutationType: type, effect: `<p>${eff}</p>`, description: `<p>${eff}</p>`, source: "Exemple" }
+  }));
+  return writePack("mutations", docs);
+}
+
+function importCriticalInjuries() {
+  const data = [
+    ["Entaille au bras", "Bras", 1, "affaibli", "Le bras saigne : 1 Désavantage avec ce membre jusqu'aux soins."],
+    ["Jambe brisée", "Jambe", 2, "ralenti", "Ralenti jusqu'à immobilisation et soins (test de TEC à −10)."],
+    ["Commotion", "Tête", 2, "sonne", "Sonné ; 1 Désavantage aux tests mentaux pendant END heures."],
+    ["Œil crevé", "Tête", 3, "aveugle", "Perte d'un œil : −10% aux tests basés sur la vue (définitif sans bionique)."],
+    ["Hémorragie", "Torse", 2, "ensanglante", "Ensanglanté : −1 PV/tour jusqu'à un test de TEC (premiers soins)."],
+    ["Côtes fêlées", "Torse", 1, "essouffle", "Essoufflé ; 1 Désavantage aux efforts soutenus."],
+    ["Main mutilée", "Bras", 3, "affaibli", "Doigts perdus : lâche son arme, 2 Désavantages de cette main."],
+    ["Traumatisme crânien", "Tête", 3, "confus", "Confus ; perd RU points de SF."]
+  ];
+  const docs = data.map(([name, loc, sev, cond, eff]) => ({
+    _id: makeId("crit", name), name, type: "criticalInjury", img: "icons/svg/blood.svg",
+    system: { location: loc, severity: sev, condition: cond, effect: `<p>${eff}</p>`, description: `<p>${eff}</p>`, source: "Exemple" }
+  }));
+  return writePack("critical-injuries", docs);
+}
+
+/* ------------------------------------------------------------------ */
 /*  Exécution                                                          */
 /* ------------------------------------------------------------------ */
 fs.mkdirSync(OUT, { recursive: true });
@@ -587,7 +657,10 @@ const counts = {
   "faith-acts": importFaith(),
   careers: importCareers(),
   bestiary: importBestiary(),
-  vehicles: importVehicles()
+  vehicles: importVehicles(),
+  augmentations: importAugmentations(),
+  mutations: importMutations(),
+  "critical-injuries": importCriticalInjuries()
 };
 importAtouts();
 console.log("Terminé.");

@@ -1,0 +1,12 @@
+{
+  "_id": "40kwqzx57t02xx00",
+  "name": "Regard perçant",
+  "type": "mutation",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "mutationType": "grace",
+    "effect": "<p>Yeux mutants : +10% aux tests de PER basés sur la vue.</p>",
+    "description": "<p>Yeux mutants : +10% aux tests de PER basés sur la vue.</p>",
+    "source": "Exemple"
+  }
+}

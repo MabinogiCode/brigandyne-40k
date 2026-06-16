@@ -1,0 +1,14 @@
+{
+  "_id": "xsrn40w141xs2xyl",
+  "name": "Cardioproxy",
+  "type": "augmentation",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "augType": "systeme",
+    "location": "",
+    "effect": "Bonus de +20% pour résister à l’effet d’un poison ou d’un maladie.",
+    "description": "<p>Bonus de +20% pour résister à l’effet d’un poison ou d’un maladie.</p>",
+    "price": 1000,
+    "source": "L1"
+  }
+}

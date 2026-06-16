@@ -1,0 +1,14 @@
+{
+  "_id": "oxmp4sxuoryxmx5n",
+  "name": "Viscères augmentées",
+  "type": "augmentation",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "augType": "prothese",
+    "location": "",
+    "effect": "Améliore l’agencement des organes, réoriente les vaisseaux sanguins en cas de besoin. Confère 2 PV par installation (maximum 5 installations).",
+    "description": "<p>Améliore l’agencement des organes, réoriente les vaisseaux sanguins en cas de besoin. Confère 2 PV par installation (maximum 5 installations).</p>",
+    "price": 250,
+    "source": "L1"
+  }
+}

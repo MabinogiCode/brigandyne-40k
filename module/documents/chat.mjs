@@ -1,7 +1,9 @@
 import { BRIGANDYNE } from "../config/config.mjs";
 import { BrigTest } from "../dice/roll.mjs";
+import { CHARACTERISTIC_KEYS } from "../data/fields.mjs";
 
 const { renderTemplate } = foundry.applications.handlebars;
+const { DialogV2 } = foundry.applications.api;
 
 /** Branche les écouteurs sur les cartes de chat. */
 export function registerChatListeners() {
@@ -10,7 +12,51 @@ export function registerChatListeners() {
       b.addEventListener("click", () => onApplyDamage(message)));
     html.querySelectorAll("[data-action='destin-reroll']").forEach(b =>
       b.addEventListener("click", () => onDestinReroll(message, b)));
+    html.querySelectorAll("[data-action='oppose']").forEach(b =>
+      b.addEventListener("click", () => onOppose(message)));
   });
+}
+
+/** Dialogue : choisir la caractéristique d'opposition. */
+async function pickCharacteristic(defaultKey) {
+  const opts = CHARACTERISTIC_KEYS.map(k =>
+    `<option value="${k}" ${k === defaultKey ? "selected" : ""}>${game.i18n.localize(BRIGANDYNE.characteristics[k].label)}</option>`).join("");
+  return DialogV2.prompt({
+    window: { title: game.i18n.localize("BRIG.Oppose.title"), icon: "fa-solid fa-people-arrows" },
+    content: `<form class="brigandyne-40k"><div class="form-group"><label>${game.i18n.localize("BRIG.Oppose.resistWith")}</label><select name="c">${opts}</select></div></form>`,
+    ok: { label: game.i18n.localize("BRIG.Dialog.roll"), callback: (e, b) => b.form.c.value }, rejectClose: false
+  }).catch(() => null);
+}
+
+/** Jet opposé : l'utilisateur oppose son acteur au résultat de la carte. */
+async function onOppose(message) {
+  const flags = message.flags?.["brigandyne-40k"]; if (!flags) return;
+  const orig = flags.result, origTest = flags.test;
+  const actor = game.user.character || canvas.tokens?.controlled?.[0]?.actor || [...game.user.targets][0]?.actor;
+  if (!actor?.system?.characteristics) return ui.notifications?.warn(game.i18n.localize("BRIG.Warn.noOpposer"));
+  const key = await pickCharacteristic(origTest.characteristic);
+  if (!key) return;
+  const char = actor.system.characteristics[key];
+  const test = new BrigTest({
+    actorUuid: actor.uuid, label: game.i18n.localize("BRIG.Oppose.defense"), flavor: actor.name,
+    characteristic: key, base: char.total, rollType: "resist"
+  });
+  await test.roll(); await test.toMessage();
+
+  const a = orig, d = test.result;
+  let winner;
+  if (a.success && !d.success) winner = "att";
+  else if (!a.success && d.success) winner = "def";
+  else if (a.success && d.success) winner = a.tier !== d.tier ? (a.tier > d.tier ? "att" : "def") : (a.margin >= d.margin ? "att" : "def");
+  else winner = "none";
+
+  const content = await renderTemplate("systems/brigandyne-40k/templates/chat/oppose-card.hbs", {
+    attacker: origTest.label || game.i18n.localize("BRIG.Oppose.attacker"), defender: actor.name,
+    attRoll: a.total, attDeg: game.i18n.localize(BRIGANDYNE.degrees[a.degree].label),
+    defRoll: d.total, defDeg: game.i18n.localize(BRIGANDYNE.degrees[d.degree].label),
+    winner, winnerName: winner === "att" ? (origTest.label || game.i18n.localize("BRIG.Oppose.attacker")) : winner === "def" ? actor.name : null
+  });
+  ChatMessage.create({ speaker: message.speaker, content });
 }
 
 /** Lance un d10 explosif (le « 0 explosif » d'une réussite critique). */

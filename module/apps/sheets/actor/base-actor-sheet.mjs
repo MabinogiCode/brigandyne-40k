@@ -27,9 +27,12 @@ export class BrigActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       advanceChar: BrigActorSheet.#onAdvanceChar,
       refundChar: BrigActorSheet.#onRefundChar,
       vehicleManeuver: BrigActorSheet.#onVehicleManeuver,
-      vehicleFire: BrigActorSheet.#onVehicleFire
+      vehicleFire: BrigActorSheet.#onVehicleFire,
+      learnAtout: BrigActorSheet.#onLearnAtout
     }
   };
+
+  static #onLearnAtout(event, target) { this.actor.learnAtout(target.dataset.kind); }
 
   /** Trouve le personnage opérateur (personnage assigné ou jeton contrôlé). */
   _operator() {

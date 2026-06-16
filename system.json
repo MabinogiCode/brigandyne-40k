@@ -31,6 +31,14 @@
       "path": "lang/en.json"
     }
   ],
+  "fonts": {
+    "Cinzel": {
+      "editor": true,
+      "fonts": [
+        { "urls": ["systems/brigandyne-40k/assets/fonts/Cinzel.ttf"], "weight": 700, "style": "normal" }
+      ]
+    }
+  },
   "packs": [
     { "name": "weapons", "label": "Armes", "path": "packs/weapons", "type": "Item", "system": "brigandyne-40k", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
     { "name": "armor", "label": "Armures", "path": "packs/armor", "type": "Item", "system": "brigandyne-40k" },
@@ -42,11 +50,14 @@
     { "name": "psychic-powers", "label": "Pouvoirs psychiques", "path": "packs/psychic-powers", "type": "Item", "system": "brigandyne-40k" },
     { "name": "faith-acts", "label": "Actes de Foi", "path": "packs/faith-acts", "type": "Item", "system": "brigandyne-40k" },
     { "name": "bestiary", "label": "Bestiaire", "path": "packs/bestiary", "type": "Actor", "system": "brigandyne-40k" },
-    { "name": "vehicles", "label": "Véhicules", "path": "packs/vehicles", "type": "Actor", "system": "brigandyne-40k" }
+    { "name": "vehicles", "label": "Véhicules", "path": "packs/vehicles", "type": "Actor", "system": "brigandyne-40k" },
+    { "name": "augmentations", "label": "Augmentations", "path": "packs/augmentations", "type": "Item", "system": "brigandyne-40k" },
+    { "name": "mutations", "label": "Mutations", "path": "packs/mutations", "type": "Item", "system": "brigandyne-40k" },
+    { "name": "critical-injuries", "label": "Blessures graves", "path": "packs/critical-injuries", "type": "Item", "system": "brigandyne-40k" }
   ],
   "packFolders": [
     { "name": "Warhammer 40K : Brigandyne", "sorting": "m", "color": "#32404d", "packs": [
-      "weapons", "armor", "ammunition", "careers", "species", "specialties", "talents", "psychic-powers", "faith-acts", "bestiary", "vehicles"
+      "weapons", "armor", "ammunition", "augmentations", "careers", "species", "specialties", "talents", "psychic-powers", "faith-acts", "mutations", "critical-injuries", "bestiary", "vehicles"
     ] }
   ],
   "grid": {

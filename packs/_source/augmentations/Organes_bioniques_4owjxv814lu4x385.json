@@ -1,0 +1,14 @@
+{
+  "_id": "4owjxv814lu4x385",
+  "name": "Organes bioniques",
+  "type": "augmentation",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "augType": "prothese",
+    "location": "",
+    "effect": "Coeur, poumons ou encore estomac renforcés qui offrent un bonus de +20% en END.",
+    "description": "<p>Coeur, poumons ou encore estomac renforcés qui offrent un bonus de +20% en END.</p>",
+    "price": 1500,
+    "source": "L1"
+  }
+}

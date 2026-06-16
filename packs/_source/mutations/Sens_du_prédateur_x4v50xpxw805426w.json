@@ -1,0 +1,12 @@
+{
+  "_id": "x4v50xpxw805426w",
+  "name": "Sens du prédateur",
+  "type": "mutation",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "mutationType": "grace",
+    "effect": "<p>Vision nocturne et odorat aiguisé.</p>",
+    "description": "<p>Vision nocturne et odorat aiguisé.</p>",
+    "source": "Exemple"
+  }
+}

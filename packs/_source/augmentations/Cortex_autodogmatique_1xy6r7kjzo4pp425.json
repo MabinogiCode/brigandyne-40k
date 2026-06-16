@@ -1,0 +1,14 @@
+{
+  "_id": "1xy6r7kjzo4pp425",
+  "name": "Cortex autodogmatique",
+  "type": "augmentation",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "augType": "systeme",
+    "location": "",
+    "effect": "Nourris l’esprit d’un flot continu d’hymnes, de prières et saintes paroles. Bonus de +10% pour les tests de résistance à la contrainte ou à la peur.",
+    "description": "<p>Nourris l’esprit d’un flot continu d’hymnes, de prières et saintes paroles. Bonus de +10% pour les tests de résistance à la contrainte ou à la peur.</p>",
+    "price": 1000,
+    "source": "L1"
+  }
+}

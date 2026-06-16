@@ -1,0 +1,14 @@
+{
+  "_id": "m0qyxx3pql1vyvxz",
+  "name": "Côtes fêlées",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "location": "Torse",
+    "severity": 1,
+    "condition": "essouffle",
+    "effect": "<p>Essoufflé ; 1 Désavantage aux efforts soutenus.</p>",
+    "description": "<p>Essoufflé ; 1 Désavantage aux efforts soutenus.</p>",
+    "source": "Exemple"
+  }
+}

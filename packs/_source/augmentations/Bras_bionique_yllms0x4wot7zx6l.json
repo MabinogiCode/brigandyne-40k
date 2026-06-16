@@ -1,0 +1,14 @@
+{
+  "_id": "yllms0x4wot7zx6l",
+  "name": "Bras bionique",
+  "type": "augmentation",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "augType": "prothese",
+    "location": "",
+    "effect": "Votre FOR augmente de 10% par bras bionique. Un bras bionique est une arme : *FOR*-1.",
+    "description": "<p>Votre FOR augmente de 10% par bras bionique. Un bras bionique est une arme : *FOR*-1.</p>",
+    "price": 1000,
+    "source": "L1"
+  }
+}

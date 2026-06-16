@@ -1,0 +1,12 @@
+{
+  "_id": "twq8lzoxuxuq7rw4",
+  "name": "Glandes adrénales",
+  "type": "mutation",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "mutationType": "grace",
+    "effect": "<p>1×/scène, ignorez les malus de blessure pendant RU tours.</p>",
+    "description": "<p>1×/scène, ignorez les malus de blessure pendant RU tours.</p>",
+    "source": "Exemple"
+  }
+}

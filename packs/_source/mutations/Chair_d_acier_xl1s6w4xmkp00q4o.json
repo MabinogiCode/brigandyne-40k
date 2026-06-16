@@ -1,0 +1,12 @@
+{
+  "_id": "xl1s6w4xmkp00q4o",
+  "name": "Chair d'acier",
+  "type": "mutation",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "mutationType": "grace",
+    "effect": "<p>La peau se durcit en plaques : +1 point de Protection naturelle.</p>",
+    "description": "<p>La peau se durcit en plaques : +1 point de Protection naturelle.</p>",
+    "source": "Exemple"
+  }
+}

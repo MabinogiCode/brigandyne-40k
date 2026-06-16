@@ -1,0 +1,14 @@
+{
+  "_id": "x1not1zx1ytt8566",
+  "name": "Augmentation esthétique",
+  "type": "augmentation",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "augType": "prothese",
+    "location": "",
+    "effect": "Ornementations dorées, yeux lumineux, parties de corps chromées… Nombreux sont les ajouts qui servent à s’embellir. Surtout parmi la haute société. Les Augmentations esthétiques ne sont pas compris dans le maximum d’Augmentations qu’un personnage peut recevoir. De plus, chaque Augmentation esthétique octroie un bonus de +5% en SOC. (Pour un maximum de +20%).",
+    "description": "<p>Ornementations dorées, yeux lumineux, parties de corps chromées… Nombreux sont les ajouts qui servent à s’embellir. Surtout parmi la haute société. Les Augmentations esthétiques ne sont pas compris dans le maximum d’Augmentations qu’un personnage peut recevoir. De plus, chaque Augmentation esthétique octroie un bonus de +5% en SOC. (Pour un maximum de +20%).</p>",
+    "price": 750,
+    "source": "L1"
+  }
+}

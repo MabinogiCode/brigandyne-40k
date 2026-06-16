@@ -285,10 +285,18 @@
       "noDestin": "Aucun point de Destin disponible.",
       "notOwner": "Vous n'êtes pas propriétaire de cet acteur.",
       "noXp": "XP insuffisante (coût : {cost}).",
-      "noOperator": "Aucun personnage opérateur : assignez-vous un personnage ou sélectionnez un jeton."
+      "noOperator": "Aucun personnage opérateur : assignez-vous un personnage ou sélectionnez un jeton.",
+      "noOpposer": "Aucun acteur pour s'opposer : assignez-vous un personnage ou sélectionnez un jeton."
     },
     "Info": {
-      "advanced": "{char} améliorée (−{cost} XP)."
+      "advanced": "{char} améliorée (−{cost} XP).",
+      "learned": "{name} appris(e) (−{cost} XP)."
+    },
+    "Oppose": {
+      "title": "Jet opposé",
+      "resistWith": "Résister avec",
+      "defense": "Défense (jet opposé)",
+      "attacker": "Attaquant"
     },
     "Vehicle": {
       "maneuver": "Test de manœuvre",

@@ -1,0 +1,14 @@
+{
+  "_id": "32pux002xwo67415",
+  "name": "Jambe brisée",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "location": "Jambe",
+    "severity": 2,
+    "condition": "ralenti",
+    "effect": "<p>Ralenti jusqu'à immobilisation et soins (test de TEC à −10).</p>",
+    "description": "<p>Ralenti jusqu'à immobilisation et soins (test de TEC à −10).</p>",
+    "source": "Exemple"
+  }
+}

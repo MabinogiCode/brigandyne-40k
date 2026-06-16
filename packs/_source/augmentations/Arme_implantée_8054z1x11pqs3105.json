@@ -1,0 +1,14 @@
+{
+  "_id": "8054z1x11pqs3105",
+  "name": "Arme implantée",
+  "type": "augmentation",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "augType": "prothese",
+    "location": "",
+    "effect": "Permet d’implanter n’importe quelle arme dans un Bras bionique ou une Méchadendrite manipulatrice. Le prix correspond au prix de l’arme multiplié par 2. Nécessite un Bras bionique ou une Méchadendrite manipulatrice.",
+    "description": "<p>Permet d’implanter n’importe quelle arme dans un Bras bionique ou une Méchadendrite manipulatrice. Le prix correspond au prix de l’arme multiplié par 2. Nécessite un Bras bionique ou une Méchadendrite manipulatrice.</p>",
+    "price": 0,
+    "source": "L1"
+  }
+}

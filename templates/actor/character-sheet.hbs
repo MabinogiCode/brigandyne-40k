@@ -134,13 +134,13 @@
   <div class="tab {{#if (eq activeTab 'skills')}}active{{/if}}" data-tab="skills">
     <div class="two-col">
       <div class="items-section">
-        <div class="section-head"><h3>Spécialités</h3><button type="button" data-action="itemCreate" data-type="specialty"><i class="fa-solid fa-plus"></i></button></div>
+        <div class="section-head"><h3>Spécialités</h3><span><button type="button" data-action="learnAtout" data-kind="specialty" data-tooltip="Apprendre (XP)"><i class="fa-solid fa-graduation-cap"></i></button><button type="button" data-action="itemCreate" data-type="specialty"><i class="fa-solid fa-plus"></i></button></span></div>
         <ol class="items-list">
           {{#each items.specialty as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="rollItem" data-tooltip="Tester">{{i.name}}</span><span class="item-detail">+{{i.system.bonus}}</span><span class="item-controls"><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
         </ol>
       </div>
       <div class="items-section">
-        <div class="section-head"><h3>Talents</h3><button type="button" data-action="itemCreate" data-type="talent"><i class="fa-solid fa-plus"></i></button></div>
+        <div class="section-head"><h3>Talents</h3><span><button type="button" data-action="learnAtout" data-kind="talent" data-tooltip="Apprendre (XP)"><i class="fa-solid fa-graduation-cap"></i></button><button type="button" data-action="itemCreate" data-type="talent"><i class="fa-solid fa-plus"></i></button></span></div>
         <ol class="items-list">
           {{#each items.talent as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="itemEdit">{{i.name}}</span><span class="item-detail">{{i.system.usage}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
         </ol>

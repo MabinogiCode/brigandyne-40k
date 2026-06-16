@@ -1,0 +1,14 @@
+{
+  "_id": "5nwjr3xy4wx8lxjz",
+  "name": "Commotion",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "location": "Tête",
+    "severity": 2,
+    "condition": "sonne",
+    "effect": "<p>Sonné ; 1 Désavantage aux tests mentaux pendant END heures.</p>",
+    "description": "<p>Sonné ; 1 Désavantage aux tests mentaux pendant END heures.</p>",
+    "source": "Exemple"
+  }
+}
