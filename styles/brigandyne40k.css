@@ -104,8 +104,20 @@
 .brigandyne-40k input:focus, .brigandyne-40k select:focus, .brigandyne-40k textarea:focus {
   outline: none;
   border-color: var(--brig-gold);
-  box-shadow: 0 0 4px rgba(201,162,39,.4);
+  box-shadow: 0 0 4px rgba(142,167,192,.45);
 }
+/* Lisibilité des listes déroulantes ouvertes (option/optgroup) */
+.brigandyne-40k select option,
+.brigandyne-40k select optgroup {
+  background-color: #161d24;
+  color: var(--brig-ink);
+}
+.brigandyne-40k select optgroup {
+  font-weight: 700;
+  color: var(--brig-gold-2);
+  font-style: normal;
+}
+.brigandyne-40k select option { padding: 2px 4px; }
 .brigandyne-40k label { color: var(--brig-muted); font-size: .82rem; }
 
 /* ---------- Ressources d'en-tête ---------- */
@@ -340,10 +352,12 @@
 .brig-chargen-launch:hover { background: #3f5d7a; color: #fff; }
 
 /* ---------- Wizard (assistant multi-étapes) ---------- */
-.brigandyne-40k.char-gen.wizard .window-content,
-.brigandyne-40k.char-gen.wizard { background: linear-gradient(180deg, var(--brig-bg-2), var(--brig-bg)); color: var(--brig-ink); }
-.brigandyne-40k.wizard .wizard-body { display: flex; flex-direction: column; padding: .6rem; gap: .6rem; }
-.brigandyne-40k.wizard .wizard-layout { display: grid; grid-template-columns: 170px 1fr; gap: .8rem; min-height: 280px; }
+.brigandyne-40k.char-gen.wizard .window-content { background: linear-gradient(180deg, var(--brig-bg-2), var(--brig-bg)); color: var(--brig-ink); display: flex; flex-direction: column; padding: 0; }
+.brigandyne-40k.wizard .wizard-body { display: flex; flex-direction: column; padding: .8rem; gap: .8rem; flex: 1; min-height: 0; }
+.brigandyne-40k.wizard .wizard-layout { display: grid; grid-template-columns: 200px 1fr; gap: 1rem; flex: 1; min-height: 0; }
+.brigandyne-40k.wizard .wizard-content { overflow-y: auto; padding-right: .3rem; }
+.brigandyne-40k.wizard .wizard-content input, .brigandyne-40k.wizard .wizard-content select { padding: 4px 6px; }
+.brigandyne-40k.wizard .wizard-content label.block { gap: 3px; margin-bottom: .2rem; }
 .brigandyne-40k.wizard .wizard-stages { display: flex; flex-direction: column; gap: .35rem; border-right: 1px solid var(--brig-border); padding-right: .6rem; }
 .brigandyne-40k.wizard .stage {
   display: flex; align-items: center; gap: .5rem; text-align: left;

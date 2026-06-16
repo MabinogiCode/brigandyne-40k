@@ -1,0 +1,39 @@
+{
+  "_id": "xq00yqyxt3l304zv",
+  "name": "Artisan / Forgeron",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "feodal",
+    "quote": "",
+    "advances": {
+      "com": 0,
+      "cns": 1,
+      "dis": 0,
+      "end": 1,
+      "for": 2,
+      "tec": 3,
+      "psy": 0,
+      "mou": 0,
+      "per": 0,
+      "soc": 0,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Travail du métal",
+      "Estimation",
+      "Commerce"
+    ],
+    "talents": [
+      "Esprit de la Machine",
+      "Coup adroit",
+      "Solidité"
+    ],
+    "startingEquipment": "",
+    "description": "<p>Marteau et enclume, l'acier prend forme sous ses coups.</p>",
+    "source": "Brigandyne (adapté)"
+  }
+}

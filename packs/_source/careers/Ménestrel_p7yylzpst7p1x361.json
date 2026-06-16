@@ -1,0 +1,40 @@
+{
+  "_id": "p7yylzpst7p1x361",
+  "name": "Ménestrel",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "feodal",
+    "quote": "",
+    "advances": {
+      "com": 0,
+      "cns": 1,
+      "dis": 0,
+      "end": 0,
+      "for": 0,
+      "tec": 0,
+      "psy": 0,
+      "mou": 1,
+      "per": 1,
+      "soc": 3,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Musique et chant",
+      "Persuasion",
+      "Légendes",
+      "Renseignements"
+    ],
+    "talents": [
+      "Fascination",
+      "Panache",
+      "Musique et chant"
+    ],
+    "startingEquipment": "",
+    "description": "<p>Conteur, musicien et espion à ses heures.</p>",
+    "source": "Brigandyne (adapté)"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "x577tnuv00t20xn2",
+  "name": "Demi-plaques",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 4,
+    "coverage": "complete",
+    "initiativeMod": -2,
+    "mouMod": -5,
+    "qualities": [],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

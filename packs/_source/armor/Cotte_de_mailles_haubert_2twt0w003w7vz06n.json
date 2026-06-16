@@ -1,0 +1,16 @@
+{
+  "_id": "2twt0w003w7vz06n",
+  "name": "Cotte de mailles, haubert",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 3,
+    "coverage": "complete",
+    "initiativeMod": -2,
+    "mouMod": -5,
+    "qualities": [],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

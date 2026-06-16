@@ -1,0 +1,28 @@
+{
+  "_id": "x6pxw3r1zw7kpx41",
+  "name": "Arbalète lourde",
+  "type": "weapon",
+  "img": "icons/svg/thrown.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "fantasy",
+    "damageBase": "flat",
+    "damageMod": 6,
+    "range": 100,
+    "magazine": 0,
+    "hands": 2,
+    "qualities": [
+      {
+        "key": "chargement",
+        "value": 2
+      },
+      {
+        "key": "maniable",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

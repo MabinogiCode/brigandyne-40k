@@ -1,0 +1,16 @@
+{
+  "_id": "45or22071u6zzlvw",
+  "name": "Plastron de cuir",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 1,
+    "coverage": "partielle",
+    "initiativeMod": 0,
+    "mouMod": 0,
+    "qualities": [],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

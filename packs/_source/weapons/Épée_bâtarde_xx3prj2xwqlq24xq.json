@@ -1,0 +1,18 @@
+{
+  "_id": "xx3prj2xwqlq24xq",
+  "name": "Épée bâtarde",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": 0,
+    "reach": "B",
+    "hands": 1,
+    "qualities": [],
+    "specialText": "Dégâts à 2 mains : FOR+1",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

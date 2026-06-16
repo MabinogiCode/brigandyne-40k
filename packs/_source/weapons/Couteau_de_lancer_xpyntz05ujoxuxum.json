@@ -1,0 +1,19 @@
+{
+  "_id": "xpyntz05ujoxuxum",
+  "name": "Couteau de lancer",
+  "type": "weapon",
+  "img": "icons/svg/thrown.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": -1,
+    "range": 5,
+    "magazine": 0,
+    "hands": 1,
+    "qualities": [],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

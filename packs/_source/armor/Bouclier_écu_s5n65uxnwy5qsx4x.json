@@ -1,0 +1,16 @@
+{
+  "_id": "s5n65uxnwy5qsx4x",
+  "name": "Bouclier, écu",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 2,
+    "coverage": "bonus",
+    "initiativeMod": -1,
+    "mouMod": 0,
+    "qualities": [],
+    "specialText": "Couvert (1)",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

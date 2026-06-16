@@ -1,0 +1,24 @@
+{
+  "_id": "xu0o3syx3xj1ysxy",
+  "name": "Arbalète de poing",
+  "type": "weapon",
+  "img": "icons/svg/thrown.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "fantasy",
+    "damageBase": "flat",
+    "damageMod": 3,
+    "range": 20,
+    "magazine": 0,
+    "hands": 1,
+    "qualities": [
+      {
+        "key": "chargement",
+        "value": 2
+      }
+    ],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "x6rypjjzspqq5x52",
+  "name": "Fouet",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": -2,
+    "reach": "A",
+    "hands": 1,
+    "qualities": [
+      {
+        "key": "espace",
+        "value": null
+      },
+      {
+        "key": "degatsTemporaires",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

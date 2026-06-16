@@ -26,7 +26,7 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     this.step = 0;
     this.draft = {
       name: this.actor?.name ?? game.i18n.localize("BRIG.CharGen.defaultName"),
-      speciesId: null, careerId: null, role: this.actor?.system?.role ?? "secondRole",
+      speciesId: null, careerId: null, role: this.actor?.system?.role ?? "premierRole",
       chars: {}, details: { ...(this.actor?.system?.details ?? {}) }
     };
   }
@@ -34,7 +34,7 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
   static DEFAULT_OPTIONS = {
     tag: "form",
     classes: ["brigandyne-40k", "char-gen", "wizard"],
-    position: { width: 640, height: "auto" },
+    position: { width: 860, height: 600 },
     window: { title: "BRIG.CharGen.title", icon: "fa-solid fa-wand-magic-sparkles" },
     actions: {
       wizNext: BrigCharGen.#onNext,
@@ -58,9 +58,23 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
 
   async _prepareContext() {
     const sp = game.packs.get(PACK.species); await sp?.getIndex();
-    const ca = game.packs.get(PACK.careers); await ca?.getIndex();
+    const ca = game.packs.get(PACK.careers); await ca?.getIndex({ fields: ["system.faction"] });
     const species = sp ? sp.index.contents.map(e => ({ id: e._id, name: e.name })).sort((a, b) => a.name.localeCompare(b.name)) : [];
-    const careers = ca ? ca.index.contents.map(e => ({ id: e._id, name: e.name })).sort((a, b) => a.name.localeCompare(b.name)) : [];
+
+    // Carrières regroupées par faction (optgroup), dans l'ordre de la config
+    const careerGroups = [];
+    if (ca) {
+      const byFaction = {};
+      for (const e of ca.index) (byFaction[e.system?.faction || "civils"] ??= []).push({ id: e._id, name: e.name });
+      const pushGroup = (key, label) => {
+        if (byFaction[key]?.length) {
+          careerGroups.push({ key, label, careers: byFaction[key].sort((a, b) => a.name.localeCompare(b.name)) });
+          delete byFaction[key];
+        }
+      };
+      for (const [key, label] of Object.entries(BRIGANDYNE.factions)) pushGroup(key, game.i18n.localize(label));
+      for (const key of Object.keys(byFaction)) pushGroup(key, key); // factions hors config
+    }
 
     const speciesDoc = await this._packDoc(PACK.species, this.draft.speciesId);
     const careerDoc = await this._packDoc(PACK.careers, this.draft.careerId);
@@ -77,10 +91,10 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     const sf = 8 + b("vol");
 
     return {
-      noPacks: !species.length || !careers.length,
+      noPacks: !species.length || !careerGroups.length,
       stages: this.steps.map((id, i) => ({ id, i, active: i === this.step, done: i < this.step, label: game.i18n.localize(`BRIG.CharGen.step.${id}`) })),
       stepId: this.stepId, first: this.step === 0, last: this.step === this.steps.length - 1, editMode: !!this.actor,
-      draft: this.draft, species, careers, roles: BRIGANDYNE.roles,
+      draft: this.draft, species, careerGroups, roles: BRIGANDYNE.roles,
       speciesName: speciesDoc?.name, destin: speciesDoc?.system.destin,
       careerName: careerDoc?.name, lifestyle: careerDoc ? game.i18n.localize(BRIGANDYNE.lifestyles[careerDoc.system.lifestyle]?.label ?? "") : "",
       specialties: careerDoc?.system.specialties ?? [], talents: careerDoc?.system.talents ?? [],

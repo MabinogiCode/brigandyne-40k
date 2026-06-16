@@ -1,0 +1,16 @@
+{
+  "_id": "6z584vxo1vzx5xu1",
+  "name": "Casque (médiéval)",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 1,
+    "coverage": "bonus",
+    "initiativeMod": 0,
+    "mouMod": -5,
+    "qualities": [],
+    "specialText": "PER -5%",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

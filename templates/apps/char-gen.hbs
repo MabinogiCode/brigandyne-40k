@@ -23,7 +23,9 @@
           </label>
           <label>Carrière
             <select name="careerId" data-refresh><option value="">—</option>
-              {{#each careers}}<option value="{{id}}" {{#if (eq id ../draft.careerId)}}selected{{/if}}>{{name}}</option>{{/each}}
+              {{#each careerGroups}}<optgroup label="{{label}}">
+                {{#each careers}}<option value="{{id}}" {{#if (eq id ../../draft.careerId)}}selected{{/if}}>{{name}}</option>{{/each}}
+              </optgroup>{{/each}}
             </select>
           </label>
         </div>

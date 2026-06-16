@@ -1,0 +1,23 @@
+{
+  "_id": "ztym54xlvyxwnx5p",
+  "name": "Lance longue",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": 0,
+    "reach": "AA",
+    "hands": 2,
+    "qualities": [
+      {
+        "key": "charge",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

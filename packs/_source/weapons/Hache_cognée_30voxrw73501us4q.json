@@ -1,0 +1,18 @@
+{
+  "_id": "30voxrw73501us4q",
+  "name": "Hache, cognée",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": 0,
+    "reach": "C",
+    "hands": 1,
+    "qualities": [],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

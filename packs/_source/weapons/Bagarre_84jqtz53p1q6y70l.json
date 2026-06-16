@@ -1,0 +1,27 @@
+{
+  "_id": "84jqtz53p1q6y70l",
+  "name": "Bagarre",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": -3,
+    "reach": "F",
+    "hands": 1,
+    "qualities": [
+      {
+        "key": "saisie",
+        "value": null
+      },
+      {
+        "key": "degatsTemporaires",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "_id": "x00o408loq0v74vk",
+  "name": "Épée large, sabre",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": 0,
+    "reach": "C",
+    "hands": 1,
+    "qualities": [],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "xr3uy50xwp8ly114",
+  "name": "Masse d'armes",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": 0,
+    "reach": "C",
+    "hands": 1,
+    "qualities": [
+      {
+        "key": "choc",
+        "value": null
+      },
+      {
+        "key": "ignoreArmures",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

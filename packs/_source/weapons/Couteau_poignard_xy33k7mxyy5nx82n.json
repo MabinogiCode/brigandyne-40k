@@ -1,0 +1,18 @@
+{
+  "_id": "xy33k7mxyy5nx82n",
+  "name": "Couteau, poignard",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": -1,
+    "reach": "E",
+    "hands": 1,
+    "qualities": [],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

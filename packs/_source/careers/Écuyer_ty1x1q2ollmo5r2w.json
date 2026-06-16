@@ -1,0 +1,39 @@
+{
+  "_id": "ty1x1q2ollmo5r2w",
+  "name": "Écuyer",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "feodal",
+    "quote": "",
+    "advances": {
+      "com": 2,
+      "cns": 0,
+      "dis": 0,
+      "end": 1,
+      "for": 1,
+      "tec": 1,
+      "psy": 0,
+      "mou": 0,
+      "per": 0,
+      "soc": 1,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Arme de mêlée (au choix)",
+      "Équitation",
+      "Soins aux animaux",
+      "Étiquette"
+    ],
+    "talents": [
+      "Solidité",
+      "Dévoué serviteur"
+    ],
+    "startingEquipment": "",
+    "description": "<p>Au service d'un chevalier, en attendant l'adoubement.</p>",
+    "source": "Brigandyne (adapté)"
+  }
+}

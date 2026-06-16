@@ -1,0 +1,19 @@
+{
+  "_id": "8ww011x4k8z434xl",
+  "name": "Arc long",
+  "type": "weapon",
+  "img": "icons/svg/thrown.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": 0,
+    "range": 50,
+    "magazine": 0,
+    "hands": 2,
+    "qualities": [],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

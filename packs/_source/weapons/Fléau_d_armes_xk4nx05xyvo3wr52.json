@@ -1,0 +1,35 @@
+{
+  "_id": "xk4nx05xyvo3wr52",
+  "name": "Fléau d'armes",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": 1,
+    "reach": "C",
+    "hands": 1,
+    "qualities": [
+      {
+        "key": "espace",
+        "value": null
+      },
+      {
+        "key": "ignoreBoucliers",
+        "value": null
+      },
+      {
+        "key": "initiative",
+        "value": -1
+      },
+      {
+        "key": "risquee",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

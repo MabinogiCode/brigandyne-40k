@@ -574,6 +574,120 @@ function importBestiary() {
 }
 
 /* ------------------------------------------------------------------ */
+/*  CARRIÈRES DE BASE (mondes féodaux) — saisie manuelle               */
+/*  (PDF Livre 1 non extractible : accents perdus dans la police)      */
+/* ------------------------------------------------------------------ */
+function importBaseCareers() {
+  const KEYS = ["com", "cns", "dis", "end", "for", "tec", "psy", "mou", "per", "soc", "sur", "tir", "vol"];
+  const ADV = o => { const a = {}; for (const k of KEYS) a[k] = o[k] ?? 0; return a; };
+  // [nom, niveauDeVie, advances, spécialités, talents, description]
+  const data = [
+    ["Soldat", "ordinaire", { com: 3, for: 2, end: 2, tir: 1, vol: 1 }, ["Arme de mêlée (au choix)", "Arme à distance (au choix)", "Courage", "Discipline", "Vigilance"], ["Coups puissants", "Solidité", "Port d'armure", "Riposte"], "Un combattant entraîné au service d'un seigneur ou d'une armée."],
+    ["Mercenaire", "ordinaire", { com: 3, for: 2, end: 1, dis: 1, soc: 1 }, ["Arme de mêlée (au choix)", "Intimidation", "Marchandage", "Survie", "Jeu"], ["Coups précis", "Brute", "Sang-froid", "Esquive"], "Une lame à louer, fidèle à la bourse la mieux garnie."],
+    ["Garde / Milicien", "ordinaire", { com: 2, for: 2, end: 2, per: 2, vol: 1 }, ["Arme de mêlée (au choix)", "Fouille", "Intimidation", "Vigilance", "Premiers soins"], ["Solidité", "Gardien", "Inspiration"], "Le bras armé de la loi locale, lance et tabard."],
+    ["Chevalier", "aise", { com: 4, for: 3, end: 2, vol: 2, soc: 1 }, ["Arme de mêlée (au choix)", "Équitation", "Commandement", "Courage", "Noblesse et politique"], ["Maître d'armes", "Coups puissants", "Inspiration", "Port d'armure"], "Un noble combattant, monté et cuirassé, lié par un serment."],
+    ["Écuyer", "ordinaire", { com: 2, for: 1, end: 1, tec: 1, soc: 1 }, ["Arme de mêlée (au choix)", "Équitation", "Soins aux animaux", "Étiquette"], ["Solidité", "Dévoué serviteur"], "Au service d'un chevalier, en attendant l'adoubement."],
+    ["Paysan", "pauvre", { for: 2, end: 2, sur: 2, mou: 1 }, ["Milieu naturel", "Soins aux animaux", "Survie", "Athlétisme"], ["Résilience", "Solidité"], "Le dos courbé sur la terre, du lever au coucher du soleil."],
+    ["Chasseur", "ordinaire", { tir: 3, per: 2, dis: 2, sur: 2 }, ["Arme à distance (au choix)", "Pistage", "Déplacement silencieux", "Milieu naturel", "Pièges"], ["Tireur d'élite", "Tir précis", "Sixième sens"], "Traqueur silencieux des bois, l'arc toujours tendu."],
+    ["Voleur", "pauvre", { dis: 3, tec: 2, mou: 2, per: 1 }, ["Crochetage", "Déplacement silencieux", "Dissimulation d'objet", "Escalade", "Fouille"], ["Insaisissable", "Coup adroit", "Réflexes éclairs"], "Doigts agiles et conscience souple, l'ombre des ruelles."],
+    ["Marchand", "aise", { soc: 3, cns: 2, per: 1, vol: 1 }, ["Marchandage", "Estimation", "Commerce", "Persuasion", "Renseignements"], ["Relations", "Panache", "Confiance en soi"], "Caravanes et comptoirs : l'argent ne dort jamais."],
+    ["Artisan / Forgeron", "ordinaire", { tec: 3, for: 2, cns: 1, end: 1 }, ["Travail du métal", "Estimation", "Commerce"], ["Esprit de la Machine", "Coup adroit", "Solidité"], "Marteau et enclume, l'acier prend forme sous ses coups."],
+    ["Ménestrel", "ordinaire", { soc: 3, mou: 1, per: 1, cns: 1 }, ["Musique et chant", "Persuasion", "Légendes", "Renseignements"], ["Fascination", "Panache", "Musique et chant"], "Conteur, musicien et espion à ses heures."],
+    ["Érudit", "aise", { cns: 4, tec: 1, per: 1, vol: 1 }, ["Lettres", "Histoire", "Langue étrangère", "Astrologie", "Légendes"], ["Mémoire sans faille", "Doué (CNS)", "Calme"], "Le nez dans les grimoires, gardien du savoir."],
+    ["Rebouteux / Médecin", "ordinaire", { tec: 2, cns: 2, per: 2, soc: 1 }, ["Premiers soins", "Médecine", "Potions et remèdes", "Botanique", "Intuition"], ["Mains blanches", "Guérison rapide", "Calme"], "Sait recoudre une plaie et préparer un remède."],
+    ["Noble", "riche", { soc: 3, vol: 2, cns: 1, com: 1 }, ["Étiquette", "Commandement", "Persuasion", "Noblesse et politique", "Équitation"], ["Relations", "Inspiration", "Panache", "Confiance en soi"], "Né dans la soie, habitué à commander."],
+    ["Marin", "pauvre", { mou: 2, for: 2, end: 2, tec: 1, sur: 1 }, ["Navigation", "Escalade", "Athlétisme", "Survie", "Jeu"], ["Endurci", "Sang-froid", "Solidité"], "Le pied marin et le couteau facile."],
+    ["Éclaireur", "ordinaire", { mou: 2, per: 2, dis: 2, sur: 2, tir: 1 }, ["Pistage", "Orientation", "Déplacement silencieux", "Milieu naturel", "Vigilance"], ["Sixième sens", "Insaisissable", "Instinct de survie"], "Les yeux et les oreilles de la troupe en terrain hostile."]
+  ];
+  const docs = data.map(([name, lifestyle, adv, specialties, talents, desc]) => ({
+    _id: makeId("bcareer", name), name, type: "career", img: "icons/svg/book.svg",
+    system: { faction: "feodal", quote: "", advances: ADV(adv), lifestyle, specialties, talents, startingEquipment: "", description: `<p>${desc}</p>`, source: "Brigandyne (adapté)" }
+  }));
+  appendPack("careers", docs);
+  return docs.length;
+}
+
+/* ------------------------------------------------------------------ */
+/*  ÉQUIPEMENT FANTASY (Brigandyne médiéval — écran MJ)                */
+/* ------------------------------------------------------------------ */
+const RANGE_M = { Contact: 1, Courte: 5, Moyenne: 20, Longue: 50, Extrême: 100 };
+function importFantasyEquipment() {
+  const melee = [
+    ["Bagarre", "*FOR*-3", "F", 1, "Saisie, Dégâts temporaires"],
+    ["Couteau, poignard", "*FOR*-1", "E", 1, ""],
+    ["Dague", "*FOR*-1", "D", 1, ""],
+    ["Épée bâtarde", "*FOR*", "B", 1, "Dégâts à 2 mains : FOR+1"],
+    ["Épée courte", "*FOR*-1", "C", 1, "Corps-à-corps"],
+    ["Épée large, sabre", "*FOR*", "C", 1, ""],
+    ["Épée longue", "*FOR*", "B", 1, ""],
+    ["Espadon, flamberge", "*FOR*+2", "A", 2, "Espace, Initiative -1"],
+    ["Rapière", "*FOR*", "B", 1, "Point faible"],
+    ["Gourdin", "*FOR*-2", "C", 1, "Choc"],
+    ["Hachette", "*FOR*-1", "D", 1, ""],
+    ["Hache, cognée", "*FOR*", "C", 1, ""],
+    ["Hache de guerre", "*FOR*+2", "C", 1, "Initiative -1"],
+    ["Marteau de guerre", "*FOR*", "C", 1, "Choc, Destruction"],
+    ["Masse d'armes", "*FOR*", "C", 1, "Choc, Ignore armures souples"],
+    ["Fléau d'armes", "*FOR*+1", "C", 1, "Espace, Ignore boucliers, Initiative -1, Risquée"],
+    ["Fouet", "*FOR*-2", "A", 1, "Espace, Dégâts temporaires"],
+    ["Fourche", "*FOR*-1", "A", 2, "Charge"],
+    ["Hallebarde, bardiche", "*FOR*", "A", 2, "Charge"],
+    ["Lance courte", "*FOR*", "A", 2, "Charge"],
+    ["Lance longue", "*FOR*", "AA", 2, "Charge"]
+  ];
+  const ranged = [
+    ["Arbalète de poing", "+3", "Moyenne", 1, "Chargement (2)"],
+    ["Arbalète", "+5", "Longue", 2, "Chargement (2), Maniable"],
+    ["Arbalète lourde", "+6", "Extrême", 2, "Chargement (2), Maniable"],
+    ["Arc court", "*FOR*-1", "Moyenne", 2, ""],
+    ["Arc", "*FOR*", "Moyenne", 2, ""],
+    ["Arc long", "*FOR*", "Longue", 2, ""],
+    ["Couteau de lancer", "*FOR*-1", "Courte", 1, ""],
+    ["Javelot", "*FOR*", "Moyenne", 1, ""],
+    ["Pierre", "*FOR*-2", "Courte", 1, ""],
+    ["Arquebuse", "+7", "Moyenne", 2, "Chargement (5)"],
+    ["Pistolet à poudre", "+4", "Courte", 1, "Chargement (5)"],
+    ["Tromblon", "+3", "Courte", 1, ""],
+    ["Fronde", "*FOR*-1", "Moyenne", 1, ""],
+    ["Sarbacane", "0", "Courte", 1, "Poison"]
+  ];
+  const docs = [];
+  for (const [name, dmg, reach, hands, special] of melee) {
+    const q = parseQualities(special);
+    docs.push({ _id: makeId("fweapon", name), name, type: "weapon", img: "icons/svg/sword.svg",
+      system: { weaponType: "melee", group: "fantasy", damageBase: parseDamage(dmg).base, damageMod: parseDamage(dmg).mod,
+        reach, hands, qualities: q.qualities, specialText: q.leftover, price: 0, source: "Brigandyne" } });
+  }
+  for (const [name, dmg, range, hands, special] of ranged) {
+    const q = parseQualities(special);
+    docs.push({ _id: makeId("fweapon", name), name, type: "weapon", img: "icons/svg/thrown.svg",
+      system: { weaponType: "ranged", group: "fantasy", damageBase: parseDamage(dmg).base, damageMod: parseDamage(dmg).mod,
+        range: RANGE_M[range] ?? 20, magazine: 0, hands, qualities: q.qualities, specialText: q.leftover, price: 0, source: "Brigandyne" } });
+  }
+  appendPack("weapons", docs);
+
+  const armor = [
+    ["Gambison, fourrures", 1, "complete", -1, 0, ""],
+    ["Plastron de cuir", 1, "partielle", 0, 0, ""],
+    ["Broigne, brigandine", 2, "partielle", -1, 0, ""],
+    ["Cotte de plaques", 2, "complete", -2, 0, ""],
+    ["Cuirasse", 3, "partielle", -1, 0, ""],
+    ["Cotte de mailles, haubert", 3, "complete", -2, -5, ""],
+    ["Demi-plaques", 4, "complete", -2, -5, ""],
+    ["Armure de plates, harnois", 5, "complete", -3, -5, ""],
+    ["Casque (médiéval)", 1, "bonus", 0, -5, "PER -5%"],
+    ["Petit bouclier, bocle", 1, "bonus", 0, 0, ""],
+    ["Bouclier, écu", 2, "bonus", -1, 0, "Couvert (1)"]
+  ];
+  const adocs = armor.map(([name, prot, cov, init, mou, special]) => ({
+    _id: makeId("farmor", name), name, type: "armor", img: "icons/svg/shield.svg",
+    system: { protection: prot, coverage: cov, initiativeMod: init, mouMod: mou, qualities: parseQualities(special).qualities, specialText: parseQualities(special).leftover, price: 0, source: "Brigandyne" }
+  }));
+  appendPack("armor", adocs);
+  return docs.length + adocs.length;
+}
+
+/* ------------------------------------------------------------------ */
 /*  AUGMENTATIONS                                                      */
 /* ------------------------------------------------------------------ */
 function importAugmentations() {
@@ -663,4 +777,6 @@ const counts = {
   "critical-injuries": importCriticalInjuries()
 };
 importAtouts();
+console.log(`  base-careers: +${importBaseCareers()} (mondes féodaux)`);
+console.log(`  fantasy: +${importFantasyEquipment()} (armes & armures médiévales)`);
 console.log("Terminé.");

@@ -1,0 +1,28 @@
+{
+  "_id": "xx54w3sx3vqp6xwk",
+  "name": "Arbalète",
+  "type": "weapon",
+  "img": "icons/svg/thrown.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "fantasy",
+    "damageBase": "flat",
+    "damageMod": 5,
+    "range": 50,
+    "magazine": 0,
+    "hands": 2,
+    "qualities": [
+      {
+        "key": "chargement",
+        "value": 2
+      },
+      {
+        "key": "maniable",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

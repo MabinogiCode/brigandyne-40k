@@ -1,0 +1,18 @@
+{
+  "_id": "xu3w2520y231xxyv",
+  "name": "Épée longue",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": 0,
+    "reach": "B",
+    "hands": 1,
+    "qualities": [],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

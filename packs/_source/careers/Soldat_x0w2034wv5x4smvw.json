@@ -1,0 +1,42 @@
+{
+  "_id": "x0w2034wv5x4smvw",
+  "name": "Soldat",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "feodal",
+    "quote": "",
+    "advances": {
+      "com": 3,
+      "cns": 0,
+      "dis": 0,
+      "end": 2,
+      "for": 2,
+      "tec": 0,
+      "psy": 0,
+      "mou": 0,
+      "per": 0,
+      "soc": 0,
+      "sur": 0,
+      "tir": 1,
+      "vol": 1
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Arme de mêlée (au choix)",
+      "Arme à distance (au choix)",
+      "Courage",
+      "Discipline",
+      "Vigilance"
+    ],
+    "talents": [
+      "Coups puissants",
+      "Solidité",
+      "Port d'armure",
+      "Riposte"
+    ],
+    "startingEquipment": "",
+    "description": "<p>Un combattant entraîné au service d'un seigneur ou d'une armée.</p>",
+    "source": "Brigandyne (adapté)"
+  }
+}

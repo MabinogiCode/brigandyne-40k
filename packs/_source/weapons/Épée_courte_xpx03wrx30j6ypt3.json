@@ -1,0 +1,23 @@
+{
+  "_id": "xpx03wrx30j6ypt3",
+  "name": "Épée courte",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": -1,
+    "reach": "C",
+    "hands": 1,
+    "qualities": [
+      {
+        "key": "corpsACorps",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

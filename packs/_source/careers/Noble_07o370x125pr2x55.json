@@ -1,0 +1,42 @@
+{
+  "_id": "07o370x125pr2x55",
+  "name": "Noble",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "feodal",
+    "quote": "",
+    "advances": {
+      "com": 1,
+      "cns": 1,
+      "dis": 0,
+      "end": 0,
+      "for": 0,
+      "tec": 0,
+      "psy": 0,
+      "mou": 0,
+      "per": 0,
+      "soc": 3,
+      "sur": 0,
+      "tir": 0,
+      "vol": 2
+    },
+    "lifestyle": "riche",
+    "specialties": [
+      "Étiquette",
+      "Commandement",
+      "Persuasion",
+      "Noblesse et politique",
+      "Équitation"
+    ],
+    "talents": [
+      "Relations",
+      "Inspiration",
+      "Panache",
+      "Confiance en soi"
+    ],
+    "startingEquipment": "",
+    "description": "<p>Né dans la soie, habitué à commander.</p>",
+    "source": "Brigandyne (adapté)"
+  }
+}

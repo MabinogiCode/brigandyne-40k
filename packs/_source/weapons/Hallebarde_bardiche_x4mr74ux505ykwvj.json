@@ -1,0 +1,23 @@
+{
+  "_id": "x4mr74ux505ykwvj",
+  "name": "Hallebarde, bardiche",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": 0,
+    "reach": "A",
+    "hands": 2,
+    "qualities": [
+      {
+        "key": "charge",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

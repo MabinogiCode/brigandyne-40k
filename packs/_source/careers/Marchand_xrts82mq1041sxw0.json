@@ -1,0 +1,41 @@
+{
+  "_id": "xrts82mq1041sxw0",
+  "name": "Marchand",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "feodal",
+    "quote": "",
+    "advances": {
+      "com": 0,
+      "cns": 2,
+      "dis": 0,
+      "end": 0,
+      "for": 0,
+      "tec": 0,
+      "psy": 0,
+      "mou": 0,
+      "per": 1,
+      "soc": 3,
+      "sur": 0,
+      "tir": 0,
+      "vol": 1
+    },
+    "lifestyle": "aise",
+    "specialties": [
+      "Marchandage",
+      "Estimation",
+      "Commerce",
+      "Persuasion",
+      "Renseignements"
+    ],
+    "talents": [
+      "Relations",
+      "Panache",
+      "Confiance en soi"
+    ],
+    "startingEquipment": "",
+    "description": "<p>Caravanes et comptoirs : l'argent ne dort jamais.</p>",
+    "source": "Brigandyne (adapté)"
+  }
+}

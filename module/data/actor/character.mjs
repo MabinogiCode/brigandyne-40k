@@ -1,5 +1,5 @@
 import { BaseActorModel } from "./base-actor.mjs";
-import { fields, int, str, bool, html } from "../fields.mjs";
+import { fields, int, str, bool, html, choice } from "../fields.mjs";
 
 /**
  * Personnage joueur.
@@ -8,6 +8,8 @@ export class CharacterModel extends BaseActorModel {
   static defineSchema() {
     return {
       ...super.defineSchema(),
+      // Les personnages sont des Premiers rôles par défaut
+      role: choice({ premierRole: "BRIG.Role.premierRole", secondRole: "BRIG.Role.secondRole", figurant: "BRIG.Role.figurant" }, "premierRole"),
       species: str(""),
       speciesName: str(""),
       careerName: str(""),

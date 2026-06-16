@@ -1,0 +1,16 @@
+{
+  "_id": "v04105455zn4quxs",
+  "name": "Cuirasse",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 3,
+    "coverage": "partielle",
+    "initiativeMod": -1,
+    "mouMod": 0,
+    "qualities": [],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

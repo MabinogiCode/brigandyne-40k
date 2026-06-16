@@ -1,0 +1,42 @@
+{
+  "_id": "xxj2s8jxzx7uxxx5",
+  "name": "Chevalier",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "feodal",
+    "quote": "",
+    "advances": {
+      "com": 4,
+      "cns": 0,
+      "dis": 0,
+      "end": 2,
+      "for": 3,
+      "tec": 0,
+      "psy": 0,
+      "mou": 0,
+      "per": 0,
+      "soc": 1,
+      "sur": 0,
+      "tir": 0,
+      "vol": 2
+    },
+    "lifestyle": "aise",
+    "specialties": [
+      "Arme de mêlée (au choix)",
+      "Équitation",
+      "Commandement",
+      "Courage",
+      "Noblesse et politique"
+    ],
+    "talents": [
+      "Maître d'armes",
+      "Coups puissants",
+      "Inspiration",
+      "Port d'armure"
+    ],
+    "startingEquipment": "",
+    "description": "<p>Un noble combattant, monté et cuirassé, lié par un serment.</p>",
+    "source": "Brigandyne (adapté)"
+  }
+}

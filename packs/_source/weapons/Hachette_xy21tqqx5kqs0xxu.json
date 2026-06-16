@@ -1,0 +1,18 @@
+{
+  "_id": "xy21tqqx5kqs0xxu",
+  "name": "Hachette",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": -1,
+    "reach": "D",
+    "hands": 1,
+    "qualities": [],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

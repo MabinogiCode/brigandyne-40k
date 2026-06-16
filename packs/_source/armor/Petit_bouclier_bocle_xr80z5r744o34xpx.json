@@ -1,0 +1,16 @@
+{
+  "_id": "xr80z5r744o34xpx",
+  "name": "Petit bouclier, bocle",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 1,
+    "coverage": "bonus",
+    "initiativeMod": 0,
+    "mouMod": 0,
+    "qualities": [],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

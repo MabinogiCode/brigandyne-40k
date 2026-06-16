@@ -1,0 +1,24 @@
+{
+  "_id": "lqo6y0xksz50xxxw",
+  "name": "Sarbacane",
+  "type": "weapon",
+  "img": "icons/svg/thrown.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "fantasy",
+    "damageBase": "flat",
+    "damageMod": 0,
+    "range": 5,
+    "magazine": 0,
+    "hands": 1,
+    "qualities": [
+      {
+        "key": "poison",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

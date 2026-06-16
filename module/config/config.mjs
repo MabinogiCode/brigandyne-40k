@@ -333,6 +333,7 @@ BRIGANDYNE.factions = {
   mechanicus: "BRIG.Faction.mechanicus",
   ministorum: "BRIG.Faction.ministorum",
   militarum: "BRIG.Faction.militarum",
+  feodal: "BRIG.Faction.feodal",
   civils: "BRIG.Faction.civils",
   assassinorum: "BRIG.Faction.assassinorum",
   psykana: "BRIG.Faction.psykana",
@@ -364,9 +365,9 @@ BRIGANDYNE.traitTypes = {
 /*  Rôles narratifs (figurant / second / premier) */
 /* -------------------------------------------- */
 BRIGANDYNE.roles = {
-  figurant: "BRIG.Role.figurant",
+  premierRole: "BRIG.Role.premierRole",
   secondRole: "BRIG.Role.secondRole",
-  premierRole: "BRIG.Role.premierRole"
+  figurant: "BRIG.Role.figurant"
 };
 
 /* -------------------------------------------- */

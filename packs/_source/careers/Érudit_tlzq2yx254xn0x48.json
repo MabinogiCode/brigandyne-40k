@@ -1,0 +1,41 @@
+{
+  "_id": "tlzq2yx254xn0x48",
+  "name": "Érudit",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "feodal",
+    "quote": "",
+    "advances": {
+      "com": 0,
+      "cns": 4,
+      "dis": 0,
+      "end": 0,
+      "for": 0,
+      "tec": 1,
+      "psy": 0,
+      "mou": 0,
+      "per": 1,
+      "soc": 0,
+      "sur": 0,
+      "tir": 0,
+      "vol": 1
+    },
+    "lifestyle": "aise",
+    "specialties": [
+      "Lettres",
+      "Histoire",
+      "Langue étrangère",
+      "Astrologie",
+      "Légendes"
+    ],
+    "talents": [
+      "Mémoire sans faille",
+      "Doué (CNS)",
+      "Calme"
+    ],
+    "startingEquipment": "",
+    "description": "<p>Le nez dans les grimoires, gardien du savoir.</p>",
+    "source": "Brigandyne (adapté)"
+  }
+}

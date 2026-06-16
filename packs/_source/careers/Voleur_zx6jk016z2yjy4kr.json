@@ -1,0 +1,41 @@
+{
+  "_id": "zx6jk016z2yjy4kr",
+  "name": "Voleur",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "feodal",
+    "quote": "",
+    "advances": {
+      "com": 0,
+      "cns": 0,
+      "dis": 3,
+      "end": 0,
+      "for": 0,
+      "tec": 2,
+      "psy": 0,
+      "mou": 2,
+      "per": 1,
+      "soc": 0,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "lifestyle": "pauvre",
+    "specialties": [
+      "Crochetage",
+      "Déplacement silencieux",
+      "Dissimulation d'objet",
+      "Escalade",
+      "Fouille"
+    ],
+    "talents": [
+      "Insaisissable",
+      "Coup adroit",
+      "Réflexes éclairs"
+    ],
+    "startingEquipment": "",
+    "description": "<p>Doigts agiles et conscience souple, l'ombre des ruelles.</p>",
+    "source": "Brigandyne (adapté)"
+  }
+}

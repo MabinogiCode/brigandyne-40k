@@ -48,25 +48,23 @@ export async function promptTest({ actor, testData } = {}) {
     disadvantage: Number(form.disadvantage.value) || 0
   });
 
-  return DialogV2.wait({
-    window: { title: testData?.label || game.i18n.localize("BRIG.Dialog.title"), icon: "fa-solid fa-dice-d10" },
-    content,
-    rejectClose: false,
-    buttons: [
-      {
-        action: "roll",
-        label: game.i18n.localize("BRIG.Dialog.roll"),
-        icon: "fa-solid fa-dice-d10",
-        default: true,
-        callback: (event, button) => parse(button.form.elements)
-      },
-      {
-        action: "cancel",
-        label: game.i18n.localize("BRIG.Dialog.cancel"),
-        icon: "fa-solid fa-xmark",
-        callback: () => null
-      }
-    ],
-    close: () => null
+  // Instance + Promise manuelle pour pouvoir forcer le premier plan (bringToFront)
+  return new Promise(resolve => {
+    let done = false;
+    const finish = v => { if (!done) { done = true; resolve(v); } };
+    const dialog = new DialogV2({
+      window: { title: testData?.label || game.i18n.localize("BRIG.Dialog.title"), icon: "fa-solid fa-dice-d10" },
+      classes: ["brigandyne-40k"],
+      content,
+      buttons: [
+        { action: "roll", label: game.i18n.localize("BRIG.Dialog.roll"), icon: "fa-solid fa-dice-d10", default: true, callback: (event, button) => finish(parse(button.form.elements)) },
+        { action: "cancel", label: game.i18n.localize("BRIG.Dialog.cancel"), icon: "fa-solid fa-xmark", callback: () => finish(null) }
+      ],
+      close: () => finish(null)
+    });
+    dialog.render({ force: true }).then(() => {
+      dialog.bringToFront?.();
+      setTimeout(() => dialog.bringToFront?.(), 30);
+    });
   });
 }

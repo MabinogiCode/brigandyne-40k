@@ -1,0 +1,41 @@
+{
+  "_id": "xok43v3xx8431mml",
+  "name": "Garde / Milicien",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "feodal",
+    "quote": "",
+    "advances": {
+      "com": 2,
+      "cns": 0,
+      "dis": 0,
+      "end": 2,
+      "for": 2,
+      "tec": 0,
+      "psy": 0,
+      "mou": 0,
+      "per": 2,
+      "soc": 0,
+      "sur": 0,
+      "tir": 0,
+      "vol": 1
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Arme de mêlée (au choix)",
+      "Fouille",
+      "Intimidation",
+      "Vigilance",
+      "Premiers soins"
+    ],
+    "talents": [
+      "Solidité",
+      "Gardien",
+      "Inspiration"
+    ],
+    "startingEquipment": "",
+    "description": "<p>Le bras armé de la loi locale, lance et tabard.</p>",
+    "source": "Brigandyne (adapté)"
+  }
+}

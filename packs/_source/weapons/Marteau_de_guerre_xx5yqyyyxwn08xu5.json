@@ -1,0 +1,27 @@
+{
+  "_id": "xx5yqyyyxwn08xu5",
+  "name": "Marteau de guerre",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": 0,
+    "reach": "C",
+    "hands": 1,
+    "qualities": [
+      {
+        "key": "choc",
+        "value": null
+      },
+      {
+        "key": "destruction",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

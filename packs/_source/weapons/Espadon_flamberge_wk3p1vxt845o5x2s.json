@@ -1,0 +1,27 @@
+{
+  "_id": "wk3p1vxt845o5x2s",
+  "name": "Espadon, flamberge",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": 2,
+    "reach": "A",
+    "hands": 2,
+    "qualities": [
+      {
+        "key": "espace",
+        "value": null
+      },
+      {
+        "key": "initiative",
+        "value": -1
+      }
+    ],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "x4x0s4y5p2wm3xv5",
+  "name": "Cotte de plaques",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 2,
+    "coverage": "complete",
+    "initiativeMod": -2,
+    "mouMod": 0,
+    "qualities": [],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

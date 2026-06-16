@@ -1,0 +1,23 @@
+{
+  "_id": "5kxry482m8zqzosn",
+  "name": "Gourdin",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": -2,
+    "reach": "C",
+    "hands": 1,
+    "qualities": [
+      {
+        "key": "choc",
+        "value": null
+      }
+    ],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

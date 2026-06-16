@@ -1,0 +1,19 @@
+{
+  "_id": "u3zw55061433zw31",
+  "name": "Fronde",
+  "type": "weapon",
+  "img": "icons/svg/thrown.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": -1,
+    "range": 20,
+    "magazine": 0,
+    "hands": 1,
+    "qualities": [],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

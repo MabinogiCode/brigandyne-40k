@@ -1,0 +1,18 @@
+{
+  "_id": "x6p8ruxyoy5qsx45",
+  "name": "Dague",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": -1,
+    "reach": "D",
+    "hands": 1,
+    "qualities": [],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

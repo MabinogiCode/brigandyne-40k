@@ -1,0 +1,42 @@
+{
+  "_id": "4qwozvj2ttxpw87y",
+  "name": "Mercenaire",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "feodal",
+    "quote": "",
+    "advances": {
+      "com": 3,
+      "cns": 0,
+      "dis": 1,
+      "end": 1,
+      "for": 2,
+      "tec": 0,
+      "psy": 0,
+      "mou": 0,
+      "per": 0,
+      "soc": 1,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Arme de mêlée (au choix)",
+      "Intimidation",
+      "Marchandage",
+      "Survie",
+      "Jeu"
+    ],
+    "talents": [
+      "Coups précis",
+      "Brute",
+      "Sang-froid",
+      "Esquive"
+    ],
+    "startingEquipment": "",
+    "description": "<p>Une lame à louer, fidèle à la bourse la mieux garnie.</p>",
+    "source": "Brigandyne (adapté)"
+  }
+}

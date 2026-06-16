@@ -1,0 +1,23 @@
+{
+  "_id": "53ykr8z3j3258njz",
+  "name": "Hache de guerre",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": 2,
+    "reach": "C",
+    "hands": 1,
+    "qualities": [
+      {
+        "key": "initiative",
+        "value": -1
+      }
+    ],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

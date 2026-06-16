@@ -1,0 +1,18 @@
+{
+  "_id": "oq0v5s8x52xutn48",
+  "name": "Rapière",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "weaponType": "melee",
+    "group": "fantasy",
+    "damageBase": "for",
+    "damageMod": 0,
+    "reach": "B",
+    "hands": 1,
+    "qualities": [],
+    "specialText": "Point faible",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

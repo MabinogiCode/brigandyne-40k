@@ -1,0 +1,24 @@
+{
+  "_id": "xy53x3txy5un2jvp",
+  "name": "Arquebuse",
+  "type": "weapon",
+  "img": "icons/svg/thrown.svg",
+  "system": {
+    "weaponType": "ranged",
+    "group": "fantasy",
+    "damageBase": "flat",
+    "damageMod": 7,
+    "range": 20,
+    "magazine": 0,
+    "hands": 2,
+    "qualities": [
+      {
+        "key": "chargement",
+        "value": 5
+      }
+    ],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

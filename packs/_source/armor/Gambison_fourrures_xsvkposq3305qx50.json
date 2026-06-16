@@ -1,0 +1,16 @@
+{
+  "_id": "xsvkposq3305qx50",
+  "name": "Gambison, fourrures",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 1,
+    "coverage": "complete",
+    "initiativeMod": -1,
+    "mouMod": 0,
+    "qualities": [],
+    "specialText": "",
+    "price": 0,
+    "source": "Brigandyne"
+  }
+}

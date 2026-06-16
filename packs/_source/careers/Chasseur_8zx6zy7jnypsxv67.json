@@ -1,0 +1,41 @@
+{
+  "_id": "8zx6zy7jnypsxv67",
+  "name": "Chasseur",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "feodal",
+    "quote": "",
+    "advances": {
+      "com": 0,
+      "cns": 0,
+      "dis": 2,
+      "end": 0,
+      "for": 0,
+      "tec": 0,
+      "psy": 0,
+      "mou": 0,
+      "per": 2,
+      "soc": 0,
+      "sur": 2,
+      "tir": 3,
+      "vol": 0
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Arme à distance (au choix)",
+      "Pistage",
+      "Déplacement silencieux",
+      "Milieu naturel",
+      "Pièges"
+    ],
+    "talents": [
+      "Tireur d'élite",
+      "Tir précis",
+      "Sixième sens"
+    ],
+    "startingEquipment": "",
+    "description": "<p>Traqueur silencieux des bois, l'arc toujours tendu.</p>",
+    "source": "Brigandyne (adapté)"
+  }
+}

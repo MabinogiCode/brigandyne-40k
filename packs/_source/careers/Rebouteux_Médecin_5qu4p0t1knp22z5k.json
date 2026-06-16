@@ -1,0 +1,41 @@
+{
+  "_id": "5qu4p0t1knp22z5k",
+  "name": "Rebouteux / Médecin",
+  "type": "career",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "faction": "feodal",
+    "quote": "",
+    "advances": {
+      "com": 0,
+      "cns": 2,
+      "dis": 0,
+      "end": 0,
+      "for": 0,
+      "tec": 2,
+      "psy": 0,
+      "mou": 0,
+      "per": 2,
+      "soc": 1,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "lifestyle": "ordinaire",
+    "specialties": [
+      "Premiers soins",
+      "Médecine",
+      "Potions et remèdes",
+      "Botanique",
+      "Intuition"
+    ],
+    "talents": [
+      "Mains blanches",
+      "Guérison rapide",
+      "Calme"
+    ],
+    "startingEquipment": "",
+    "description": "<p>Sait recoudre une plaie et préparer un remède.</p>",
+    "source": "Brigandyne (adapté)"
+  }
+}
