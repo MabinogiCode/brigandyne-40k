@@ -63,3 +63,17 @@ Hooks.once("i18nInit", function () {
 Hooks.once("ready", function () {
   console.log(`${SYSTEM_ID} | Système prêt — Pour l'Empereur !`);
 });
+
+// Bouton « Assistant de création » dans le répertoire des Acteurs
+Hooks.on("renderActorDirectory", (app, html) => {
+  const el = html instanceof HTMLElement ? html : html?.[0];
+  if (!el || el.querySelector(".brig-chargen-launch")) return;
+  const header = el.querySelector(".header-actions") || el.querySelector(".directory-header");
+  if (!header) return;
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "brig-chargen-launch";
+  btn.innerHTML = `<i class="fa-solid fa-wand-magic-sparkles"></i> ${game.i18n.localize("BRIG.CharGen.title")}`;
+  btn.addEventListener("click", () => new BrigCharGen().render(true));
+  header.appendChild(btn);
+});

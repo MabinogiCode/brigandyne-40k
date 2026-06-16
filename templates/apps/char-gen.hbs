@@ -1,38 +1,92 @@
-{{!-- Assistant de création de personnage --}}
-<div class="char-gen-body">
+{{!-- Assistant (wizard) de création de personnage --}}
+<div class="wizard-body">
   {{#if noPacks}}
     <p class="warn">Les compendiums (Espèces, Carrières) ne sont pas disponibles.</p>
   {{else}}
-    <p class="intro">Choisis une espèce et une carrière pour <strong>{{actorName}}</strong>. Les caractéristiques de base, le Destin, le niveau de vie, les spécialités et talents de la carrière seront appliqués.</p>
+  <div class="wizard-layout">
+    <aside class="wizard-stages">
+      {{#each stages}}
+        <button type="button" class="stage {{#if active}}active{{/if}} {{#if done}}done{{/if}}" data-action="wizGoto" data-i="{{i}}">
+          <span class="num">{{add i 1}}</span> {{label}}
+        </button>
+      {{/each}}
+    </aside>
 
-    <div class="form-grid two">
-      <div class="form-group">
-        <label><i class="fa-solid fa-dna"></i> Espèce</label>
-        <select name="species" data-action="preview">
-          <option value="">—</option>
-          {{#each species}}<option value="{{id}}" {{#if (eq id ../selSpecies)}}selected{{/if}}>{{name}}</option>{{/each}}
-        </select>
-      </div>
-      <div class="form-group">
-        <label><i class="fa-solid fa-briefcase"></i> Carrière</label>
-        <select name="career" data-action="preview">
-          <option value="">—</option>
-          {{#each careers}}<option value="{{id}}" {{#if (eq id ../selCareer)}}selected{{/if}}>{{name}}</option>{{/each}}
-        </select>
-      </div>
-    </div>
-
-    {{#if preview}}
-      <div class="preview">
-        <h4>{{preview.speciesName}} — Destin {{preview.destin}}</h4>
-        <div class="char-mini-grid">
-          {{#each preview.chars}}<div class="mini"><span class="k">{{localize abbr}}</span><span class="v">{{value}}</span></div>{{/each}}
+    <section class="wizard-content">
+      {{#if (eq stepId 'identity')}}
+        <label class="block">Nom <input type="text" name="name" value="{{draft.name}}" /></label>
+        <div class="form-grid two">
+          <label>Espèce
+            <select name="speciesId" data-refresh><option value="">—</option>
+              {{#each species}}<option value="{{id}}" {{#if (eq id ../draft.speciesId)}}selected{{/if}}>{{name}}</option>{{/each}}
+            </select>
+          </label>
+          <label>Carrière
+            <select name="careerId" data-refresh><option value="">—</option>
+              {{#each careers}}<option value="{{id}}" {{#if (eq id ../draft.careerId)}}selected{{/if}}>{{name}}</option>{{/each}}
+            </select>
+          </label>
         </div>
-      </div>
-    {{/if}}
+        <label class="block">Rôle
+          <select name="role">{{#each roles as |lab key|}}<option value="{{key}}" {{#if (eq key ../draft.role)}}selected{{/if}}>{{localize lab}}</option>{{/each}}</select>
+        </label>
+        {{#if speciesName}}
+          <div class="preview">
+            <h4>{{speciesName}} — Destin {{destin}}</h4>
+            <div class="char-mini-grid">{{#each chars}}<div class="mini"><span class="k">{{localize abbr}}</span><span class="v">{{base}}</span></div>{{/each}}</div>
+          </div>
+        {{/if}}
+        {{#if careerName}}<p class="career-line"><i class="fa-solid fa-briefcase"></i> <strong>{{careerName}}</strong> · niveau de vie : {{lifestyle}}</p>{{/if}}
 
-    <footer class="cg-buttons">
-      <button type="submit"><i class="fa-solid fa-check"></i> Appliquer</button>
-    </footer>
+      {{else if (eq stepId 'characteristics')}}
+        <p class="hint">Caractéristiques de départ (base de l'espèce) — ajuste-les si ta table le permet.</p>
+        <div class="char-edit-grid">
+          {{#each chars}}
+            <div class="ce" data-tooltip="{{localize label}}">
+              <label>{{localize abbr}}</label>
+              <input type="number" name="char.{{key}}" value="{{value}}" min="0" max="100" />
+              <span class="bn">+{{bonus}}</span>
+            </div>
+          {{/each}}
+        </div>
+        <div class="derived-preview"><span>PV <strong>{{pv}}</strong></span><span>SF <strong>{{sf}}</strong></span></div>
+
+      {{else if (eq stepId 'details')}}
+        <div class="details-grid">
+          <label>Âge <input type="text" name="details.age" value="{{details.age}}" /></label>
+          <label>Taille <input type="text" name="details.height" value="{{details.height}}" /></label>
+          <label>Poids <input type="text" name="details.weight" value="{{details.weight}}" /></label>
+          <label>Yeux <input type="text" name="details.eyes" value="{{details.eyes}}" /></label>
+          <label>Cheveux <input type="text" name="details.hair" value="{{details.hair}}" /></label>
+          <label>Sexe <input type="text" name="details.gender" value="{{details.gender}}" /></label>
+          <label>Monde natal <input type="text" name="details.homeworld" value="{{details.homeworld}}" /></label>
+          <label class="wide">Motivation <input type="text" name="details.motivation" value="{{details.motivation}}" /></label>
+        </div>
+
+      {{else if (eq stepId 'summary')}}
+        <h3 class="recap-name">{{draft.name}}</h3>
+        <ul class="recap">
+          <li><i class="fa-solid fa-dna"></i> Espèce : <strong>{{#if speciesName}}{{speciesName}}{{else}}—{{/if}}</strong></li>
+          <li><i class="fa-solid fa-briefcase"></i> Carrière : <strong>{{#if careerName}}{{careerName}}{{else}}—{{/if}}</strong> {{#if lifestyle}}({{lifestyle}}){{/if}}</li>
+          <li><i class="fa-solid fa-user-tag"></i> Rôle : {{localize (concat "BRIG.Role." draft.role)}}</li>
+          <li><i class="fa-solid fa-heart"></i> PV <strong>{{pv}}</strong> · SF <strong>{{sf}}</strong>{{#if destin}} · Destin <strong>{{destin}}</strong>{{/if}}</li>
+        </ul>
+        <div class="recap-chars">{{#each chars}}<span class="rc">{{localize abbr}} <b>{{value}}</b></span>{{/each}}</div>
+        {{#if careerName}}<p class="hint">{{specialties.length}} spécialité(s) et {{talents.length}} talent(s) de la carrière seront ajoutés.</p>{{/if}}
+        {{#unless editMode}}<p class="attach-note"><i class="fa-solid fa-link"></i> Le personnage sera créé et rattaché à <strong>toi</strong> ({{draft.name}} deviendra ton personnage).</p>{{/unless}}
+      {{/if}}
+    </section>
+  </div>
+
+  <footer class="wizard-footer">
+    <button type="button" class="btn-cancel" data-action="wizCancel"><i class="fa-solid fa-xmark"></i> Annuler</button>
+    <div class="spacer"></div>
+    {{#unless first}}<button type="button" data-action="wizPrev"><i class="fa-solid fa-caret-left"></i> Précédent</button>{{/unless}}
+    {{#if last}}
+      <button type="button" class="btn-finish" data-action="wizFinish"><i class="fa-solid fa-check"></i> {{#if editMode}}Appliquer{{else}}Créer le personnage{{/if}}</button>
+    {{else}}
+      <button type="button" class="btn-next" data-action="wizNext">Suivant <i class="fa-solid fa-caret-right"></i></button>
+    {{/if}}
+  </footer>
   {{/if}}
 </div>

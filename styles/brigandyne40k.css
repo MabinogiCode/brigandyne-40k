@@ -323,6 +323,63 @@
 .brigandyne-40k .char-gen-btn { width: auto; flex: 0 0 auto; background: var(--brig-gold); color: #000; border: none; border-radius: 4px; cursor: pointer; padding: 0 8px; }
 .brigandyne-40k .char-gen-btn:hover { background: var(--brig-gold-2); }
 
+/* ---------- Bouton lanceur (répertoire Acteurs) ---------- */
+.brig-chargen-launch {
+  width: 100%; margin-top: 4px; padding: .35rem;
+  background: linear-gradient(180deg, #243140, #141a20);
+  color: #c4d6e8; border: 1px solid #32404d; border-radius: 4px; cursor: pointer;
+  font-weight: 600; letter-spacing: .3px;
+}
+.brig-chargen-launch:hover { background: #3f5d7a; color: #fff; }
+
+/* ---------- Wizard (assistant multi-étapes) ---------- */
+.brigandyne-40k.char-gen.wizard .window-content,
+.brigandyne-40k.char-gen.wizard { background: linear-gradient(180deg, var(--brig-bg-2), var(--brig-bg)); color: var(--brig-ink); }
+.brigandyne-40k.wizard .wizard-body { display: flex; flex-direction: column; padding: .6rem; gap: .6rem; }
+.brigandyne-40k.wizard .wizard-layout { display: grid; grid-template-columns: 170px 1fr; gap: .8rem; min-height: 280px; }
+.brigandyne-40k.wizard .wizard-stages { display: flex; flex-direction: column; gap: .35rem; border-right: 1px solid var(--brig-border); padding-right: .6rem; }
+.brigandyne-40k.wizard .stage {
+  display: flex; align-items: center; gap: .5rem; text-align: left;
+  background: var(--brig-panel); border: 1px solid var(--brig-border); border-radius: 6px;
+  color: var(--brig-muted); padding: .4rem .5rem; cursor: pointer; font-family: var(--brig-title);
+  text-transform: uppercase; font-size: .78rem; letter-spacing: .5px;
+}
+.brigandyne-40k.wizard .stage .num {
+  width: 20px; height: 20px; flex: 0 0 20px; border-radius: 50%; background: #0e141a; color: var(--brig-muted);
+  display: inline-flex; align-items: center; justify-content: center; font-size: .72rem; border: 1px solid var(--brig-border);
+}
+.brigandyne-40k.wizard .stage.done { color: var(--brig-gold-2); }
+.brigandyne-40k.wizard .stage.done .num { background: var(--brig-green); color: #fff; border-color: var(--brig-green); }
+.brigandyne-40k.wizard .stage.active { color: var(--brig-gold-2); border-color: var(--brig-gold); box-shadow: inset 3px 0 0 var(--brig-gold); }
+.brigandyne-40k.wizard .stage.active .num { background: var(--brig-gold); color: #000; border-color: var(--brig-gold); }
+.brigandyne-40k.wizard .wizard-content { display: flex; flex-direction: column; gap: .5rem; }
+.brigandyne-40k.wizard label.block { display: flex; flex-direction: column; }
+.brigandyne-40k.wizard .form-grid.two { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
+.brigandyne-40k.wizard .form-grid.two label { display: flex; flex-direction: column; }
+.brigandyne-40k.wizard .career-line { color: var(--brig-muted); }
+.brigandyne-40k.wizard .char-edit-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: .35rem; }
+.brigandyne-40k.wizard .ce { display: flex; flex-direction: column; align-items: center; background: var(--brig-panel); border: 1px solid var(--brig-border); border-radius: 5px; padding: 3px; }
+.brigandyne-40k.wizard .ce label { color: var(--brig-gold); font-size: .72rem; }
+.brigandyne-40k.wizard .ce input { width: 100%; text-align: center; }
+.brigandyne-40k.wizard .ce .bn { font-size: .68rem; color: var(--brig-muted); }
+.brigandyne-40k.wizard .derived-preview { display: flex; gap: 1rem; justify-content: center; margin-top: .3rem; color: var(--brig-gold-2); }
+.brigandyne-40k.wizard .details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .4rem; }
+.brigandyne-40k.wizard .details-grid label { display: flex; flex-direction: column; }
+.brigandyne-40k.wizard .details-grid label.wide { grid-column: 1 / -1; }
+.brigandyne-40k.wizard .recap-name { font-family: var(--brig-title); color: var(--brig-gold-2); margin: 0; }
+.brigandyne-40k.wizard .recap { list-style: none; margin: .3rem 0; padding: 0; }
+.brigandyne-40k.wizard .recap li { padding: 2px 0; }
+.brigandyne-40k.wizard .recap-chars { display: flex; flex-wrap: wrap; gap: .35rem; }
+.brigandyne-40k.wizard .recap-chars .rc { background: var(--brig-panel); border: 1px solid var(--brig-border); border-radius: 4px; padding: 1px 6px; font-size: .8rem; }
+.brigandyne-40k.wizard .attach-note { color: var(--brig-gold-2); background: rgba(142,167,192,.08); border: 1px solid var(--brig-border); border-radius: 5px; padding: .4rem .5rem; }
+.brigandyne-40k.wizard .wizard-footer { display: flex; align-items: center; gap: .5rem; padding-top: .5rem; border-top: 1px solid var(--brig-border); }
+.brigandyne-40k.wizard .wizard-footer .spacer { flex: 1; }
+.brigandyne-40k.wizard .wizard-footer button { background: var(--brig-panel-2); color: var(--brig-ink); border: 1px solid var(--brig-border); border-radius: 4px; padding: .35rem .8rem; cursor: pointer; }
+.brigandyne-40k.wizard .wizard-footer button:hover { background: var(--brig-blue); color: #fff; }
+.brigandyne-40k.wizard .wizard-footer .btn-cancel:hover { background: var(--brig-red); }
+.brigandyne-40k.wizard .wizard-footer .btn-finish { background: var(--brig-green); color: #fff; border-color: var(--brig-green); }
+.brigandyne-40k.wizard .wizard-footer .btn-finish:hover { filter: brightness(1.15); background: var(--brig-green); }
+
 /* ---------- Cartes Warp ---------- */
 .brigandyne-40k.warp-card .card-header { background: linear-gradient(180deg, #2a1838, #1a1020); border-bottom-color: #7a4fb0; }
 .brigandyne-40k.warp-card .card-title { color: #c89cff; }

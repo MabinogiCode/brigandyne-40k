@@ -300,7 +300,15 @@
     },
     "CharGen": {
       "title": "Assistant de création",
-      "done": "Personnage « {name} » initialisé."
+      "defaultName": "Nouveau personnage",
+      "done": "Personnage « {name} » mis à jour.",
+      "created": "Personnage « {name} » créé et rattaché à vous.",
+      "step": {
+        "identity": "Identité",
+        "characteristics": "Caractéristiques",
+        "details": "Détails",
+        "summary": "Récapitulatif"
+      }
     },
     "Sheet": {
       "character": "Personnage Brigandyne 40K",
