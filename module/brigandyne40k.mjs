@@ -13,6 +13,8 @@ import { registerHandlebarsHelpers, preloadHandlebarsTemplates } from "./helpers
 import { BrigTest, rollTest, degreeOf } from "./dice/roll.mjs";
 import { registerChatListeners } from "./documents/chat.mjs";
 import { BrigCharGen } from "./apps/char-gen.mjs";
+import { BrigWelcome, registerWelcome } from "./apps/welcome.mjs";
+import { registerCharGenSocket, openCharGenAdmin } from "./apps/chargen-lock.mjs";
 
 export const SYSTEM_ID = "brigandyne-40k";
 
@@ -20,7 +22,7 @@ Hooks.once("init", async function () {
   console.log(`${SYSTEM_ID} | Initialisation de Warhammer 40,000 : Brigandyne`);
 
   CONFIG.BRIGANDYNE = BRIGANDYNE;
-  game.brigandyne = { BrigTest, rollTest, degreeOf, config: BRIGANDYNE, CharGen: BrigCharGen };
+  game.brigandyne = { BrigTest, rollTest, degreeOf, config: BRIGANDYNE, CharGen: BrigCharGen, Welcome: BrigWelcome };
 
   // Documents
   CONFIG.Actor.documentClass = BrigActor;
@@ -45,6 +47,7 @@ Hooks.once("init", async function () {
 
   registerHandlebarsHelpers();
   registerChatListeners();
+  registerWelcome();
   await preloadHandlebarsTemplates();
 });
 
@@ -61,6 +64,7 @@ Hooks.once("i18nInit", function () {
 });
 
 Hooks.once("ready", function () {
+  registerCharGenSocket();
   console.log(`${SYSTEM_ID} | Système prêt — Pour l'Empereur !`);
 });
 
@@ -76,4 +80,14 @@ Hooks.on("renderActorDirectory", (app, html) => {
   btn.innerHTML = `<i class="fa-solid fa-wand-magic-sparkles"></i> ${game.i18n.localize("BRIG.CharGen.title")}`;
   btn.addEventListener("click", () => new BrigCharGen().render(true));
   header.appendChild(btn);
+
+  // Outil MJ : gestion des verrous de création
+  if (game.user.isGM) {
+    const admin = document.createElement("button");
+    admin.type = "button";
+    admin.className = "brig-chargen-admin-launch";
+    admin.innerHTML = `<i class="fa-solid fa-user-lock"></i> ${game.i18n.localize("BRIG.CharGen.lock.adminTitle")}`;
+    admin.addEventListener("click", () => openCharGenAdmin());
+    header.appendChild(admin);
+  }
 });

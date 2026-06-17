@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous êtes un épicurien qui savez profiter de la vie.</p>",
+    "description": "<p>Vous êtes un épicurien qui savez profiter de la vie.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

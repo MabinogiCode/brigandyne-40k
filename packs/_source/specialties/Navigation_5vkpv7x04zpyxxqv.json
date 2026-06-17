@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Piloter un bateau, s’orienter avec les étoiles, reconnaître un navire",
+    "description": "<p>Piloter un bateau, s’orienter avec les étoiles, reconnaître un navire</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

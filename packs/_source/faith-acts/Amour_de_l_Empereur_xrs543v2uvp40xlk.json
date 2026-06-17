@@ -12,6 +12,8 @@
     "rPlus": "Bulle",
     "damage": "RU+VOL",
     "effect": "<p>Une chaleur apaisante et sucrée comme le miel se répand dans le corps de la cible qui sent ses plaies se refermer, ses os se ressouder et ses membres perdues se régénérer alors qu’une lumière chaude semble provenir de son propre corps. La cible guérit de RU+*VOL* PV.</p>",
+    "description": "<p>Une chaleur apaisante et sucrée comme le miel se répand dans le corps de la cible qui sent ses plaies se refermer, ses os se ressouder et ses membres perdues se régénérer alors qu’une lumière chaude semble provenir de son propre corps. La cible guérit de RU+*VOL* PV.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "ys1kp2qzmzx00zzz"
 }

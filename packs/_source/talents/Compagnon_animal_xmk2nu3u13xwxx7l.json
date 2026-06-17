@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Un animal fidèle vous suit et comprend les ordres simples. Il peut s’agir de votre cheval, d’un chien, d’un rat, d’un chat, ou d’un singe venu d’une contrée exotique. S’il meurt, vous débuterez la prochaine aventure avec un nouveau compagnon, trouvé sur le bord d’un chemin ou acheté sur une foire.</p>",
+    "description": "<p>Un animal fidèle vous suit et comprend les ordres simples. Il peut s’agir de votre cheval, d’un chien, d’un rat, d’un chat, ou d’un singe venu d’une contrée exotique. S’il meurt, vous débuterez la prochaine aventure avec un nouveau compagnon, trouvé sur le bord d’un chemin ou acheté sur une foire.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

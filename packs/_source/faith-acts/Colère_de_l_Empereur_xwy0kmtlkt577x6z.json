@@ -12,6 +12,8 @@
     "rPlus": "Dégâts +1",
     "damage": "RU+VOL",
     "effect": "<p>En manifestant la colère de l’Empereur-Dieu, un projectile d’énergie radieuse frappe la cible de l’Acte de Foi qui subit RU+*VOL* dégâts.</p>",
+    "description": "<p>En manifestant la colère de l’Empereur-Dieu, un projectile d’énergie radieuse frappe la cible de l’Acte de Foi qui subit RU+*VOL* dégâts.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xy23x7rzwrn5s533"
 }

@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous disposez de ressources insoupçonnées dans les pires moments. Une fois par jour, si vous atteignez 0 PV vous regagnez immédiatement *END* PV.</p>",
+    "description": "<p>Vous disposez de ressources insoupçonnées dans les pires moments. Une fois par jour, si vous atteignez 0 PV vous regagnez immédiatement *END* PV.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

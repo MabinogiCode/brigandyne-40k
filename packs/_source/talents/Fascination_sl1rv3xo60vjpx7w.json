@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>La magie est parfois d’une aide inespérée en plein Votre regard, votre voix ou votre physique attractif combat. Une fois par scène, vous pouvez ajouter peut captiver votre auditoire. Une fois par scène, votre *MAG* aux dégâts de mêlée. vous pouvez fasciner une cible qui fera évoluer son avis sur vous de façon positive. Une personne agres-</p>",
+    "description": "<p>La magie est parfois d’une aide inespérée en plein Votre regard, votre voix ou votre physique attractif combat. Une fois par scène, vous pouvez ajouter peut captiver votre auditoire. Une fois par scène, votre *MAG* aux dégâts de mêlée. vous pouvez fasciner une cible qui fera évoluer son avis sur vous de façon positive. Une personne agres-</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

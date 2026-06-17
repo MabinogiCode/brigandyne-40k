@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Maquillage, imitation et travestissement",
+    "description": "<p>Maquillage, imitation et travestissement</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

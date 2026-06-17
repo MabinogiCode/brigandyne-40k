@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Reconnaître des empreintes, suivre une piste, traquer un animal",
+    "description": "<p>Reconnaître des empreintes, suivre une piste, traquer un animal</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

@@ -23,6 +23,26 @@
     }
   },
   "BRIG": {
-    "system": "Warhammer 40,000: Brigandyne"
+    "system": "Warhammer 40,000: Brigandyne",
+    "Welcome": {
+      "title": "Warhammer 40,000: Brigandyne",
+      "lead": "Welcome to the grim darkness of the far future. There is only war. This system adapts Brigandyne 2nd edition to the merciless universe of Warhammer 40,000: d100 under skill, six degrees of success, Fate, Warp Psykers and True Faith.",
+      "feature": {
+        "dice": "Automated d100 rolls: degrees, Advantages/Disadvantages, opposed rolls and Fate.",
+        "chargen": "Guided character creation: Imperium species, Adepta and skill rolling.",
+        "content": "Bundled compendiums: weapons, armour, careers, talents, psychic powers, bestiary, vehicles…",
+        "warp": "The Warp is watching: Psychic Phenomena, Perils of the Warp, Corruption and True Faith handled automatically."
+      },
+      "dontShow": "Don't show again for this version",
+      "createChar": "Create a character",
+      "start": "For the Emperor!"
+    },
+    "Settings": {
+      "welcomeSeenVersion": "Seen welcome-screen version",
+      "showWelcome": {
+        "name": "Show welcome screen",
+        "hint": "Shows the Warhammer 40,000: Brigandyne welcome screen on world launch, once per new version."
+      }
+    }
   }
 }

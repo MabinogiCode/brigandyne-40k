@@ -13,6 +13,8 @@
     "rPlus": "1 Avantage PER ou TIR",
     "damage": "",
     "effect": "<p>Vous pouvez projeter votre regard à une distance de *PSY* kilomètres. Vous pouvez arrêter votre vision sur un détail ou un élément à étudier plus précisément.</p>",
+    "description": "<p>Vous pouvez projeter votre regard à une distance de *PSY* kilomètres. Vous pouvez arrêter votre vision sur un détail ou un élément à étudier plus précisément.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xq32wyrx5vqyxx3x"
 }

@@ -13,6 +13,8 @@
     "rPlus": "Cible +1",
     "damage": "",
     "effect": "<p>Vous contrôlez une cible qui obéira au doigt et à l’oeil. Ce n’est pas un pantin et elle continue à agir de façon naturelle quand elle vous obéit. Elle ne commettra pas d’acte suicidaire ou d’automutilation, mais pourra attaquer un de ses alliés. Si elle est blessée, ce choc met immédiatement fin au sort.</p>",
+    "description": "<p>Vous contrôlez une cible qui obéira au doigt et à l’oeil. Ce n’est pas un pantin et elle continue à agir de façon naturelle quand elle vous obéit. Elle ne commettra pas d’acte suicidaire ou d’automutilation, mais pourra attaquer un de ses alliés. Si elle est blessée, ce choc met immédiatement fin au sort.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xrt0tjrxjlulqx0x"
 }

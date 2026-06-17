@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Le Don s’est épanoui en vous, et vous pouvez jeter un tour et un sortilège de plus par jour. Magie insidieuse Votre essence magique s’infiltre partout. Tous vos dégâts magiques divisent la protection de vos adversaires par deux.</p>",
+    "description": "<p>Le Don s’est épanoui en vous, et vous pouvez jeter un tour et un sortilège de plus par jour. Magie insidieuse Votre essence magique s’infiltre partout. Tous vos dégâts magiques divisent la protection de vos adversaires par deux.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

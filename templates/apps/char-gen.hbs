@@ -2,6 +2,15 @@
 <div class="wizard-body">
   {{#if noPacks}}
     <p class="warn">Les compendiums (Espèces, Carrières) ne sont pas disponibles.</p>
+  {{else if blocked}}
+    <div class="wizard-blocked">
+      <i class="fa-solid fa-user-lock"></i>
+      <h2>{{localize "BRIG.CharGen.lock.blockedTitle"}}</h2>
+      <p>{{localize "BRIG.CharGen.lock.blockedBody"}}</p>
+      <button type="button" class="btn-request-new" data-action="wizRequestNew">
+        <i class="fa-solid fa-user-plus"></i> {{localize "BRIG.CharGen.lock.askNew"}}
+      </button>
+    </div>
   {{else}}
   <div class="wizard-layout">
     <aside class="wizard-stages">
@@ -33,25 +42,113 @@
           <select name="role">{{#each roles as |lab key|}}<option value="{{key}}" {{#if (eq key ../draft.role)}}selected{{/if}}>{{localize lab}}</option>{{/each}}</select>
         </label>
         {{#if speciesName}}
-          <div class="preview">
-            <h4>{{speciesName}} — Destin {{destin}}</h4>
-            <div class="char-mini-grid">{{#each chars}}<div class="mini"><span class="k">{{localize abbr}}</span><span class="v">{{base}}</span></div>{{/each}}</div>
+          <div class="preview species-preview">
+            <h4><i class="fa-solid fa-dna"></i> {{speciesName}} <span class="lifestyle">— Destin {{destin}}</span></h4>
+            {{#if speciesDesc}}<p class="lore">{{speciesDesc}}</p>{{/if}}
+            {{#if (brigOr speciesLifespan speciesSize)}}<p class="lore-meta">{{#if speciesLifespan}}<i class="fa-solid fa-hourglass-half"></i> {{speciesLifespan}}{{/if}}{{#if speciesSize}} &nbsp;·&nbsp; <i class="fa-solid fa-ruler-vertical"></i> {{speciesSize}}{{/if}}</p>{{/if}}
+            <div class="char-mini-grid">{{#each chars}}<div class="mini" data-tooltip="{{tip}}"><span class="k">{{localize abbr}}</span><span class="v">{{base}}</span></div>{{/each}}</div>
+            {{#if speciesTraits.length}}<div class="chip-row">{{#each speciesTraits}}<span class="chip trait">{{this}}</span>{{/each}}</div>{{/if}}
+            {{#if speciesLimits.length}}<p class="lore-meta"><i class="fa-solid fa-arrow-up-from-bracket"></i> Plafonds : {{#each speciesLimits}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</p>{{/if}}
           </div>
         {{/if}}
-        {{#if careerName}}<p class="career-line"><i class="fa-solid fa-briefcase"></i> <strong>{{careerName}}</strong> · niveau de vie : {{lifestyle}}</p>{{/if}}
+        {{#if careerName}}
+          <div class="preview career-preview">
+            <h4><i class="fa-solid fa-briefcase"></i> {{careerName}} <span class="lifestyle">· niveau de vie : {{lifestyle}}</span></h4>
+            {{#if careerQuote}}<p class="quote">« {{careerQuote}} »</p>{{/if}}
+            {{#if careerDesc}}<div class="lore">{{{careerDesc}}}</div>{{/if}}
+            {{#if specialtiesInfo.length}}<p class="chip-label">Spécialités de la carrière</p><div class="chip-row">{{#each specialtiesInfo}}<span class="chip" data-tooltip="{{tip}}">{{name}}</span>{{/each}}</div>{{/if}}
+            {{#if talentsInfo.length}}<p class="chip-label">Talents de la carrière</p><div class="chip-row">{{#each talentsInfo}}<span class="chip talent" data-tooltip="{{tip}}">{{name}}</span>{{/each}}</div>{{/if}}
+          </div>
+        {{/if}}
 
       {{else if (eq stepId 'characteristics')}}
-        <p class="hint">Caractéristiques de départ (base de l'espèce) — ajuste-les si ta table le permet.</p>
-        <div class="char-edit-grid">
-          {{#each chars}}
-            <div class="ce" data-tooltip="{{localize label}}">
-              <label>{{localize abbr}}</label>
-              <input type="number" name="char.{{key}}" value="{{value}}" min="0" max="100" />
-              <span class="bn">+{{bonus}}</span>
+        {{#if methodChosen}}
+          {{#if showMethodTabs}}
+            <div class="gen-method-active">
+              <span><i class="fa-solid fa-circle-check"></i> {{localize "BRIG.CharGen.method.label"}} : <strong>{{methodLabel}}</strong></span>
+              <button type="button" class="link-request" data-action="genMethodReset"><i class="fa-solid fa-rotate-left"></i> Changer de méthode</button>
             </div>
-          {{/each}}
+          {{else}}
+            <div class="gen-method-locked">
+              <span><i class="fa-solid fa-lock"></i> {{localize "BRIG.CharGen.method.label"}} : <strong>{{methodLabel}}</strong></span>
+              <button type="button" class="link-request" data-action="wizRequestMethod"><i class="fa-solid fa-hand"></i> {{localize "BRIG.CharGen.lock.askMethod"}}</button>
+            </div>
+          {{/if}}
+        {{else}}
+          <div class="gen-choose">
+            <h3>{{localize "BRIG.CharGen.method.choose"}}</h3>
+            <div class="gen-choose-cards">
+              <button type="button" class="choose-card" data-action="genMethod" data-method="points">
+                <i class="fa-solid fa-sliders"></i>
+                <span class="cc-title">{{localize "BRIG.CharGen.method.points"}}</span>
+                <span class="cc-desc">{{localize "BRIG.CharGen.method.pointsDesc"}}</span>
+              </button>
+              <button type="button" class="choose-card" data-action="genMethod" data-method="roll">
+                <i class="fa-solid fa-dice"></i>
+                <span class="cc-title">{{localize "BRIG.CharGen.method.roll"}}</span>
+                <span class="cc-desc">{{localize "BRIG.CharGen.method.rollDesc"}}</span>
+              </button>
+            </div>
+            {{#if locksApply}}<p class="warn-final"><i class="fa-solid fa-triangle-exclamation"></i> {{localize "BRIG.CharGen.method.finalWarn"}}</p>{{/if}}
+          </div>
+        {{/if}}
+
+        {{#if methodChosen}}
+        {{#if (eq gen.method 'roll')}}
+          <div class="gen-roll-bar">
+            {{#if rollLocked}}
+              <span class="roll-locked"><i class="fa-solid fa-lock"></i> {{localize "BRIG.CharGen.lock.diceThrown"}}</span>
+              <button type="button" class="link-request" data-action="wizRequestReroll"><i class="fa-solid fa-hand"></i> {{localize "BRIG.CharGen.lock.askReroll"}}</button>
+            {{else}}
+              <button type="button" class="roll-btn" data-action="genRoll"><i class="fa-solid fa-dice-d6"></i> {{localize "BRIG.CharGen.method.rollAction"}}</button>
+            {{/if}}
+            {{#if gen.rolledDisplay.length}}
+              <span class="rolled">{{#each gen.rolledDisplay}}<span class="rv{{#if dropped}} dropped{{/if}}{{#if used}} used{{/if}}">{{v}}</span>{{/each}}</span>
+              {{#if gen.dropped}}<span class="dropped-note">{{localize "BRIG.CharGen.method.dropped"}} {{gen.dropped}}</span>{{/if}}
+            {{else}}<span class="hint">{{localize "BRIG.CharGen.method.rollHint"}}</span>{{/if}}
+          </div>
+        {{else}}
+          <p class="points-counter">{{localize "BRIG.CharGen.method.pointsRemaining"}} <strong data-points-remaining>{{gen.pointsRemaining}}</strong> / {{gen.pointsTotal}} <span class="hint">{{localize "BRIG.CharGen.method.pointsRange"}}</span></p>
+        {{/if}}
+
+        <div class="gen-table-wrap">
+          <table class="gen-table">
+            <thead>
+              <tr><th class="rh"></th>{{#each gen.rows}}<th data-tooltip="{{tip}}">{{localize abbr}}</th>{{/each}}</tr>
+            </thead>
+            <tbody>
+              <tr class="r-base"><th class="rh">Base</th>{{#each gen.rows}}<td data-tooltip="Base d'espèce">{{base}}</td>{{/each}}</tr>
+              <tr class="r-ctrl">
+                <th class="rh">{{#if (eq gen.method 'roll')}}Tirage{{else}}Points{{/if}}</th>
+                {{#each gen.rows}}<td>
+                  {{#if (eq ../gen.method 'roll')}}
+                    <select name="assign.{{key}}" data-refresh>
+                      <option value="">—</option>
+                      {{#each options}}<option value="{{i}}" {{#if (eq i ../assignedIdx)}}selected{{/if}} {{#if disabled}}disabled{{/if}}>{{v}}</option>{{/each}}
+                    </select>
+                  {{else}}
+                    <input type="number" name="points.{{key}}" value="{{point}}" min="0" max="20" />
+                  {{/if}}
+                </td>{{/each}}
+              </tr>
+              <tr class="r-total"><th class="rh">Total</th>{{#each gen.rows}}<td data-total="{{key}}">{{total}}</td>{{/each}}</tr>
+            </tbody>
+          </table>
         </div>
-        <div class="derived-preview"><span>PV <strong>{{pv}}</strong></span><span>SF <strong>{{sf}}</strong></span></div>
+
+        <details class="psy-draw">
+          <summary><i class="fa-solid fa-brain"></i> Psyker — prélever vers PSY (max 10/comp · COM compte double)</summary>
+          <div class="psy-grid">
+            {{#each gen.rows}}<label class="pd">{{localize abbr}}<input type="number" name="psyDraw.{{key}}" value="{{psyDraw}}" min="0" max="10" /></label>{{/each}}
+          </div>
+          <div class="psy-result">PSY = <strong data-total="psy">{{gen.psyTotal}}</strong> <span class="hint">(max {{gen.psyCap}} à la création)</span></div>
+        </details>
+
+        <div class="derived-preview">
+          <span>PV <strong>{{pv}}</strong></span><span>SF <strong>{{sf}}</strong></span>
+          {{#unless gen.valid}}<span class="gen-warn"><i class="fa-solid fa-triangle-exclamation"></i> {{#if (eq gen.method 'roll')}}Assigne chaque résultat (un par compétence){{else}}≤ {{gen.pointsTotal}} pts, max 20/comp{{/if}}</span>{{/unless}}
+        </div>
+        {{/if}}
 
       {{else if (eq stepId 'details')}}
         <div class="details-grid">
@@ -73,8 +170,9 @@
           <li><i class="fa-solid fa-user-tag"></i> Rôle : {{localize (concat "BRIG.Role." draft.role)}}</li>
           <li><i class="fa-solid fa-heart"></i> PV <strong>{{pv}}</strong> · SF <strong>{{sf}}</strong>{{#if destin}} · Destin <strong>{{destin}}</strong>{{/if}}</li>
         </ul>
-        <div class="recap-chars">{{#each chars}}<span class="rc">{{localize abbr}} <b>{{value}}</b></span>{{/each}}</div>
-        {{#if careerName}}<p class="hint">{{specialties.length}} spécialité(s) et {{talents.length}} talent(s) de la carrière seront ajoutés.</p>{{/if}}
+        <div class="recap-chars">{{#each chars}}<span class="rc" data-tooltip="{{tip}}">{{localize abbr}} <b>{{value}}</b></span>{{/each}}</div>
+        {{#if specialtiesInfo.length}}<p class="chip-label">Spécialités de la carrière</p><div class="chip-row">{{#each specialtiesInfo}}<span class="chip" data-tooltip="{{tip}}">{{name}}</span>{{/each}}</div>{{/if}}
+        {{#if talentsInfo.length}}<p class="chip-label">Talents de la carrière</p><div class="chip-row">{{#each talentsInfo}}<span class="chip talent" data-tooltip="{{tip}}">{{name}}</span>{{/each}}</div>{{/if}}
         {{#unless editMode}}<p class="attach-note"><i class="fa-solid fa-link"></i> Le personnage sera créé et rattaché à <strong>toi</strong> ({{draft.name}} deviendra ton personnage).</p>{{/unless}}
       {{/if}}
     </section>

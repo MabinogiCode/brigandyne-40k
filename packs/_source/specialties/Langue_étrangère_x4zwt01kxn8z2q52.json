@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Comprendre et parler une langue étrangère ou un patois local",
+    "description": "<p>Comprendre et parler une langue étrangère ou un patois local</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

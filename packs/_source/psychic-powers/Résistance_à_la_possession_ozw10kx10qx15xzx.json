@@ -13,6 +13,8 @@
     "rPlus": "Flux d’énergie",
     "damage": "",
     "effect": "<p>Vous érigez des barrières mentales pour vous protéger d’influences extérieures. Pendant la durée du pouvoir, vous obteniez un bonus de +20% pour résister à la possession d’un pouvoir psychique ou d’un démon.</p>",
+    "description": "<p>Vous érigez des barrières mentales pour vous protéger d’influences extérieures. Pendant la durée du pouvoir, vous obteniez un bonus de +20% pour résister à la possession d’un pouvoir psychique ou d’un démon.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "zy01lzxxmrm4y884"
 }

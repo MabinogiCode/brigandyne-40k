@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Planifier la construction d’un bâtiment et tout retenir de mémoire",
+    "description": "<p>Planifier la construction d’un bâtiment et tout retenir de mémoire</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

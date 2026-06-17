@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Connaître la peinture, les artistes, l’histoire de l’art, estimer un tableau",
+    "description": "<p>Connaître la peinture, les artistes, l’histoire de l’art, estimer un tableau</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

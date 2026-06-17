@@ -13,6 +13,8 @@
     "rPlus": "Cible +1",
     "damage": "",
     "effect": "<p>La victime de ce maléfice hurle d’effroi : elle est Apeurée pour toute la durée du sort. Tous les personnages qui l’attaquent bénéficient de l’attaque d’opportunité. Elle pourra néanmoins riposter au prochain tour, car le choc lui aura fait reprendre ses esprits.</p>",
+    "description": "<p>La victime de ce maléfice hurle d’effroi : elle est Apeurée pour toute la durée du sort. Tous les personnages qui l’attaquent bénéficient de l’attaque d’opportunité. Elle pourra néanmoins riposter au prochain tour, car le choc lui aura fait reprendre ses esprits.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xrt0tjrxjlulqx0x"
 }

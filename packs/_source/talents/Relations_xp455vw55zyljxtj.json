@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous connaissez toujours quelqu’un pour vous tirer d’affaire. Une fois par jour, si vous êtes dans votre région, vous pouvez contacter une personne qui pourra agir en votre faveur ou vous rendre un service. Evidemment, ces services ne sont pas gratuits et il revient au MJ de décider si vous pouvez faire appel à un de ces contacts ou non. En dehors de votre région, il est bien plus difficile d’utiliser ce Talent,</p>",
+    "description": "<p>Vous connaissez toujours quelqu’un pour vous tirer d’affaire. Une fois par jour, si vous êtes dans votre région, vous pouvez contacter une personne qui pourra agir en votre faveur ou vous rendre un service. Evidemment, ces services ne sont pas gratuits et il revient au MJ de décider si vous pouvez faire appel à un de ces contacts ou non. En dehors de votre région, il est bien plus difficile d’utiliser ce Talent,</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

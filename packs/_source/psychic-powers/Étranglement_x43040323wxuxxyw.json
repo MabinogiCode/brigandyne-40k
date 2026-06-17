@@ -13,6 +13,8 @@
     "rPlus": "Dégâts +1",
     "damage": "",
     "effect": "<p>Vous contractez la chair de votre adversaire qui devient Affaibli et subit *PSY* dégâts asphyxiants par tour.</p>",
+    "description": "<p>Vous contractez la chair de votre adversaire qui devient Affaibli et subit *PSY* dégâts asphyxiants par tour.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xv36x51kwu18rx4u"
 }

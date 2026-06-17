@@ -13,6 +13,8 @@
     "rPlus": "Durée x2",
     "damage": "",
     "effect": "<p>Vous irradiez d’une présence rassurante. Tous les alliés qui peuvent vous voir obtiennent un bonus de +20 pour résister à l’effet de PEUR.</p>",
+    "description": "<p>Vous irradiez d’une présence rassurante. Tous les alliés qui peuvent vous voir obtiennent un bonus de +20 pour résister à l’effet de PEUR.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "zy01lzxxmrm4y884"
 }

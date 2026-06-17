@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Soulever, maintenir de lourdes charges",
+    "description": "<p>Soulever, maintenir de lourdes charges</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

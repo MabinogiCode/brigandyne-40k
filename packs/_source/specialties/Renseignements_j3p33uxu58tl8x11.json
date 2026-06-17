@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Ecouter les rumeurs, s’adresser aux bonnes personnes",
+    "description": "<p>Ecouter les rumeurs, s’adresser aux bonnes personnes</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

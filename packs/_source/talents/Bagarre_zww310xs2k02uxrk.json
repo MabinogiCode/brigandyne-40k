@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Cogner les gens qui vous regardent de travers a toujours été très naturel pour vous. Vous pouvez considérer vos poings comme des armes légères (*FOR* -1) et courtes (allonge D).</p>",
+    "description": "<p>Cogner les gens qui vous regardent de travers a toujours été très naturel pour vous. Vous pouvez considérer vos poings comme des armes légères (*FOR* -1) et courtes (allonge D).</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

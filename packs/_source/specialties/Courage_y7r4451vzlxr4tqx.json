@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Résister à la peur, à la vision d’un mort-vivant ou d’un démon",
+    "description": "<p>Résister à la peur, à la vision d’un mort-vivant ou d’un démon</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

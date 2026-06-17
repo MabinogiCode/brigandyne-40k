@@ -13,6 +13,8 @@
     "rPlus": "Cible +1 ou Durée x2",
     "damage": "",
     "effect": "<p>Vous manipulez la pression artérielle et les palpitations des muscles de votre cible qui devient Essoufflée et Affaiblie pendant la durée du pouvoir.</p>",
+    "description": "<p>Vous manipulez la pression artérielle et les palpitations des muscles de votre cible qui devient Essoufflée et Affaiblie pendant la durée du pouvoir.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xv36x51kwu18rx4u"
 }

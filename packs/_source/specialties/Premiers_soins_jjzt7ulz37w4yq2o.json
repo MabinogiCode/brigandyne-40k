@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Faire un garrot, soigner une blessure, éviter une infection",
+    "description": "<p>Faire un garrot, soigner une blessure, éviter une infection</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

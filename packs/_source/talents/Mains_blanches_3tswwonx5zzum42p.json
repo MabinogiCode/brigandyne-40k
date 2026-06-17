@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous semblez être habité d’une énergie positive. Une fois par scène, si vous soignez quelqu’un (qu’importe le moyen) vous ajoutez votre *HAB* aux PV reçus.</p>",
+    "description": "<p>Vous semblez être habité d’une énergie positive. Une fois par scène, si vous soignez quelqu’un (qu’importe le moyen) vous ajoutez votre *HAB* aux PV reçus.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

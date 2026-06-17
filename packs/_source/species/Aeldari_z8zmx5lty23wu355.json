@@ -39,6 +39,9 @@
       "nyctalopie"
     ],
     "noPsy": false,
+    "description": "<p>Xenos élancés et gracieux, aux traits fins et aux mouvements surhumains. Rares dans l'Imperium, où on les considère au mieux comme des parias, au pire comme des ennemis.</p>",
+    "lifespan": "≈ 900 ans",
+    "sizeNote": "~1m70, 60 kg (H) / 1m60, 50 kg (F)",
     "source": "L1"
   }
 }

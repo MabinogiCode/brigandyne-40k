@@ -13,6 +13,8 @@
     "rPlus": "Cible +1",
     "damage": "",
     "effect": "<p>Vous pouvez au choix : - Assécher un lieu sur une zone de RU mètres de rayon. - Affaiblir une cible dont la peau se flétrit, et subit RU+2 dégâts que l’armure n’absorbe pas. Elle est Affaiblie jusqu’à ce qu’elle se réhydrate.</p>",
+    "description": "<p>Vous pouvez au choix : - Assécher un lieu sur une zone de RU mètres de rayon. - Affaiblir une cible dont la peau se flétrit, et subit RU+2 dégâts que l’armure n’absorbe pas. Elle est Affaiblie jusqu’à ce qu’elle se réhydrate.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "v5x1swvt13srxxr6"
 }

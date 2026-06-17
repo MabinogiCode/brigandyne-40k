@@ -13,6 +13,8 @@
     "rPlus": "PEUR (2)",
     "damage": "",
     "effect": "<p>Vous irradiez d’une présence terrifiante. Vous obtenez l’effet PEUR (1).</p>",
+    "description": "<p>Vous irradiez d’une présence terrifiante. Vous obtenez l’effet PEUR (1).</p>",
     "source": "L1"
-  }
+  },
+  "folder": "zy01lzxxmrm4y884"
 }

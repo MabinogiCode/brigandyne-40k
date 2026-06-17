@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Votre essence magique est particulièrement sensible au sang. Lorsque vous sacrifiez des PV pour augmenter votre pourcentage de réussite, chaque PV sacrifié rapporte le double.</p>",
+    "description": "<p>Votre essence magique est particulièrement sensible au sang. Lorsque vous sacrifiez des PV pour augmenter votre pourcentage de réussite, chaque PV sacrifié rapporte le double.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

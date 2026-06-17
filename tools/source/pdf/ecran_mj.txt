@@ -1,0 +1,433 @@
+
+===== PAGE 1 =====
+                                                                 Introduction
+
+
+
+
+
+Aventures de sang et d’acier                                                    1
+
+
+                                                                                                                    Florent MENOT - florent.menot@yahoo.fr - 20260615/598/243307/235438
+
+===== PAGE 2 =====
+
+
+===== PAGE 3 =====
+Florent MENOT - florent.menot@yahoo.fr - 20260615/598/243307/235438
+
+===== PAGE 4 =====
+                 p.16                                                                                    p.130+
+    Compétences Tests les plus courants                         Réussite mineure : résultat < ou = à la compétence.
+       Combat    Se battre au contact, tactique                    Réussite majeure : Réussite entre 01-09.
+     Connaissances Savoir, mémoire, étiquette, histoire             Réussite critique : Réussite qui se termine par 0.
+       Discrétion   Se cacher, se déplacer en silence               Échec mineur : résultat > à la compétence.
+                                                            Échec majeur : Échec entre 91-99.      Endurance   Résistance poisons & maladies, souffle
+                                                            Échec critique : Échec qui se termine par 0.         Force     Forcer, pousser, intimider
+        Habileté    Soins, passe-passe, crochetage, artisanat         Difficulté  L’action est ...                     p.129
+        Magie     Lancer un sort, détecter la magie                 +30    Simple (un parfait débutant peut réussir)
+     Mouvement  Course, nage, esclade, équitation, saut           +20    Aisée (à la portée de quelqu’un de dégourdi)
+       Perception  Repérage, fouille, 6e sens                         +10     Faisable (nécessite un peu de concentration)
+        Sociabilité   Persuasion, séduction, mensonge                0     Assez difficile (stress, sans préparation)
+         Survie    Animaux, plantes, campement                      -10      Difficile (compliquée par plusieurs facteurs)
+           Tir     Armes de tir et de lancer                          -20    Très difficile (réservée aux professionnels)
+        Volonté    Courage, résistance faim, soif, torture              -30    Complexe (réservée aux vétérans)
+
+                         MODIFICATEUR D’OPPOSITION (MODO)      p.133
+ Compétence  05  10   15  20  25  30  35  40  45  50  55  60  65  70  75  80  85  90  95  100
+             +45 +40 +35 +30 +25 +20 +15 +10  +5  0   -5  -10  -15 -20 -25 -30  -35 -40 -45  -50
+
+ ÉCHELLE DES COMPÉTENCES   p.17        ÉCHECS NON BLOQUANTS
+     05-10    Très faible                                Perte de temps, détour inutile
+     15-20    Faible, pas compétent                              Bruit, attire l’attention  H : Alden, Boren, Cael, Dario, Galien,
+    25-30    Médiocre, assez faible                      Laisse des traces bien visibles    Rodrik, Dinas, Sagreval, Conrad, Ar-
+       35    Commun, ordinaire                     Perte d’objet (cassé, perdu, volé)    noul, Baudry, Augé, Silas, Hernand,
+     40-45   Compétent, assez bon                 Perte d’argent (taxe, corruption…)    Romuald, Alrik, Dridam, Jalko
+                                                      Rumeurs sur les PJ     50-55   Bon, meilleur du village
+                                                       Entraîne une confrontation   F   :  Aloïs, Azylia, Beonisse, Calise,     60-65    Très bon, meilleur de la ville
+                                                 Perte de PV (éraflure, chute, foulure)    Emerise, Evanna, Iris, Lywen, Thalia,     70-75    Excellent, meilleur de la région
+                                                    Perte de SF (stress, peur, dispute)     80-85    Exceptionnel, meilleur du pays                                          Audra, Vianna, Isolde, Rose, Agatha,                                                             Entraîne un handicap     90+     Extraordinaire, surhumain                                              Moïra, Sighild, Loreta, Malmiri
+
+
+
+ Contact : jusqu’à 1 mètre.
+ Courte : jusqu’à 5 mètres.
+ Moyenne : jusqu’à 20 mètres.                                                                                    p.135
+ Longue : jusqu’à 50 mètres.
+ Extrême : jusqu’à 100 mètres.                            Acides : - 1 pt d’armure après chaque attaque réussie.
+                                                            Asphyxiants  : ignorent les armures. se régénèrent (1 pt/
+                                             p.136                                                       min) si le personnage peut respirer.
+                                                       Chute : ignorent les armures.
+Affaibli : 1 Désavantage à toutes ses actions.                                                                 Électriques : ignorent armures métalliques. Si le total de
+Affamé, Assoiffé : pas de R+, dégâts –1.                                                            dégâts donne un nombre pair, le personnage est Sonné.
+Apeuré : test VOL pour agir. Échec : fuite ou passe son tour.                                                      Feu : enflamment les vêtements si le total des dégâts donne
+Aveuglé : 2 Désavantages à toute action impliquant la                                                 un nombre pair (-1PV/tour tant que le personnage n’utilise
+vue (comme le combat). Si la vue est essentielle (HAB,                                                         pas toute son action à l’éteindre).
+TIR, PER visuelle, lecture…) score = 0.                                                            Note : les armures protègent des dégâts de feu instantanés, mais
+Confus : test PER pour agir. Échec : passe son tour.                                                             pas des incendies.
+Démoralisé, Intimidé : pas de R+, dégâts –1                                                             Froid : gèlent la cible si le total des dégâts donne un nombre
+Ensanglanté : -1 PV au début de son tour.                                                                        pair. Dans ce cas, la cible est Ralentie.
+Essoufflé : test END pour agir. Échec : passe son tour.                                                            Note : les armures protègent contre les dégâts de froid.
+Paralysé : immobilisé mais reste conscient.                                                            Psychiques : ignorent armures. Si le total de dégâts donne
+Ralenti : test MOU pour agir. Échec : passe son tour.                                                 un nombre pair, le personnage est Confus.
+Sonné : test FOR pour agir. Échec : passe son tour.                                                      Se régénèrent (1 pt/min) si repos.
+Terrorisé : fuite ou passe son tour.                                                         Temporaires : se régénèrent (1 pt/min) si repos.
+
+===== PAGE 5 =====
+                                                 p.140+             Magie         p.208+
+PREMIERS SOINS                                         AUGMENTER SES CHANCES
+Test (HAB) réussi : +*END* PV et pas d’infection.                                                                   Réciter la formule : +5%
+R. maj : +*END*+1 PV R. crit. : +*END*+2 PV.                                                                        Sacrifice : 1 PV sacrifié = +1% (+2% si mage)
+É. Crit. : -1 PV .                                                                  +1 Avantage : SF –2
+REPOS ET NIVEAU DE VIE
+                                                RÉSISTANCE       Niveau de vie               Vitalité      Sang-froid
+                                                           Le mage prend le modificateur le plus difficile entre leMisérable (5pc /semaine)             1 /semaine       1 /semaine
+                                       MODO de la cible ou la difficulté du sort.
+Pauvre (1 pa /semaine)                1 /2 jours        1 /2 jours
+Ordinaire (2 pa /semaine)             1/jour           1/jour         RÉSULTAT
+Aisé (5 pa /semaine)                  2/jour          1/jour              Réussite critique : Effet et au choix : R+ ou 0 explosif
+Riche (1 po /semaine)                2/jour          2/jour              Réussite majeure : Effet et R+
+                                                                   Réussite mineure : Effet du sortPrincier (5po /semaine)              2/jour          2/jour
+                                                            Échec mineur : le sort ne fait pas effet ou inutile
+                                                            Échec majeur : pas d’effet et complication mineureRÉCUPÉRATION DU SANG-FROID                                                       p.144                                                            Échec critique  : pas d’effet et complication majeureBonne idée, interprétation : SF+1 à +4
+Réconforter un compagnon : test SOC → SF+1 à la cible
+                                           FORCER LA MAGIE (1 FOIS / JOUR)Passer un bon moment : SF+1 (bien manger, activité favorite...),
+SF+2 (fête, rapport sexuel...), SF+3 ou +4 (moment mémorable,           Réussite mineure : Bonus R+ et complication mineure
+acclamations, tomber amoureux...)                                Échec mineur : Effet du sort et complication mineure
+Prier : test CNS ou VOL → SF+1 (gain auto si église)                Échec majeur : Effet du sort et complication majeure
+
+                                                DÉPASSER LA LIMITE
+                                                   p.164             Tour : 2 PV, Sortilège : 4 PV, Rituel : 6 PV
+                       Mêlee
+Adversaire à terre : +1 Avantage, DG+1
+Attaque surprise : +1 Avantage, attaque d’opportunité, DG+2
+Charge : Test de MOU. Si réussi, DG+1                                                                             p.180
+Surnombre : +1 Avantage et attaques d’opportunités
+Cavalier vs fantassin : +1 Avantage, DG+1. Si charge réussie,       Efficace : Test d’opposition COM/COM normal.
+le bonus de dégâts est celui du cheval.                     En force : 1 Désavantage, +*FOR* aux dégâts.
+Deux armes : DG+1 ou Protection +1                       En finesse : +1 Avantage, dégâts finaux/2.
+Se désengager : Att d’opportunité MOU/COM ou COM/COM.     Coup tordu : Chifoumi, enjeu : 1 Avantage.
+Si réussi : Désengagement + Action.                          Sur la défensive : (+2 Avantages, dg =0) Bouclier +3 Av.
+Échec : blessure + Désengagement. E+ : Blessure.                  Viser : Malus -5 à -20, Protection adverse = 0.
+                             Tir                               Armure partielle (-5) complète (-10) casque (-5), bouclier (-5)
+Viser une cible engagée avec un allié : si E+, allié blessé.            Attaques multiples : 1 Désavantage, possibilité de blesser
+                                                      deux adversaires par tour.
+
+
+
+                  Gambison, fourrures      1     Complète           , Init –1                4       p.192
+                         Plastron de cuir      1       Partielle                                        10
+     Broigne, brigandine (plastron renforcé)    2       Partielle                   Init –1               20
+                        Cotte de plaques    2     Complète                  Init –2                30
+                               Cuirasse     3       Partielle                   Init –1                50
+                Cotte de mailles, haubert     3     Complète       , Init –2, MOU –5%          50
+                        Demi-plaques    4     Complète      , , Init –2, MOU –5%        100
+            Armures de plates, harnois     5     Complète      , , Init –3, MOU –5%         150
+                             Casque    +1      Bonus           , PER –5%                3
+             Petit bouclier, bocle, rondache    +1      Bonus                                      2
+                             Bouclier, écu   +2     Bonus       (1 Dés. au tireur), Init –1        4
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                Florent MENOT - florent.menot@yahoo.fr - 20260615/598/243307/235438
+
+===== PAGE 6 =====
+           Bagarre  *FOR*-3    F   /                 Saisie, Dégâts temporaires                    -
+  Couteau, poignard  *FOR*-1   E                                                              0,5     p.182
+           Dague  *FOR*-1   D                                                           0,8
+      Épée bâtarde  *FOR*    B   /              Dégâts à 2 mains : *FOR*+1                 3
+       Épée courte  *FOR*-1   C            Corps-à-corps (utilisable collé à l’ennemi)             1
+   Épée large, sabre  *FOR*    C                                                                        1,5
+       Épée longue  *FOR*    B                                                      2
+ Espadon, flamberge *FOR*+2   A          Espace (1 Dés. si lieu étroit), Initiative –1          4
+            Rapière  *FOR*    B            Point faible (si ennemi à terre, armure =0)          7
+          Gourdin  *FOR*-2   C   /    Choc, Fragile (doublé), Dégâts à 2 mains : *FOR*-1      0,1
+          Hachette  *FOR*-1   D                                                           0,8
+     Hache, cognée  *FOR*    C                                                                       1
+    Hache de guerre  *FOR*+2   C                           Initiative –1                        3
+  Marteau de guerre  *FOR*    C             Choc, Destruction (-1 point d’armure)           2
+     Masse d’armes  *FOR*    C                 Choc, Ignore armures souples              2
+                                              Espace (1 Dés. si lieu étroit), Ignore boucliers et ar-      Fléau d’armes  *FOR*+1   C                                                             3                                            mures souples, Initiative –1, Risquée (doublé)
+             Fouet  *FOR*-2   A         Espace (1 Dés. si lieu étroit), Dégâts temporaires         1
+           Fourche  *FOR*-1   A            Charge (si charge réussie : dégâts +1)            0,5
+Hallebarde, bardiche  *FOR*    A         Anti-cavalier (si réussi, cavalier chute) Charge        3
+       Lance courte  *FOR*    A            Charge (si charge réussie : dégâts +1)            0,8
+       Lance longue  *FOR*    AA            Charge (si charge réussie : dégâts +1)              1,5
+
+
+                                                                                                                         p.188   Arbalète de poing    +3    Moyenne                                                   30
+            Arbalète    +5     Longue     (recharge : 2 tours) Maniable +10                  10
+     Arbalète lourde    +6     Extrême     (recharge : 2 tours) Maniable +5                     15
+          Arc court *FOR*-1  Moyenne    R+ : 2e tir                                                  1,5
+               Arc  *FOR*  Moyenne    R+ : 2e tir                                     2
+           Arc long  *FOR*   Longue    R+ : 2e tir                                          3
+  Couteau de lancer *FOR*-1   Courte      R+ : 2e tir                                           0,5
+              Javelot  *FOR*  Moyenne                                                                     1
+              Pierre *FOR*-2   Courte      Assommante                                              -
+        Arquebuse    +7    Moyenne     (recharge : 5 tours)  Armure /2             200
+    Pistolet à poudre    +4      Courte       (recharge : 5 tours)  Armure /2               50
+         Tromblon    +3      Courte                                            20
+           Fronde *FOR*-1  Moyenne     Assommante                                        0,3
+         Sarbacane    0      Courte       Poison                                            0,2
+
+                                                      Dégâts
+    Bandit, brigand    35/+15     10     2      10    RU+3 (sabre)      CNS 25, DIS 40, MOU 40, SUR 40
+       Chevalier       45/+5     8      5       13    RU+4 (épée)    DIS 25, END 40, FOR 45, TIR 40, VOL 40
+    Garde, milicien    40/+10    11 ou 9  1 ou 3    12    RU+4 (lance)       DIS 30, END 40, FOR 40, PER 40
+       Gobelin       30/+20     10       1      7    RU+1 (dague)    DIS 50, FOR 25, SOC 25, TIR 40, VOL 20
+   Loup, gros chien    35/+15      15     0     8    RU+2 (crocs)     END 60, FOR 30, MOU 60, PER 60
+       Orque        40/+10     9     2      12    RU+4 (hache)        CNS 15, END 40, FOR 40
+   Paysan, fermier    35/+15     9     0       11   RU+1 (gourdin)    CNS 30 ou SOC 30, END 40, SUR 40
+     Voleur, filou     30/+20      11     0      9   RU+2 (couteau)  CNS 30, DIS 50, FOR 30 ,HAB 40, MOU 50
+
+===== PAGE 7 =====
+                                                                                                                        Introduction
+
+
+
+
+
+               Quelques réponses aux questions des meneurs de Brigandyne.
+
+
+
+
+     l faut se rendre à l’évidence : un concepteur de jeu    débute avec 1% en MAG, il n’aura cependant pres-
+  ne peut pas penser à toutes les questions que vont    qu’aucune sensibilité magique, et même les tours de
+se poser les MJ à la lecture des deux livres de base de    magie qui sont le b.a.-ba du mage lui seront inter-
+Brigandyne. Il est tout à fait normal que dans l’esprit     dits. Ainsi, il faut au minimum 10% en MAG pour en
+de l’auteur, certaines formulations paraissent claires     bénéficier.
+et sans équivoque, tandis que dans celui d’un lecteur
+qui les lit pour la première fois, il peut rester des    Le groupe de carrières des « Guerriers, Spadassins et
+zones d’ombre. C’est pourquoi ce court addendum     Bretteurs » commence sans argent. Est-ce normal ?
+vient fournir quelques précisions bienvenues, mais    Non, c’est un oubli particulièrement scandaleux.
+aussi palier les quelques oublis malencontreux qui    Prenez  la même somme que pour  les hommes
+ont pu survenir dans l’enthousiasme de l’écriture du    d’armes et les soldats.
+jeu.
+                                                        L’argent de départ des mages n’est-il pas trop impor-
+                                                         tant ?
+       Création                  Sur Thalios, les mages sont des notables à l'instar des
+     des personnages            médecinsservices, etet viventdes avocats.régulièrementIls vendentà laà prixcourd'ordesleurssei-
+                                                    gneurs. C'est pour refléter cet état de fait qu'ils dé-
+                                                    butent avec une forte somme d'argent. Toutefois,
+Le score de Magie de départ est-il illimité ?                                      comme il est indiqué dans le Livre I, le MJ peut mo-
+Autrement dit : est-ce qu’un personnage peut com-                                                              difier l'équipement de départ et les ressources du
+mencer la partie avec un score de 100 en MAG en                                                 personnage comme il le souhaite, particulièrement
+prélevant 10% à toutes ses autres compétences ? Bien                                                                    si cette somme entre en contradiction avec le scéna-
+évidemment, la réponse est NON. Cela irait totale-                                                               rio. On peut ainsi penser que le mage s’est endetté
+ment à l’encontre de l’esprit du jeu, mais cela entre-                                                  auprès de son école ou son maître, et qu’il ne com-
+rait également en contradiction avec les autres com-                                           mence pas avec D10+*MAG* po mais D10+*MAG*pa.
+pétences, qui elles sont limitées à la création.                                                   Dernier point  : rappelons que les riches et les no-
+Le score de MAG maximum à la création est de 50%.                                                          tables sont connus en ville et que leur richesse attire
+                                                    bien des convoitises. Un mage avec une dizaine de
+Peut-on mettre 1% en Magie ?                                                       pièces d'or dans sa bourse peut être la cible d'une
+La question a été posée par un MJ pour savoir s’il                                                     attaque ou d'un cambriolage s'il ne prend aucune
+était possible de bénéficier des *CNS*tours de magie                                                      précaution.
+presque gratuitement.
+S’il est tout à fait possible qu’un personnage de mage
+
+                                                           Aventures de sang et d’acier                                                    1
+
+
+                                                                                                                                                                                                                                                                        Florent MENOT - florent.menot@yahoo.fr - 20260615/598/243307/235438
+
+===== PAGE 8 =====
+PRÉCISIONS
+
+           Règles
+
+    Quand utiliser la règle de l’échec non-bloquant ?
+     Cette option qui permet au PJ de réussir partielle-
+    ment son action en échange d’une contrepartie est
+      utilisée pour les tests d’importance mineure, pour ne
+     pas freiner la narration. On ne doit jamais l’utiliser
+     pour les tests d’opposition, les tests de magie, ou les
+     combats.
+
+     Les tests de coopération
+     Dans Brigandyne, les tests de coopération concer-
+     nent les actions où le fait d’être plusieurs peut fournir
+    un bonus, mais peut aussi être un poids. En d’autres
+     termes, le test de coopération est à utiliser dans des
+      actions qui demandent un minimum de réflexion et
+     de compétence, où chacun y met du sien mais où une
+     maladresse est toujours possible.
+
+        Exemples  : retaper une vieille grange ou un bateau,
+         composer une pièce de théâtre, négocier l'entrée d'un
+          village fortifié, persuader un capitaine de navire d'aller
+         sur une île dangereuse, s'orienter correctement en forêt,
+          trouver de quoi manger dans un marais, confectionner
+         des déguisements pour s'infiltrer quelque part, effec-                                               Que se passe-t-il quand un personnage tombe à 0 PV ?
+          tuer des recherches dans la bibliothèque de la capitale,                                        Comme indiqué dans le Livre Premier, c’est au MJ de
+           etc.                                                           décider  du  sort  du  personnage  (inconscience,
+                                                       mort…). Pourtant certains lecteurs ont regretté ce
+      C’est dans toutes ces actions plus complexes qu’il                                                          choix en relevant que cela donnait une trop grande
+      faut utiliser la règle des tests de coopération. Pour                                                              responsabilité au MJ, qui se montrera soit trop clé-
+      les actions purement physiques qui ne demandent                                                ment s’il laisse systématiquement la vie sauve au PJ,
+     aucune réflexion comme « soulever un rocher ou un                                                                   soit trop cruel s’il tue le PJ sans crier gare. Cette règle
+     tronc d’arbre » un simple test de FORCE à -40 pour le                                                            pourrait même inciter au favoritisme envers certains
+      leader, avec un bonus de +10 par allié est suffisant.                                                           joueurs : l’un étant simplement inconscient ou pri-
+                                                            sonnier, tandis que l’autre trépasse. Ces remarques
+      Est-ce qu’un personnage, qui pour une raison quel-                                                          sont tout à fait justes, et nous conseillons alors de
+     conque, tombe à un score de 0%, peut tout de même                                                           trancher et d’indiquer aux joueurs dès le début de la
+      tenter l’action ?                                                                partie ce qu’il en coûte de tomber à 0 PV : agonie pen-
+     Non. 0% signifie une totale incompétence et un                                                       dant *END* rounds OU mort instantanée. Et n’ou-
+     échec automatique. Ainsi, si un personnage mala-                                                                  bliez pas que les points de Destin sont là pour sauver
+      droit (25% en HAB) tente de crocheter la serrure pié-                                                                      les PJ in extremis !
+     gée d’un coffre enchanté (difficulté -30), il tombe à 0
+      et l’action se soldera immédiatement par un échec.                                                         Les Talents permanents peuvent-ils se cumuler entre
+     Mais il peut tout de même payer des points de SF                                                     eux ?
+    comme d’habitude pour gagner +10%.                                                          Oui, comme son nom l’indique, un Talent permanent
+                                                           s’applique… en permanence. Il peut donc être cumu-
+     Dans le cadre d’une poursuite, faut-il faire un test                                                                         lé avec un Talent de scène ou un autre Talent perma-
+      contre chaque PNJ ou considérer tous les PNJ comme                                                            nent. Ainsi, un personnage qui dispose Coups puis-
+    un « bloc » ?                                                                  sants et de Coups précis ajoute 1 à tous ses dommages
+     Pour la fluidité de l’ensemble, mieux vaut considérer                                                                  et ignore toujours la moitié de l’armure de l’ennemi.
+     tous les PNJ comme un « bloc » (de poursuivants ou
+     de poursuivis). Ainsi si les PJ sont poursuivis par des
+     gardes qui ont un MOU de 35/+15, chaque PJ va faire
+    un seul test de MOU à +15 pour se débarrasser d’eux.
+
+
+
+
+
+2                                                 B R I G A N D Y N E
+
+===== PAGE 9 =====
+                                                                                                                Questions diverses
+
+                                           Une attaque d'opportunité donne-t-elle à l'attaquant
+       Combats                          le statut engagé avec la cible de l'attaque ?
+                                                       OUI... et NON. Un personnage est engagé dès qu'il
+Y-a-t-il des avantages et des désavantages sur les por-     est au corps-à-corps avec un adversaire. Si l'attaque
+tées de tir ?                                            d'opportunité est ratée, le personnage n'est pas for-
+Les portées des armes de  tir sont des distances    cément engagé avec lui. Si l'attaque d'opportunité est
+« utiles », c’est-à-dire les portées des armes dans le     réussie, alors le personnage est aux prises avec son
+stress d’un combat et non maximales.                    adversaire.
+Il revient au MJ de juger s'il donne 1 Avantage en cas
+de portée courte, ou s'il permet au tireur de dépasser    Le seuil de blessure est-il trop cruel ?
+la portée indiquée avec un ou deux Désavantages (et      Il est vrai que la règle du seuil de blessure est une
+un malus aux dégâts). Particulièrement dans le cas    option particulièrement sévère, et elle ne devrait pas
+d'un arc ou d'une arbalète par exemple, qui peuvent     être utilisée à tous les combats. A titre personnel, je
+dépasser aisément leur portée « utile ».                       l’utilise très rarement : uniquement dans des confi-
+                                                     gurations de duel contre un PNJ important.
+Peut-on tirer au corps-à-corps ?
+NON. Sauf pour les armes chargées dotées d’un mé-    Combat contre plusieurs adversaires
+canisme de détente comme les arbalètes et les armes    Pour rappel, un PNJ entouré par deux PJ peut tout à
+à poudre.                                                       fait choisir le PJ qu’il souhaite blesser ce round. Il n’a
+                                              aucunement l’obligation de choisir le premier PJ qui
+Tir : que se passe-t-il en cas de R+ ?                        agit contre lui (celui qui a l’initiative).
+Un tir qui se solde par une réussite supérieure peut
+tout à fait obtenir un effet spécial comme les at-       Exemple : Povar le monstrueux mutant qui terrorise la
+taques de mêlée. Il faut simplement les choisir dans        région est entouré par Balthazar et Anton.
+les options logiques : ignorer une armure partielle,      Au premier tour, Balthazar agit en premier et attaque
+désarmer (flèche dans le bras), ou une mise à terre       Povar au contact. Avec un 87, Balthazar est salement
+est tout à fait envisageable                                        blessé. Anton a droit à une attaque d’opportunité
+                                                                 contre Povar et touche avec un joli 19.
+Quelle est l’utilité de préciser si une armure est par-      Au deuxième tour, le MJ décide que le mutant va tenter
+tielle ou complète ?                                         de blesser Anton. Balthazar a donc une attaque d’op-
+Cette précision est utile si l’adversaire utilise la tac-        portunité contre lui, et comme il a l’initiative, on la
+tique Viser, mais aussi dans les attaques de Nuées.         résout en premier.
+Cela peut aussi être utile dans les attaques de zone
+(un personnage disposant d’une armure complète    Le désengagement
+résistera mieux à la brume démoniaque qu’un autre    Certains MJ ont souhaité avoir des précisions sur
+vêtu d’un simple plastron). Enfin, si un personnage     cette manœuvre de combat. En effet, le désengage-
+doit, pour quelque raison que ce soit, retirer son ar-    ment est présenté plusieurs fois dans le livre et il est
+mure le plus vite possible, la difficulté du test ne sera    double. Il peut être :
+pas la même en fonction du type de l’armure.        La conséquence d’une passe d’armes réussie : le
+                                                    personnage est aux prises avec un ennemi et
+Les malus des armures ne sont-ils pas trop faibles ?         gagne le round. Prudemment, il décide de se dé-
+Les armures médiévales sont spécialement conçues       sengager. Cela arrive souvent lorsque le person-
+pour ne pas gêner les mouvements, et un chevalier       nage est attaqué par surprise par exemple, et que
+peut tout à fait courir, voire sauter en armure, même       son adversaire est trop puissant pour lui. La plus
+si sa vitesse sera moindre. En revanche, vous pouvez       sage décision est de se désengager et de fuir.
+si vous le souhaitez appliquer le malus de MOU à    Une manœuvre souhaitée au moment de la décla-
+tous les tests de DIS.                                        ration d’action. Le personnage souhaite dès le
+                                                       départ se désengager et agir dans le même tour
+L’attaque d’opportunité est-elle une attaque supplé-       (pour attaquer un adversaire plus important,
+mentaire ?                                                        fuir, lancer un sort…). Dans ce cas, tout est indi-
+NON. Un personnage n'agit qu'une fois par tour (sauf       qué page 165 du Livre I. Le test requis lors du dé-
+Talent spécial de Monstre). L'attaque d'opportunité       sengagement, un désengagement et une blessure,
+n'est donc pas une attaque supplémentaire, c'est l'ac-      ou une impossibilité de se désengager.
+tion complète du personnage ce tour. Si le PNJ a uti-    Dernier point, mais pas des moindres : le MJ peut
+lisé son tour pour une attaque d'opportunité, il ne   REFUSER à tout moment un désengagement. Ainsi,
+peut plus agir jusqu’à son prochain tour.                    si le personnage est encerclé, acculé dans un coin,
+                                                 dos au mur, ou s’il se trouve dans un couloir étroit, il
+                                                   devra affronter son ennemi ou trouver une ruse pour
+                                                           s'en sortir.
+
+                                                            Aventures de sang et d’acier                                          3
+
+
+
+                                                                                                                                                                                                                                                                         Florent MENOT - florent.menot@yahoo.fr - 20260615/598/243307/235438
+
+===== PAGE 10 =====
+PRÉCISIONS
+
+                                            PV de Premier rôle, des capacités supplémentaires,
+          Magie                      des « titres », etc.
+
+    Un sort qui échoue est-il décompté du nombre de    Que faire si un PJ devient trop puissant en mêlée ?
+      sorts qu’un mage peut jeter par jour ?                    Certains joueurs aiment incarner des personnages
+     Non. On ne compte que les sorts qui ont bel et bien    surpuissants au combat, et c’est assez commun, par-
+      fonctionné. A moins que le MJ en décide autrement     ticulièrement chez les joueurs débutants. Ainsi un
+     dans sa campagne pour affaiblir les mages, s’il les     gladiateur Ogrin avec 70 en COM, 70 en FOR, de
+      juge trop puissants.                             nombreux Talents offensifs et plus de 30 PV, revê-
+                                                             tant une armure, un bouclier et un casque, peut être
+      Cibles et mentalisme                            un vrai casse-tête pour le MJ. Car si la solution la
+      Précision importante : les sorts de contrôle mental     plus basique serait de présenter des ennemis encore
+     (domination, sommeil…) concernent uniquement les     plus forts (un chevalier-démon à l’épée buveuse de
+      esprits des humanoïdes (humains,  elfes, orques,    sang, un troll à deux têtes enragé…), cela nuirait aux
+      ogres, nains, halfelins, sang-mêlés…) mais pas les     autres membres de l’équipe, qui eux, ont fait le choix
+     animaux, les morts-vivants, les dragons ou les dé-     d’interpréter des personnages plus subtils, et qui se
+     mons.                                                 retrouveraient balayés par l’adversité.
+                                                    Heureusement, des solutions existent :
+      Forcer la magie                         Les armes de tir. Des archers ou des arbalétriers
+      Cette manœuvre utilisable une fois par jour n’est        placés hors de portée du PJ peuvent le blesser fa-
+      accessible qu’aux premiers rôles, qui ont au minimum        cilement, particulièrement en cas de tactique
+    30% en Magie. Ainsi, un simple apprenti-sorcier ren-        « Visée », ou de R+ (qui permet d’ignorer l’ar-
+     contré au détour d’une péripétie ne pourra pas lan-       mure, ou de tirer une seconde fois dans le cas
+      cer son sort s’il obtient un échec.                          d’un arc). Quant aux armes à feu, elles ignorent
+     Autre point : le MJ peut refuser ou conditionner cette        toujours la moitié de l’armure.
+    manœuvre (par exemple en payant 1D10 PV) dès qu’il    Le poison, les maladies. Sans aller jusqu’au poison
+       le désire. La magie est une force fluctuante et parfois        mortel, une simple indigestion ou une fièvre per-
+         il est impossible d’y imposer sa volonté.                   mettra d’affaiblir aisément  le personnage. De
+                                           même une simple blessure infectée aura des con-
+     Quel est le rôle d’un grimoire ? Est-ce qu’un mage doit       séquences (comme indiqué dans le Livre I).
+      l’étudier chaque jour pour maîtriser ses sorts ?        La magie. N’importe quel sort de sommeil permet
+     Les mages connaissent leurs sorts, et le grimoire est,       d’endormir le personnage problématique… Et de
+     à l’instar d’un livre de médecine ou de droit, un outil         lui infliger une grave blessure (sans compter l’ar-
+     pour se remettre à niveau. Si un PJ n'a pas son gri-      mure évidemment) qui le fera se réveiller immé-
+     moire pendant plusieurs semaines, le MJ peut très       diatement.
+     bien lui refuser les effets des R+. Il connaîtra tou-    L’environnement. Un  incendie, une chute,  la
+      jours les bases, mais aura oublié comment optimiser       noyade permettront de mettre en difficulté le
+     son sort.                                              personnage, car tous ces dégâts ignorent l’ar-
+                                                       mure.
+      Si un mage est bâillonné et ligoté, peut-il toujours    La ruse. Vos PNJ ne sont pas idiots. S’ils en veu-
+      lancer ses sorts ?                                              lent à un PJ bien plus fort qu’eux, ils chercheront
+     Oui, mais comme la magie fait appel à des formules       à le tuer par surprise. Un personnage peut ainsi
+     magiques et des gestes précis, le MJ peut infliger 1        être agressé alors qu’il fait ses besoins naturels ou
+     Désavantage à un personnage bâillonné, et 1 Désa-         qu’il dort. Pris au dépourvu, sans arme, sans ar-
+     vantage s’il est ligoté. Ces Désavantages se cumulent       mure, et entouré par des adversaires plus nom-
+    comme d’habitude.                                      breux, il y a fort à parier qu’il sera mis en difficul-
+                                                                      té par une poignée de mercenaires bien entraînés
+                                                                      et armés de simples épées.
+        Rencontres
+
+     Les monstres ne semblent-ils pas faibles contre des PJ
+     expérimentés ?
+        Il faut rappeler que les monstres présentés dans le
+      Livre II sont des seconds rôles. Donc des adversaires
+      destinés à une rencontre amusante pour les joueurs,
+    un défi intéressant, mais pas une adversité majeure
+     pour un combat final grandiose. Si vos PJ semblent
+      trop puissants pour les valeurs indiquées, présentez-
+      leur des monstres à leur hauteur : avec un calcul des
+
+4                                                 B R I G A N D Y N E

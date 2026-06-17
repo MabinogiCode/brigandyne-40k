@@ -13,6 +13,8 @@
     "rPlus": "Dégâts +1",
     "damage": "",
     "effect": "<p>Vous insufflez votre esprit dans une arme afin de découvrir les trajectoires possibles de ses munitions. Le prochain tir unique de l’arme ne peut échouer d’aucune façon. Le joueur se contente ainsi de lancer un D10 pour déterminer les dégâts.</p>",
+    "description": "<p>Vous insufflez votre esprit dans une arme afin de découvrir les trajectoires possibles de ses munitions. Le prochain tir unique de l’arme ne peut échouer d’aucune façon. Le joueur se contente ainsi de lancer un D10 pour déterminer les dégâts.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xq32wyrx5vqyxx3x"
 }

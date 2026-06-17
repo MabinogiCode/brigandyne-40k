@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous résistez aux pires conditions physiques. Vous débarrasser d’un handicap ne vous coûte qu’1 point de SF au lieu de 2.</p>",
+    "description": "<p>Vous résistez aux pires conditions physiques. Vous débarrasser d’un handicap ne vous coûte qu’1 point de SF au lieu de 2.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

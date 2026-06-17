@@ -13,6 +13,8 @@
     "rPlus": "Durée x2",
     "damage": "",
     "effect": "<p>Vous canalisez votre concentration pour vous élever dans les airs jusqu’à *PSY* mètres de haut.</p>",
+    "description": "<p>Vous canalisez votre concentration pour vous élever dans les airs jusqu’à *PSY* mètres de haut.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "x2u5wno1w47lyx7v"
 }

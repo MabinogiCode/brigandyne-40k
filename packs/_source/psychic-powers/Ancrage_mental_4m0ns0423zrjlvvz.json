@@ -8,6 +8,8 @@
     "isMinor": true,
     "difficulty": 0,
     "effect": "<p>Vous figez un objet de *PSY* kilo, qui n’est pas tenu, dans sa position pendant 1 minute. Il faut réussir un test de FOR pour pouvoir le déplacer. Bourrasque : Vous pouvez provoquer de faibles vagues d’énergie cinétique qui peuvent soulever une cape ou éteindre une petite flamme. Lourdeur : La cible subit 1 Désavantage en MOU pendant *PSY* tours. Main spectrale : Vous pouvez déplacer et manipuler un objet de *PSY* kilo dans une portée courte. L’objet ne peut pas être projeté avec violence. Pied-léger : La cible gagne 1 Avantage en MOU pendant *PSY* tours. Protection de force : La cible gagne 1 point de protection pendant *PSY* minutes. Ce point est à usage unique et disparaît dès qu’il a été utilisé.</p>",
+    "description": "<p>Vous figez un objet de *PSY* kilo, qui n’est pas tenu, dans sa position pendant 1 minute. Il faut réussir un test de FOR pour pouvoir le déplacer. Bourrasque : Vous pouvez provoquer de faibles vagues d’énergie cinétique qui peuvent soulever une cape ou éteindre une petite flamme. Lourdeur : La cible subit 1 Désavantage en MOU pendant *PSY* tours. Main spectrale : Vous pouvez déplacer et manipuler un objet de *PSY* kilo dans une portée courte. L’objet ne peut pas être projeté avec violence. Pied-léger : La cible gagne 1 Avantage en MOU pendant *PSY* tours. Protection de force : La cible gagne 1 point de protection pendant *PSY* minutes. Ce point est à usage unique et disparaît dès qu’il a été utilisé.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "x2u5wno1w47lyx7v"
 }

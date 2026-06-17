@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Poser et désamorcer un piège",
+    "description": "<p>Poser et désamorcer un piège</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

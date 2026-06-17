@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous avez appris à esquiver les coups et les embûches. Votre valeur de protection augmente d’1 point tant que vous ne portez pas d’armure lourde, de bouclier ou de casque.</p>",
+    "description": "<p>Vous avez appris à esquiver les coups et les embûches. Votre valeur de protection augmente d’1 point tant que vous ne portez pas d’armure lourde, de bouclier ou de casque.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

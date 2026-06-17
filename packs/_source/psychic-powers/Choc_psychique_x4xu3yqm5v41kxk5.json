@@ -13,6 +13,8 @@
     "rPlus": "Dégâts +1",
     "damage": "",
     "effect": "<p>Vous générez une pression mentale dans l’esprit de votre cible qui subit RU dégâts psychiques.</p>",
+    "description": "<p>Vous générez une pression mentale dans l’esprit de votre cible qui subit RU dégâts psychiques.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xrt0tjrxjlulqx0x"
 }

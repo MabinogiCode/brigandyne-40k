@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous avez un don pour une arme précise (épée courte, épée longue, masse d’armes…). Une fois par scène, après le test, vous pouvez inverser les chiffres obtenus. Ainsi, un 90 peut devenir un 09.</p>",
+    "description": "<p>Vous avez un don pour une arme précise (épée courte, épée longue, masse d’armes…). Une fois par scène, après le test, vous pouvez inverser les chiffres obtenus. Ainsi, un 90 peut devenir un 09.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

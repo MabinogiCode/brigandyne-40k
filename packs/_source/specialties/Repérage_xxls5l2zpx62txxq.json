@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Déceler un détail, une ombre, une bourse bien remplie",
+    "description": "<p>Déceler un détail, une ombre, une bourse bien remplie</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

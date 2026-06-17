@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Eloquence, plaidoirie, amener une foule à sa cause, provoquer une révolte",
+    "description": "<p>Eloquence, plaidoirie, amener une foule à sa cause, provoquer une révolte</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

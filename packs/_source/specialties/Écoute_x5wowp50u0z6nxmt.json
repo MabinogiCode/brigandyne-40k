@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Entendre des paroles, reconnaître une voix, une mélodie ou un bruit",
+    "description": "<p>Entendre des paroles, reconnaître une voix, une mélodie ou un bruit</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

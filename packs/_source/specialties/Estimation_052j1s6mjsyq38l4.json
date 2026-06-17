@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Connaître la valeur d’un bijou, d’un vêtements, d’une arme, d’un objet magique",
+    "description": "<p>Connaître la valeur d’un bijou, d’un vêtements, d’une arme, d’un objet magique</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

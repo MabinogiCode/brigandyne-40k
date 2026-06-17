@@ -13,6 +13,8 @@
     "rPlus": "Durée x2",
     "damage": "",
     "effect": "<p>Pendant la durée du pouvoir, vous générez des parasites dans le Warp qui vous entourent. Les appareils détecteurs et les pouvoirs de détections qui essayent de repérer toutes les cibles à l’intérieur de la portée du pouvoir échouent et se mettent à dysfonctionner.</p>",
+    "description": "<p>Pendant la durée du pouvoir, vous générez des parasites dans le Warp qui vous entourent. Les appareils détecteurs et les pouvoirs de détections qui essayent de repérer toutes les cibles à l’intérieur de la portée du pouvoir échouent et se mettent à dysfonctionner.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "zy01lzxxmrm4y884"
 }

@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Jouer d’un instrument et chanter juste",
+    "description": "<p>Jouer d’un instrument et chanter juste</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

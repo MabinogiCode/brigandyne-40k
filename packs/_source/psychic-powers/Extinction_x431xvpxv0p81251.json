@@ -13,6 +13,8 @@
     "rPlus": "Durée x2",
     "damage": "",
     "effect": "<p>Vous étouffez toute flamme située dans la portée du sort. La zone vous suit et éteint aussitôt les flammes qui se retrouvent à l’intérieur. Les armes lance-flammes sont également impactés.</p>",
+    "description": "<p>Vous étouffez toute flamme située dans la portée du sort. La zone vous suit et éteint aussitôt les flammes qui se retrouvent à l’intérieur. Les armes lance-flammes sont également impactés.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "v5x1swvt13srxxr6"
 }

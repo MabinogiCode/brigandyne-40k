@@ -13,6 +13,8 @@
     "rPlus": "Dégâts +1",
     "damage": "RU+PSY",
     "effect": "<p>Des éclairs psychiques sortent des doigts du Psyker, infligeant RU+*PSY* dégâts électriques à la cible.</p>",
+    "description": "<p>Des éclairs psychiques sortent des doigts du Psyker, infligeant RU+*PSY* dégâts électriques à la cible.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xv36x51kwu18rx4u"
 }

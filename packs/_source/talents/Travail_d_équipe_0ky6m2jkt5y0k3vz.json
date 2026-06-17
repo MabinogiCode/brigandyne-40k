@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Une fois par scène, vous pouvez donner 1 Avantage à toute l’équipe, vous y compris, lors d’un test en coopération.</p>",
+    "description": "<p>Une fois par scène, vous pouvez donner 1 Avantage à toute l’équipe, vous y compris, lors d’un test en coopération.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

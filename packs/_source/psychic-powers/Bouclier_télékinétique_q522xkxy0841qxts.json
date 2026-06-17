@@ -13,6 +13,8 @@
     "rPlus": "Cible +1",
     "damage": "RU+PSY",
     "effect": "<p>La cible du pouvoir est recouvert d’un champ de force télékinésique de RU+*PSY* PV. Le pouvoir cesse de faire effet une fois le bouclier détruit.</p>",
+    "description": "<p>La cible du pouvoir est recouvert d’un champ de force télékinésique de RU+*PSY* PV. Le pouvoir cesse de faire effet une fois le bouclier détruit.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "x2u5wno1w47lyx7v"
 }

@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Sauter, faire des pirouettes, garder l’équilibre et se réceptionner lors d’une chute",
+    "description": "<p>Sauter, faire des pirouettes, garder l’équilibre et se réceptionner lors d’une chute</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

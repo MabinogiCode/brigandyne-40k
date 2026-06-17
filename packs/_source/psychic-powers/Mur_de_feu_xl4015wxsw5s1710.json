@@ -13,6 +13,8 @@
     "rPlus": "Dégâts +1",
     "damage": "",
     "effect": "<p>Vous invoquez une barrière de feu de *PSY* mètres de long et de haut au maximum. Ceux qui le traversent encaissent automatiquement *PSY*+5 dégâts de feu. La chaleur qu’il dégage est insoutenable et cause *PSY* dégâts de feu par tour à tout individu à moins de 3 mètres.</p>",
+    "description": "<p>Vous invoquez une barrière de feu de *PSY* mètres de long et de haut au maximum. Ceux qui le traversent encaissent automatiquement *PSY*+5 dégâts de feu. La chaleur qu’il dégage est insoutenable et cause *PSY* dégâts de feu par tour à tout individu à moins de 3 mètres.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "v5x1swvt13srxxr6"
 }

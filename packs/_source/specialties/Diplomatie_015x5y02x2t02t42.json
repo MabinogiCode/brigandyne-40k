@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Calmer un conflit, négocier un traité en sa faveur",
+    "description": "<p>Calmer un conflit, négocier un traité en sa faveur</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

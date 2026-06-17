@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Une fois par scène, vous pouvez bénéficier d’un coup de pouce du Destin gratuitement (voir Destin), si cela concerne la préparation et l’équipement nécessaires à votre mission.</p>",
+    "description": "<p>Une fois par scène, vous pouvez bénéficier d’un coup de pouce du Destin gratuitement (voir Destin), si cela concerne la préparation et l’équipement nécessaires à votre mission.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

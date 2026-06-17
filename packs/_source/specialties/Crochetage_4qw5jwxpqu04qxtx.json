@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Serrurerie, connaître les crochets, détection des pièges de serrure",
+    "description": "<p>Serrurerie, connaître les crochets, détection des pièges de serrure</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Connaissance des dynasties, des guerres, des familles nobles, de l’héraldique",
+    "description": "<p>Connaissance des dynasties, des guerres, des familles nobles, de l’héraldique</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

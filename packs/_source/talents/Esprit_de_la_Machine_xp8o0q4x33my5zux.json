@@ -6,6 +6,8 @@
   "system": {
     "usage": "scene",
     "effect": "<p>Vous faites appel à l’Esprit de la Machine. Une fois par scène, vous pouvez remplacer un test de TEC, de TIR ou de COM par un test de VOL pour manipuler des objets technologiques de l’Imperium.</p>",
+    "description": "<p>Vous faites appel à l’Esprit de la Machine. Une fois par scène, vous pouvez remplacer un test de TEC, de TIR ou de COM par un test de VOL pour manipuler des objets technologiques de l’Imperium.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "z52203x03183xx3w"
 }

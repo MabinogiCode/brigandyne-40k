@@ -13,6 +13,8 @@
     "rPlus": "Flux d’énergie",
     "damage": "",
     "effect": "<p>Vous générez une explosion de lumière incandescente qui aveugle toutes les créatures dans la portée du pouvoir et qui peuvent la voir pendant la durée du pouvoir. Le Psyker n’est pas immunisé.</p>",
+    "description": "<p>Vous générez une explosion de lumière incandescente qui aveugle toutes les créatures dans la portée du pouvoir et qui peuvent la voir pendant la durée du pouvoir. Le Psyker n’est pas immunisé.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "v5x1swvt13srxxr6"
 }

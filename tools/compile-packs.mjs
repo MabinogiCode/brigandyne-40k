@@ -30,8 +30,11 @@ for (const name of dirs) {
   for (const file of fs.readdirSync(src).filter(f => f.endsWith(".json"))) {
     const doc = JSON.parse(fs.readFileSync(path.join(src, file), "utf8"));
     if (!doc._id) continue;
+    // Les dossiers portent leur propre clé (!folders!<id>) ; les autres documents
+    // sont rangés sous !items!<id> ou !actors!<id>.
+    const key = doc._key || `!${collection}!${doc._id}`;
     delete doc._key;
-    batch.put(`!${collection}!${doc._id}`, doc);
+    batch.put(key, doc);
     n++;
   }
   await batch.write();

@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Votre instinct vous sauve des embuscades. Vos ennemis ne bénéficient jamais des gains de l’attaque surprise contre vous : ni Avantage, ni attaque d’opportunité, ni bonus aux dégâts.</p>",
+    "description": "<p>Votre instinct vous sauve des embuscades. Vos ennemis ne bénéficient jamais des gains de l’attaque surprise contre vous : ni Avantage, ni attaque d’opportunité, ni bonus aux dégâts.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

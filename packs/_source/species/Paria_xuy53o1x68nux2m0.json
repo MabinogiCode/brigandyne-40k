@@ -39,6 +39,9 @@
       "geneParia"
     ],
     "noPsy": true,
+    "description": "<p>Êtres rarissimes nés sans écho dans le Warp (le Gène du Paria). Leur présence désoriente et terrifie les Psykers proches, mais glace aussi les âmes alentour.</p>",
+    "lifespan": "≈ 60 ans",
+    "sizeNote": "~1m70, 65 kg (H) / 1m60, 50 kg (F)",
     "source": "L1"
   }
 }

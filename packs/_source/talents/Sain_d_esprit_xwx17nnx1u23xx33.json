@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous êtes habitué au poids des armures et vous ne Lors de vos tests de Folie, votre perte de points de subissez pas de malus (Initiative, Mouvement, PerSang-froid est toujours divisée par deux (l’arrondi est ception...) dû au port d’une armure ou d’un bouclier. à l’inférieur, et le minimum est de 0). De plus, votre score d’Instabilité baisse d’1 point.</p>",
+    "description": "<p>Vous êtes habitué au poids des armures et vous ne Lors de vos tests de Folie, votre perte de points de subissez pas de malus (Initiative, Mouvement, PerSang-froid est toujours divisée par deux (l’arrondi est ception...) dû au port d’une armure ou d’un bouclier. à l’inférieur, et le minimum est de 0). De plus, votre score d’Instabilité baisse d’1 point.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

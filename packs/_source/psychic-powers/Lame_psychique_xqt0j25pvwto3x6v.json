@@ -13,6 +13,8 @@
     "rPlus": "Dégâts +1",
     "damage": "RU+PSY",
     "effect": "<p>Vous invoquez une lame d’énergie mentale qui flotte autour de vous. Pendant la durée du tour, vous pouvez l’utiliser pour combattre avec un test en opposition de PSY/COM. La lame inflige RU+*PSY* dégâts et possède Perce-armure (3).</p>",
+    "description": "<p>Vous invoquez une lame d’énergie mentale qui flotte autour de vous. Pendant la durée du tour, vous pouvez l’utiliser pour combattre avec un test en opposition de PSY/COM. La lame inflige RU+*PSY* dégâts et possède Perce-armure (3).</p>",
     "source": "L1"
-  }
+  },
+  "folder": "x2u5wno1w47lyx7v"
 }

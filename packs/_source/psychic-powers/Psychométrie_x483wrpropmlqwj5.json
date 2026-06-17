@@ -13,6 +13,8 @@
     "rPlus": "Informations supplémentaires",
     "damage": "",
     "effect": "<p>Vous parvenez à ressentir les traces psychiques et les émotions laissées sur un objet ou dans un lieu. Ces informations peuvent prendre la formes d’odeurs, de visions rapides et imprécises, de sons plus ou moins distincts. Par exemple, il peut avoir une vague vision de la silhouette du propriétaire d’un objet ou bien entendre les hurlements des victimes dans une pièce où s’est déroulé un massacre, etc.</p>",
+    "description": "<p>Vous parvenez à ressentir les traces psychiques et les émotions laissées sur un objet ou dans un lieu. Ces informations peuvent prendre la formes d’odeurs, de visions rapides et imprécises, de sons plus ou moins distincts. Par exemple, il peut avoir une vague vision de la silhouette du propriétaire d’un objet ou bien entendre les hurlements des victimes dans une pièce où s’est déroulé un massacre, etc.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xq32wyrx5vqyxx3x"
 }

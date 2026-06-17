@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Reconnaître l’usage d’une potion, en confectionner",
+    "description": "<p>Reconnaître l’usage d’une potion, en confectionner</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

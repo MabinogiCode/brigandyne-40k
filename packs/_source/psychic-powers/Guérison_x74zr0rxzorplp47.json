@@ -13,6 +13,8 @@
     "rPlus": "Cible +1 ou Soins",
     "damage": "",
     "effect": "<p>Vous insufflez votre pouvoir pour raccommoder la chair et les os. La cible récupère *PSY* PV.</p>",
+    "description": "<p>Vous insufflez votre pouvoir pour raccommoder la chair et les os. La cible récupère *PSY* PV.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "zy01lzxxmrm4y884"
 }

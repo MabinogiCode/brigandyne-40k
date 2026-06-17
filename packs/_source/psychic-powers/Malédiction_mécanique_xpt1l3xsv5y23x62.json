@@ -13,6 +13,8 @@
     "rPlus": "Bulle ou Durée x2",
     "damage": "",
     "effect": "<p>Votre esprit se répand dans un appareil qui cesse de fonctionner pendant la durée du pouvoir. Il peut s’agir d’une arme.</p>",
+    "description": "<p>Votre esprit se répand dans un appareil qui cesse de fonctionner pendant la durée du pouvoir. Il peut s’agir d’une arme.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "zy01lzxxmrm4y884"
 }

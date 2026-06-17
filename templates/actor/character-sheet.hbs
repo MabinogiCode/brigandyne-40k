@@ -71,7 +71,7 @@
           {{#each config.lifestyles as |l key|}}<option value="{{key}}" {{#if (eq key ../system.lifestyle)}}selected{{/if}}>{{localize l.label}}</option>{{/each}}
         </select>
       </div>
-      <div class="stat"><label>Trônes Gelt</label><input type="number" name="system.wealth.gelt" value="{{system.wealth.gelt}}" /></div>
+      <div class="stat"><label data-tooltip="Trône Gelt — la monnaie officielle de l'Imperium (le « gelt » impérial). C'est l'argent courant des personnages.">Trônes Gelt <i class="fa-solid fa-circle-info"></i></label><input type="number" name="system.wealth.gelt" value="{{system.wealth.gelt}}" /></div>
       <div class="stat"><label>XP dispo</label><span>{{system.xp.available}}</span> / <input type="number" name="system.xp.total" value="{{system.xp.total}}" /></div>
     </div>
   </div>

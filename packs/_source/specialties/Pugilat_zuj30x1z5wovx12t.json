@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Se battre à mains nues ou avec une arme improvisée, pratiquer la lutte",
+    "description": "<p>Se battre à mains nues ou avec une arme improvisée, pratiquer la lutte</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

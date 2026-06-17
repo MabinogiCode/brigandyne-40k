@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous savez viser là où ça fait mal. En mêlée, la protection de vos ennemis est toujours divisée par deux.</p>",
+    "description": "<p>Vous savez viser là où ça fait mal. En mêlée, la protection de vos ennemis est toujours divisée par deux.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

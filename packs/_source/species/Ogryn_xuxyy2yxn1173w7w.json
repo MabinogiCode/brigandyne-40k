@@ -40,6 +40,9 @@
       "resMaladies"
     ],
     "noPsy": false,
+    "description": "<p>Souche d'Abhumains colossaux, simples d'esprit mais d'une force légendaire. Leurs armes (fusils ripeurs, mantelets) sont conçues pour résister à leur maladresse.</p>",
+    "lifespan": "≈ 60 ans",
+    "sizeNote": "~2m50, 120 kg (H) / 2m30, 100 kg (F)",
     "source": "L1"
   }
 }

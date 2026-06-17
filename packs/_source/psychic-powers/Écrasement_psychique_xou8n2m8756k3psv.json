@@ -13,6 +13,8 @@
     "rPlus": "Dégâts +1",
     "damage": "",
     "effect": "<p>Vous écrasez votre cible sous une force cinétique qui lui inflige RU+8 dégâts.</p>",
+    "description": "<p>Vous écrasez votre cible sous une force cinétique qui lui inflige RU+8 dégâts.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "x2u5wno1w47lyx7v"
 }

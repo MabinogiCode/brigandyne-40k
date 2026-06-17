@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Se défaire de liens, se faufiler dans un conduit ou un tunnel étroit",
+    "description": "<p>Se défaire de liens, se faufiler dans un conduit ou un tunnel étroit</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Votre instinct vous a sauvé de bien des situations dangereuses. Une fois par scène, vous pouvez ajouter votre *SUR* à votre valeur de protection.</p>",
+    "description": "<p>Votre instinct vous a sauvé de bien des situations dangereuses. Une fois par scène, vous pouvez ajouter votre *SUR* à votre valeur de protection.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

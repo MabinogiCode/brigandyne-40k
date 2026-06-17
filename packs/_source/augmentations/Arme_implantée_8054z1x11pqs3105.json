@@ -10,5 +10,6 @@
     "description": "<p>Permet d’implanter n’importe quelle arme dans un Bras bionique ou une Méchadendrite manipulatrice. Le prix correspond au prix de l’arme multiplié par 2. Nécessite un Bras bionique ou une Méchadendrite manipulatrice.</p>",
     "price": 0,
     "source": "L1"
-  }
+  },
+  "folder": "xp2rl3ys31vzxx60"
 }

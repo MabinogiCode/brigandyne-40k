@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vos projectiles sont d’une précision redoutable. A distance, la protection de vos adversaires est toujours divisée par deux.</p>",
+    "description": "<p>Vos projectiles sont d’une précision redoutable. A distance, la protection de vos adversaires est toujours divisée par deux.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

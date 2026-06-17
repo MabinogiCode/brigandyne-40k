@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous n’oubliez jamais un détail, un visage, un nom, une voix ou une odeur. Vous réussissez automatiquement tous les tests basés sur la mémoire. P ERSONNAGES</p>",
+    "description": "<p>Vous n’oubliez jamais un détail, un visage, un nom, une voix ou une odeur. Vous réussissez automatiquement tous les tests basés sur la mémoire. P ERSONNAGES</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

@@ -13,6 +13,8 @@
     "rPlus": "Flux d’énergie",
     "damage": "",
     "effect": "<p>Vous produisez un flash de lumière et un bruit assourdissant qui Aveugle et rend les créatures qui le voient Confuses pendant 1 tour. Le Psyker n’est pas immunisé.</p>",
+    "description": "<p>Vous produisez un flash de lumière et un bruit assourdissant qui Aveugle et rend les créatures qui le voient Confuses pendant 1 tour. Le Psyker n’est pas immunisé.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "zy01lzxxmrm4y884"
 }

@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Connaissance des astres, des constellations, des cycles lunaires",
+    "description": "<p>Connaissance des astres, des constellations, des cycles lunaires</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

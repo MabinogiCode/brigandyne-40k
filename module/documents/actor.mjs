@@ -224,34 +224,52 @@ export class BrigActor extends Actor {
     return ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor: this }), content });
   }
 
-  /** Améliore une caractéristique de +5% en dépensant de l'XP. */
+  /** Nombre de cases de progression accessibles pour `key` selon la carrière. */
+  careerProfile(key) {
+    const career = this.items.find(i => i.type === "career");
+    return career?.system?.advances?.[key] ?? 0;
+  }
+
+  /** Améliore une caractéristique de +5% en dépensant de l'XP.
+   *  Respecte le profil de progression de la carrière : au-delà des cases prévues,
+   *  l'augmentation est « hors-profil » (+50 PX). Plafond : 6 cases (+30, RAW). */
   async advanceCharacteristic(key) {
     const c = this.system.characteristics?.[key];
     if (!c || !this.system.xp) return;
+    const advances = c.advances ?? 0;
+    const charLabel = game.i18n.localize(BRIGANDYNE.characteristics[key].abbrev);
+    if (advances >= BRIGANDYNE.advancement.maxBoxes) {
+      return ui.notifications?.warn(game.i18n.format("BRIG.Warn.maxAdvance", { char: charLabel }));
+    }
     const step = BRIGANDYNE.advancement.charStep;
     const newValue = Math.min(100, c.value + step);
     if (newValue === c.value) return;
-    const cost = BRIGANDYNE.charAdvanceCost(newValue);
+    const offProfile = advances >= this.careerProfile(key);
+    let cost = BRIGANDYNE.charAdvanceCost(newValue);
+    if (offProfile) cost += BRIGANDYNE.advancement.charOffProfileExtra ?? 0;
     if ((this.system.xp.available ?? 0) < cost) {
       return ui.notifications?.warn(game.i18n.format("BRIG.Warn.noXp", { cost }));
     }
     await this.update({
       [`system.characteristics.${key}.value`]: newValue,
-      [`system.characteristics.${key}.advances`]: (c.advances ?? 0) + 1,
+      [`system.characteristics.${key}.advances`]: advances + 1,
       "system.xp.spent": (this.system.xp.spent ?? 0) + cost
     });
-    ui.notifications?.info(game.i18n.format("BRIG.Info.advanced", { char: game.i18n.localize(BRIGANDYNE.characteristics[key].abbrev), cost }));
+    ui.notifications?.info(game.i18n.format(offProfile ? "BRIG.Info.advancedOff" : "BRIG.Info.advanced", { char: charLabel, cost }));
   }
 
   /** Annule la dernière amélioration d'une caractéristique (rembourse l'XP). */
   async refundCharacteristic(key) {
     const c = this.system.characteristics?.[key];
     if (!c || !this.system.xp || (c.advances ?? 0) <= 0) return;
+    const advances = c.advances ?? 0;
     const step = BRIGANDYNE.advancement.charStep;
-    const refund = BRIGANDYNE.charAdvanceCost(c.value);   // coût payé pour atteindre la valeur actuelle
+    const wasOffProfile = (advances - 1) >= this.careerProfile(key);   // la case retirée était-elle hors-profil ?
+    let refund = BRIGANDYNE.charAdvanceCost(c.value);                  // coût payé pour atteindre la valeur actuelle
+    if (wasOffProfile) refund += BRIGANDYNE.advancement.charOffProfileExtra ?? 0;
     await this.update({
       [`system.characteristics.${key}.value`]: Math.max(0, c.value - step),
-      [`system.characteristics.${key}.advances`]: (c.advances ?? 0) - 1,
+      [`system.characteristics.${key}.advances`]: advances - 1,
       "system.xp.spent": Math.max(0, (this.system.xp.spent ?? 0) - refund)
     });
   }

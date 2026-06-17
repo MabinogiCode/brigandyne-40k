@@ -37,6 +37,9 @@
     "destin": 3,
     "special": [],
     "noPsy": false,
+    "description": "<p>L'espèce majoritaire de l'Imperium, répandue sur d'innombrables mondes et adaptée à tous les environnements. Adaptables et tenaces, mais avides de pouvoir et de conquête.</p>",
+    "lifespan": "≈ 60 ans",
+    "sizeNote": "~1m70, 65 kg (H) / 1m60, 50 kg (F)",
     "source": "L1"
   }
 }

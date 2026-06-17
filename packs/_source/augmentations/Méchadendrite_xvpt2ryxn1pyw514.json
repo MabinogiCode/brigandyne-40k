@@ -10,5 +10,6 @@
     "description": "<p>Bras articulé et motorisé monté sur l’épaule et terminé par différents outils ou armes. Les tests physiques réalisés grâces à une Méchadendrite peuvent se faire avec VOL : - Laser : Fonctionne comme un Pistolet laser. - Médical : Fonctionne comme une trousse médicale, possède du matériel d’injection. - Optique : Peut être équipée de trois lentilles différentes (voir Oeil bionique). - Servo-bras : Griffes massives qui confère un bonus de +20% aux tests pour soulever des charges lourdes. (non cumulable) C’est une arme infligeant RU+6 dégâts. - Utilitaire : Fonctionne comme des outils d'ingénierie. - Manipulatrice : Pince pouvant manipuler des objets ou être équipée d’armes.</p>",
     "price": 1000,
     "source": "L1"
-  }
+  },
+  "folder": "xp2rl3ys31vzxx60"
 }

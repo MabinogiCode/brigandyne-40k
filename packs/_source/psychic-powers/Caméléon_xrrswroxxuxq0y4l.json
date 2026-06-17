@@ -13,6 +13,8 @@
     "rPlus": "Cible +1 ou Durée x2",
     "damage": "",
     "effect": "<p>Vous distordez la réalité autour de la cible qui se fond dans l’environnement et obtient un bonus de +20 en DIS.</p>",
+    "description": "<p>Vous distordez la réalité autour de la cible qui se fond dans l’environnement et obtient un bonus de +20 en DIS.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "zy01lzxxmrm4y884"
 }

@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Courir vite et longtemps",
+    "description": "<p>Courir vite et longtemps</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

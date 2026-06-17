@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Attaquer à plusieurs une cible isolée est pour vous une vraie partie de plaisir. En mêlée, quand vous êtes en surnombre, vos alliés et vous augmentez tous vos dégâts d’1 point (mêlée et tir).</p>",
+    "description": "<p>Attaquer à plusieurs une cible isolée est pour vous une vraie partie de plaisir. En mêlée, quand vous êtes en surnombre, vos alliés et vous augmentez tous vos dégâts d’1 point (mêlée et tir).</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

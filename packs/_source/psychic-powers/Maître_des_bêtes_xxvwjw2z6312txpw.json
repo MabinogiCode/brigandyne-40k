@@ -13,6 +13,8 @@
     "rPlus": "Flux d’énergie",
     "damage": "",
     "effect": "<p>Vous commandez un maximum de *PSY* animaux qui pourront se battre pour vous et qui vous obéiront au doigt et à l’oeil pendant toute la durée du sort.</p>",
+    "description": "<p>Vous commandez un maximum de *PSY* animaux qui pourront se battre pour vous et qui vous obéiront au doigt et à l’oeil pendant toute la durée du sort.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xrt0tjrxjlulqx0x"
 }

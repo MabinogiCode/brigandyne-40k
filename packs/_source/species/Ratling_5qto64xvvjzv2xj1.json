@@ -37,6 +37,9 @@
     "destin": 3,
     "special": [],
     "noPsy": false,
+    "description": "<p>Petits Abhumains des Militarum Auxilla. Grossiers et sans-gêne, mais tireurs d'élite inégalés et survivants tenaces des pires zones de combat.</p>",
+    "lifespan": "≈ 60 ans",
+    "sizeNote": "~1m30, 50 kg (H) / 1m25, 45 kg (F)",
     "source": "L1"
   }
 }

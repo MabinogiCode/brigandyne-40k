@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Mendier, obtenir la miséricorde d’un ennemi ou gain de cause auprès d’un jury",
+    "description": "<p>Mendier, obtenir la miséricorde d’un ennemi ou gain de cause auprès d’un jury</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

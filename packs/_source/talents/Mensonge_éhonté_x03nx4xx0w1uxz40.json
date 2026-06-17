@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>mais vous pouvez toujours bénéficier d’une heureuse Le mensonge est chez vous une seconde nature. Une coïncidence en dépensant un point de Destin. fois par jour, vous pouvez faire croire un mensonge crédible à un PNJ pendant *SOC* minutes. Après ce</p>",
+    "description": "<p>mais vous pouvez toujours bénéficier d’une heureuse Le mensonge est chez vous une seconde nature. Une coïncidence en dépensant un point de Destin. fois par jour, vous pouvez faire croire un mensonge crédible à un PNJ pendant *SOC* minutes. Après ce</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

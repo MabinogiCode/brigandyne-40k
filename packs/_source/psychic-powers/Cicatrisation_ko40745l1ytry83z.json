@@ -13,6 +13,8 @@
     "rPlus": "Cible +1",
     "damage": "RU+PSY",
     "effect": "<p>Vous modelez chair et os pour guérir les blessures de votre cible qui regagne RU+*PSY* PV.</p>",
+    "description": "<p>Vous modelez chair et os pour guérir les blessures de votre cible qui regagne RU+*PSY* PV.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xv36x51kwu18rx4u"
 }

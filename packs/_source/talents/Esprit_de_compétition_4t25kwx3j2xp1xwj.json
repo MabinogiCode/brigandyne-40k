@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous aimez vous mesurer aux autres. Une fois par scène, si un allié obtient une réussite mineure et que vous obtenez dans le même tour une R+, vous récupérez *SOC* ou *VOL* points de Sang-froid.</p>",
+    "description": "<p>Vous aimez vous mesurer aux autres. Une fois par scène, si un allié obtient une réussite mineure et que vous obtenez dans le même tour une R+, vous récupérez *SOC* ou *VOL* points de Sang-froid.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

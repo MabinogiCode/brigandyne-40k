@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>En mêlée, votre gabarit est un atout. Une fois par scène, vous pouvez utiliser votre Force à la place de la compétence Combat (duel FOR/COM pour ce round).</p>",
+    "description": "<p>En mêlée, votre gabarit est un atout. Une fois par scène, vous pouvez utiliser votre Force à la place de la compétence Combat (duel FOR/COM pour ce round).</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

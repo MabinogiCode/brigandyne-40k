@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous avez un don pour minimiser les effets incontrôlés de la magie. Une fois par scène, après avoir lancé les dés sur la table des complications, vous pouvez inverser les chiffres obtenus. Ainsi, un 90 peut devenir un 09 par exemple.</p>",
+    "description": "<p>Vous avez un don pour minimiser les effets incontrôlés de la magie. Une fois par scène, après avoir lancé les dés sur la table des complications, vous pouvez inverser les chiffres obtenus. Ainsi, un 90 peut devenir un 09 par exemple.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

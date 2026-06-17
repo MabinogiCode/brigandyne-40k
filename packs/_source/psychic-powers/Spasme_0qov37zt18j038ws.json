@@ -13,6 +13,8 @@
     "rPlus": "Cible +1",
     "damage": "",
     "effect": "<p>Vous déclenchez de violents spasmes chez votre cible qui devient Paralysée pendant la durée du pouvoir.</p>",
+    "description": "<p>Vous déclenchez de violents spasmes chez votre cible qui devient Paralysée pendant la durée du pouvoir.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "zy01lzxxmrm4y884"
 }

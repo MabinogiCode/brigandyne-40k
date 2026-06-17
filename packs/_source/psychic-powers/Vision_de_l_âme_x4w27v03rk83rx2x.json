@@ -13,6 +13,8 @@
     "rPlus": "Cible +1",
     "damage": "",
     "effect": "<p>Vous percevez les âmes de *PSY* personnes, révélant ainsi leur vraie nature. Les auras prennent la forme de flammes autour des corps, plus ou moins brillantes selon leur bonté. Vous lisez aussi leur état d’esprit actuel : gai, triste, en colère, mélancolique, affamé, envieux, apeuré, etc.</p>",
+    "description": "<p>Vous percevez les âmes de *PSY* personnes, révélant ainsi leur vraie nature. Les auras prennent la forme de flammes autour des corps, plus ou moins brillantes selon leur bonté. Vous lisez aussi leur état d’esprit actuel : gai, triste, en colère, mélancolique, affamé, envieux, apeuré, etc.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xq32wyrx5vqyxx3x"
 }

@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Passer un prisonnier à la Question",
+    "description": "<p>Passer un prisonnier à la Question</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

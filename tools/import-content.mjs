@@ -16,6 +16,23 @@ const OUT = path.join(ROOT, "packs", "_source");
 const DOC1 = fs.readFileSync(path.join(SRC, "01_brigandyne_40k.md"), "utf8");
 const DOC_XENO = fs.readFileSync(path.join(SRC, "02_armurerie_xeno.md"), "utf8");
 const DOC_BEST = fs.readFileSync(path.join(SRC, "03_rencontres.md"), "utf8");
+// Descriptions d'atouts extraites du Livre Premier (tools/extract_atouts.py) — optionnel
+let ATOUTS = { specialties: {}, talentLines: [] };
+try { ATOUTS = JSON.parse(fs.readFileSync(path.join(SRC, "pdf", "atouts.json"), "utf8")); }
+catch { console.warn("  (atouts.json absent : lancez `python tools/extract_atouts.py` pour les descriptions du Livre I)"); }
+
+/** Reconstruit les descriptions de talents en segmentant les lignes du Livre I sur les noms connus. */
+function livre1TalentDescs(names) {
+  const set = new Set(names);
+  const out = {}; let cur = null;
+  for (const raw of ATOUTS.talentLines ?? []) {
+    const line = (raw ?? "").trim();
+    if (set.has(line)) { cur = line; out[cur] = ""; }
+    else if (cur) out[cur] = out[cur].endsWith("-") ? out[cur].slice(0, -1) + line : (out[cur] ? out[cur] + " " : "") + line;
+  }
+  return out;
+}
+const baseAtout = n => n.replace(/\s*[([].*$/, "").trim();
 
 /* ------------------------------------------------------------------ */
 /*  Utilitaires                                                        */
@@ -79,6 +96,23 @@ function appendPack(name, docs) {
   console.log(`  ${name}: +${docs.length} (ajout)`);
 }
 
+/* ------------------------------------------------------------------ */
+/*  Dossiers de compendium (sous-catégories)                           */
+/* ------------------------------------------------------------------ */
+function folderId(pack, key) { return makeId("folder", pack + ":" + key); }
+/** Crée les documents-dossiers d'un pack. defs = [{key,name,color?}]. */
+function makeFolderDocs(pack, docType, defs) {
+  return defs.map((d, i) => {
+    const _id = folderId(pack, d.key);
+    return { _id, _key: `!folders!${_id}`, name: d.name, type: docType, sorting: "a", color: d.color ?? null, folder: null, sort: (i + 1) * 100, flags: {} };
+  });
+}
+/** Affecte chaque doc à un dossier via une fonction de clé. */
+function assignFolder(docs, pack, keyOf) {
+  for (const d of docs) { const k = keyOf(d); if (k != null && k !== "") d.folder = folderId(pack, String(k)); }
+}
+const FACTION_LABEL = { administratum: "Adeptus Administratum", arbites: "Adeptus Arbites", mechanicus: "Adeptus Mechanicus", ministorum: "Adeptus Ministorum", militarum: "Astra Militarum", feodal: "Mondes féodaux", civils: "Civils", assassinorum: "Officio Assassinorum", psykana: "Adeptus Astra Telepathica", inquisition: "Inquisition", xenos: "Xenos", chaos: "Chaos" };
+
 const parseSignedPct = s => { const m = clean(s).match(/([+-]?\d+)/); return m ? parseInt(m[1]) : 0; };
 const parsePrice = s => { const m = clean(s).match(/([\d.]+)/); return m ? parseInt(m[1].replace(/\./g, "")) : 0; };
 function parsePlaces(s) {
@@ -135,6 +169,7 @@ function importVehicles() {
       }
     }
   }
+  assignFolder(vweapons, "weapons", d => d.system.group);   // dossiers "vehicle" / "ship"
   writePack("vehicles", vehicles);
   appendPack("weapons", vweapons);
   return vehicles.length;
@@ -264,7 +299,9 @@ function importWeapons() {
       }
     }
   }
-  return writePack("weapons", docs);
+  assignFolder(docs, "weapons", d => d.system.weaponType);
+  const WF = [{ key: "melee", name: "Armes de mêlée" }, { key: "ranged", name: "Armes à distance" }, { key: "vehicle", name: "Armes de véhicule" }, { key: "ship", name: "Armes de vaisseau" }, { key: "fantasy", name: "Armes médiévales (féodal)" }];
+  return writePack("weapons", [...makeFolderDocs("weapons", "Item", WF), ...docs]);
 }
 
 /* ------------------------------------------------------------------ */
@@ -296,7 +333,9 @@ function importArmor() {
       });
     }
   }
-  return writePack("armor", docs);
+  assignFolder(docs, "armor", d => d.system.coverage);
+  const AF = [{ key: "partielle", name: "Armures partielles" }, { key: "complete", name: "Armures complètes" }, { key: "bonus", name: "Boucliers & casques" }];
+  return writePack("armor", [...makeFolderDocs("armor", "Item", AF), ...docs]);
 }
 
 /* ------------------------------------------------------------------ */
@@ -362,7 +401,7 @@ function importPowers() {
       if (header.length === 1 && /Pouvoirs mineurs/i.test(header[0])) {
         if (rows[1]) for (const mp of splitMinors(rows[1][0])) {
           docs.push({ _id: makeId("power", mp.name + discipline), name: mp.name, type: "psychicPower", img: "icons/svg/explosion.svg",
-            system: { discipline, isMinor: true, difficulty: 0, effect: `<p>${mp.effect}</p>`, source: "L1" } });
+            system: { discipline, isMinor: true, difficulty: 0, effect: `<p>${mp.effect}</p>`, description: `<p>${mp.effect}</p>`, source: "L1" } });
         }
         continue;
       }
@@ -375,12 +414,14 @@ function importPowers() {
           const effect = clean(rows[3][c]);
           if (!effect) continue;
           docs.push({ _id: makeId("power", name + discipline), name, type: "psychicPower", img: "icons/svg/explosion.svg",
-            system: { discipline, isMinor: false, ...meta, damage: detectDamage(effect), effect: `<p>${effect}</p>`, source: "L1" } });
+            system: { discipline, isMinor: false, ...meta, damage: detectDamage(effect), effect: `<p>${effect}</p>`, description: `<p>${effect}</p>`, source: "L1" } });
         }
       }
     }
   }
-  return writePack("psychic-powers", docs);
+  const DISC = [["generique", "Pouvoirs génériques"], ["biomancie", "Biomancie"], ["divination", "Divination"], ["pyromancie", "Pyromancie"], ["telekinesie", "Télékinésie"], ["telepathie", "Télépathie"]];
+  assignFolder(docs, "psychic-powers", d => d.system.discipline);
+  return writePack("psychic-powers", [...makeFolderDocs("psychic-powers", "Item", DISC.map(([key, name]) => ({ key, name }))), ...docs]);
 }
 function importFaith() {
   const docs = [];
@@ -396,10 +437,11 @@ function importFaith() {
       const meta = parsePowerMeta(rows[1][c], rows[2][c]);
       const effect = clean(rows[3][c]);
       docs.push({ _id: makeId("faith", name), name, type: "faithAct", img: "icons/svg/angel.svg",
-        system: { isMiracle, ...meta, damage: detectDamage(effect), effect: `<p>${effect}</p>`, source: "L1" } });
+        system: { isMiracle, ...meta, damage: detectDamage(effect), effect: `<p>${effect}</p>`, description: `<p>${effect}</p>`, source: "L1" } });
     }
   }
-  return writePack("faith-acts", docs);
+  assignFolder(docs, "faith-acts", d => d.system.isMiracle ? "miracle" : "acte");
+  return writePack("faith-acts", [...makeFolderDocs("faith-acts", "Item", [{ key: "acte", name: "Actes de Foi" }, { key: "miracle", name: "Miracles" }]), ...docs]);
 }
 
 /* ------------------------------------------------------------------ */
@@ -417,12 +459,22 @@ function importSpecies() {
   };
   const KEYS = ["com","cns","dis","end","for","tec","psy","mou","per","soc","sur","tir","vol"];
   const LABEL = { humain:"Humain", squat:"Squat", ratling:"Ratling", ogryn:"Ogryn", mutant:"Mutant", aeldari:"Aeldari", paria:"Paria" };
+  const LORE = {
+    humain: { d: "L'espèce majoritaire de l'Imperium, répandue sur d'innombrables mondes et adaptée à tous les environnements. Adaptables et tenaces, mais avides de pouvoir et de conquête.", life: "≈ 60 ans", size: "~1m70, 65 kg (H) / 1m60, 50 kg (F)" },
+    squat: { d: "Abhumains ayant évolué sur des mondes à forte gravité : trapus et petits. Vaillants, opiniâtres, d'une constitution robuste et ingénieurs hors pair.", life: "≈ 100 ans", size: "~1m50, 70 kg (H) / 1m40, 60 kg (F)" },
+    ratling: { d: "Petits Abhumains des Militarum Auxilla. Grossiers et sans-gêne, mais tireurs d'élite inégalés et survivants tenaces des pires zones de combat.", life: "≈ 60 ans", size: "~1m30, 50 kg (H) / 1m25, 45 kg (F)" },
+    ogryn: { d: "Souche d'Abhumains colossaux, simples d'esprit mais d'une force légendaire. Leurs armes (fusils ripeurs, mantelets) sont conçues pour résister à leur maladresse.", life: "≈ 60 ans", size: "~2m50, 120 kg (H) / 2m30, 100 kg (F)" },
+    mutant: { d: "Humains marqués par une déviance génétique stable. Tolérés mais considérés comme les plus impies des Abhumains, rejetés et relégués aux places les plus basses.", life: "≈ 60 ans", size: "~1m70, 65 kg (H) / 1m60, 50 kg (F)" },
+    aeldari: { d: "Xenos élancés et gracieux, aux traits fins et aux mouvements surhumains. Rares dans l'Imperium, où on les considère au mieux comme des parias, au pire comme des ennemis.", life: "≈ 900 ans", size: "~1m70, 60 kg (H) / 1m60, 50 kg (F)" },
+    paria: { d: "Êtres rarissimes nés sans écho dans le Warp (le Gène du Paria). Leur présence désoriente et terrifie les Psykers proches, mais glace aussi les âmes alentour.", life: "≈ 60 ans", size: "~1m70, 65 kg (H) / 1m60, 50 kg (F)" }
+  };
   const docs = [];
   for (const [key, sp] of Object.entries(SP)) {
     const base = {}; KEYS.forEach((k, i) => base[k] = sp.base[i]);
     const limits = {}; KEYS.forEach(k => limits[k] = sp.limits?.[k] ?? null);
+    const lore = LORE[key] ?? {};
     docs.push({ _id: makeId("species", key), name: LABEL[key], type: "species", img: "icons/svg/mystery-man.svg",
-      system: { base, limits, destin: sp.destin, special: sp.special, noPsy: !!sp.noPsy, source: "L1" } });
+      system: { base, limits, destin: sp.destin, special: sp.special, noPsy: !!sp.noPsy, description: lore.d ? `<p>${lore.d}</p>` : "", lifespan: lore.life ?? "", sizeNote: lore.size ?? "", source: "L1" } });
   }
   return writePack("species", docs);
 }
@@ -478,7 +530,9 @@ function importCareers() {
       }
     }
   }
-  return writePack("careers", docs);
+  assignFolder(docs, "careers", d => d.system.faction);
+  const FACTION_ORDER = ["administratum", "arbites", "mechanicus", "ministorum", "militarum", "assassinorum", "psykana", "inquisition", "feodal", "civils", "xenos", "chaos"];
+  return writePack("careers", [...makeFolderDocs("careers", "Item", FACTION_ORDER.map(k => ({ key: k, name: FACTION_LABEL[k] }))), ...docs]);
 }
 
 /* ------------------------------------------------------------------ */
@@ -510,14 +564,29 @@ function importAtouts() {
       const name = clean(r[0]); if (!name || /^Spécialité$/i.test(name)) continue;
       talentNames.delete(name.replace(/\s*\[.*\]/, ""));
       talents.push({ _id: makeId("talent", name), name: name.replace(/\s*\[.*\]/, ""), type: "talent", img: "icons/svg/aura.svg",
-        system: { usage: /1x\/S|scène/i.test(name) ? "scene" : "permanent", effect: `<p>${clean(r[1])}</p>`, source: "L1" } });
+        system: { usage: /1x\/S|scène/i.test(name) ? "scene" : "permanent", effect: `<p>${clean(r[1])}</p>`, description: `<p>${clean(r[1])}</p>`, source: "L1" } });
     }
   }
   // Stubs collectés depuis les carrières
   for (const n of specialtyNames) if (n.length > 1) specs.push({ _id: makeId("spec", n), name: n, type: "specialty", img: "icons/svg/upgrade.svg", system: { specialtyType: "standard", bonus: 10, source: "Carrière" } });
   for (const n of talentNames) if (n.length > 1) talents.push({ _id: makeId("talent", n), name: n, type: "talent", img: "icons/svg/aura.svg", system: { usage: "permanent", source: "Carrière" } });
-  writePack("specialties", specs);
-  writePack("talents", talents);
+  // Descriptions depuis le Livre Premier pour les atouts collectés des carrières (sans texte)
+  const hasDesc = sys => sys.description && sys.description.replace(/<[^>]+>/g, "").trim().length > 6;
+  const tDescs = livre1TalentDescs(talents.map(t => t.name));
+  let filledT = 0, filledS = 0;
+  for (const t of talents) {
+    const d = tDescs[t.name] || tDescs[baseAtout(t.name)];
+    if (d && !hasDesc(t.system)) { t.system.effect = `<p>${d}</p>`; t.system.description = `<p>${d}</p>`; filledT++; }
+  }
+  for (const s of specs) {
+    const d = ATOUTS.specialties[s.name] || ATOUTS.specialties[baseAtout(s.name)];
+    if (d && !hasDesc(s.system)) { s.system.effect = d; s.system.description = `<p>${d}</p>`; filledS++; }
+  }
+  console.log(`  (descriptions Livre I : +${filledS} spécialités, +${filledT} talents)`);
+  assignFolder(specs, "specialties", d => d.system.specialtyType);
+  assignFolder(talents, "talents", d => d.system.usage);
+  writePack("specialties", [...makeFolderDocs("specialties", "Item", [{ key: "standard", name: "Standard" }, { key: "martiale", name: "Martiales" }, { key: "occulte", name: "Occultes" }]), ...specs]);
+  writePack("talents", [...makeFolderDocs("talents", "Item", [{ key: "permanent", name: "Permanents" }, { key: "scene", name: "1×/scène" }, { key: "jour", name: "1×/jour" }, { key: "combat", name: "Combat" }, { key: "autre", name: "Autres" }]), ...talents]);
 }
 
 /* ------------------------------------------------------------------ */
@@ -603,6 +672,7 @@ function importBaseCareers() {
     _id: makeId("bcareer", name), name, type: "career", img: "icons/svg/book.svg",
     system: { faction: "feodal", quote: "", advances: ADV(adv), lifestyle, specialties, talents, startingEquipment: "", description: `<p>${desc}</p>`, source: "Brigandyne (adapté)" }
   }));
+  assignFolder(docs, "careers", d => d.system.faction);   // dossier "feodal"
   appendPack("careers", docs);
   return docs.length;
 }
@@ -664,6 +734,7 @@ function importFantasyEquipment() {
       system: { weaponType: "ranged", group: "fantasy", damageBase: parseDamage(dmg).base, damageMod: parseDamage(dmg).mod,
         range: RANGE_M[range] ?? 20, magazine: 0, hands, qualities: q.qualities, specialText: q.leftover, price: 0, source: "Brigandyne" } });
   }
+  assignFolder(docs, "weapons", () => "fantasy");
   appendPack("weapons", docs);
 
   const armor = [
@@ -683,6 +754,7 @@ function importFantasyEquipment() {
     _id: makeId("farmor", name), name, type: "armor", img: "icons/svg/shield.svg",
     system: { protection: prot, coverage: cov, initiativeMod: init, mouMod: mou, qualities: parseQualities(special).qualities, specialText: parseQualities(special).leftover, price: 0, source: "Brigandyne" }
   }));
+  assignFolder(adocs, "armor", d => d.system.coverage);
   appendPack("armor", adocs);
   return docs.length + adocs.length;
 }
@@ -710,7 +782,8 @@ function importAugmentations() {
       }
     }
   }
-  return writePack("augmentations", docs);
+  assignFolder(docs, "augmentations", d => d.system.augType);
+  return writePack("augmentations", [...makeFolderDocs("augmentations", "Item", [{ key: "prothese", name: "Prothèses & organes bioniques" }, { key: "systeme", name: "Systèmes implantés" }]), ...docs]);
 }
 
 /* ------------------------------------------------------------------ */
@@ -736,7 +809,8 @@ function importMutations() {
     img: type === "grace" ? "icons/svg/upgrade.svg" : "icons/svg/downgrade.svg",
     system: { mutationType: type, effect: `<p>${eff}</p>`, description: `<p>${eff}</p>`, source: "Exemple" }
   }));
-  return writePack("mutations", docs);
+  assignFolder(docs, "mutations", d => d.system.mutationType);
+  return writePack("mutations", [...makeFolderDocs("mutations", "Item", [{ key: "grace", name: "Grâces" }, { key: "fardeau", name: "Fardeaux" }]), ...docs]);
 }
 
 function importCriticalInjuries() {

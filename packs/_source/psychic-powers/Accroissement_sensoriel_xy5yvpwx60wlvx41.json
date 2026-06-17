@@ -13,6 +13,8 @@
     "rPlus": "Flux d’énergie",
     "damage": "",
     "effect": "<p>Vous développez l’un des sens de votre cible de façon extraordinaire. Elle gagne un bonus de +20 en PER avec ce sens. Son regard peut voir à des distances très éloignées, percer les ténèbres, son ouïe ou son odorat peuvent devenir aussi efficaces que des capteurs biomécaniques.</p>",
+    "description": "<p>Vous développez l’un des sens de votre cible de façon extraordinaire. Elle gagne un bonus de +20 en PER avec ce sens. Son regard peut voir à des distances très éloignées, percer les ténèbres, son ouïe ou son odorat peuvent devenir aussi efficaces que des capteurs biomécaniques.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xv36x51kwu18rx4u"
 }

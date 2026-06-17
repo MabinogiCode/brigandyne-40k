@@ -13,6 +13,8 @@
     "rPlus": "Soins",
     "damage": "",
     "effect": "<p>Vous aspirez le poison de la chair d’une cible. Vous annulez les effets d’un venin, d’un poison ou d’une drogue, cependant, la cible devient Affaiblie jusqu’à pouvoir se reposer quelques heures.</p>",
+    "description": "<p>Vous aspirez le poison de la chair d’une cible. Vous annulez les effets d’un venin, d’un poison ou d’une drogue, cependant, la cible devient Affaiblie jusqu’à pouvoir se reposer quelques heures.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xv36x51kwu18rx4u"
 }

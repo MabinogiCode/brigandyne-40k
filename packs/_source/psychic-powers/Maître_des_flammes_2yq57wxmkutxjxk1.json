@@ -13,6 +13,8 @@
     "rPlus": "Dégâts +1",
     "damage": "",
     "effect": "<p>Vous pouvez au choix : - Créer des effets pyrotechniques spectaculaires à partir d’un feu existant (formes dans la fumée ou les flammes, agrandissement d’une flamme, étincelles, petites explosions…). Si le feu touche une cible, elle subira *PSY* dégâts de feu. - Éteindre un feu existant : un feu de camp s’éteint en un tour, un brasier en une minute, un grand incendie en une heure.</p>",
+    "description": "<p>Vous pouvez au choix : - Créer des effets pyrotechniques spectaculaires à partir d’un feu existant (formes dans la fumée ou les flammes, agrandissement d’une flamme, étincelles, petites explosions…). Si le feu touche une cible, elle subira *PSY* dégâts de feu. - Éteindre un feu existant : un feu de camp s’éteint en un tour, un brasier en une minute, un grand incendie en une heure.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "v5x1swvt13srxxr6"
 }

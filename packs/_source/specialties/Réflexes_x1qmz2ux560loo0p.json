@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Plonger pour éviter un danger, rattraper un objet ou une personne qui chute",
+    "description": "<p>Plonger pour éviter un danger, rattraper un objet ou une personne qui chute</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Préparer et assaisonner un plat, connaître des recettes simples ou complexes",
+    "description": "<p>Préparer et assaisonner un plat, connaître des recettes simples ou complexes</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

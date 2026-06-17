@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Trouver un abri, faire du feu, connaître les dangers en forêt/montagne/marais…",
+    "description": "<p>Trouver un abri, faire du feu, connaître les dangers en forêt/montagne/marais…</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

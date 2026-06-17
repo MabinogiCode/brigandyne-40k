@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Lire, écrire, calligraphier, connaître la littérature, le papier et l’encre",
+    "description": "<p>Lire, écrire, calligraphier, connaître la littérature, le papier et l’encre</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

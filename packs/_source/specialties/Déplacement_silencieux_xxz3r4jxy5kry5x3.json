@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Se mouvoir discrètement en ville comme à la campagne",
+    "description": "<p>Se mouvoir discrètement en ville comme à la campagne</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

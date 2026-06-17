@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>contrôlez et décidez de ses actions comme si vous Vous êtes doué pour protéger vos amis dans les pires aviez deux personnages (c’est un second rôle). S’il situations. Une fois par scène, vous pouvez sauver un meurt, vous pouvez dépenser 1 point de Destin défiallié à proximité. Vous encaissez à sa place la moitié nitif pour le sauver. Sinon, ce talent sera perdu. des dommages, et votre allié s’en sort indemne.</p>",
+    "description": "<p>contrôlez et décidez de ses actions comme si vous Vous êtes doué pour protéger vos amis dans les pires aviez deux personnages (c’est un second rôle). S’il situations. Une fois par scène, vous pouvez sauver un meurt, vous pouvez dépenser 1 point de Destin défiallié à proximité. Vous encaissez à sa place la moitié nitif pour le sauver. Sinon, ce talent sera perdu. des dommages, et votre allié s’en sort indemne.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

@@ -13,6 +13,8 @@
     "rPlus": "Dégâts +1 ou Flux d’énergie",
     "damage": "RU+PSY",
     "effect": "<p>Le Psyker peut soulever un objet, jusqu’à *PSY*x10 kilo. Il peut le déplacer ou le projeter avec force sur une cible pour lui infliger RU+*PSY* dégâts.</p>",
+    "description": "<p>Le Psyker peut soulever un objet, jusqu’à *PSY*x10 kilo. Il peut le déplacer ou le projeter avec force sur une cible pour lui infliger RU+*PSY* dégâts.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "x2u5wno1w47lyx7v"
 }

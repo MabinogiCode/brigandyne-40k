@@ -13,6 +13,8 @@
     "rPlus": "Dégâts +1 ou Zone x2",
     "damage": "RU+PSY",
     "effect": "<p>Vous invoquez une tempête de flammes destructrices, attisées par votre âme, qui brûlent à travers les dimensions. Toute personne située dans la portée du pouvoir subit RU+*PSY* dégâts de feu. Vous pouvez maintenir le pouvoir jusqu’à RU tours. Chaque tour, les créatures encore dans la zone subissent *PSY* dégâts de feu. Cependant, vous subissez également 1 dégât par tour supplémentaire. Les flammes traversent les armures et brûlent les entités du Warp ou les créatures immatérielles. Aucune résistance ne s’applique. Il faut réussir un test de VOL pour mettre fin au pouvoir prématurément.</p>",
+    "description": "<p>Vous invoquez une tempête de flammes destructrices, attisées par votre âme, qui brûlent à travers les dimensions. Toute personne située dans la portée du pouvoir subit RU+*PSY* dégâts de feu. Vous pouvez maintenir le pouvoir jusqu’à RU tours. Chaque tour, les créatures encore dans la zone subissent *PSY* dégâts de feu. Cependant, vous subissez également 1 dégât par tour supplémentaire. Les flammes traversent les armures et brûlent les entités du Warp ou les créatures immatérielles. Aucune résistance ne s’applique. Il faut réussir un test de VOL pour mettre fin au pouvoir prématurément.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "v5x1swvt13srxxr6"
 }

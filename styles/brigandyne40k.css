@@ -423,3 +423,105 @@
 .brigandyne-40k.test-dialog .form-grid.two { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; }
 .brigandyne-40k.test-dialog .dialog-target { text-align: center; font-size: 1.05rem; }
 .brigandyne-40k.test-dialog .preset { color: var(--brig-muted); }
+
+/* ---------- Écran d'accueil ---------- */
+.brig-welcome .window-content { padding: 0; background: var(--brig-bg); }
+.brig-welcome-body { display: flex; flex-direction: column; }
+.brig-welcome-banner { line-height: 0; border-bottom: 2px solid var(--brig-gold); }
+.brig-welcome-banner img { width: 100%; height: auto; display: block; border: none; }
+.brig-welcome-content { padding: .9rem 1.1rem .4rem; }
+.brig-welcome-lead { margin: 0 0 .8rem; font-size: .95rem; line-height: 1.45; color: var(--brig-ink); }
+.brig-welcome-features { list-style: none; margin: 0 0 .8rem; padding: 0; display: grid; gap: .45rem; }
+.brig-welcome-features li { display: flex; align-items: baseline; gap: .55rem; font-size: .86rem; color: var(--brig-ink); }
+.brig-welcome-features li i { color: var(--brig-gold); width: 1.1rem; text-align: center; flex: 0 0 auto; }
+.brig-welcome-credits { margin: 0; font-size: .72rem; color: var(--brig-muted); font-style: italic; border-top: 1px solid var(--brig-border); padding-top: .5rem; }
+.brig-welcome-footer { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; padding: .7rem 1.1rem .9rem; border-top: 1px solid var(--brig-border); background: var(--brig-bg-2); }
+.brig-welcome-dontshow { display: flex; align-items: center; gap: .4rem; font-size: .78rem; color: var(--brig-muted); margin-right: auto; }
+.brig-welcome-dontshow input { width: auto; }
+.brig-welcome-buttons { display: flex; gap: .5rem; }
+.brig-welcome-buttons button { width: auto; font-family: var(--brig-title); text-transform: uppercase; letter-spacing: .04em; font-size: .82rem; }
+.brig-welcome-buttons .brig-welcome-primary { background: var(--brig-red); border-color: var(--brig-red-2); color: var(--brig-gold-2); }
+.brig-welcome-buttons .brig-welcome-primary:hover { background: var(--brig-red-2); }
+.brig-welcome-version { width: 100%; text-align: right; margin: .2rem 0 0; font-size: .68rem; color: var(--brig-rivet); }
+
+/* ---------- Wizard : verrouillage de création ---------- */
+.brigandyne-40k .wizard-blocked { text-align: center; padding: 2.4rem 1.5rem; display: flex; flex-direction: column; align-items: center; gap: .7rem; }
+.brigandyne-40k .wizard-blocked > i { font-size: 2.8rem; color: var(--brig-red-2); }
+.brigandyne-40k .wizard-blocked h2 { font-family: var(--brig-title); color: var(--brig-gold-2); margin: 0; }
+.brigandyne-40k .wizard-blocked p { color: var(--brig-muted); max-width: 28rem; margin: 0; }
+
+.brigandyne-40k .gen-choose { padding: .4rem 0 .6rem; }
+.brigandyne-40k .gen-choose > h3 { text-align: center; font-family: var(--brig-title); color: var(--brig-gold); margin: .2rem 0 .9rem; }
+.brigandyne-40k .gen-choose-cards { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+.brigandyne-40k .choose-card { display: flex; flex-direction: column; align-items: center; gap: .35rem; text-align: center; padding: 1.1rem .8rem; height: auto; min-height: 8rem; background: var(--brig-panel); border: 1px solid var(--brig-border); border-radius: 4px; }
+.brigandyne-40k .choose-card:hover { border-color: var(--brig-gold); background: var(--brig-panel-2); }
+.brigandyne-40k .choose-card > i { font-size: 1.8rem; color: var(--brig-gold); }
+.brigandyne-40k .choose-card .cc-title { font-family: var(--brig-title); font-size: 1rem; color: var(--brig-gold-2); }
+.brigandyne-40k .choose-card .cc-desc { font-size: .76rem; color: var(--brig-muted); line-height: 1.35; }
+.brigandyne-40k .gen-choose .warn-final { margin: .9rem 0 0; text-align: center; font-size: .8rem; color: var(--brig-red-2); }
+
+.brigandyne-40k .gen-method-locked { display: flex; align-items: center; justify-content: space-between; gap: .6rem; padding: .5rem .7rem; margin-bottom: .6rem; background: var(--brig-panel); border: 1px solid var(--brig-border); border-left: 3px solid var(--brig-gold); border-radius: 3px; }
+.brigandyne-40k .gen-method-locked > span i { color: var(--brig-gold); margin-right: .3rem; }
+.brigandyne-40k .roll-locked { color: var(--brig-gold-2); font-weight: 700; }
+.brigandyne-40k .roll-locked i { color: var(--brig-gold); margin-right: .3rem; }
+.brigandyne-40k .link-request { width: auto; background: transparent; border: 1px solid var(--brig-border); color: var(--brig-muted); font-size: .76rem; padding: .25rem .55rem; }
+.brigandyne-40k .link-request:hover { color: var(--brig-gold-2); border-color: var(--brig-gold); }
+.brigandyne-40k .btn-request-new { width: auto; background: var(--brig-red); border-color: var(--brig-red-2); color: var(--brig-gold-2); margin-top: .4rem; }
+.brigandyne-40k .btn-request-new:hover { background: var(--brig-red-2); }
+
+/* ---------- Outil MJ : gestion des créations ---------- */
+.brigandyne-40k .brig-chargen-admin .hint { color: var(--brig-muted); font-size: .8rem; margin: 0 0 .6rem; }
+.brigandyne-40k .brig-chargen-admin table { width: 100%; border-collapse: collapse; }
+.brigandyne-40k .brig-chargen-admin th { text-align: left; font-family: var(--brig-title); color: var(--brig-gold); font-size: .74rem; text-transform: uppercase; border-bottom: 1px solid var(--brig-border); padding: .3rem .4rem; }
+.brigandyne-40k .brig-chargen-admin td { padding: .35rem .4rem; border-bottom: 1px solid var(--brig-border); font-size: .85rem; }
+.brigandyne-40k .brig-chargen-admin .u-name { display: flex; align-items: center; gap: .4rem; }
+.brigandyne-40k .brig-chargen-admin .u-dot { width: .7rem; height: .7rem; border-radius: 50%; display: inline-block; border: 1px solid var(--brig-border); }
+.brigandyne-40k .brig-chargen-admin .u-actions { display: flex; gap: .25rem; justify-content: flex-end; }
+.brigandyne-40k .brig-chargen-admin .u-actions button { width: auto; padding: .2rem .45rem; }
+.brig-chargen-admin-launch { flex: 0 0 auto; }
+
+/* ---------- Wizard : affichage des dés tirés ---------- */
+.brigandyne-40k .gen-roll-bar { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; margin-bottom: .6rem; }
+.brigandyne-40k .rolled { display: inline-flex; flex-wrap: wrap; gap: .3rem; }
+.brigandyne-40k .rolled .rv { min-width: 1.6rem; text-align: center; padding: .1rem .25rem; background: var(--brig-panel); border: 1px solid var(--brig-border); border-radius: 3px; font-variant-numeric: tabular-nums; }
+.brigandyne-40k .rolled .rv.dropped { opacity: .4; text-decoration: line-through; }
+.brigandyne-40k .dropped-note { font-size: .76rem; color: var(--brig-muted); }
+
+/* ---------- Wizard : aperçus descriptifs (espèce / carrière) ---------- */
+.brigandyne-40k .preview { background: var(--brig-panel); border: 1px solid var(--brig-border); border-radius: 4px; padding: .6rem .8rem; margin-top: .7rem; }
+.brigandyne-40k .preview h4 { margin: 0 0 .4rem; font-family: var(--brig-title); color: var(--brig-gold-2); border-bottom: 1px solid var(--brig-border); padding-bottom: .3rem; }
+.brigandyne-40k .preview h4 .lifestyle { font-family: var(--brig-font); font-size: .8rem; color: var(--brig-muted); font-weight: 400; }
+.brigandyne-40k .preview .lore { margin: .3rem 0; font-size: .82rem; line-height: 1.4; color: var(--brig-ink); }
+.brigandyne-40k .preview .lore p { margin: .2rem 0; }
+.brigandyne-40k .preview .lore-meta { margin: .25rem 0; font-size: .74rem; color: var(--brig-muted); }
+.brigandyne-40k .preview .lore-meta i { color: var(--brig-gold); }
+.brigandyne-40k .preview .quote { margin: .2rem 0 .4rem; font-style: italic; color: var(--brig-gold); font-size: .82rem; }
+.brigandyne-40k .chip-label { margin: .5rem 0 .2rem; font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; color: var(--brig-muted); font-family: var(--brig-title); }
+.brigandyne-40k .chip-row { display: flex; flex-wrap: wrap; gap: .3rem; }
+.brigandyne-40k .chip { display: inline-block; padding: .12rem .45rem; font-size: .76rem; background: var(--brig-panel-2); border: 1px solid var(--brig-border); border-radius: 10px; color: var(--brig-ink); cursor: help; }
+.brigandyne-40k .chip:hover { border-color: var(--brig-gold); }
+.brigandyne-40k .chip.talent { border-color: var(--brig-blue); }
+.brigandyne-40k .chip.trait { background: transparent; border-color: var(--brig-gold); color: var(--brig-gold-2); }
+.brigandyne-40k .char-mini-grid .mini { cursor: help; }
+.brigandyne-40k .gr-abbr { cursor: help; }
+
+/* dé tiré déjà assigné : grisé */
+.brigandyne-40k .rolled .rv.used { opacity: .3; }
+
+/* ---------- Wizard : méthode choisie (MJ) + tableau des caractéristiques ---------- */
+.brigandyne-40k .gen-method-active { display: flex; align-items: center; justify-content: space-between; gap: .6rem; padding: .5rem .7rem; margin-bottom: .6rem; background: var(--brig-panel); border: 1px solid var(--brig-border); border-left: 3px solid var(--brig-green); border-radius: 3px; }
+.brigandyne-40k .gen-method-active > span i { color: var(--brig-green); margin-right: .3rem; }
+
+.brigandyne-40k .gen-table-wrap { overflow-x: auto; margin-bottom: .7rem; }
+.brigandyne-40k .gen-table { border-collapse: collapse; width: 100%; table-layout: fixed; }
+.brigandyne-40k .gen-table th, .brigandyne-40k .gen-table td { border: 1px solid var(--brig-border); padding: .25rem .15rem; text-align: center; font-size: .8rem; }
+.brigandyne-40k .gen-table thead th { background: var(--brig-panel-2); color: var(--brig-gold); font-family: var(--brig-title); cursor: help; }
+.brigandyne-40k .gen-table .rh { width: 64px; text-align: left; color: var(--brig-muted); font-size: .68rem; text-transform: uppercase; background: var(--brig-panel); white-space: nowrap; font-family: var(--brig-title); }
+.brigandyne-40k .gen-table .r-base td { color: var(--brig-muted); }
+.brigandyne-40k .gen-table .r-total td { font-weight: 700; color: var(--brig-gold-2); font-size: .95rem; }
+.brigandyne-40k .gen-table select, .brigandyne-40k .gen-table input { width: 100%; min-width: 0; padding: .15rem .1rem; text-align: center; font-size: .85rem; }
+/* select : retirer la flèche native qui rognait la valeur à 2 chiffres */
+.brigandyne-40k .gen-table select { appearance: none; -webkit-appearance: none; -moz-appearance: none; text-align-last: center; cursor: pointer; background: var(--brig-panel-2); }
+.brigandyne-40k .gen-table select:hover { border-color: var(--brig-gold); }
+.brigandyne-40k .gen-table input[type=number] { -moz-appearance: textfield; appearance: textfield; }
+.brigandyne-40k .gen-table input[type=number]::-webkit-inner-spin-button { display: none; }

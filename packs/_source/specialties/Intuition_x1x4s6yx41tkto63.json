@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Jauger l’état d’esprit d’une personne, sentir la peur, le mensonge",
+    "description": "<p>Jauger l’état d’esprit d’une personne, sentir la peur, le mensonge</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

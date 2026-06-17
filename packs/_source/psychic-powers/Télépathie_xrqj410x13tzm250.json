@@ -13,6 +13,8 @@
     "rPlus": "Cible +1 ou Flux d’énergie",
     "damage": "",
     "effect": "<p>Vous lié les esprits consentants de *PSY* personnes dans la portée du pouvoir. Pendant toute la durée du pouvoir, les personnes liées peuvent communiquer télépathiquement entre elle, jusqu’à *PSY* kilomètres de distance.</p>",
+    "description": "<p>Vous lié les esprits consentants de *PSY* personnes dans la portée du pouvoir. Pendant toute la durée du pouvoir, les personnes liées peuvent communiquer télépathiquement entre elle, jusqu’à *PSY* kilomètres de distance.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xrt0tjrxjlulqx0x"
 }

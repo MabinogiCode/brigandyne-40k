@@ -13,6 +13,8 @@
     "rPlus": "Durée x2",
     "damage": "",
     "effect": "<p>Votre esprit se matérialise sous la forme d’une voix hurlante qui frappe les cibles devant vous, qui deviennent Sonnées pendant la durée du pouvoir.</p>",
+    "description": "<p>Votre esprit se matérialise sous la forme d’une voix hurlante qui frappe les cibles devant vous, qui deviennent Sonnées pendant la durée du pouvoir.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xrt0tjrxjlulqx0x"
 }

@@ -6,6 +6,8 @@
   "system": {
     "usage": "scene",
     "effect": "<p>Vous avez un don pour piloter un véhicule précis (Moto, Chasseur, Char, Marcheur…). Une fois par scène, après le test, vous pouvez inverser les chiffres obtenus. Ainsi, un 90 peut devenir un 09.</p>",
+    "description": "<p>Vous avez un don pour piloter un véhicule précis (Moto, Chasseur, Char, Marcheur…). Une fois par scène, après le test, vous pouvez inverser les chiffres obtenus. Ainsi, un 90 peut devenir un 09.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "z52203x03183xx3w"
 }

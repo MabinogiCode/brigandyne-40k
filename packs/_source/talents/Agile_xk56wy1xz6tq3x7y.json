@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous savez utiliser votre vitesse et votre souplesse en combat. Une fois par scène, vous pouvez utiliser votre Mouvement à la place de la compétence Combat (duel MOU/COM pour ce round).</p>",
+    "description": "<p>Vous savez utiliser votre vitesse et votre souplesse en combat. Une fois par scène, vous pouvez utiliser votre Mouvement à la place de la compétence Combat (duel MOU/COM pour ce round).</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

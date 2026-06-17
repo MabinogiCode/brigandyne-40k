@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Forge, rognure de monnaie",
+    "description": "<p>Forge, rognure de monnaie</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

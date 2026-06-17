@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous ne subissez aucun malus dû à l’obscurité (mais</p>",
+    "description": "<p>Vous ne subissez aucun malus dû à l’obscurité (mais</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

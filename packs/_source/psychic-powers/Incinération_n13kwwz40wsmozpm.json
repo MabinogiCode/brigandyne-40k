@@ -13,6 +13,8 @@
     "rPlus": "Dégâts +1",
     "damage": "",
     "effect": "<p>Vous commencez avec un premier test (sans modificateur de Résistance) afin de commencer à canaliser les molécules aux creux de vos mains. Lorsque vous le souhaitez, vous pouvez effectuer un second test (qui ne peut pas provoquer de phénomène psychique ou de péril du Warp) pour relâcher le rayon vers votre cible et lui infliger RU dégâts de feu. Cependant, vous pouvez maintenir votre concentration et canaliser le pouvoir pendant toute sa durée. Les dégâts augmente de 2 chaque tour pendant lesquels vous le canalisez (Maximum +10).</p>",
+    "description": "<p>Vous commencez avec un premier test (sans modificateur de Résistance) afin de commencer à canaliser les molécules aux creux de vos mains. Lorsque vous le souhaitez, vous pouvez effectuer un second test (qui ne peut pas provoquer de phénomène psychique ou de péril du Warp) pour relâcher le rayon vers votre cible et lui infliger RU dégâts de feu. Cependant, vous pouvez maintenir votre concentration et canaliser le pouvoir pendant toute sa durée. Les dégâts augmente de 2 chaque tour pendant lesquels vous le canalisez (Maximum +10).</p>",
     "source": "L1"
-  }
+  },
+  "folder": "v5x1swvt13srxxr6"
 }

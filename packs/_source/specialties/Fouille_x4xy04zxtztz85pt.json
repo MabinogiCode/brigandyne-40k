@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Trouver un indice, un objet caché dans une salle ou sur un individu",
+    "description": "<p>Trouver un indice, un objet caché dans une salle ou sur un individu</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

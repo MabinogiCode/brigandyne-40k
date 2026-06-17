@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous savez mettre votre habileté de chasseur à profit pour abattre une proie. Une fois par scène, vous pouvez ajouter votre *SUR* à vos dégâts à distance.</p>",
+    "description": "<p>Vous savez mettre votre habileté de chasseur à profit pour abattre une proie. Une fois par scène, vous pouvez ajouter votre *SUR* à vos dégâts à distance.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

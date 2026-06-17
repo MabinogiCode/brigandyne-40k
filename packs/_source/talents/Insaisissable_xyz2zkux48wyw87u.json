@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Tel une anguille, vous vous faufilez dans la mêlée et échappez à vos assaillants. Une fois par scène, vous pouvez vous désengager d’un combat à tout moment et sans dépenser votre action.</p>",
+    "description": "<p>Tel une anguille, vous vous faufilez dans la mêlée et échappez à vos assaillants. Une fois par scène, vous pouvez vous désengager d’un combat à tout moment et sans dépenser votre action.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

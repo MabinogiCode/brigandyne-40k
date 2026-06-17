@@ -12,6 +12,8 @@
     "rPlus": "Durée x2",
     "damage": "",
     "effect": "<p>La Volonté de l’Empereur-Dieu se manifeste physiquement en passant par le corps du Prêcheur qui illumine de lumière. Il obtient des ailes radieuses lui permettant de voler et obtient un bonus de +20% en COM et en TIR. De plus, les créatures hérétiques et démoniaques subissent *VOL* dégâts par tour.</p>",
+    "description": "<p>La Volonté de l’Empereur-Dieu se manifeste physiquement en passant par le corps du Prêcheur qui illumine de lumière. Il obtient des ailes radieuses lui permettant de voler et obtient un bonus de +20% en COM et en TIR. De plus, les créatures hérétiques et démoniaques subissent *VOL* dégâts par tour.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "ys1kp2qzmzx00zzz"
 }

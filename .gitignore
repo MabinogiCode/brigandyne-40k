@@ -9,3 +9,9 @@ Thumbs.db
 # immédiatement. Régénération : npm run import && npm run pack
 # Verrous LevelDB éventuels :
 packs/**/LOCK
+
+# Extractions brutes des PDF Brigandyne (régénérables via `python tools/extract_pdf.py`) :
+# volumineuses et non nécessaires au build. Seuls atouts.json (descriptions distillées
+# utilisées par l'import), l'écran MJ et les sommaires sont conservés.
+tools/source/pdf/livre1.txt
+tools/source/pdf/livre2.txt

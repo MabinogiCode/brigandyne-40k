@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>votre *MOU* à votre valeur de protection. Votre nature fantasque ou votre aplomb vous portent chance. A chaque fois que vous relancez un test,</p>",
+    "description": "<p>votre *MOU* à votre valeur de protection. Votre nature fantasque ou votre aplomb vous portent chance. A chaque fois que vous relancez un test,</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

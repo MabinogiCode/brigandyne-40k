@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Reconnaître l’usage d’une magie spécifique ou un monstre étrange",
+    "description": "<p>Reconnaître l’usage d’une magie spécifique ou un monstre étrange</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Votre essence magique est indétectable. On ne peut jamais étudier votre aura magique. De plus, vous savez murmurer les formules magiques de façon à bénéficier du bonus de +5% sans être entendu.</p>",
+    "description": "<p>Votre essence magique est indétectable. On ne peut jamais étudier votre aura magique. De plus, vous savez murmurer les formules magiques de façon à bénéficier du bonus de +5% sans être entendu.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

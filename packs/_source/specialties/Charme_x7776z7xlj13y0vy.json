@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Séduire, plaire, flatter, se faire remarquer",
+    "description": "<p>Séduire, plaire, flatter, se faire remarquer</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

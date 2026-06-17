@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Connaître les mythes et les contes, les héros imaginaires et les monstres bien réels",
+    "description": "<p>Connaître les mythes et les contes, les héros imaginaires et les monstres bien réels</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

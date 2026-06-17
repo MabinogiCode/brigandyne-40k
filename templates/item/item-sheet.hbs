@@ -14,7 +14,7 @@
   <div class="field-row">
     <label>Quantité <input type="number" name="system.quantity" value="{{system.quantity}}" /></label>
     <label>Poids <input type="number" step="0.1" name="system.weight" value="{{system.weight}}" /></label>
-    <label>Prix (TG) <input type="number" name="system.price" value="{{system.price}}" /></label>
+    <label data-tooltip="Prix en Trônes Gelt — la monnaie officielle de l'Imperium.">Prix (TG) <input type="number" name="system.price" value="{{system.price}}" /></label>
     <label class="check">Équipé <input type="checkbox" name="system.equipped" {{#if system.equipped}}checked{{/if}} /></label>
   </div>
   {{/if}}

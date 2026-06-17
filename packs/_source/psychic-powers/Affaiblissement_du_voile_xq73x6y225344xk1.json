@@ -13,6 +13,8 @@
     "rPlus": "Durée x2 ou Flux d’énergie",
     "damage": "",
     "effect": "<p>Vous affaiblissez le voile de l’Immaterium dans la portée du pouvoir. Pendant la durée du pouvoir, tous les Psykers gagnent 1 Avantage pour lancer leurs pouvoirs. Cependant, tout échec entraîne un Phénomène psychique et tout échec majeur entraîne un Péril du Warp.</p>",
+    "description": "<p>Vous affaiblissez le voile de l’Immaterium dans la portée du pouvoir. Pendant la durée du pouvoir, tous les Psykers gagnent 1 Avantage pour lancer leurs pouvoirs. Cependant, tout échec entraîne un Phénomène psychique et tout échec majeur entraîne un Péril du Warp.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "zy01lzxxmrm4y884"
 }

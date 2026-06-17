@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Diriger une troupe, se faire obéir de ses subalternes",
+    "description": "<p>Diriger une troupe, se faire obéir de ses subalternes</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

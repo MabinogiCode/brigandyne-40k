@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Manipuler des machines, les concevoir, les saboter",
+    "description": "<p>Manipuler des machines, les concevoir, les saboter</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

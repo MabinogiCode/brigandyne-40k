@@ -13,6 +13,8 @@
     "rPlus": "Durée x2",
     "damage": "",
     "effect": "<p>Vous étendez vos sens bien au-delà de votre perception physique. Pendant la durée du sort, vous pouvez voir, sentir et entendre depuis n’importe quel angle dans la portée du pouvoir. Vous obtenez un bonus de +20% en PER pour tous vos tests de Vigilance.</p>",
+    "description": "<p>Vous étendez vos sens bien au-delà de votre perception physique. Pendant la durée du sort, vous pouvez voir, sentir et entendre depuis n’importe quel angle dans la portée du pouvoir. Vous obtenez un bonus de +20% en PER pour tous vos tests de Vigilance.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xq32wyrx5vqyxx3x"
 }

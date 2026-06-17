@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Retrouver son chemin, deviner sa localisation",
+    "description": "<p>Retrouver son chemin, deviner sa localisation</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

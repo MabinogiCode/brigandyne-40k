@@ -13,6 +13,8 @@
     "rPlus": "Flux d’énergie",
     "damage": "",
     "effect": "<p>Vous lisez les pensées de votre cible et découvrez immédiatement ce qu’elle pense au moment où vous posez votre question.</p>",
+    "description": "<p>Vous lisez les pensées de votre cible et découvrez immédiatement ce qu’elle pense au moment où vous posez votre question.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xrt0tjrxjlulqx0x"
 }

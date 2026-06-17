@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous êtes né(e) sous une bonne étoile. Une fois par scène, vous pouvez relancer un test en ne payant que la moitié du coût en Sang-froid. Combat au sol Les bagarres qui se terminent dans la boue ne vous font pas peur. Vos ennemis ne gagnent aucun bénéfice lorsque vous êtes à terre.</p>",
+    "description": "<p>Vous êtes né(e) sous une bonne étoile. Une fois par scène, vous pouvez relancer un test en ne payant que la moitié du coût en Sang-froid. Combat au sol Les bagarres qui se terminent dans la boue ne vous font pas peur. Vos ennemis ne gagnent aucun bénéfice lorsque vous êtes à terre.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

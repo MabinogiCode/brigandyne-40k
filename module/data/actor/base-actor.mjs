@@ -64,10 +64,13 @@ export class BaseActorModel extends foundry.abstract.TypeDataModel {
     // Protection totale (la couche armures s'ajoute au niveau du document)
     this.protection.value = (this.protection.base ?? 0) + (this.protection.mod ?? 0) + (this.protection.fromArmor ?? 0);
 
-    // Initiative dérivée = bonus MOU + bonus PER (+ mod), sauf override manuel
-    const derived = this.characteristics.mou.bonus + this.characteristics.per.bonus;
+    // Initiative dérivée = bonus COM + MOU + PER (+ mod), sauf override manuel (RAW Brigandyne)
+    const derived = this.characteristics.com.bonus + this.characteristics.mou.bonus + this.characteristics.per.bonus;
     this.initiative.derived = derived;
     this.initiative.value = (this.initiative.base ?? derived) + (this.initiative.mod ?? 0);
+
+    // Seuil d'instabilité = SF/4 (RAW Brigandyne) — pertes de SF lors des tests de Corruption
+    this.corruption.threshold = Math.floor((this.sf.max ?? 0) / 4);
 
     // Nombre de disciplines / pouvoirs psy par jour
     const psy = this.characteristics.psy.total;

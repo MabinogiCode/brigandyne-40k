@@ -13,6 +13,8 @@
     "rPlus": "Zone x2",
     "damage": "",
     "effect": "<p>Une onde pestilentielle se répand dans la portée du pouvoir et fait mourir toutes les formes de vie végétale en quelques secondes.</p>",
+    "description": "<p>Une onde pestilentielle se répand dans la portée du pouvoir et fait mourir toutes les formes de vie végétale en quelques secondes.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "zy01lzxxmrm4y884"
 }

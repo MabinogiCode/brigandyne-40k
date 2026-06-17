@@ -12,6 +12,8 @@
     "rPlus": "Protection +1",
     "damage": "",
     "effect": "<p>Les coups et les projectiles semblent absorber ou dévier par une force supérieure qui protège la cible. Elle reçoit 2 point de Protection.</p>",
+    "description": "<p>Les coups et les projectiles semblent absorber ou dévier par une force supérieure qui protège la cible. Elle reçoit 2 point de Protection.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xy23x7rzwrn5s533"
 }

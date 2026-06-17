@@ -13,6 +13,8 @@
     "rPlus": "Cible +1",
     "damage": "",
     "effect": "<p>Vous manipulez les probabilités pour vous mouvoir avec aisance au milieu des tirs et des coups. Vous obtenez un bonus de +20% en MOU pour éviter des tirs (même d’arme à feu) et pour employer la tactique En défense pendant la durée du pouvoir.</p>",
+    "description": "<p>Vous manipulez les probabilités pour vous mouvoir avec aisance au milieu des tirs et des coups. Vous obtenez un bonus de +20% en MOU pour éviter des tirs (même d’arme à feu) et pour employer la tactique En défense pendant la durée du pouvoir.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xq32wyrx5vqyxx3x"
 }

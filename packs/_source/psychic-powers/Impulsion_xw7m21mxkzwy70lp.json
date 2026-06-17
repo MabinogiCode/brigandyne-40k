@@ -13,6 +13,8 @@
     "rPlus": "Cible +1",
     "damage": "",
     "effect": "<p>Vous prononcez un ordre simple, qui tient en quelques mots, comme “Fuis”, “Lâche ton arme”. La cible suivra la directive durant son prochain tour mais ne commettra pas d’actes suicidaires.</p>",
+    "description": "<p>Vous prononcez un ordre simple, qui tient en quelques mots, comme “Fuis”, “Lâche ton arme”. La cible suivra la directive durant son prochain tour mais ne commettra pas d’actes suicidaires.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xrt0tjrxjlulqx0x"
 }

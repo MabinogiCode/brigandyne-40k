@@ -39,6 +39,9 @@
       "mutations"
     ],
     "noPsy": false,
+    "description": "<p>Humains marqués par une déviance génétique stable. Tolérés mais considérés comme les plus impies des Abhumains, rejetés et relégués aux places les plus basses.</p>",
+    "lifespan": "≈ 60 ans",
+    "sizeNote": "~1m70, 65 kg (H) / 1m60, 50 kg (F)",
     "source": "L1"
   }
 }

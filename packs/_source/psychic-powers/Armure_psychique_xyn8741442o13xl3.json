@@ -13,6 +13,8 @@
     "rPlus": "Cible +1 ou Durée x2",
     "damage": "",
     "effect": "<p>La cible du pouvoir reçoit *PSY* points de protection.</p>",
+    "description": "<p>La cible du pouvoir reçoit *PSY* points de protection.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "x2u5wno1w47lyx7v"
 }

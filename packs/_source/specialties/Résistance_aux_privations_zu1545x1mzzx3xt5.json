@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Résister à la faim, à la soif et au sommeil",
+    "description": "<p>Résister à la faim, à la soif et au sommeil</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

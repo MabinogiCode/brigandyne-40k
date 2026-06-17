@@ -13,6 +13,8 @@
     "rPlus": "SF +1",
     "damage": "",
     "effect": "<p>La douleur de la cible se calme. Elle regagne *PSY* points de SF. Il faut 1 heure pour obtenir les effets de ce pouvoir. Ne peut être effectué qu’une seule fois toutes les 24 heures par cible.</p>",
+    "description": "<p>La douleur de la cible se calme. Elle regagne *PSY* points de SF. Il faut 1 heure pour obtenir les effets de ce pouvoir. Ne peut être effectué qu’une seule fois toutes les 24 heures par cible.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "zy01lzxxmrm4y884"
 }

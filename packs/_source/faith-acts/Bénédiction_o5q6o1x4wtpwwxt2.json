@@ -12,6 +12,8 @@
     "rPlus": "Cible +1",
     "damage": "",
     "effect": "<p>Le prêcheur canalise la foi impériale dans le métal d’une arme. Une arme bénie offre un bonus de +5% en COM ou TIR et infligent 1 dégât supplémentaire. Les armes bénies peuvent atteindre les créatures immatérielles comme les démons.</p>",
+    "description": "<p>Le prêcheur canalise la foi impériale dans le métal d’une arme. Une arme bénie offre un bonus de +5% en COM ou TIR et infligent 1 dégât supplémentaire. Les armes bénies peuvent atteindre les créatures immatérielles comme les démons.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xy23x7rzwrn5s533"
 }

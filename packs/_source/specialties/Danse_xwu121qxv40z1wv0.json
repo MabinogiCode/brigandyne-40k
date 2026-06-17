@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Rondes paysannes, danses aristocratiques ou improvisées",
+    "description": "<p>Rondes paysannes, danses aristocratiques ou improvisées</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

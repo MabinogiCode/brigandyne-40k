@@ -13,6 +13,8 @@
     "rPlus": "Durée x2",
     "damage": "",
     "effect": "<p>Le sommet de l’art des Biomanciens. Pendant la durée du pouvoir, la cible récupère *PSY* PV par tour. Ce pouvoir est capable de faire repousser les membres tranchés ou même de régénérer des organes.</p>",
+    "description": "<p>Le sommet de l’art des Biomanciens. Pendant la durée du pouvoir, la cible récupère *PSY* PV par tour. Ce pouvoir est capable de faire repousser les membres tranchés ou même de régénérer des organes.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xv36x51kwu18rx4u"
 }

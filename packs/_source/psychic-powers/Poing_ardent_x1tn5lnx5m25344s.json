@@ -13,6 +13,8 @@
     "rPlus": "Dégâts +1 ou Durée x2",
     "damage": "",
     "effect": "<p>Vos mains s’enflamment d’un brasier psychique. Vos attaques à mains nues infligent *PSY* dégâts de feu supplémentaires.</p>",
+    "description": "<p>Vos mains s’enflamment d’un brasier psychique. Vos attaques à mains nues infligent *PSY* dégâts de feu supplémentaires.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "v5x1swvt13srxxr6"
 }

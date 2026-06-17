@@ -13,6 +13,8 @@
     "rPlus": "Dégâts +1",
     "damage": "",
     "effect": "<p>Vous projetez une vague d’énergie télékinétique vers votre cible qui est repoussée de RU mètres et subit *PSY* dégâts. Si la cible est repoussée de 3 mètres, elle tombe à terre.</p>",
+    "description": "<p>Vous projetez une vague d’énergie télékinétique vers votre cible qui est repoussée de RU mètres et subit *PSY* dégâts. Si la cible est repoussée de 3 mètres, elle tombe à terre.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "x2u5wno1w47lyx7v"
 }

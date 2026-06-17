@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Se dissimuler dans les ombres, derrière un mur, suivre quelqu’un (filature)",
+    "description": "<p>Se dissimuler dans les ombres, derrière un mur, suivre quelqu’un (filature)</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

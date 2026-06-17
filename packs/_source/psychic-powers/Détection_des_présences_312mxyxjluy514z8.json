@@ -13,6 +13,8 @@
     "rPlus": "Flux d’énergie",
     "damage": "",
     "effect": "<p>Vous déployez votre perception mentale pour obtenir un vague aperçu des créatures vivantes dans la portée du pouvoir.</p>",
+    "description": "<p>Vous déployez votre perception mentale pour obtenir un vague aperçu des créatures vivantes dans la portée du pouvoir.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "zy01lzxxmrm4y884"
 }

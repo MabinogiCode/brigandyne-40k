@@ -41,6 +41,9 @@
       "pvPlus1"
     ],
     "noPsy": false,
+    "description": "<p>Abhumains ayant évolué sur des mondes à forte gravité : trapus et petits. Vaillants, opiniâtres, d'une constitution robuste et ingénieurs hors pair.</p>",
+    "lifespan": "≈ 100 ans",
+    "sizeNote": "~1m50, 70 kg (H) / 1m40, 60 kg (F)",
     "source": "L1"
   }
 }

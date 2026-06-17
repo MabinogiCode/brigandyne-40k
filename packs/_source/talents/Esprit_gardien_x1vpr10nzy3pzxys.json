@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Un esprit veille sur vous : il peut s’agir d’un être féérique, d’un élémentaire, d’un ange ou d’un démon par exemple. Une fois par scène, vous pouvez ajouter votre *MAG* à votre valeur de protection.</p>",
+    "description": "<p>Un esprit veille sur vous : il peut s’agir d’un être féérique, d’un élémentaire, d’un ange ou d’un démon par exemple. Une fois par scène, vous pouvez ajouter votre *MAG* à votre valeur de protection.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

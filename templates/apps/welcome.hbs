@@ -1,0 +1,34 @@
+<div class="brig-welcome-body">
+  <div class="brig-welcome-banner">
+    <img src="{{banner}}" alt="Warhammer 40,000 : Brigandyne" />
+  </div>
+
+  <div class="brig-welcome-content">
+    <p class="brig-welcome-lead">{{localize "BRIG.Welcome.lead"}}</p>
+
+    <ul class="brig-welcome-features">
+      <li><i class="fa-solid fa-dice-d10"></i> {{localize "BRIG.Welcome.feature.dice"}}</li>
+      <li><i class="fa-solid fa-wand-magic-sparkles"></i> {{localize "BRIG.Welcome.feature.chargen"}}</li>
+      <li><i class="fa-solid fa-book-skull"></i> {{localize "BRIG.Welcome.feature.content"}}</li>
+      <li><i class="fa-solid fa-skull"></i> {{localize "BRIG.Welcome.feature.warp"}}</li>
+    </ul>
+
+    <p class="brig-welcome-credits">{{note}}</p>
+  </div>
+
+  <footer class="brig-welcome-footer">
+    <label class="brig-welcome-dontshow">
+      <input type="checkbox" name="dontShow" checked />
+      {{localize "BRIG.Welcome.dontShow"}}
+    </label>
+    <div class="brig-welcome-buttons">
+      <button type="button" data-action="welcomeChargen">
+        <i class="fa-solid fa-wand-magic-sparkles"></i> {{localize "BRIG.Welcome.createChar"}}
+      </button>
+      <button type="button" class="brig-welcome-primary" data-action="welcomeClose">
+        <i class="fa-solid fa-skull"></i> {{localize "BRIG.Welcome.start"}}
+      </button>
+    </div>
+    <p class="brig-welcome-version">v{{version}}</p>
+  </footer>
+</div>

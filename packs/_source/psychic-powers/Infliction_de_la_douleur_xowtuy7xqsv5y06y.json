@@ -13,6 +13,8 @@
     "rPlus": "Cible +1 ou Durée x2",
     "damage": "",
     "effect": "<p>Vous infligez une douleur cuisante à une cible qui subit un malus de -10% à toutes ses actions pendant la durée du Pouvoir.</p>",
+    "description": "<p>Vous infligez une douleur cuisante à une cible qui subit un malus de -10% à toutes ses actions pendant la durée du Pouvoir.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "zy01lzxxmrm4y884"
 }

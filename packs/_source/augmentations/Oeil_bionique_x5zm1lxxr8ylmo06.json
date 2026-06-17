@@ -10,5 +10,6 @@
     "description": "<p>Vous accorde un bonus selon la spécificité de l’oeil : - Oeil d’Augure : Confère les effets d’un Auspex mais ne fonctionne qu’en vue directe. - Oeil nocturne : Pas de malus lié à l’obscurité. - Enregistreur : Permet d’enregistrer des images et vidéos sauvegardées sur une Tablette de données - Oeil balistique : Confère un bonus de +5% aux tests de tir. - Oeil télescopique : Permet de zoomer jusqu’à 500 mètres. Bonus de +10% pour les tests de vue à longue portée. - Oeil microscopique : Agrandissement x400. Bonus de +10% pour les tests nécessitant de la minutie. Chaque installation permet de cumuler des bonus différents ou deux bonus identiques.</p>",
     "price": 350,
     "source": "L1"
-  }
+  },
+  "folder": "xp2rl3ys31vzxx60"
 }

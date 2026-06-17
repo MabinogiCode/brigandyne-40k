@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Votre langue bien pendue pousse vos ennemis à commettre des erreurs... Une fois par scène, vous pouvez ajouter votre *SOC* à vos dégâts de mêlée. Sauvagerie La vue de votre propre sang accentue votre férocité au combat. Dès que vous avez perdu la moitié de vos PV, et tant que vous restez sous ce seuil, vos dégâts en mêlée augmentent d’1 point.</p>",
+    "description": "<p>Votre langue bien pendue pousse vos ennemis à commettre des erreurs... Une fois par scène, vous pouvez ajouter votre *SOC* à vos dégâts de mêlée. Sauvagerie La vue de votre propre sang accentue votre férocité au combat. Dès que vous avez perdu la moitié de vos PV, et tant que vous restez sous ce seuil, vos dégâts en mêlée augmentent d’1 point.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

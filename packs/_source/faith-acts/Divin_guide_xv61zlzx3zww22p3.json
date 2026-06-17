@@ -12,6 +12,8 @@
     "rPlus": "Cible +1 ou Durée x2",
     "damage": "",
     "effect": "<p>L’Empereur-Dieu guide les pas de la cible de l’Acte de Foi. Elle reçoit un bonus de +20% à l’une de ses compétences (Sauf COM, PSY et TIR).</p>",
+    "description": "<p>L’Empereur-Dieu guide les pas de la cible de l’Acte de Foi. Elle reçoit un bonus de +20% à l’une de ses compétences (Sauf COM, PSY et TIR).</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xy23x7rzwrn5s533"
 }

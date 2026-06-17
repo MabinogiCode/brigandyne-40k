@@ -13,6 +13,8 @@
     "rPlus": "Les nuées ont PEUR (1)",
     "damage": "",
     "effect": "<p>Vous faites sortir de terre, attirez ou invoquer une Nuée de vermines qui peut varier selon l’environnement et vous obéit pendant la durée du pouvoir avant de disparaître ou de s’éparpiller.</p>",
+    "description": "<p>Vous faites sortir de terre, attirez ou invoquer une Nuée de vermines qui peut varier selon l’environnement et vous obéit pendant la durée du pouvoir avant de disparaître ou de s’éparpiller.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "zy01lzxxmrm4y884"
 }

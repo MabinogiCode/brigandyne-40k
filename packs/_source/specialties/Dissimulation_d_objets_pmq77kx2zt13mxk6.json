@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Cacher un objet sur soi ou dans un lieu",
+    "description": "<p>Cacher un objet sur soi ou dans un lieu</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

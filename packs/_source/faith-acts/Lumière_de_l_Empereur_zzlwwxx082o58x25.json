@@ -12,6 +12,8 @@
     "rPlus": "Vous bénéficiez des bonus",
     "damage": "",
     "effect": "<p>Un halo de lumière émane du prêcheur. Tous les personnages alliés qui baignent dans cette lumière deviennent insensibles à la peur ou au découragement. Ils gagnent également un bonus de +10% en COM et en TIR et infligent 2 dégâts supplémentaires.</p>",
+    "description": "<p>Un halo de lumière émane du prêcheur. Tous les personnages alliés qui baignent dans cette lumière deviennent insensibles à la peur ou au découragement. Ils gagnent également un bonus de +10% en COM et en TIR et infligent 2 dégâts supplémentaires.</p>",
     "source": "L1"
-  }
+  },
+  "folder": "xy23x7rzwrn5s533"
 }

@@ -6,6 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "Négocier un prix en sa faveur, connaître les usages commerciaux",
+    "description": "<p>Négocier un prix en sa faveur, connaître les usages commerciaux</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
 }

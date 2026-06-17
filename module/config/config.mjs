@@ -194,6 +194,7 @@ BRIGANDYNE.damageTypes = {
 /* -------------------------------------------- */
 BRIGANDYNE.conditions = {
   affaibli: { label: "BRIG.Condition.affaibli", icon: "icons/svg/downgrade.svg" },
+  affame: { label: "BRIG.Condition.affame", icon: "icons/svg/hazard.svg" },
   apeure: { label: "BRIG.Condition.apeure", icon: "icons/svg/terror.svg" },
   aterre: { label: "BRIG.Condition.aterre", icon: "icons/svg/falling.svg" },
   aveugle: { label: "BRIG.Condition.aveugle", icon: "icons/svg/blind.svg" },
@@ -314,6 +315,17 @@ BRIGANDYNE.species = {
   }
 };
 
+// Lore court par espèce (pour l'assistant de création) — clé = nom du compendium
+BRIGANDYNE.speciesLore = {
+  "Humain": { desc: "L'espèce majoritaire de l'Imperium, répandue sur d'innombrables mondes. Adaptables et tenaces, mais avides de pouvoir et de conquête.", lifespan: "≈ 60 ans", size: "~1m70, 65 kg" },
+  "Squat": { desc: "Abhumains trapus des mondes à forte gravité. Vaillants, opiniâtres, d'une constitution robuste et ingénieurs hors pair.", lifespan: "≈ 100 ans", size: "~1m50, 70 kg" },
+  "Ratling": { desc: "Petits Abhumains des Militarum Auxilla. Grossiers et sans-gêne, mais tireurs d'élite inégalés et survivants tenaces.", lifespan: "≈ 60 ans", size: "~1m30, 50 kg" },
+  "Ogryn": { desc: "Abhumains colossaux, simples d'esprit mais d'une force légendaire. Leur équipement est conçu pour résister à leur maladresse.", lifespan: "≈ 60 ans", size: "~2m50, 120 kg" },
+  "Mutant": { desc: "Humains marqués par une déviance génétique stable. Tolérés mais méprisés, ils occupent les places les plus basses de l'Imperium.", lifespan: "≈ 60 ans", size: "~1m70, 65 kg" },
+  "Aeldari": { desc: "Xenos élancés et gracieux, aux sens et à l'agilité surhumains. Rares dans l'Imperium, où on les considère au mieux comme des parias.", lifespan: "≈ 900 ans", size: "~1m70, 60 kg" },
+  "Paria": { desc: "Êtres rarissimes nés sans écho dans le Warp. Leur présence désoriente les Psykers proches — mais glace aussi les âmes alentour.", lifespan: "≈ 60 ans", size: "~1m70, 65 kg" }
+};
+
 BRIGANDYNE.speciesTraits = {
   nyctalopie: "BRIG.SpeciesTrait.nyctalopie",
   mutations: "BRIG.SpeciesTrait.mutations",
@@ -386,23 +398,25 @@ BRIGANDYNE.mechanics = {
 /* -------------------------------------------- */
 BRIGANDYNE.advancement = {
   charStep: 5,             // une amélioration = +5%
-  // Coût en XP pour ATTEINDRE une valeur ≤ max
+  // Coût en XP pour ATTEINDRE une valeur ≤ max (barème RAW Brigandyne 2e, p.150)
   charCosts: [
-    { max: 30, cost: 100 },
-    { max: 45, cost: 150 },
-    { max: 60, cost: 250 },
-    { max: 75, cost: 400 },
-    { max: 90, cost: 600 },
-    { max: 100, cost: 1000 }
+    { max: 50, cost: 100 },
+    { max: 60, cost: 150 },
+    { max: 70, cost: 200 },
+    { max: 80, cost: 250 },
+    { max: 90, cost: 300 },
+    { max: 100, cost: 350 }
   ],
-  specialtyCost: 100,      // apprendre une spécialité / pouvoir / Acte de Foi
-  talentCost: 200
+  maxBoxes: 6,             // 6 cases de progression max par compétence (+30 ; +40 pour carrière avancée, non modélisé)
+  charOffProfileExtra: 50, // hors profil de progression : +50 PX (RAW p.151)
+  specialtyCost: 100,      // spécialité de carrière (hors-carrière : +50, RAW p.151)
+  talentCost: 100          // talent de carrière (hors-carrière : +50, RAW p.151)
 };
 
 /** Coût XP pour amener une caractéristique à `newTotal`. */
 BRIGANDYNE.charAdvanceCost = function (newTotal) {
   const row = BRIGANDYNE.advancement.charCosts.find(r => newTotal <= r.max);
-  return row ? row.cost : 1000;
+  return row ? row.cost : 350;
 };
 
 export default BRIGANDYNE;

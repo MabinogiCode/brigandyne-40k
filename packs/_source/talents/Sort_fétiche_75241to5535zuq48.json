@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vous avez un don pour un sort précis. Une fois par scène, vous pouvez inverser les chiffres obtenus sur ce test. Ainsi, un 90 peut devenir un 09 par exemple.</p>",
+    "description": "<p>Vous avez un don pour un sort précis. Une fois par scène, vous pouvez inverser les chiffres obtenus sur ce test. Ainsi, un 90 peut devenir un 09 par exemple.</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }

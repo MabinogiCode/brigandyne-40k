@@ -25,19 +25,19 @@
   "BRIG": {
     "system": "Warhammer 40 000 : Brigandyne",
     "Char": {
-      "com": { "long": "Combat", "abbr": "COM" },
-      "cns": { "long": "Connaissances", "abbr": "CNS" },
-      "dis": { "long": "Discrétion", "abbr": "DIS" },
-      "end": { "long": "Endurance", "abbr": "END" },
-      "for": { "long": "Force", "abbr": "FOR" },
-      "tec": { "long": "Technique", "abbr": "TEC" },
-      "psy": { "long": "Psychisme", "abbr": "PSY" },
-      "mou": { "long": "Mouvement", "abbr": "MOU" },
-      "per": { "long": "Perception", "abbr": "PER" },
-      "soc": { "long": "Sociabilité", "abbr": "SOC" },
-      "sur": { "long": "Survie", "abbr": "SUR" },
-      "tir": { "long": "Tir", "abbr": "TIR" },
-      "vol": { "long": "Volonté", "abbr": "VOL" }
+      "com": { "long": "Combat", "abbr": "COM", "desc": "Se battre au corps à corps : attaquer et se défendre, armé ou à mains nues." },
+      "cns": { "long": "Connaissances", "abbr": "CNS", "desc": "Érudition : sciences, histoire, religions, occultisme, technologie, mémoire." },
+      "dis": { "long": "Discrétion", "abbr": "DIS", "desc": "Se cacher, se déplacer en silence, filer quelqu'un, dissimuler un objet." },
+      "end": { "long": "Endurance", "abbr": "END", "desc": "Souffle et système immunitaire : résister aux maladies, poisons et à l'alcool." },
+      "for": { "long": "Force", "abbr": "FOR", "desc": "Muscles et gabarit. Sert aussi à intimider. Augmente les dégâts au contact." },
+      "tec": { "long": "Technique", "abbr": "TEC", "desc": "Doigté et savoir-faire : bricoler, crocheter, premiers soins, piloter un véhicule." },
+      "psy": { "long": "Psychisme", "abbr": "PSY", "desc": "Manipuler le Warp pour lancer des pouvoirs psychiques. Commence à 0 %." },
+      "mou": { "long": "Mouvement", "abbr": "MOU", "desc": "Courir, grimper, nager, sauter, conduire une monture." },
+      "per": { "long": "Perception", "abbr": "PER", "desc": "Les cinq sens, la vigilance, fouiller, déceler un mensonge." },
+      "soc": { "long": "Sociabilité", "abbr": "SOC", "desc": "Persuader, négocier, séduire, baratiner, faire bonne impression." },
+      "sur": { "long": "Survie", "abbr": "SUR", "desc": "S'adapter en milieu hostile : se nourrir, pister, faire un feu, lire le climat." },
+      "tir": { "long": "Tir", "abbr": "TIR", "desc": "Précision avec une arme à distance ou de lancer." },
+      "vol": { "long": "Volonté", "abbr": "VOL", "desc": "Force mentale, courage, commandement ; résister à la peur et manifester la Foi." }
     },
     "CharGroup": {
       "martial": "Martial",
@@ -157,6 +157,7 @@
     },
     "Condition": {
       "affaibli": "Affaibli",
+      "affame": "Affamé / Assoiffé",
       "apeure": "Apeuré",
       "aterre": "À terre",
       "aveugle": "Aveuglé",
@@ -208,7 +209,7 @@
       "ordinaire": "Ordinaire",
       "aise": "Aisé",
       "riche": "Riche",
-      "royal": "Royal"
+      "royal": "Princier"
     },
     "Species": {
       "humain": "Humain",
@@ -286,11 +287,13 @@
       "noDestin": "Aucun point de Destin disponible.",
       "notOwner": "Vous n'êtes pas propriétaire de cet acteur.",
       "noXp": "XP insuffisante (coût : {cost}).",
+      "maxAdvance": "{char} : maximum de progression atteint (6 cases / +30).",
       "noOperator": "Aucun personnage opérateur : assignez-vous un personnage ou sélectionnez un jeton.",
       "noOpposer": "Aucun acteur pour s'opposer : assignez-vous un personnage ou sélectionnez un jeton."
     },
     "Info": {
       "advanced": "{char} améliorée (−{cost} XP).",
+      "advancedOff": "{char} améliorée hors-profil de carrière (−{cost} XP, +50).",
       "learned": "{name} appris(e) (−{cost} XP)."
     },
     "Oppose": {
@@ -317,6 +320,74 @@
         "characteristics": "Caractéristiques",
         "details": "Détails",
         "summary": "Récapitulatif"
+      },
+      "method": {
+        "label": "Méthode",
+        "roll": "Aléatoire (2D10)",
+        "points": "Répartition (120 pts)",
+        "choose": "Répartition ou Aléatoire ?",
+        "pointsDesc": "Tu répartis 120 points (0 à 20 par compétence). Contrôle total sur ton profil.",
+        "rollDesc": "Tu jettes les dés (13× 2D10, on raye le plus faible). Le hasard décide.",
+        "finalWarn": "Choix définitif : tu ne pourras plus changer de méthode sans l'accord du MJ.",
+        "confirmTitle": "Choix de méthode définitif",
+        "confirmBody": "Confirmer la méthode « {method} » ? Ce choix est définitif : seul le MJ pourra le modifier ensuite.",
+        "rollAction": "Lancer 13× 2D10",
+        "rollHint": "Lance les dés, puis assigne les 12 résultats.",
+        "dropped": "plus faible rayé :",
+        "pointsRemaining": "Points restants :",
+        "pointsRange": "(0 à 20 par compétence)"
+      },
+      "lock": {
+        "blockedTitle": "Tu as déjà un personnage",
+        "blockedBody": "Un seul personnage par joueur. Pour en créer un nouveau, demande au MJ.",
+        "askNew": "Demander au MJ : faire un nouveau personnage",
+        "askMethod": "Demander au MJ : changer de méthode",
+        "askReroll": "Demander au MJ : relancer les dés",
+        "diceThrown": "Dés jetés (définitif)",
+        "alreadyRolled": "Tu as déjà jeté tes dés. Demande au MJ pour pouvoir relancer.",
+        "noGM": "Aucun MJ connecté pour traiter ta demande.",
+        "requestSent": "Demande envoyée au MJ.",
+        "gmRequestTitle": "Demande de création (joueur)",
+        "gmRequestBody": "<strong>{user}</strong> demande à <strong>{request}</strong>. Autoriser ?",
+        "granted": "{user} : création déverrouillée ({request}).",
+        "req": {
+          "new": "faire un nouveau personnage",
+          "method": "changer de méthode",
+          "reroll": "relancer les dés"
+        },
+        "state": {
+          "fresh": "Non commencé",
+          "method": "Méthode choisie",
+          "rolled": "Dés jetés",
+          "complete": "Personnage créé"
+        },
+        "adminTitle": "Créations de personnages (MJ)",
+        "adminHint": "Déverrouille la création pour un joueur : relancer les dés, changer de méthode, ou repartir de zéro.",
+        "adminClose": "Fermer",
+        "colPlayer": "Joueur",
+        "colState": "État",
+        "colActions": "Actions",
+        "noPlayers": "Aucun joueur (hors MJ) dans ce monde."
+      }
+    },
+    "Welcome": {
+      "title": "Warhammer 40,000 : Brigandyne",
+      "lead": "Bienvenue dans le sombre futur. Ici, il n'y a que la guerre. Ce système adapte Brigandyne 2e édition à l'univers impitoyable de Warhammer 40,000 : d100 sous compétence, six degrés de réussite, Destin, Psykers du Warp et Vraie Foi.",
+      "feature": {
+        "dice": "Jets d100 automatisés : degrés, Avantages/Désavantages, jets opposés et Destin.",
+        "chargen": "Assistant de création guidé : espèces de l'Imperium, Adepta et tirage des compétences.",
+        "content": "Compendiums fournis : armes, armures, carrières, talents, pouvoirs psychiques, bestiaire, véhicules…",
+        "warp": "Le Warp veille : Phénomènes psychiques, Périls du Warp, Corruption et Vraie Foi gérés automatiquement."
+      },
+      "dontShow": "Ne plus afficher pour cette version",
+      "createChar": "Créer un personnage",
+      "start": "Pour l'Empereur !"
+    },
+    "Settings": {
+      "welcomeSeenVersion": "Version vue de l'écran d'accueil",
+      "showWelcome": {
+        "name": "Afficher l'écran d'accueil",
+        "hint": "Affiche l'écran de bienvenue de Warhammer 40,000 : Brigandyne au lancement du monde, une fois par nouvelle version."
       }
     },
     "Sheet": {

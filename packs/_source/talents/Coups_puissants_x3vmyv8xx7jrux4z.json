@@ -5,6 +5,9 @@
   "img": "icons/svg/aura.svg",
   "system": {
     "usage": "permanent",
-    "source": "Carrière"
-  }
+    "source": "Carrière",
+    "effect": "<p>Vos coups sont d’une puissance rare. En mêlée, vos dégâts sont toujours augmentés d’1 point. P ERSONNAGES</p>",
+    "description": "<p>Vos coups sont d’une puissance rare. En mêlée, vos dégâts sont toujours augmentés d’1 point. P ERSONNAGES</p>"
+  },
+  "folder": "x0z0x37nsx76xxv4"
 }
