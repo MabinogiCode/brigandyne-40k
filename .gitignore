@@ -5,10 +5,12 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Les packs compilés (LevelDB) SONT versionnés pour qu'un clone soit jouable
-# immédiatement. Régénération : npm run import && npm run pack
-# Verrous LevelDB éventuels :
-packs/**/LOCK
+# Packs compilés (LevelDB) : NON versionnés. LevelDB réécrit ses fichiers internes
+# (LOG, LOG.old, CURRENT, MANIFEST-*, *.ldb) dès que Foundry ouvre le monde, ce qui
+# provoquait des conflits à chaque `git pull`. On versionne UNIQUEMENT la source JSON
+# (packs/_source). Recompiler après un pull : `npm run pack` (ou `npm run import && npm run pack`).
+/packs/*
+!/packs/_source
 
 # Extractions brutes des PDF Brigandyne (régénérables via `python tools/extract_pdf.py`) :
 # volumineuses et non nécessaires au build. Seuls atouts.json (descriptions distillées

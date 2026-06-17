@@ -34,15 +34,20 @@ New-Item -ItemType Junction -Path "C:\Perso\Foundry\Data\systems\brigandyne-40k"
 ## 🛠️ Développement
 
 ```bash
-npm install            # installe l'outil de compilation des packs
+npm install            # installe l'outil de compilation des packs (classic-level natif)
 npm run import         # (ré)génère les sources de compendiums depuis tes .docx
 npm run pack           # compile packs/_source/*.json → packs LevelDB
 ```
 
 - Code : ESM natif (pas de build lourd), `DataModels` + `ApplicationV2`.
 - `module/` : config, données, documents, dés, feuilles.
-- `packs/_source/` : sources JSON des compendiums (versionnées).
-- `tools/` : extracteur .docx et importeurs de contenu.
+- `packs/_source/` : sources JSON des compendiums (**versionnées** — source de vérité).
+- Les **packs LevelDB compilés ne sont pas versionnés** (ils muteraient au runtime et
+  créeraient des conflits Git). Après un `git pull` : **`npm run pack`** pour les régénérer.
+- `tools/` : extracteur .docx/PDF et importeurs de contenu.
+
+📦 **Déploiement / mise à jour sur un serveur (Linux, Oracle Ampere ARM…)** :
+voir [`docs/DEPLOIEMENT.md`](docs/DEPLOIEMENT.md).
 
 ## ⚖️ Licence & propriété intellectuelle
 
