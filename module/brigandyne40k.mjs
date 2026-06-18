@@ -59,7 +59,7 @@ Hooks.once("i18nInit", function () {
     img: c.icon
   }));
   CONFIG.specialStatusEffects = foundry.utils.mergeObject(CONFIG.specialStatusEffects ?? {}, {
-    DEFEATED: "aterre"
+    DEFEATED: "vaincu"
   });
 });
 

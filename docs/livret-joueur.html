@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<title>Warhammer 40 000 : Brigandyne — Livret du joueur</title>
+<style>
+@page { size: A4; margin: 16mm 14mm; }
+* { box-sizing: border-box; }
+body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; color: #1a1a1a;
+       line-height: 1.5; max-width: 880px; margin: 0 auto; padding: 24px; font-size: 11pt; }
+h1 { color: #6e1414; border-bottom: 3px solid #b8860b; padding-bottom: 6px; font-size: 22pt;
+     margin-top: 0; letter-spacing: .5px; }
+h2 { color: #32404d; border-bottom: 1px solid #c9a227; padding-bottom: 3px; margin-top: 1.6em; font-size: 15pt; }
+h3 { color: #6e1414; margin-top: 1.2em; font-size: 12.5pt; }
+em { color: #555; }
+table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 10pt; }
+th, td { border: 1px solid #c8c8c8; padding: 5px 9px; text-align: left; vertical-align: top; }
+th { background: #32404d; color: #f5e9c8; }
+tr:nth-child(even) td { background: #f6f3 ea; }
+tr:nth-child(even) td { background: #f7f4ec; }
+code { background: #efe9da; padding: 1px 5px; border-radius: 3px; font-size: .92em; color: #6e1414; }
+blockquote { border-left: 4px solid #b8860b; background: #faf6 ec; background: #faf7ee;
+             margin: 10px 0; padding: 8px 14px; color: #333; }
+hr { border: 0; border-top: 1px solid #ddd; margin: 1.6em 0; }
+ul, ol { padding-left: 22px; }
+a { color: #6e1414; }
+article { page-break-inside: auto; }
+h1, h2, h3 { page-break-after: avoid; }
+table, blockquote { page-break-inside: avoid; }
+.cover { text-align:center; }
+@media print { body { padding: 0; } }
+</style></head>
+<body><article><h1>Warhammer 40 000 : Brigandyne — Aide de jeu du joueur</h1>
+<p><em>Résumé des règles à garder sous la main. Système « Chair &amp; Sang » : rapide, mortel, grimdark.</em>
+<em>« Dans l'obscurité du futur lointain, il n'y a que la guerre. »</em></p>
+<hr />
+<h2>1. Le dé : tout se joue au d100</h2>
+<p>On lance <strong>1d100</strong> et on compare au score de la <strong>compétence</strong> testée (notée sur 100).</p>
+<ul>
+<li><strong>Résultat ≤ score → réussite.</strong></li>
+<li><strong>Résultat &gt; score → échec.</strong></li>
+</ul>
+<p>C'est tout. Pas de calcul compliqué : si tu as 45 en Tir, tu réussis sur 01–45.</p>
+<blockquote>
+<p><strong>00 compte comme 100</strong> (donc presque toujours un échec retentissant).</p>
+</blockquote>
+<h3>Les 6 degrés de réussite</h3>
+<p>Le degré dépend des <strong>chiffres</strong> du résultat :</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Réussite (≤ score)</th>
+<th>Échec (&gt; score)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critique</strong></td>
+<td>le chiffre des <strong>unités = 0</strong> (ex. 10, 20, 30…)</td>
+<td>unités = 0</td>
+</tr>
+<tr>
+<td><strong>Majeur(e)</strong></td>
+<td>résultat <strong>01–09</strong></td>
+<td>résultat <strong>91–99</strong></td>
+</tr>
+<tr>
+<td><strong>Mineur(e)</strong></td>
+<td>tout le reste</td>
+<td>tout le reste</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Réussite majeure / critique = R+</strong> : tu réussis <em>et</em> tu obtiens un bonus (un avantage narratif, un effet spécial, etc.).</li>
+<li><strong>Échec majeur / critique = E+</strong> : tu rates <em>et</em> il y a une complication.</li>
+</ul>
+<blockquote>
+<p><strong>Deux exceptions « de talent »</strong> :
+- Si tu as <strong>moins de 20 %</strong> de réussir, tu ne peux <strong>pas</strong> faire de réussite majeure (juste mineure… ou critique si le sort s'en mêle).
+- Si tu as <strong>80 % ou plus</strong>, tu ne peux <strong>pas</strong> faire d'échec majeur (juste mineur… ou critique).</p>
+</blockquote>
+<h3>Le RU (Résultat des Unités)</h3>
+<p>Le <strong>chiffre des unités</strong> de ton jet. Il sert partout : <strong>dégâts</strong>, durée des pouvoirs, etc. Un 47 a un RU de 7.</p>
+<hr />
+<h2>2. Difficulté, Avantage, Désavantage</h2>
+<p><strong>La difficulté</strong> est un modificateur que le MJ ajoute à ton score avant le jet :</p>
+<table>
+<thead>
+<tr>
+<th>Triviale</th>
+<th>Simple</th>
+<th>Aisée</th>
+<th>Faisable</th>
+<th>Test sec</th>
+<th>Difficile</th>
+<th>Ardue</th>
+<th>Complexe</th>
+<th>Infaisable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+40</td>
+<td>+30</td>
+<td>+20</td>
+<td>+10</td>
+<td><strong>0</strong></td>
+<td>−10</td>
+<td>−20</td>
+<td>−30</td>
+<td>−40</td>
+</tr>
+</tbody>
+</table>
+<p>Le <strong>« test sec »</strong> (difficulté 0) est déjà <em>exigeant</em> : on agit dans le stress, sans préparation.</p>
+<p><strong>Avantage / Désavantage</strong> : chaque <strong>Avantage = +10</strong>, chaque <strong>Désavantage = −10</strong>. Ils s'annulent entre eux, et on en cumule <strong>3 maximum</strong> (donc ±30 au plus). On en gagne grâce à : du temps, du bon matériel, une carrière qui colle, une bonne idée, du beau roleplay… ou l'inverse pour les Désavantages.</p>
+<hr />
+<h2>3. Oppositions (toi contre quelqu'un)</h2>
+<p>Quand tu affrontes un adversaire (bras de fer, filature, <strong>combat</strong>…), <strong>toi seul lances le dé</strong>. Le score adverse devient une <strong>difficulté</strong> appelée <strong>MODO</strong> :</p>
+<blockquote>
+<p><strong>MODO = 50 − compétence de l'adversaire</strong></p>
+</blockquote>
+<ul>
+<li>Adversaire faible (compétence &lt; 50) → MODO <strong>positif</strong> → bonus pour toi.</li>
+<li>Adversaire fort (compétence &gt; 50) → MODO <strong>négatif</strong> → malus pour toi.</li>
+<li>À égalité de niveau, chacun a 50 % de gagner.</li>
+</ul>
+<p>Si tu réussis, tu gagnes l'opposition ; si tu rates, c'est l'adversaire qui l'emporte.</p>
+<hr />
+<h2>4. Le personnage en bref</h2>
+<h3>13 caractéristiques (notées sur 100)</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>COM</strong> Combat</td>
+<td><strong>CNS</strong> Connaissances</td>
+<td><strong>DIS</strong> Discrétion</td>
+</tr>
+<tr>
+<td><strong>END</strong> Endurance</td>
+<td><strong>FOR</strong> Force</td>
+<td><strong>TEC</strong> Technique <em>(bricolage, soins, pilotage)</em></td>
+</tr>
+<tr>
+<td><strong>PSY</strong> Psychisme <em>(pouvoirs du Warp — démarre à 0)</em></td>
+<td><strong>MOU</strong> Mouvement</td>
+<td><strong>PER</strong> Perception</td>
+</tr>
+<tr>
+<td><strong>SOC</strong> Sociabilité</td>
+<td><strong>SUR</strong> Survie</td>
+<td><strong>TIR</strong> Tir</td>
+</tr>
+<tr>
+<td><strong>VOL</strong> Volonté <em>(sang-froid, commandement, Foi)</em></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>L'indice</strong> (ou « bonus ») d'une caractéristique = son <strong>chiffre des dizaines</strong>. FOR 45 → indice <strong>4</strong>. On le note <code>*FOR*</code>.</p>
+</blockquote>
+<h3>Les jauges et ressources</h3>
+<ul>
+<li><strong>PV (Vitalité)</strong> = <code>FOR/5 + END/5 + *VOL*</code>. À <strong>0 PV</strong>, tu es hors-combat (blessure grave !).</li>
+<li><strong>SF (Sang-froid)</strong> = <code>VOL/5 + CNS/5 + *COM*</code>. Ton mental. À <strong>0 SF</strong>, crise de folie.</li>
+<li><strong>Initiative</strong> = <code>*COM* + *MOU* + *PER*</code>. Ordre d'action en combat.</li>
+<li><strong>Destin</strong> : 1 à 3 points selon l'espèce. La ressource la plus précieuse (voir §8).</li>
+<li><strong>Corruption</strong> : ta souillure par le Chaos. Le <strong>Seuil d'instabilité</strong> = <code>SF/4</code>.</li>
+</ul>
+<p><em>(Ces jauges évoluent automatiquement quand tes caractéristiques montent.)</em></p>
+<h3>Atouts</h3>
+<ul>
+<li><strong>Spécialités</strong> : un bonus de <strong>+5 à +20 %</strong> sur une action précise (« Pistolets », « Crochetage », « Intimidation »…).</li>
+<li><strong>Talents</strong> : capacités spéciales qui donnent du style (botte secrète, contact, sens aiguisé…).</li>
+</ul>
+<hr />
+<h2>5. Sang-froid : ton meilleur ami (et ton talon d'Achille)</h2>
+<p>Le <strong>Sang-froid (SF)</strong> se dépense pour te dépasser (<strong>bon stress</strong>) et se perd sous les chocs (<strong>mauvais stress</strong>).</p>
+<p><strong>Dépenser du SF :</strong></p>
+<table>
+<thead>
+<tr>
+<th>Coût</th>
+<th>Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>−2 SF</strong></td>
+<td>+1 Avantage (avant le jet)</td>
+</tr>
+<tr>
+<td><strong>−2 SF</strong></td>
+<td>Ignorer un handicap pour ce tour</td>
+</tr>
+<tr>
+<td><strong>−4 SF</strong></td>
+<td><strong>Relancer</strong> un test (le nouveau résultat est conservé)</td>
+</tr>
+<tr>
+<td><strong>−6 SF</strong></td>
+<td>Relancer un <strong>échec critique</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Perdre du SF</strong> : peur, violence, humiliation, abattement → le MJ demande un <strong>test de VOL (test de Folie)</strong>. Échec = perte de SF (2 / 4 / 6 selon la gravité).</p>
+<p>À <strong>0 SF</strong> : crise de folie, le MJ prend le contrôle un moment, et ta limite de SF baisse définitivement.</p>
+<p><strong>Regagner du SF</strong> : repos selon ton niveau de vie, réconforter/être réconforté, bien manger, faire la fête, prier, et surtout… <strong>du bon roleplay</strong> (le MJ récompense les bonnes idées et les belles scènes).</p>
+<hr />
+<h2>6. Combat</h2>
+<p>Le temps se découpe en <strong>rounds de 10 secondes</strong>. On agit par <strong>Initiative décroissante</strong>. On fait <strong>une action significative</strong> par tour. Une fois engagé au corps-à-corps, on ne peut que <strong>combattre</strong> ou <strong>se désengager</strong>.</p>
+<h3>Mêlée = un seul jet opposé COM/COM</h3>
+<p>Tu lances <strong>un</strong> d100 contre le <strong>MODO de Combat</strong> de l'adversaire. Le gagnant « prend le dessus » :</p>
+<ul>
+<li><strong>Réussite mineure</strong> → <strong>1 effet</strong> : Blesser, Bousculer (mise à terre) ou Désengager.</li>
+<li><strong>Réussite majeure</strong> → <strong>2 effets</strong> cumulés.</li>
+<li><strong>Réussite critique</strong> → 2 effets <strong>ou</strong> un <strong>coup critique</strong> (10 dégâts + le dé « explose »).</li>
+</ul>
+<blockquote>
+<p><em>Effet miroir</em> : si <strong>tu</strong> rates, c'est l'adversaire qui prend le dessus et peut te blesser.</p>
+</blockquote>
+<h3>Distance = test de Tir normal</h3>
+<p>Pas d'opposition : un <strong>test de TIR</strong>, difficulté 0 par défaut (la cible bouge). Tirer sur un ennemi au contact d'un allié = 1 Désavantage (et sur un E+, tu touches ton allié !).</p>
+<h3>Les dégâts</h3>
+<blockquote>
+<p><strong>Dégâts = dégâts de l'arme + RU</strong>, puis on <strong>retranche la Protection</strong> de la cible.</p>
+</blockquote>
+<ul>
+<li>Arme de mêlée : basée sur ta <strong>Force</strong> (<code>*FOR*</code> ± selon l'arme : mains nues −3 → arme lourde +2).</li>
+<li>Arme à distance mécanique (laser, bolter, fusil…) : <strong>dégâts fixes</strong>.</li>
+<li><strong>Minimum 1 dégât</strong> si tu blesses, même à travers l'armure.</li>
+<li><strong>Armures</strong> : protection de 1 à 4. Casque <strong>+1</strong>, bouclier <strong>+2</strong>. Certaines armes <strong>percent</strong> ou <strong>ignorent</strong> l'armure ; les armes à feu lourdes ignorent la <strong>moitié</strong> de l'armure.</li>
+</ul>
+<h3>Tactiques de combat (premiers rôles)</h3>
+<p>Une seule par round : <strong>Efficace</strong> (standard) · <strong>En force</strong> (−1 Désav., +<em>FOR</em> dégâts) · <strong>En finesse</strong> (+1 Avantage, dégâts ÷2) · <strong>Sur la défensive</strong> (+2 Avantages, 0 dégât ; +3 avec bouclier) · <strong>Viser</strong> (malus, ignore l'armure).</p>
+<h3>Quelques avantages de situation</h3>
+<p>Surnombre, meilleure position (ennemi à terre, surplomb…), adversaire désarmé : <strong>+1 Avantage</strong> chacun. Attaque surprise : +1 Avantage, attaque sans risque et +2 dégâts.</p>
+<hr />
+<h2>7. Dégâts, blessures, soins</h2>
+<ul>
+<li><strong>Premiers soins</strong> (test de TEC) : rend <code>*END*</code> PV, une seule fois par source de blessure.</li>
+<li><strong>Repos</strong> : tu récupères des PV/SF selon ton <strong>niveau de vie</strong> (de Misérable à Royal). Dormir au chaud après un bon repas, ça compte !</li>
+<li><strong>0 PV</strong> : tu agonises (<code>*END*</code> rounds pour te soigner), tu es capturé, ou tu meurs — au choix du MJ. Tu peux gagner une <strong>blessure grave</strong> permanente.</li>
+<li><strong>Poisons &amp; maladies</strong> : test d'<strong>END</strong> (la difficulté = la « virulence »).</li>
+</ul>
+<hr />
+<h2>8. Le Destin : échapper à la mort</h2>
+<p>Les <strong>points de Destin</strong> sont rares et puissants. Ils servent à <strong>deux</strong> choses :</p>
+<ol>
+<li><strong>Coup de pouce narratif</strong> (1 point) : « j'avais justement pris ma corde », « une vieille connaissance passe par là »… (validé par le MJ).</li>
+<li><strong>Échapper à la mort</strong> (1 point, <strong>définitif</strong>) : tu survis in extremis à 1 PV. Ton score de Destin max baisse de 1.</li>
+</ol>
+<blockquote>
+<p>Le Destin <strong>se recharge à chaque scénario</strong>. Garde toujours 1 point en réserve… au cas où.</p>
+</blockquote>
+<p><em>(Note : la </em><em>relance</em><em> d'un jet se paie en </em><em>Sang-froid</em><em>, pas en Destin.)</em></p>
+<hr />
+<h2>9. Psykers : le pouvoir du Warp</h2>
+<p>Le <strong>Psychisme (PSY)</strong> remplace la magie. Trois types de manifestations :</p>
+<ul>
+<li><strong>Pouvoirs mineurs</strong> : gratuits, automatiques.</li>
+<li><strong>Pouvoirs</strong> : un <strong>test de PSY</strong> (modifié par la difficulté du pouvoir).</li>
+<li>(Rituels : action longue.)</li>
+</ul>
+<p><strong>Limite</strong> : <code>*PSY*</code> pouvoirs par jour. Au-delà, tu puises dans ta <strong>Vitalité</strong> (douloureux). Tu connais <strong>1 à 5 disciplines</strong> selon ton PSY (Biomancie, Divination, Pyromancie, Télékinésie, Télépathie + Générique).</p>
+<p><strong>Quand ça tourne mal</strong> :
+- <strong>Échec majeur → Phénomène psychique</strong> (manifestation étrange et gênante).
+- <strong>Échec critique → Péril du Warp</strong> (de la simple brûlure… à l'invocation d'un démon ou pire).</p>
+<blockquote>
+<p>Manier le Warp attire le regard des <strong>Dieux Sombres</strong>. Voir §11.</p>
+</blockquote>
+<hr />
+<h2>10. La Vraie Foi (fidèles de l'Empereur)</h2>
+<p>Réservée aux personnages <strong>vertueux et non corrompus</strong> (Sœurs de Bataille, Ministorum…). On manifeste un <strong>Acte de Foi</strong> par un <strong>test de VOL</strong> après 2 tours de prière (3 pour un <strong>Miracle</strong>). Limite : <code>VOL/2</code> Actes par jour.</p>
+<p>Bonne nouvelle : <strong>rater un Acte de Foi n'a rien de cataclysmique</strong> — l'Acte ne se manifeste simplement pas.</p>
+<hr />
+<h2>11. Corruption du Chaos</h2>
+<p>Au contact du Warp, des démons, des reliques chaotiques… tu fais un <strong>test de résistance</strong> (VOL <strong>ou</strong> FOR, au choix). En cas d'échec, tu perds des points de SF égaux à ton <strong>Seuil d'instabilité</strong>.</p>
+<blockquote>
+<p>Tes <strong>Vices</strong> te trahissent : un personnage Colérique résiste moins bien à <strong>Khorne</strong>, un Gourmand à <strong>Nurgle/Slaanesh</strong>, etc. (1 Désavantage par niveau de Vice concerné.)</p>
+</blockquote>
+<p>Si la corruption te fait tomber à 0 SF, tu peux <strong>éviter la folie</strong>… en acceptant une <strong>mutation</strong> (une Grâce, ou un Fardeau). L'Imperium ne pardonne pas la mutation.</p>
+<hr />
+<h2>12. Progression (entre les scénarios)</h2>
+<p>Tu gagnes des <strong>Points d'Expérience (PX)</strong> : ~50 à 150 par scénario, selon la mission, ton roleplay et tes hauts faits.</p>
+<table>
+<thead>
+<tr>
+<th>Pour amener une compétence à…</th>
+<th>Coût</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>≤ 50</td>
+<td>100 PX</td>
+</tr>
+<tr>
+<td>51–60</td>
+<td>150 PX</td>
+</tr>
+<tr>
+<td>61–70</td>
+<td>200 PX</td>
+</tr>
+<tr>
+<td>71–80</td>
+<td>250 PX</td>
+</tr>
+<tr>
+<td>81–90</td>
+<td>300 PX</td>
+</tr>
+<tr>
+<td>91–100</td>
+<td>350 PX</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Une amélioration = <strong>+5 %</strong>. Ta <strong>carrière</strong> limite les compétences faciles à monter ; hors profil, c'est <strong>+50 PX</strong>.</li>
+<li><strong>Spécialité ou Talent</strong> : 100 PX (150 si hors-carrière).</li>
+</ul>
+<hr />
+<h3>Mémo express</h3>
+<blockquote>
+<p>🎲 <strong>d100 sous la carac.</strong> · unités = 0 → critique · 01–09 majeure · 91–99 majeur
+➕ <strong>Avantage = +10</strong>, max ±30 · <strong>MODO = 50 − carac. adverse</strong>
+⚔️ <strong>Dégâts = arme + RU − Protection</strong> (min 1) · mêlée = opposition COM/COM
+🧠 <strong>−4 SF pour relancer</strong> · 🍀 <strong>Destin</strong> = coup de pouce / survie
+🔮 PSY : échec majeur = Phénomène, échec critique = <strong>Péril du Warp</strong></p>
+</blockquote>
+<p><em>Pour l'Empereur !</em></p></article><article style="page-break-before: always;"><h1>Warhammer 40 000 : Brigandyne — Créer son personnage</h1>
+<p><em>Guide pas-à-pas pour fabriquer un serviteur (ou un renégat) de l'Imperium.</em>
+<em>Le plus simple : ouvre l'</em><em>Assistant de création</em><em> dans Foundry (bouton 🪄 en haut du répertoire des Acteurs) — il fait tous les calculs pour toi. Ce guide explique les choix.</em></p>
+<hr />
+<h2>Étape 0 — Le concept (le plus important)</h2>
+<p>Avant les chiffres, <strong>une phrase</strong> : qui es-tu ? « Une bidasse de la Garde rescapée d'un monde tombé », « un scribe de l'Administratum qui en sait trop », « un repenti qui fuit un culte du Chaos »… Discutez-en en groupe : vous devez avoir une <strong>raison de voyager ensemble</strong> (une cellule d'Inquisition, un équipage, une bande de survivants, un régiment…).</p>
+<hr />
+<h2>Étape 1 — L'espèce</h2>
+<table>
+<thead>
+<tr>
+<th>Espèce</th>
+<th>En deux mots</th>
+<th>Spécial</th>
+<th>Destin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Humain</strong></td>
+<td>Polyvalent, tenace, l'épine dorsale de l'Imperium</td>
+<td>—</td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td><strong>Squat</strong></td>
+<td>Abhumain trapu, robuste, ingénieur né</td>
+<td>Nyctalopie, +1 SF, +1 PV</td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>Ratling</strong></td>
+<td>Petit, sans-gêne, <strong>tireur d'élite</strong> hors pair</td>
+<td>—</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>Ogryn</strong></td>
+<td>Colosse simplet, <strong>force</strong> légendaire</td>
+<td>+2 PV, Résistance aux maladies</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Mutant</strong></td>
+<td>Marqué par une déviance stable, méprisé</td>
+<td>Peut développer des <strong>Mutations</strong></td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>Aeldari</strong></td>
+<td>Xenos gracieux, agile, sensible au Warp</td>
+<td>Nyctalopie, démarre avec un peu de PSY</td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>Paria</strong></td>
+<td>Sans écho dans le Warp ; glace les psykers</td>
+<td><strong>Gène du Paria</strong> (ne peut <strong>pas</strong> être psyker)</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>Chaque espèce a des <strong>valeurs de départ</strong> différentes et parfois des <strong>plafonds</strong> (ex. un Ogryn plafonne en Connaissances, un Ratling en Force). L'assistant les applique automatiquement.</p>
+<hr />
+<h2>Étape 2 — Les caractéristiques</h2>
+<p>Deux méthodes (l'assistant propose les deux) :</p>
+<ul>
+<li><strong>Par les dés</strong> (aléatoire, nerveux) : tu lances une volée de d10, tu obtiens <strong>12 valeurs</strong> que tu <strong>répartis</strong> comme tu veux entre tes 12 caractéristiques (le Psychisme se gère à part).</li>
+<li><strong>Par les points</strong> (maîtrisé) : tu répartis un <strong>pool de points</strong> sur tes caractéristiques (maximum <strong>+20</strong> sur une même caractéristique).</li>
+</ul>
+<blockquote>
+<p><strong>Le Psychisme (PSY) démarre à 0.</strong> Pour jouer un <strong>psyker</strong>, tu dois <em>prélever</em> des points dans tes autres caractéristiques pour les verser en PSY (et le prélèvement en <strong>Combat compte double</strong>). À la création, PSY est <strong>plafonné à 50</strong>. Un Paria ne peut jamais avoir de PSY.</p>
+</blockquote>
+<p><strong>Sur quoi miser ?</strong> Quelques repères selon l'archétype :</p>
+<ul>
+<li><strong>Soldat / tueur</strong> : COM ou TIR, END, FOR, VOL.</li>
+<li><strong>Psyker</strong> : PSY (évidemment), VOL (pour résister au Warp), CNS.</li>
+<li><strong>Technoprêtre / pilote / médic</strong> : TEC, CNS, PER.</li>
+<li><strong>Diplomate / espion / noble</strong> : SOC, PER, DIS, VOL.</li>
+<li><strong>Éclaireur / survivant</strong> : MOU, SUR, PER, TIR.</li>
+</ul>
+<h3>Lire l'échelle des scores</h3>
+<table>
+<thead>
+<tr>
+<th>Score</th>
+<th>Niveau</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>25–30</td>
+<td>Médiocre</td>
+</tr>
+<tr>
+<td>35</td>
+<td>Ordinaire (le quidam)</td>
+</tr>
+<tr>
+<td>40–45</td>
+<td>Compétent</td>
+</tr>
+<tr>
+<td>50–55</td>
+<td>Bon professionnel</td>
+</tr>
+<tr>
+<td>60–65</td>
+<td>Très bon</td>
+</tr>
+<tr>
+<td>70+</td>
+<td>Excellent à surhumain</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Rappelle-toi : l'<strong>indice</strong> (bonus) = le chiffre des dizaines. Monter une carac. de 49 à 50 fait gagner +1 d'indice — précieux pour les dégâts, l'Initiative, les PV…</p>
+</blockquote>
+<hr />
+<h2>Étape 3 — La carrière</h2>
+<p>Choisis une carrière dans l'une des grandes institutions (<strong>Adeptus</strong>) :</p>
+<ul>
+<li><strong>Adeptus Administratum</strong> — scribes, archivistes, logisticiens.</li>
+<li><strong>Adeptus Arbites</strong> — la loi impériale, brutale.</li>
+<li><strong>Adeptus Mechanicus</strong> — technoprêtres et leurs serviteurs.</li>
+<li><strong>Adeptus Ministorum / Adepta Sororitas</strong> — clergé et Sœurs de Bataille (la <strong>Vraie Foi</strong>).</li>
+<li><strong>Astra Militarum</strong> — la Garde impériale, chair à canon héroïque.</li>
+<li><strong>Officio Assassinorum</strong> — les tueurs de l'ombre.</li>
+<li><strong>Scholastica Psykana</strong> — les <strong>psykers</strong> sanctionnés.</li>
+<li><strong>Civils / Pègre / Mondes féodaux</strong> — tout le reste (et les carrières médiévales de Brigandyne s'adaptent très bien aux mondes arriérés).</li>
+</ul>
+<p>La carrière fixe :
+- ton <strong>profil de progression</strong> (les compétences que tu pourras monter facilement) ;
+- ton <strong>niveau de vie</strong> de départ ;
+- tes <strong>spécialités et talents</strong> initiaux ;
+- ton <strong>équipement</strong> de départ.</p>
+<hr />
+<h2>Étape 4 — Atouts de départ</h2>
+<p>Ta carrière te donne des <strong>spécialités</strong> (+5 à +20 % ciblés) et des <strong>talents</strong> (capacités spéciales). L'assistant les ajoute automatiquement depuis les compendiums. Lis-les : ce sont tes atouts signature.</p>
+<hr />
+<h2>Étape 5 — Les jauges (calculées pour toi)</h2>
+<table>
+<thead>
+<tr>
+<th>Jauge</th>
+<th>Formule</th>
+<th>Sens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PV (Vitalité)</strong></td>
+<td><code>FOR/5 + END/5 + *VOL*</code> (+ bonus d'espèce)</td>
+<td>Ta résistance physique</td>
+</tr>
+<tr>
+<td><strong>SF (Sang-froid)</strong></td>
+<td><code>VOL/5 + CNS/5 + *COM*</code> (+ bonus d'espèce)</td>
+<td>Ton mental</td>
+</tr>
+<tr>
+<td><strong>Initiative</strong></td>
+<td><code>*COM* + *MOU* + *PER*</code></td>
+<td>Qui agit en premier</td>
+</tr>
+<tr>
+<td><strong>Destin</strong></td>
+<td>selon l'espèce</td>
+<td>Ta corde de rappel face à la mort</td>
+</tr>
+<tr>
+<td><strong>Seuil d'instabilité</strong></td>
+<td><code>SF/4</code></td>
+<td>Combien tu perds quand le Warp te ronge</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Ces valeurs <strong>se recalculent toutes seules</strong> quand tes caractéristiques montent : pas besoin d'y toucher à la main.</p>
+</blockquote>
+<hr />
+<h2>Étape 6 — Les finitions</h2>
+<ul>
+<li><strong>Trône Gelt</strong> : ta bourse de départ (la monnaie de l'Imperium).</li>
+<li><strong>Vices &amp; Vertus</strong> : 1 à 3 traits qui te définissent (Colérique, Loyal, Généreux, Lâche…). Ils rapportent du SF quand tu les joues… et te rendent vulnérable à certains <strong>Dieux Sombres</strong>.</li>
+<li><strong>Détails</strong> : nom, âge, monde d'origine, allure, motivation. C'est ce qui fait vivre le personnage à la table.</li>
+</ul>
+<hr />
+<h2>Exemple éclair</h2>
+<blockquote>
+<p><strong>Kasrkin « Vex », vétéran de la Garde (Astra Militarum), Humain.</strong>
+Méthode par points, profil de tireur : TIR 50, END 45, COM 40, VOL 40, PER 40, le reste autour de 25–35. PSY 0.
+- Indice TIR <em>5</em>, FOR <em>3</em>.
+- PV = 30/5 + 45/5 + <em>4</em> (VOL 40) = 6 + 9 + 4 = <strong>19</strong>.
+- SF = 40/5 + 30/5 + <em>4</em> (COM 40) = 8 + 6 + 4 = <strong>18</strong>.
+- Initiative = <em>4</em> + <em>3</em> + <em>4</em> = <strong>11</strong>. Destin <strong>3</strong>.
+- Spécialité « Fusils laser » (+10), Talent « Sang-froid », niveau de vie Pauvre.
+- Vertu : Loyal +1. Vice : Colérique +1 (gare à Khorne…).
+Vex est prête. Pour l'Empereur !</p>
+</blockquote>
+<hr />
+<h3>Récapitulatif</h3>
+<ol>
+<li><strong>Concept</strong> (une phrase, en groupe). 2. <strong>Espèce</strong>. 3. <strong>Caractéristiques</strong> (dés ou points ; PSY à part). 4. <strong>Carrière</strong> (Adeptus). 5. <strong>Atouts</strong>. 6. Les jauges se calculent seules. 7. <strong>Finitions</strong> (Gelt, Vices/Vertus, identité).</li>
+</ol>
+<blockquote>
+<p>Le plus rapide : laisse l'<strong>Assistant de création</strong> 🪄 dérouler ces étapes pour toi.</p>
+</blockquote></article>
+<hr><p style="text-align:center;color:#888;font-size:9pt;">Système amateur non commercial — Brigandyne © James Tornade · Warhammer 40,000 © Games Workshop.<br>Astuce : <b>Ctrl/Cmd + P → Enregistrer au format PDF</b> pour obtenir le livret en PDF.</p>
+</body></html>

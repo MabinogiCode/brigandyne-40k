@@ -18,15 +18,6 @@
   </div>
 
   <div class="card-meta">
-    {{#if result.net}}
-      <div class="meta-line dice-pool">
-        <span class="meta-label">{{#if (gt result.net 0)}}Avantage ×{{result.net}}{{else}}Désavantage ×{{abs result.net}}{{/if}}</span>
-        <span class="tens-pool">
-          {{#each result.tensVals}}<span class="tens-die {{#if (eq @index ../result.chosenIdx)}}chosen{{else}}discarded{{/if}}">{{this}}</span>{{/each}}
-        </span>
-      </div>
-    {{/if}}
-
     <div class="meta-line">
       <span class="meta-label">RU (dé d'unité)</span>
       <span class="meta-value ru">{{result.ru}}</span>
@@ -53,9 +44,14 @@
         <i class="fa-solid fa-burst"></i> Dégâts
       </button>
     {{/if}}
+    {{#if canRiposte}}
+      <button type="button" class="card-button riposte" data-action="riposte" data-tooltip="L'adversaire vous blesse en retour (effet miroir)">
+        <i class="fa-solid fa-reply"></i> Riposte
+      </button>
+    {{/if}}
     {{#if canReroll}}
-      <button type="button" class="card-button destin" data-action="destin-reroll" data-tooltip="Dépenser 1 point de Destin pour relancer">
-        <i class="fa-solid fa-dice"></i> Destin
+      <button type="button" class="card-button sf" data-action="reroll" data-tooltip="Relancer en dépensant {{rerollCost}} points de Sang-froid">
+        <i class="fa-solid fa-brain"></i> Relancer (−{{rerollCost}} SF)
       </button>
     {{/if}}
     <button type="button" class="card-button" data-action="oppose" data-tooltip="Jet opposé avec votre acteur (perso assigné ou jeton sélectionné)">

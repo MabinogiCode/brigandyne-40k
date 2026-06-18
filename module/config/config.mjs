@@ -54,13 +54,15 @@ BRIGANDYNE.degrees = {
 /*  Difficultés                                 */
 /* -------------------------------------------- */
 BRIGANDYNE.difficulties = {
+  "40": "BRIG.Difficulty.triviale",
   "30": "BRIG.Difficulty.simple",
   "20": "BRIG.Difficulty.aisee",
   "10": "BRIG.Difficulty.faisable",
   "0": "BRIG.Difficulty.assezDifficile",
   "-10": "BRIG.Difficulty.difficile",
   "-20": "BRIG.Difficulty.tresDifficile",
-  "-30": "BRIG.Difficulty.complexe"
+  "-30": "BRIG.Difficulty.complexe",
+  "-40": "BRIG.Difficulty.infaisable"
 };
 
 /* -------------------------------------------- */
@@ -110,7 +112,9 @@ BRIGANDYNE.weaponQualities = {
   rayon: { label: "BRIG.Quality.rayon", hasValue: true, target: "ranged" },
   poison: { label: "BRIG.Quality.poison", hasValue: false, target: "both" },
   viseur: { label: "BRIG.Quality.viseur", hasValue: false, target: "ranged" },
-  maniable: { label: "BRIG.Quality.maniable", hasValue: true, target: "ranged" }
+  maniable: { label: "BRIG.Quality.maniable", hasValue: true, target: "ranged" },
+  armureMoitie: { label: "BRIG.Quality.armureMoitie", hasValue: false, target: "ranged" }, // ignore la moitié de l'armure (armes à poudre/feu)
+  antiVehicule: { label: "BRIG.Quality.antiVehicule", hasValue: false, target: "both" }    // arme à échelle véhicule : touche les blindages résistants
 };
 
 /* -------------------------------------------- */
@@ -205,7 +209,20 @@ BRIGANDYNE.conditions = {
   paralyse: { label: "BRIG.Condition.paralyse", icon: "icons/svg/paralysis.svg" },
   ralenti: { label: "BRIG.Condition.ralenti", icon: "icons/svg/net.svg" },
   sonne: { label: "BRIG.Condition.sonne", icon: "icons/svg/stoned.svg" },
-  terrorise: { label: "BRIG.Condition.terrorise", icon: "icons/svg/terror.svg" }
+  terrorise: { label: "BRIG.Condition.terrorise", icon: "icons/svg/terror.svg" },
+  vaincu: { label: "BRIG.Condition.vaincu", icon: "icons/svg/skull.svg" }
+};
+
+/* -------------------------------------------- */
+/*  Tactiques de combat (premiers rôles)        */
+/* -------------------------------------------- */
+// adv/dis : Avantages/Désavantages ; malus : modificateur direct ; dmg : règle de dégâts.
+BRIGANDYNE.combatTactics = {
+  efficace:       { label: "BRIG.Tactic.efficace",       adv: 0, dis: 0, dmg: "normal" },
+  enForce:        { label: "BRIG.Tactic.enForce",        adv: 0, dis: 1, dmg: "plusFor" },     // +*FOR* aux dégâts
+  enFinesse:      { label: "BRIG.Tactic.enFinesse",      adv: 1, dis: 0, dmg: "half" },         // dégâts ÷2
+  surLaDefensive: { label: "BRIG.Tactic.surLaDefensive", adv: 2, dis: 0, dmg: "none" },         // aucun dégât
+  viser:          { label: "BRIG.Tactic.viser",          adv: 0, dis: 0, malus: -10, dmg: "ignoreArmor" } // ignore l'armure
 };
 
 /* -------------------------------------------- */

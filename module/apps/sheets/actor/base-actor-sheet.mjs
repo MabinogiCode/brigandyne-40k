@@ -28,11 +28,54 @@ export class BrigActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       refundChar: BrigActorSheet.#onRefundChar,
       vehicleManeuver: BrigActorSheet.#onVehicleManeuver,
       vehicleFire: BrigActorSheet.#onVehicleFire,
-      learnAtout: BrigActorSheet.#onLearnAtout
+      learnAtout: BrigActorSheet.#onLearnAtout,
+      rest: BrigActorSheet.#onRest,
+      endScenario: BrigActorSheet.#onEndScenario,
+      salary: BrigActorSheet.#onSalary,
+      corruption: BrigActorSheet.#onCorruption
     }
   };
 
   static #onLearnAtout(event, target) { this.actor.learnAtout(target.dataset.kind); }
+
+  /** Repos : demande le nombre de nuits, puis régénère PV/SF. */
+  static async #onRest(event, target) {
+    const DialogV2 = foundry.applications.api.DialogV2;
+    const nights = await DialogV2.prompt({
+      window: { title: game.i18n.localize("BRIG.Rest.title"), icon: "fa-solid fa-bed" },
+      content: `<form class="brigandyne-40k"><div class="form-group"><label>${game.i18n.localize("BRIG.Rest.nights")}</label>
+        <input type="number" name="n" value="1" min="1" /></div></form>`,
+      ok: { label: game.i18n.localize("BRIG.Rest.do"), callback: (e, b) => Number(b.form.n.value) || 1 }, rejectClose: false
+    }).catch(() => null);
+    if (nights) this.actor.rest(nights);
+  }
+
+  static #onEndScenario(event, target) { this.actor.endScenario(); }
+  static #onSalary(event, target) { this.actor.rollSalary(); }
+
+  /** Test de Corruption : choisit dieu / source / caractéristique. */
+  static async #onCorruption(event, target) {
+    const DialogV2 = foundry.applications.api.DialogV2;
+    const gods = Object.entries(BRIGANDYNE.chaosGods)
+      .map(([k, g]) => `<option value="${k}">${game.i18n.localize(g.label)}</option>`).join("");
+    const content = `<form class="brigandyne-40k">
+      <div class="form-group"><label>${game.i18n.localize("BRIG.Corruption.god")}</label>
+        <select name="god"><option value="">—</option>${gods}</select></div>
+      <div class="form-group"><label>${game.i18n.localize("BRIG.Corruption.source")}</label>
+        <select name="source"><option value="10">${game.i18n.localize("BRIG.Corruption.minor")} (+10)</option>
+        <option value="0" selected>${game.i18n.localize("BRIG.Corruption.median")} (0)</option>
+        <option value="-10">${game.i18n.localize("BRIG.Corruption.major")} (−10)</option></select></div>
+      <div class="form-group"><label>${game.i18n.localize("BRIG.Corruption.resistWith")}</label>
+        <select name="characteristic"><option value="vol">${game.i18n.localize("BRIG.Char.vol.abbr")}</option>
+        <option value="for">${game.i18n.localize("BRIG.Char.for.abbr")}</option></select></div></form>`;
+    const res = await DialogV2.prompt({
+      window: { title: game.i18n.localize("BRIG.Corruption.test"), icon: "fa-solid fa-skull" },
+      content, ok: { label: game.i18n.localize("BRIG.Dialog.roll"), callback: (e, b) => ({
+        god: b.form.god.value, source: b.form.source.value, characteristic: b.form.characteristic.value
+      }) }, rejectClose: false
+    }).catch(() => null);
+    if (res) this.actor.rollCorruption(res);
+  }
 
   /** Trouve le personnage opérateur (personnage assigné ou jeton contrôlé). */
   _operator() {

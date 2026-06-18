@@ -1,5 +1,6 @@
 import { BRIGANDYNE } from "../config/config.mjs";
 import { CHARACTERISTIC_KEYS } from "../data/fields.mjs";
+import { vitality, sangFroid, speciesResourceBonus } from "../data/derive.mjs";
 import { SYSTEM_ID } from "../brigandyne40k.mjs";
 import { BLANK_LOCK, getChargenLock, setChargenLock, requestUnlock } from "./chargen-lock.mjs";
 
@@ -145,13 +146,11 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
    * @param {string[]} special clés de spécificités d'espèce (pvPlus1, pvPlus2, sfPlus1…)
    */
   _derivePvSf(totals, special = []) {
-    const bonus = k => Math.floor((totals[k] ?? 0) / 10);
-    let pv = Math.floor((totals.for ?? 0) / 5) + Math.floor((totals.end ?? 0) / 5) + bonus("vol");
-    let sf = Math.floor((totals.vol ?? 0) / 5) + Math.floor((totals.cns ?? 0) / 5) + bonus("com");
-    if (special.includes("pvPlus1")) pv += 1;
-    if (special.includes("pvPlus2")) pv += 2;
-    if (special.includes("sfPlus1")) sf += 1;
-    return { pv, sf };
+    const sb = speciesResourceBonus(special);
+    return {
+      pv: vitality(totals, sb.pv), sf: sangFroid(totals, sb.sf),
+      pvBonus: sb.pv, sfBonus: sb.sf
+    };
   }
 
   _pointsUsed() { return KEYS12.reduce((s, k) => s + (Number(this.gen.points[k]) || 0), 0); }
@@ -391,14 +390,15 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
 
     const characteristics = {};
     for (const k of CHARACTERISTIC_KEYS) characteristics[k] = { value: totals[k], mod: 0, advances: 0 };
-    const { pv, sf } = this._derivePvSf(totals, speciesDoc?.system?.special ?? []);
+    // Le bonus d'espèce est stocké dans `.bonus` ; PV/SF max sont re-dérivés en continu par le DataModel.
+    const { pv, sf, pvBonus, sfBonus } = this._derivePvSf(totals, speciesDoc?.system?.special ?? []);
 
     const system = {
       characteristics, role: this.draft.role,
       speciesName: speciesDoc?.name ?? "", species: speciesDoc?.name ?? "",
       careerName: careerDoc?.name ?? "", lifestyle: careerDoc?.system.lifestyle ?? "ordinaire",
       destin: { value: speciesDoc?.system.destin ?? 2, max: speciesDoc?.system.destin ?? 2 },
-      pv: { value: pv, max: pv, bonus: 0 }, sf: { value: sf, max: sf, bonus: 0 },
+      pv: { value: pv, max: pv, bonus: pvBonus }, sf: { value: sf, max: sf, bonus: sfBonus },
       details: this.draft.details
     };
 

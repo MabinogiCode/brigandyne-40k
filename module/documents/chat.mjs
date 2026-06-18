@@ -1,5 +1,5 @@
 import { BRIGANDYNE } from "../config/config.mjs";
-import { BrigTest } from "../dice/roll.mjs";
+import { BrigTest, rerollCostFor } from "../dice/roll.mjs";
 import { CHARACTERISTIC_KEYS } from "../data/fields.mjs";
 
 const { renderTemplate } = foundry.applications.handlebars;
@@ -10,8 +10,10 @@ export function registerChatListeners() {
   Hooks.on("renderChatMessageHTML", (message, html) => {
     html.querySelectorAll("[data-action='damage']").forEach(b =>
       b.addEventListener("click", () => onApplyDamage(message)));
-    html.querySelectorAll("[data-action='destin-reroll']").forEach(b =>
-      b.addEventListener("click", () => onDestinReroll(message, b)));
+    html.querySelectorAll("[data-action='reroll']").forEach(b =>
+      b.addEventListener("click", () => onReroll(message, b)));
+    html.querySelectorAll("[data-action='riposte']").forEach(b =>
+      b.addEventListener("click", () => onRiposte(message, b)));
     html.querySelectorAll("[data-action='oppose']").forEach(b =>
       b.addEventListener("click", () => onOppose(message)));
   });
@@ -71,13 +73,44 @@ async function explodeD10() {
   return total;
 }
 
-/** Remplace RU/FOR/PSY/VOL dans une formule de dégâts de pouvoir. */
+/**
+ * Évalue une expression arithmétique simple (+ - * / parenthèses) en toute sécurité.
+ * Parseur à descente récursive — aucune exécution de code arbitraire.
+ */
+function safeArith(expr) {
+  const tokens = String(expr).match(/\d+(?:\.\d+)?|[+\-*/()]/g);
+  if (!tokens) return NaN;
+  let i = 0;
+  const peek = () => tokens[i];
+  const eat = t => { if (tokens[i] === t) { i++; return true; } return false; };
+  function parseExpr() {            // + et -
+    let v = parseTerm();
+    while (peek() === "+" || peek() === "-") { const op = tokens[i++]; const r = parseTerm(); v = op === "+" ? v + r : v - r; }
+    return v;
+  }
+  function parseTerm() {            // * et /
+    let v = parseFactor();
+    while (peek() === "*" || peek() === "/") { const op = tokens[i++]; const r = parseFactor(); v = op === "*" ? v * r : (r === 0 ? 0 : v / r); }
+    return v;
+  }
+  function parseFactor() {          // nombre, parenthèses, unaire -
+    if (eat("(")) { const v = parseExpr(); eat(")"); return v; }
+    if (eat("-")) return -parseFactor();
+    if (eat("+")) return parseFactor();
+    const n = Number(tokens[i++]);
+    return Number.isFinite(n) ? n : NaN;
+  }
+  const out = parseExpr();
+  return Number.isFinite(out) ? out : NaN;
+}
+
+/** Remplace RU/FOR/PSY/VOL dans une formule de dégâts de pouvoir, puis évalue sans risque. */
 function resolveRawDamage(raw, ctx) {
-  let expr = String(raw).toUpperCase();
-  expr = expr.replace(/RU/g, ctx.ru).replace(/PSY/g, ctx.psyBonus ?? 0)
+  const expr = String(raw).toUpperCase()
+    .replace(/RU/g, ctx.ru ?? 0).replace(/PSY/g, ctx.psyBonus ?? 0)
     .replace(/VOL/g, ctx.volBonus ?? 0).replace(/FOR/g, ctx.forBonus ?? 0);
-  try { return Math.max(0, Math.round(Function(`"use strict";return (${expr})`)())); }
-  catch { return ctx.ru; }
+  const v = safeArith(expr);
+  return Number.isFinite(v) ? Math.max(0, Math.round(v)) : (ctx.ru ?? 0);
 }
 
 async function onApplyDamage(message) {
@@ -94,7 +127,7 @@ async function onApplyDamage(message) {
   if (result.degree === "critSuccess") ru = await explodeD10();
 
   const dmg = test.damage || {};
-  let total, ap = 0, ignoreArmor = false;
+  let total, ap = 0, ignoreArmor = false, halveArmor = false, vehicleScale = false;
   const dtype = dmg.type || "physique";
   const typeDef = BRIGANDYNE.damageTypes[dtype];
   if (typeDef?.ignoreArmor) ignoreArmor = true;
@@ -109,7 +142,17 @@ async function onApplyDamage(message) {
       const v = item.system.qualityValue("perceArmure");
       if (typeof v === "number") ap = v;
       if (item.system.hasQuality?.("ignoreArmures")) ignoreArmor = true;
+      if (item.system.hasQuality?.("armureMoitie")) halveArmor = true;     // armes à feu : armure ÷2
+      if (item.system.hasQuality?.("antiVehicule")) vehicleScale = true;   // touche les blindages résistants
     }
+  }
+
+  // Tactique de combat (mêlée) : ajuste les dégâts.
+  switch (dmg.tactic) {
+    case "enForce": total += (dmg.forBonus ?? 0); break;              // +*FOR* une seconde fois
+    case "enFinesse": total = Math.max(1, Math.floor(total / 2)); break;
+    case "viser": ignoreArmor = true; break;
+    case "surLaDefensive": total = 0; break;
   }
 
   // Cibles : tokens ciblés, sinon tokens contrôlés
@@ -118,8 +161,10 @@ async function onApplyDamage(message) {
 
   const rows = [];
   for (const actor of targets) {
-    const applied = await actor.applyDamage(total, { ignoreArmor, ap });
-    rows.push({ name: actor.name, raw: total, applied, prot: ignoreArmor ? "—" : Math.max(0, (actor.system.protection?.value ?? 0) - ap) });
+    const applied = await actor.applyDamage(total, { ignoreArmor, ap, halveArmor, vehicleScale, minDamage: 1 });
+    let prot = "—";
+    if (!ignoreArmor) { let p = actor.system.protection?.value ?? 0; if (halveArmor) p = Math.floor(p / 2); prot = Math.max(0, p - ap); }
+    rows.push({ name: actor.name, raw: total, applied, prot });
   }
 
   const content = await renderTemplate("systems/brigandyne-40k/templates/chat/damage-card.hbs", {
@@ -129,15 +174,56 @@ async function onApplyDamage(message) {
   ChatMessage.create({ speaker: message.speaker, content });
 }
 
-async function onDestinReroll(message, button) {
+/** Relance un test en dépensant du Sang-froid (4, ou 6 sur un échec critique — RAW). */
+async function onReroll(message, button) {
   const flags = message.flags?.["brigandyne-40k"];
   if (!flags) return;
   const actor = flags.test.actorUuid ? await fromUuid(flags.test.actorUuid) : null;
   if (!actor) return;
   if (!actor.isOwner) return ui.notifications?.warn(game.i18n.localize("BRIG.Warn.notOwner"));
-  const ok = await actor.spendDestin();
+  const cost = rerollCostFor(flags.result.degree);
+  const ok = await actor.spendSangFroid(cost);
   if (!ok) return;
   button.disabled = true;
-  const test = new BrigTest(flags.test);
+  const test = new BrigTest({ ...flags.test, rerolled: true });
   await test.toMessage();
+}
+
+/** Riposte : sur une attaque de mêlée ratée, l'adversaire (la cible) blesse l'attaquant (effet miroir). */
+async function onRiposte(message, button) {
+  const flags = message.flags?.["brigandyne-40k"];
+  if (!flags) return;
+  const { test, result } = flags;
+  const attacker = test.actorUuid ? await fromUuid(test.actorUuid) : null;
+  const target = test.targetActorUuid ? await fromUuid(test.targetActorUuid) : null;
+  if (!attacker || !target) return ui.notifications?.warn(game.i18n.localize("BRIG.Warn.noRiposte"));
+  button.disabled = true;
+
+  // Arme de la cible : arme de mêlée équipée, sinon mains nues.
+  const weapon = target.items.find(i => i.type === "weapon" && i.system.isMelee && i.system.equipped)
+    || target.items.find(i => i.type === "weapon" && i.system.isMelee);
+  const forBonus = target.system.characteristics?.for?.bonus ?? 0;
+  const wMod = weapon ? (weapon.system.damageMod ?? 0) : -3;       // mains nues : *FOR*-3
+
+  // Effet miroir : le RU du jet de l'attaquant sert aux dégâts de la cible ;
+  // un échec critique de l'attaquant = coup critique de la cible (10 + dé explosif).
+  let ru = result.ru;
+  if (result.degree === "critFailure") ru = await explodeD10();
+  let total = Math.max(0, ru + forBonus + wMod);
+
+  let ap = 0, ignoreArmor = false;
+  if (weapon?.system?.qualityValue) {
+    const v = weapon.system.qualityValue("perceArmure");
+    if (typeof v === "number") ap = v;
+    if (weapon.system.hasQuality?.("ignoreArmures")) ignoreArmor = true;
+  }
+  const applied = await attacker.applyDamage(total, { ap, ignoreArmor, minDamage: 1 });
+
+  const content = await renderTemplate("systems/brigandyne-40k/templates/chat/damage-card.hbs", {
+    label: game.i18n.format("BRIG.Riposte.label", { name: target.name }),
+    total, type: game.i18n.localize("BRIG.Damage.physique"), ap, ignoreArmor,
+    rows: [{ name: attacker.name, raw: total, applied, prot: ignoreArmor ? "—" : Math.max(0, (attacker.system.protection?.value ?? 0) - ap) }],
+    hasTargets: true
+  });
+  ChatMessage.create({ speaker: message.speaker, content });
 }

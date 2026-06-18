@@ -55,13 +55,15 @@
     },
     "Difficulty": {
       "label": "Difficulté",
+      "triviale": "Triviale (+40)",
       "simple": "Simple (+30)",
       "aisee": "Aisée (+20)",
       "faisable": "Faisable (+10)",
       "assezDifficile": "Assez difficile (0)",
       "difficile": "Difficile (−10)",
       "tresDifficile": "Très difficile (−20)",
-      "complexe": "Complexe (−30)"
+      "complexe": "Complexe (−30)",
+      "infaisable": "Infaisable (−40)"
     },
     "Range": {
       "contact": "Contact (1 m)",
@@ -96,7 +98,9 @@
       "rayon": "Rayon",
       "poison": "Poison",
       "viseur": "Viseur",
-      "maniable": "Maniable"
+      "maniable": "Maniable",
+      "armureMoitie": "Armure /2",
+      "antiVehicule": "Anti-véhicule"
     },
     "WeaponType": {
       "melee": "Mêlée",
@@ -168,7 +172,42 @@
       "paralyse": "Paralysé",
       "ralenti": "Ralenti",
       "sonne": "Sonné",
-      "terrorise": "Terrorisé"
+      "terrorise": "Terrorisé",
+      "vaincu": "Vaincu"
+    },
+    "Tactic": {
+      "label": "Tactique de combat",
+      "none": "— Efficace (standard) —",
+      "efficace": "Efficace (standard)",
+      "enForce": "En force (−1 Désav., +FOR dégâts)",
+      "enFinesse": "En finesse (+1 Avantage, dégâts ÷2)",
+      "surLaDefensive": "Sur la défensive (+2 Avantages, 0 dégât)",
+      "viser": "Viser (−10, ignore l'armure)"
+    },
+    "Corruption": {
+      "test": "Résistance à la Corruption",
+      "god": "Dieu sombre",
+      "source": "Source de corruption",
+      "minor": "Mineure",
+      "median": "Médiane",
+      "major": "Majeure",
+      "resistWith": "Résister avec",
+      "lost": "Corruption : −{loss} points de Sang-froid."
+    },
+    "Rest": {
+      "title": "Repos",
+      "nights": "Nombre de nuits",
+      "do": "Se reposer"
+    },
+    "Salary": {
+      "label": "Salaire",
+      "earned": "Gain : {amount} Trônes Gelt."
+    },
+    "Riposte": {
+      "label": "Riposte de {name}"
+    },
+    "Faith": {
+      "overLimit": "Au-delà de la limite quotidienne"
     },
     "Discipline": {
       "generique": "Pouvoirs génériques",
@@ -289,12 +328,16 @@
       "noXp": "XP insuffisante (coût : {cost}).",
       "maxAdvance": "{char} : maximum de progression atteint (6 cases / +30).",
       "noOperator": "Aucun personnage opérateur : assignez-vous un personnage ou sélectionnez un jeton.",
-      "noOpposer": "Aucun acteur pour s'opposer : assignez-vous un personnage ou sélectionnez un jeton."
+      "noOpposer": "Aucun acteur pour s'opposer : assignez-vous un personnage ou sélectionnez un jeton.",
+      "noRiposte": "Riposte impossible : attaquant ou cible introuvable.",
+      "psyOverflow": "Dépassement de limite psychique : −{cost} PV."
     },
     "Info": {
       "advanced": "{char} améliorée (−{cost} XP).",
       "advancedOff": "{char} améliorée hors-profil de carrière (−{cost} XP, +50).",
-      "learned": "{name} appris(e) (−{cost} XP)."
+      "learned": "{name} appris(e) (−{cost} XP).",
+      "rested": "Repos de {nights} nuit(s) : +{pv} PV, +{sf} SF.",
+      "scenarioEnd": "Fin de scénario : repos et Destin rechargé."
     },
     "Oppose": {
       "title": "Jet opposé",
@@ -304,7 +347,8 @@
     },
     "Vehicle": {
       "maneuver": "Test de manœuvre",
-      "maneuverability": "Maniabilité"
+      "maneuverability": "Maniabilité",
+      "resisted": "Le blindage résiste aux armes à échelle humaine."
     },
     "Chat": {
       "noDamageOnFail": "Le test est un échec : aucun dégât.",

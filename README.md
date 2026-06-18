@@ -8,9 +8,9 @@ l'univers de **Warhammer 40,000**, pour **Foundry VTT v14**.
 
 ## ✨ Fonctionnalités
 
-- 🎲 **Moteur d100** : jet sous caractéristique, Avantage/Désavantage, six degrés
-  de réussite (Réussite Critique → Échec Critique), dé d'unité (RU), relance par
-  point de Destin.
+- 🎲 **Moteur d100** : jet sous caractéristique, Avantage/Désavantage (±10, cap ±3,
+  conforme RAW), six degrés de réussite (Réussite Critique → Échec Critique) avec
+  les exceptions < 20 % / ≥ 80 %, dé d'unité (RU), **relance en Sang-froid** (−4/−6).
 - 🧑‍🚀 **Personnages** : 13 caractéristiques-compétences, jauges PV et Sang-Froid
   (SF), Destin, Corruption, Vices & Vertus, espèces et carrières par Adeptus.
 - ⚔️ **Combat** : attaque → dégâts (RU + bonus, Perce-armure vs Protection),

@@ -122,11 +122,13 @@ export class BrigActor extends Actor {
       advantage, disadvantage,
       itemUuid: item.uuid,
       rollType: "attack",
+      tactics: true,                         // propose les tactiques de combat dans le dialogue
       damage: {
         base: item.system.damageBase,
         mod: item.system.damageMod,
         type: item.system.damageType,
         forBonus: this.system.characteristics?.for?.bonus ?? 0,
+        isMelee: !!item.system.isMelee,
         weaponUuid: item.uuid
       },
       targetActorUuid: target?.uuid ?? null
@@ -137,19 +139,37 @@ export class BrigActor extends Actor {
   async rollPower(item, options = {}) {
     if (item.type !== "psychicPower") return;
     const char = this.system.characteristics?.psy;
+    const modifiers = item.system.difficulty ? [{ label: game.i18n.localize("BRIG.Difficulty.label"), value: item.system.difficulty }] : [];
+
+    // Dépassement de la limite journalière : *PSY* pouvoirs/jour, au-delà → coût en PV (RAW Magie).
+    const perDay = this.system.psy?.powersPerDay ?? 0;
+    const used = this.system.dailyUse?.powers ?? 0;
+    const overflow = used >= perDay;
+
     const test = await this._performTest({
       label: item.name,
       flavor: `${game.i18n.localize("BRIG.Char.psy.long")} · ${item.name}`,
       characteristic: "psy",
       base: char?.total ?? 0,
-      modifiers: item.system.difficulty ? [{ label: game.i18n.localize("BRIG.Difficulty.label"), value: item.system.difficulty }] : [],
+      modifiers,
       itemUuid: item.uuid,
       rollType: "power",
       damage: item.system.damage ? { raw: item.system.damage, type: item.system.damageType, psyBonus: char?.bonus ?? 0 } : null
     }, options);
+    if (!test) return null;   // annulé
+
+    // Comptabilise l'usage ; applique le coût de dépassement (PV).
+    const updates = { "system.dailyUse.powers": used + 1 };
+    if (overflow) {
+      const cost = item.system.isMinor ? 2 : 4;       // tour : 2 PV ; sortilège : 4 PV
+      updates["system.pv.value"] = Math.max(0, (this.system.pv?.value ?? 0) - cost);
+      ui.notifications?.warn(game.i18n.format("BRIG.Warn.psyOverflow", { cost }));
+    }
+    await this.update(updates);
+
     // Échec majeur → Phénomène psychique ; échec critique → Péril du Warp
-    if (test?.result?.degree === "critFailure") await postWarpResult(this, "peril");
-    else if (test?.result?.degree === "majorFailure") await postWarpResult(this, "phenomenon");
+    if (test.result?.degree === "critFailure") await postWarpResult(this, "peril");
+    else if (test.result?.degree === "majorFailure") await postWarpResult(this, "phenomenon");
     return test;
   }
 
@@ -157,22 +177,31 @@ export class BrigActor extends Actor {
   async rollFaith(item, options = {}) {
     if (item.type !== "faithAct") return;
     const char = this.system.characteristics?.vol;
-    return this._performTest({
+    const modifiers = item.system.difficulty ? [{ label: game.i18n.localize("BRIG.Difficulty.label"), value: item.system.difficulty }] : [];
+
+    // Au-delà de VOL/2 Actes par jour : malus de -20 % (RAW 40K).
+    const perDay = this.system.faith?.actsPerDay ?? 0;
+    const used = this.system.dailyUse?.faith ?? 0;
+    if (used >= perDay) modifiers.push({ label: game.i18n.localize("BRIG.Faith.overLimit"), value: -20 });
+
+    const test = await this._performTest({
       label: item.name,
       flavor: `${game.i18n.localize("BRIG.Char.vol.long")} · ${item.name}`,
       characteristic: "vol",
       base: char?.total ?? 0,
-      modifiers: item.system.difficulty ? [{ label: game.i18n.localize("BRIG.Difficulty.label"), value: item.system.difficulty }] : [],
+      modifiers,
       itemUuid: item.uuid,
       rollType: "faith",
       damage: item.system.damage ? { raw: item.system.damage, type: item.system.damageType, volBonus: char?.bonus ?? 0 } : null
     }, options);
+    if (test) await this.update({ "system.dailyUse.faith": used + 1 });
+    return test;
   }
 
   /** Coeur commun : ouvre le dialogue (sauf raccourci) puis lance le test. */
   async _performTest(testData, { skipDialog = false, event } = {}) {
     const fastKey = event?.shiftKey || event?.ctrlKey;
-    let dialogResult = { difficulty: 0, situational: 0, advantage: 0, disadvantage: 0 };
+    let dialogResult = { difficulty: 0, situational: 0, advantage: 0, disadvantage: 0, tactic: "" };
     if (!skipDialog && !fastKey) {
       dialogResult = await promptTest({ actor: this, testData });
       if (dialogResult === null) return null;     // annulé
@@ -181,12 +210,23 @@ export class BrigActor extends Actor {
     if (dialogResult.difficulty) modifiers.push({ label: game.i18n.localize("BRIG.Difficulty.label"), value: dialogResult.difficulty });
     if (dialogResult.situational) modifiers.push({ label: game.i18n.localize("BRIG.Test.situational"), value: dialogResult.situational });
 
+    let advantage = (testData.advantage || 0) + (dialogResult.advantage || 0);
+    let disadvantage = (testData.disadvantage || 0) + (dialogResult.disadvantage || 0);
+    const damage = testData.damage ? { ...testData.damage } : null;
+
+    // Tactique de combat : ajuste Avantage/Désavantage, modificateur et règle de dégâts.
+    const tactic = dialogResult.tactic && BRIGANDYNE.combatTactics[dialogResult.tactic];
+    if (tactic) {
+      advantage += tactic.adv || 0;
+      disadvantage += tactic.dis || 0;
+      if (tactic.malus) modifiers.push({ label: game.i18n.localize(tactic.label), value: tactic.malus });
+      if (damage) damage.tactic = dialogResult.tactic;
+    }
+
     const test = new BrigTest({
-      ...testData,
+      ...testData, damage,
       actorUuid: this.uuid,
-      modifiers,
-      advantage: (testData.advantage || 0) + (dialogResult.advantage || 0),
-      disadvantage: (testData.disadvantage || 0) + (dialogResult.disadvantage || 0)
+      modifiers, advantage, disadvantage
     });
     await test.toMessage();
     return test;
@@ -196,16 +236,32 @@ export class BrigActor extends Actor {
   /*  Application des dégâts / ressources          */
   /* -------------------------------------------- */
 
-  /** Applique des dégâts en tenant compte de la protection. */
-  async applyDamage(amount, { ignoreArmor = false, ap = 0 } = {}) {
-    const prot = ignoreArmor ? 0 : Math.max(0, (this.system.protection?.value ?? 0) - ap);
-    const dmg = Math.max(0, amount - prot);
+  /** Applique des dégâts en tenant compte de la protection.
+   * @param {object} opts
+   * @param {boolean} opts.ignoreArmor   ignore totalement l'armure
+   * @param {number}  opts.ap            perce-armure (réduit la protection)
+   * @param {boolean} opts.halveArmor    armure divisée par deux (armes à feu, RAW)
+   * @param {number}  opts.minDamage     plancher de dégâts si l'attaque blesse (RAW : 1)
+   * @param {boolean} opts.vehicleScale  l'arme est à échelle véhicule (perce les blindages résistants)
+   */
+  async applyDamage(amount, { ignoreArmor = false, ap = 0, halveArmor = false, minDamage = 0, vehicleScale = false } = {}) {
+    // Résistance des véhicules : immunisés aux armes à échelle humaine (RAW 40K).
+    if (this.type === "vehicle" && this.system.resistance && !vehicleScale && !ignoreArmor) {
+      ui.notifications?.info(game.i18n.localize("BRIG.Vehicle.resisted"));
+      return 0;
+    }
+    let prot = ignoreArmor ? 0 : (this.system.protection?.value ?? 0);
+    if (!ignoreArmor && halveArmor) prot = Math.floor(prot / 2);
+    if (!ignoreArmor) prot = Math.max(0, prot - ap);
+
+    let dmg = Math.max(0, amount - prot);
+    if (minDamage && amount > 0) dmg = Math.max(minDamage, dmg);   // dégâts minimums sur une blessure
     const pv = this.system.pv;
     if (!pv) return;
     const newVal = Math.max(0, pv.value - dmg);
     const wasUp = pv.value > 0;
     await this.update({ "system.pv.value": newVal });
-    if (wasUp && newVal === 0) await this.drawCriticalInjury();
+    if (wasUp && newVal === 0 && this.type !== "vehicle") await this.drawCriticalInjury();
     return dmg;
   }
 
@@ -274,19 +330,27 @@ export class BrigActor extends Actor {
     });
   }
 
-  /** Apprend une spécialité ou un talent depuis le compendium, contre de l'XP. */
+  /** Apprend une spécialité ou un talent depuis le compendium, contre de l'XP.
+   *  Hors profil de carrière : +50 PX (RAW p.150). */
   async learnAtout(kind) {
     if (!this.system.xp) return;
     const isTalent = kind === "talent";
     const packKey = isTalent ? "brigandyne-40k.talents" : "brigandyne-40k.specialties";
-    const cost = isTalent ? BRIGANDYNE.advancement.talentCost : BRIGANDYNE.advancement.specialtyCost;
+    const baseCost = isTalent ? BRIGANDYNE.advancement.talentCost : BRIGANDYNE.advancement.specialtyCost;
+    const offExtra = BRIGANDYNE.advancement.atoutOffCareerExtra ?? 50;   // +50 PX hors-carrière
     const pack = game.packs.get(packKey);
     if (!pack) return ui.notifications?.warn("Compendium introuvable.");
     await pack.getIndex();
+
+    // Liste des atouts proposés par la carrière (pour distinguer carrière / hors-carrière).
+    const career = this.items.find(i => i.type === "career");
+    const careerList = new Set((isTalent ? career?.system?.talents : career?.system?.specialties) ?? []);
+
     const options = pack.index.contents.sort((a, b) => a.name.localeCompare(b.name))
-      .map(e => `<option value="${e._id}">${e.name}</option>`).join("");
+      .map(e => `<option value="${e._id}">${careerList.has(e.name) ? "★ " : ""}${e.name}</option>`).join("");
     const content = `<form class="brigandyne-40k">
-      <p>Coût : <strong>${cost} XP</strong> — disponible : <strong>${this.system.xp.available}</strong></p>
+      <p>Coût : <strong>${baseCost} XP</strong> (carrière) · <strong>${baseCost + offExtra} XP</strong> (hors-carrière, ★ = de carrière)<br>
+      Disponible : <strong>${this.system.xp.available} XP</strong></p>
       <div class="form-group"><label>${isTalent ? "Talent" : "Spécialité"}</label>
       <select name="pick">${options}</select></div></form>`;
     const id = await foundry.applications.api.DialogV2.prompt({
@@ -294,8 +358,9 @@ export class BrigActor extends Actor {
       content, ok: { label: "Apprendre", callback: (ev, btn) => btn.form.pick.value }, rejectClose: false
     }).catch(() => null);
     if (!id) return;
-    if ((this.system.xp.available ?? 0) < cost) return ui.notifications?.warn(game.i18n.format("BRIG.Warn.noXp", { cost }));
     const doc = await pack.getDocument(id);
+    const cost = baseCost + (careerList.has(doc.name) ? 0 : offExtra);
+    if ((this.system.xp.available ?? 0) < cost) return ui.notifications?.warn(game.i18n.format("BRIG.Warn.noXp", { cost }));
     await this.createEmbeddedDocuments("Item", [doc.toObject()]);
     await this.update({ "system.xp.spent": (this.system.xp.spent ?? 0) + cost });
     ui.notifications?.info(game.i18n.format("BRIG.Info.learned", { name: doc.name, cost }));
@@ -310,5 +375,110 @@ export class BrigActor extends Actor {
     }
     await this.update({ "system.destin.value": d.value - 1 });
     return true;
+  }
+
+  /** Dépense des points de Sang-froid (relances, etc.). */
+  async spendSangFroid(amount = 0) {
+    const sf = this.system.sf;
+    if (!sf || sf.value < amount) {
+      ui.notifications?.warn(game.i18n.format("BRIG.Warn.noSf", { cost: amount }));
+      return false;
+    }
+    await this.update({ "system.sf.value": sf.value - amount });
+    return true;
+  }
+
+  /** Taux de régénération PV/SF par nuit selon le niveau de vie. */
+  _restRates() {
+    const ls = BRIGANDYNE.lifestyles[this.system.lifestyle] ?? BRIGANDYNE.lifestyles.ordinaire;
+    const parse = s => {
+      const m = /^(\d+)\/(\d*)(j|sem)$/.exec(s ?? "");
+      if (!m) return 0;
+      const n = Number(m[1]);
+      if (m[3] === "sem") return n / 7;
+      return n / (Number(m[2]) || 1);     // "1/j" → 1 ; "1/2j" → 0.5
+    };
+    return { pv: parse(ls.pv), sf: parse(ls.sf) };
+  }
+
+  /** Repos de N nuits : régénère PV/SF selon le niveau de vie et réinitialise les usages du jour. */
+  async rest(nights = 1) {
+    const r = this._restRates();
+    const pv = this.system.pv, sf = this.system.sf;
+    const gainedPv = Math.floor(r.pv * nights);
+    const gainedSf = Math.floor(r.sf * nights);
+    await this.update({
+      "system.pv.value": Math.min(pv.max, pv.value + gainedPv),
+      "system.sf.value": Math.min(sf.max, sf.value + gainedSf),
+      "system.dailyUse.powers": 0,
+      "system.dailyUse.faith": 0
+    });
+    ui.notifications?.info(game.i18n.format("BRIG.Info.rested", { nights, pv: gainedPv, sf: gainedSf }));
+  }
+
+  /** Fin de scénario : une semaine de repos + Destin rechargé à son maximum. */
+  async endScenario() {
+    await this.rest(7);
+    const d = this.system.destin;
+    if (d) await this.update({ "system.destin.value": d.max });
+    ui.notifications?.info(game.i18n.localize("BRIG.Info.scenarioEnd"));
+  }
+
+  /** Jet de salaire hebdomadaire selon le niveau de vie (Trônes Gelt). */
+  async rollSalary() {
+    const lsKey = this.system.lifestyle ?? "ordinaire";
+    const ls = BRIGANDYNE.lifestyles[lsKey] ?? BRIGANDYNE.lifestyles.ordinaire;
+    const test = new BrigTest({
+      actorUuid: this.uuid,
+      label: game.i18n.localize("BRIG.Salary.label"),
+      flavor: game.i18n.localize(ls.label),
+      characteristic: "soc", base: 50, rollType: "test"
+    });
+    await test.roll();
+    await test.toMessage();
+    const pay = ls.salary?.[test.result.degree] ?? 0;
+    const newGelt = (this.system.wealth?.gelt ?? 0) + pay;
+    await this.update({ "system.wealth.gelt": newGelt });
+    const content = await renderTemplate("systems/brigandyne-40k/templates/chat/item-card.hbs", {
+      item: { name: game.i18n.localize("BRIG.Salary.label"), img: "icons/commodities/currency/coins-stitched-pouch-brown.webp" },
+      system: { effect: game.i18n.format("BRIG.Salary.earned", { amount: pay }) }
+    });
+    return ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor: this }), content });
+  }
+
+  /** Test de résistance à la Corruption du Chaos (VOL ou FOR, au choix). */
+  async rollCorruption({ god = "", source = "0", characteristic = "vol" } = {}) {
+    const char = this.system.characteristics?.[characteristic] ?? this.system.characteristics?.vol;
+    const modifiers = Number(source) ? [{ label: game.i18n.localize("BRIG.Corruption.source"), value: Number(source) }] : [];
+
+    // Désavantage par niveau de Vice lié au dieu invoqué (RAW 40K).
+    let viceLevels = 0;
+    if (god && BRIGANDYNE.chaosGods[god]) {
+      const godVices = new Set(BRIGANDYNE.chaosGods[god].vices);
+      for (const it of this.items) {
+        if (it.type === "trait" && it.system.traitType === "vice" && godVices.has(it.system.god)) {
+          viceLevels += Math.max(0, it.system.rating ?? 0);
+        }
+      }
+    }
+
+    const test = await this._performTest({
+      label: game.i18n.localize("BRIG.Corruption.test"),
+      flavor: god ? game.i18n.localize(BRIGANDYNE.chaosGods[god].label) : "",
+      characteristic, base: char?.total ?? 0,
+      modifiers, disadvantage: viceLevels,
+      rollType: "resist"
+    });
+    if (!test) return null;
+
+    // Échec → perte de SF = Seuil d'instabilité ; E+ → +1.
+    if (!test.result.success) {
+      const tier = test.result.tier;          // -1 mineur, -2 majeur, -3 critique
+      const loss = (this.system.corruption?.threshold ?? 0) + (tier <= -2 ? 1 : 0);
+      const sf = this.system.sf;
+      await this.update({ "system.sf.value": Math.max(0, sf.value - loss) });
+      ui.notifications?.warn(game.i18n.format("BRIG.Corruption.lost", { loss }));
+    }
+    return test;
   }
 }

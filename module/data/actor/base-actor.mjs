@@ -30,6 +30,10 @@ export class BaseActorModel extends foundry.abstract.TypeDataModel {
         value: int(0, { min: 0 }),
         threshold: int(1, { min: 0 })       // Seuil d'instabilité
       }),
+      dailyUse: new fields.SchemaField({    // usages journaliers (réinitialisés au repos)
+        powers: int(0, { min: 0 }),         // pouvoirs psychiques lancés aujourd'hui
+        faith: int(0, { min: 0 })           // Actes de Foi manifestés aujourd'hui
+      }),
       initiative: new fields.SchemaField({
         base: num(null),                     // override manuel (PNJ) ; null = dérivée
         mod: int(0)

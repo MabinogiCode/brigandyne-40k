@@ -16,12 +16,14 @@
       <div class="resource pv">
         <label>PV</label>
         <input type="number" name="system.pv.value" value="{{system.pv.value}}" /><span>/</span>
-        <input type="number" name="system.pv.max" value="{{system.pv.max}}" />
+        <span class="res-max" data-tooltip="Vitalité max — dérivée (FOR/5 + END/5 + *VOL*). « Ajust. » modifie ce maximum.">{{system.pv.max}}</span>
+        <input class="res-bonus" type="number" name="system.pv.bonus" value="{{system.pv.bonus}}" data-tooltip="Ajustement du PV max (bonus d'espèce, blessure permanente…)" />
       </div>
       <div class="resource sf">
         <label>SF</label>
         <input type="number" name="system.sf.value" value="{{system.sf.value}}" /><span>/</span>
-        <input type="number" name="system.sf.max" value="{{system.sf.max}}" />
+        <span class="res-max" data-tooltip="Sang-froid max — dérivé (VOL/5 + CNS/5 + *COM*). « Ajust. » modifie ce maximum.">{{system.sf.max}}</span>
+        <input class="res-bonus" type="number" name="system.sf.bonus" value="{{system.sf.bonus}}" data-tooltip="Ajustement du SF max" />
       </div>
       <div class="resource destin">
         <label>Destin</label>
@@ -31,8 +33,14 @@
       <div class="resource corruption">
         <label>Corruption</label>
         <input type="number" name="system.corruption.value" value="{{system.corruption.value}}" /><span>seuil</span>
-        <input type="number" name="system.corruption.threshold" value="{{system.corruption.threshold}}" />
+        <span class="res-max" data-tooltip="Seuil d'instabilité — dérivé (SF/4)">{{system.corruption.threshold}}</span>
       </div>
+    </div>
+    <div class="header-toolbar">
+      <button type="button" data-action="rest" data-tooltip="Repos : régénère PV/SF selon le niveau de vie"><i class="fa-solid fa-bed"></i> Repos</button>
+      <button type="button" data-action="endScenario" data-tooltip="Fin de scénario : repos d'une semaine + Destin rechargé"><i class="fa-solid fa-flag-checkered"></i> Fin de scénario</button>
+      <button type="button" data-action="salary" data-tooltip="Jet de salaire hebdomadaire (Trônes Gelt)"><i class="fa-solid fa-coins"></i> Salaire</button>
+      <button type="button" data-action="corruption" data-tooltip="Test de résistance à la Corruption"><i class="fa-solid fa-skull"></i> Corruption</button>
     </div>
   </div>
 </header>

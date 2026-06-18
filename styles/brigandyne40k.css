@@ -525,3 +525,13 @@
 .brigandyne-40k .gen-table select:hover { border-color: var(--brig-gold); }
 .brigandyne-40k .gen-table input[type=number] { -moz-appearance: textfield; appearance: textfield; }
 .brigandyne-40k .gen-table input[type=number]::-webkit-inner-spin-button { display: none; }
+
+/* --- v0.5 : conformité RAW (ressources dérivées, barre d'outils, boutons de carte) --- */
+.brigandyne-40k .resource .res-max { min-width: 1.6em; text-align: center; font-weight: 700; color: var(--brig-gold-2); }
+.brigandyne-40k .resource .res-bonus { width: 2.6em; opacity: .6; font-size: .8rem; }
+.brigandyne-40k .resource .res-bonus:hover, .brigandyne-40k .resource .res-bonus:focus { opacity: 1; }
+.brigandyne-40k .header-toolbar { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .4rem; }
+.brigandyne-40k .header-toolbar button { flex: 1 1 auto; padding: .25rem .5rem; font-size: .8rem; background: var(--brig-panel-2); border: 1px solid var(--brig-border); color: var(--brig-text); border-radius: 3px; cursor: pointer; }
+.brigandyne-40k .header-toolbar button:hover { border-color: var(--brig-gold); color: var(--brig-gold); }
+.brigandyne-40k .chat-card .card-button.sf { color: #8fb7ff; }
+.brigandyne-40k .chat-card .card-button.riposte { color: #ff9d6e; }

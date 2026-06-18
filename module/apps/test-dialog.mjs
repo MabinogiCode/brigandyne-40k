@@ -15,6 +15,17 @@ export async function promptTest({ actor, testData } = {}) {
     .map(([v, label]) => `<option value="${v}" ${Number(v) === 0 ? "selected" : ""}>${game.i18n.localize(label)}</option>`)
     .join("");
 
+  // Tactiques de combat (uniquement pour les attaques)
+  const tacticBlock = testData?.tactics ? `
+      <div class="form-group">
+        <label><i class="fa-solid fa-chess-knight"></i> ${game.i18n.localize("BRIG.Tactic.label")}</label>
+        <select name="tactic">
+          <option value="">${game.i18n.localize("BRIG.Tactic.none")}</option>
+          ${Object.entries(BRIGANDYNE.combatTactics).map(([k, t]) =>
+            `<option value="${k}">${game.i18n.localize(t.label)}</option>`).join("")}
+        </select>
+      </div>` : "";
+
   const content = `
     <form class="brigandyne-40k test-dialog">
       <p class="dialog-target">
@@ -32,20 +43,22 @@ export async function promptTest({ actor, testData } = {}) {
       <div class="form-grid two">
         <div class="form-group">
           <label><i class="fa-solid fa-circle-up"></i> ${game.i18n.localize("BRIG.Dialog.advantage")}</label>
-          <input type="number" name="advantage" value="0" min="0" />
+          <input type="number" name="advantage" value="0" min="0" max="3" />
         </div>
         <div class="form-group">
           <label><i class="fa-solid fa-circle-down"></i> ${game.i18n.localize("BRIG.Dialog.disadvantage")}</label>
-          <input type="number" name="disadvantage" value="0" min="0" />
+          <input type="number" name="disadvantage" value="0" min="0" max="3" />
         </div>
       </div>
+      ${tacticBlock}
     </form>`;
 
   const parse = (form) => ({
     difficulty: Number(form.difficulty.value) || 0,
     situational: Number(form.situational.value) || 0,
     advantage: Number(form.advantage.value) || 0,
-    disadvantage: Number(form.disadvantage.value) || 0
+    disadvantage: Number(form.disadvantage.value) || 0,
+    tactic: form.tactic?.value || ""
   });
 
   // Instance + Promise manuelle pour pouvoir forcer le premier plan (bringToFront)
