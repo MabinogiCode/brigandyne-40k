@@ -92,7 +92,7 @@
         {{#each items.weapon as |i|}}
           <li class="item" data-item-id="{{i.id}}">
             <img class="item-img" src="{{i.img}}" data-action="rollItem" data-tooltip="Attaquer" />
-            <span class="item-name" data-action="itemEdit">{{i.name}}</span>
+            <span class="item-name" data-action="itemEdit" data-tooltip="{{descTip i.system.specialText i.system.description}}">{{i.name}}</span>
             <span class="item-detail">{{i.system.damageLabel}}</span>
             <span class="item-detail">{{#if i.system.isMelee}}All. {{i.system.reach}}{{else}}Port. {{i.system.range}}m{{/if}}</span>
             <span class="item-controls">
@@ -111,7 +111,7 @@
         {{#each items.armor as |i|}}
           <li class="item {{#if i.system.equipped}}equipped{{/if}}" data-item-id="{{i.id}}">
             <img class="item-img" src="{{i.img}}" data-action="toggleEquip" data-tooltip="Équiper/Retirer" />
-            <span class="item-name" data-action="itemEdit">{{i.name}}</span>
+            <span class="item-name" data-action="itemEdit" data-tooltip="{{descTip i.system.specialText i.system.description}}">{{i.name}}</span>
             <span class="item-detail">Prot. {{i.system.protection}}</span>
             <span class="item-detail">{{localize (concat "BRIG.Armor." i.system.coverage)}}</span>
             <span class="item-controls">
@@ -131,9 +131,9 @@
         <button type="button" data-action="itemCreate" data-type="augmentation"><i class="fa-solid fa-plus"></i> Augm.</button></span>
       </div>
       <ol class="items-list">
-        {{#each items.equipment as |i|}}<li class="item" data-item-id="{{i.id}}"><img class="item-img" src="{{i.img}}" data-action="itemEdit" /><span class="item-name" data-action="itemEdit">{{i.name}}</span><span class="item-detail">×{{i.system.quantity}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
-        {{#each items.ammunition as |i|}}<li class="item" data-item-id="{{i.id}}"><img class="item-img" src="{{i.img}}" data-action="itemEdit" /><span class="item-name" data-action="itemEdit">{{i.name}}</span><span class="item-detail">×{{i.system.quantity}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
-        {{#each items.augmentation as |i|}}<li class="item" data-item-id="{{i.id}}"><img class="item-img" src="{{i.img}}" data-action="itemEdit" /><span class="item-name" data-action="itemEdit">{{i.name}}</span><span class="item-detail">{{i.system.location}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+        {{#each items.equipment as |i|}}<li class="item" data-item-id="{{i.id}}"><img class="item-img" src="{{i.img}}" data-action="itemEdit" /><span class="item-name" data-action="itemEdit" data-tooltip="{{descTip i.system.effect i.system.description}}">{{i.name}}</span><span class="item-detail">×{{i.system.quantity}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+        {{#each items.ammunition as |i|}}<li class="item" data-item-id="{{i.id}}"><img class="item-img" src="{{i.img}}" data-action="itemEdit" /><span class="item-name" data-action="itemEdit" data-tooltip="{{descTip i.system.effect i.system.description}}">{{i.name}}</span><span class="item-detail">×{{i.system.quantity}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+        {{#each items.augmentation as |i|}}<li class="item" data-item-id="{{i.id}}"><img class="item-img" src="{{i.img}}" data-action="itemEdit" /><span class="item-name" data-action="itemEdit" data-tooltip="{{descTip i.system.effect i.system.description}}">{{i.name}}</span><span class="item-detail">{{i.system.location}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
       </ol>
     </div>
   </div>
@@ -144,13 +144,13 @@
       <div class="items-section">
         <div class="section-head"><h3>Spécialités</h3><span><button type="button" data-action="learnAtout" data-kind="specialty" data-tooltip="Apprendre (XP)"><i class="fa-solid fa-graduation-cap"></i></button><button type="button" data-action="itemCreate" data-type="specialty"><i class="fa-solid fa-plus"></i></button></span></div>
         <ol class="items-list">
-          {{#each items.specialty as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="rollItem" data-tooltip="Tester">{{i.name}}</span><span class="item-detail">+{{i.system.bonus}}</span><span class="item-controls"><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+          {{#each items.specialty as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="rollItem" data-tooltip="{{descTip i.system.effect i.system.description}}">{{i.name}}</span><span class="item-detail">+{{i.system.bonus}}</span><span class="item-controls"><a data-action="rollItem" data-tooltip="Tester"><i class="fa-solid fa-dice-d10"></i></a><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
         </ol>
       </div>
       <div class="items-section">
         <div class="section-head"><h3>Talents</h3><span><button type="button" data-action="learnAtout" data-kind="talent" data-tooltip="Apprendre (XP)"><i class="fa-solid fa-graduation-cap"></i></button><button type="button" data-action="itemCreate" data-type="talent"><i class="fa-solid fa-plus"></i></button></span></div>
         <ol class="items-list">
-          {{#each items.talent as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="itemEdit">{{i.name}}</span><span class="item-detail">{{i.system.usage}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+          {{#each items.talent as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="itemEdit" data-tooltip="{{descTip i.system.effect i.system.description}}">{{i.name}}</span><span class="item-detail">{{i.system.usage}}</span><span class="item-controls"><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
         </ol>
       </div>
     </div>
@@ -158,14 +158,14 @@
       <div class="items-section">
         <div class="section-head"><h3>Vices / Vertus / Traits</h3><button type="button" data-action="itemCreate" data-type="trait"><i class="fa-solid fa-plus"></i></button></div>
         <ol class="items-list">
-          {{#each items.trait as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="itemEdit">{{i.name}}</span><span class="item-detail">{{#if i.system.rating}}{{i.system.rating}}{{/if}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+          {{#each items.trait as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="itemEdit" data-tooltip="{{descTip i.system.effect i.system.description}}">{{i.name}}</span><span class="item-detail">{{#if i.system.rating}}{{i.system.rating}}{{/if}}</span><span class="item-controls"><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
         </ol>
       </div>
       <div class="items-section">
         <div class="section-head"><h3>Mutations / Blessures</h3><span><button type="button" data-action="itemCreate" data-type="mutation"><i class="fa-solid fa-plus"></i></button><button type="button" data-action="itemCreate" data-type="criticalInjury"><i class="fa-solid fa-plus"></i></button></span></div>
         <ol class="items-list">
-          {{#each items.mutation as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="itemEdit">{{i.name}}</span><span class="item-detail">{{i.system.mutationType}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
-          {{#each items.criticalInjury as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="itemEdit">{{i.name}}</span><span class="item-detail">{{i.system.location}}</span><span class="item-controls"><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+          {{#each items.mutation as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="itemEdit" data-tooltip="{{descTip i.system.effect i.system.description}}">{{i.name}}</span><span class="item-detail">{{i.system.mutationType}}</span><span class="item-controls"><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+          {{#each items.criticalInjury as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="itemEdit" data-tooltip="{{descTip i.system.effect i.system.description}}">{{i.name}}</span><span class="item-detail">{{i.system.location}}</span><span class="item-controls"><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
         </ol>
       </div>
     </div>
@@ -182,13 +182,13 @@
     <div class="items-section">
       <div class="section-head"><h3><i class="fa-solid fa-brain"></i> Pouvoirs psychiques</h3><button type="button" data-action="itemCreate" data-type="psychicPower"><i class="fa-solid fa-plus"></i></button></div>
       <ol class="items-list">
-        {{#each items.psychicPower as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="rollItem" data-tooltip="Manifester">{{i.name}}</span><span class="item-detail">{{localize (concat "BRIG.Discipline." i.system.discipline)}}</span><span class="item-detail">{{signed i.system.difficulty}}</span><span class="item-controls"><a data-action="rollItem"><i class="fa-solid fa-dice-d10"></i></a><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+        {{#each items.psychicPower as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="rollItem" data-tooltip="{{descTip i.system.effect i.system.description}}">{{i.name}}</span><span class="item-detail">{{localize (concat "BRIG.Discipline." i.system.discipline)}}</span><span class="item-detail">{{signed i.system.difficulty}}</span><span class="item-controls"><a data-action="rollItem"><i class="fa-solid fa-dice-d10"></i></a><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
       </ol>
     </div>
     <div class="items-section">
       <div class="section-head"><h3><i class="fa-solid fa-cross"></i> Actes de Foi</h3><button type="button" data-action="itemCreate" data-type="faithAct"><i class="fa-solid fa-plus"></i></button></div>
       <ol class="items-list">
-        {{#each items.faithAct as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="rollItem" data-tooltip="Invoquer">{{i.name}}</span><span class="item-detail">{{signed i.system.difficulty}}</span><span class="item-controls"><a data-action="rollItem"><i class="fa-solid fa-dice-d10"></i></a><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
+        {{#each items.faithAct as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="rollItem" data-tooltip="{{descTip i.system.effect i.system.description}}">{{i.name}}</span><span class="item-detail">{{signed i.system.difficulty}}</span><span class="item-controls"><a data-action="rollItem"><i class="fa-solid fa-dice-d10"></i></a><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
       </ol>
     </div>
   </div>

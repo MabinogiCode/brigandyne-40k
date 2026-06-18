@@ -22,6 +22,14 @@ export function registerHandlebarsHelpers() {
     for (let i = 0; i < (Number(n) || 0); i++) out += block.fn(i);
     return out;
   });
+  // Première valeur non vide, nettoyée du HTML — pour les info-bulles de description.
+  H.registerHelper("descTip", (...args) => {
+    for (const v of args.slice(0, -1)) {
+      const s = String(v ?? "").replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
+      if (s) return s;
+    }
+    return "";
+  });
 }
 
 // Partials nommés (clé = nom utilisable avec {{> nom}})
