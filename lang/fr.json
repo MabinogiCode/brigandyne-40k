@@ -416,6 +416,7 @@
     },
     "Welcome": {
       "title": "Warhammer 40,000 : Brigandyne",
+      "reopen": "Bienvenue",
       "lead": "Bienvenue dans le sombre futur. Ici, il n'y a que la guerre. Ce système adapte Brigandyne 2e édition à l'univers impitoyable de Warhammer 40,000 : d100 sous compétence, six degrés de réussite, Destin, Psykers du Warp et Vraie Foi.",
       "feature": {
         "dice": "Jets d100 automatisés : degrés, Avantages/Désavantages, jets opposés et Destin.",

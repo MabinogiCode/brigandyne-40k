@@ -81,6 +81,14 @@ Hooks.on("renderActorDirectory", (app, html) => {
   btn.addEventListener("click", () => new BrigCharGen().render(true));
   header.appendChild(btn);
 
+  // Écran d'accueil : accessible à tous (joueurs compris) pour rouvrir la bannière
+  const welcome = document.createElement("button");
+  welcome.type = "button";
+  welcome.className = "brig-welcome-launch";
+  welcome.innerHTML = `<i class="fa-solid fa-book-skull"></i> ${game.i18n.localize("BRIG.Welcome.reopen")}`;
+  welcome.addEventListener("click", () => new BrigWelcome().render(true));
+  header.appendChild(welcome);
+
   // Outil MJ : gestion des verrous de création
   if (game.user.isGM) {
     const admin = document.createElement("button");
