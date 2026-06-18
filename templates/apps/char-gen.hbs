@@ -94,6 +94,11 @@
         {{/if}}
 
         {{#if methodChosen}}
+        <div class="gen-context">
+          <span><i class="fa-solid fa-dna"></i> {{#if speciesName}}{{speciesName}}{{else}}<em>espèce ?</em>{{/if}}</span>
+          <span><i class="fa-solid fa-briefcase"></i> {{#if careerName}}{{careerName}}{{else}}<em>carrière ?</em>{{/if}}</span>
+          <span><i class="fa-solid fa-user-tag"></i> {{localize (concat "BRIG.Role." draft.role)}}</span>
+        </div>
         {{#if (eq gen.method 'roll')}}
           <div class="gen-roll-bar">
             {{#if rollLocked}}
@@ -146,6 +151,8 @@
 
         <div class="derived-preview">
           <span>PV <strong>{{pv}}</strong></span><span>SF <strong>{{sf}}</strong></span>
+          {{#if (eq gen.method 'roll')}}<span data-tooltip="Somme des 12 résultats conservés (hors dé écarté)">Somme des dés <strong>{{gen.diceSum}}</strong></span>{{/if}}
+          <span data-tooltip="Total des 13 compétences (base d'espèce + répartition) — pour jauger la puissance globale">Total compétences <strong>{{gen.charTotal}}</strong></span>
           {{#unless gen.valid}}<span class="gen-warn"><i class="fa-solid fa-triangle-exclamation"></i> {{#if (eq gen.method 'roll')}}Assigne chaque résultat (un par compétence){{else}}≤ {{gen.pointsTotal}} pts, max 20/comp{{/if}}</span>{{/unless}}
         </div>
         {{/if}}

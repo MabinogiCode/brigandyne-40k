@@ -252,7 +252,10 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
         method: this.gen.method, rolled: this.gen.rolled, rolledDisplay, dropped: this.gen.dropped, hasPool: this.gen.pool.length === 12,
         rows: genRows, psyBase: this._base("psy"), psyTotal: totals.psy, psyCap: BRIGANDYNE.mechanics.maxCharCreation,
         pointsTotal: POINTS_TOTAL, pointsUsed: this._pointsUsed(), pointsRemaining: POINTS_TOTAL - this._pointsUsed(),
-        valid: this._genValid()
+        valid: this._genValid(),
+        // Récap MJ : somme des dés conservés (méthode aléatoire) et total des compétences
+        diceSum: this.gen.pool.reduce((s, v) => s + (Number(v) || 0), 0),
+        charTotal: CHARACTERISTIC_KEYS.reduce((s, k) => s + (Number(totals[k]) || 0), 0)
       }
     };
   }

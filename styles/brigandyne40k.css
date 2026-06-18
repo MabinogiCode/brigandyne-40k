@@ -535,3 +535,11 @@
 .brigandyne-40k .header-toolbar button:hover { border-color: var(--brig-gold); color: var(--brig-gold); }
 .brigandyne-40k .chat-card .card-button.sf { color: #8fb7ff; }
 .brigandyne-40k .chat-card .card-button.riposte { color: #ff9d6e; }
+
+/* --- v0.5.2 : bandeau de contexte (étape Caractéristiques du wizard) --- */
+.brigandyne-40k .gen-context { display: flex; flex-wrap: wrap; gap: .25rem 1.1rem; align-items: center;
+  margin-bottom: .55rem; padding: .35rem .6rem; background: var(--brig-panel-2); border: 1px solid var(--brig-border);
+  border-left: 3px solid var(--brig-gold); border-radius: 3px; font-size: .86rem; }
+.brigandyne-40k .gen-context i { color: var(--brig-gold); margin-right: .25rem; }
+.brigandyne-40k .gen-context em { color: var(--brig-muted); font-style: italic; }
+.brigandyne-40k .derived-preview span[data-tooltip] { cursor: help; }
