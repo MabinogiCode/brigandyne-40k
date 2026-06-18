@@ -303,7 +303,7 @@ BRIGANDYNE.species = {
   squat: {
     label: "BRIG.Species.squat",
     base: { com: 30, cns: 25, dis: 25, end: 30, for: 25, tec: 30, psy: 0, mou: 20, per: 20, soc: 20, sur: 20, tir: 20, vol: 30 },
-    limits: { mou: 60 }, destin: 2, special: ["nyctalopie", "sfPlus1", "pvPlus1"]
+    limits: { mou: 60 }, destin: 2, special: ["nyctalopie"]
   },
   ratling: {
     label: "BRIG.Species.ratling",

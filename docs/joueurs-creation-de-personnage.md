@@ -16,7 +16,7 @@ Avant les chiffres, **une phrase** : qui es-tu ? « Une bidasse de la Garde resc
 | Espèce | En deux mots | Spécial | Destin |
 |---|---|---|---|
 | **Humain** | Polyvalent, tenace, l'épine dorsale de l'Imperium | — | **3** |
-| **Squat** | Abhumain trapu, robuste, ingénieur né | Nyctalopie, +1 SF, +1 PV | 2 |
+| **Squat** | Abhumain trapu, robuste, ingénieur né | Nyctalopie | 2 |
 | **Ratling** | Petit, sans-gêne, **tireur d'élite** hors pair | — | 3 |
 | **Ogryn** | Colosse simplet, **force** légendaire | +2 PV, Résistance aux maladies | 1 |
 | **Mutant** | Marqué par une déviance stable, méprisé | Peut développer des **Mutations** | 2 |
