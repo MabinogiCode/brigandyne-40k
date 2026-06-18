@@ -312,7 +312,7 @@ BRIGANDYNE.species = {
   },
   ogryn: {
     label: "BRIG.Species.ogryn",
-    base: { com: 35, cns: 10, dis: 10, end: 40, for: 50, tec: 15, psy: 0, mou: 20, per: 20, soc: 15, sur: 30, tir: 25, vol: 30 },
+    base: { com: 35, cns: 10, dis: 10, end: 40, for: 50, tec: 15, psy: 0, mou: 20, per: 20, soc: 15, sur: 30, tir: 25, vol: 25 },
     limits: { cns: 30, soc: 50 }, destin: 1, special: ["pvPlus2", "resMaladies"]
   },
   mutant: {
