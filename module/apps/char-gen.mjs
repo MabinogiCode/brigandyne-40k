@@ -201,7 +201,7 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     const genRows = KEYS12.map(k => ({
       key: k, abbr: BRIGANDYNE.characteristics[k].abbrev, tip: charTip(k), base: this._base(k), total: totals[k],
       assignedIdx: this.gen.assign[k] ?? "", point: this.gen.points[k] ?? 0, psyDraw: this.gen.psyDraw[k] ?? 0,
-      options: this.gen.pool.map((v, i) => ({ i, v, disabled: usedIdx.has(i) && this.gen.assign[k] !== i }))
+      options: this.gen.pool.map((v, i) => ({ i, v, used: usedIdx.has(i) && this.gen.assign[k] !== i }))
     }));
     // Bandeau des dés tirés : grise les valeurs déjà assignées (index = position dans le pool)
     let _pp = 0;
@@ -264,6 +264,8 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     const el = this.element;
     el.querySelectorAll("[data-refresh]").forEach(s => s.addEventListener("change", () => { this._capture(); this._persist(); this.render(); }));
     el.querySelectorAll("[name^='points.'],[name^='psyDraw.']").forEach(i => i.addEventListener("input", () => this._refreshTotals()));
+    // Assignation des dés : handler dédié (échange, source de vérité = this.gen.assign)
+    el.querySelectorAll('select[name^="assign."]').forEach(s => s.addEventListener("change", () => this._onAssign(s)));
 
     // Réagir en direct à un déverrouillage du MJ (modif. du flag de ce joueur)
     if (this.locksApply && this._userHook === null) {
@@ -291,18 +293,38 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     const rem = el.querySelector("[data-points-remaining]"); if (rem) rem.textContent = POINTS_TOTAL - this._pointsUsed();
   }
 
+  /** Capture points & prélèvements PSY depuis le DOM. (L'assignation des dés est gérée par _onAssign.) */
   _captureGen() {
     const el = this.element; if (!el) return;
-    this.gen.assign = {};
     for (const k of KEYS12) {
-      const as = el.querySelector(`[name="assign.${k}"]`);
-      if (as && as.value !== "") this.gen.assign[k] = Number(as.value);
       const pt = el.querySelector(`[name="points.${k}"]`);
       if (pt) this.gen.points[k] = Math.clamp(Number(pt.value) || 0, 0, 20);
       const pd = el.querySelector(`[name="psyDraw.${k}"]`);
       if (pd) this.gen.psyDraw[k] = Math.clamp(Number(pd.value) || 0, 0, 10);
     }
     this.draft.chars = this._genTotals();
+  }
+
+  /** Assigne un dé (par index) à une caractéristique, avec échange si le dé est déjà pris ailleurs. */
+  _onAssign(sel) {
+    this._captureGen();                                  // fige points/PSY courants (sans toucher à assign)
+    const key = sel.name.slice("assign.".length);
+    const val = sel.value === "" ? null : Number(sel.value);
+    const prev = this.gen.assign[key] ?? null;
+    if (val == null) {
+      delete this.gen.assign[key];
+    } else {
+      // Le dé est-il déjà attribué à une autre caractéristique ? → échange.
+      for (const k of KEYS12) {
+        if (k !== key && this.gen.assign[k] === val) {
+          if (prev != null) this.gen.assign[k] = prev;   // l'autre récupère l'ancien dé de `key`
+          else delete this.gen.assign[k];                // sinon il est libéré
+        }
+      }
+      this.gen.assign[key] = val;
+    }
+    this._persist();
+    this.render();
   }
 
   _capture() {

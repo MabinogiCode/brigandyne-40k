@@ -2,7 +2,7 @@
   "id": "brigandyne-40k",
   "title": "Warhammer 40,000 : Brigandyne",
   "description": "Adaptation du système Brigandyne 2e édition (James Tornade) à l'univers de Warhammer 40,000. Simulateur grimdark « Chair & Sang » : d100 sous caractéristique, six degrés de réussite, Destin, Psykers du Warp et Vraie Foi. Système non officiel et non commercial.",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "compatibility": {
     "minimum": "13",
     "verified": "14"

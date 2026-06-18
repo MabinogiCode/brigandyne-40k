@@ -127,9 +127,9 @@
                 <th class="rh">{{#if (eq gen.method 'roll')}}Tirage{{else}}Points{{/if}}</th>
                 {{#each gen.rows}}<td>
                   {{#if (eq ../gen.method 'roll')}}
-                    <select name="assign.{{key}}" data-refresh>
+                    <select name="assign.{{key}}">
                       <option value="">—</option>
-                      {{#each options}}<option value="{{i}}" {{#if (eq i ../assignedIdx)}}selected{{/if}} {{#if disabled}}disabled{{/if}}>{{v}}</option>{{/each}}
+                      {{#each options}}<option value="{{i}}" {{#if (eq i ../assignedIdx)}}selected{{/if}}>{{v}}{{#if used}} •{{/if}}</option>{{/each}}
                     </select>
                   {{else}}
                     <input type="number" name="points.{{key}}" value="{{point}}" min="0" max="20" />
