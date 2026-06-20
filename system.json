@@ -48,11 +48,12 @@
     { "name": "vehicles", "label": "Véhicules", "path": "packs/vehicles", "type": "Actor", "system": "brigandyne-40k" },
     { "name": "augmentations", "label": "Augmentations", "path": "packs/augmentations", "type": "Item", "system": "brigandyne-40k" },
     { "name": "mutations", "label": "Mutations", "path": "packs/mutations", "type": "Item", "system": "brigandyne-40k" },
-    { "name": "critical-injuries", "label": "Blessures graves", "path": "packs/critical-injuries", "type": "Item", "system": "brigandyne-40k" }
+    { "name": "critical-injuries", "label": "Blessures graves", "path": "packs/critical-injuries", "type": "Item", "system": "brigandyne-40k" },
+    { "name": "archetypes", "label": "Archétypes", "path": "packs/archetypes", "type": "Item", "system": "brigandyne-40k" }
   ],
   "packFolders": [
     { "name": "Warhammer 40K : Brigandyne", "sorting": "m", "color": "#32404d", "packs": [
-      "weapons", "armor", "ammunition", "augmentations", "careers", "species", "specialties", "talents", "psychic-powers", "faith-acts", "mutations", "critical-injuries", "bestiary", "vehicles"
+      "weapons", "armor", "ammunition", "augmentations", "careers", "species", "archetypes", "specialties", "talents", "psychic-powers", "faith-acts", "mutations", "critical-injuries", "bestiary", "vehicles"
     ] }
   ],
   "grid": {

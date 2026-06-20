@@ -32,7 +32,8 @@ export class BrigActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       rest: BrigActorSheet.#onRest,
       endScenario: BrigActorSheet.#onEndScenario,
       salary: BrigActorSheet.#onSalary,
-      corruption: BrigActorSheet.#onCorruption
+      corruption: BrigActorSheet.#onCorruption,
+      recalcStats: BrigActorSheet.#onRecalcStats
     }
   };
 
@@ -52,6 +53,11 @@ export class BrigActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static #onEndScenario(event, target) { this.actor.endScenario(); }
   static #onSalary(event, target) { this.actor.rollSalary(); }
+
+  static async #onRecalcStats() {
+    await this.actor.update({ "system.schemaVersion": game.system.version });
+    ui.notifications?.info(game.i18n.format("BRIG.RecalcStats.done", { version: game.system.version }));
+  }
 
   /** Test de Corruption : choisit dieu / source / caractéristique. */
   static async #onCorruption(event, target) {

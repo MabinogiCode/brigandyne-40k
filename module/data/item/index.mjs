@@ -1,5 +1,5 @@
 import { WeaponModel, ArmorModel, AmmunitionModel, EquipmentModel, AugmentationModel } from "./gear.mjs";
-import { SpeciesModel, CareerModel, SpecialtyModel, TalentModel, TraitModel, MutationModel, CriticalInjuryModel } from "./build.mjs";
+import { ArchetypeModel, SpeciesModel, CareerModel, SpecialtyModel, TalentModel, TraitModel, MutationModel, CriticalInjuryModel } from "./build.mjs";
 import { PsychicPowerModel, FaithActModel } from "./powers.mjs";
 
 export const ITEM_MODELS = {
@@ -8,6 +8,7 @@ export const ITEM_MODELS = {
   ammunition: AmmunitionModel,
   equipment: EquipmentModel,
   augmentation: AugmentationModel,
+  archetype: ArchetypeModel,
   species: SpeciesModel,
   career: CareerModel,
   specialty: SpecialtyModel,
@@ -21,6 +22,6 @@ export const ITEM_MODELS = {
 
 export {
   WeaponModel, ArmorModel, AmmunitionModel, EquipmentModel, AugmentationModel,
-  SpeciesModel, CareerModel, SpecialtyModel, TalentModel, TraitModel, MutationModel, CriticalInjuryModel,
+  ArchetypeModel, SpeciesModel, CareerModel, SpecialtyModel, TalentModel, TraitModel, MutationModel, CriticalInjuryModel,
   PsychicPowerModel, FaithActModel
 };

@@ -41,6 +41,8 @@
       <button type="button" data-action="endScenario" data-tooltip="Fin de scénario : repos d'une semaine + Destin rechargé"><i class="fa-solid fa-flag-checkered"></i> Fin de scénario</button>
       <button type="button" data-action="salary" data-tooltip="Jet de salaire hebdomadaire (Trônes Gelt)"><i class="fa-solid fa-coins"></i> Salaire</button>
       <button type="button" data-action="corruption" data-tooltip="Test de résistance à la Corruption"><i class="fa-solid fa-skull"></i> Corruption</button>
+      <button type="button" data-action="recalcStats" data-tooltip="Recalcule tous les attributs secondaires et enregistre la version du schéma"><i class="fa-solid fa-calculator"></i> Recalculer</button>
+      <input type="hidden" name="system.schemaVersion" value="{{system.schemaVersion}}" />
     </div>
   </div>
 </header>
@@ -72,6 +74,7 @@
 
     <div class="secondary-stats">
       <div class="stat"><label>Initiative</label><span>{{system.initiative.value}}</span></div>
+      <div class="stat"><label data-tooltip="Seuil de Blessure (PV/2) — des dégâts supérieurs à ce seuil en un seul coup infligent une blessure grave">Seuil Blessure</label><span>{{system.pv.seuil}}</span></div>
       <div class="stat"><label>Protection</label><span>{{system.protection.value}}</span></div>
       <div class="stat"><label>Encombrement</label><span>{{system.encumbrance.value}}</span></div>
       <div class="stat"><label>Niveau de vie</label>
