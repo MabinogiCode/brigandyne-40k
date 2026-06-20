@@ -5,7 +5,7 @@ import { fields, int, num, str, bool, html, resource, choice } from "../fields.j
  * `pv` = Structure (compatible barre de jeton primaire). `protection` = Blindage.
  */
 export class VehicleModel extends (foundry.abstract.TypeDataModel as any) {
-  static defineSchema() {
+  static defineSchema(): any {
     return {
       vehicleType: choice({ terrestre: "Terrestre", volant: "Volant", spatial: "Spatial" }, "terrestre"),
       subtitle: str(""),

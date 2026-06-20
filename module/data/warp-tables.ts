@@ -63,7 +63,7 @@ function lookup(table, roll) {
  * @param {Actor} actor
  * @param {"phenomenon"|"peril"} kind
  */
-export async function postWarpResult(actor, kind) {
+export async function postWarpResult(actor, kind): Promise<any> {
   let table = kind === "peril" ? PERILS : PHENOMENA;
   let title = kind === "peril" ? "Péril du Warp" : "Phénomène psychique";
   let r = await new Roll("1d100").evaluate();
@@ -78,7 +78,7 @@ export async function postWarpResult(actor, kind) {
     title, roll: r.total, name: entry[2], effect: entry[3], peril: kind === "peril" || title === "Péril du Warp"
   });
   return ChatMessage.create({
-    speaker: ChatMessage.getSpeaker({ actor }),
-    content, rolls: [r], sound: CONFIG.sounds.dice
-  });
+    speaker: ChatMessage.getSpeaker({ actor: actor as any }),
+    content, rolls: [r as any], sound: CONFIG.sounds.dice
+  } as any);
 }

@@ -32,7 +32,7 @@ export class BaseActorModel extends (foundry.abstract.TypeDataModel as any) {
   declare lifestyle: string;
   declare wealth: Record<string, number>;
   declare biography: string;
-  static defineSchema() {
+  static defineSchema(): any {
     return {
       characteristics: actorCharacteristics(),
       pv: resource(10),

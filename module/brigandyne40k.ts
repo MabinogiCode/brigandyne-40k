@@ -43,7 +43,7 @@ Hooks.once("init", async function () {
   DSC.registerSheet(Actor, SYSTEM_ID, BrigCharacterSheet as any, { types: ["character"], makeDefault: true, label: "BRIG.Sheet.character" });
   DSC.registerSheet(Actor, SYSTEM_ID, BrigNpcSheet as any, { types: ["npc"], makeDefault: true, label: "BRIG.Sheet.npc" });
   DSC.registerSheet(Actor, SYSTEM_ID, BrigVehicleSheet as any, { types: ["vehicle"], makeDefault: true, label: "BRIG.Sheet.vehicle" });
-  DSC.registerSheet(Item, SYSTEM_ID, BrigItemSheet as any, { makeDefault: true, label: "BRIG.Sheet.item" });
+  DSC.registerSheet(Item as any, SYSTEM_ID, BrigItemSheet as any, { makeDefault: true, label: "BRIG.Sheet.item" });
 
   registerHandlebarsHelpers();
   registerChatListeners();
@@ -53,14 +53,14 @@ Hooks.once("init", async function () {
 
 Hooks.once("i18nInit", function () {
   // États / conditions comme status effects
-  CONFIG.statusEffects = Object.entries(BRIGANDYNE.conditions).map(([id, c]) => ({
+  (CONFIG as any).statusEffects = Object.entries(BRIGANDYNE.conditions).map(([id, c]: [string, any]) => ({
     id,
     name: game.i18n.localize(c.label),
     img: c.icon
   }));
-  CONFIG.specialStatusEffects = foundry.utils.mergeObject(CONFIG.specialStatusEffects ?? {}, {
+  (CONFIG as any).specialStatusEffects = foundry.utils.mergeObject(CONFIG.specialStatusEffects ?? {}, {
     DEFEATED: "vaincu"
-  });
+  } as any);
 });
 
 Hooks.once("ready", function () {

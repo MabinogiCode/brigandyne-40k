@@ -27,7 +27,7 @@ export class BrigItemSheet extends (HandlebarsApplicationMixin(ItemSheetV2) as a
 
   static async #onEditImage(event, target) {
     const attr = target.dataset.edit || "img";
-    const current = foundry.utils.getProperty(this.document, attr);
+    const current = foundry.utils.getProperty(this.document, attr) as string | undefined;
     const fp = new foundry.applications.apps.FilePicker.implementation({
       type: "image", current,
       callback: path => this.document.update({ [attr]: path })
@@ -59,9 +59,9 @@ export class BrigItemSheet extends (HandlebarsApplicationMixin(ItemSheetV2) as a
     if (["weapon", "armor"].includes(this.item.type)) {
       const wt = this.item.system.weaponType;
       ctx.availableQualities = Object.entries(BRIGANDYNE.weaponQualities)
-        .filter(([, q]) => this.item.type === "armor" ? true
+        .filter(([, q]: [string, any]) => this.item.type === "armor" ? true
           : (q.target === "both" || q.target === wt))
-        .map(([key, q]) => ({ key, label: q.label, hasValue: q.hasValue }));
+        .map(([key, q]: [string, any]) => ({ key, label: q.label, hasValue: q.hasValue }));
     }
     ctx.charChoices = BRIGANDYNE.characteristics;
     return ctx;

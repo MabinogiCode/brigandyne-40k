@@ -4,7 +4,7 @@ import { BrigActorSheet } from "./base-actor-sheet.js";
  * Feuille de PNJ / créature.
  */
 export class BrigNpcSheet extends BrigActorSheet {
-  static DEFAULT_OPTIONS = {
+  static override DEFAULT_OPTIONS: any = {
     classes: ["npc"],
     position: { width: 680, height: 640 }
   };

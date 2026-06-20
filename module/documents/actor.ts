@@ -51,8 +51,8 @@ export class BrigActor extends (Actor as any) {
 
   getRollData() {
     const data = { ...super.getRollData() };
-    if (this.system.characteristics) {
-      for (const [k, c] of Object.entries(this.system.characteristics)) {
+    if ((this.system as any).characteristics) {
+      for (const [k, c] of Object.entries((this.system as any).characteristics) as [string, any][]) {
         data[k] = c.total;
         data[`${k}b`] = c.bonus;
       }
@@ -108,8 +108,8 @@ export class BrigActor extends (Actor as any) {
 
     // MODO de la cible ciblée (mêlée)
     const target = Array.from(game.user.targets)[0]?.actor;
-    if (target && item.system.isMelee && target.system?.characteristics?.com) {
-      const modo = BRIGANDYNE.mechanics.modoCenter - target.system.characteristics.com.total;
+    if (target && item.system.isMelee && (target.system as any)?.characteristics?.com) {
+      const modo = BRIGANDYNE.mechanics.modoCenter - (target.system as any).characteristics.com.total;
       modifiers.push({ label: `MODO (${target.name})`, value: modo });
     }
 
@@ -159,11 +159,11 @@ export class BrigActor extends (Actor as any) {
     if (!test) return null;   // annulé
 
     // Comptabilise l'usage ; applique le coût de dépassement (PV).
-    const updates = { "system.dailyUse.powers": used + 1 };
+    const updates: Record<string, any> = { "system.dailyUse.powers": used + 1 };
     if (overflow) {
-      const cost = item.system.isMinor ? 2 : 4;       // tour : 2 PV ; sortilège : 4 PV
+      const cost = item.system.isMinor ? 2 : 4;
       updates["system.pv.value"] = Math.max(0, (this.system.pv?.value ?? 0) - cost);
-      ui.notifications?.warn(game.i18n.format("BRIG.Warn.psyOverflow", { cost }));
+      ui.notifications?.warn(game.i18n.format("BRIG.Warn.psyOverflow", { cost: cost as any }));
     }
     await this.update(updates);
 
@@ -199,9 +199,9 @@ export class BrigActor extends (Actor as any) {
   }
 
   /** Coeur commun : ouvre le dialogue (sauf raccourci) puis lance le test. */
-  async _performTest(testData, { skipDialog = false, event } = {}) {
+  async _performTest(testData, { skipDialog = false, event }: { skipDialog?: boolean; event?: any } = {}) {
     const fastKey = event?.shiftKey || event?.ctrlKey;
-    let dialogResult = { difficulty: 0, situational: 0, advantage: 0, disadvantage: 0, tactic: "" };
+    let dialogResult: any = { difficulty: 0, situational: 0, advantage: 0, disadvantage: 0, tactic: "" };
     if (!skipDialog && !fastKey) {
       dialogResult = await promptTest({ actor: this, testData });
       if (dialogResult === null) return null;     // annulé
@@ -266,7 +266,7 @@ export class BrigActor extends (Actor as any) {
   }
 
   /** Tire une blessure grave du compendium (déclenché à 0 PV). */
-  async drawCriticalInjury() {
+  async drawCriticalInjury(): Promise<any> {
     const pack = game.packs.get("brigandyne-40k.critical-injuries");
     if (!pack) return;
     await pack.getIndex();
@@ -275,9 +275,9 @@ export class BrigActor extends (Actor as any) {
     const pick = list[Math.floor(Math.random() * list.length)];
     const doc = await pack.getDocument(pick._id);
     const content = await renderTemplate("systems/brigandyne-40k/templates/chat/critical-card.hbs", {
-      actorName: this.name, name: doc.name, location: doc.system.location, effect: doc.system.effect
+      actorName: this.name, name: doc.name, location: (doc.system as any).location, effect: (doc.system as any).effect
     });
-    return ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor: this }), content });
+    return ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor: this as any }), content } as any);
   }
 
   /** Nombre de cases de progression accessibles pour `key` selon la carrière. */
@@ -346,8 +346,8 @@ export class BrigActor extends (Actor as any) {
     const career = this.items.find(i => i.type === "career");
     const careerList = new Set((isTalent ? career?.system?.talents : career?.system?.specialties) ?? []);
 
-    const options = pack.index.contents.sort((a, b) => a.name.localeCompare(b.name))
-      .map(e => `<option value="${e._id}">${careerList.has(e.name) ? "★ " : ""}${e.name}</option>`).join("");
+    const options = pack.index.contents.sort((a, b) => (a as any).name.localeCompare((b as any).name))
+      .map(e => `<option value="${e._id}">${careerList.has((e as any).name) ? "★ " : ""}${(e as any).name}</option>`).join("");
     const content = `<form class="brigandyne-40k">
       <p>Coût : <strong>${baseCost} XP</strong> (carrière) · <strong>${baseCost + offExtra} XP</strong> (hors-carrière, ★ = de carrière)<br>
       Disponible : <strong>${this.system.xp.available} XP</strong></p>
@@ -356,9 +356,9 @@ export class BrigActor extends (Actor as any) {
     const id = await foundry.applications.api.DialogV2.prompt({
       window: { title: isTalent ? "Apprendre un talent" : "Apprendre une spécialité", icon: "fa-solid fa-graduation-cap" },
       content, ok: { label: "Apprendre", callback: (ev, btn) => btn.form.pick.value }, rejectClose: false
-    }).catch(() => null);
+    } as any).catch(() => null);
     if (!id) return;
-    const doc = await pack.getDocument(id);
+    const doc = await pack.getDocument(id as string);
     const cost = baseCost + (careerList.has(doc.name) ? 0 : offExtra);
     if ((this.system.xp.available ?? 0) < cost) return ui.notifications?.warn(game.i18n.format("BRIG.Warn.noXp", { cost }));
     await this.createEmbeddedDocuments("Item", [doc.toObject()]);
@@ -381,7 +381,7 @@ export class BrigActor extends (Actor as any) {
   async spendSangFroid(amount = 0) {
     const sf = this.system.sf;
     if (!sf || sf.value < amount) {
-      ui.notifications?.warn(game.i18n.format("BRIG.Warn.noSf", { cost: amount }));
+      ui.notifications?.warn(game.i18n.format("BRIG.Warn.noSf", { cost: amount as any }));
       return false;
     }
     await this.update({ "system.sf.value": sf.value - amount });
@@ -413,7 +413,7 @@ export class BrigActor extends (Actor as any) {
       "system.dailyUse.powers": 0,
       "system.dailyUse.faith": 0
     });
-    ui.notifications?.info(game.i18n.format("BRIG.Info.rested", { nights, pv: gainedPv, sf: gainedSf }));
+    ui.notifications?.info(game.i18n.format("BRIG.Info.rested", { nights: nights as any, pv: gainedPv as any, sf: gainedSf as any }));
   }
 
   /** Fin de scénario : une semaine de repos + Destin rechargé à son maximum. */
@@ -425,7 +425,7 @@ export class BrigActor extends (Actor as any) {
   }
 
   /** Jet de salaire hebdomadaire selon le niveau de vie (Trônes Gelt). */
-  async rollSalary() {
+  async rollSalary(): Promise<any> {
     const lsKey = this.system.lifestyle ?? "ordinaire";
     const ls = BRIGANDYNE.lifestyles[lsKey] ?? BRIGANDYNE.lifestyles.ordinaire;
     const test = new BrigTest({
@@ -443,7 +443,7 @@ export class BrigActor extends (Actor as any) {
       item: { name: game.i18n.localize("BRIG.Salary.label"), img: "icons/commodities/currency/coins-stitched-pouch-brown.webp" },
       system: { effect: game.i18n.format("BRIG.Salary.earned", { amount: pay }) }
     });
-    return ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor: this }), content });
+    return ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor: this as any }), content } as any);
   }
 
   /** Test de résistance à la Corruption du Chaos (VOL ou FOR, au choix). */

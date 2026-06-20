@@ -29,15 +29,15 @@ export class BrigWelcome extends (HandlebarsApplicationMixin(ApplicationV2) as a
       banner: `systems/${SYSTEM_ID}/assets/ui/welcome-banner.webp`,
       version: sys?.version ?? "",
       isGM: game.user.isGM,
-      note: sys?.flags?.[SYSTEM_ID]?.note ?? ""
+      note: (sys?.flags as any)?.[SYSTEM_ID]?.note ?? ""
     };
   }
 
   /** Lit l'état de la case « ne plus afficher » et l'enregistre. */
   async _persistDontShow() {
     const cb = this.element?.querySelector("input[name='dontShow']");
-    if (cb?.checked) await game.settings.set(SYSTEM_ID, "welcomeSeenVersion", game.system.version);
-    else await game.settings.set(SYSTEM_ID, "welcomeSeenVersion", "");
+    if ((cb as any)?.checked) await (game.settings as any).set(SYSTEM_ID, "welcomeSeenVersion", game.system.version);
+    else await (game.settings as any).set(SYSTEM_ID, "welcomeSeenVersion", "");
   }
 
   static async #onChargen() {
@@ -58,14 +58,14 @@ export class BrigWelcome extends (HandlebarsApplicationMixin(ApplicationV2) as a
  * `game.brigandyne.welcome()` pour le rouvrir manuellement.
  */
 export function registerWelcome() {
-  game.settings.register(SYSTEM_ID, "welcomeSeenVersion", {
+  (game.settings as any).register(SYSTEM_ID, "welcomeSeenVersion", {
     name: "BRIG.Settings.welcomeSeenVersion",
     scope: "client",
     config: false,
     type: String,
     default: ""
   });
-  game.settings.register(SYSTEM_ID, "showWelcome", {
+  (game.settings as any).register(SYSTEM_ID, "showWelcome", {
     name: "BRIG.Settings.showWelcome.name",
     hint: "BRIG.Settings.showWelcome.hint",
     scope: "client",
@@ -74,11 +74,11 @@ export function registerWelcome() {
     default: true
   });
 
-  if (game.brigandyne) game.brigandyne.welcome = () => new BrigWelcome().render(true);
+  if ((game as any).brigandyne) (game as any).brigandyne.welcome = () => new BrigWelcome().render(true);
 
   Hooks.once("ready", () => {
-    if (!game.settings.get(SYSTEM_ID, "showWelcome")) return;
-    if (game.settings.get(SYSTEM_ID, "welcomeSeenVersion") === game.system.version) return;
+    if (!(game.settings as any).get(SYSTEM_ID, "showWelcome")) return;
+    if ((game.settings as any).get(SYSTEM_ID, "welcomeSeenVersion") === game.system.version) return;
     new BrigWelcome().render(true);
   });
 }

@@ -4,7 +4,7 @@ import { BrigActorSheet } from "./base-actor-sheet.js";
  * Feuille de Personnage joueur.
  */
 export class BrigCharacterSheet extends BrigActorSheet {
-  static DEFAULT_OPTIONS = {
+  static override DEFAULT_OPTIONS: any = {
     classes: ["character"],
     position: { width: 800, height: 760 }
   };

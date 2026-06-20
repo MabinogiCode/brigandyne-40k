@@ -194,8 +194,8 @@ export class BrigTest {
       }
     };
     const mode = rollMode || game.settings.get("core", "rollMode");
-    ChatMessage.applyMode(messageData, mode as any);
-    return ChatMessage.create(messageData);
+    (ChatMessage as any).applyMode(messageData, mode as any);
+    return ChatMessage.create(messageData as any);
   }
 }
 

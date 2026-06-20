@@ -4,7 +4,7 @@ import { BrigActorSheet } from "./base-actor-sheet.js";
  * Feuille de véhicule / vaisseau.
  */
 export class BrigVehicleSheet extends BrigActorSheet {
-  static DEFAULT_OPTIONS = {
+  static override DEFAULT_OPTIONS: any = {
     classes: ["vehicle"],
     position: { width: 640, height: 560 }
   };

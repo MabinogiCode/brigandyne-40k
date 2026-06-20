@@ -7,12 +7,12 @@ const { DialogV2 } = foundry.applications.api;
  * choisis, ou null si annulé.
  * @returns {Promise<{difficulty:number, situational:number, advantage:number, disadvantage:number}|null>}
  */
-export async function promptTest({ actor, testData } = {}) {
+export async function promptTest({ actor, testData }: { actor?: any; testData?: any } = {}) {
   const base = testData?.base ?? 0;
   const presetMods = (testData?.modifiers || []).reduce((s, m) => s + (Number(m.value) || 0), 0);
 
   const diffOptions = Object.entries(BRIGANDYNE.difficulties)
-    .map(([v, label]) => `<option value="${v}" ${Number(v) === 0 ? "selected" : ""}>${game.i18n.localize(label)}</option>`)
+    .map(([v, label]: [string, any]) => `<option value="${v}" ${Number(v) === 0 ? "selected" : ""}>${game.i18n.localize(label)}</option>`)
     .join("");
 
   // Tactiques de combat (uniquement pour les attaques)
@@ -21,7 +21,7 @@ export async function promptTest({ actor, testData } = {}) {
         <label><i class="fa-solid fa-chess-knight"></i> ${game.i18n.localize("BRIG.Tactic.label")}</label>
         <select name="tactic">
           <option value="">${game.i18n.localize("BRIG.Tactic.none")}</option>
-          ${Object.entries(BRIGANDYNE.combatTactics).map(([k, t]) =>
+          ${Object.entries(BRIGANDYNE.combatTactics).map(([k, t]: [string, any]) =>
             `<option value="${k}">${game.i18n.localize(t.label)}</option>`).join("")}
         </select>
       </div>` : "";
@@ -74,7 +74,7 @@ export async function promptTest({ actor, testData } = {}) {
         { action: "cancel", label: game.i18n.localize("BRIG.Dialog.cancel"), icon: "fa-solid fa-xmark", callback: () => finish(null) }
       ],
       close: () => finish(null)
-    });
+    } as any);
     dialog.render({ force: true }).then(() => {
       dialog.bringToFront?.();
       setTimeout(() => dialog.bringToFront?.(), 30);

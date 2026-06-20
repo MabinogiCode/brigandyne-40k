@@ -35,7 +35,7 @@ const EQUIP_PACKS = [
  * Atouts : *CNS*-1 tirés au hasard dans le pool carrière (spécialités + talents).
  * Équipement : recherche automatique par nom dans les compendiums.
  */
-export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
+export class BrigCharGen extends (HandlebarsApplicationMixin(ApplicationV2) as any) {
   declare actor: any;
   declare isGM: boolean;
   declare locksApply: boolean;
@@ -131,7 +131,7 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
 
   get stepId() { return this.steps[this.step]; }
 
-  async _packDoc(packKey, id) {
+  async _packDoc(packKey, id): Promise<any> {
     if (!id) return null;
     const p = game.packs.get(packKey); if (!p) return null;
     await p.getIndex();
@@ -147,7 +147,8 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     for (const k of CHARACTERISTIC_KEYS) t[k] = this._base(k);
     if (this.gen.method === "roll") {
       for (const [k, idx] of Object.entries(this.gen.assign)) {
-        if (this.gen.pool[idx] != null) t[k] = this._base(k) + this.gen.pool[idx];
+        const i = idx as number;
+        if (this.gen.pool[i] != null) t[k] = this._base(k) + this.gen.pool[i];
       }
     } else {
       for (const k of KEYS12) t[k] = this._base(k) + (Number(this.gen.points[k]) || 0);
@@ -205,27 +206,27 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     return this._pointsUsed() <= POINTS_TOTAL && KEYS12.every(k => (Number(this.gen.points[k]) || 0) <= 20);
   }
 
-  async _prepareContext() {
+  async _prepareContext(): Promise<any> {
     const sp = game.packs.get(PACK.species); await sp?.getIndex();
-    const ca = game.packs.get(PACK.careers); await ca?.getIndex({ fields: ["system.faction"] });
+    const ca = game.packs.get(PACK.careers); await (ca as any)?.getIndex({ fields: ["system.faction"] });
     const arcPack = game.packs.get(PACK.archetypes); await arcPack?.getIndex();
 
-    const species = sp ? sp.index.contents.map(e => ({ id: e._id, name: e.name })).sort((a, b) => a.name.localeCompare(b.name)) : [];
+    const species = sp ? sp.index.contents.map(e => ({ id: e._id, name: (e as any).name })).sort((a, b) => a.name.localeCompare(b.name)) : [];
     const archetypes = arcPack
       ? arcPack.index.contents
-          .filter(e => !e._key?.startsWith("!folders!"))
-          .map(e => ({ id: e._id, name: e.name }))
+          .filter(e => !(e as any)._key?.startsWith("!folders!"))
+          .map(e => ({ id: e._id, name: (e as any).name }))
           .sort((a, b) => a.name.localeCompare(b.name))
       : [];
 
-    const careerGroups = [];
+    const careerGroups: any[] = [];
     if (ca) {
-      const byFaction = {};
-      for (const e of ca.index) (byFaction[e.system?.faction || "civils"] ??= []).push({ id: e._id, name: e.name });
+      const byFaction: Record<string, any[]> = {};
+      for (const e of (ca as any).index) (byFaction[(e as any).system?.faction || "civils"] ??= []).push({ id: e._id, name: (e as any).name });
       const pushGroup = (key, label) => {
         if (byFaction[key]?.length) { careerGroups.push({ key, label, careers: byFaction[key].sort((a, b) => a.name.localeCompare(b.name)) }); delete byFaction[key]; }
       };
-      for (const [key, label] of Object.entries(BRIGANDYNE.factions)) pushGroup(key, game.i18n.localize(label));
+      for (const [key, label] of Object.entries(BRIGANDYNE.factions) as [string, any][]) pushGroup(key, game.i18n.localize(label));
       for (const key of Object.keys(byFaction)) pushGroup(key, key);
     }
 
@@ -234,9 +235,9 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     const archetypeDoc = await this._packDoc(PACK.archetypes, this.draft.archetypeId);
 
     this._baseMap = {};
-    for (const k of CHARACTERISTIC_KEYS) this._baseMap[k] = speciesDoc?.system.base?.[k] ?? (k === "psy" ? 0 : 25);
-    this._noPsy = speciesDoc?.system.noPsy ?? false;
-    this._archetypeMods = archetypeDoc?.system.modifiers ?? null;
+    for (const k of CHARACTERISTIC_KEYS) this._baseMap[k] = (speciesDoc?.system as any)?.base?.[k] ?? (k === "psy" ? 0 : 25);
+    this._noPsy = (speciesDoc?.system as any)?.noPsy ?? false;
+    this._archetypeMods = (archetypeDoc?.system as any)?.modifiers ?? null;
 
     const totals = this._genTotals();
     const charTip = k => `${game.i18n.localize(BRIGANDYNE.characteristics[k].label)} — ${game.i18n.localize(`BRIG.Char.${k}.desc`)}`;
@@ -244,7 +245,7 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       key: k, abbr: BRIGANDYNE.characteristics[k].abbrev, label: BRIGANDYNE.characteristics[k].label, tip: charTip(k),
       base: this._base(k), value: totals[k], bonus: Math.floor(totals[k] / 10)
     }));
-    const { pv, sf } = this._derivePvSf(totals, speciesDoc?.system?.special ?? []);
+    const { pv, sf } = this._derivePvSf(totals, (speciesDoc?.system as any)?.special ?? []);
 
     // Données de génération (étape caractéristiques)
     const usedIdx = new Set(Object.values(this.gen.assign).filter(v => v != null));
@@ -260,37 +261,37 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
 
     // Informations sur les atouts de carrière (pool disponible)
     const stripHtml = s => (s ?? "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
-    let specialtiesInfo = [], talentsInfo = [];
+    let specialtiesInfo: any[] = [], talentsInfo: any[] = [];
     if (careerDoc) {
-      const specPack = game.packs.get(PACK.specialties); await specPack?.getIndex({ fields: ["system.effect"] });
-      const talPack = game.packs.get(PACK.talents); await talPack?.getIndex({ fields: ["system.effect"] });
-      const tipOf = (pack, n) => stripHtml(pack?.index.find(i => i.name === n)?.system?.effect);
-      specialtiesInfo = (careerDoc.system.specialties ?? []).map(n => ({ name: n, tip: tipOf(specPack, n) }));
-      talentsInfo = (careerDoc.system.talents ?? []).map(n => ({ name: n, tip: tipOf(talPack, n) }));
+      const specPack = game.packs.get(PACK.specialties); await (specPack as any)?.getIndex({ fields: ["system.effect"] });
+      const talPack = game.packs.get(PACK.talents); await (talPack as any)?.getIndex({ fields: ["system.effect"] });
+      const tipOf = (pack, n) => stripHtml((pack?.index.find(i => (i as any).name === n) as any)?.system?.effect);
+      specialtiesInfo = ((careerDoc.system as any).specialties ?? []).map(n => ({ name: n, tip: tipOf(specPack, n) }));
+      talentsInfo = ((careerDoc.system as any).talents ?? []).map(n => ({ name: n, tip: tipOf(talPack, n) }));
     }
 
     // Calcul du nombre d'atouts tirés au hasard : *CNS*-1
     const cnsBonus = Math.floor((totals.cns ?? 25) / 10);
     const numAtouts = Math.max(0, cnsBonus - 1);
-    const poolSize = (careerDoc?.system.specialties?.length ?? 0) + (careerDoc?.system.talents?.length ?? 0);
+    const poolSize = ((careerDoc?.system as any)?.specialties?.length ?? 0) + ((careerDoc?.system as any)?.talents?.length ?? 0);
 
-    const blocked = this.locksApply && getChargenLock().complete;
+    const blocked = this.locksApply && (getChargenLock() as any).complete;
     const methodLabel = this.gen.method
       ? game.i18n.localize(this.gen.method === "roll" ? "BRIG.CharGen.method.roll" : "BRIG.CharGen.method.points")
       : "";
 
     const lore = BRIGANDYNE.speciesLore?.[speciesDoc?.name] ?? null;
-    const speciesTraits = (speciesDoc?.system.special ?? []).map(t => game.i18n.localize(BRIGANDYNE.speciesTraits[t] ?? t));
-    const speciesLimits = [];
+    const speciesTraits = ((speciesDoc?.system as any)?.special ?? []).map(t => game.i18n.localize(BRIGANDYNE.speciesTraits[t] ?? t));
+    const speciesLimits: string[] = [];
     if (speciesDoc) for (const k of CHARACTERISTIC_KEYS) {
-      const lim = speciesDoc.system.limits?.[k];
+      const lim = (speciesDoc.system as any)?.limits?.[k];
       if (lim != null) speciesLimits.push(`${game.i18n.localize(BRIGANDYNE.characteristics[k].abbrev)} ${lim}`);
     }
 
     return {
       speciesDesc: lore?.desc, speciesLifespan: lore?.lifespan, speciesSize: lore?.size, speciesTraits, speciesLimits,
-      careerDesc: careerDoc?.system.description, careerQuote: careerDoc?.system.quote,
-      careerStartingEquipment: careerDoc?.system.startingEquipment ?? "",
+      careerDesc: (careerDoc?.system as any)?.description, careerQuote: (careerDoc?.system as any)?.quote,
+      careerStartingEquipment: (careerDoc?.system as any)?.startingEquipment ?? "",
       specialtiesInfo, talentsInfo,
       locksApply: this.locksApply, blocked,
       methodChosen: !!this.gen.method, methodLocked: this.locksApply && !!this.gen.method,
@@ -299,9 +300,9 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       stages: this.steps.map((id, i) => ({ id, i, active: i === this.step, done: i < this.step, label: game.i18n.localize(`BRIG.CharGen.step.${id}`) })),
       stepId: this.stepId, first: this.step === 0, last: this.step === this.steps.length - 1, editMode: !!this.actor,
       draft: this.draft, species, careerGroups, roles: BRIGANDYNE.roles,
-      speciesName: speciesDoc?.name, destin: speciesDoc?.system.destin,
-      careerName: careerDoc?.name, lifestyle: careerDoc ? game.i18n.localize(BRIGANDYNE.lifestyles[careerDoc.system.lifestyle]?.label ?? "") : "",
-      specialties: careerDoc?.system.specialties ?? [], talents: careerDoc?.system.talents ?? [],
+      speciesName: speciesDoc?.name, destin: (speciesDoc?.system as any)?.destin,
+      careerName: careerDoc?.name, lifestyle: careerDoc ? game.i18n.localize(BRIGANDYNE.lifestyles[(careerDoc.system as any)?.lifestyle]?.label ?? "") : "",
+      specialties: (careerDoc?.system as any)?.specialties ?? [], talents: (careerDoc?.system as any)?.talents ?? [],
       chars, pv, sf, details: this.draft.details, detailKeys: DETAIL_KEYS,
       // Archétypes & Traits
       archetypes, archetypeDoc, archetypeName: archetypeDoc?.name ?? "",
@@ -347,17 +348,17 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     this._captureGen();
     const t = this._genTotals();
     const el = this.element;
-    for (const k of CHARACTERISTIC_KEYS) { const s = el.querySelector(`[data-total="${k}"]`); if (s) s.textContent = t[k]; }
-    const rem = el.querySelector("[data-points-remaining]"); if (rem) rem.textContent = POINTS_TOTAL - this._pointsUsed();
+    for (const k of CHARACTERISTIC_KEYS) { const s = el.querySelector(`[data-total="${k}"]`); if (s) s.textContent = String(t[k]); }
+    const rem = el.querySelector("[data-points-remaining]"); if (rem) rem.textContent = String(POINTS_TOTAL - this._pointsUsed());
   }
 
   /** Capture points & prélèvements PSY depuis le DOM. */
   _captureGen() {
     const el = this.element; if (!el) return;
     for (const k of KEYS12) {
-      const pt = el.querySelector(`[name="points.${k}"]`);
+      const pt = el.querySelector(`[name="points.${k}"]`) as HTMLInputElement | null;
       if (pt) this.gen.points[k] = Math.clamp(Number(pt.value) || 0, 0, 20);
-      const pd = el.querySelector(`[name="psyDraw.${k}"]`);
+      const pd = el.querySelector(`[name="psyDraw.${k}"]`) as HTMLInputElement | null;
       if (pd) this.gen.psyDraw[k] = Math.clamp(Number(pd.value) || 0, 0, 10);
     }
     this.draft.chars = this._genTotals();
@@ -386,18 +387,18 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
 
   _capture() {
     const el = this.element; if (!el) return;
-    const get = n => el.querySelector(`[name="${n}"]`);
+    const get = (n: string) => el.querySelector(`[name="${n}"]`) as HTMLInputElement | null;
     if (this.stepId === "identity") {
-      if (get("name")) this.draft.name = get("name").value;
-      if (get("speciesId")) this.draft.speciesId = get("speciesId").value || null;
-      if (get("careerId")) this.draft.careerId = get("careerId").value || null;
-      if (get("role")) this.draft.role = get("role").value;
+      if (get("name")) this.draft.name = get("name")!.value;
+      if (get("speciesId")) this.draft.speciesId = get("speciesId")!.value || null;
+      if (get("careerId")) this.draft.careerId = get("careerId")!.value || null;
+      if (get("role")) this.draft.role = get("role")!.value;
     } else if (this.stepId === "characteristics") {
       this._captureGen();
     } else if (this.stepId === "traits") {
-      if (get("archetypeId")) this.draft.archetypeId = get("archetypeId").value || null;
-      if (get("vice")) this.draft.vice = get("vice").value || null;
-      if (get("vertu")) this.draft.vertu = get("vertu").value || null;
+      if (get("archetypeId")) this.draft.archetypeId = get("archetypeId")!.value || null;
+      if (get("vice")) this.draft.vice = get("vice")!.value || null;
+      if (get("vertu")) this.draft.vertu = get("vertu")!.value || null;
     } else if (this.stepId === "details") {
       for (const d of DETAIL_KEYS) { const i = get(`details.${d}`); if (i) this.draft.details[d] = i.value; }
     }
@@ -468,21 +469,21 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
 
     // Initialiser les données de base pour _genTotals()
     this._baseMap = {};
-    for (const k of CHARACTERISTIC_KEYS) this._baseMap[k] = speciesDoc?.system.base?.[k] ?? (k === "psy" ? 0 : 25);
-    this._noPsy = speciesDoc?.system.noPsy ?? false;
-    this._archetypeMods = archetypeDoc?.system.modifiers ?? null;
+    for (const k of CHARACTERISTIC_KEYS) this._baseMap[k] = (speciesDoc?.system as any)?.base?.[k] ?? (k === "psy" ? 0 : 25);
+    this._noPsy = (speciesDoc?.system as any)?.noPsy ?? false;
+    this._archetypeMods = (archetypeDoc?.system as any)?.modifiers ?? null;
 
     const totals = this._genTotals();  // inclut modificateurs d'archétype et psyDraw
 
     const characteristics = {};
     for (const k of CHARACTERISTIC_KEYS) characteristics[k] = { value: totals[k], mod: 0, advances: 0 };
-    const { pv, sf, pvBonus, sfBonus } = this._derivePvSf(totals, speciesDoc?.system?.special ?? []);
+    const { pv, sf, pvBonus, sfBonus } = this._derivePvSf(totals, (speciesDoc?.system as any)?.special ?? []);
 
     const system = {
       characteristics, role: this.draft.role,
       speciesName: speciesDoc?.name ?? "", species: speciesDoc?.name ?? "",
-      careerName: careerDoc?.name ?? "", lifestyle: careerDoc?.system.lifestyle ?? "ordinaire",
-      destin: { value: speciesDoc?.system.destin ?? 2, max: speciesDoc?.system.destin ?? 2 },
+      careerName: careerDoc?.name ?? "", lifestyle: (careerDoc?.system as any)?.lifestyle ?? "ordinaire",
+      destin: { value: (speciesDoc?.system as any)?.destin ?? 2, max: (speciesDoc?.system as any)?.destin ?? 2 },
       pv: { value: pv, max: pv, bonus: pvBonus }, sf: { value: sf, max: sf, bonus: sfBonus },
       details: this.draft.details,
       schemaVersion: game.system.version
@@ -499,12 +500,12 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
 
       // Construction du pool complet d'atouts (spécialités + talents de la carrière)
       const atoutPool = [];
-      for (const name of (careerDoc.system.specialties ?? [])) {
-        const e = specPack?.index.find(i => i.name === name);
+      for (const name of ((careerDoc.system as any).specialties ?? [])) {
+        const e = specPack?.index.find(i => (i as any).name === name);
         atoutPool.push({ packRef: specPack, entry: e, name, type: "specialty" });
       }
-      for (const name of (careerDoc.system.talents ?? [])) {
-        const e = talPack?.index.find(i => i.name === name);
+      for (const name of ((careerDoc.system as any).talents ?? [])) {
+        const e = talPack?.index.find(i => (i as any).name === name);
         atoutPool.push({ packRef: talPack, entry: e, name, type: "talent" });
       }
 
@@ -521,18 +522,18 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       }
 
       // Équipement de départ : recherche par nom dans les compendiums
-      if (careerDoc.system.startingEquipment) {
+      if ((careerDoc.system as any).startingEquipment) {
         const equipPacks = EQUIP_PACKS.map(id => game.packs.get(id)).filter(Boolean);
         for (const p of equipPacks) await p.getIndex();
 
-        const plainText = careerDoc.system.startingEquipment
+        const plainText = ((careerDoc.system as any).startingEquipment as string)
           .replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
         const candidateNames = plainText.split(/[,;]/).map(s => s.trim()).filter(s => s.length > 2);
 
         for (const rawName of candidateNames) {
           const normName = rawName.toLowerCase();
           for (const p of equipPacks) {
-            const entry = p.index.find(e => e.name.toLowerCase() === normName);
+            const entry = p.index.find(e => (e as any).name.toLowerCase() === normName);
             if (entry) {
               items.push((await p.getDocument(entry._id)).toObject());
               break;
@@ -562,7 +563,7 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     }
 
     const ownership = { default: CONST.DOCUMENT_OWNERSHIP_LEVELS.NONE, [game.user.id]: CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER };
-    const actor = await Actor.create({ name: this.draft.name, type: "character", ownership, system, items });
+    const actor = await Actor.create({ name: this.draft.name, type: "character", ownership, system, items } as any);
     if (actor) {
       await game.user.update({ character: actor.id });
       if (this.locksApply) await setChargenLock(game.user, { complete: true, actorId: actor.id });

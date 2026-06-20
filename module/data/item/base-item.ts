@@ -9,7 +9,7 @@ export class BaseItemModel extends (foundry.abstract.TypeDataModel as any) {
   declare gmNotes: string;
   declare source: string;
 
-  static defineSchema() {
+  static defineSchema(): any {
     return {
       description: html(),
       gmNotes: html(),

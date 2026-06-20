@@ -13,7 +13,7 @@ export class BrigActorSheet extends (HandlebarsApplicationMixin(ActorSheetV2) as
   declare document: any;
   declare isEditable: boolean;
   declare element: HTMLElement;
-  static DEFAULT_OPTIONS = {
+  static DEFAULT_OPTIONS: any = {
     classes: ["brigandyne-40k", "sheet", "actor"],
     position: { width: 780, height: 740 },
     window: { resizable: true },
@@ -51,7 +51,7 @@ export class BrigActorSheet extends (HandlebarsApplicationMixin(ActorSheetV2) as
       content: `<form class="brigandyne-40k"><div class="form-group"><label>${game.i18n.localize("BRIG.Rest.nights")}</label>
         <input type="number" name="n" value="1" min="1" /></div></form>`,
       ok: { label: game.i18n.localize("BRIG.Rest.do"), callback: (e, b) => Number(b.form.n.value) || 1 }, rejectClose: false
-    }).catch(() => null);
+    } as any).catch(() => null);
     if (nights) this.actor.rest(nights);
   }
 
@@ -67,7 +67,7 @@ export class BrigActorSheet extends (HandlebarsApplicationMixin(ActorSheetV2) as
   static async #onCorruption(event, target) {
     const DialogV2 = foundry.applications.api.DialogV2;
     const gods = Object.entries(BRIGANDYNE.chaosGods)
-      .map(([k, g]) => `<option value="${k}">${game.i18n.localize(g.label)}</option>`).join("");
+      .map(([k, g]: [string, any]) => `<option value="${k}">${game.i18n.localize(g.label)}</option>`).join("");
     const content = `<form class="brigandyne-40k">
       <div class="form-group"><label>${game.i18n.localize("BRIG.Corruption.god")}</label>
         <select name="god"><option value="">—</option>${gods}</select></div>
@@ -83,14 +83,14 @@ export class BrigActorSheet extends (HandlebarsApplicationMixin(ActorSheetV2) as
       content, ok: { label: game.i18n.localize("BRIG.Dialog.roll"), callback: (e, b) => ({
         god: b.form.god.value, source: b.form.source.value, characteristic: b.form.characteristic.value
       }) }, rejectClose: false
-    }).catch(() => null);
+    } as any).catch(() => null);
     if (res) this.actor.rollCorruption(res);
   }
 
   /** Trouve le personnage opérateur (personnage assigné ou jeton contrôlé). */
-  _operator() {
+  _operator(): any {
     return game.user.character
-      || canvas.tokens?.controlled?.find(t => t.actor?.type === "character")?.actor
+      || canvas.tokens?.controlled?.find(t => (t.actor?.type as string) === "character")?.actor
       || null;
   }
 
@@ -122,7 +122,7 @@ export class BrigActorSheet extends (HandlebarsApplicationMixin(ActorSheetV2) as
 
   static async #onEditImage(event, target) {
     const attr = target.dataset.edit || "img";
-    const current = foundry.utils.getProperty(this.document, attr);
+    const current = foundry.utils.getProperty(this.document, attr) as string | undefined;
     const fp = new foundry.applications.apps.FilePicker.implementation({
       type: "image", current,
       callback: path => this.document.update({ [attr]: path })
@@ -167,7 +167,7 @@ export class BrigActorSheet extends (HandlebarsApplicationMixin(ActorSheetV2) as
     for (const [k, def] of Object.entries(BRIGANDYNE.characteristics)) {
       const c = chars[k];
       if (!c) continue;
-      out[k] = { key: k, ...def, value: c.value, total: c.total, bonus: c.bonus, mod: c.mod, advances: c.advances ?? 0 };
+      out[k] = { key: k, ...(def as any), value: c.value, total: c.total, bonus: c.bonus, mod: c.mod, advances: c.advances ?? 0 };
     }
     return out;
   }
@@ -192,10 +192,10 @@ export class BrigActorSheet extends (HandlebarsApplicationMixin(ActorSheetV2) as
     const root = this.element;
     root.querySelectorAll("[data-action='tab']").forEach(a => {
       a.addEventListener("click", ev => {
-        const tab = ev.currentTarget.dataset.tab;
+        const tab = (ev.currentTarget as HTMLElement).dataset.tab;
         this.tabGroups.primary = tab;
-        root.querySelectorAll("[data-action='tab']").forEach(n => n.classList.toggle("active", n.dataset.tab === tab));
-        root.querySelectorAll(".tab[data-tab]").forEach(s => s.classList.toggle("active", s.dataset.tab === tab));
+        root.querySelectorAll("[data-action='tab']").forEach(n => n.classList.toggle("active", (n as HTMLElement).dataset.tab === tab));
+        root.querySelectorAll(".tab[data-tab]").forEach(s => s.classList.toggle("active", (s as HTMLElement).dataset.tab === tab));
       });
     });
     // Clic droit sur un objet = éditer ; molette sur ressources, etc. (extension future)
@@ -243,7 +243,7 @@ export class BrigActorSheet extends (HandlebarsApplicationMixin(ActorSheetV2) as
   static async #onAdjust(event, target) {
     const path = target.dataset.path;
     const delta = Number(target.dataset.delta) || 0;
-    const cur = foundry.utils.getProperty(this.actor, path) ?? 0;
+    const cur = (foundry.utils.getProperty(this.actor, path) as number) ?? 0;
     await this.actor.update({ [path]: cur + delta });
   }
 }

@@ -19,8 +19,8 @@ const { DialogV2 } = foundry.applications.api;
 export const BLANK_LOCK = { method: null, rolledOnce: false, pool: null, complete: false, actorId: null };
 
 /** Lit l'état de création d'un utilisateur (avec valeurs par défaut). */
-export function getChargenLock(user = game.user) {
-  const stored = user?.getFlag(SYSTEM_ID, "chargen") ?? {};
+export function getChargenLock(user: any = game.user): any {
+  const stored = (user as any)?.getFlag(SYSTEM_ID, "chargen") ?? {};
   return foundry.utils.mergeObject(foundry.utils.deepClone(BLANK_LOCK), stored, { inplace: false });
 }
 
@@ -151,8 +151,8 @@ export function openCharGenAdmin() {
   const wire = () => {
     const el = dialog.element; if (!el) return;
     el.querySelectorAll(".u-actions button").forEach(btn => btn.addEventListener("click", async () => {
-      const userId = btn.closest("[data-user]")?.dataset.user;
-      const act = btn.dataset.act;
+      const userId = (btn.closest("[data-user]") as HTMLElement)?.dataset.user;
+      const act = (btn as HTMLElement).dataset.act;
       const user = game.users.get(userId);
       if (!user || !REQUESTS[act]) return;
       await REQUESTS[act].apply(user);

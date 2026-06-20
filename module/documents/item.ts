@@ -38,14 +38,14 @@ export class BrigItem extends (Item as any) {
   }
 
   /** Affiche une fiche descriptive de l'objet en chat. */
-  async toChat() {
+  async toChat(): Promise<any> {
     const { renderTemplate } = foundry.applications.handlebars;
     const content = await renderTemplate("systems/brigandyne-40k/templates/chat/item-card.hbs", {
       item: this, system: this.system
     });
     return ChatMessage.create({
-      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      speaker: ChatMessage.getSpeaker({ actor: this.actor as any }),
       content
-    });
+    } as any);
   }
 }
