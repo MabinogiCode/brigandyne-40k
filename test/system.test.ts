@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { degreeOf, rerollCostFor } from "../module/dice/roll.mjs";
-import { vitality, sangFroid, bonusOf, vitalityMinor, speciesResourceBonus } from "../module/data/derive.mjs";
+import { degreeOf, rerollCostFor } from "../module/dice/roll.js";
+import { vitality, sangFroid, bonusOf, vitalityMinor, speciesResourceBonus } from "../module/data/derive.js";
 
 test("degreeOf — réussites", () => {
   assert.equal(degreeOf(50, 50), "critSuccess");   // RU 0 sous la cible

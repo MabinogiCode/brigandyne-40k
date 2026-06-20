@@ -1,11 +1,11 @@
-import { BaseActorModel } from "./base-actor.mjs";
-import { fields, int, str, bool, html } from "../fields.mjs";
+import { BaseActorModel } from "./base-actor.js";
+import { fields, int, str, bool, html } from "../fields.js";
 
 /**
  * PNJ / créature (bestiaire).
  * Bloc de stats simplifié : COM/TIR, Init, Prot, PV, Dégâts, Spécial.
  */
-export class NpcModel extends BaseActorModel {
+export class NpcModel extends (BaseActorModel as any) {
   static defineSchema() {
     return {
       ...super.defineSchema(),

@@ -1,12 +1,12 @@
-import { PhysicalItemModel } from "./base-item.mjs";
-import { fields, str, int, num, bool, choice, qualitiesField } from "../fields.mjs";
+import { PhysicalItemModel } from "./base-item.js";
+import { fields, str, int, num, bool, choice, qualitiesField } from "../fields.js";
 
 /**
  * Arme (mêlée ou distance).
  * Dégâts mêlée  = RU + (bonus de FOR ± modificateur)   → damageBase "for"
  * Dégâts distance = RU + bonus fixe                     → damageBase "flat"
  */
-export class WeaponModel extends PhysicalItemModel {
+export class WeaponModel extends (PhysicalItemModel as any) {
   static defineSchema() {
     return {
       ...super.defineSchema(),
@@ -55,7 +55,7 @@ export class WeaponModel extends PhysicalItemModel {
 /**
  * Armure.
  */
-export class ArmorModel extends PhysicalItemModel {
+export class ArmorModel extends (PhysicalItemModel as any) {
   static defineSchema() {
     return {
       ...super.defineSchema(),
@@ -81,7 +81,7 @@ export class ArmorModel extends PhysicalItemModel {
 /**
  * Munition.
  */
-export class AmmunitionModel extends PhysicalItemModel {
+export class AmmunitionModel extends (PhysicalItemModel as any) {
   static defineSchema() {
     return {
       ...super.defineSchema(),
@@ -95,7 +95,7 @@ export class AmmunitionModel extends PhysicalItemModel {
 /**
  * Équipement divers (outils, nourriture, drogues, techno…).
  */
-export class EquipmentModel extends PhysicalItemModel {
+export class EquipmentModel extends (PhysicalItemModel as any) {
   static defineSchema() {
     return {
       ...super.defineSchema(),
@@ -108,7 +108,7 @@ export class EquipmentModel extends PhysicalItemModel {
 /**
  * Augmentation / prothèse / organe bionique / système implanté.
  */
-export class AugmentationModel extends PhysicalItemModel {
+export class AugmentationModel extends (PhysicalItemModel as any) {
   static defineSchema() {
     return {
       ...super.defineSchema(),

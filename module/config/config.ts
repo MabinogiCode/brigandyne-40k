@@ -2,7 +2,7 @@
  * Configuration maîtresse du système Warhammer 40,000 : Brigandyne.
  * Toutes les énumérations, libellés (clés i18n) et données de règles.
  */
-export const BRIGANDYNE = {};
+export const BRIGANDYNE: Record<string, any> = {};
 
 BRIGANDYNE.id = "brigandyne-40k";
 BRIGANDYNE.ASCII = "Warhammer 40000 : Brigandyne";

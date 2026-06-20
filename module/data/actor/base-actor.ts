@@ -1,5 +1,5 @@
-import { fields, int, num, str, bool, html, resource, choice } from "../fields.mjs";
-import { CHARACTERISTIC_KEYS } from "../fields.mjs";
+import { fields, int, num, str, bool, html, resource, choice } from "../fields.js";
+import { CHARACTERISTIC_KEYS } from "../fields.js";
 
 /** Construit le bloc des 13 caractéristiques { value, mod } pour un acteur. */
 function actorCharacteristics() {
@@ -19,7 +19,19 @@ function actorCharacteristics() {
  * Gère les caractéristiques, leurs bonus (dizaine), PV, SF, Destin, Corruption
  * et l'Initiative dérivée.
  */
-export class BaseActorModel extends foundry.abstract.TypeDataModel {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export class BaseActorModel extends (foundry.abstract.TypeDataModel as any) {
+  declare characteristics: Record<string, { value: number; mod: number; advances: number; total: number; bonus: number }>;
+  declare pv: { value: number; max: number; bonus: number; seuil?: number };
+  declare sf: { value: number; max: number; bonus: number };
+  declare protection: { value: number; base: number; mod: number; fromArmor: number };
+  declare initiative: { value: number; derived: number; base: number; mod: number };
+  declare corruption: { value: number; threshold: number };
+  declare psy: Record<string, number>;
+  declare encumbrance: { value: number; max: number };
+  declare lifestyle: string;
+  declare wealth: Record<string, number>;
+  declare biography: string;
   static defineSchema() {
     return {
       characteristics: actorCharacteristics(),

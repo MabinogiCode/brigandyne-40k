@@ -1,4 +1,4 @@
-import { BRIGANDYNE } from "../config/config.mjs";
+import { BRIGANDYNE } from "../config/config.js";
 
 const { DialogV2 } = foundry.applications.api;
 

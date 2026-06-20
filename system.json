@@ -14,7 +14,7 @@
     }
   ],
   "esmodules": [
-    "module/brigandyne40k.mjs"
+    "dist/module/brigandyne40k.js"
   ],
   "styles": [
     "styles/brigandyne40k.css"

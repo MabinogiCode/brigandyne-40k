@@ -1,11 +1,11 @@
-import { BaseItemModel } from "./base-item.mjs";
-import { fields, str, int, bool, choice, html } from "../fields.mjs";
+import { BaseItemModel } from "./base-item.js";
+import { fields, str, int, bool, choice, html } from "../fields.js";
 
 /**
  * Pouvoir psychique (Psyker).
  * Le jet se fait en PSY avec le modificateur "difficulty".
  */
-export class PsychicPowerModel extends BaseItemModel {
+export class PsychicPowerModel extends (BaseItemModel as any) {
   static defineSchema() {
     return {
       ...super.defineSchema(),
@@ -34,7 +34,7 @@ export class PsychicPowerModel extends BaseItemModel {
  * Acte de Foi (Vraie Foi).
  * Le jet se fait en VOL.
  */
-export class FaithActModel extends BaseItemModel {
+export class FaithActModel extends (BaseItemModel as any) {
   static defineSchema() {
     return {
       ...super.defineSchema(),

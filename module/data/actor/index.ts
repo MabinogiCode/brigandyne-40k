@@ -1,6 +1,6 @@
-import { CharacterModel } from "./character.mjs";
-import { NpcModel } from "./npc.mjs";
-import { VehicleModel } from "./vehicle.mjs";
+import { CharacterModel } from "./character.js";
+import { NpcModel } from "./npc.js";
+import { VehicleModel } from "./vehicle.js";
 
 export const ACTOR_MODELS = {
   character: CharacterModel,

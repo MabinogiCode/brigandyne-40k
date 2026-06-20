@@ -1,6 +1,6 @@
-import { BRIGANDYNE } from "../config/config.mjs";
-import { BrigTest, rerollCostFor } from "../dice/roll.mjs";
-import { CHARACTERISTIC_KEYS } from "../data/fields.mjs";
+import { BRIGANDYNE } from "../config/config.js";
+import { BrigTest, rerollCostFor } from "../dice/roll.js";
+import { CHARACTERISTIC_KEYS } from "../data/fields.js";
 
 const { renderTemplate } = foundry.applications.handlebars;
 const { DialogV2 } = foundry.applications.api;

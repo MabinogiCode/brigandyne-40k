@@ -1,5 +1,5 @@
-import { SYSTEM_ID } from "../brigandyne40k.mjs";
-import { BrigCharGen } from "./char-gen.mjs";
+import { SYSTEM_ID } from "../brigandyne40k.js";
+import { BrigCharGen } from "./char-gen.js";
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
@@ -8,7 +8,7 @@ const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
  * Présente la bannière, un mot de bienvenue, les crédits et un accès rapide
  * à l'assistant de création. Une case « ne plus afficher » mémorise la version vue.
  */
-export class BrigWelcome extends HandlebarsApplicationMixin(ApplicationV2) {
+export class BrigWelcome extends (HandlebarsApplicationMixin(ApplicationV2) as any) {
   static DEFAULT_OPTIONS = {
     id: "brig-welcome",
     tag: "div",

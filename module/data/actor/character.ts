@@ -1,11 +1,19 @@
-import { BaseActorModel } from "./base-actor.mjs";
-import { fields, int, str, bool, html, choice } from "../fields.mjs";
-import { vitality, sangFroid } from "../derive.mjs";
+import { BaseActorModel } from "./base-actor.js";
+import { fields, int, str, bool, html, choice } from "../fields.js";
+import { vitality, sangFroid } from "../derive.js";
 
 /**
  * Personnage joueur.
  */
-export class CharacterModel extends BaseActorModel {
+export class CharacterModel extends (BaseActorModel as any) {
+  declare xp: { total: number; spent: number; available: number };
+  declare faith: { devoted: boolean; actsPerDay: number };
+  declare details: Record<string, string>;
+  declare role: string;
+  declare species: string;
+  declare speciesName: string;
+  declare careerName: string;
+  declare schemaVersion: string;
   static defineSchema() {
     return {
       ...super.defineSchema(),

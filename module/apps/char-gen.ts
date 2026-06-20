@@ -1,8 +1,8 @@
-import { BRIGANDYNE } from "../config/config.mjs";
-import { CHARACTERISTIC_KEYS } from "../data/fields.mjs";
-import { vitality, sangFroid, speciesResourceBonus } from "../data/derive.mjs";
-import { SYSTEM_ID } from "../brigandyne40k.mjs";
-import { BLANK_LOCK, getChargenLock, setChargenLock, requestUnlock } from "./chargen-lock.mjs";
+import { BRIGANDYNE } from "../config/config.js";
+import { CHARACTERISTIC_KEYS } from "../data/fields.js";
+import { vitality, sangFroid, speciesResourceBonus } from "../data/derive.js";
+import { SYSTEM_ID } from "../brigandyne40k.js";
+import { BLANK_LOCK, getChargenLock, setChargenLock, requestUnlock } from "./chargen-lock.js";
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 const { DialogV2 } = foundry.applications.api;
@@ -36,7 +36,20 @@ const EQUIP_PACKS = [
  * Équipement : recherche automatique par nom dans les compendiums.
  */
 export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
-  constructor(options = {}) {
+  declare actor: any;
+  declare isGM: boolean;
+  declare locksApply: boolean;
+  declare lock: any;
+  declare steps: string[];
+  declare step: number;
+  declare draft: Record<string, any>;
+  declare gen: Record<string, any>;
+  declare _userHook: number | null;
+  declare _baseMap: Record<string, number>;
+  declare _noPsy: boolean;
+  declare _archetypeMods: Record<string, number> | null;
+
+  constructor(options: Record<string, any> = {}) {
     super(options);
     this.actor = options.actor ?? null;
     this.isGM = game.user.isGM;
@@ -129,8 +142,8 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
   _base(k) { return this._baseMap[k] ?? (k === "psy" ? 0 : 25); }
 
   /** Calcule les totaux finaux des caractéristiques selon la méthode choisie. */
-  _genTotals() {
-    const t = {};
+  _genTotals(): Record<string, number> {
+    const t: Record<string, number> = {};
     for (const k of CHARACTERISTIC_KEYS) t[k] = this._base(k);
     if (this.gen.method === "roll") {
       for (const [k, idx] of Object.entries(this.gen.assign)) {

@@ -1,11 +1,11 @@
-import { BaseItemModel } from "./base-item.mjs";
-import { fields, str, int, num, bool, choice, html, characteristicsSchema } from "../fields.mjs";
+import { BaseItemModel } from "./base-item.js";
+import { fields, str, int, num, bool, choice, html, characteristicsSchema } from "../fields.js";
 
 /**
  * Archétype de personnalité (symbolisé par un animal).
  * Applique des modificateurs fixes aux caractéristiques à la création.
  */
-export class ArchetypeModel extends BaseItemModel {
+export class ArchetypeModel extends (BaseItemModel as any) {
   static defineSchema() {
     return {
       ...super.defineSchema(),
@@ -19,7 +19,7 @@ export class ArchetypeModel extends BaseItemModel {
 /**
  * Espèce (Humain, Squat, Ogryn…).
  */
-export class SpeciesModel extends BaseItemModel {
+export class SpeciesModel extends (BaseItemModel as any) {
   static defineSchema() {
     return {
       ...super.defineSchema(),
@@ -37,7 +37,7 @@ export class SpeciesModel extends BaseItemModel {
 /**
  * Carrière (par Adeptus).
  */
-export class CareerModel extends BaseItemModel {
+export class CareerModel extends (BaseItemModel as any) {
   static defineSchema() {
     return {
       ...super.defineSchema(),
@@ -55,7 +55,7 @@ export class CareerModel extends BaseItemModel {
 /**
  * Spécialité (atout donnant un bonus ciblé à une caractéristique).
  */
-export class SpecialtyModel extends BaseItemModel {
+export class SpecialtyModel extends (BaseItemModel as any) {
   static defineSchema() {
     return {
       ...super.defineSchema(),
@@ -70,7 +70,7 @@ export class SpecialtyModel extends BaseItemModel {
 /**
  * Talent.
  */
-export class TalentModel extends BaseItemModel {
+export class TalentModel extends (BaseItemModel as any) {
   static defineSchema() {
     return {
       ...super.defineSchema(),
@@ -85,7 +85,7 @@ export class TalentModel extends BaseItemModel {
 /**
  * Trait : Vice, Vertu, capacité spéciale de créature (PEUR, Nuée…), particularité.
  */
-export class TraitModel extends BaseItemModel {
+export class TraitModel extends (BaseItemModel as any) {
   static defineSchema() {
     return {
       ...super.defineSchema(),
@@ -100,7 +100,7 @@ export class TraitModel extends BaseItemModel {
 /**
  * Mutation : Grâce ou Fardeau.
  */
-export class MutationModel extends BaseItemModel {
+export class MutationModel extends (BaseItemModel as any) {
   static defineSchema() {
     return {
       ...super.defineSchema(),
@@ -113,7 +113,7 @@ export class MutationModel extends BaseItemModel {
 /**
  * Blessure grave / handicap.
  */
-export class CriticalInjuryModel extends BaseItemModel {
+export class CriticalInjuryModel extends (BaseItemModel as any) {
   static defineSchema() {
     return {
       ...super.defineSchema(),

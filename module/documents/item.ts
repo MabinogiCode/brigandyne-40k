@@ -1,9 +1,9 @@
-import { BRIGANDYNE } from "../config/config.mjs";
+import { BRIGANDYNE } from "../config/config.js";
 
 /**
  * Document Objet du système.
  */
-export class BrigItem extends Item {
+export class BrigItem extends (Item as any) {
 
   prepareDerivedData() {
     super.prepareDerivedData();

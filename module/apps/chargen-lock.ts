@@ -1,4 +1,4 @@
-import { SYSTEM_ID } from "../brigandyne40k.mjs";
+import { SYSTEM_ID } from "../brigandyne40k.js";
 
 const { DialogV2 } = foundry.applications.api;
 

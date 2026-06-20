@@ -5,12 +5,17 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "watch": "tsc --project tsconfig.json --watch",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
     "pack": "node tools/compile-packs.mjs",
     "unpack": "node tools/extract-packs.mjs",
     "import": "node tools/import-content.mjs",
-    "test": "node --test \"test/*.test.mjs\""
+    "test": "tsc --project tsconfig.json && node --test \"dist/test/*.test.js\""
   },
   "devDependencies": {
-    "@foundryvtt/foundryvtt-cli": "^1.0.3"
+    "@foundryvtt/foundryvtt-cli": "^1.0.3",
+    "@league-of-foundry-developers/foundry-vtt-types": "^13.346.0-beta.20250812191140",
+    "typescript": "^5.9.3"
   }
 }

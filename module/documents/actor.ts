@@ -1,14 +1,14 @@
-import { BRIGANDYNE } from "../config/config.mjs";
-import { BrigTest } from "../dice/roll.mjs";
-import { promptTest } from "../apps/test-dialog.mjs";
-import { postWarpResult } from "../data/warp-tables.mjs";
+import { BRIGANDYNE } from "../config/config.js";
+import { BrigTest } from "../dice/roll.js";
+import { promptTest } from "../apps/test-dialog.js";
+import { postWarpResult } from "../data/warp-tables.js";
 
 const { renderTemplate } = foundry.applications.handlebars;
 
 /**
  * Document Acteur du système.
  */
-export class BrigActor extends Actor {
+export class BrigActor extends (Actor as any) {
 
   /* -------------------------------------------- */
   /*  Préparation des données                     */

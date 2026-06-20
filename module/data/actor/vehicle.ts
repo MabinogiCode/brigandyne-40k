@@ -1,10 +1,10 @@
-import { fields, int, num, str, bool, html, resource, choice } from "../fields.mjs";
+import { fields, int, num, str, bool, html, resource, choice } from "../fields.js";
 
 /**
  * Véhicule / vaisseau spatial.
  * `pv` = Structure (compatible barre de jeton primaire). `protection` = Blindage.
  */
-export class VehicleModel extends foundry.abstract.TypeDataModel {
+export class VehicleModel extends (foundry.abstract.TypeDataModel as any) {
   static defineSchema() {
     return {
       vehicleType: choice({ terrestre: "Terrestre", volant: "Volant", spatial: "Spatial" }, "terrestre"),

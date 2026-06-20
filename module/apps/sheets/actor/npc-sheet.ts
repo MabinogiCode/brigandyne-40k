@@ -1,4 +1,4 @@
-import { BrigActorSheet } from "./base-actor-sheet.mjs";
+import { BrigActorSheet } from "./base-actor-sheet.js";
 
 /**
  * Feuille de PNJ / créature.

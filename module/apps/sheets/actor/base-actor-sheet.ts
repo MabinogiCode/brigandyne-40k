@@ -1,5 +1,5 @@
-import { BRIGANDYNE } from "../../../config/config.mjs";
-import { BrigCharGen } from "../../char-gen.mjs";
+import { BRIGANDYNE } from "../../../config/config.js";
+import { BrigCharGen } from "../../char-gen.js";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 const { ActorSheetV2 } = foundry.applications.sheets;
@@ -8,7 +8,11 @@ const { TextEditor } = foundry.applications.ux;
 /**
  * Feuille d'acteur de base (ApplicationV2).
  */
-export class BrigActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
+export class BrigActorSheet extends (HandlebarsApplicationMixin(ActorSheetV2) as any) {
+  declare actor: any;
+  declare document: any;
+  declare isEditable: boolean;
+  declare element: HTMLElement;
   static DEFAULT_OPTIONS = {
     classes: ["brigandyne-40k", "sheet", "actor"],
     position: { width: 780, height: 740 },

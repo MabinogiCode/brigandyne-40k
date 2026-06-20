@@ -1,4 +1,4 @@
-import { BRIGANDYNE } from "../../../config/config.mjs";
+import { BRIGANDYNE } from "../../../config/config.js";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 const { ItemSheetV2 } = foundry.applications.sheets;
@@ -7,7 +7,12 @@ const { TextEditor } = foundry.applications.ux;
 /**
  * Feuille d'objet générique (pilotée par le type).
  */
-export class BrigItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
+export class BrigItemSheet extends (HandlebarsApplicationMixin(ItemSheetV2) as any) {
+  declare actor: any;
+  declare item: any;
+  declare document: any;
+  declare isEditable: boolean;
+  declare element: HTMLElement;
   static DEFAULT_OPTIONS = {
     classes: ["brigandyne-40k", "sheet", "item"],
     position: { width: 540, height: 580 },
