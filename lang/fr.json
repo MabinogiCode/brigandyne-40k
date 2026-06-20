@@ -362,6 +362,7 @@
       "step": {
         "identity": "Identité",
         "characteristics": "Caractéristiques",
+        "traits": "Archétype & Traits",
         "details": "Détails",
         "summary": "Récapitulatif"
       },

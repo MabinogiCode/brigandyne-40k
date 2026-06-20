@@ -2,6 +2,21 @@ import { BaseItemModel } from "./base-item.mjs";
 import { fields, str, int, num, bool, choice, html, characteristicsSchema } from "../fields.mjs";
 
 /**
+ * Archétype de personnalité (symbolisé par un animal).
+ * Applique des modificateurs fixes aux caractéristiques à la création.
+ */
+export class ArchetypeModel extends BaseItemModel {
+  static defineSchema() {
+    return {
+      ...super.defineSchema(),
+      animal: str(""),
+      modifiers: characteristicsSchema(0),  // modificateurs sur les 13 caractéristiques
+      description: html("")
+    };
+  }
+}
+
+/**
  * Espèce (Humain, Squat, Ogryn…).
  */
 export class SpeciesModel extends BaseItemModel {

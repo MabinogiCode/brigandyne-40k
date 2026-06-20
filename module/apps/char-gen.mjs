@@ -11,48 +11,61 @@ const PACK = {
   species: "brigandyne-40k.species",
   careers: "brigandyne-40k.careers",
   specialties: "brigandyne-40k.specialties",
-  talents: "brigandyne-40k.talents"
+  talents: "brigandyne-40k.talents",
+  archetypes: "brigandyne-40k.archetypes"
 };
 const DETAIL_KEYS = ["age", "height", "weight", "eyes", "hair", "gender", "homeworld", "motivation"];
 const KEYS12 = CHARACTERISTIC_KEYS.filter(k => k !== "psy");
 const POINTS_TOTAL = 120;
 
+/** Compendiums d'équipement à parcourir lors de l'attribution automatique. */
+const EQUIP_PACKS = [
+  "brigandyne-40k.armor",
+  "brigandyne-40k.weapons",
+  "brigandyne-40k.ammunition",
+  "brigandyne-40k.augmentations"
+];
+
 /**
  * Assistant (wizard) de création de personnage.
- * Étapes : Identité → Caractéristiques → Détails → Récapitulatif.
+ * Étapes : Identité → Caractéristiques → Archétype & Traits → Détails → Récapitulatif.
  * Caractéristiques : méthode A (tirage 2D10 + assignation) ou B (répartir 120 pts),
  * + prélèvement vers PSY (max 10/comp, COM compte double).
+ * Archétype : modifie les caractéristiques ; Vices & Vertus ajoutés comme traits.
+ * Atouts : *CNS*-1 tirés au hasard dans le pool carrière (spécialités + talents).
+ * Équipement : recherche automatique par nom dans les compendiums.
  */
 export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
   constructor(options = {}) {
     super(options);
     this.actor = options.actor ?? null;
     this.isGM = game.user.isGM;
-    // Les verrous (1 perso/joueur, méthode, dés) ne s'appliquent qu'à la création
-    // par un joueur — jamais au MJ ni à l'édition d'un acteur existant.
     this.locksApply = !this.actor && !this.isGM;
     this.lock = this.locksApply ? getChargenLock() : foundry.utils.deepClone(BLANK_LOCK);
 
-    this.steps = ["identity", "characteristics", "details", "summary"];
+    this.steps = ["identity", "characteristics", "traits", "details", "summary"];
     this.step = Number.isInteger(this.lock.step) ? this.lock.step : 0;
     this.draft = {
       name: this.lock.draft?.name ?? this.actor?.name ?? game.i18n.localize("BRIG.CharGen.defaultName"),
       speciesId: this.lock.draft?.speciesId ?? null,
       careerId: this.lock.draft?.careerId ?? null,
       role: this.lock.draft?.role ?? this.actor?.system?.role ?? "premierRole",
+      archetypeId: this.lock.draft?.archetypeId ?? null,
+      vice: this.lock.draft?.vice ?? null,
+      vertu: this.lock.draft?.vertu ?? null,
       chars: {}, details: { ...(this.actor?.system?.details ?? {}), ...(this.lock.draft?.details ?? {}) }
     };
     this.gen = { method: null, rolled: [], dropped: null, pool: [], assign: {}, points: {}, psyDraw: {} };
     this._seedFromLock();
     this._userHook = null;
     this._baseMap = {};
+    this._noPsy = false;
+    this._archetypeMods = null;
   }
 
-  /** (Re)initialise l'état de génération à partir du verrou persité. */
+  /** (Re)initialise l'état de génération à partir du verrou persisté. */
   _seedFromLock() {
     const l = this.lock ?? {};
-    // Méthode : null = pas encore choisie (cartes affichées). Aucun pré-choix, pour que
-    // le premier clic soit toujours réactif (MJ comme joueur).
     this.gen.method = l.method ?? null;
     this.gen.rolledOnce = !!l.rolledOnce;
     this.gen.pool = Array.isArray(l.pool) ? [...l.pool] : [];
@@ -63,8 +76,7 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     this.gen.dropped = l.dropped ?? null;
   }
 
-  /** Sauvegarde l'avancement (et donc les verrous) sur le User. No-op hors verrouillage.
-   *  Suppose que l'état DOM courant a déjà été capturé (via `_capture`). */
+  /** Sauvegarde l'avancement sur le User. No-op hors verrouillage. */
   async _persist() {
     if (!this.locksApply) return;
     this.lock = await setChargenLock(game.user, {
@@ -73,7 +85,11 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       pool: this.gen.pool.length === 12 ? [...this.gen.pool] : null,
       dropped: this.gen.dropped,
       assign: this.gen.assign, points: this.gen.points, psyDraw: this.gen.psyDraw,
-      draft: { name: this.draft.name, speciesId: this.draft.speciesId, careerId: this.draft.careerId, role: this.draft.role, details: this.draft.details },
+      draft: {
+        name: this.draft.name, speciesId: this.draft.speciesId, careerId: this.draft.careerId,
+        role: this.draft.role, archetypeId: this.draft.archetypeId,
+        vice: this.draft.vice, vertu: this.draft.vertu, details: this.draft.details
+      },
       step: this.step
     });
   }
@@ -123,27 +139,38 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     } else {
       for (const k of KEYS12) t[k] = this._base(k) + (Number(this.gen.points[k]) || 0);
     }
-    // Prélèvement vers PSY (COM compte double)
-    let psy = this._base("psy");
-    for (const [k, d] of Object.entries(this.gen.psyDraw)) {
-      const draw = Math.clamp(Number(d) || 0, 0, 10);
-      if (!draw) continue;
-      t[k] = Math.max(0, t[k] - draw);
-      psy += (k === "com" ? draw * 2 : draw);
+
+    // Prélèvement vers PSY (COM compte double) — ignoré pour les espèces sans PSY
+    let psy = this._base("psy") ?? 0;
+    if (!this._noPsy) {
+      for (const [k, d] of Object.entries(this.gen.psyDraw)) {
+        const draw = Math.clamp(Number(d) || 0, 0, 10);
+        if (!draw) continue;
+        t[k] = Math.max(0, t[k] - draw);
+        psy += (k === "com" ? draw * 2 : draw);
+      }
+      t.psy = psy;
+      if (!this.actor) t.psy = Math.min(t.psy, BRIGANDYNE.mechanics.maxCharCreation);
+    } else {
+      t.psy = 0;
     }
-    t.psy = psy;
-    // Plafond de PSY à la création (RAW : score de Magie/Psychisme max 50% à la création)
-    if (!this.actor) t.psy = Math.min(t.psy, BRIGANDYNE.mechanics.maxCharCreation);
+
+    // Modificateurs d'archétype (appliqués après la répartition initiale)
+    if (this._archetypeMods) {
+      for (const k of CHARACTERISTIC_KEYS) {
+        const mod = Number(this._archetypeMods[k]) || 0;
+        if (mod) t[k] = Math.clamp(t[k] + mod, 0, 100);
+      }
+    }
+
     for (const k of CHARACTERISTIC_KEYS) t[k] = Math.clamp(Math.round(t[k]), 0, 100);
     return t;
   }
 
   /**
-   * PV et SF de départ (RAW Brigandyne 2e) :
-   *   PV (Vitalité)  = FOR/5 + END/5 + bonus VOL (+ bonus d'espèce PV)
-   *   SF (Sang-froid)= VOL/5 + CNS/5 + bonus COM (+ bonus d'espèce SF)
-   * @param {object} totals   caractéristiques finales
-   * @param {string[]} special clés de spécificités d'espèce (pvPlus1, pvPlus2, sfPlus1…)
+   * PV et SF de départ :
+   *   PV = FOR/5 + END/5 + *VOL* (+ bonus d'espèce)
+   *   SF = VOL/5 + CNS/5 + *COM* (+ bonus d'espèce)
    */
   _derivePvSf(totals, special = []) {
     const sb = speciesResourceBonus(special);
@@ -168,7 +195,15 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
   async _prepareContext() {
     const sp = game.packs.get(PACK.species); await sp?.getIndex();
     const ca = game.packs.get(PACK.careers); await ca?.getIndex({ fields: ["system.faction"] });
+    const arcPack = game.packs.get(PACK.archetypes); await arcPack?.getIndex();
+
     const species = sp ? sp.index.contents.map(e => ({ id: e._id, name: e.name })).sort((a, b) => a.name.localeCompare(b.name)) : [];
+    const archetypes = arcPack
+      ? arcPack.index.contents
+          .filter(e => !e._key?.startsWith("!folders!"))
+          .map(e => ({ id: e._id, name: e.name }))
+          .sort((a, b) => a.name.localeCompare(b.name))
+      : [];
 
     const careerGroups = [];
     if (ca) {
@@ -183,12 +218,14 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
 
     const speciesDoc = await this._packDoc(PACK.species, this.draft.speciesId);
     const careerDoc = await this._packDoc(PACK.careers, this.draft.careerId);
+    const archetypeDoc = await this._packDoc(PACK.archetypes, this.draft.archetypeId);
 
     this._baseMap = {};
     for (const k of CHARACTERISTIC_KEYS) this._baseMap[k] = speciesDoc?.system.base?.[k] ?? (k === "psy" ? 0 : 25);
+    this._noPsy = speciesDoc?.system.noPsy ?? false;
+    this._archetypeMods = archetypeDoc?.system.modifiers ?? null;
 
     const totals = this._genTotals();
-    // Infobulle par compétence : « Nom — explication » (pour les néophytes)
     const charTip = k => `${game.i18n.localize(BRIGANDYNE.characteristics[k].label)} — ${game.i18n.localize(`BRIG.Char.${k}.desc`)}`;
     const chars = CHARACTERISTIC_KEYS.map(k => ({
       key: k, abbr: BRIGANDYNE.characteristics[k].abbrev, label: BRIGANDYNE.characteristics[k].label, tip: charTip(k),
@@ -203,26 +240,12 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       assignedIdx: this.gen.assign[k] ?? "", point: this.gen.points[k] ?? 0, psyDraw: this.gen.psyDraw[k] ?? 0,
       options: this.gen.pool.map((v, i) => ({ i, v, used: usedIdx.has(i) && this.gen.assign[k] !== i }))
     }));
-    // Bandeau des dés tirés : grise les valeurs déjà assignées (index = position dans le pool)
     let _pp = 0;
     const rolledDisplay = this.gen.rolled.map(r => r.dropped
       ? { v: r.v, dropped: true, used: false }
       : { v: r.v, dropped: false, used: usedIdx.has(_pp++) });
 
-    // État de verrouillage (création par un joueur uniquement)
-    const blocked = this.locksApply && getChargenLock().complete;
-    const methodLabel = this.gen.method
-      ? game.i18n.localize(this.gen.method === "roll" ? "BRIG.CharGen.method.roll" : "BRIG.CharGen.method.points")
-      : "";
-
-    // Enrichissement descriptif (rendre la création accessible aux néophytes)
-    const lore = BRIGANDYNE.speciesLore?.[speciesDoc?.name] ?? null;
-    const speciesTraits = (speciesDoc?.system.special ?? []).map(t => game.i18n.localize(BRIGANDYNE.speciesTraits[t] ?? t));
-    const speciesLimits = [];
-    if (speciesDoc) for (const k of CHARACTERISTIC_KEYS) {
-      const lim = speciesDoc.system.limits?.[k];
-      if (lim != null) speciesLimits.push(`${game.i18n.localize(BRIGANDYNE.characteristics[k].abbrev)} ${lim}`);
-    }
+    // Informations sur les atouts de carrière (pool disponible)
     const stripHtml = s => (s ?? "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
     let specialtiesInfo = [], talentsInfo = [];
     if (careerDoc) {
@@ -233,9 +256,28 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       talentsInfo = (careerDoc.system.talents ?? []).map(n => ({ name: n, tip: tipOf(talPack, n) }));
     }
 
+    // Calcul du nombre d'atouts tirés au hasard : *CNS*-1
+    const cnsBonus = Math.floor((totals.cns ?? 25) / 10);
+    const numAtouts = Math.max(0, cnsBonus - 1);
+    const poolSize = (careerDoc?.system.specialties?.length ?? 0) + (careerDoc?.system.talents?.length ?? 0);
+
+    const blocked = this.locksApply && getChargenLock().complete;
+    const methodLabel = this.gen.method
+      ? game.i18n.localize(this.gen.method === "roll" ? "BRIG.CharGen.method.roll" : "BRIG.CharGen.method.points")
+      : "";
+
+    const lore = BRIGANDYNE.speciesLore?.[speciesDoc?.name] ?? null;
+    const speciesTraits = (speciesDoc?.system.special ?? []).map(t => game.i18n.localize(BRIGANDYNE.speciesTraits[t] ?? t));
+    const speciesLimits = [];
+    if (speciesDoc) for (const k of CHARACTERISTIC_KEYS) {
+      const lim = speciesDoc.system.limits?.[k];
+      if (lim != null) speciesLimits.push(`${game.i18n.localize(BRIGANDYNE.characteristics[k].abbrev)} ${lim}`);
+    }
+
     return {
       speciesDesc: lore?.desc, speciesLifespan: lore?.lifespan, speciesSize: lore?.size, speciesTraits, speciesLimits,
       careerDesc: careerDoc?.system.description, careerQuote: careerDoc?.system.quote,
+      careerStartingEquipment: careerDoc?.system.startingEquipment ?? "",
       specialtiesInfo, talentsInfo,
       locksApply: this.locksApply, blocked,
       methodChosen: !!this.gen.method, methodLocked: this.locksApply && !!this.gen.method,
@@ -248,12 +290,17 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       careerName: careerDoc?.name, lifestyle: careerDoc ? game.i18n.localize(BRIGANDYNE.lifestyles[careerDoc.system.lifestyle]?.label ?? "") : "",
       specialties: careerDoc?.system.specialties ?? [], talents: careerDoc?.system.talents ?? [],
       chars, pv, sf, details: this.draft.details, detailKeys: DETAIL_KEYS,
+      // Archétypes & Traits
+      archetypes, archetypeDoc, archetypeName: archetypeDoc?.name ?? "",
+      vices: BRIGANDYNE.vices, virtues: BRIGANDYNE.virtues,
+      noPsy: this._noPsy,
+      // Atouts (tirage aléatoire)
+      numAtouts, cnsBonus, poolSize,
       gen: {
         method: this.gen.method, rolled: this.gen.rolled, rolledDisplay, dropped: this.gen.dropped, hasPool: this.gen.pool.length === 12,
         rows: genRows, psyBase: this._base("psy"), psyTotal: totals.psy, psyCap: BRIGANDYNE.mechanics.maxCharCreation,
         pointsTotal: POINTS_TOTAL, pointsUsed: this._pointsUsed(), pointsRemaining: POINTS_TOTAL - this._pointsUsed(),
         valid: this._genValid(),
-        // Récap MJ : somme des dés conservés (méthode aléatoire) et total des compétences
         diceSum: this.gen.pool.reduce((s, v) => s + (Number(v) || 0), 0),
         charTotal: CHARACTERISTIC_KEYS.reduce((s, k) => s + (Number(totals[k]) || 0), 0)
       }
@@ -264,10 +311,8 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     const el = this.element;
     el.querySelectorAll("[data-refresh]").forEach(s => s.addEventListener("change", () => { this._capture(); this._persist(); this.render(); }));
     el.querySelectorAll("[name^='points.'],[name^='psyDraw.']").forEach(i => i.addEventListener("input", () => this._refreshTotals()));
-    // Assignation des dés : handler dédié (échange, source de vérité = this.gen.assign)
     el.querySelectorAll('select[name^="assign."]').forEach(s => s.addEventListener("change", () => this._onAssign(s)));
 
-    // Réagir en direct à un déverrouillage du MJ (modif. du flag de ce joueur)
     if (this.locksApply && this._userHook === null) {
       this._userHook = Hooks.on("updateUser", (user, changes) => {
         if (user.id !== game.user.id) return;
@@ -284,7 +329,7 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     return super._onClose(options);
   }
 
-  /** Mise à jour live des totaux/compteurs sans re-render (pour les saisies numériques). */
+  /** Mise à jour live des totaux/compteurs sans re-render. */
   _refreshTotals() {
     this._captureGen();
     const t = this._genTotals();
@@ -293,7 +338,7 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     const rem = el.querySelector("[data-points-remaining]"); if (rem) rem.textContent = POINTS_TOTAL - this._pointsUsed();
   }
 
-  /** Capture points & prélèvements PSY depuis le DOM. (L'assignation des dés est gérée par _onAssign.) */
+  /** Capture points & prélèvements PSY depuis le DOM. */
   _captureGen() {
     const el = this.element; if (!el) return;
     for (const k of KEYS12) {
@@ -305,20 +350,19 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     this.draft.chars = this._genTotals();
   }
 
-  /** Assigne un dé (par index) à une caractéristique, avec échange si le dé est déjà pris ailleurs. */
+  /** Assigne un dé (par index) à une caractéristique, avec échange si déjà pris. */
   _onAssign(sel) {
-    this._captureGen();                                  // fige points/PSY courants (sans toucher à assign)
+    this._captureGen();
     const key = sel.name.slice("assign.".length);
     const val = sel.value === "" ? null : Number(sel.value);
     const prev = this.gen.assign[key] ?? null;
     if (val == null) {
       delete this.gen.assign[key];
     } else {
-      // Le dé est-il déjà attribué à une autre caractéristique ? → échange.
       for (const k of KEYS12) {
         if (k !== key && this.gen.assign[k] === val) {
-          if (prev != null) this.gen.assign[k] = prev;   // l'autre récupère l'ancien dé de `key`
-          else delete this.gen.assign[k];                // sinon il est libéré
+          if (prev != null) this.gen.assign[k] = prev;
+          else delete this.gen.assign[k];
         }
       }
       this.gen.assign[key] = val;
@@ -337,6 +381,10 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       if (get("role")) this.draft.role = get("role").value;
     } else if (this.stepId === "characteristics") {
       this._captureGen();
+    } else if (this.stepId === "traits") {
+      if (get("archetypeId")) this.draft.archetypeId = get("archetypeId").value || null;
+      if (get("vice")) this.draft.vice = get("vice").value || null;
+      if (get("vertu")) this.draft.vertu = get("vertu").value || null;
     } else if (this.stepId === "details") {
       for (const d of DETAIL_KEYS) { const i = get(`details.${d}`); if (i) this.draft.details[d] = i.value; }
     }
@@ -348,13 +396,11 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
   static #onCancel() { this.close(); }
   static async #onFinish() { this._capture(); await this._commit(); this.close(); }
 
-  /** Choix de méthode. Pour un joueur, le choix est définitif (verrouillé). */
+  /** Choix de méthode. Pour un joueur, le choix est définitif. */
   static async #onGenMethod(event, target) {
     this._capture();
     const method = target.dataset.method;
-    // MJ / édition : changement libre, sans verrou.
     if (!this.locksApply) { this.gen.method = method; this.render(); return; }
-    // Joueur : confirmation, puis verrouillage.
     const label = game.i18n.localize(method === "roll" ? "BRIG.CharGen.method.roll" : "BRIG.CharGen.method.points");
     const ok = await DialogV2.confirm({
       window: { title: game.i18n.localize("BRIG.CharGen.method.confirmTitle"), icon: "fa-solid fa-lock" },
@@ -367,9 +413,8 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     this.render();
   }
 
-  /** MJ / édition : revenir au choix de méthode (réinitialise les données de tirage). */
   static #onGenMethodReset() {
-    if (this.locksApply) return;             // sécurité : verrou joueur intact
+    if (this.locksApply) return;
     this._capture();
     this.gen.method = null;
     this.gen.rolled = []; this.gen.pool = []; this.gen.assign = {}; this.gen.rolledOnce = false; this.gen.dropped = null;
@@ -378,7 +423,6 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
 
   static async #onGenRoll() {
     this._capture();
-    // Verrou : pas de relance pour un joueur ayant déjà jeté ses dés.
     if (this.locksApply && this.gen.rolledOnce) {
       ui.notifications?.warn(game.i18n.localize("BRIG.CharGen.lock.alreadyRolled"));
       return;
@@ -399,7 +443,6 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     this.render();
   }
 
-  /* ----- Demandes de déverrouillage au MJ ----- */
   static #onRequestNew() { requestUnlock("new"); }
   static #onRequestMethod() { requestUnlock("method"); }
   static #onRequestReroll() { requestUnlock("reroll"); }
@@ -408,14 +451,18 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
   async _commit() {
     const speciesDoc = await this._packDoc(PACK.species, this.draft.speciesId);
     const careerDoc = await this._packDoc(PACK.careers, this.draft.careerId);
-    // S'assurer que les bases d'espèce sont connues même sans rendu préalable
+    const archetypeDoc = await this._packDoc(PACK.archetypes, this.draft.archetypeId);
+
+    // Initialiser les données de base pour _genTotals()
     this._baseMap = {};
     for (const k of CHARACTERISTIC_KEYS) this._baseMap[k] = speciesDoc?.system.base?.[k] ?? (k === "psy" ? 0 : 25);
-    const totals = this._genTotals();
+    this._noPsy = speciesDoc?.system.noPsy ?? false;
+    this._archetypeMods = archetypeDoc?.system.modifiers ?? null;
+
+    const totals = this._genTotals();  // inclut modificateurs d'archétype et psyDraw
 
     const characteristics = {};
     for (const k of CHARACTERISTIC_KEYS) characteristics[k] = { value: totals[k], mod: 0, advances: 0 };
-    // Le bonus d'espèce est stocké dans `.bonus` ; PV/SF max sont re-dérivés en continu par le DataModel.
     const { pv, sf, pvBonus, sfBonus } = this._derivePvSf(totals, speciesDoc?.system?.special ?? []);
 
     const system = {
@@ -428,18 +475,68 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     };
 
     const items = [];
+
     if (careerDoc) {
       items.push(careerDoc.toObject());
+
+      // Chargement des packs d'atouts
       const specPack = game.packs.get(PACK.specialties); await specPack?.getIndex();
       const talPack = game.packs.get(PACK.talents); await talPack?.getIndex();
+
+      // Construction du pool complet d'atouts (spécialités + talents de la carrière)
+      const atoutPool = [];
       for (const name of (careerDoc.system.specialties ?? [])) {
         const e = specPack?.index.find(i => i.name === name);
-        items.push(e ? (await specPack.getDocument(e._id)).toObject() : { name, type: "specialty" });
+        atoutPool.push({ packRef: specPack, entry: e, name, type: "specialty" });
       }
       for (const name of (careerDoc.system.talents ?? [])) {
         const e = talPack?.index.find(i => i.name === name);
-        items.push(e ? (await talPack.getDocument(e._id)).toObject() : { name, type: "talent" });
+        atoutPool.push({ packRef: talPack, entry: e, name, type: "talent" });
       }
+
+      // Tirage aléatoire de *CNS*-1 atouts (Fisher-Yates)
+      const cnsBonus = Math.floor((totals.cns ?? 25) / 10);
+      const numAtouts = Math.max(0, cnsBonus - 1);
+      for (let i = atoutPool.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [atoutPool[i], atoutPool[j]] = [atoutPool[j], atoutPool[i]];
+      }
+      const chosenAtouts = atoutPool.slice(0, numAtouts);
+      for (const { packRef, entry, name, type } of chosenAtouts) {
+        items.push(entry ? (await packRef.getDocument(entry._id)).toObject() : { name, type });
+      }
+
+      // Équipement de départ : recherche par nom dans les compendiums
+      if (careerDoc.system.startingEquipment) {
+        const equipPacks = EQUIP_PACKS.map(id => game.packs.get(id)).filter(Boolean);
+        for (const p of equipPacks) await p.getIndex();
+
+        const plainText = careerDoc.system.startingEquipment
+          .replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+        const candidateNames = plainText.split(/[,;]/).map(s => s.trim()).filter(s => s.length > 2);
+
+        for (const rawName of candidateNames) {
+          const normName = rawName.toLowerCase();
+          for (const p of equipPacks) {
+            const entry = p.index.find(e => e.name.toLowerCase() === normName);
+            if (entry) {
+              items.push((await p.getDocument(entry._id)).toObject());
+              break;
+            }
+          }
+        }
+      }
+    }
+
+    // Vice choisi (trait item)
+    if (this.draft.vice && BRIGANDYNE.vices[this.draft.vice]) {
+      const viceName = game.i18n.localize(BRIGANDYNE.vices[this.draft.vice]);
+      items.push({ name: viceName, type: "trait", system: { traitType: "vice", rating: 1, god: "", effect: "" } });
+    }
+    // Vertu choisie (trait item)
+    if (this.draft.vertu && BRIGANDYNE.virtues[this.draft.vertu]) {
+      const vertuName = game.i18n.localize(BRIGANDYNE.virtues[this.draft.vertu]);
+      items.push({ name: vertuName, type: "trait", system: { traitType: "vertu", rating: 1, god: "", effect: "" } });
     }
 
     if (this.actor) {
@@ -454,7 +551,6 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     const actor = await Actor.create({ name: this.draft.name, type: "character", ownership, system, items });
     if (actor) {
       await game.user.update({ character: actor.id });
-      // Verrou « 1 perso/joueur » : on mémorise que ce joueur a terminé sa création.
       if (this.locksApply) await setChargenLock(game.user, { complete: true, actorId: actor.id });
       ui.notifications?.info(game.i18n.format("BRIG.CharGen.created", { name: actor.name }));
       actor.sheet?.render(true);

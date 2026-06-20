@@ -51,6 +51,9 @@ export class CharacterModel extends BaseActorModel {
     if (this.pv.value > this.pv.max) this.pv.value = this.pv.max;
     if (this.sf.value > this.sf.max) this.sf.value = this.sf.max;
 
+    // Seuil de Blessure (SB) = PV/2 (arrondi à l'inférieur)
+    this.pv.seuil = Math.floor(this.pv.max / 2);
+
     // Seuil d'instabilité recalculé sur le SF max à jour.
     this.corruption.threshold = Math.floor(this.sf.max / 4);
   }
