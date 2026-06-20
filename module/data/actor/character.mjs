@@ -31,7 +31,8 @@ export class CharacterModel extends BaseActorModel {
         homeworld: str(""),
         deity: str(""),
         motivation: str("")
-      })
+      }),
+      schemaVersion: str("")
     };
   }
 

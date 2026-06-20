@@ -471,7 +471,8 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       careerName: careerDoc?.name ?? "", lifestyle: careerDoc?.system.lifestyle ?? "ordinaire",
       destin: { value: speciesDoc?.system.destin ?? 2, max: speciesDoc?.system.destin ?? 2 },
       pv: { value: pv, max: pv, bonus: pvBonus }, sf: { value: sf, max: sf, bonus: sfBonus },
-      details: this.draft.details
+      details: this.draft.details,
+      schemaVersion: game.system.version
     };
 
     const items = [];

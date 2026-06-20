@@ -203,6 +203,9 @@
       "label": "Salaire",
       "earned": "Gain : {amount} Trônes Gelt."
     },
+    "RecalcStats": {
+      "done": "Attributs recalculés (schéma v{version})."
+    },
     "Riposte": {
       "label": "Riposte de {name}"
     },
