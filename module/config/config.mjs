@@ -262,11 +262,20 @@ BRIGANDYNE.vices = {
   trompeur: "BRIG.Vice.trompeur"
 };
 
+// Les dix vertus, en regard des dix vices (RAW Livre Premier p.48) :
+// avare/genereux · colerique/prudent · cruel/clement · envieux/bienveillant ·
+// gourmand/sobre · lache/valeureux · luxurieux/chaste · orgueilleux/humble ·
+// paresseux/travailleur · trompeur/loyal.
 BRIGANDYNE.virtues = {
   genereux: "BRIG.Virtue.genereux",
+  prudent: "BRIG.Virtue.prudent",
+  clement: "BRIG.Virtue.clement",
   bienveillant: "BRIG.Virtue.bienveillant",
+  sobre: "BRIG.Virtue.sobre",
   valeureux: "BRIG.Virtue.valeureux",
   chaste: "BRIG.Virtue.chaste",
+  humble: "BRIG.Virtue.humble",
+  travailleur: "BRIG.Virtue.travailleur",
   loyal: "BRIG.Virtue.loyal"
 };
 

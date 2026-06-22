@@ -1,0 +1,44 @@
+{
+  "_id": "b14d85badf01c78b",
+  "name": "Lion",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Lion",
+    "modifiers": {
+      "com": 5,
+      "cns": -5,
+      "dis": -5,
+      "end": 0,
+      "for": 5,
+      "tec": 0,
+      "psy": 0,
+      "mou": 0,
+      "per": 0,
+      "soc": 5,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "traitsFixed": [
+      "orgueilleux"
+    ],
+    "traitsChoices": [
+      "paresseux",
+      "luxurieux",
+      "colerique",
+      "loyal",
+      "valeureux"
+    ],
+    "traitsChoiceCount": 1,
+    "talents": [
+      "Confiance en soi",
+      "Dévoué serviteur",
+      "Fascination",
+      "Festoyeur",
+      "Second souffle"
+    ],
+    "description": "<p><em>« Je suis imposant·e, charismatique, forte estime de soi. »</em></p><p><strong>Bonus :</strong> Combat +5, Force +5, Sociabilité +5<br /><strong>Malus :</strong> Connaissances ou Habileté −5, Discrétion −5</p><p><strong>Vices &amp; vertus :</strong> Orgueilleux +1, et un +1 parmi : Paresseux, Luxurieux, Colérique, Loyal, Valeureux</p><p><strong>Talents accessibles :</strong> Confiance en soi, Dévoué serviteur, Fascination, Festoyeur, Second souffle</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "_id": "509cce51dfaf1559",
+  "name": "Corbeau",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Corbeau",
+    "modifiers": {
+      "com": 0,
+      "cns": 5,
+      "dis": 5,
+      "end": 0,
+      "for": 0,
+      "tec": 0,
+      "psy": 0,
+      "mou": 0,
+      "per": 0,
+      "soc": -5,
+      "sur": 0,
+      "tir": 0,
+      "vol": 5
+    },
+    "traitsFixed": [],
+    "traitsChoices": [
+      "cruel",
+      "humble",
+      "chaste",
+      "sobre",
+      "prudent",
+      "envieux"
+    ],
+    "traitsChoiceCount": 2,
+    "talents": [
+      "Calme",
+      "Distraction",
+      "Doué (VOL)",
+      "Nyctalopie",
+      "Sauvegarde"
+    ],
+    "description": "<p><em>« Je suis mystérieux·se, d'allure sombre, mauvaise réputation. »</em></p><p><strong>Bonus :</strong> Connaissances +5, Discrétion ou Survie +5, Volonté +5<br /><strong>Malus :</strong> Sociabilité −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Cruel, Humble, Chaste, Sobre, Prudent, Envieux</p><p><strong>Talents accessibles :</strong> Calme, Distraction, Doué (VOL), Nyctalopie, Sauvegarde</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "_id": "69327967b8c6f143",
+  "name": "Porc",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Porc",
+    "modifiers": {
+      "com": 0,
+      "cns": 0,
+      "dis": 0,
+      "end": 5,
+      "for": 5,
+      "tec": 0,
+      "psy": 0,
+      "mou": -5,
+      "per": 0,
+      "soc": 5,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "traitsFixed": [
+      "gourmand"
+    ],
+    "traitsChoices": [
+      "colerique",
+      "genereux",
+      "luxurieux",
+      "bienveillant",
+      "paresseux"
+    ],
+    "traitsChoiceCount": 1,
+    "talents": [
+      "Brute",
+      "Distraction",
+      "Doué (END)",
+      "Festoyeur",
+      "Guérison rapide"
+    ],
+    "description": "<p><em>« Je suis fort·e, gras·se, lubrique, aime la fête et la bonne chère. »</em></p><p><strong>Bonus :</strong> Force +5, Endurance +5, Sociabilité +5<br /><strong>Malus :</strong> Mouvement ou Connaissances −5</p><p><strong>Vices &amp; vertus :</strong> Gourmand +1, et un +1 parmi : Colérique, Généreux, Luxurieux, Bienveillant, Paresseux</p><p><strong>Talents accessibles :</strong> Brute, Distraction, Doué (END), Festoyeur, Guérison rapide</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "source": "L1"
+  }
+}

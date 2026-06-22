@@ -1,0 +1,44 @@
+{
+  "_id": "29384732292403e6",
+  "name": "Fourmi",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Fourmi",
+    "modifiers": {
+      "com": 0,
+      "cns": 5,
+      "dis": 0,
+      "end": 0,
+      "for": 0,
+      "tec": 5,
+      "psy": 0,
+      "mou": 0,
+      "per": -5,
+      "soc": 0,
+      "sur": 0,
+      "tir": 0,
+      "vol": 5
+    },
+    "traitsFixed": [
+      "travailleur"
+    ],
+    "traitsChoices": [
+      "avare",
+      "humble",
+      "chaste",
+      "sobre",
+      "prudent"
+    ],
+    "traitsChoiceCount": 1,
+    "talents": [
+      "Prudent",
+      "Sain d'esprit",
+      "Sommeil léger",
+      "Travail d'équipe",
+      "Vivacité"
+    ],
+    "description": "<p><em>« Je suis plutôt petit·e, travailleur·se, sérieux·se. »</em></p><p><strong>Bonus :</strong> Connaissances ou Discrétion +5, Habileté +5, Volonté +5<br /><strong>Malus :</strong> Perception ou Sociabilité −5</p><p><strong>Vices &amp; vertus :</strong> Travailleur +1, et un +1 parmi : Avare, Humble, Chaste, Sobre, Prudent</p><p><strong>Talents accessibles :</strong> Prudent, Sain d'esprit, Sommeil léger, Travail d'équipe, Vivacité</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "source": "L1"
+  }
+}

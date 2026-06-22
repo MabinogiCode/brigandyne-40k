@@ -1,0 +1,44 @@
+{
+  "_id": "3092afeca45df519",
+  "name": "Hibou",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Hibou",
+    "modifiers": {
+      "com": -5,
+      "cns": 10,
+      "dis": 0,
+      "end": 0,
+      "for": 0,
+      "tec": 5,
+      "psy": 0,
+      "mou": 0,
+      "per": 0,
+      "soc": 5,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "traitsFixed": [
+      "travailleur"
+    ],
+    "traitsChoices": [
+      "orgueilleux",
+      "chaste",
+      "prudent",
+      "envieux",
+      "loyal"
+    ],
+    "traitsChoiceCount": 1,
+    "talents": [
+      "Calme",
+      "Inoffensif",
+      "Mémoire sans faille",
+      "Polyglotte",
+      "Sain d'esprit"
+    ],
+    "description": "<p><em>« Je suis je-sais-tout, travailleur·se, exigeant·e. »</em></p><p><strong>Bonus :</strong> Connaissances +10, Habileté ou Perception +5, Sociabilité ou Volonté +5<br /><strong>Malus :</strong> Combat −5</p><p><strong>Vices &amp; vertus :</strong> Travailleur +1, et un +1 parmi : Orgueilleux, Chaste, Prudent, Envieux, Loyal</p><p><strong>Talents accessibles :</strong> Calme, Inoffensif, Mémoire sans faille, Polyglotte, Sain d'esprit</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "source": "L1"
+  }
+}

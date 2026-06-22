@@ -10,7 +10,11 @@ export class ArchetypeModel extends BaseItemModel {
     return {
       ...super.defineSchema(),
       animal: str(""),
-      modifiers: characteristicsSchema(0),  // modificateurs sur les 13 caractéristiques
+      modifiers: characteristicsSchema(0),       // modificateurs (carac) ; choix « ou » résolus sur la 1re option
+      traitsFixed: new fields.ArrayField(str("")),   // vices/vertus accordés d'office (+1)
+      traitsChoices: new fields.ArrayField(str("")), // vices/vertus parmi lesquels choisir
+      traitsChoiceCount: int(1, { min: 0 }),         // nombre à choisir dans traitsChoices
+      talents: new fields.ArrayField(str("")),       // talents accessibles (informatif)
       description: html("")
     };
   }

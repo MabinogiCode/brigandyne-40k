@@ -1,0 +1,43 @@
+{
+  "_id": "4ed7e930b377ad4a",
+  "name": "Rat",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Rat",
+    "modifiers": {
+      "com": 0,
+      "cns": 5,
+      "dis": 5,
+      "end": 5,
+      "for": -5,
+      "tec": 0,
+      "psy": 0,
+      "mou": 0,
+      "per": 0,
+      "soc": 0,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "traitsFixed": [],
+    "traitsChoices": [
+      "avare",
+      "cruel",
+      "envieux",
+      "prudent",
+      "chaste",
+      "trompeur"
+    ],
+    "traitsChoiceCount": 2,
+    "talents": [
+      "Coup en traître",
+      "Doué (DIS)",
+      "Esquive",
+      "Nyctalopie",
+      "Vivacité"
+    ],
+    "description": "<p><em>« Je suis plutôt petit·e, avare, méchant·e. »</em></p><p><strong>Bonus :</strong> Discrétion +5, Connaissances ou Volonté +5, Endurance ou Survie +5<br /><strong>Malus :</strong> Force −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Avare, Cruel, Envieux, Prudent, Chaste, Trompeur</p><p><strong>Talents accessibles :</strong> Coup en traître, Doué (DIS), Esquive, Nyctalopie, Vivacité</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "source": "L1"
+  }
+}

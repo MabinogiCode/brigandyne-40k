@@ -1,0 +1,44 @@
+{
+  "_id": "3a079d4f37efd239",
+  "name": "Renard",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Renard",
+    "modifiers": {
+      "com": 0,
+      "cns": 0,
+      "dis": 5,
+      "end": -5,
+      "for": 0,
+      "tec": 0,
+      "psy": 0,
+      "mou": 5,
+      "per": 0,
+      "soc": 5,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "traitsFixed": [
+      "trompeur"
+    ],
+    "traitsChoices": [
+      "paresseux",
+      "gourmand",
+      "prudent",
+      "envieux",
+      "lache"
+    ],
+    "traitsChoiceCount": 1,
+    "talents": [
+      "Agile",
+      "Chance insolente",
+      "Esquive",
+      "Mensonge éhonté",
+      "Sauvegarde"
+    ],
+    "description": "<p><em>« Je suis plutôt svelte, rusé·e, séducteur·trice. »</em></p><p><strong>Bonus :</strong> Discrétion ou Habileté +5, Mouvement +5, Sociabilité +5<br /><strong>Malus :</strong> Endurance ou Force −5</p><p><strong>Vices &amp; vertus :</strong> Trompeur +1, et un +1 parmi : Paresseux, Gourmand, Prudent, Envieux, Lâche</p><p><strong>Talents accessibles :</strong> Agile, Chance insolente, Esquive, Mensonge éhonté, Sauvegarde</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "source": "L1"
+  }
+}

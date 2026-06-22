@@ -1,0 +1,43 @@
+{
+  "_id": "35e3116a45820456",
+  "name": "Chat",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Chat",
+    "modifiers": {
+      "com": 0,
+      "cns": 0,
+      "dis": 5,
+      "end": 0,
+      "for": -5,
+      "tec": 0,
+      "psy": 0,
+      "mou": 5,
+      "per": 5,
+      "soc": 0,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "traitsFixed": [],
+    "traitsChoices": [
+      "cruel",
+      "envieux",
+      "lache",
+      "paresseux",
+      "prudent",
+      "trompeur"
+    ],
+    "traitsChoiceCount": 2,
+    "talents": [
+      "Agile",
+      "Dévoué serviteur",
+      "Fascination",
+      "Insaisissable",
+      "Pattes de chat"
+    ],
+    "description": "<p><em>« Je suis svelte, charmeur·se, mystérieux·se, parfois cruel·le. »</em></p><p><strong>Bonus :</strong> Discrétion +5, Perception +5, Mouvement +5<br /><strong>Malus :</strong> Force ou Volonté −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Cruel, Envieux, Lâche, Paresseux, Prudent, Trompeur</p><p><strong>Talents accessibles :</strong> Agile, Dévoué serviteur, Fascination, Insaisissable, Pattes de chat</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "source": "L1"
+  }
+}

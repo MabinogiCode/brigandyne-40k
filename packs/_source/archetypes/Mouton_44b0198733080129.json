@@ -1,0 +1,44 @@
+{
+  "_id": "44b0198733080129",
+  "name": "Mouton",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Mouton",
+    "modifiers": {
+      "com": 0,
+      "cns": 0,
+      "dis": 0,
+      "end": 0,
+      "for": 0,
+      "tec": 5,
+      "psy": 0,
+      "mou": 0,
+      "per": 5,
+      "soc": 5,
+      "sur": 0,
+      "tir": 0,
+      "vol": -5
+    },
+    "traitsFixed": [
+      "humble"
+    ],
+    "traitsChoices": [
+      "travailleur",
+      "prudent",
+      "lache",
+      "clement",
+      "chaste"
+    ],
+    "traitsChoiceCount": 1,
+    "talents": [
+      "Inoffensif",
+      "Prudent",
+      "Sain d'esprit",
+      "Sauvegarde",
+      "Suivre l'exemple"
+    ],
+    "description": "<p><em>« Je suis suiveur·se, prudent·e, amical·e. »</em></p><p><strong>Bonus :</strong> Habileté +5, Perception +5, Sociabilité +5<br /><strong>Malus :</strong> Volonté −5</p><p><strong>Vices &amp; vertus :</strong> Humble +1, et un +1 parmi : Travailleur, Prudent, Lâche, Clément, Chaste</p><p><strong>Talents accessibles :</strong> Inoffensif, Prudent, Sain d'esprit, Sauvegarde, Suivre l'exemple</p>",
+    "source": "L1"
+  }
+}

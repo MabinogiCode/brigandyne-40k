@@ -1,0 +1,43 @@
+{
+  "_id": "b374f687ae0cc1a4",
+  "name": "Vautour",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Vautour",
+    "modifiers": {
+      "com": 0,
+      "cns": 5,
+      "dis": 0,
+      "end": 0,
+      "for": 0,
+      "tec": 0,
+      "psy": 0,
+      "mou": -5,
+      "per": 5,
+      "soc": 0,
+      "sur": 0,
+      "tir": 0,
+      "vol": 5
+    },
+    "traitsFixed": [],
+    "traitsChoices": [
+      "avare",
+      "humble",
+      "sobre",
+      "prudent",
+      "cruel",
+      "trompeur"
+    ],
+    "traitsChoiceCount": 2,
+    "talents": [
+      "Calme",
+      "Chance insolente",
+      "Distraction",
+      "Provocation",
+      "Sauvegarde"
+    ],
+    "description": "<p><em>« Je suis dégingandé·e, moqueur·se, cynique. »</em></p><p><strong>Bonus :</strong> Connaissances ou Endurance +5, Perception +5, Volonté +5<br /><strong>Malus :</strong> Mouvement ou Sociabilité −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Avare, Humble, Sobre, Prudent, Cruel, Trompeur</p><p><strong>Talents accessibles :</strong> Calme, Chance insolente, Distraction, Provocation, Sauvegarde</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "source": "L1"
+  }
+}

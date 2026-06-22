@@ -1,6 +1,6 @@
 {
   "name": "brigandyne-40k",
-  "version": "0.5.4",
+  "version": "0.6.0",
   "description": "Système Foundry VTT — Warhammer 40,000 : Brigandyne",
   "type": "module",
   "private": true,

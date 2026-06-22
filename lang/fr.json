@@ -234,9 +234,14 @@
     },
     "Virtue": {
       "genereux": "Généreux",
+      "prudent": "Prudent",
+      "clement": "Clément",
       "bienveillant": "Bienveillant",
+      "sobre": "Sobre",
       "valeureux": "Valeureux",
       "chaste": "Chaste",
+      "humble": "Humble",
+      "travailleur": "Travailleur",
       "loyal": "Loyal"
     },
     "ChaosGod": {

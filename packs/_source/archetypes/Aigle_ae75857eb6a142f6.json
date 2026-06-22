@@ -1,0 +1,44 @@
+{
+  "_id": "ae75857eb6a142f6",
+  "name": "Aigle",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Aigle",
+    "modifiers": {
+      "com": 0,
+      "cns": 5,
+      "dis": 0,
+      "end": 0,
+      "for": 0,
+      "tec": 0,
+      "psy": 0,
+      "mou": 0,
+      "per": 0,
+      "soc": 0,
+      "sur": 0,
+      "tir": 0,
+      "vol": 5
+    },
+    "traitsFixed": [
+      "orgueilleux"
+    ],
+    "traitsChoices": [
+      "envieux",
+      "travailleur",
+      "sobre",
+      "prudent",
+      "loyal"
+    ],
+    "traitsChoiceCount": 1,
+    "talents": [
+      "Confiance en soi",
+      "Dévoué serviteur",
+      "Esprit de compétition",
+      "Résilience",
+      "Sommeil léger"
+    ],
+    "description": "<p><em>« Je suis ambitieux·se, sûr·e de soi ; fort esprit de compétition. »</em></p><p><strong>Bonus :</strong> Connaissances ou Perception +5, Volonté +5<br /><strong>Malus :</strong> aucun</p><p><strong>Vices &amp; vertus :</strong> Orgueilleux +1, et un +1 parmi : Envieux, Travailleur, Sobre, Prudent, Loyal</p><p><strong>Talents accessibles :</strong> Confiance en soi, Dévoué serviteur, Esprit de compétition, Résilience, Sommeil léger</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "source": "L1"
+  }
+}

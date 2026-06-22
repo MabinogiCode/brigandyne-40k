@@ -182,24 +182,35 @@
           {{/if}}
         </div>
 
-        {{!-- Vices & Vertus --}}
+        {{!-- Vices & Vertus (pilotés par l'archétype) --}}
         <div class="traits-section">
-          <h3><i class="fa-solid fa-yin-yang"></i> Vice & Vertu</h3>
-          <p class="hint">Choisissez un vice et une vertu qui définissent le caractère de votre personnage.</p>
-          <div class="form-grid two">
-            <label>Vice
-              <select name="vice" data-refresh>
-                <option value="">— Aucun —</option>
-                {{#each vices as |label key|}}<option value="{{key}}" {{#if (eq key ../../draft.vice)}}selected{{/if}}>{{localize label}}</option>{{/each}}
-              </select>
-            </label>
-            <label>Vertu
-              <select name="vertu" data-refresh>
-                <option value="">— Aucune —</option>
-                {{#each virtues as |label key|}}<option value="{{key}}" {{#if (eq key ../../draft.vertu)}}selected{{/if}}>{{localize label}}</option>{{/each}}
-              </select>
-            </label>
-          </div>
+          <h3><i class="fa-solid fa-yin-yang"></i> Vices & Vertus</h3>
+          {{#if archetypeDoc}}
+            <p class="hint">Les vices & vertus découlent de l'archétype : un (ou plusieurs) accordé(s) d'office, plus un choix dans la liste.</p>
+            {{#if archFixed.length}}
+              <p class="chip-label">Accordé(s) d'office (+1)</p>
+              <div class="chip-row">{{#each archFixed}}<span class="chip {{kind}}">{{label}} +1</span>{{/each}}</div>
+            {{/if}}
+            {{#if archSlots.length}}
+              <p class="chip-label">À choisir ({{archCount}} · +1 chacun)</p>
+              <div class="form-grid two">
+                {{#each archSlots}}
+                  <label>Choix {{add i 1}}
+                    <select name="archTrait.{{i}}" data-refresh>
+                      <option value="">—</option>
+                      {{#each ../archChoices}}<option value="{{key}}" {{#if (eq key ../selected)}}selected{{/if}}>{{label}}</option>{{/each}}
+                    </select>
+                  </label>
+                {{/each}}
+              </div>
+            {{/if}}
+            {{#if archTalents.length}}
+              <p class="chip-label"><i class="fa-solid fa-star"></i> Talents accessibles (achetables avec l'XP)</p>
+              <div class="chip-row">{{#each archTalents}}<span class="chip talent">{{this}}</span>{{/each}}</div>
+            {{/if}}
+          {{else}}
+            <p class="warn-soft"><i class="fa-solid fa-circle-info"></i> Choisis un archétype ci-dessus pour déterminer tes vices & vertus.</p>
+          {{/if}}
         </div>
 
         {{!-- Atouts (info) --}}
@@ -233,8 +244,7 @@
           <li><i class="fa-solid fa-user-tag"></i> Rôle : {{localize (concat "BRIG.Role." draft.role)}}</li>
           <li><i class="fa-solid fa-heart"></i> PV <strong>{{pv}}</strong> · SF <strong>{{sf}}</strong>{{#if destin}} · Destin <strong>{{destin}}</strong>{{/if}}</li>
           {{#if archetypeName}}<li><i class="fa-solid fa-paw"></i> Archétype : <strong>{{archetypeName}}</strong></li>{{/if}}
-          {{#if draft.vice}}<li><i class="fa-solid fa-fire"></i> Vice : <strong>{{localize (lookup vices draft.vice)}}</strong></li>{{/if}}
-          {{#if draft.vertu}}<li><i class="fa-solid fa-dove"></i> Vertu : <strong>{{localize (lookup virtues draft.vertu)}}</strong></li>{{/if}}
+          {{#if archGranted.length}}<li><i class="fa-solid fa-yin-yang"></i> Vices & vertus : {{#each archGranted}}<strong>{{label}}</strong> +1{{#unless @last}}, {{/unless}}{{/each}}</li>{{/if}}
         </ul>
         <div class="recap-chars">{{#each chars}}<span class="rc" data-tooltip="{{tip}}">{{localize abbr}} <b>{{value}}</b></span>{{/each}}</div>
         {{#if careerName}}

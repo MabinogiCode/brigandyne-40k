@@ -51,8 +51,7 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       careerId: this.lock.draft?.careerId ?? null,
       role: this.lock.draft?.role ?? this.actor?.system?.role ?? "premierRole",
       archetypeId: this.lock.draft?.archetypeId ?? null,
-      vice: this.lock.draft?.vice ?? null,
-      vertu: this.lock.draft?.vertu ?? null,
+      archetypeTraits: Array.isArray(this.lock.draft?.archetypeTraits) ? [...this.lock.draft.archetypeTraits] : [],
       chars: {}, details: { ...(this.actor?.system?.details ?? {}), ...(this.lock.draft?.details ?? {}) }
     };
     this.gen = { method: null, rolled: [], dropped: null, pool: [], assign: {}, points: {}, psyDraw: {} };
@@ -88,7 +87,7 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       draft: {
         name: this.draft.name, speciesId: this.draft.speciesId, careerId: this.draft.careerId,
         role: this.draft.role, archetypeId: this.draft.archetypeId,
-        vice: this.draft.vice, vertu: this.draft.vertu, details: this.draft.details
+        archetypeTraits: this.draft.archetypeTraits, details: this.draft.details
       },
       step: this.step
     });
@@ -261,6 +260,20 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     const numAtouts = Math.max(0, cnsBonus - 1);
     const poolSize = (careerDoc?.system.specialties?.length ?? 0) + (careerDoc?.system.talents?.length ?? 0);
 
+    // Vices & vertus de l'archétype (fixes + choix)
+    const traitLabel = (key) => {
+      if (BRIGANDYNE.vices[key]) return { key, label: game.i18n.localize(BRIGANDYNE.vices[key]), kind: "vice" };
+      if (BRIGANDYNE.virtues[key]) return { key, label: game.i18n.localize(BRIGANDYNE.virtues[key]), kind: "vertu" };
+      return { key, label: key, kind: "" };
+    };
+    const archFixed = (archetypeDoc?.system?.traitsFixed ?? []).map(traitLabel);
+    const archChoices = (archetypeDoc?.system?.traitsChoices ?? []).map(traitLabel);
+    const archCount = archetypeDoc?.system?.traitsChoiceCount ?? 0;
+    const archTalents = archetypeDoc?.system?.talents ?? [];
+    const archSlots = Array.from({ length: archCount }, (_, i) => ({ i, selected: this.draft.archetypeTraits?.[i] ?? "" }));
+    const archChoiceKeys = new Set(archChoices.map(c => c.key));
+    const archGranted = [...archFixed, ...(this.draft.archetypeTraits ?? []).filter(k => archChoiceKeys.has(k)).map(traitLabel)];
+
     const blocked = this.locksApply && getChargenLock().complete;
     const methodLabel = this.gen.method
       ? game.i18n.localize(this.gen.method === "roll" ? "BRIG.CharGen.method.roll" : "BRIG.CharGen.method.points")
@@ -292,6 +305,7 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       chars, pv, sf, details: this.draft.details, detailKeys: DETAIL_KEYS,
       // Archétypes & Traits
       archetypes, archetypeDoc, archetypeName: archetypeDoc?.name ?? "",
+      archFixed, archChoices, archCount, archTalents, archSlots, archGranted,
       vices: BRIGANDYNE.vices, virtues: BRIGANDYNE.virtues,
       noPsy: this._noPsy,
       // Atouts (tirage aléatoire)
@@ -382,9 +396,19 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     } else if (this.stepId === "characteristics") {
       this._captureGen();
     } else if (this.stepId === "traits") {
-      if (get("archetypeId")) this.draft.archetypeId = get("archetypeId").value || null;
-      if (get("vice")) this.draft.vice = get("vice").value || null;
-      if (get("vertu")) this.draft.vertu = get("vertu").value || null;
+      const newArch = get("archetypeId") ? (get("archetypeId").value || null) : this.draft.archetypeId;
+      if (newArch !== this.draft.archetypeId) {
+        // Changement d'archétype : on repart de zéro sur les choix de vices/vertus.
+        this.draft.archetypeId = newArch;
+        this.draft.archetypeTraits = [];
+      } else {
+        const picks = [];
+        for (let i = 0; i < 2; i++) {
+          const sel = get(`archTrait.${i}`);
+          if (sel && sel.value) picks.push(sel.value);
+        }
+        this.draft.archetypeTraits = picks;
+      }
     } else if (this.stepId === "details") {
       for (const d of DETAIL_KEYS) { const i = get(`details.${d}`); if (i) this.draft.details[d] = i.value; }
     }
@@ -529,15 +553,22 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       }
     }
 
-    // Vice choisi (trait item)
-    if (this.draft.vice && BRIGANDYNE.vices[this.draft.vice]) {
-      const viceName = game.i18n.localize(BRIGANDYNE.vices[this.draft.vice]);
-      items.push({ name: viceName, type: "trait", system: { traitType: "vice", rating: 1, god: "", effect: "" } });
-    }
-    // Vertu choisie (trait item)
-    if (this.draft.vertu && BRIGANDYNE.virtues[this.draft.vertu]) {
-      const vertuName = game.i18n.localize(BRIGANDYNE.virtues[this.draft.vertu]);
-      items.push({ name: vertuName, type: "trait", system: { traitType: "vertu", rating: 1, god: "", effect: "" } });
+    // Vices & vertus issus de l'archétype : fixes (auto) + choix (filtrés sur la liste de l'archétype)
+    const grantTrait = (key) => {
+      const isVice = !!BRIGANDYNE.vices[key];
+      const isVertu = !!BRIGANDYNE.virtues[key];
+      if (!isVice && !isVertu) return;
+      const label = game.i18n.localize((isVice ? BRIGANDYNE.vices : BRIGANDYNE.virtues)[key]);
+      items.push({ name: label, type: "trait", system: { traitType: isVice ? "vice" : "vertu", rating: 1, god: "", effect: "" } });
+    };
+    const fixedTraits = archetypeDoc?.system?.traitsFixed ?? [];
+    const allowed = new Set(archetypeDoc?.system?.traitsChoices ?? []);
+    const chosenTraits = (this.draft.archetypeTraits ?? []).filter(k => allowed.has(k));
+    const grantedSeen = new Set();
+    for (const key of [...fixedTraits, ...chosenTraits]) {
+      if (grantedSeen.has(key)) continue;
+      grantedSeen.add(key);
+      grantTrait(key);
     }
 
     if (this.actor) {

@@ -1,0 +1,43 @@
+{
+  "_id": "4038d3520161ba74",
+  "name": "Paon",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Paon",
+    "modifiers": {
+      "com": 0,
+      "cns": 5,
+      "dis": 0,
+      "end": 0,
+      "for": -5,
+      "tec": 0,
+      "psy": 0,
+      "mou": 0,
+      "per": 0,
+      "soc": 10,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "traitsFixed": [],
+    "traitsChoices": [
+      "envieux",
+      "orgueilleux",
+      "paresseux",
+      "luxurieux",
+      "lache",
+      "trompeur"
+    ],
+    "traitsChoiceCount": 2,
+    "talents": [
+      "Dévoué serviteur",
+      "Doué (SOC)",
+      "Fascination",
+      "Panache",
+      "Provocation"
+    ],
+    "description": "<p><em>« Je suis frivole, vaniteux·se, sociable. »</em></p><p><strong>Bonus :</strong> Sociabilité +10, Connaissances ou Perception +5<br /><strong>Malus :</strong> Force −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Envieux, Orgueilleux, Paresseux, Luxurieux, Lâche, Trompeur</p><p><strong>Talents accessibles :</strong> Dévoué serviteur, Doué (SOC), Fascination, Panache, Provocation</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "source": "L1"
+  }
+}

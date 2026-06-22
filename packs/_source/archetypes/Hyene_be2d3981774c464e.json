@@ -1,0 +1,44 @@
+{
+  "_id": "be2d3981774c464e",
+  "name": "Hyène",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Hyène",
+    "modifiers": {
+      "com": 5,
+      "cns": 0,
+      "dis": 5,
+      "end": 0,
+      "for": -5,
+      "tec": 0,
+      "psy": 0,
+      "mou": 0,
+      "per": 0,
+      "soc": 0,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "traitsFixed": [
+      "cruel"
+    ],
+    "traitsChoices": [
+      "colerique",
+      "envieux",
+      "lache",
+      "humble",
+      "trompeur"
+    ],
+    "traitsChoiceCount": 1,
+    "talents": [
+      "Coup en traître",
+      "Nyctalopie",
+      "Suivre l'exemple",
+      "Surnombre",
+      "Vivacité"
+    ],
+    "description": "<p><em>« Je suis moqueur·se, cruel·le, violent·e. »</em></p><p><strong>Bonus :</strong> Combat +5, Discrétion ou Mouvement +5<br /><strong>Malus :</strong> Force ou Volonté −5</p><p><strong>Vices &amp; vertus :</strong> Cruel +1, et un +1 parmi : Colérique, Envieux, Lâche, Humble, Trompeur</p><p><strong>Talents accessibles :</strong> Coup en traître, Nyctalopie, Suivre l'exemple, Surnombre, Vivacité</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "source": "L1"
+  }
+}

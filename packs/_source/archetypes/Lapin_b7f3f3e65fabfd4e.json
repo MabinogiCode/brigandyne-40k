@@ -1,0 +1,43 @@
+{
+  "_id": "b7f3f3e65fabfd4e",
+  "name": "Lapin",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Lapin",
+    "modifiers": {
+      "com": -5,
+      "cns": 0,
+      "dis": 5,
+      "end": 0,
+      "for": -5,
+      "tec": 0,
+      "psy": 0,
+      "mou": 5,
+      "per": 5,
+      "soc": 10,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "traitsFixed": [],
+    "traitsChoices": [
+      "bienveillant",
+      "lache",
+      "prudent",
+      "luxurieux",
+      "clement",
+      "humble"
+    ],
+    "traitsChoiceCount": 2,
+    "talents": [
+      "Chance insolente",
+      "Inoffensif",
+      "Insaisissable",
+      "Réflexes éclairs",
+      "Vivacité"
+    ],
+    "description": "<p><em>« Je suis plutôt petit·e, enjoué·e, aime plaire. »</em></p><p><strong>Bonus :</strong> Discrétion +5, Mouvement +5, Perception +5, Sociabilité +10<br /><strong>Malus :</strong> Combat −5, Force −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Bienveillant, Lâche, Prudent, Luxurieux, Clément, Humble</p><p><strong>Talents accessibles :</strong> Chance insolente, Inoffensif, Insaisissable, Réflexes éclairs, Vivacité</p>",
+    "source": "L1"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "_id": "5c49a9da23c85cd7",
+  "name": "Taureau",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Taureau",
+    "modifiers": {
+      "com": 5,
+      "cns": -5,
+      "dis": -5,
+      "end": 5,
+      "for": 5,
+      "tec": 0,
+      "psy": 0,
+      "mou": 0,
+      "per": 0,
+      "soc": 0,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "traitsFixed": [],
+    "traitsChoices": [
+      "orgueilleux",
+      "colerique",
+      "luxurieux",
+      "gourmand",
+      "clement",
+      "valeureux"
+    ],
+    "traitsChoiceCount": 2,
+    "talents": [
+      "Brute",
+      "Coups puissants",
+      "Confiance en soi",
+      "Festoyeur",
+      "Second souffle"
+    ],
+    "description": "<p><em>« Je suis gros·se et fort·e, violent·e, aime s'imposer. »</em></p><p><strong>Bonus :</strong> Combat +5, Endurance +5, Force +5<br /><strong>Malus :</strong> Discrétion −5, Connaissances ou Habileté −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Orgueilleux, Colérique, Luxurieux, Gourmand, Clément, Valeureux</p><p><strong>Talents accessibles :</strong> Brute, Coups puissants, Confiance en soi, Festoyeur, Second souffle</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "source": "L1"
+  }
+}

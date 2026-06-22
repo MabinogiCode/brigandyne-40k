@@ -1,0 +1,44 @@
+{
+  "_id": "a4b40331f4ca5bf8",
+  "name": "Souris",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Souris",
+    "modifiers": {
+      "com": -5,
+      "cns": 0,
+      "dis": 10,
+      "end": 0,
+      "for": -5,
+      "tec": 5,
+      "psy": 0,
+      "mou": 5,
+      "per": 0,
+      "soc": 5,
+      "sur": 0,
+      "tir": 0,
+      "vol": 0
+    },
+    "traitsFixed": [
+      "bienveillant"
+    ],
+    "traitsChoices": [
+      "lache",
+      "genereux",
+      "humble",
+      "clement",
+      "loyal"
+    ],
+    "traitsChoiceCount": 1,
+    "talents": [
+      "Chance insolente",
+      "Esquive",
+      "Insaisissable",
+      "Réflexes éclairs",
+      "Vivacité"
+    ],
+    "description": "<p><em>« Je suis plutôt petit·e, enjoué·e, courageux·se. »</em></p><p><strong>Bonus :</strong> Discrétion +10, Habileté +5, Mouvement +5, Sociabilité +5<br /><strong>Malus :</strong> Combat −5, Force −5</p><p><strong>Vices &amp; vertus :</strong> Bienveillant +1, et un +1 parmi : Lâche, Généreux, Humble, Clément, Loyal</p><p><strong>Talents accessibles :</strong> Chance insolente, Esquive, Insaisissable, Réflexes éclairs, Vivacité</p>",
+    "source": "L1"
+  }
+}

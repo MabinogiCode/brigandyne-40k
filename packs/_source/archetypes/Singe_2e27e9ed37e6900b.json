@@ -1,0 +1,43 @@
+{
+  "_id": "2e27e9ed37e6900b",
+  "name": "Singe",
+  "type": "archetype",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "animal": "Singe",
+    "modifiers": {
+      "com": 0,
+      "cns": 0,
+      "dis": 0,
+      "end": 0,
+      "for": 0,
+      "tec": 0,
+      "psy": 0,
+      "mou": 10,
+      "per": 0,
+      "soc": 5,
+      "sur": 0,
+      "tir": 0,
+      "vol": -5
+    },
+    "traitsFixed": [],
+    "traitsChoices": [
+      "genereux",
+      "paresseux",
+      "lache",
+      "bienveillant",
+      "clement",
+      "trompeur"
+    ],
+    "traitsChoiceCount": 2,
+    "talents": [
+      "Agile",
+      "Coup acrobatique",
+      "Distraction",
+      "Insaisissable",
+      "Spectacle"
+    ],
+    "description": "<p><em>« Je suis agile, amical·e, moqueur·se, plaisantin·e. »</em></p><p><strong>Bonus :</strong> Mouvement +10, Sociabilité +5<br /><strong>Malus :</strong> Volonté −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Généreux, Paresseux, Lâche, Bienveillant, Clément, Trompeur</p><p><strong>Talents accessibles :</strong> Agile, Coup acrobatique, Distraction, Insaisissable, Spectacle</p>",
+    "source": "L1"
+  }
+}
