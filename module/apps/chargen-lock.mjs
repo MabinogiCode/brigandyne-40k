@@ -156,13 +156,13 @@ async function adminContent() {
 }
 
 /** Ouvre l'outil MJ de gestion des verrous de création. */
-export function openCharGenAdmin() {
+export async function openCharGenAdmin() {
   if (!game.user.isGM) return;
   const dialog = new DialogV2({
     window: { title: game.i18n.localize("BRIG.CharGen.lock.adminTitle"), icon: "fa-solid fa-user-lock" },
     classes: ["brigandyne-40k"],
-    position: { width: 540 },
-    content: adminContent(),
+    position: { width: 720 },
+    content: await adminContent(),
     buttons: [{ action: "close", label: game.i18n.localize("BRIG.CharGen.lock.adminClose"), default: true }]
   });
 
@@ -177,7 +177,7 @@ export function openCharGenAdmin() {
       ui.notifications?.info(game.i18n.format("BRIG.CharGen.lock.granted", { user: user.name, request: game.i18n.localize(REQUESTS[act].labelKey) }));
       // Re-rendu du contenu pour refléter le nouvel état
       const content = el.querySelector(".dialog-content") || el.querySelector(".window-content");
-      if (content) { content.innerHTML = adminContent(); wire(); }
+      if (content) { content.innerHTML = await adminContent(); wire(); }
     }));
   };
 

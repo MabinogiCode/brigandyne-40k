@@ -414,6 +414,10 @@
         "adminClose": "Fermer",
         "colPlayer": "Joueur",
         "colState": "État",
+        "colSpecies": "Espèce",
+        "colCareer": "Carrière",
+        "colDice": "Somme dés",
+        "colDiceTip": "Somme des 12 dés conservés (méthode aléatoire)",
         "colActions": "Actions",
         "noPlayers": "Aucun joueur (hors MJ) dans ce monde."
       }
