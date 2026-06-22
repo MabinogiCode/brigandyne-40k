@@ -1,0 +1,305 @@
+Warhammer 40.000 : Brigandyne : Rencontres
+Rencontres
+Spécificités
+Liste des Spécificités liées à l’univers Warhammer 40.000.
+
+Bestiaire/Rencontres
+
+Nom
+
+COM / TIR 
+Init 
+Prot 
+PV 
+Dégâts
+
+Spécial
+
+Compétences
+
+
+Imperium
+Humanoïdes divers
+
+Membre de gang
+Des vêtements usés, des armes de piètre qualité mais la volonté de nuire est bien présente.
+COM 35/+15 TIR 35
+Init 10
+Prot 2 (Armure pare-balle)
+PV 10
+Dégâts
+Couteau, épée courte +2 / Mitraillette +3
+Spécial
+
+Compétences
+CNS 25 / DIS 40 / MOU 40 / SUR 40
+
+Licteur
+Un défenseur de la paix impériale, matraque et bouclier anti-émeute en main.
+COM 40/+10 TIR 35
+Init 8
+Prot 4 (Armure pare-balles et bouclier anti-émeute)
+PV 12
+Dégâts
+Matraque +3 / Pistolet +3
+Spécial
+
+Compétences
+END 40 / FOR 40 / VOL 40
+
+Adeptus Astartes
+
+Primaris
+Un ange de la mort dans son armure énergétique, aux couleurs d’un Chapitre de l’Adeptus Astartes.
+COM 75/-25 TIR 70
+Init 18
+Prot 7 (Armure énergétique Astartes et casque)
+PV 20
+Dégâts
+Couteau de combat astartes +7 / Bolter +6
+Spécial
+- Infatigable
+Compétences
+END 70 / FOR 75 / MOU 60 / PER 50 / VOL 70
+
+Officio Assassinorum
+
+Vindicare
+Armé de son fusil de précision, l’ombre attend patiemment sa cible.
+COM 60/-10 TIR 80
+Init 19
+Prot 4 (Synthéderme)
+PV 18
+Dégâts
+Couteau de combat +5 / Fusil Exitus +6 / Pistolet Exitus +6
+Spécial
+- Munitions Exitus : Une seule balle de chaque par mission.
+Balle perce-écran : Ignore les Résistances (dégâts physiques).
+Balle turbo-pénétrante : Ignore les armures.
+Balle feu d’enfer : -2 PV/tour jusqu’à la réussite d’un test d’END à -10.
+Compétences
+DIS 65 / END 60 / FOR 60 / HAB 45 / MOU 65 / PER 75 / VOL 70
+
+Eversor
+Un tueur qui ne laisse que des cadavres sanglants derrière lui.
+COM 80/-30 TIR 50
+Init 21
+Prot 4 (Synthéderme)
+PV 20
+Dégâts
+Neuro-gantelet +5 / Épée courte énergétique +6 / Pistolet Executor +5
+Spécial
+- Poison : Neuro-gantelet/Pistolet Executor.
+- Furie
+- Attaques supplémentaires (2)
+- PEUR (1)
+- Explosion : Si l’Eversor meurt, toutes les créatures autour de lui doivent réussir un test de MOU ou subir RU+6 points de dégâts d’acide.
+Compétences
+END 75 / FOR 70 / MOU 70 / PER 65 / VOL 70
+
+Callidus
+Une silhouette agile, à la lame luisant d’un éclat verdâtre.
+COM 75/-25 TIR 50
+Init 
+Prot 
+PV 
+Dégâts
+Lame d’hyperphase +6 / Aiguilles +4 / Neuro-lacérateur +2
+Spécial
+- Neuro-lacérateur : Ignore les armures.
+- Lame d’hyperphase : Perce-armure (4).
+- Changeforme : Un assassin Callidus peut prendre n’importe quelle forme humanoïde, même celle d’un Xeno.
+Compétences
+DIS 60 / END 50 / FOR 60 / MOU 80 / PER 60 / SOC 60 / VOL 70
+
+Culexus
+Le prédateur naturel des Psykers, un crâne souriant en guise de casque.
+COM 65/-15 TIR 50
+Init 
+Prot 
+PV 
+Dégâts
+Couteau de combat +5 / Grenades Psy +*PSY* de la cible / Animus speculum +2 +*PSY* de la cible
+Spécial
+- Animus speculum : Ignore les armures. 
+- PEUR (3)
+- Gène du paria : +10% pour résister aux effets du Warp et des pouvoirs psy. -10% pour les tests de PSY des Psykers à proximité.
+Compétences
+DIS 50 / END 60 / FOR 60 / MOU 65 / PER 60 / VOL 70
+
+Peaux-vertes
+
+Horde de Gretchin
+Une multitude de misérables petites créatures verdâtres, au regard vicieux et cruel.
+COM 30/+20 TIR 25
+Init 8
+Prot 0
+PV 30
+Dégâts
+Petites lames +1 / Automatik +4
+Spécial
+- Attaque (TOUS).
+- Nuée.
+Compétences
+DIS 45 / END 45 / FOR 30 / MOU 40 / VOL 30
+
+Boy ork
+Créature simiesque à la peau verte, aux crocs proéminents, armés de toutes sortes d’armes artisanales. 
+COM 50/0 TIR 35
+Init 12
+Prot 2 (Armure primitive en métal)
+PV 15
+Dégâts
+Kikoup +5 / Fling’ +5
+Spécial
+- Infatigable.
+Compétences
+END 50 / FOR 55 / MOU 40 / VOL 45
+
+Chaos
+Humanoïdes divers
+
+Hereticus Astartes
+
+Space marine du Chaos
+Un ange déchu, à l’armure souillée par les forces du Chaos, bouillant de fureur.
+COM 75/-25 TIR 70
+Init 17
+Prot 7 (Armure énergétique et casque)
+PV 20
+Dégâts
+Couteau de combat astartes +7 / Bolter +6
+Spécial
+- Infatigable
+Compétences
+END 75 / FOR 80 / MOU 50 / PER 50 / VOL 75
+
+Démons
+Khorne
+
+Sanguinaire de Khorne
+La peau rouge comme le sang, des cornes affutées, des crocs acérés et une lame noire sanguinolente.
+COM 55/-5 TIR 25
+Init 12
+Prot 0
+PV 15
+Dégâts
+Lame infernale +7
+Spécial
+- PEUR (1).
+- Démon.
+- Résistance (dégâts physiques).
+Compétences
+END 50 / FOR 55 / MOU 45 / PER 40 / VOL 50
+
+Slaanesh
+
+Démonette de Slaanesh
+Une créature aussi belle que monstrueuse, aux formes voluptueuses et aux pinces acérées.
+COM 60/-10 TIR 20 
+Init 16
+Prot 0
+PV 13
+Dégâts
+Pinces acérées +4
+Spécial
+- Démon.
+- Résistance (dégâts physiques).
+Compétences
+END 40 / FOR 45 / MOU 65 / PER 40 / SOC 70 / VOL 50
+
+Nurgle
+
+Portepeste
+Une créature humanoïde et boursouflée, empestant la maladie, suintant de pus toxique.
+COM 45/+5 TIR 30
+Init 9
+Prot 0
+PV 20
+Dégâts
+Épée courte souillée +4
+Spécial
+- Contagion.
+- Démon.
+- Infection.
+- Résistance (dégâts physiques).
+Compétences
+END 75 / FOR 50 / MOU 25 / VOL 50
+
+Tzeentch
+
+Horreur Rose de Tzeentch
+Un amalgame de chair rosâtre, à la gueule immense et garnie de plusieurs rangées de dents. De ses multiples mains jaillissent des flammèches pâles.
+COM 40/+10 TIR 45 
+Init 11
+Prot 0
+PV 13
+Dégâts
+Dague +3 / Feu rose +5
+Spécial
+- Démon.
+- Magie (4) : Domaine de Tzeentch.
+- Résistance (dégâts physiques).
+- Dédoublement : A sa mort, l’Horreur Rose se dédouble en deux Horreurs Bleues.
+Compétences
+END 40 / FOR 45 / PSY 50 / PER 40 / VOL 50
+
+Horreur Rose de Tzeentch
+Un amalgame de chair rosâtre, à la gueule immense et garnie de plusieurs rangées de dents. De ses multiples mains jaillissent des flammèches pâles.
+COM 30/+20 TIR 35
+Init 10
+Prot 0
+PV 10
+Dégâts
+Dague +2 / Feu bleu +3
+Spécial
+- Démon.
+- Magie (2) : Domaine de Tzeentch.
+- Résistance (dégâts physiques).
+Compétences
+PSY 40 / PER 40 / VOL 40
+
+Bêtes et monstres du Chaos
+
+Tyranides
+
+
+Termagant
+Créature de taille modeste mais à la voracité insatiable, il tient un fusil d’assaut vivant.
+COM 25/+25 TIR 35
+Init 10
+Prot 0
+PV 9
+Dégâts
+Griffes et crocs +2 / Écorcheur +3
+Spécial
+
+Compétences
+END 35 / FOR 30 / MOU 40 / PER 40 / VOL 25
+
+Hormagaunt
+Créature de taille modeste, aux lames acérées. Il siffle, cherchant sa proie.
+COM 30/+20 TIR 15
+Init 10
+Prot 0
+PV 9
+Dégâts
+Lames acérées +3
+Spécial
+
+Compétences
+END 35 / FOR 30 / MOU 45 / PER 40 / VOL 25
+
+Guerrier Tyranide
+Monstre de plus de deux mètres, aux lames acérées et portant un lourd canon vivant.
+COM 45/+5 TIR 40
+Init 
+Prot 2 (Chitine)
+PV 20
+Dégâts
+Lames tranchantes +6 / Dévoreur +4
+Spécial
+- Poison.
+Compétences
+END 60 / FOR 65 / MOU 40 / PER 50 / VOL 45
+

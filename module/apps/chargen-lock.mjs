@@ -101,20 +101,35 @@ async function onSocket(data) {
 const STATE_KEY = lock => lock.complete ? "complete" : lock.rolledOnce ? "rolled" : lock.method ? "method" : "fresh";
 
 /** Construit le contenu HTML de l'outil de gestion (une ligne par joueur). */
-function adminContent() {
+async function adminContent() {
   const players = game.users.filter(u => !u.isGM);
   if (!players.length) return `<p>${game.i18n.localize("BRIG.CharGen.lock.noPlayers")}</p>`;
+
+  // Résolution des noms d'espèce/carrière depuis les compendiums.
+  const speciesPack = game.packs.get(`${SYSTEM_ID}.species`);
+  const careerPack = game.packs.get(`${SYSTEM_ID}.careers`);
+  await speciesPack?.getIndex();
+  await careerPack?.getIndex();
+  const nameOf = (pack, id) => id ? (pack?.index.get(id)?.name ?? "?") : "—";
+
   const rows = players.map(u => {
     const lock = getChargenLock(u);
     const methodLabel = lock.method
       ? game.i18n.localize(lock.method === "roll" ? "BRIG.CharGen.method.roll" : "BRIG.CharGen.method.points")
       : "—";
     const state = game.i18n.localize(`BRIG.CharGen.lock.state.${STATE_KEY(lock)}`);
+    const species = nameOf(speciesPack, lock.draft?.speciesId);
+    const career = nameOf(careerPack, lock.draft?.careerId);
+    const diceSum = Array.isArray(lock.pool) ? lock.pool.reduce((s, v) => s + (Number(v) || 0), 0) : 0;
+    const diceCell = (lock.method === "roll" && diceSum) ? diceSum : "—";
     return `
       <tr data-user="${u.id}">
         <td class="u-name"><span class="u-dot" style="background:${u.color}"></span>${u.name}</td>
         <td>${state}</td>
         <td>${methodLabel}${lock.rolledOnce ? ' <i class="fa-solid fa-dice" data-tooltip="Dés jetés"></i>' : ""}</td>
+        <td>${species}</td>
+        <td>${career}</td>
+        <td class="u-dice">${diceCell}</td>
         <td class="u-actions">
           <button type="button" data-act="reroll" data-tooltip="${game.i18n.localize("BRIG.CharGen.lock.req.reroll")}"><i class="fa-solid fa-rotate"></i></button>
           <button type="button" data-act="method" data-tooltip="${game.i18n.localize("BRIG.CharGen.lock.req.method")}"><i class="fa-solid fa-sliders"></i></button>
@@ -130,6 +145,9 @@ function adminContent() {
           <th>${game.i18n.localize("BRIG.CharGen.lock.colPlayer")}</th>
           <th>${game.i18n.localize("BRIG.CharGen.lock.colState")}</th>
           <th>${game.i18n.localize("BRIG.CharGen.method.label")}</th>
+          <th>${game.i18n.localize("BRIG.CharGen.lock.colSpecies")}</th>
+          <th>${game.i18n.localize("BRIG.CharGen.lock.colCareer")}</th>
+          <th data-tooltip="${game.i18n.localize("BRIG.CharGen.lock.colDiceTip")}">${game.i18n.localize("BRIG.CharGen.lock.colDice")}</th>
           <th>${game.i18n.localize("BRIG.CharGen.lock.colActions")}</th>
         </tr></thead>
         <tbody>${rows}</tbody>
