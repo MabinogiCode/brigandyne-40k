@@ -7,7 +7,7 @@
     "animal": "Lion",
     "modifiers": {
       "com": 5,
-      "cns": -5,
+      "cns": 0,
       "dis": -5,
       "end": 0,
       "for": 5,
@@ -20,6 +20,15 @@
       "tir": 0,
       "vol": 0
     },
+    "modChoices": [
+      {
+        "chars": [
+          "cns",
+          "tec"
+        ],
+        "value": -5
+      }
+    ],
     "traitsFixed": [
       "orgueilleux"
     ],
@@ -38,7 +47,7 @@
       "Festoyeur",
       "Second souffle"
     ],
-    "description": "<p><em>« Je suis imposant·e, charismatique, forte estime de soi. »</em></p><p><strong>Bonus :</strong> Combat +5, Force +5, Sociabilité +5<br /><strong>Malus :</strong> Connaissances ou Habileté −5, Discrétion −5</p><p><strong>Vices &amp; vertus :</strong> Orgueilleux +1, et un +1 parmi : Paresseux, Luxurieux, Colérique, Loyal, Valeureux</p><p><strong>Talents accessibles :</strong> Confiance en soi, Dévoué serviteur, Fascination, Festoyeur, Second souffle</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "description": "<p><em>« Je suis imposant·e, charismatique, forte estime de soi. »</em></p><p><strong>Bonus :</strong> Combat +5, Force +5, Sociabilité +5<br /><strong>Malus :</strong> Connaissances ou Habileté −5, Discrétion −5</p><p><strong>Vices &amp; vertus :</strong> Orgueilleux +1, et un +1 parmi : Paresseux, Luxurieux, Colérique, Loyal, Valeureux</p><p><strong>Talents accessibles :</strong> Confiance en soi, Dévoué serviteur, Fascination, Festoyeur, Second souffle</p>",
     "source": "L1"
   }
 }

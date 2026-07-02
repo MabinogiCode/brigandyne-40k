@@ -8,8 +8,8 @@
     "modifiers": {
       "com": 0,
       "cns": 0,
-      "dis": 5,
-      "end": -5,
+      "dis": 0,
+      "end": 0,
       "for": 0,
       "tec": 0,
       "psy": 0,
@@ -20,6 +20,22 @@
       "tir": 0,
       "vol": 0
     },
+    "modChoices": [
+      {
+        "chars": [
+          "dis",
+          "tec"
+        ],
+        "value": 5
+      },
+      {
+        "chars": [
+          "end",
+          "for"
+        ],
+        "value": -5
+      }
+    ],
     "traitsFixed": [
       "trompeur"
     ],
@@ -38,7 +54,7 @@
       "Mensonge éhonté",
       "Sauvegarde"
     ],
-    "description": "<p><em>« Je suis plutôt svelte, rusé·e, séducteur·trice. »</em></p><p><strong>Bonus :</strong> Discrétion ou Habileté +5, Mouvement +5, Sociabilité +5<br /><strong>Malus :</strong> Endurance ou Force −5</p><p><strong>Vices &amp; vertus :</strong> Trompeur +1, et un +1 parmi : Paresseux, Gourmand, Prudent, Envieux, Lâche</p><p><strong>Talents accessibles :</strong> Agile, Chance insolente, Esquive, Mensonge éhonté, Sauvegarde</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "description": "<p><em>« Je suis plutôt svelte, rusé·e, séducteur·trice. »</em></p><p><strong>Bonus :</strong> Discrétion ou Habileté +5, Mouvement +5, Sociabilité +5<br /><strong>Malus :</strong> Endurance ou Force −5</p><p><strong>Vices &amp; vertus :</strong> Trompeur +1, et un +1 parmi : Paresseux, Gourmand, Prudent, Envieux, Lâche</p><p><strong>Talents accessibles :</strong> Agile, Chance insolente, Esquive, Mensonge éhonté, Sauvegarde</p>",
     "source": "L1"
   }
 }

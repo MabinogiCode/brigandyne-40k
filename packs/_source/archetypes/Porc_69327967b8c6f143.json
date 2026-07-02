@@ -13,13 +13,22 @@
       "for": 5,
       "tec": 0,
       "psy": 0,
-      "mou": -5,
+      "mou": 0,
       "per": 0,
       "soc": 5,
       "sur": 0,
       "tir": 0,
       "vol": 0
     },
+    "modChoices": [
+      {
+        "chars": [
+          "mou",
+          "cns"
+        ],
+        "value": -5
+      }
+    ],
     "traitsFixed": [
       "gourmand"
     ],
@@ -38,7 +47,7 @@
       "Festoyeur",
       "Guérison rapide"
     ],
-    "description": "<p><em>« Je suis fort·e, gras·se, lubrique, aime la fête et la bonne chère. »</em></p><p><strong>Bonus :</strong> Force +5, Endurance +5, Sociabilité +5<br /><strong>Malus :</strong> Mouvement ou Connaissances −5</p><p><strong>Vices &amp; vertus :</strong> Gourmand +1, et un +1 parmi : Colérique, Généreux, Luxurieux, Bienveillant, Paresseux</p><p><strong>Talents accessibles :</strong> Brute, Distraction, Doué (END), Festoyeur, Guérison rapide</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "description": "<p><em>« Je suis fort·e, gras·se, lubrique, aime la fête et la bonne chère. »</em></p><p><strong>Bonus :</strong> Force +5, Endurance +5, Sociabilité +5<br /><strong>Malus :</strong> Mouvement ou Connaissances −5</p><p><strong>Vices &amp; vertus :</strong> Gourmand +1, et un +1 parmi : Colérique, Généreux, Luxurieux, Bienveillant, Paresseux</p><p><strong>Talents accessibles :</strong> Brute, Distraction, Doué (END), Festoyeur, Guérison rapide</p>",
     "source": "L1"
   }
 }

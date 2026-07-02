@@ -7,19 +7,35 @@
     "animal": "Ours",
     "modifiers": {
       "com": 0,
-      "cns": -5,
+      "cns": 0,
       "dis": 0,
       "end": 5,
       "for": 5,
       "tec": 0,
       "psy": 0,
       "mou": 0,
-      "per": 5,
+      "per": 0,
       "soc": 0,
       "sur": 0,
       "tir": 0,
       "vol": 0
     },
+    "modChoices": [
+      {
+        "chars": [
+          "per",
+          "sur"
+        ],
+        "value": 5
+      },
+      {
+        "chars": [
+          "cns",
+          "dis"
+        ],
+        "value": -5
+      }
+    ],
     "traitsFixed": [],
     "traitsChoices": [
       "gourmand",
@@ -37,7 +53,7 @@
       "Gardien",
       "Sauvagerie"
     ],
-    "description": "<p><em>« Je suis gros·se et fort·e, mais protecteur·trice. »</em></p><p><strong>Bonus :</strong> Force +5, Endurance +5, Perception ou Survie +5<br /><strong>Malus :</strong> Connaissances ou Discrétion −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Gourmand, Colérique, Bienveillant, Clément, Loyal, Valeureux</p><p><strong>Talents accessibles :</strong> Bagarre, Brute, Cri de guerre, Gardien, Sauvagerie</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "description": "<p><em>« Je suis gros·se et fort·e, mais protecteur·trice. »</em></p><p><strong>Bonus :</strong> Force +5, Endurance +5, Perception ou Survie +5<br /><strong>Malus :</strong> Connaissances ou Discrétion −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Gourmand, Colérique, Bienveillant, Clément, Loyal, Valeureux</p><p><strong>Talents accessibles :</strong> Bagarre, Brute, Cri de guerre, Gardien, Sauvagerie</p>",
     "source": "L1"
   }
 }

@@ -7,7 +7,7 @@
     "animal": "Aigle",
     "modifiers": {
       "com": 0,
-      "cns": 5,
+      "cns": 0,
       "dis": 0,
       "end": 0,
       "for": 0,
@@ -20,6 +20,15 @@
       "tir": 0,
       "vol": 5
     },
+    "modChoices": [
+      {
+        "chars": [
+          "cns",
+          "per"
+        ],
+        "value": 5
+      }
+    ],
     "traitsFixed": [
       "orgueilleux"
     ],
@@ -38,7 +47,7 @@
       "Résilience",
       "Sommeil léger"
     ],
-    "description": "<p><em>« Je suis ambitieux·se, sûr·e de soi ; fort esprit de compétition. »</em></p><p><strong>Bonus :</strong> Connaissances ou Perception +5, Volonté +5<br /><strong>Malus :</strong> aucun</p><p><strong>Vices &amp; vertus :</strong> Orgueilleux +1, et un +1 parmi : Envieux, Travailleur, Sobre, Prudent, Loyal</p><p><strong>Talents accessibles :</strong> Confiance en soi, Dévoué serviteur, Esprit de compétition, Résilience, Sommeil léger</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "description": "<p><em>« Je suis ambitieux·se, sûr·e de soi ; fort esprit de compétition. »</em></p><p><strong>Bonus :</strong> Connaissances ou Perception +5, Volonté +5<br /><strong>Malus :</strong> aucun</p><p><strong>Vices &amp; vertus :</strong> Orgueilleux +1, et un +1 parmi : Envieux, Travailleur, Sobre, Prudent, Loyal</p><p><strong>Talents accessibles :</strong> Confiance en soi, Dévoué serviteur, Esprit de compétition, Résilience, Sommeil léger</p>",
     "source": "L1"
   }
 }

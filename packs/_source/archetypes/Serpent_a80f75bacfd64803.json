@@ -13,13 +13,22 @@
       "for": 0,
       "tec": 0,
       "psy": 0,
-      "mou": -5,
+      "mou": 0,
       "per": 0,
       "soc": 5,
       "sur": 0,
       "tir": 0,
       "vol": 5
     },
+    "modChoices": [
+      {
+        "chars": [
+          "mou",
+          "per"
+        ],
+        "value": -5
+      }
+    ],
     "traitsFixed": [],
     "traitsChoices": [
       "trompeur",
@@ -37,7 +46,7 @@
       "Mensonge éhonté",
       "Résilience"
     ],
-    "description": "<p><em>« Je suis froid·e, calculateur·trice, cynique. »</em></p><p><strong>Bonus :</strong> Connaissances +5, Sociabilité +5, Volonté +5<br /><strong>Malus :</strong> Mouvement ou Perception −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Trompeur, Cruel, Envieux, Prudent, Travailleur, Sobre</p><p><strong>Talents accessibles :</strong> Calme, Coup en traître, Fascination, Mensonge éhonté, Résilience</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "description": "<p><em>« Je suis froid·e, calculateur·trice, cynique. »</em></p><p><strong>Bonus :</strong> Connaissances +5, Sociabilité +5, Volonté +5<br /><strong>Malus :</strong> Mouvement ou Perception −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Trompeur, Cruel, Envieux, Prudent, Travailleur, Sobre</p><p><strong>Talents accessibles :</strong> Calme, Coup en traître, Fascination, Mensonge éhonté, Résilience</p>",
     "source": "L1"
   }
 }

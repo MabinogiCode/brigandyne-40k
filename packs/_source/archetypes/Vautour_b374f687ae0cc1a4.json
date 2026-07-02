@@ -7,19 +7,35 @@
     "animal": "Vautour",
     "modifiers": {
       "com": 0,
-      "cns": 5,
+      "cns": 0,
       "dis": 0,
       "end": 0,
       "for": 0,
       "tec": 0,
       "psy": 0,
-      "mou": -5,
+      "mou": 0,
       "per": 5,
       "soc": 0,
       "sur": 0,
       "tir": 0,
       "vol": 5
     },
+    "modChoices": [
+      {
+        "chars": [
+          "cns",
+          "end"
+        ],
+        "value": 5
+      },
+      {
+        "chars": [
+          "mou",
+          "soc"
+        ],
+        "value": -5
+      }
+    ],
     "traitsFixed": [],
     "traitsChoices": [
       "avare",
@@ -37,7 +53,7 @@
       "Provocation",
       "Sauvegarde"
     ],
-    "description": "<p><em>« Je suis dégingandé·e, moqueur·se, cynique. »</em></p><p><strong>Bonus :</strong> Connaissances ou Endurance +5, Perception +5, Volonté +5<br /><strong>Malus :</strong> Mouvement ou Sociabilité −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Avare, Humble, Sobre, Prudent, Cruel, Trompeur</p><p><strong>Talents accessibles :</strong> Calme, Chance insolente, Distraction, Provocation, Sauvegarde</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "description": "<p><em>« Je suis dégingandé·e, moqueur·se, cynique. »</em></p><p><strong>Bonus :</strong> Connaissances ou Endurance +5, Perception +5, Volonté +5<br /><strong>Malus :</strong> Mouvement ou Sociabilité −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Avare, Humble, Sobre, Prudent, Cruel, Trompeur</p><p><strong>Talents accessibles :</strong> Calme, Chance insolente, Distraction, Provocation, Sauvegarde</p>",
     "source": "L1"
   }
 }

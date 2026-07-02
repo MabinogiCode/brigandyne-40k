@@ -8,7 +8,7 @@
     "modifiers": {
       "com": 0,
       "cns": 0,
-      "dis": -5,
+      "dis": 0,
       "end": 0,
       "for": 0,
       "tec": 0,
@@ -16,10 +16,26 @@
       "mou": 0,
       "per": 0,
       "soc": 5,
-      "sur": 5,
+      "sur": 0,
       "tir": 0,
       "vol": 5
     },
+    "modChoices": [
+      {
+        "chars": [
+          "sur",
+          "mou"
+        ],
+        "value": 5
+      },
+      {
+        "chars": [
+          "dis",
+          "tir"
+        ],
+        "value": -5
+      }
+    ],
     "traitsFixed": [
       "loyal"
     ],
@@ -38,7 +54,7 @@
       "Sain d'esprit",
       "Sauvegarde"
     ],
-    "description": "<p><em>« Je suis honorable, droit·e dans ses bottes, fier·e. »</em></p><p><strong>Bonus :</strong> Sociabilité +5, Volonté +5, Survie ou Mouvement +5<br /><strong>Malus :</strong> Discrétion ou Tir −5</p><p><strong>Vices &amp; vertus :</strong> Loyal +1, et un +1 parmi : Orgueilleux, Bienveillant, Clément, Généreux, Valeureux</p><p><strong>Talents accessibles :</strong> Dévoué serviteur, Inspiration, Instinct de survie, Sain d'esprit, Sauvegarde</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "description": "<p><em>« Je suis honorable, droit·e dans ses bottes, fier·e. »</em></p><p><strong>Bonus :</strong> Sociabilité +5, Volonté +5, Survie ou Mouvement +5<br /><strong>Malus :</strong> Discrétion ou Tir −5</p><p><strong>Vices &amp; vertus :</strong> Loyal +1, et un +1 parmi : Orgueilleux, Bienveillant, Clément, Généreux, Valeureux</p><p><strong>Talents accessibles :</strong> Dévoué serviteur, Inspiration, Instinct de survie, Sain d'esprit, Sauvegarde</p>",
     "source": "L1"
   }
 }

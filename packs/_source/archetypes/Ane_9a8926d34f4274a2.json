@@ -7,11 +7,11 @@
     "animal": "Âne",
     "modifiers": {
       "com": 0,
-      "cns": -5,
+      "cns": 0,
       "dis": 0,
       "end": 5,
       "for": 0,
-      "tec": 5,
+      "tec": 0,
       "psy": 0,
       "mou": 0,
       "per": 0,
@@ -20,6 +20,22 @@
       "tir": 0,
       "vol": 5
     },
+    "modChoices": [
+      {
+        "chars": [
+          "tec",
+          "sur"
+        ],
+        "value": 5
+      },
+      {
+        "chars": [
+          "cns",
+          "mou"
+        ],
+        "value": -5
+      }
+    ],
     "traitsFixed": [
       "humble"
     ],
@@ -38,7 +54,7 @@
       "Guérison rapide",
       "Second souffle"
     ],
-    "description": "<p><em>« Je suis tranquille, altruiste, plaisantin·e et têtu·e. »</em></p><p><strong>Bonus :</strong> Endurance +5, Habileté ou Survie +5, Volonté +5<br /><strong>Malus :</strong> Connaissances ou Mouvement −5</p><p><strong>Vices &amp; vertus :</strong> Humble +1, et un +1 parmi : Travailleur, Chaste, Prudent, Clément, Loyal</p><p><strong>Talents accessibles :</strong> Calme, Compagnon animal, Distraction, Guérison rapide, Second souffle</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "description": "<p><em>« Je suis tranquille, altruiste, plaisantin·e et têtu·e. »</em></p><p><strong>Bonus :</strong> Endurance +5, Habileté ou Survie +5, Volonté +5<br /><strong>Malus :</strong> Connaissances ou Mouvement −5</p><p><strong>Vices &amp; vertus :</strong> Humble +1, et un +1 parmi : Travailleur, Chaste, Prudent, Clément, Loyal</p><p><strong>Talents accessibles :</strong> Calme, Compagnon animal, Distraction, Guérison rapide, Second souffle</p>",
     "source": "L1"
   }
 }

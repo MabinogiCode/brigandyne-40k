@@ -8,9 +8,9 @@
     "modifiers": {
       "com": 5,
       "cns": 0,
-      "dis": 5,
+      "dis": 0,
       "end": 0,
-      "for": -5,
+      "for": 0,
       "tec": 0,
       "psy": 0,
       "mou": 0,
@@ -20,6 +20,22 @@
       "tir": 0,
       "vol": 0
     },
+    "modChoices": [
+      {
+        "chars": [
+          "dis",
+          "mou"
+        ],
+        "value": 5
+      },
+      {
+        "chars": [
+          "for",
+          "vol"
+        ],
+        "value": -5
+      }
+    ],
     "traitsFixed": [
       "cruel"
     ],
@@ -38,7 +54,7 @@
       "Surnombre",
       "Vivacité"
     ],
-    "description": "<p><em>« Je suis moqueur·se, cruel·le, violent·e. »</em></p><p><strong>Bonus :</strong> Combat +5, Discrétion ou Mouvement +5<br /><strong>Malus :</strong> Force ou Volonté −5</p><p><strong>Vices &amp; vertus :</strong> Cruel +1, et un +1 parmi : Colérique, Envieux, Lâche, Humble, Trompeur</p><p><strong>Talents accessibles :</strong> Coup en traître, Nyctalopie, Suivre l'exemple, Surnombre, Vivacité</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "description": "<p><em>« Je suis moqueur·se, cruel·le, violent·e. »</em></p><p><strong>Bonus :</strong> Combat +5, Discrétion ou Mouvement +5<br /><strong>Malus :</strong> Force ou Volonté −5</p><p><strong>Vices &amp; vertus :</strong> Cruel +1, et un +1 parmi : Colérique, Envieux, Lâche, Humble, Trompeur</p><p><strong>Talents accessibles :</strong> Coup en traître, Nyctalopie, Suivre l'exemple, Surnombre, Vivacité</p>",
     "source": "L1"
   }
 }

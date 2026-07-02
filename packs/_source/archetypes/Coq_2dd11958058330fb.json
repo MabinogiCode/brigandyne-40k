@@ -8,7 +8,7 @@
     "modifiers": {
       "com": 5,
       "cns": 0,
-      "dis": -5,
+      "dis": 0,
       "end": 0,
       "for": 0,
       "tec": 0,
@@ -20,6 +20,15 @@
       "tir": 0,
       "vol": 0
     },
+    "modChoices": [
+      {
+        "chars": [
+          "dis",
+          "tec"
+        ],
+        "value": -5
+      }
+    ],
     "traitsFixed": [],
     "traitsChoices": [
       "orgueilleux",
@@ -37,7 +46,7 @@
       "Riposte",
       "Vivacité"
     ],
-    "description": "<p><em>« Je suis vaniteux·se, va-t-en-guerre, séducteur·trice. »</em></p><p><strong>Bonus :</strong> Combat +5, Sociabilité +5<br /><strong>Malus :</strong> Discrétion ou Habileté −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Orgueilleux, Colérique, Luxurieux, Envieux, Loyal, Valeureux</p><p><strong>Talents accessibles :</strong> Esprit de compétition, Panache, Provocation, Riposte, Vivacité</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "description": "<p><em>« Je suis vaniteux·se, va-t-en-guerre, séducteur·trice. »</em></p><p><strong>Bonus :</strong> Combat +5, Sociabilité +5<br /><strong>Malus :</strong> Discrétion ou Habileté −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Orgueilleux, Colérique, Luxurieux, Envieux, Loyal, Valeureux</p><p><strong>Talents accessibles :</strong> Esprit de compétition, Panache, Provocation, Riposte, Vivacité</p>",
     "source": "L1"
   }
 }

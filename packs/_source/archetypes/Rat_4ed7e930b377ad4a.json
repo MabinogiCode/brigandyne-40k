@@ -7,9 +7,9 @@
     "animal": "Rat",
     "modifiers": {
       "com": 0,
-      "cns": 5,
+      "cns": 0,
       "dis": 5,
-      "end": 5,
+      "end": 0,
       "for": -5,
       "tec": 0,
       "psy": 0,
@@ -20,6 +20,22 @@
       "tir": 0,
       "vol": 0
     },
+    "modChoices": [
+      {
+        "chars": [
+          "cns",
+          "vol"
+        ],
+        "value": 5
+      },
+      {
+        "chars": [
+          "end",
+          "sur"
+        ],
+        "value": 5
+      }
+    ],
     "traitsFixed": [],
     "traitsChoices": [
       "avare",
@@ -37,7 +53,7 @@
       "Nyctalopie",
       "Vivacité"
     ],
-    "description": "<p><em>« Je suis plutôt petit·e, avare, méchant·e. »</em></p><p><strong>Bonus :</strong> Discrétion +5, Connaissances ou Volonté +5, Endurance ou Survie +5<br /><strong>Malus :</strong> Force −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Avare, Cruel, Envieux, Prudent, Chaste, Trompeur</p><p><strong>Talents accessibles :</strong> Coup en traître, Doué (DIS), Esquive, Nyctalopie, Vivacité</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "description": "<p><em>« Je suis plutôt petit·e, avare, méchant·e. »</em></p><p><strong>Bonus :</strong> Discrétion +5, Connaissances ou Volonté +5, Endurance ou Survie +5<br /><strong>Malus :</strong> Force −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Avare, Cruel, Envieux, Prudent, Chaste, Trompeur</p><p><strong>Talents accessibles :</strong> Coup en traître, Doué (DIS), Esquive, Nyctalopie, Vivacité</p>",
     "source": "L1"
   }
 }

@@ -7,7 +7,7 @@
     "animal": "Taureau",
     "modifiers": {
       "com": 5,
-      "cns": -5,
+      "cns": 0,
       "dis": -5,
       "end": 5,
       "for": 5,
@@ -20,6 +20,15 @@
       "tir": 0,
       "vol": 0
     },
+    "modChoices": [
+      {
+        "chars": [
+          "cns",
+          "tec"
+        ],
+        "value": -5
+      }
+    ],
     "traitsFixed": [],
     "traitsChoices": [
       "orgueilleux",
@@ -37,7 +46,7 @@
       "Festoyeur",
       "Second souffle"
     ],
-    "description": "<p><em>« Je suis gros·se et fort·e, violent·e, aime s'imposer. »</em></p><p><strong>Bonus :</strong> Combat +5, Endurance +5, Force +5<br /><strong>Malus :</strong> Discrétion −5, Connaissances ou Habileté −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Orgueilleux, Colérique, Luxurieux, Gourmand, Clément, Valeureux</p><p><strong>Talents accessibles :</strong> Brute, Coups puissants, Confiance en soi, Festoyeur, Second souffle</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "description": "<p><em>« Je suis gros·se et fort·e, violent·e, aime s'imposer. »</em></p><p><strong>Bonus :</strong> Combat +5, Endurance +5, Force +5<br /><strong>Malus :</strong> Discrétion −5, Connaissances ou Habileté −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Orgueilleux, Colérique, Luxurieux, Gourmand, Clément, Valeureux</p><p><strong>Talents accessibles :</strong> Brute, Coups puissants, Confiance en soi, Festoyeur, Second souffle</p>",
     "source": "L1"
   }
 }

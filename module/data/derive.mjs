@@ -38,3 +38,32 @@ export function speciesResourceBonus(special = []) {
     sf: special.includes("sfPlus1") ? 1 : 0
   };
 }
+
+/** Initiative — RAW : *COM* + *MOU* + *PER*. */
+export function initiative(c = {}) {
+  return bonusOf(c.com) + bonusOf(c.mou) + bonusOf(c.per);
+}
+
+/** Seuil d'instabilité — RAW : Sang-froid / 4 (arrondi inférieur). */
+export function instability(sfMax = 0) {
+  return Math.floor((sfMax || 0) / 4);
+}
+
+/**
+ * Applique les modificateurs d'un archétype à des totaux de caractéristiques.
+ * @param {object} totals      totaux {com, cns, …}
+ * @param {object} modifiers   modificateurs fixes {cns: 5, …}
+ * @param {Array<{chars:string[], value:number}>} modChoices  choix « X ou Y »
+ * @param {string[]} selections  caractéristique choisie pour chaque modChoice (défaut : 1re option)
+ * @returns {object} nouveaux totaux (non bornés)
+ */
+export function applyArchetype(totals = {}, modifiers = {}, modChoices = [], selections = []) {
+  const out = { ...totals };
+  for (const k of Object.keys(modifiers || {})) out[k] = (out[k] ?? 0) + (Number(modifiers[k]) || 0);
+  (modChoices || []).forEach((mc, i) => {
+    const chars = (mc && mc.chars) || [];
+    const pick = (selections[i] && chars.includes(selections[i])) ? selections[i] : chars[0];
+    if (pick) out[pick] = (out[pick] ?? 0) + (Number(mc.value) || 0);
+  });
+  return out;
+}

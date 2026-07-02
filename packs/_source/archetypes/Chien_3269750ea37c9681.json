@@ -8,7 +8,7 @@
     "modifiers": {
       "com": 0,
       "cns": 0,
-      "dis": -5,
+      "dis": 0,
       "end": 5,
       "for": 0,
       "tec": 0,
@@ -20,6 +20,15 @@
       "tir": 0,
       "vol": 0
     },
+    "modChoices": [
+      {
+        "chars": [
+          "dis",
+          "tec"
+        ],
+        "value": -5
+      }
+    ],
     "traitsFixed": [],
     "traitsChoices": [
       "bienveillant",
@@ -37,7 +46,7 @@
       "Second souffle",
       "Sixième sens"
     ],
-    "description": "<p><em>« Je suis amical·e, loyal·e, courageux·se, mais impulsif·ive. »</em></p><p><strong>Bonus :</strong> Endurance +5, Perception +5, Sociabilité +5<br /><strong>Malus :</strong> Discrétion ou Habileté −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Bienveillant, Généreux, Gourmand, Clément, Loyal, Valeureux</p><p><strong>Talents accessibles :</strong> Festoyeur, Gardien, Inspiration, Second souffle, Sixième sens</p><p><em>Note : les choix « X ou Y » de caractéristique sont appliqués sur la 1re option par défaut (ajustable sur la fiche).</em></p>",
+    "description": "<p><em>« Je suis amical·e, loyal·e, courageux·se, mais impulsif·ive. »</em></p><p><strong>Bonus :</strong> Endurance +5, Perception +5, Sociabilité +5<br /><strong>Malus :</strong> Discrétion ou Habileté −5</p><p><strong>Vices &amp; vertus :</strong> Deux +1 parmi : Bienveillant, Généreux, Gourmand, Clément, Loyal, Valeureux</p><p><strong>Talents accessibles :</strong> Festoyeur, Gardien, Inspiration, Second souffle, Sixième sens</p>",
     "source": "L1"
   }
 }
