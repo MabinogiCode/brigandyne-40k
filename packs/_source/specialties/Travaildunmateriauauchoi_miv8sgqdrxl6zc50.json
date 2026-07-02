@@ -1,0 +1,14 @@
+{
+  "_id": "miv8sgqdrxl6zc50",
+  "name": "Travail d’un matériau (au choix)",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 20,
+    "source": "Livre Premier p.111-113",
+    "effect": "Bois, pierre, métal ou tissu : façonner, réparer, estimer (Livre Premier p.113)",
+    "description": "<p>Bois, pierre, métal ou tissu : façonner, réparer, estimer (Livre Premier p.113)</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
+}

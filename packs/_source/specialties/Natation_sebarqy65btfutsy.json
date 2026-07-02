@@ -1,0 +1,14 @@
+{
+  "_id": "sebarqy65btfutsy",
+  "name": "Natation",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Livre Premier p.111-113",
+    "effect": "Se déplacer dans l'eau, plonger, pratiquer l'apnée",
+    "description": "<p>Se déplacer dans l'eau, plonger, pratiquer l'apnée</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
+}

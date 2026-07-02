@@ -41,28 +41,32 @@ test("adaptation 40k — signatures des possessions de départ (docx)", () => {
   assert.match(E.pegre, /Armure primitive/);
 });
 
-test("carrières 40k — équipement additionnel renseigné (« - » = aucun, explicite)", () => {
-  // Les carrières féodales (Livre Premier non adapté) sont couvertes par le
-  // test skippé ci-dessous.
-  for (const c of careers.filter(c => c.system.faction !== "feodal")) {
+test("chaque carrière a un équipement additionnel renseigné (« - » = aucun, explicite)", () => {
+  for (const c of careers) {
     const txt = (c.system.startingEquipment ?? "").replace(/<[^>]+>/g, "").trim();
     assert.ok(txt.length > 0, `${c.name} : équipement additionnel absent`);
   }
 });
 
-test("carrières féodales — équipement de départ à renseigner",
-  { skip: "contenu 40k à aligner (phase adaptation) : 16 carrières féodales sans équipement" }, () => {
-  for (const c of careers.filter(c => c.system.faction === "feodal")) {
-    const txt = (c.system.startingEquipment ?? "").replace(/<[^>]+>/g, "").trim();
-    assert.ok(txt.length > 0, `${c.name} : équipement de départ absent`);
+test("p.26/57 — chaque carrière a un équipement de BASE effectif (carrière ou faction)", () => {
+  for (const c of careers) {
+    const own = (c.system.baseEquipment ?? "").replace(/<[^>]+>/g, "").trim();
+    const faction = (BRIGANDYNE.factionBaseEquipment[c.system.faction] ?? "").replace(/<[^>]+>/g, "").trim();
+    assert.ok(own.length > 0 || faction.length > 0,
+      `${c.name} (${c.system.faction}) : aucun équipement de base`);
   }
 });
 
-test("p.26/57 — chaque faction utilisée par une carrière a un équipement de base",
-  { skip: "contenu 40k à aligner (phase adaptation) : civils/feodal sans liste, nobles/pegre à re-router" }, () => {
-  const used = new Set(careers.map(c => c.system.faction));
-  for (const f of used) {
-    assert.ok(BRIGANDYNE.factionBaseEquipment[f],
-      `faction « ${f} » sans équipement de base`);
+test("les carrières féodales portent l'équipement de leur groupe Livre Premier", () => {
+  for (const c of careers.filter(c => c.system.faction === "feodal")) {
+    const own = (c.system.baseEquipment ?? "").replace(/<[^>]+>/g, "").trim();
+    assert.ok(own.length > 10, `${c.name} : baseEquipment (groupe fantasy) absent`);
+  }
+});
+
+test("chaque faction de carrière est déclarée dans BRIGANDYNE.factions", () => {
+  for (const c of careers) {
+    assert.ok(BRIGANDYNE.factions[c.system.faction],
+      `${c.name} : faction « ${c.system.faction} » inconnue de la config`);
   }
 });

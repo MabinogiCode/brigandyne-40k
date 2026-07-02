@@ -1,0 +1,14 @@
+{
+  "_id": "p9xuqheykuiugvh3",
+  "name": "Canotage",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 20,
+    "source": "Livre Premier p.111-113",
+    "effect": "Piloter une petite embarcation : canot, barque, radeau, bateau fluvial",
+    "description": "<p>Piloter une petite embarcation : canot, barque, radeau, bateau fluvial</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
+}

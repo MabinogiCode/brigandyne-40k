@@ -1,0 +1,13 @@
+{
+  "_id": "7f6zt65z7fn9htv4",
+  "name": "Sauvagerie",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "permanent",
+    "source": "Livre Premier p.115-121",
+    "effect": "<p>La vue de votre propre sang accentue votre férocité. Dès que vous avez perdu la moitié de vos PV, et tant que vous restez sous ce seuil, vos dégâts en mêlée augmentent d’1 point.</p>",
+    "description": "<p>La vue de votre propre sang accentue votre férocité. Dès que vous avez perdu la moitié de vos PV, et tant que vous restez sous ce seuil, vos dégâts en mêlée augmentent d’1 point.</p>"
+  },
+  "folder": "z52203x03183xx3w"
+}

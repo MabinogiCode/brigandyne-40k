@@ -32,8 +32,7 @@
       "Noblesse et politique",
       "Persuasion",
       "Renseignements",
-      "Religion",
-      "Se cacher"
+      "Religion"
     ],
     "talents": [
       "Calme",
@@ -45,8 +44,7 @@
       "Doué (VOL)",
       "Fascination",
       "Inoffensif",
-      "Inspiration",
-      "Polyglotte"
+      "Inspiration"
     ],
     "startingEquipment": "<p>Icone religieux précieux, Nécessaire d’écriture, Livre Saint, Bure religieuse de qualité, *CNS* ouvrages reliés</p>",
     "description": "<p>Les Prêtres sont le cœur de l’Ecclésiarchie impériale. Ils prêchent dans les sombres ruelles des mondes-ruches, officient dans les églises d’une planète isolée et sont les agents qui apportent la sainte parole de l’Empereur.</p>",

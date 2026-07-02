@@ -1,0 +1,13 @@
+{
+  "_id": "04lexizwcdbsd88s",
+  "name": "Spectacle",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "jour",
+    "source": "Livre Premier p.115-121",
+    "effect": "<p>Une fois par jour, vous pouvez faire regagner *SOC* points de Sang-froid à tous vos alliés, en donnant un spectacle pendant une heure.</p>",
+    "description": "<p>Une fois par jour, vous pouvez faire regagner *SOC* points de Sang-froid à tous vos alliés, en donnant un spectacle pendant une heure.</p>"
+  },
+  "folder": "z52203x03183xx3w"
+}

@@ -35,9 +35,9 @@
     "talents": [
       "Inoffensif",
       "Prudent",
-      "Sain d'esprit",
+      "Sain d’esprit",
       "Sauvegarde",
-      "Suivre l'exemple"
+      "Suivre l’exemple"
     ],
     "description": "<p><em>« Je suis suiveur·se, prudent·e, amical·e. »</em></p><p><strong>Bonus :</strong> Habileté +5, Perception +5, Sociabilité +5<br /><strong>Malus :</strong> Volonté −5</p><p><strong>Vices &amp; vertus :</strong> Humble +1, et un +1 parmi : Travailleur, Prudent, Lâche, Clément, Chaste</p><p><strong>Talents accessibles :</strong> Inoffensif, Prudent, Sain d'esprit, Sauvegarde, Suivre l'exemple</p>",
     "source": "L1"

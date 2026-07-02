@@ -32,8 +32,7 @@
       "Premiers soins",
       "Réflexes",
       "Résistance aux maladies",
-      "Résistance à la chaleur/au froid",
-      "Vigilance"
+      "Résistance à la chaleur/au froid"
     ],
     "talents": [
       "Arme fétiche",
@@ -45,8 +44,7 @@
       "Mains blanches",
       "Recharge rapide",
       "Travail d’équipe",
-      "Tir précis",
-      "Tir ciblé"
+      "Tir précis"
     ],
     "startingEquipment": "<p>Armure Carapace légère, Trousse médicale, Brassard de Médic, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix)</p>",
     "description": "<p>Les soldats de la Garde impériale n’ont aucune idée de ce qu’ils vont rencontrer mais la seule chose qu’ils savent, c’est qu’ils vont devoir combattre. C’est pour s’assurer qu’ils combattant le plus longtemps possible que sont formés les Médics, en tant que médecins de guerre et chirurgiens-combattants. Ils sont ainsi capable d’apporter des soins aux blessés lors des conflits.</p>",

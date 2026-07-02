@@ -1,0 +1,14 @@
+{
+  "_id": "nuedcr9j0x3hmmkg",
+  "name": "Comédie",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 20,
+    "source": "Livre Premier p.111-113",
+    "effect": "Apprendre un texte, le réciter avec emphase, connaissance des pièces de théâtre",
+    "description": "<p>Apprendre un texte, le réciter avec emphase, connaissance des pièces de théâtre</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
+}

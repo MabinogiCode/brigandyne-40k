@@ -23,20 +23,33 @@
     },
     "lifestyle": "ordinaire",
     "specialties": [
+      "Arme à distance (au choix)",
       "Arme de mêlée (au choix)",
+      "Commandement",
+      "Course",
       "Fouille",
       "Intimidation",
-      "Vigilance",
-      "Premiers soins"
+      "Pugilat",
+      "Repérage",
+      "Résistance à l’alcool",
+      "Stratégie"
     ],
     "talents": [
-      "Solidité",
+      "Bagarre",
+      "Calme",
+      "Coups puissants",
+      "Doué (END) ou Doué (MOU)",
+      "Doué (PER)",
       "Gardien",
-      "Inspiration"
+      "Maîtrise du bouclier",
+      "Second souffle",
+      "Sixième sens ou Sauvegarde",
+      "Solidité"
     ],
-    "startingEquipment": "",
+    "startingEquipment": "<p>Un bouclier, une arme d’hast (au choix), et un casque à plume</p>",
     "description": "<p>Le bras armé de la loi locale, lance et tabard.</p>",
-    "source": "Brigandyne (adapté)"
+    "source": "Brigandyne (adapté)",
+    "baseEquipment": "<ul><li>Casaque militaire</li><li>Vêtements de voyage</li><li>Arme de mêlée (au choix)</li><li>Armure légère ou moyenne</li><li>Arme de tir et 10 munitions ou un bouclier</li><li>Couteau</li><li>Sac en toile contenant un bol en bois et 1D10 rations</li><li>Gourde d’eau ou de vin</li><li>Bourse contenant 1D10 + *COM* ou *TIR* pièces d’argent</li></ul>"
   },
   "folder": "x0woyw1xt3xsroy0"
 }

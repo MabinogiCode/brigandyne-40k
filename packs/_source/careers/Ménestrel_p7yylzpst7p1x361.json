@@ -21,21 +21,35 @@
       "tir": 0,
       "vol": 0
     },
-    "lifestyle": "ordinaire",
+    "lifestyle": "pauvre",
     "specialties": [
-      "Musique et chant",
-      "Persuasion",
+      "Charme",
+      "Comédie",
+      "Discours",
+      "Jeux",
       "Légendes",
-      "Renseignements"
+      "Lettres",
+      "Musique et chant",
+      "Renseignements",
+      "Résistance aux privations",
+      "Se cacher"
     ],
     "talents": [
-      "Fascination",
-      "Panache",
-      "Musique et chant"
+      "Chance insolente ou Confiance en soi",
+      "Distraction",
+      "Doué (TEC)",
+      "Doué (PER)",
+      "Doué (SOC)",
+      "Inoffensif",
+      "Inspiration",
+      "Mensonge éhonté",
+      "Réflexes éclairs",
+      "Spectacle"
     ],
-    "startingEquipment": "",
+    "startingEquipment": "<p>Un costume de cour usé, un costume vert de spectacle, deux instruments de musique (flûte, mandoline, tambourin, luth…)</p>",
     "description": "<p>Conteur, musicien et espion à ses heures.</p>",
-    "source": "Brigandyne (adapté)"
+    "source": "Brigandyne (adapté)",
+    "baseEquipment": "<ul><li>Vêtements de vilain défraîchis</li><li>Sac en toile contenant un bol en bois et 1D10 rations</li><li>Gourde d’eau ou de vin</li><li>Bourse avec 1D10 + *TEC* ou *SOC* pièces d’argent</li></ul>"
   },
   "folder": "x0woyw1xt3xsroy0"
 }

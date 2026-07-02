@@ -32,12 +32,11 @@
       "Navigation",
       "Repérage",
       "Résistance aux privations",
-      "Stratégie",
-      "Vigilance"
+      "Stratégie"
     ],
     "talents": [
       "Calme",
-      "Chance insolante",
+      "Chance insolente",
       "Doué (TEC)",
       "Esprit de compétition",
       "Prudent",
@@ -45,8 +44,7 @@
       "Sommeil léger",
       "Travail d’équipe",
       "Tir précis",
-      "Tireur d’élite",
-      "Tir ciblé"
+      "Tireur d’élite"
     ],
     "startingEquipment": "<p>Armure Carapace légère, Outils de mécanique, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix)</p>",
     "description": "<p>Chars d’assaut, aéronefs, marcheurs tout-terrains… Nombreux sont les véhicules déployés par l’Astra Militarum pour écraser les ennemis de l’Imperium. Les pilotes sont là pour les diriger et les manoeuvrer, seuls ou en équipe, afin de les mener à la victoire.</p>",

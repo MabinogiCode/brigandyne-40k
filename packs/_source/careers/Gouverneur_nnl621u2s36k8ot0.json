@@ -4,7 +4,7 @@
   "type": "career",
   "img": "icons/svg/book.svg",
   "system": {
-    "faction": "civils",
+    "faction": "nobles",
     "quote": "“Ils règnent en Son nom.”",
     "advances": {
       "com": 3,
@@ -31,12 +31,12 @@
       "Intimidation",
       "Noblesse et politique",
       "Persuasion",
-      "Renseignements"
+      "Renseignements",
+      "Étiquette"
     ],
     "talents": [
       "Calme",
       "Coups puissants",
-      "Coups précis",
       "Dévoué serviteur",
       "Doué (CNS)",
       "Doué (SOC)",
@@ -44,9 +44,7 @@
       "Riposte",
       "Second souffle",
       "Sixième sens",
-      "Solidité",
-      "Tireur d’élite",
-      "Tir précis"
+      "Solidité"
     ],
     "startingEquipment": "<p>Arme de mêlée (au choix), Arme à distance (au choix), Munitions : 2 chargeurs complets, Un vaisseau personnel, Une planète</p>",
     "description": "<p>Seule une poignée de planètes est administrée directement par l’Adeptus Terra et Ministorum. Mais face à l’immensité de l’Imperium, il est nécessaire de nommer des dirigeants afin d’assurer leur fonctionnement. Les gouverneurs impériaux sont chargés de diriger des planètes entières au nom de l’Empereur-Dieu. Leur titre est héréditaire et souvent octroyé par les hautes sphères de Terra (ou par un Libre-Marchand sur son territoire).</p>",

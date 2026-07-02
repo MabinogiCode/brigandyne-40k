@@ -32,8 +32,7 @@
       "Intimidation",
       "Réflexes",
       "Repérage",
-      "Vigilance",
-      "Vol à la tir"
+      "Vigilance"
     ],
     "talents": [
       "Agile",
@@ -45,8 +44,7 @@
       "Instinct de survie",
       "Mensonge éhonté",
       "Surnombre",
-      "Tireur d’élite",
-      "Vivacité"
+      "Tireur d’élite"
     ],
     "startingEquipment": "<p>Pièces Carapace, Brassard de la Légion pénale, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix)</p>",
     "description": "<p>Nombreux sont ceux qui bafouent les textes sacrés de la Lex Imperialis et sont ensuite enfermés sur l’une des nombreuses planètes carcérales de l’Imperium. Ces prisonniers sont une ressource sacrifiable pour toutes sortes de tâche, y compris la guerre. Ils sont armés et envoyés sur les fronts les plus abominables ou bien sacrifiés dans des missions suicides.</p>",

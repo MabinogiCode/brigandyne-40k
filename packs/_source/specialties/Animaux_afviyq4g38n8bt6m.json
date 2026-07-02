@@ -1,0 +1,14 @@
+{
+  "_id": "afviyq4g38n8bt6m",
+  "name": "Animaux",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Livre Premier p.111-113",
+    "effect": "Connaître la faune : habitudes, saisons, comportement, valeur, points faibles",
+    "description": "<p>Connaître la faune : habitudes, saisons, comportement, valeur, points faibles</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
+}

@@ -23,21 +23,33 @@
     },
     "lifestyle": "aise",
     "specialties": [
+      "Arme à distance (au choix)",
+      "Arme lourde (au choix)",
       "Arme de mêlée (au choix)",
-      "Équitation",
       "Commandement",
       "Courage",
-      "Noblesse et politique"
+      "Équitation",
+      "Intimidation",
+      "Noblesse et politique",
+      "Pugilat",
+      "Stratégie"
     ],
     "talents": [
-      "Maître d'armes",
+      "Bagarre ou Festoyeur",
+      "Coups précis",
       "Coups puissants",
-      "Inspiration",
-      "Port d'armure"
+      "Coup de maître ou Dévoué serviteur",
+      "Maître d’armes",
+      "Maîtrise du bouclier",
+      "Panache ou Port d’armure",
+      "Résilience ou Riposte",
+      "Sauvegarde",
+      "Solidité"
     ],
-    "startingEquipment": "",
+    "startingEquipment": "<p>Armure de plates complète, destrier fidèle et bien dressé, épée longue, masse d’armes, lance et bouclier</p>",
     "description": "<p>Un noble combattant, monté et cuirassé, lié par un serment.</p>",
-    "source": "Brigandyne (adapté)"
+    "source": "Brigandyne (adapté)",
+    "baseEquipment": "<ul><li>Élégant costume de cour</li><li>Cheval avec sa selle et son harnais</li><li>Arme de mêlée (dague ou épée)</li><li>Bourse contenant 2D10 + *SOC* pièces d’or</li></ul>"
   },
   "folder": "x0woyw1xt3xsroy0"
 }

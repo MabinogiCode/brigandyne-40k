@@ -21,22 +21,35 @@
       "tir": 0,
       "vol": 1
     },
-    "lifestyle": "aise",
+    "lifestyle": "ordinaire",
     "specialties": [
-      "Lettres",
+      "Commerce",
+      "Droit et usages",
+      "Écoute",
       "Histoire",
       "Langue étrangère",
-      "Astrologie",
-      "Légendes"
+      "Légendes",
+      "Lettres",
+      "Persuasion",
+      "Religion",
+      "Renseignements"
     ],
     "talents": [
-      "Mémoire sans faille",
+      "Calme",
+      "Confiance en soi",
+      "Distraction",
       "Doué (CNS)",
-      "Calme"
+      "Doué (TEC) ou Doué (PER)",
+      "Doué (SOC)",
+      "Inoffensif",
+      "Mémoire sans faille",
+      "Polyglotte",
+      "Relations ou Sain d’esprit"
     ],
-    "startingEquipment": "",
+    "startingEquipment": "<p>Une écritoire portative, de la cire à cacheter, deux plumes, deux mains de papier et un encrier supplémentaire</p>",
     "description": "<p>Le nez dans les grimoires, gardien du savoir.</p>",
-    "source": "Brigandyne (adapté)"
+    "source": "Brigandyne (adapté)",
+    "baseEquipment": "<ul><li>Costume de bourgeois</li><li>Nécessaire d’écriture, 1D10 parchemins</li><li>Trois plumes et deux encriers, main de papier (20 pages)</li><li>*CNS* livres reliés</li><li>Bésicles</li><li>Gibecière avec couverture, bol en bois et 1D10 rations supérieures</li><li>Gourde contenant du bon vin</li><li>Bourse contenant 1D10 + *CNS* pièces d’or</li></ul>"
   },
   "folder": "x0woyw1xt3xsroy0"
 }

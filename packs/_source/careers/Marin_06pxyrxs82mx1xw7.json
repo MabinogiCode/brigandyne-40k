@@ -23,20 +23,33 @@
     },
     "lifestyle": "pauvre",
     "specialties": [
-      "Navigation",
+      "Arme de mêlée (au choix)",
+      "Canotage ou Courage",
       "Escalade",
-      "Athlétisme",
-      "Survie",
-      "Jeu"
+      "Jeux",
+      "Navigation",
+      "Natation",
+      "Nœuds ou Orientation",
+      "Pugilat",
+      "Résistance à l’alcool",
+      "Résistance aux maladies"
     ],
     "talents": [
-      "Endurci",
-      "Sang-froid",
-      "Solidité"
+      "Bagarre",
+      "Chance insolente",
+      "Doué (END)",
+      "Doué (TEC)",
+      "Festoyeur",
+      "Instinct de survie",
+      "Second souffle",
+      "Sauvegarde",
+      "Solidité",
+      "Vivacité"
     ],
-    "startingEquipment": "",
+    "startingEquipment": "<p>Corde de 10 mètres et grappin, arme de mêlée (simple), bouteille d’alcool</p>",
     "description": "<p>Le pied marin et le couteau facile.</p>",
-    "source": "Brigandyne (adapté)"
+    "source": "Brigandyne (adapté)",
+    "baseEquipment": "<ul><li>Vêtements de vilain</li><li>Arme de mêlée légère</li><li>Couteau ou animal de compagnie</li><li>Bâton de marche</li><li>Gourde d’eau ou de vin</li><li>Gibecière ou gros sac en toile (fine couverture, bol en bois, 1D10 rations de voyage)</li><li>Bourse avec 1D10 + *TEC* ou *END* pièces d’argent</li></ul>"
   },
   "folder": "x0woyw1xt3xsroy0"
 }

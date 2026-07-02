@@ -1,0 +1,14 @@
+{
+  "_id": "44kmpat21u6q34gc",
+  "name": "Résistance à l’alcool",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 20,
+    "source": "Livre Premier p.111-113",
+    "effect": "Éviter les gueules de bois, garder le contrôle, ne pas vomir",
+    "description": "<p>Éviter les gueules de bois, garder le contrôle, ne pas vomir</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
+}

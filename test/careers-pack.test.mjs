@@ -42,19 +42,46 @@ test("p.124 — chaque carrière a un niveau de vie valide", () => {
   }
 });
 
-test("p.110 — le tirage des atouts exige au moins 2 spécialités et 2 talents par carrière", () => {
-  // Minimum pour que le tirage 2D10 « choix entre deux » fonctionne.
-  for (const c of careers) {
-    assert.ok((c.system.specialties ?? []).length >= 2,
-      `${c.name} : ${c.system.specialties?.length ?? 0} spécialité(s), tirage impossible`);
-    assert.ok((c.system.talents ?? []).length >= 2,
-      `${c.name} : ${c.system.talents?.length ?? 0} talent(s), tirage impossible`);
-  }
-});
-
-test("p.110/115 — RAW : 10 spécialités et 10 talents par carrière", { skip: "contenu 40k à aligner (phase adaptation)" }, () => {
+test("p.110/115 — RAW : 10 spécialités et 10 talents par carrière", () => {
   for (const c of careers) {
     assert.equal((c.system.specialties ?? []).length, 10, `${c.name} : 10 spécialités`);
     assert.equal((c.system.talents ?? []).length, 10, `${c.name} : 10 talents`);
+  }
+});
+
+test("intégrité — chaque atout de carrière résout dans les compendiums (« X ou Y » par moitié)", () => {
+  const specDir = join(dirname(fileURLToPath(import.meta.url)), "..", "packs", "_source", "specialties");
+  const talDir = join(dirname(fileURLToPath(import.meta.url)), "..", "packs", "_source", "talents");
+  const names = dir => new Set(readdirSync(dir).filter(f => f.endsWith(".json"))
+    .map(f => JSON.parse(readFileSync(join(dir, f), "utf-8")))
+    .filter(d => ["specialty", "talent"].includes(d.type)).map(d => d.name));
+  const specs = names(specDir);
+  const tals = names(talDir);
+  for (const c of careers) {
+    for (const n of c.system.specialties ?? []) {
+      for (const half of n.split(" ou ")) {
+        assert.ok(specs.has(half), `${c.name} : spécialité inconnue « ${half} » (entrée « ${n} »)`);
+      }
+    }
+    for (const n of c.system.talents ?? []) {
+      for (const half of n.split(" ou ")) {
+        assert.ok(tals.has(half), `${c.name} : talent inconnu « ${half} » (entrée « ${n} »)`);
+      }
+    }
+  }
+});
+
+test("intégrité — les talents accessibles des archétypes résolvent dans le compendium", () => {
+  const talDir = join(dirname(fileURLToPath(import.meta.url)), "..", "packs", "_source", "talents");
+  const tals = new Set(readdirSync(talDir).filter(f => f.endsWith(".json"))
+    .map(f => JSON.parse(readFileSync(join(talDir, f), "utf-8")))
+    .filter(d => d.type === "talent").map(d => d.name));
+  const arcDir = join(dirname(fileURLToPath(import.meta.url)), "..", "packs", "_source", "archetypes");
+  for (const f of readdirSync(arcDir).filter(f => f.endsWith(".json"))) {
+    const d = JSON.parse(readFileSync(join(arcDir, f), "utf-8"));
+    if (d.type !== "archetype") continue;
+    for (const n of d.system.talents ?? []) {
+      assert.ok(tals.has(n), `${d.name} : talent accessible inconnu « ${n} »`);
+    }
   }
 });

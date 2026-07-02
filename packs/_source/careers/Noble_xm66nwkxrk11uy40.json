@@ -4,7 +4,7 @@
   "type": "career",
   "img": "icons/svg/book.svg",
   "system": {
-    "faction": "civils",
+    "faction": "nobles",
     "quote": "“Savez-vous qui je suis ?”",
     "advances": {
       "com": 3,
@@ -44,10 +44,7 @@
       "Prudent",
       "Riposte",
       "Second souffle",
-      "Sixième sens",
-      "Solidité",
-      "Tireur d’élite",
-      "Tir précis"
+      "Sixième sens"
     ],
     "startingEquipment": "<p>Armure légère ou moyenne, Arme de mêlée (au choix), Arme à distance (au choix), Munitions : 2 chargeurs complets</p>",
     "description": "<p>De nombreux aristocrates appartiennent à la noblesse de l’Imperium, qu’ils soient les notables d’une cité-ruche, ou bien les propriétaires d’une planète voir de tout un système. Ils sont chargés de régenter et administrer les territoires de l’Imperium.</p>",

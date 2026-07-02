@@ -26,14 +26,13 @@
       "Artillerie",
       "Astrogation",
       "Cartographie",
-      "Pilotage (Au choix)",
+      "Pilotage (au choix)",
       "Commandement",
       "Courage",
       "Gestion",
       "Informatique",
       "Orientation",
-      "Repérage",
-      "Vigilance"
+      "Repérage"
     ],
     "talents": [
       "Calme",

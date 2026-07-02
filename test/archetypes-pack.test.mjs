@@ -159,10 +159,11 @@ test("p.50 — chaque archétype accorde exactement deux « +1 » de vices/vertu
 });
 
 test("p.38/40-47 — 5 talents accessibles par archétype, conformes au livre", () => {
+  const ap = s => s.replace(/[’']/g, "'");   // apostrophe droite vs typographique
   for (const [name, ref] of Object.entries(RAW_TALENTS)) {
     const sys = pack[name];
     assert.ok(sys, `${name} absent du pack`);
     assert.equal((sys.talents ?? []).length, 5, `${name} : 5 talents accessibles`);
-    assert.deepEqual([...sys.talents].sort(), [...ref].sort(), `${name} : liste des talents`);
+    assert.deepEqual([...sys.talents].map(ap).sort(), [...ref].map(ap).sort(), `${name} : liste des talents`);
   }
 });

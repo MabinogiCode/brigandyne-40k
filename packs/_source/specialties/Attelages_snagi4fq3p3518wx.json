@@ -1,0 +1,14 @@
+{
+  "_id": "snagi4fq3p3518wx",
+  "name": "Attelages",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Livre Premier p.111-113",
+    "effect": "Conduire un chariot, réparer une roue cassée",
+    "description": "<p>Conduire un chariot, réparer une roue cassée</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
+}

@@ -32,8 +32,7 @@
       "Musique et chant",
       "Persuasion",
       "Potions et remèdes",
-      "Premiers soins",
-      "Religion"
+      "Premiers soins"
     ],
     "talents": [
       "Calme",
@@ -45,8 +44,7 @@
       "Prudent",
       "Résilience",
       "Sain d’esprit",
-      "Suivre l’exemple",
-      "Travail d’équipe"
+      "Suivre l’exemple"
     ],
     "startingEquipment": "<p>Trousse médicale</p>",
     "description": "<p>Le corps du Ministorum (ou de l’Adepta Sororitas) qui parcourent les territoires de l’Imperium pour soutenir ceux qui en ont besoin, qu’ils soient des soldats sur un champ de bataille ou des citoyens affaiblis dans une cité-ruche. Ce sont des guérisseurs du corps et de l’âme.</p>",

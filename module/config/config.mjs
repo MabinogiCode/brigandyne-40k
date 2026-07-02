@@ -386,8 +386,10 @@ BRIGANDYNE.factions = {
   mechanicus: "BRIG.Faction.mechanicus",
   ministorum: "BRIG.Faction.ministorum",
   militarum: "BRIG.Faction.militarum",
-  feodal: "BRIG.Faction.feodal",
+  nobles: "BRIG.Faction.nobles",
   civils: "BRIG.Faction.civils",
+  pegre: "BRIG.Faction.pegre",
+  feodal: "BRIG.Faction.feodal",
   assassinorum: "BRIG.Faction.assassinorum",
   psykana: "BRIG.Faction.psykana",
   inquisition: "BRIG.Faction.inquisition",
@@ -402,11 +404,10 @@ BRIGANDYNE.factions = {
 // base de son groupe de carrières ET de l'équipement additionnel de sa
 // carrière. » Listes issues du document d'adaptation « Warhammer 40.000 :
 // Brigandyne » (Possessions de départ par Adeptus).
-// NOTE phase adaptation : « nobles » et « pegre » existent dans le document
-// mais leurs carrières (Noble, Gouverneur, Truand, Contrebandier…) sont pour
-// l'instant rangées sous « civils » ; « civils » et « feodal » n'ont pas
-// encore de liste dédiée.
+// Les carrières féodales (Livre Premier) portent leur équipement de groupe
+// directement dans career.system.baseEquipment (prioritaire sur cette table).
 BRIGANDYNE.factionBaseEquipment = {
+  civils: "<ul><li>Vêtements de roturier en bon état</li><li>Uniforme ou insigne</li><li>Arme de mêlée légère</li><li>Gourde d’eau ou d’amasec</li><li>Bourse contenant l’équivalent de 2D10 × *SOC* Trônes Gelt</li></ul>",
   administratum: "<ul><li>Bure d’adepte</li><li>Vêtements civils</li><li>Nécessaire d’écriture, 1D10 parchemins</li><li>Trois plumes et deux encriers, main de papier (20 pages)</li><li>*CNS* livres reliés</li><li>Bésicles</li><li>Gibecière avec couverture, bol en bois, et 1D10 rations supérieures</li><li>Gourde contenant du bon vin</li><li>Bourse contenant 3D10 × *CNS* Trônes Gelt</li></ul>",
   arbites: "<ul><li>Vêtements civils</li><li>Uniforme de l’Adeptus Arbites</li><li>Matraque</li><li>Pistolet laser</li><li>Gourde d’eau ou de vin</li><li>Munitions : Cellules P x2</li><li>1D10 × *COM* ou *TIR* Trônes Gelt</li></ul>",
   mechanicus: "<ul><li>Vêtements simples</li><li>Outils de mécanique</li><li>Nécessaire d’écriture, 1D10 parchemins</li><li>Trois plumes et deux encriers, main de papier (20 pages)</li><li>Gibecière avec couverture, bol en bois, et 1D10 rations supérieures</li><li>Gourde contenant du bon vin</li><li>Bourse contenant 3D10 × *CNS* Trônes Gelt</li></ul>",
@@ -414,7 +415,6 @@ BRIGANDYNE.factionBaseEquipment = {
   militarum: "<ul><li>Plaques d’identification</li><li>Couteau de combat</li><li>Pistolet ou Pistolet laser</li><li>Sac à dos qui contient 1D10 rations militaires</li><li>Gourde d’eau ou de Tord-Boyaux</li><li>Vêtements militaires</li><li>Uniforme de garde</li><li>Munitions : Balles P x24 ou Cellule P x2</li><li>1D10 × *COM* ou *TIR* Trônes Gelt</li></ul>",
   assassinorum: "<ul><li>Vêtements simples</li><li>Combinaison moulante</li><li>Armure pare-balles</li><li>Arme à distance (Munitions solides) (au choix)</li><li>Munitions : 2 Chargeurs complets (au choix)</li><li>Couteau</li><li>Sac en toile contenant un bol en bois, et 1D10 rations</li><li>Gourde d’eau ou de vin</li><li>Bourse avec 2D10 × *COM* ou *TIR* Trônes Gelt</li></ul>",
   psykana: "<ul><li>Vêtements pratiques de qualité</li><li>*CNS* ouvrages ésotériques reliés</li><li>Nécessaire d’écriture</li><li>Gibecière contenant une couverture, un bol en bois, et 1D10 rations de bonne qualité</li><li>Gourde contenant du bon vin</li><li>Psyconduit</li><li>Bourse avec 5D10 × *PSY* Trônes Gelt</li></ul>",
-  // Groupes du document pas encore reliés à une faction du pack (phase adaptation) :
   nobles: "<ul><li>Vêtements riches</li><li>Arme de mêlée d’excellente facture (Épée ou dague énergétique)</li><li>Bourse contenant l’équivalent de 1D100 × *SOC* Trônes Gelt</li></ul>",
   pegre: "<ul><li>Vêtements de vilain sales</li><li>Arme de mêlée (légère ou simple)</li><li>Armure primitive</li><li>Couteau</li><li>Sac en toile contenant un bol en bois, et 1D10 rations</li><li>Gourde d’eau ou de vin</li><li>Bourse avec l’équivalent de 1D10 × *COM* ou *TIR* Trônes Gelt</li></ul>"
 };

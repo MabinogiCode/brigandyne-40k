@@ -21,20 +21,35 @@
       "tir": 0,
       "vol": 0
     },
-    "lifestyle": "ordinaire",
+    "lifestyle": "pauvre",
     "specialties": [
-      "Arme de mêlée (au choix)",
+      "Animaux",
+      "Attelages",
+      "Course",
       "Équitation",
-      "Soins aux animaux",
-      "Étiquette"
+      "Milieu naturel",
+      "Persuasion",
+      "Premiers soins",
+      "Renseignements",
+      "Repérage",
+      "Soins des animaux"
     ],
     "talents": [
-      "Solidité",
-      "Dévoué serviteur"
+      "Compagnon animal",
+      "Chance insolente",
+      "Distraction",
+      "Doué (MOU)",
+      "Doué (SUR)",
+      "Festoyeur",
+      "Instinct de survie",
+      "Mains blanches",
+      "Second souffle",
+      "Vivacité"
     ],
-    "startingEquipment": "",
+    "startingEquipment": "<p>Nécessaire de pansage, couverture de cheval</p>",
     "description": "<p>Au service d'un chevalier, en attendant l'adoubement.</p>",
-    "source": "Brigandyne (adapté)"
+    "source": "Brigandyne (adapté)",
+    "baseEquipment": "<ul><li>Vêtements de roturier en bon état</li><li>Livrée ou tablier</li><li>Arme de mêlée légère</li><li>Gourde d’eau ou de vin</li><li>Bourse contenant 1D10 + *SOC* pièces d’argent</li></ul>"
   },
   "folder": "x0woyw1xt3xsroy0"
 }

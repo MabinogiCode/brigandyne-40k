@@ -1,0 +1,14 @@
+{
+  "_id": "ublrgvez811wkr2t",
+  "name": "Agriculture",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 20,
+    "source": "Livre Premier p.111-113",
+    "effect": "Cultiver la terre au rythme des saisons, connaître le folklore paysan",
+    "description": "<p>Cultiver la terre au rythme des saisons, connaître le folklore paysan</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
+}

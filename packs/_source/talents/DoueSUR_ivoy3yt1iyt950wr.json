@@ -1,0 +1,13 @@
+{
+  "_id": "ivoy3yt1iyt950wr",
+  "name": "Doué (SUR)",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "scene",
+    "source": "Livre Premier p.115-121",
+    "effect": "<p>Une fois par scène, vous pouvez inverser les chiffres obtenus sur un test de Survie. Ainsi, un 90 peut devenir un 09.</p>",
+    "description": "<p>Une fois par scène, vous pouvez inverser les chiffres obtenus sur un test de Survie. Ainsi, un 90 peut devenir un 09.</p>"
+  },
+  "folder": "z52203x03183xx3w"
+}

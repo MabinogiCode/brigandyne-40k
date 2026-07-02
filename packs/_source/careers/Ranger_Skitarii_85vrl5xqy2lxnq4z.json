@@ -32,23 +32,19 @@
       "Résistance aux privations",
       "Souffle",
       "Stratégie",
-      "Technomaîtrise",
-      "Vigilance"
+      "Technomaîtrise"
     ],
     "talents": [
       "Agile",
       "Arme fétiche",
       "Coups précis",
       "Coups puissants",
-      "Doué (END",
-      "MOU)",
+      "Doué (END)",
+      "Doué (MOU)",
       "Port d’armure",
       "Réflexes éclairs",
       "Riposte",
-      "Sain d’esprit",
-      "Solidité",
-      "Tir précis",
-      "Tireur d’élite"
+      "Sain d’esprit"
     ],
     "startingEquipment": "<p>Manteau de Skitarii, Carabine et 2 chargeurs complets, Augmentations : Organes bioniques, Jambe bionique x2</p>",
     "description": "<p>Les Skitarii forment le bloc armé de l’Adeptus Mechanicus. Ils sont chargés de poursuivre la Quête du Savoir en avant-garde, d’accompagner les expéditions du Mechanicus, de protéger les Mondes-Forge de l’Imperium. Pour les Skitarii, chaque blessure est une nouvelle occasion de renforcer leurs augmentations.</p>",

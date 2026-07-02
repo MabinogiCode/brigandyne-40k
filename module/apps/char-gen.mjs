@@ -317,8 +317,11 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       speciesDesc: lore?.desc, speciesLifespan: lore?.lifespan, speciesSize: lore?.size, speciesTraits, speciesLimits,
       careerDesc: careerDoc?.system.description, careerQuote: careerDoc?.system.quote,
       careerStartingEquipment: careerDoc?.system.startingEquipment ?? "",
-      // Équipement de base du groupe de carrières (RAW p.26/57)
-      careerBaseEquipment: careerDoc ? (BRIGANDYNE.factionBaseEquipment[careerDoc.system.faction] ?? "") : "",
+      // Équipement de base du groupe de carrières (RAW p.26/57) : celui porté
+      // par la carrière (mondes féodaux) sinon celui de sa faction.
+      careerBaseEquipment: careerDoc
+        ? (careerDoc.system.baseEquipment || BRIGANDYNE.factionBaseEquipment[careerDoc.system.faction] || "")
+        : "",
       specialtiesInfo, talentsInfo,
       locksApply: this.locksApply, blocked,
       methodChosen: !!this.gen.method, methodLocked: this.locksApply && !!this.gen.method,
@@ -626,7 +629,8 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       // Équipement de départ (RAW p.26/57) : équipement de BASE du groupe de
       // carrières + équipement ADDITIONNEL de la carrière. Recherche par nom
       // dans les compendiums.
-      const baseEquipment = BRIGANDYNE.factionBaseEquipment[careerDoc.system.faction] ?? "";
+      const baseEquipment = careerDoc.system.baseEquipment
+        || BRIGANDYNE.factionBaseEquipment[careerDoc.system.faction] || "";
       const equipmentSource = [baseEquipment, careerDoc.system.startingEquipment ?? ""].join(";");
       if (equipmentSource.replace(/<[^>]+>/g, "").trim()) {
         const equipPacks = EQUIP_PACKS.map(id => game.packs.get(id)).filter(Boolean);

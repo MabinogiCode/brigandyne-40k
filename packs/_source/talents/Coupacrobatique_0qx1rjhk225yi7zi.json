@@ -1,0 +1,13 @@
+{
+  "_id": "0qx1rjhk225yi7zi",
+  "name": "Coup acrobatique",
+  "type": "talent",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "usage": "scene",
+    "source": "Livre Premier p.115-121",
+    "effect": "<p>Une fois par scène, vous pouvez ajouter votre *MOU* à vos dégâts de mêlée.</p>",
+    "description": "<p>Une fois par scène, vous pouvez ajouter votre *MOU* à vos dégâts de mêlée.</p>"
+  },
+  "folder": "z52203x03183xx3w"
+}

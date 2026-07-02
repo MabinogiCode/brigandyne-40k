@@ -21,22 +21,35 @@
       "tir": 0,
       "vol": 0
     },
-    "lifestyle": "ordinaire",
+    "lifestyle": "miserable",
     "specialties": [
-      "Premiers soins",
-      "Médecine",
-      "Potions et remèdes",
+      "Animaux",
       "Botanique",
-      "Intuition"
+      "Domaine Psychique (au choix)",
+      "Légendes",
+      "Milieu naturel",
+      "Potions et remèdes",
+      "Poisons",
+      "Premiers soins",
+      "Résistance aux maladies",
+      "Se cacher"
     ],
     "talents": [
-      "Mains blanches",
+      "Calme",
+      "Doué (END)",
+      "Doué (SUR)",
+      "Esprit gardien ou Instinct de survie",
       "Guérison rapide",
-      "Calme"
+      "Mains blanches",
+      "Magie contrôlée",
+      "Magie invisible",
+      "Magie sanglante",
+      "Nyctalopie"
     ],
-    "startingEquipment": "",
+    "startingEquipment": "<p>Bâton de marche, besace contenant poudres, onguents et ingrédients étranges</p>",
     "description": "<p>Sait recoudre une plaie et préparer un remède.</p>",
-    "source": "Brigandyne (adapté)"
+    "source": "Brigandyne (adapté)",
+    "baseEquipment": "<ul><li>Hardes de gueux</li><li>Couteau ou gourdin</li><li>Sac en toile contenant un bol en bois et 1D10 rations de piètre qualité</li><li>Gourde d’eau ou de mauvais vin</li><li>*END* pièces de cuivre</li></ul>"
   },
   "folder": "x0woyw1xt3xsroy0"
 }

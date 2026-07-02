@@ -23,20 +23,33 @@
     },
     "lifestyle": "pauvre",
     "specialties": [
+      "Arme à distance (au choix)",
+      "Arme de mêlée (au choix)",
       "Crochetage",
       "Déplacement silencieux",
-      "Dissimulation d'objet",
+      "Dissimulation d’objets",
+      "Écoute",
       "Escalade",
-      "Fouille"
+      "Fouille",
+      "Repérage",
+      "Se cacher"
     ],
     "talents": [
+      "Calme",
+      "Chance insolente",
+      "Coup acrobatique ou Coup en traître",
+      "Doué (DIS)",
+      "Doué (TEC)",
+      "Doué (MOU)",
+      "Esquive",
       "Insaisissable",
-      "Coup adroit",
-      "Réflexes éclairs"
+      "Pattes de chat",
+      "Réflexes éclairs ou Vivacité"
     ],
-    "startingEquipment": "",
+    "startingEquipment": "<p>Jeu de crochets, paire de gants noirs, corde de 10 mètres et grappin</p>",
     "description": "<p>Doigts agiles et conscience souple, l'ombre des ruelles.</p>",
-    "source": "Brigandyne (adapté)"
+    "source": "Brigandyne (adapté)",
+    "baseEquipment": "<ul><li>Vêtements de vilain usés ou sales</li><li>Arme de mêlée légère (au choix)</li><li>Couteau</li><li>Sac en toile contenant un bol en bois et 1D10 rations</li><li>Gourde d’eau ou de vin</li><li>Bourse avec 1D10 + *TEC* ou *DIS* ou *SOC* pièces d’argent</li></ul>"
   },
   "folder": "x0woyw1xt3xsroy0"
 }

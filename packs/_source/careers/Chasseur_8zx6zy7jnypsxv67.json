@@ -21,22 +21,35 @@
       "tir": 3,
       "vol": 0
     },
-    "lifestyle": "ordinaire",
+    "lifestyle": "pauvre",
     "specialties": [
+      "Animaux",
+      "Botanique",
       "Arme à distance (au choix)",
-      "Pistage",
+      "Arme de mêlée (au choix)",
       "Déplacement silencieux",
       "Milieu naturel",
-      "Pièges"
+      "Orientation",
+      "Pièges",
+      "Pistage",
+      "Repérage"
     ],
     "talents": [
-      "Tireur d'élite",
-      "Tir précis",
-      "Sixième sens"
+      "Calme",
+      "Compagnon animal",
+      "Coup du prédateur",
+      "Doué (DIS)",
+      "Doué (SUR)",
+      "Esquive ou Festoyeur",
+      "Instinct de survie",
+      "Second souffle",
+      "Tir du chasseur",
+      "Tir précis"
     ],
-    "startingEquipment": "",
+    "startingEquipment": "<p>Un arc long et 10 flèches, deux collets, un nécessaire antipoison</p>",
     "description": "<p>Traqueur silencieux des bois, l'arc toujours tendu.</p>",
-    "source": "Brigandyne (adapté)"
+    "source": "Brigandyne (adapté)",
+    "baseEquipment": "<ul><li>Vêtements de vilain</li><li>Arme de mêlée légère</li><li>Couteau ou animal de compagnie</li><li>Bâton de marche</li><li>Gourde d’eau ou de vin</li><li>Gibecière ou gros sac en toile (fine couverture, bol en bois, 1D10 rations de voyage)</li><li>Bourse avec 1D10 + *TEC* ou *END* pièces d’argent</li></ul>"
   },
   "folder": "x0woyw1xt3xsroy0"
 }

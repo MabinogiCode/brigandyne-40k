@@ -1,0 +1,14 @@
+{
+  "_id": "t5yj8e8hejj5lm25",
+  "name": "Soins des animaux",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 10,
+    "source": "Livre Premier p.111-113",
+    "effect": "Soigner les maladies et blessures des animaux",
+    "description": "<p>Soigner les maladies et blessures des animaux</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
+}

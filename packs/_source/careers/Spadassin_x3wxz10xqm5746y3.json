@@ -32,8 +32,7 @@
       "Déplacement silencieux",
       "Escalade",
       "Poisons",
-      "Repérage",
-      "Se cacher"
+      "Repérage"
     ],
     "talents": [
       "Calme",
@@ -45,11 +44,7 @@
       "Esquive",
       "Réflexes éclairs",
       "Insaisissable",
-      "Mensonge éhonté",
-      "Nyctalopie",
-      "Pattes de chat",
-      "Sauvegarde",
-      "Vivacité"
+      "Mensonge éhonté"
     ],
     "startingEquipment": "<p>Trois petites fioles de poison, Masque, Bottes de cuir souple</p>",
     "description": "<p>Les Spadassin sont des tueurs indépendants à la recherche d’une place dans l’un des Temples de l’Officio Assassinorum. Ils remplissent des contrats pour faire leurs preuves.</p>",

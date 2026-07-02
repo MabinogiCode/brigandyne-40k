@@ -23,18 +23,33 @@
     },
     "lifestyle": "pauvre",
     "specialties": [
+      "Agriculture",
+      "Animaux",
+      "Course",
       "Milieu naturel",
-      "Soins aux animaux",
-      "Survie",
-      "Athlétisme"
+      "Orientation",
+      "Pugilat",
+      "Renseignements",
+      "Repérage",
+      "Résistance aux privations",
+      "Résistance aux maladies"
     ],
     "talents": [
-      "Résilience",
+      "Bagarre",
+      "Esquive",
+      "Calme",
+      "Compagnon animal",
+      "Doué (END)",
+      "Doué (TEC) ou Doué (SUR)",
+      "Festoyeur",
+      "Inoffensif",
+      "Instinct de survie",
       "Solidité"
     ],
-    "startingEquipment": "",
+    "startingEquipment": "<p>Fronde ou fourche</p>",
     "description": "<p>Le dos courbé sur la terre, du lever au coucher du soleil.</p>",
-    "source": "Brigandyne (adapté)"
+    "source": "Brigandyne (adapté)",
+    "baseEquipment": "<ul><li>Vêtements de vilain</li><li>Arme de mêlée légère</li><li>Couteau ou animal de compagnie</li><li>Bâton de marche</li><li>Gourde d’eau ou de vin</li><li>Gibecière ou gros sac en toile (fine couverture, bol en bois, 1D10 rations de voyage)</li><li>Bourse avec 1D10 + *TEC* ou *END* pièces d’argent</li></ul>"
   },
   "folder": "x0woyw1xt3xsroy0"
 }

@@ -4,7 +4,7 @@
   "type": "career",
   "img": "icons/svg/book.svg",
   "system": {
-    "faction": "civils",
+    "faction": "pegre",
     "quote": "“Faire le sale boulot, c’est le meilleur moyen de survivre.”",
     "advances": {
       "com": 3,
@@ -44,8 +44,7 @@
       "Nyctalopie",
       "Riposte",
       "Second souffle",
-      "Surnombre",
-      "Vivacité"
+      "Surnombre"
     ],
     "startingEquipment": "<p>Un objet extorqué il y a quelques jours (de petite valeur, à décider avec le MJ), trois dés en métal.</p>",
     "description": "<p>Brigands, dépouilleurs, brutes… Ils sont nombreux ceux qui se tournent vers la criminalité pour espérer survivre. Qu’ils soient des hommes de main pour un baron du crime ou de simples pillards, tous font ce qu’ils peuvent pour prospérer.</p>",

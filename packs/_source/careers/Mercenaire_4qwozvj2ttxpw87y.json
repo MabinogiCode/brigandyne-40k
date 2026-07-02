@@ -21,23 +21,35 @@
       "tir": 0,
       "vol": 0
     },
-    "lifestyle": "ordinaire",
+    "lifestyle": "pauvre",
     "specialties": [
+      "Arme à distance (au choix)",
+      "Arme lourde (au choix)",
       "Arme de mêlée (au choix)",
+      "Commandement",
+      "Équitation",
       "Intimidation",
-      "Marchandage",
-      "Survie",
-      "Jeu"
+      "Milieu naturel",
+      "Premiers soins",
+      "Pugilat",
+      "Stratégie"
     ],
     "talents": [
+      "Bagarre",
+      "Coup de maître",
+      "Coups puissants",
       "Coups précis",
-      "Brute",
-      "Sang-froid",
-      "Esquive"
+      "Doué (FOR)",
+      "Esquive ou Maîtrise du bouclier",
+      "Maître d’armes",
+      "Riposte",
+      "Solidité",
+      "Sauvegarde ou Tir précis"
     ],
-    "startingEquipment": "",
+    "startingEquipment": "<p>Une bouteille d’alcool</p>",
     "description": "<p>Une lame à louer, fidèle à la bourse la mieux garnie.</p>",
-    "source": "Brigandyne (adapté)"
+    "source": "Brigandyne (adapté)",
+    "baseEquipment": "<ul><li>Vêtements de voyage</li><li>Arme de mêlée (au choix)</li><li>Couteau</li><li>Sac en toile contenant un bol en bois et 1D10 rations</li><li>Gourde d’eau ou de vin</li><li>Armure légère ou moyenne</li><li>Arme de tir avec 10 munitions ou un bouclier en bois</li></ul>"
   },
   "folder": "x0woyw1xt3xsroy0"
 }

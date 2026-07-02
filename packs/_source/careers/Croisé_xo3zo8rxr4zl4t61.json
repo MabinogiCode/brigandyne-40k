@@ -32,8 +32,7 @@
       "Repérage",
       "Premiers soins",
       "Religion",
-      "Résistance au Warp",
-      "Stratégie"
+      "Résistance au Warp"
     ],
     "talents": [
       "Calme",
@@ -45,9 +44,7 @@
       "Maîtrise du bouclier",
       "Maître d’armes",
       "Port d’armure",
-      "Résilience",
-      "Solidité",
-      "Souffle de vie"
+      "Résilience"
     ],
     "startingEquipment": "<p>Livre saint, Deux armes de mêlées standards (au choix), un bouclier, Armure d’adamantium, Casque intégral</p>",
     "description": "<p>Les Croisés impériaux sont des guerriers qui appartiennent à une Coterie fermée, regroupant d’une dizaine à plusieurs milliers de membres. Souvent proche d’une forteresse inquisitoriale dont ils accompagnent les agents sur le terrain afin de les protéger.</p>",

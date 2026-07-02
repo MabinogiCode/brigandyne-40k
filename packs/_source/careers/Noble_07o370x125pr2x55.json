@@ -21,23 +21,35 @@
       "tir": 0,
       "vol": 2
     },
-    "lifestyle": "riche",
+    "lifestyle": "aise",
     "specialties": [
-      "Étiquette",
-      "Commandement",
-      "Persuasion",
-      "Noblesse et politique",
-      "Équitation"
+      "Arme de mêlée (au choix)",
+      "Arme à distance (au choix)",
+      "Charme",
+      "Courage",
+      "Discours",
+      "Équitation",
+      "Intimidation",
+      "Jeux",
+      "Lettres",
+      "Noblesse et politique"
     ],
     "talents": [
-      "Relations",
-      "Inspiration",
+      "Coups précis ou Coups puissants",
+      "Dévoué serviteur",
+      "Doué (SOC)",
+      "Esquive",
+      "Festoyeur",
       "Panache",
-      "Confiance en soi"
+      "Provocation",
+      "Réflexes éclairs",
+      "Riposte",
+      "Solidité ou Vivacité"
     ],
-    "startingEquipment": "",
+    "startingEquipment": "<p>Un costume de voyage, une dague de bonne qualité, un pourpoint de cuir (armure légère), une fiole de parfum, trois dés en os</p>",
     "description": "<p>Né dans la soie, habitué à commander.</p>",
-    "source": "Brigandyne (adapté)"
+    "source": "Brigandyne (adapté)",
+    "baseEquipment": "<ul><li>Élégant costume de cour</li><li>Cheval avec sa selle et son harnais</li><li>Arme de mêlée (dague ou épée)</li><li>Bourse contenant 2D10 + *SOC* pièces d’or</li></ul>"
   },
   "folder": "x0woyw1xt3xsroy0"
 }

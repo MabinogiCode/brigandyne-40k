@@ -21,22 +21,35 @@
       "tir": 1,
       "vol": 0
     },
-    "lifestyle": "ordinaire",
+    "lifestyle": "pauvre",
     "specialties": [
-      "Pistage",
-      "Orientation",
+      "Animaux",
+      "Arme à distance (au choix)",
+      "Arme de mêlée (au choix)",
       "Déplacement silencieux",
+      "Équitation",
       "Milieu naturel",
-      "Vigilance"
+      "Orientation",
+      "Pièges",
+      "Pistage",
+      "Se cacher"
     ],
     "talents": [
+      "Calme",
+      "Coup du prédateur",
+      "Doué (MOU)",
+      "Doué (PER)",
+      "Doué (SUR)",
+      "Esquive",
+      "Instinct de survie",
       "Sixième sens",
-      "Insaisissable",
-      "Instinct de survie"
+      "Solidité",
+      "Tir du chasseur"
     ],
-    "startingEquipment": "",
+    "startingEquipment": "<p>Une arme à distance (arc ou arbalète) et ses munitions</p>",
     "description": "<p>Les yeux et les oreilles de la troupe en terrain hostile.</p>",
-    "source": "Brigandyne (adapté)"
+    "source": "Brigandyne (adapté)",
+    "baseEquipment": "<ul><li>Casaque militaire</li><li>Vêtements de voyage</li><li>Arme de mêlée (au choix)</li><li>Armure légère ou moyenne</li><li>Arme de tir et 10 munitions ou un bouclier</li><li>Couteau</li><li>Sac en toile contenant un bol en bois et 1D10 rations</li><li>Gourde d’eau ou de vin</li><li>Bourse contenant 1D10 + *COM* ou *TIR* pièces d’argent</li></ul>"
   },
   "folder": "x0woyw1xt3xsroy0"
 }

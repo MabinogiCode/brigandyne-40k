@@ -23,18 +23,33 @@
     },
     "lifestyle": "ordinaire",
     "specialties": [
+      "Arme lourde (au choix)",
+      "Arme de mêlée (au choix)",
+      "Commerce",
+      "Droit et usages",
+      "Persuasion",
+      "Pugilat",
+      "Repérage",
+      "Résistance à la chaleur/au froid",
       "Travail du métal",
-      "Estimation",
-      "Commerce"
+      "Travaux de force"
     ],
     "talents": [
-      "Esprit de la Machine",
+      "Calme",
       "Coup adroit",
+      "Coups précis",
+      "Doué (END)",
+      "Doué (FOR)",
+      "Doué (TEC)",
+      "Maîtrise du bouclier",
+      "Port d’armure",
+      "Second souffle",
       "Solidité"
     ],
-    "startingEquipment": "",
+    "startingEquipment": "<p>Deux armes de mêlée (au choix), armure légère ou moyenne, marteau</p>",
     "description": "<p>Marteau et enclume, l'acier prend forme sous ses coups.</p>",
-    "source": "Brigandyne (adapté)"
+    "source": "Brigandyne (adapté)",
+    "baseEquipment": "<ul><li>Vêtements de roturier</li><li>Tablier en grosse toile</li><li>Arme de mêlée légère</li><li>Gourde d’eau ou de vin</li><li>Besace ou gros sac en toile (fine couverture, bol en bois, 1D10 rations de voyage)</li><li>Bourse avec 1D10 + *TEC* ou *SOC* pièces d’argent</li></ul>"
   },
   "folder": "x0woyw1xt3xsroy0"
 }

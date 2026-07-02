@@ -23,17 +23,16 @@
     },
     "lifestyle": "pauvre",
     "specialties": [
-      "Arme de tir (Au choix)",
+      "Arme de tir (au choix)",
       "Arme de mêlée (au choix)",
       "Cartographie",
       "Déplacement silencieux",
       "Milieu naturel",
       "Orientation",
-      "Piège",
+      "Pièges",
       "Pistage",
       "Premiers soins",
-      "Se cacher",
-      "Vigilante"
+      "Se cacher"
     ],
     "talents": [
       "Calme",
@@ -45,8 +44,7 @@
       "Nyctalopie",
       "Prudent",
       "Sixième sens",
-      "Tireur d’élite",
-      "Vivacité"
+      "Tireur d’élite"
     ],
     "startingEquipment": "<p>Armure Carapace légère, Cape de camouflage, Micro-Vox, Arme à distance (Munitions solides ou Laser) (au choix), Munitions : Chargeurs x2 (au choix)</p>",
     "description": "<p>Les Infiltrators sont les éclaireurs de l’Astra Militarum. Ils sont envoyés accomplir toutes sortes de missions au-delà des lignes ennemies. Qu’elles consistent à saboter des lignes d’approvisionnement, des places fortes, ou bien à assassiner des cibles prioritaires.</p>",

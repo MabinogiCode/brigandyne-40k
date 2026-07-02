@@ -21,23 +21,35 @@
       "tir": 1,
       "vol": 1
     },
-    "lifestyle": "ordinaire",
+    "lifestyle": "pauvre",
     "specialties": [
+      "Arme lourde (au choix)",
       "Arme de mêlée (au choix)",
-      "Arme à distance (au choix)",
-      "Courage",
-      "Discipline",
-      "Vigilance"
+      "Commandement",
+      "Course",
+      "Escalade",
+      "Intimidation",
+      "Jeux",
+      "Milieu naturel",
+      "Résistance à l’alcool",
+      "Stratégie"
     ],
     "talents": [
+      "Bagarre",
+      "Coups précis",
       "Coups puissants",
-      "Solidité",
-      "Port d'armure",
-      "Riposte"
+      "Cri de guerre",
+      "Doué (END) ou Doué (FOR)",
+      "Doué (VOL)",
+      "Maître d’armes",
+      "Maîtrise du bouclier",
+      "Second souffle",
+      "Sauvegarde ou Solidité"
     ],
-    "startingEquipment": "",
+    "startingEquipment": "<p>Une arme d’hast (au choix), un casque</p>",
     "description": "<p>Un combattant entraîné au service d'un seigneur ou d'une armée.</p>",
-    "source": "Brigandyne (adapté)"
+    "source": "Brigandyne (adapté)",
+    "baseEquipment": "<ul><li>Casaque militaire</li><li>Vêtements de voyage</li><li>Arme de mêlée (au choix)</li><li>Armure légère ou moyenne</li><li>Arme de tir et 10 munitions ou un bouclier</li><li>Couteau</li><li>Sac en toile contenant un bol en bois et 1D10 rations</li><li>Gourde d’eau ou de vin</li><li>Bourse contenant 1D10 + *COM* ou *TIR* pièces d’argent</li></ul>"
   },
   "folder": "x0woyw1xt3xsroy0"
 }

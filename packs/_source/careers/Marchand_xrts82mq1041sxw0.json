@@ -23,20 +23,33 @@
     },
     "lifestyle": "aise",
     "specialties": [
-      "Marchandage",
-      "Estimation",
+      "Charme",
       "Commerce",
+      "Discours",
+      "Droit et usages",
+      "Estimation",
+      "Intuition",
+      "Lettres",
       "Persuasion",
-      "Renseignements"
+      "Renseignements",
+      "Travail d’un matériau (au choix)"
     ],
     "talents": [
-      "Relations",
-      "Panache",
-      "Confiance en soi"
+      "Compagnon animal ou Dévoué serviteur",
+      "Distraction",
+      "Doué (SOC)",
+      "Doué (CNS) ou Doué (TEC)",
+      "Fascination",
+      "Inoffensif",
+      "Mensonge éhonté ou Sain d’esprit",
+      "Polyglotte",
+      "Prudent",
+      "Relations"
     ],
-    "startingEquipment": "",
+    "startingEquipment": "<p>Deux costumes de bourgeois, livre de comptes, plume et encrier, 1D10 parchemins, 2D10 articles à vendre de peu de valeur</p>",
     "description": "<p>Caravanes et comptoirs : l'argent ne dort jamais.</p>",
-    "source": "Brigandyne (adapté)"
+    "source": "Brigandyne (adapté)",
+    "baseEquipment": "<ul><li>Vêtements de roturier</li><li>Tablier en grosse toile</li><li>Arme de mêlée légère</li><li>Gourde d’eau ou de vin</li><li>Besace ou gros sac en toile (fine couverture, bol en bois, 1D10 rations de voyage)</li><li>Bourse avec 1D10 + *TEC* ou *SOC* pièces d’argent</li></ul>"
   },
   "folder": "x0woyw1xt3xsroy0"
 }

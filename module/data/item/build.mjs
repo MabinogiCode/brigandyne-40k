@@ -55,7 +55,10 @@ export class CareerModel extends BaseItemModel {
       lifestyle: str("ordinaire"),
       specialties: new fields.ArrayField(str("")),
       talents: new fields.ArrayField(str("")),
-      startingEquipment: html("")
+      startingEquipment: html(""),
+      // Équipement de base du groupe (RAW p.26/57) : si vide, on retombe sur
+      // BRIGANDYNE.factionBaseEquipment[faction].
+      baseEquipment: html("")
     };
   }
 }

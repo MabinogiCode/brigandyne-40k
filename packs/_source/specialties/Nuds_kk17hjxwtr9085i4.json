@@ -1,0 +1,14 @@
+{
+  "_id": "kk17hjxwtr9085i4",
+  "name": "Nœuds",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "standard",
+    "bonus": 20,
+    "source": "Livre Premier p.111-113",
+    "effect": "Connaissance de toutes sortes de nœuds, et comment les défaire",
+    "description": "<p>Connaissance de toutes sortes de nœuds, et comment les défaire</p>"
+  },
+  "folder": "xx3oqmxm4yo07x47"
+}
