@@ -5,12 +5,16 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "pack": "node tools/compile-packs.mjs",
-    "unpack": "node tools/extract-packs.mjs",
-    "import": "node tools/import-content.mjs",
-    "test": "node --test \"test/*.test.mjs\""
+    "build": "esbuild src/brigandyne40k.ts --bundle --format=esm --outfile=dist/brigandyne40k.mjs --sourcemap --target=es2023",
+    "typecheck": "tsc --noEmit",
+    "pack": "node tools/compile-packs.ts",
+    "import": "node tools/import-content.ts",
+    "test": "node --test \"test/*.test.ts\""
   },
   "devDependencies": {
-    "@foundryvtt/foundryvtt-cli": "^1.0.3"
+    "@foundryvtt/foundryvtt-cli": "^1.0.3",
+    "@types/node": "^26.1.0",
+    "esbuild": "^0.28.1",
+    "typescript": "^6.0.3"
   }
 }

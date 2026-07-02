@@ -68,11 +68,17 @@ New-Item -ItemType Junction -Path "C:\Perso\Foundry\Data\systems\brigandyne-40k"
 ## 🛠️ Développement
 
 ```bash
-npm install            # installe l'outil de compilation des packs (classic-level natif)
+npm install            # dépendances (esbuild, typescript, foundryvtt-cli…)
+npm run build          # bundle src/**/*.ts → dist/brigandyne40k.mjs (esbuild)
+npm run typecheck      # vérification TypeScript (tsc --noEmit)
 npm run import         # (ré)génère les sources de compendiums depuis tes .docx
 npm run pack           # compile packs/_source/*.json → packs LevelDB
 npm test               # suite de tests RAW (conformité au Livre Premier, page par page)
 ```
+
+Le code est en **TypeScript** (`src/`), bundlé par esbuild vers `dist/` (non
+versionné — après un `git pull` : `npm run build`). Les tests tournent
+directement sur les `.ts` grâce au type-stripping natif de Node ≥ 22.18.
 
 La conformité aux règles est verrouillée par la suite de tests : chaque règle du
 Livre Premier testable cite sa page (`test/*.test.mjs`), et les compendiums sont
@@ -80,8 +86,9 @@ validés champ par champ (archétypes p. 40-47, carrières 10 spécialités + 10
 talents p. 110/115, équipements de base p. 26/57…). La CI GitHub
 (`.github/workflows/ci.yml`) rejoue ces tests à chaque push.
 
-- Code : ESM natif (pas de build lourd), `DataModels` + `ApplicationV2`.
-- `module/` : config, données, documents, dés, feuilles.
+- Code : TypeScript, `DataModels` + `ApplicationV2` (globaux Foundry déclarés
+  dans `types/foundry.d.ts`).
+- `src/` : config, données, documents, dés, feuilles.
 - `packs/_source/` : sources JSON des compendiums (**versionnées** — source de vérité).
 - Les **packs LevelDB compilés ne sont pas versionnés** (ils muteraient au runtime et
   créeraient des conflits Git). Après un `git pull` : **`npm run pack`** pour les régénérer.

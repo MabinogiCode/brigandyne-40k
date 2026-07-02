@@ -34,8 +34,14 @@ jobs:
             exit 1
           fi
 
+      - name: Typecheck
+        run: npm run typecheck
+
       - name: Tests
         run: npm test
+
+      - name: Compiler le bundle TypeScript
+        run: npm run build
 
       - name: Compiler les packs LevelDB
         run: npm run pack
@@ -53,7 +59,7 @@ jobs:
         run: |
           zip -r brigandyne-40k.zip \
             system.json LICENSE README.md \
-            module/ styles/ templates/ lang/ assets/ packs/ \
+            dist/ styles/ templates/ lang/ assets/ packs/ \
             -x "packs/_source/*"
 
       - name: Publier la release

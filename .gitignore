@@ -17,3 +17,6 @@ Thumbs.db
 # utilisées par l'import), l'écran MJ et les sommaires sont conservés.
 tools/source/pdf/livre1.txt
 tools/source/pdf/livre2.txt
+
+# Bundle TypeScript compilé (esbuild) : régénérer avec `npm run build`
+/dist/

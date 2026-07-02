@@ -16,6 +16,7 @@ depuis la machine de dev.
 ```bash
 cd ~/Git/brigandyne-40k
 git pull --prune
+npm run build         # bundle TypeScript → dist/brigandyne40k.mjs
 npm run pack          # recompile les packs LevelDB depuis packs/_source
 ```
 
@@ -116,10 +117,10 @@ Relance le service Foundry, ouvre le monde → le système et ses compendiums so
 
 | Situation | Commandes |
 |---|---|
-| Mise à jour normale | `git pull --prune && npm run pack` |
+| Mise à jour normale | `git pull --prune && npm run build && npm run pack` |
 | Conflit packs/ | `git reset --hard origin/main && git clean -fd packs/ && npm run pack` |
 | Contenu source modifié | `git pull && npm run import && npm run pack` |
-| Install neuve | `git clone … && npm install && npm run pack` + lien symbolique |
+| Install neuve | `git clone … && npm install && npm run build && npm run pack` + lien symbolique |
 
 > ⚠️ Toujours **arrêter le serveur Foundry avant `npm run pack`** (LevelDB verrouille
 > les fichiers du pack ouvert).
