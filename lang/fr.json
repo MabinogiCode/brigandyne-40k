@@ -367,10 +367,14 @@
       "defaultName": "Nouveau personnage",
       "done": "Personnage « {name} » mis à jour.",
       "created": "Personnage « {name} » créé et rattaché à vous.",
+      "atouts": {
+        "incomplete": "Atouts de départ incomplets : {done}/{total} tirés. Les atouts manquants pourront être ajoutés par le MJ."
+      },
       "step": {
         "identity": "Identité",
         "characteristics": "Caractéristiques",
         "traits": "Archétype & Traits",
+        "atouts": "Atouts",
         "details": "Détails",
         "summary": "Récapitulatif"
       },

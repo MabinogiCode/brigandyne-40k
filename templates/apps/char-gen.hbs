@@ -58,6 +58,7 @@
             {{#if careerDesc}}<div class="lore">{{{careerDesc}}}</div>{{/if}}
             {{#if specialtiesInfo.length}}<p class="chip-label">Spécialités disponibles</p><div class="chip-row">{{#each specialtiesInfo}}<span class="chip" data-tooltip="{{tip}}">{{name}}</span>{{/each}}</div>{{/if}}
             {{#if talentsInfo.length}}<p class="chip-label">Talents disponibles</p><div class="chip-row">{{#each talentsInfo}}<span class="chip talent" data-tooltip="{{tip}}">{{name}}</span>{{/each}}</div>{{/if}}
+            {{#if careerBaseEquipment}}<p class="chip-label"><i class="fa-solid fa-box"></i> Équipement de base du groupe</p><div class="lore starting-equip">{{{careerBaseEquipment}}}</div>{{/if}}
           </div>
         {{/if}}
 
@@ -213,16 +214,67 @@
           {{/if}}
         </div>
 
-        {{!-- Atouts (info) --}}
+        {{!-- Atouts (info — le tirage se fait à l'étape suivante) --}}
         {{#if careerName}}
         <div class="traits-section">
           <h3><i class="fa-solid fa-star"></i> Atouts de carrière</h3>
-          <p>Votre personnage commence avec <strong>*CNS*−1</strong> atouts tirés au hasard parmi les spécialités et talents de la carrière.</p>
-          <p>CNS = {{gen.charTotal}} → *CNS* = {{cnsBonus}} → <strong>{{numAtouts}} atout{{#if (gt numAtouts 1)}}s{{/if}}</strong> seront tirés au hasard sur un pool de <strong>{{poolSize}}</strong>.</p>
-          {{#if specialtiesInfo.length}}<p class="chip-label">Spécialités disponibles</p><div class="chip-row">{{#each specialtiesInfo}}<span class="chip" data-tooltip="{{tip}}">{{name}}</span>{{/each}}</div>{{/if}}
-          {{#if talentsInfo.length}}<p class="chip-label">Talents disponibles</p><div class="chip-row">{{#each talentsInfo}}<span class="chip talent" data-tooltip="{{tip}}">{{name}}</span>{{/each}}</div>{{/if}}
+          <p>Votre personnage commence avec <strong>*CNS*−1</strong> atouts (spécialités et/ou Talents), à tirer à l'étape suivante.</p>
+          <p>CNS = <strong>{{cnsValue}}</strong> → *CNS* = {{cnsBonus}} → <strong>{{numAtouts}} atout{{#if (gt numAtouts 1)}}s{{/if}}</strong> à tirer parmi les {{poolSize}} de la carrière.</p>
         </div>
         {{/if}}
+
+      {{else if (eq stepId 'atouts')}}
+        <div class="traits-section">
+          <h3><i class="fa-solid fa-star"></i> Atouts de départ</h3>
+          {{#if careerName}}
+            <p>Votre personnage commence avec <strong>*CNS*−1</strong> atouts : CNS <strong>{{cnsValue}}</strong> → *CNS* = {{cnsBonus}} → <strong>{{numAtouts}} atout{{#if (gt numAtouts 1)}}s{{/if}}</strong>.</p>
+            <p class="hint">Répartissez-les comme vous le souhaitez entre spécialités et Talents. Chaque tirage (2D10) propose <strong>deux options</strong> : retenez celle qui correspond le plus à votre personnage.</p>
+            {{#if occulteExcluded}}<p class="warn-soft"><i class="fa-solid fa-circle-info"></i> PSY à 0 : les spécialités occultes sont exclues du tirage.</p>{{/if}}
+
+            {{#if atoutsChosen.length}}
+              <p class="chip-label"><i class="fa-solid fa-circle-check"></i> Atouts acquis ({{atoutsChosen.length}}/{{numAtouts}})</p>
+              <div class="chip-row">{{#each atoutsChosen}}<span class="chip {{#if (eq kind 'talent')}}talent{{/if}}" data-tooltip="{{tip}}">{{name}}</span>{{/each}}</div>
+            {{/if}}
+
+            {{#if pendingDraw}}
+              <p class="chip-label"><i class="fa-solid fa-dice"></i> Tirage en cours — {{pendingDraw.kindLabel}} : choisissez une option</p>
+              <div class="gen-choose-cards">
+                {{#each pendingDraw.options}}
+                  <button type="button" class="choose-card" data-action="atoutPick" data-name="{{name}}">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="cc-title">{{name}}</span>
+                    {{#if tip}}<span class="cc-desc">{{tip}}</span>{{/if}}
+                  </button>
+                {{/each}}
+              </div>
+            {{else if atoutsRemaining}}
+              <p class="chip-label">Encore <strong>{{atoutsRemaining}}</strong> atout{{#if (gt atoutsRemaining 1)}}s{{/if}} à tirer — choisissez une catégorie :</p>
+              <div class="gen-choose-cards">
+                <button type="button" class="choose-card" data-action="atoutDraw" data-kind="specialty" {{#unless specPoolCount}}disabled{{/unless}}>
+                  <i class="fa-solid fa-bullseye"></i>
+                  <span class="cc-title">Tirer une spécialité</span>
+                  <span class="cc-desc">{{specPoolCount}} disponible{{#if (gt specPoolCount 1)}}s{{/if}}</span>
+                </button>
+                <button type="button" class="choose-card" data-action="atoutDraw" data-kind="talent" {{#unless talPoolCount}}disabled{{/unless}}>
+                  <i class="fa-solid fa-wand-sparkles"></i>
+                  <span class="cc-title">Tirer un Talent</span>
+                  <span class="cc-desc">{{talPoolCount}} disponible{{#if (gt talPoolCount 1)}}s{{/if}}</span>
+                </button>
+              </div>
+            {{else}}
+              <p class="hint"><i class="fa-solid fa-circle-check"></i> Tous les atouts de départ sont tirés.</p>
+            {{/if}}
+
+            {{#unless locksApply}}{{#if atoutsChosen.length}}
+              <button type="button" class="link-request" data-action="atoutsReset"><i class="fa-solid fa-rotate-left"></i> Recommencer les tirages</button>
+            {{/if}}{{/unless}}
+
+            {{#if specialtiesInfo.length}}<p class="chip-label">Spécialités de la carrière</p><div class="chip-row">{{#each specialtiesInfo}}<span class="chip faded" data-tooltip="{{tip}}">{{name}}</span>{{/each}}</div>{{/if}}
+            {{#if talentsInfo.length}}<p class="chip-label">Talents de la carrière</p><div class="chip-row">{{#each talentsInfo}}<span class="chip talent faded" data-tooltip="{{tip}}">{{name}}</span>{{/each}}</div>{{/if}}
+          {{else}}
+            <p class="warn-soft"><i class="fa-solid fa-circle-info"></i> Choisissez d'abord une carrière (étape Identité) pour tirer vos atouts.</p>
+          {{/if}}
+        </div>
 
       {{else if (eq stepId 'details')}}
         <div class="details-grid">
@@ -248,12 +300,18 @@
         </ul>
         <div class="recap-chars">{{#each chars}}<span class="rc" data-tooltip="{{tip}}">{{localize abbr}} <b>{{value}}</b></span>{{/each}}</div>
         {{#if careerName}}
-          <p class="chip-label"><i class="fa-solid fa-star"></i> Atouts : <strong>{{numAtouts}}</strong> tiré{{#if (gt numAtouts 1)}}s{{/if}} au hasard (CNS {{gen.charTotal}} → *CNS*={{cnsBonus}} → {{cnsBonus}}−1={{numAtouts}}) sur pool de {{poolSize}}</p>
-          {{#if specialtiesInfo.length}}<div class="chip-row">{{#each specialtiesInfo}}<span class="chip faded" data-tooltip="{{tip}}">{{name}}</span>{{/each}}</div>{{/if}}
-          {{#if talentsInfo.length}}<div class="chip-row">{{#each talentsInfo}}<span class="chip talent faded" data-tooltip="{{tip}}">{{name}}</span>{{/each}}</div>{{/if}}
+          <p class="chip-label"><i class="fa-solid fa-star"></i> Atouts de départ : <strong>{{atoutsChosen.length}}</strong>/{{numAtouts}} (CNS {{cnsValue}} → *CNS*={{cnsBonus}} → {{cnsBonus}}−1={{numAtouts}})</p>
+          {{#if atoutsChosen.length}}
+            <div class="chip-row">{{#each atoutsChosen}}<span class="chip {{#if (eq kind 'talent')}}talent{{/if}}" data-tooltip="{{tip}}">{{name}}</span>{{/each}}</div>
+          {{/if}}
+          {{#if atoutsRemaining}}<p class="warn-soft"><i class="fa-solid fa-triangle-exclamation"></i> Il reste {{atoutsRemaining}} atout{{#if (gt atoutsRemaining 1)}}s{{/if}} à tirer (étape Atouts).</p>{{/if}}
+        {{/if}}
+        {{#if careerBaseEquipment}}
+          <p class="chip-label"><i class="fa-solid fa-box"></i> Équipement de base du groupe</p>
+          <div class="lore starting-equip">{{{careerBaseEquipment}}}</div>
         {{/if}}
         {{#if careerStartingEquipment}}
-          <p class="chip-label"><i class="fa-solid fa-box-open"></i> Équipement de départ</p>
+          <p class="chip-label"><i class="fa-solid fa-box-open"></i> Équipement additionnel de la carrière</p>
           <div class="lore starting-equip">{{{careerStartingEquipment}}}</div>
         {{/if}}
         {{#unless editMode}}<p class="attach-note"><i class="fa-solid fa-link"></i> Le personnage sera créé et rattaché à <strong>toi</strong> ({{draft.name}} deviendra ton personnage).</p>{{/unless}}
