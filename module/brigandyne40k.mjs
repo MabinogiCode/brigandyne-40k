@@ -24,6 +24,13 @@ Hooks.once("init", async function () {
   CONFIG.BRIGANDYNE = BRIGANDYNE;
   game.brigandyne = { BrigTest, rollTest, degreeOf, config: BRIGANDYNE, CharGen: BrigCharGen, Welcome: BrigWelcome };
 
+  // Police d'ambiance — anciennement clé « fonts » du manifest, retirée car
+  // inconnue du schéma system.json (enregistrement par code désormais).
+  CONFIG.fontDefinitions["Cinzel"] = {
+    editor: true,
+    fonts: [{ urls: [`systems/${SYSTEM_ID}/assets/fonts/Cinzel.ttf`], weight: 700, style: "normal" }]
+  };
+
   // Documents
   CONFIG.Actor.documentClass = BrigActor;
   CONFIG.Item.documentClass = BrigItem;

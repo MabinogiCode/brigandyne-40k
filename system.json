@@ -26,12 +26,28 @@
       "path": "lang/fr.json"
     }
   ],
-  "fonts": {
-    "Cinzel": {
-      "editor": true,
-      "fonts": [
-        { "urls": ["systems/brigandyne-40k/assets/fonts/Cinzel.ttf"], "weight": 700, "style": "normal" }
-      ]
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "npc": {},
+      "vehicle": {}
+    },
+    "Item": {
+      "weapon": {},
+      "armor": {},
+      "ammunition": {},
+      "equipment": {},
+      "specialty": {},
+      "talent": {},
+      "archetype": {},
+      "species": {},
+      "career": {},
+      "psychicPower": {},
+      "faithAct": {},
+      "augmentation": {},
+      "mutation": {},
+      "criticalInjury": {},
+      "trait": {}
     }
   },
   "packs": [
