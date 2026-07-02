@@ -1,0 +1,65 @@
+# Release Foundry VTT : à chaque tag `vX.Y.Z`, compile les packs LevelDB,
+# construit l'archive du système et publie une release GitHub avec
+# `system.json` + `brigandyne-40k.zip` (URLs utilisées par l'installeur Foundry).
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      - name: Vérifier que la version du manifest correspond au tag
+        run: |
+          TAG="${GITHUB_REF_NAME#v}"
+          VERSION=$(node -p "require('./system.json').version")
+          if [ "$TAG" != "$VERSION" ]; then
+            echo "::error::Le tag v$TAG ne correspond pas à system.json ($VERSION)"
+            exit 1
+          fi
+
+      - name: Tests
+        run: npm test
+
+      - name: Compiler les packs LevelDB
+        run: npm run pack
+
+      - name: Figer l'URL de téléchargement sur cette version
+        run: |
+          node -e "
+            const fs = require('fs');
+            const s = JSON.parse(fs.readFileSync('system.json', 'utf8'));
+            s.download = \`https://github.com/\${process.env.GITHUB_REPOSITORY}/releases/download/\${process.env.GITHUB_REF_NAME}/brigandyne-40k.zip\`;
+            fs.writeFileSync('system.json', JSON.stringify(s, null, 2) + '\n');
+          "
+
+      - name: Construire l'archive du système
+        run: |
+          zip -r brigandyne-40k.zip \
+            system.json LICENSE README.md \
+            module/ styles/ templates/ lang/ assets/ packs/ \
+            -x "packs/_source/*"
+
+      - name: Publier la release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            system.json
+            brigandyne-40k.zip
+          generate_release_notes: true

@@ -79,9 +79,10 @@
   "primaryTokenAttribute": "pv",
   "secondaryTokenAttribute": "sf",
   "background": "",
-  "url": "",
-  "manifest": "",
-  "download": "",
+  "url": "https://github.com/MabinogiCode/brigandyne-40k",
+  "bugs": "https://github.com/MabinogiCode/brigandyne-40k/issues",
+  "manifest": "https://github.com/MabinogiCode/brigandyne-40k/releases/latest/download/system.json",
+  "download": "https://github.com/MabinogiCode/brigandyne-40k/releases/latest/download/brigandyne-40k.zip",
   "license": "LICENSE",
   "readme": "README.md",
   "flags": {

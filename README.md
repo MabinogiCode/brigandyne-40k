@@ -21,7 +21,41 @@ l'univers de **Warhammer 40,000**, pour **Foundry VTT v14**.
 - 📚 **Compendiums** : armes, armures, munitions, espèces, carrières, talents,
   spécialités, pouvoirs, Actes de Foi, augmentations, véhicules, bestiaire.
 
-## 🚀 Installation (dev local)
+## 🚀 Installation dans Foundry VTT
+
+### Via le manifest (recommandé)
+
+1. Dans Foundry, ouvrez **Game Systems → Install System**.
+2. Collez cette URL dans le champ **Manifest URL** :
+
+   ```
+   https://github.com/MabinogiCode/brigandyne-40k/releases/latest/download/system.json
+   ```
+
+3. Cliquez sur **Install**. Les mises à jour se font ensuite depuis le même écran.
+
+### Manuellement
+
+1. Téléchargez `brigandyne-40k.zip` depuis la
+   [dernière release](https://github.com/MabinogiCode/brigandyne-40k/releases/latest).
+2. Décompressez-le dans `Data/systems/brigandyne-40k/` de votre installation Foundry.
+3. Redémarrez Foundry : le système apparaît dans la liste des Game Systems.
+
+> ⚠️ N'installez pas le système en clonant le dépôt : les compendiums LevelDB
+> compilés ne sont pas versionnés (voir Développement). Les archives de release,
+> elles, les contiennent.
+
+### Publier une nouvelle version (mainteneur)
+
+```bash
+# 1. Mettre à jour "version" dans system.json et package.json
+# 2. Committer, puis taguer :
+git tag v0.7.0 && git push origin main --tags
+# Le workflow .github/workflows/release.yml lance les tests, compile les packs,
+# construit le zip et publie la release (system.json + brigandyne-40k.zip).
+```
+
+## 🧰 Installation (dev local)
 
 Ce dépôt est lié au dossier `Data/systems/` de Foundry via une **jonction**
 Windows, donc Foundry charge directement la version de travail.
@@ -37,7 +71,14 @@ New-Item -ItemType Junction -Path "C:\Perso\Foundry\Data\systems\brigandyne-40k"
 npm install            # installe l'outil de compilation des packs (classic-level natif)
 npm run import         # (ré)génère les sources de compendiums depuis tes .docx
 npm run pack           # compile packs/_source/*.json → packs LevelDB
+npm test               # suite de tests RAW (conformité au Livre Premier, page par page)
 ```
+
+La conformité aux règles est verrouillée par la suite de tests : chaque règle du
+Livre Premier testable cite sa page (`test/*.test.mjs`), et les compendiums sont
+validés champ par champ (archétypes p. 40-47, carrières 10 spécialités + 10
+talents p. 110/115, équipements de base p. 26/57…). La CI GitHub
+(`.github/workflows/ci.yml`) rejoue ces tests à chaque push.
 
 - Code : ESM natif (pas de build lourd), `DataModels` + `ApplicationV2`.
 - `module/` : config, données, documents, dés, feuilles.
