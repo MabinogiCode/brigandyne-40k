@@ -301,16 +301,29 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       : null;
     const occulteExcluded = !(totals.psy > 0) && specialtiesInfo.some(e => e.specialtyType === "occulte");
 
-    // Vices & vertus de l'archétype (fixes + choix)
+    // Vices & vertus de l'archétype (fixes + choix), avec effet miroir (RAW p.50)
     const traitLabel = (key) => {
-      if (BRIGANDYNE.vices[key]) return { key, label: game.i18n.localize(BRIGANDYNE.vices[key]), kind: "vice" };
-      if (BRIGANDYNE.virtues[key]) return { key, label: game.i18n.localize(BRIGANDYNE.virtues[key]), kind: "vertu" };
-      return { key, label: key, kind: "" };
+      const isVice = !!BRIGANDYNE.vices[key];
+      const isVertu = !!BRIGANDYNE.virtues[key];
+      if (!isVice && !isVertu) return { key, label: key, kind: "", tip: "" };
+      const label = game.i18n.localize((isVice ? BRIGANDYNE.vices : BRIGANDYNE.virtues)[key]);
+      const mirrorKey = isVice
+        ? BRIGANDYNE.traitMirrors[key]
+        : Object.keys(BRIGANDYNE.traitMirrors).find(v => BRIGANDYNE.traitMirrors[v] === key);
+      const mirror = mirrorKey ? game.i18n.localize((isVice ? BRIGANDYNE.virtues : BRIGANDYNE.vices)[mirrorKey]) : "";
+      return { key, label, kind: isVice ? "vice" : "vertu", tip: mirror ? `Effet miroir : ${mirror} −1` : "" };
     };
     const archFixed = (archetypeDoc?.system?.traitsFixed ?? []).map(traitLabel);
     const archChoices = (archetypeDoc?.system?.traitsChoices ?? []).map(traitLabel);
     const archCount = archetypeDoc?.system?.traitsChoiceCount ?? 0;
-    const archTalents = archetypeDoc?.system?.talents ?? [];
+
+    // Talents accessibles de l'archétype, avec info-bulle (effet du compendium)
+    const archTalPack = game.packs.get(PACK.talents);
+    await archTalPack?.getIndex({ fields: ["system.effect"] });
+    const archTalents = (archetypeDoc?.system?.talents ?? []).map(n => ({
+      name: n,
+      tip: stripHtml(archTalPack?.index.find(i => i.name === n)?.system?.effect)
+    }));
     const archSlots = Array.from({ length: archCount }, (_, i) => ({ i, selected: this.draft.archetypeTraits?.[i] ?? "" }));
     const archChoiceKeys = new Set(archChoices.map(c => c.key));
     const archGranted = [...archFixed, ...(this.draft.archetypeTraits ?? []).filter(k => archChoiceKeys.has(k)).map(traitLabel)];
