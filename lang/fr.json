@@ -370,7 +370,13 @@
       "done": "Personnage « {name} » mis à jour.",
       "created": "Personnage « {name} » créé et rattaché à vous.",
       "atouts": {
-        "incomplete": "Atouts de départ incomplets : {done}/{total} tirés. Les atouts manquants pourront être ajoutés par le MJ."
+        "incomplete": "Atouts de départ incomplets : {done}/{total} tirés. Les atouts manquants pourront être ajoutés par le MJ.",
+        "halfTitle": "Atout au choix",
+        "halfHint": "Cette entrée propose un choix définitif : l'option écartée devient « hors-carrière » (elle coûtera +50 PX à l'achat).",
+        "precisionTitle": "Préciser l'atout",
+        "precisionHint": "Précisez le domaine de <strong>{name}</strong> :",
+        "precisionPlaceholder": "ex. fusil, épées, monde ruche…",
+        "precisionOk": "Valider"
       },
       "step": {
         "identity": "Identité",

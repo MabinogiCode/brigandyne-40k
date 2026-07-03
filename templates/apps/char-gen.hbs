@@ -169,7 +169,10 @@
             <label class="block">Archétype
               <select name="archetypeId" data-refresh>
                 <option value="">— Aucun —</option>
-                {{#each archetypes}}<option value="{{id}}" {{#if (eq id ../../draft.archetypeId)}}selected{{/if}}>{{name}}</option>{{/each}}
+                {{!-- Un seul ../ : #if est transparent pour la résolution des chemins,
+                     seul #each crée un cadre — ../../ débordait et le select revenait
+                     sur « Aucun » à chaque re-render (perte de l'archétype au clic suivant). --}}
+                {{#each archetypes}}<option value="{{id}}" {{#if (eq id ../draft.archetypeId)}}selected{{/if}}>{{name}}</option>{{/each}}
               </select>
             </label>
             {{#if archetypeDoc}}

@@ -92,6 +92,20 @@ export function selectableAtouts(entries: AtoutEntry[], { owned = [], psy = 0 }:
   });
 }
 
+/** Entrée d'atout générique dont le domaine doit être précisé par le joueur. */
+export const NEEDS_PRECISION = /\(au choix\)/i;
+
+/**
+ * Précise une entrée générique (p. 111) :
+ * « Arme à distance (au choix) » + « fusil » → « Arme à distance (fusil) ».
+ * Sans précision (ou sans marqueur « (au choix) »), le nom est inchangé.
+ */
+export function precisedName(name: string, precision?: string | null): string {
+  const p = (precision ?? "").trim();
+  if (!p || !NEEDS_PRECISION.test(name)) return name;
+  return name.replace(NEEDS_PRECISION, `(${p})`);
+}
+
 /**
  * Tirage d'UN atout (p. 110/115) : on jette 2D10 sur la liste de la catégorie,
  * chaque dé désigne un atout et le joueur choisit l'un des deux. En cas de

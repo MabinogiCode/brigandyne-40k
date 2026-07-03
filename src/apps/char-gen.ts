@@ -1,7 +1,7 @@
 import { BRIGANDYNE } from "../config/config.ts";
 import { CHARACTERISTIC_KEYS } from "../data/fields.ts";
 import { vitality, sangFroid, speciesResourceBonus, applyArchetype, bonusOf } from "../data/derive.ts";
-import { atoutCount, selectableAtouts, drawAtoutOptions, applyPsyTransfer, dropLowest, ROLL_COUNT } from "../data/chargen-rules.ts";
+import { atoutCount, selectableAtouts, drawAtoutOptions, applyPsyTransfer, dropLowest, ROLL_COUNT, NEEDS_PRECISION, precisedName } from "../data/chargen-rules.ts";
 import { SYSTEM_ID } from "../brigandyne40k.ts";
 import { BLANK_LOCK, getChargenLock, setChargenLock, requestUnlock } from "./chargen-lock.ts";
 
@@ -283,10 +283,12 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     const numAtouts = atoutCount(totals.cns);
     const poolSize = specialtiesInfo.length + talentsInfo.length;
 
-    // État du tirage des atouts (étape « Atouts »)
-    const ownedNames = (this.draft.atouts ?? []).map(a => a.name);
+    // État du tirage des atouts (étape « Atouts ») — l'exclusion se fait sur
+    // l'ENTRÉE de carrière (a.entry), pas sur le nom précisé : une entrée
+    // « X ou Y » ou « (au choix) » déjà tirée ne peut pas ressortir.
+    const ownedNames = (this.draft.atouts ?? []).map(a => a.entry ?? a.name);
     const tipByName = new Map([...specialtiesInfo, ...talentsInfo].map(e => [e.name, e.tip]));
-    const atoutsChosen = (this.draft.atouts ?? []).map(a => ({ ...a, tip: tipByName.get(a.name) ?? "" }));
+    const atoutsChosen = (this.draft.atouts ?? []).map(a => ({ ...a, tip: tipByName.get(a.entry ?? a.name) ?? "" }));
     const atoutsRemaining = Math.max(0, numAtouts - atoutsChosen.length);
     const specPool = selectableAtouts(specialtiesInfo, { owned: ownedNames, psy: totals.psy });
     const talPool = selectableAtouts(talentsInfo, { owned: ownedNames, psy: totals.psy });
@@ -451,7 +453,15 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     } else if (this.stepId === "characteristics") {
       this._captureGen();
     } else if (this.stepId === "traits") {
-      const newArch = get("archetypeId") ? (get("archetypeId").value || null) : this.draft.archetypeId;
+      const archSelect = get("archetypeId") as HTMLSelectElement | null;
+      let newArch = archSelect ? (archSelect.value || null) : this.draft.archetypeId;
+      // Garde-fou : un select revenu à vide alors qu'un archétype est déjà
+      // choisi n'est PAS une demande de retrait — seul un changement explicite
+      // (le select a le focus) compte. Le reset silencieux au premier clic sur
+      // un vice venait de là.
+      if (newArch === null && this.draft.archetypeId && document.activeElement !== archSelect) {
+        newArch = this.draft.archetypeId;
+      }
       if (newArch !== this.draft.archetypeId) {
         // Changement d'archétype : on repart de zéro sur les choix de vices/vertus.
         this.draft.archetypeId = newArch;
@@ -565,15 +575,61 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
     this.render();
   }
 
-  /** Le joueur retient l'une des deux options proposées. */
+  /**
+   * Le joueur retient l'une des deux options proposées.
+   * - Entrée « X ou Y » : il retient définitivement l'une des deux moitiés,
+   *   l'autre devient « hors-carrière » (RAW p.22) — l'entrée complète est
+   *   exclue des tirages suivants.
+   * - Entrée « (au choix) » : le joueur précise le domaine, ex.
+   *   « Arme à distance (au choix) » → « Arme à distance (fusil) » (p.111).
+   */
   static async #onAtoutPick(event, target) {
     const draw = this.draft.atoutDraw;
-    const name = target.dataset.name;
-    if (!draw || !draw.options.includes(name)) return;
-    this.draft.atouts = [...(this.draft.atouts ?? []), { kind: draw.kind, name }];
+    const entry = target.dataset.name;
+    if (!draw || !draw.options.includes(entry)) return;
+
+    let name = entry;
+    if (entry.includes(" ou ")) {
+      const half = await this._promptHalf(entry.split(" ou ").map(s => s.trim()));
+      if (!half) return;                       // annulé : le tirage reste en attente
+      name = half;
+    }
+    if (NEEDS_PRECISION.test(name)) {
+      const precision = await this._promptPrecision(name);
+      if (precision === null) return;          // annulé
+      name = precisedName(name, precision);
+    }
+
+    this.draft.atouts = [...(this.draft.atouts ?? []), { kind: draw.kind, name, entry }];
     this.draft.atoutDraw = null;
     await this._persist();
     this.render();
+  }
+
+  /** Choix définitif entre les deux moitiés d'une entrée « X ou Y » (RAW p.22). */
+  async _promptHalf(halves: string[]): Promise<string | null> {
+    return DialogV2.wait({
+      window: { title: game.i18n.localize("BRIG.CharGen.atouts.halfTitle"), icon: "fa-solid fa-code-branch" },
+      content: `<p>${game.i18n.localize("BRIG.CharGen.atouts.halfHint")}</p>`,
+      buttons: halves.map((h, i) => ({ action: h, label: h, default: i === 0 })),
+      rejectClose: false
+    }).catch(() => null);
+  }
+
+  /** Précision du domaine d'une entrée « (au choix) » — ex. fusil, épées… */
+  async _promptPrecision(name: string): Promise<string | null> {
+    const result = await DialogV2.prompt({
+      window: { title: game.i18n.localize("BRIG.CharGen.atouts.precisionTitle"), icon: "fa-solid fa-pen" },
+      content: `
+        <p>${game.i18n.format("BRIG.CharGen.atouts.precisionHint", { name })}</p>
+        <input type="text" name="precision" placeholder="${game.i18n.localize("BRIG.CharGen.atouts.precisionPlaceholder")}" autofocus />`,
+      ok: {
+        label: game.i18n.localize("BRIG.CharGen.atouts.precisionOk"),
+        callback: (event, button) => button.form.elements.precision.value
+      },
+      rejectClose: false
+    }).catch(() => null);
+    return result == null ? null : String(result).trim();
   }
 
   /** Recommencer les tirages — réservé au MJ / mode édition (RAW : tirage définitif). */
@@ -631,12 +687,19 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
           done: chosenAtouts.length, total: numAtouts
         }));
       }
-      for (const { kind, name } of chosenAtouts) {
+      for (const { kind, name, entry } of chosenAtouts) {
         const packRef = kind === "talent" ? talPack : specPack;
-        const entry = packRef?.index.find(i => i.name === name);
-        items.push(entry
-          ? (await packRef.getDocument(entry._id)).toObject()
-          : { name, type: kind === "talent" ? "talent" : "specialty" });
+        // Nom final d'abord (moitié d'un « X ou Y »), sinon l'entrée générique
+        // de la carrière (« Arme à distance (au choix) » pour un nom précisé).
+        const idx = packRef?.index.find(i => i.name === name)
+          ?? (entry ? packRef?.index.find(i => i.name === entry) : null);
+        if (idx) {
+          const obj = (await packRef.getDocument(idx._id)).toObject();
+          obj.name = name;   // conserve la précision du joueur (ex. Arme à distance (fusil))
+          items.push(obj);
+        } else {
+          items.push({ name, type: kind === "talent" ? "talent" : "specialty" });
+        }
       }
 
       // Équipement de départ (RAW p.26/57) : équipement de BASE du groupe de

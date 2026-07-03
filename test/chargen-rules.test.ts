@@ -8,7 +8,7 @@ import type { AtoutEntry } from "../src/data/chargen-rules.ts";
 import {
   POINTS_TOTAL, POINTS_MAX_PER_CHAR, PSY_DRAW_MAX, ROLL_COUNT, QUICK_SCORES,
   dropLowest, pointBuyValid, applyPsyTransfer,
-  atoutCount, selectableAtouts, drawAtoutOptions
+  atoutCount, selectableAtouts, drawAtoutOptions, precisedName, NEEDS_PRECISION
 } from "../src/data/chargen-rules.ts";
 
 /* ------------------------------------------------------------------ */
@@ -128,4 +128,15 @@ test("p.110/115 — tirage 2D10 : toujours DEUX options distinctes (doublé rela
 test("tirage — pool réduit : 1 option si un seul atout restant, 0 si vide", () => {
   assert.deepEqual(drawAtoutOptions(["Seul"]), ["Seul"]);
   assert.deepEqual(drawAtoutOptions([]), []);
+});
+
+test("p.111 — préciser une entrée « (au choix) » : Arme à distance (au choix) → (fusil)", () => {
+  assert.ok(NEEDS_PRECISION.test("Arme à distance (au choix)"));
+  assert.ok(NEEDS_PRECISION.test("Domaine Psychique (au choix)"));
+  assert.equal(precisedName("Arme à distance (au choix)", "fusil"), "Arme à distance (fusil)");
+  assert.equal(precisedName("Milieu naturel (Au choix)", "monde ruche"), "Milieu naturel (monde ruche)");
+  assert.equal(precisedName("Arme à distance (au choix)", "  "), "Arme à distance (au choix)",
+    "sans précision, l'entrée reste générique");
+  assert.equal(precisedName("Vigilance", "fusil"), "Vigilance",
+    "pas de marqueur « (au choix) » : nom inchangé");
 });
