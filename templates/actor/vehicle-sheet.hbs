@@ -33,6 +33,8 @@
       <div class="stat"><label>Pilotes min.</label><input type="number" name="system.pilotsMin" value="{{system.pilotsMin}}" /></div>
       <div class="stat"><label>Prix</label><input type="number" name="system.price" value="{{system.price}}" /></div>
       <button type="button" class="maneuver-btn" data-action="vehicleManeuver"><i class="fa-solid fa-gauge-high"></i> Test de manœuvre (TEC)</button>
+      <button type="button" class="maneuver-btn" data-action="vehicleRam" data-tooltip="Percuter la cible ciblée : opposition TEC/TEC (TEC/MOU contre un piéton) — dégâts RU + Taille, doublés sur une cible à taille humaine"><i class="fa-solid fa-car-burst"></i> Percuter</button>
+      <button type="button" class="maneuver-btn" data-action="vehicleChase" data-tooltip="Course-poursuite : en cas de réussite, l'écart varie de RU + Vitesse (minimum 1)"><i class="fa-solid fa-road"></i> Poursuite</button>
     </div>
 
     <div class="items-section">
@@ -43,8 +45,10 @@
             <span class="item-name" data-action="vehicleFire" data-tooltip="Tirer (TIR du tireur)">{{i.name}}</span>
             <span class="item-detail">{{i.system.damageLabel}}</span>
             <span class="item-detail">{{#if i.system.range}}{{i.system.range}}m{{/if}}</span>
+            {{#if i.system.magazine}}<span class="item-detail ammo {{#unless i.system.currentAmmo}}empty{{/unless}}" data-tooltip="Charges restantes / total">{{i.system.currentAmmo}}/{{i.system.magazine}}</span>{{/if}}
             <span class="item-controls">
               <a data-action="vehicleFire" data-tooltip="Tirer"><i class="fa-solid fa-burst"></i></a>
+              {{#if i.system.magazine}}<a data-action="reloadWeapon" data-tooltip="Recharger"><i class="fa-solid fa-rotate"></i></a>{{/if}}
               <a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a>
               <a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a>
             </span>

@@ -1,6 +1,7 @@
 import { BaseActorModel } from "./base-actor.ts";
 import { fields, int, str, bool, html, choice } from "../fields.ts";
 import { vitality, sangFroid } from "../derive.ts";
+import { faithActsPerDay } from "../warp-rules.ts";
 
 /**
  * Personnage joueur.
@@ -39,23 +40,25 @@ export class CharacterModel extends BaseActorModel {
   prepareDerivedData() {
     super.prepareDerivedData();
     this.xp.available = (this.xp.total ?? 0) - (this.xp.spent ?? 0);
-    // Actes de Foi par jour = VOL_bonus / 2
-    this.faith.actsPerDay = Math.floor(this.characteristics.vol.bonus / 2);
+    // Actes de Foi par jour = bonus de VOL / 2 (40K)
+    this.faith.actsPerDay = faithActsPerDay(this.characteristics.vol.bonus);
 
     // PV (Vitalité) et SF (Sang-froid) dérivés EN CONTINU des caractéristiques
     // (RAW : « les attributs secondaires évoluent avec les scores »).
     // Le champ `.bonus` porte les ajustements (bonus d'espèce, modifs manuelles).
     const c = this.characteristics;
     const totals = { for: c.for.total, end: c.end.total, vol: c.vol.total, cns: c.cns.total, com: c.com.total };
-    this.pv.max = Math.max(0, vitality(totals, this.pv.bonus ?? 0));
-    this.sf.max = Math.max(0, sangFroid(totals, this.sf.bonus ?? 0));
+    // `lost` = pertes définitives (crise de folie p.176, Douleurs chroniques p.197).
+    this.pv.max = Math.max(0, vitality(totals, this.pv.bonus ?? 0) + (this.augmentationFx?.pv ?? 0) - (this.pv.lost ?? 0));
+    this.sf.max = Math.max(0, sangFroid(totals, this.sf.bonus ?? 0) - (this.sf.lost ?? 0));
     if (this.pv.value > this.pv.max) this.pv.value = this.pv.max;
     if (this.sf.value > this.sf.max) this.sf.value = this.sf.max;
 
     // Seuil de Blessure (SB) = PV/2 (arrondi à l'inférieur)
     this.pv.seuil = Math.floor(this.pv.max / 2);
 
-    // Seuil d'instabilité recalculé sur le SF max à jour.
-    this.corruption.threshold = Math.floor(this.sf.max / 4);
+    // Seuil d'instabilité = 1/4 du SF DE BASE (avant pertes définitives, p.176).
+    this.sf.base = this.sf.max + (this.sf.lost ?? 0);
+    this.corruption.threshold = Math.floor(this.sf.base / 4);
   }
 }

@@ -1,4 +1,5 @@
 import { BRIGANDYNE } from "../config/config.ts";
+import { isDouble, overheats } from "../data/combat-rules.ts";
 
 /**
  * Détermine le degré de réussite d'un jet d100 sous caractéristique.
@@ -98,6 +99,7 @@ export class BrigTest {
       margin: def.success ? (target - total) : (total - target),
       isCrit: degree === "critSuccess",
       isFumble: degree === "critFailure",
+      isDouble: isDouble(total),               // doublé (p.162) : égalité au combat, arme Risquée, séquelle…
       net: this.net
     };
     return this.result;
@@ -122,6 +124,14 @@ export class BrigTest {
 
     const isMeleeAttack = this.data.rollType === "attack" && !!this.data.targetActorUuid && this.data.damage?.isMelee;
 
+    // Surchauffe (40K) : sur un E+, le tireur subit les dégâts de l'arme (sans le RU).
+    const weapon = this.data.damage?.weaponUuid ? await fromUuid(this.data.damage.weaponUuid) : null;
+    const overheat = !!weapon && this.data.rollType === "attack" && overheats(weapon.system?.qualities, this.result.tier);
+    // « Forcer le Warp » (p.211-213) : échec mineur/majeur ou réussite mineure d'un pouvoir psychique.
+    const forceKind = this.data.rollType === "power"
+      ? ({ majorFailure: "peril", minorFailure: "phenomenon", minorSuccess: "phenomenon" } as Record<string, string>)[this.result.degree] ?? null
+      : null;
+
     const templateData = {
       data: this.data,
       result: this.result,
@@ -130,6 +140,8 @@ export class BrigTest {
       hasDamage: this.data.rollType === "attack" || !!this.data.damage,
       canReroll, rerollCost,
       canRiposte: isMeleeAttack && !this.result.success,
+      fireMode: this.data.damage?.fireMode && this.data.damage.fireMode !== "single" ? this.data.damage.fireMode : null,
+      overheat, forceKind,
       degrees: BRIGANDYNE.degrees
     };
     const content = await renderTemplate("systems/brigandyne-40k/templates/chat/test-card.hbs", templateData);

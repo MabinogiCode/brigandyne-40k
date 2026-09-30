@@ -2,7 +2,7 @@
   "id": "brigandyne-40k",
   "title": "Warhammer 40,000 : Brigandyne",
   "description": "Adaptation du système Brigandyne 2e édition (James Tornade) à l'univers de Warhammer 40,000. Simulateur grimdark « Chair & Sang » : d100 sous caractéristique, six degrés de réussite, Destin, Psykers du Warp et Vraie Foi. Système non officiel et non commercial.",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
@@ -54,6 +54,7 @@
     { "name": "weapons", "label": "Armes", "path": "packs/weapons", "type": "Item", "system": "brigandyne-40k", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
     { "name": "armor", "label": "Armures", "path": "packs/armor", "type": "Item", "system": "brigandyne-40k" },
     { "name": "ammunition", "label": "Munitions", "path": "packs/ammunition", "type": "Item", "system": "brigandyne-40k" },
+    { "name": "equipment", "label": "Équipement & améliorations", "path": "packs/equipment", "type": "Item", "system": "brigandyne-40k" },
     { "name": "species", "label": "Espèces", "path": "packs/species", "type": "Item", "system": "brigandyne-40k" },
     { "name": "careers", "label": "Carrières", "path": "packs/careers", "type": "Item", "system": "brigandyne-40k" },
     { "name": "specialties", "label": "Spécialités", "path": "packs/specialties", "type": "Item", "system": "brigandyne-40k" },
@@ -69,7 +70,7 @@
   ],
   "packFolders": [
     { "name": "Warhammer 40K : Brigandyne", "sorting": "m", "color": "#32404d", "packs": [
-      "weapons", "armor", "ammunition", "augmentations", "careers", "species", "archetypes", "specialties", "talents", "psychic-powers", "faith-acts", "mutations", "critical-injuries", "bestiary", "vehicles"
+      "weapons", "armor", "ammunition", "equipment", "augmentations", "careers", "species", "archetypes", "specialties", "talents", "psychic-powers", "faith-acts", "mutations", "critical-injuries", "bestiary", "vehicles"
     ] }
   ],
   "grid": {

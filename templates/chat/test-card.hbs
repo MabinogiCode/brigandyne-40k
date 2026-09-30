@@ -14,7 +14,9 @@
       <span class="roll-total" data-tooltip="Dizaine {{result.tens}} · Unité {{result.units}}">{{result.total}}</span>
       <span class="roll-vs">/ {{result.target}}</span>
     </div>
-    <div class="result-degree {{result.css}}">{{localize result.degreeLabel}}</div>
+    <div class="result-degree {{result.css}}">{{localize result.degreeLabel}}
+      {{#if result.isDouble}}<span class="mod-chip double" data-tooltip="Doublé : égalité en combat, arme Risquée, séquelle qui abîme l'armure (p.162)">Doublé</span>{{/if}}
+    </div>
   </div>
 
   <div class="card-meta">
@@ -29,6 +31,13 @@
         <span class="meta-value">
           {{#each modifiers}}<span class="mod-chip {{#if (gt value 0)}}pos{{else}}neg{{/if}}">{{label}} {{#if (gt value 0)}}+{{/if}}{{value}}</span>{{/each}}
         </span>
+      </div>
+    {{/if}}
+
+    {{#if fireMode}}
+      <div class="meta-line">
+        <span class="meta-label">Mode de tir</span>
+        <span class="meta-value">{{localize (concat "BRIG.FireMode." fireMode)}}</span>
       </div>
     {{/if}}
 
@@ -47,6 +56,16 @@
     {{#if canRiposte}}
       <button type="button" class="card-button riposte" data-action="riposte" data-tooltip="L'adversaire vous blesse en retour (effet miroir)">
         <i class="fa-solid fa-reply"></i> Riposte
+      </button>
+    {{/if}}
+    {{#if overheat}}
+      <button type="button" class="card-button riposte" data-action="overheat" data-tooltip="Surchauffe : le tireur subit les dégâts de l'arme (sans le RU)">
+        <i class="fa-solid fa-fire"></i> Surchauffe
+      </button>
+    {{/if}}
+    {{#if forceKind}}
+      <button type="button" class="card-button" data-action="forceWarp" data-kind="{{forceKind}}" data-tooltip="Le pouvoir fonctionne quand même, au prix d'une complication (1×/jour)">
+        <i class="fa-solid fa-hand-fist"></i> Forcer le Warp
       </button>
     {{/if}}
     {{#if canReroll}}

@@ -114,7 +114,14 @@ BRIGANDYNE.weaponQualities = {
   viseur: { label: "BRIG.Quality.viseur", hasValue: false, target: "ranged" },
   maniable: { label: "BRIG.Quality.maniable", hasValue: true, target: "ranged" },
   armureMoitie: { label: "BRIG.Quality.armureMoitie", hasValue: false, target: "ranged" }, // ignore la moitié de l'armure (armes à poudre/feu)
-  antiVehicule: { label: "BRIG.Quality.antiVehicule", hasValue: false, target: "both" }    // arme à échelle véhicule : touche les blindages résistants
+  antiVehicule: { label: "BRIG.Quality.antiVehicule", hasValue: false, target: "both" },   // arme à échelle véhicule : touche les blindages résistants
+  pointFaible: { label: "BRIG.Quality.pointFaible", hasValue: false, target: "melee" }      // ignore toutes les armures si l'ennemi est à terre (p.183)
+};
+
+/** Qualités d'armure (40K, Spécificités des armures). */
+BRIGANDYNE.armorQualities = {
+  couvert: { label: "BRIG.Quality.couvert", hasValue: true },      // Couvert (X) : X Désavantages au tireur
+  decupleur: { label: "BRIG.Quality.decupleur", hasValue: false }  // +10 FOR/END, +1 dégât de mêlée
 };
 
 /* -------------------------------------------- */
@@ -204,6 +211,7 @@ BRIGANDYNE.conditions = {
   aveugle: { label: "BRIG.Condition.aveugle", icon: "icons/svg/blind.svg" },
   confus: { label: "BRIG.Condition.confus", icon: "icons/svg/daze.svg" },
   demoralise: { label: "BRIG.Condition.demoralise", icon: "icons/svg/degen.svg" },
+  enflamme: { label: "BRIG.Condition.enflamme", icon: "icons/svg/fire.svg" },
   ensanglante: { label: "BRIG.Condition.ensanglante", icon: "icons/svg/blood.svg" },
   essouffle: { label: "BRIG.Condition.essouffle", icon: "icons/svg/windmill.svg" },
   paralyse: { label: "BRIG.Condition.paralyse", icon: "icons/svg/paralysis.svg" },
@@ -222,7 +230,8 @@ BRIGANDYNE.combatTactics = {
   enForce:        { label: "BRIG.Tactic.enForce",        adv: 0, dis: 1, dmg: "plusFor" },     // +*FOR* aux dégâts
   enFinesse:      { label: "BRIG.Tactic.enFinesse",      adv: 1, dis: 0, dmg: "half" },         // dégâts ÷2
   surLaDefensive: { label: "BRIG.Tactic.surLaDefensive", adv: 2, dis: 0, dmg: "none" },         // aucun dégât
-  viser:          { label: "BRIG.Tactic.viser",          adv: 0, dis: 0, malus: -10, dmg: "ignoreArmor" } // ignore l'armure
+  viser:          { label: "BRIG.Tactic.viser",          adv: 0, dis: 0, malus: -10, dmg: "ignoreArmor" }, // ignore l'armure ; malus −5 à −20 selon l'armure adverse (p.180)
+  attaquesMultiples: { label: "BRIG.Tactic.attaquesMultiples", adv: 0, dis: 1, dmg: "normal" }               // 1 Désavantage, peut blesser deux adversaires (p.180)
 };
 
 /* -------------------------------------------- */
@@ -455,7 +464,8 @@ BRIGANDYNE.mechanics = {
   sfForAdvantage: 2,       // -2 SF => +1 Avantage
   pvForBonus: 1,           // 1 PV sacrifié => +1%
   sfBonusPercent: 10,      // payer du SF => +10%
-  maxCharCreation: 50      // plafond de PSY à la création, etc.
+  maxCharCreation: 50,     // plafond de PSY à la création, etc.
+  pariaRange: 20           // « à proximité d'un Paria » (Gêne du Paria) : portée Moyenne, en mètres
 };
 
 /* -------------------------------------------- */

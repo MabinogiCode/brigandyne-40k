@@ -63,6 +63,10 @@ export class ArmorModel extends PhysicalItemModel {
       coverage: choice({ partielle: "BRIG.Armor.partielle", complete: "BRIG.Armor.complete", bonus: "BRIG.Armor.bonus" }, "complete"),
       initiativeMod: int(0),               // Init -X (valeur négative)
       mouMod: int(0),                      // MOU -X% (valeur négative)
+      perMod: int(0),                      // PER -X% (casque médiéval : −5)
+      // Armures « X/+Y » (Combinaison composite 2/+1, Synthéderme 4/+2) : `protection` = X seule,
+      // `underBonus` = Y quand elles se portent SOUS une autre armure (0 = armure ordinaire).
+      underBonus: int(0, { min: 0 }),
       qualities: qualitiesField(),
       specialText: str(""),
       longToDon: bool(false)

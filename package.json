@@ -1,6 +1,6 @@
 {
   "name": "brigandyne-40k",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "description": "Système Foundry VTT — Warhammer 40,000 : Brigandyne",
   "type": "module",
   "private": true,
@@ -9,6 +9,8 @@
     "typecheck": "tsc --noEmit",
     "pack": "node tools/compile-packs.ts",
     "import": "node tools/import-content.ts",
+    "import:equipment": "node tools/import-equipment.ts",
+    "import:sequelae": "node tools/import-sequelae.ts",
     "test": "node --test \"test/*.test.ts\""
   },
   "devDependencies": {

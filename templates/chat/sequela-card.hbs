@@ -1,0 +1,21 @@
+{{!-- Carte de séquelle (Livre Premier p.196-197) : blessure grave, table d100 --}}
+<div class="brigandyne-40k chat-card warp-card peril sequela-card">
+  <header class="card-header">
+    <h3 class="card-title"><i class="fa-solid fa-heart-crack"></i> Blessure grave — {{actorName}}</h3>
+  </header>
+  <div class="card-result">
+    <span class="roll-total">{{roll}}</span>
+    <span class="roll-vs">{{location}}</span>
+    <span class="roll-total" style="font-size:1.3rem">{{name}}</span>
+  </div>
+  <div class="card-meta">
+    <div class="meta-line"><span class="meta-value">{{effect}}</span></div>
+    {{#if armorHit}}<div class="meta-line"><span class="meta-value"><strong>Doublé :</strong> l'armure est touchée et abîmée (−1 de Protection).</span></div>{{/if}}
+    <div class="meta-line"><span class="meta-value"><em>Les pertes sont définitives{{#if needsChoice}} (le joueur choisit la compétence touchée){{/if}}.</em></span></div>
+  </div>
+  <footer class="card-buttons">
+    <button type="button" class="card-button riposte" data-action="applySequela" data-tooltip="Applique la perte définitive et note la séquelle sur la fiche">
+      <i class="fa-solid fa-check"></i> Appliquer la séquelle
+    </button>
+  </footer>
+</div>

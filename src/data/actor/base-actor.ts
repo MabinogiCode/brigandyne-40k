@@ -1,5 +1,7 @@
 import { fields, int, num, str, bool, html, resource, choice } from "../fields.ts";
 import { CHARACTERISTIC_KEYS } from "../fields.ts";
+import { psyDailyLimits } from "../warp-rules.ts";
+import { augmentationEffects } from "../augmentations.ts";
 
 /** Construit le bloc des 13 caractéristiques { value, mod } pour un acteur. */
 function actorCharacteristics() {
@@ -31,8 +33,10 @@ export class BaseActorModel extends foundry.abstract.TypeDataModel {
         threshold: int(1, { min: 0 })       // Seuil d'instabilité
       }),
       dailyUse: new fields.SchemaField({    // usages journaliers (réinitialisés au repos)
-        powers: int(0, { min: 0 }),         // pouvoirs psychiques lancés aujourd'hui
-        faith: int(0, { min: 0 })           // Actes de Foi manifestés aujourd'hui
+        powers: int(0, { min: 0 }),         // pouvoirs psychiques lancés aujourd'hui (p.209 : *PSY* pouvoirs)
+        minors: int(0, { min: 0 }),         // pouvoirs mineurs lancés aujourd'hui (p.209 : *PSY* tours de magie)
+        faith: int(0, { min: 0 }),          // Actes de Foi manifestés aujourd'hui
+        forced: bool(false)                 // « forcer » le Warp déjà utilisé aujourd'hui (p.211-213 : une fois/jour)
       }),
       initiative: new fields.SchemaField({
         base: num(null),                     // override manuel (PNJ) ; null = dérivée
@@ -56,10 +60,16 @@ export class BaseActorModel extends foundry.abstract.TypeDataModel {
   }
 
   prepareBaseData() {
+    // Effets chiffrés des augmentations installées (40K, Augmentations), lues sur les objets de l'acteur.
+    const items = this.parent?.items;
+    const augmentations = items ? Array.from(items).filter((i: any) => i.type === "augmentation") : [];
+    this.augmentationFx = augmentationEffects(augmentations as any);
+
     // Total et bonus de chaque caractéristique
     for (const k of CHARACTERISTIC_KEYS) {
       const c = this.characteristics[k];
-      c.total = Math.clamp(c.value + (c.mod ?? 0), 0, 100);
+      c.aug = this.augmentationFx.chars[k] ?? 0;
+      c.total = Math.clamp(c.value + (c.mod ?? 0) + c.aug, 0, 100);
       c.bonus = BaseActorModel.bonusOf(c.total);
     }
   }
@@ -74,12 +84,13 @@ export class BaseActorModel extends foundry.abstract.TypeDataModel {
     this.initiative.value = (this.initiative.base ?? derived) + (this.initiative.mod ?? 0);
 
     // Seuil d'instabilité = SF/4 (RAW Brigandyne) — pertes de SF lors des tests de Corruption
-    this.corruption.threshold = Math.floor((this.sf.max ?? 0) / 4);
+    this.corruption.threshold = Math.floor(((this.sf.max ?? 0) + (this.sf.lost ?? 0)) / 4);
 
     // Nombre de disciplines / pouvoirs psy par jour
     const psy = this.characteristics.psy.total;
     this.psy = this.psy ?? {};
     this.psy.rating = psy;
     this.psy.powersPerDay = this.characteristics.psy.bonus;   // *PSY* pouvoirs/jour (bonus)
+    this.psy.limits = psyDailyLimits(this.characteristics.psy.bonus);   // deux compteurs : pouvoirs et pouvoirs mineurs (p.209)
   }
 }

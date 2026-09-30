@@ -30,12 +30,17 @@ export function html(initial = "") {
   return new fields.HTMLField({ required: false, blank: true, initial });
 }
 
-/** Ressource { value, max } (PV, SF…). */
+/**
+ * Ressource { value, max } (PV, SF…).
+ * `bonus` = ajustement du maximum (espèce, modifs manuelles) ;
+ * `lost` = perte DÉFINITIVE (crise de folie p.176, séquelle « Douleurs chroniques » p.197).
+ */
 export function resource(initialMax = 10) {
   return new fields.SchemaField({
     value: int(initialMax),
     max: int(initialMax),
-    bonus: int(0)
+    bonus: int(0),
+    lost: int(0, { min: 0 })
   });
 }
 

@@ -15,11 +15,20 @@ l'univers de **Warhammer 40,000**, pour **Foundry VTT v14**.
   (SF), Destin, Corruption, Vices & Vertus, espèces et carrières par Adeptus.
 - ⚔️ **Combat** : attaque → dégâts (RU + bonus, Perce-armure vs Protection),
   munitions, initiative et turn order, conditions.
-- 🔮 **Psykers** : 5 disciplines, tables des Phénomènes psychiques et des Périls
-  du Warp automatisées.
-- ✝️ **Vraie Foi** : Actes de Foi et Miracles.
-- 📚 **Compendiums** : armes, armures, munitions, espèces, carrières, talents,
-  spécialités, pouvoirs, Actes de Foi, augmentations, véhicules, bestiaire.
+- 🔫 **Armes 40K** : chargeurs et rechargement, coup par coup / semi-auto / rafale,
+  Viser, Couvert, Surchauffe, Destruction, Décupleur, portée, échelle
+  humaine / véhicule / vaisseau.
+- 🩸 **Blessures graves** : séquelles d100 du Livre Premier (p.196-197), Folie, Destin
+  définitif, Corruption et Mutations.
+- 🔮 **Psykers** : 5 disciplines, pouvoirs et pouvoirs mineurs (deux compteurs),
+  Résistance de la cible, Gêne du Paria, Forcer le Warp, tables des Phénomènes
+  psychiques et des Périls du Warp automatisées.
+- ✝️ **Vraie Foi** : Actes de Foi et Miracles, conditions d'accès, limite journalière.
+- 🦾 **Augmentations** : limite *VOL*, effets chiffrés automatiques.
+- 📚 **Compendiums** : armes, armures, munitions, équipement & améliorations, espèces,
+  carrières, talents, spécialités, pouvoirs, Actes de Foi, augmentations, blessures
+  graves, véhicules, bestiaire — chaque ligne est comparée au document d'adaptation par
+  la suite de tests.
 
 ## 🚀 Installation dans Foundry VTT
 
@@ -48,7 +57,7 @@ l'univers de **Warhammer 40,000**, pour **Foundry VTT v14**.
 ### Publier une nouvelle version (mainteneur)
 
 ```bash
-# 1. Mettre à jour "version" dans system.json et package.json
+# 1. Mettre à jour "version" dans system.json et package.json (identiques)
 # 2. Committer, puis taguer :
 git tag v0.7.0 && git push origin main --tags
 # Le workflow .github/workflows/release.yml lance les tests, compile les packs,
@@ -71,9 +80,12 @@ New-Item -ItemType Junction -Path "C:\Perso\Foundry\Data\systems\brigandyne-40k"
 npm install            # dépendances (esbuild, typescript, foundryvtt-cli…)
 npm run build          # bundle src/**/*.ts → dist/brigandyne40k.mjs (esbuild)
 npm run typecheck      # vérification TypeScript (tsc --noEmit)
-npm run import         # (ré)génère les sources de compendiums depuis tes .docx
 npm run pack           # compile packs/_source/*.json → packs LevelDB
-npm test               # suite de tests RAW (conformité au Livre Premier, page par page)
+npm test               # suite de tests : règles (page par page), données (tableau par tableau), colle Foundry
+npm run import:equipment   # régénère le compendium Équipement depuis le document 40K
+npm run import:sequelae    # régénère les blessures graves depuis la table du Livre Premier p.197
+# ⚠️ `npm run import` (importeur historique) est BLOQUÉ : il écraserait les compendiums corrigés
+#    à la main. Les compendiums se modifient dans packs/_source (source de vérité, testée).
 ```
 
 Le code est en **TypeScript** (`src/`), bundlé par esbuild vers `dist/` (non
@@ -95,7 +107,8 @@ talents p. 110/115, équipements de base p. 26/57…). La CI GitHub
 - `tools/` : extracteur .docx/PDF et importeurs de contenu.
 
 📦 **Déploiement / mise à jour sur un serveur (Linux, Oracle Ampere ARM…)** :
-voir [`docs/DEPLOIEMENT.md`](docs/DEPLOIEMENT.md).
+voir [`docs/DEPLOIEMENT.md`](docs/DEPLOIEMENT.md) (release GitHub + bouton *Update* de Foundry).
+🔍 **Audit de conformité** au Livre Premier et à l'adaptation 40K : [`docs/AUDIT-CONFORMITE.md`](docs/AUDIT-CONFORMITE.md).
 
 ## ⚖️ Licence & propriété intellectuelle
 

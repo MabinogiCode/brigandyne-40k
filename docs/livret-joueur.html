@@ -170,7 +170,7 @@ table, blockquote { page-break-inside: avoid; }
 </blockquote>
 <h3>Les jauges et ressources</h3>
 <ul>
-<li><strong>PV (Vitalité)</strong> = <code>FOR/5 + END/5 + *VOL*</code>. À <strong>0 PV</strong>, tu es hors-combat (blessure grave !).</li>
+<li><strong>PV (Vitalité)</strong> = <code>FOR/5 + END/5 + *VOL*</code>. À <strong>0 PV</strong>, tu es vaincu et hors-jeu.</li>
 <li><strong>SF (Sang-froid)</strong> = <code>VOL/5 + CNS/5 + *COM*</code>. Ton mental. À <strong>0 SF</strong>, crise de folie.</li>
 <li><strong>Initiative</strong> = <code>*COM* + *MOU* + *PER*</code>. Ordre d'action en combat.</li>
 <li><strong>Destin</strong> : 1 à 3 points selon l'espèce. La ressource la plus précieuse (voir §8).</li>
@@ -238,7 +238,7 @@ table, blockquote { page-break-inside: avoid; }
 <li>Arme de mêlée : basée sur ta <strong>Force</strong> (<code>*FOR*</code> ± selon l'arme : mains nues −3 → arme lourde +2).</li>
 <li>Arme à distance mécanique (laser, bolter, fusil…) : <strong>dégâts fixes</strong>.</li>
 <li><strong>Minimum 1 dégât</strong> si tu blesses, même à travers l'armure.</li>
-<li><strong>Armures</strong> : protection de 1 à 4. Casque <strong>+1</strong>, bouclier <strong>+2</strong>. Certaines armes <strong>percent</strong> ou <strong>ignorent</strong> l'armure ; les armes à feu lourdes ignorent la <strong>moitié</strong> de l'armure.</li>
+<li><strong>Armures</strong> : protection de 1 (armure primitive) à 6 (armure énergétique). Casque <strong>+1</strong>, bouclier <strong>+1</strong> (anti-émeute <strong>+2</strong>). Certaines armes <strong>percent</strong> (Perce-armure X) ou <strong>ignorent</strong> l'armure. Les armures de corps ne s'empilent pas ; casques et boucliers s'ajoutent. <strong>Synthéderme</strong> et <strong>Combinaison composite</strong> donnent un bonus réduit (+2 / +1) quand on les porte <em>sous</em> une autre armure.</li>
 </ul>
 <h3>Tactiques de combat (premiers rôles)</h3>
 <p>Une seule par round : <strong>Efficace</strong> (standard) · <strong>En force</strong> (−1 Désav., +<em>FOR</em> dégâts) · <strong>En finesse</strong> (+1 Avantage, dégâts ÷2) · <strong>Sur la défensive</strong> (+2 Avantages, 0 dégât ; +3 avec bouclier) · <strong>Viser</strong> (malus, ignore l'armure).</p>
@@ -249,7 +249,8 @@ table, blockquote { page-break-inside: avoid; }
 <ul>
 <li><strong>Premiers soins</strong> (test de TEC) : rend <code>*END*</code> PV, une seule fois par source de blessure.</li>
 <li><strong>Repos</strong> : tu récupères des PV/SF selon ton <strong>niveau de vie</strong> (de Misérable à Royal). Dormir au chaud après un bon repas, ça compte !</li>
-<li><strong>0 PV</strong> : tu agonises (<code>*END*</code> rounds pour te soigner), tu es capturé, ou tu meurs — au choix du MJ. Tu peux gagner une <strong>blessure grave</strong> permanente.</li>
+<li><strong>0 PV</strong> : tu agonises (<code>*END*</code> rounds pour te soigner), tu es capturé, ou tu meurs — au choix du MJ. </li>
+<li><strong>Blessure grave</strong> : si tu perds <strong>au moins la moitié de tes PV en une seule passe d'armes</strong>, tu tires une <strong>séquelle</strong> (d100) : les pertes sont <strong>définitives</strong>. Un doublé sur ce d100 abîme ton armure.</li>
 <li><strong>Poisons &amp; maladies</strong> : test d'<strong>END</strong> (la difficulté = la « virulence »).</li>
 </ul>
 <hr />
@@ -267,11 +268,11 @@ table, blockquote { page-break-inside: avoid; }
 <h2>9. Psykers : le pouvoir du Warp</h2>
 <p>Le <strong>Psychisme (PSY)</strong> remplace la magie. Trois types de manifestations :</p>
 <ul>
-<li><strong>Pouvoirs mineurs</strong> : gratuits, automatiques.</li>
+<li><strong>Pouvoirs mineurs</strong> : réussite <strong>automatique</strong> (aucun test).</li>
 <li><strong>Pouvoirs</strong> : un <strong>test de PSY</strong> (modifié par la difficulté du pouvoir).</li>
 <li>(Rituels : action longue.)</li>
 </ul>
-<p><strong>Limite</strong> : <code>*PSY*</code> pouvoirs par jour. Au-delà, tu puises dans ta <strong>Vitalité</strong> (douloureux). Tu connais <strong>1 à 5 disciplines</strong> selon ton PSY (Biomancie, Divination, Pyromancie, Télékinésie, Télépathie + Générique).</p>
+<p><strong>Limite</strong> : <code>*PSY*</code> pouvoirs <strong>et</strong> <code>*PSY*</code> pouvoirs mineurs par jour. Au-delà, tu puises dans ta <strong>Vitalité</strong> (−4 PV par pouvoir, −2 par pouvoir mineur). Tu connais <strong>1 à 5 disciplines</strong> selon ton PSY (Biomancie, Divination, Pyromancie, Télékinésie, Télépathie + Générique).</p>
 <p><strong>Quand ça tourne mal</strong> :
 - <strong>Échec majeur → Phénomène psychique</strong> (manifestation étrange et gênante).
 - <strong>Échec critique → Péril du Warp</strong> (de la simple brûlure… à l'invocation d'un démon ou pire).</p>

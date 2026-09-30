@@ -1,0 +1,9 @@
+{{!-- Carte d'information générique (défaite, folie, chargeur, Destin, Foi…) --}}
+<div class="brigandyne-40k chat-card warp-card {{#if peril}}peril{{/if}}">
+  <header class="card-header">
+    <h3 class="card-title"><i class="fa-solid {{icon}}"></i> {{{title}}}</h3>
+  </header>
+  <div class="card-meta">
+    {{#each lines}}<div class="meta-line"><span class="meta-value">{{{this}}}</span></div>{{/each}}
+  </div>
+</div>

@@ -14,7 +14,7 @@
       {{#each rows}}
         <div class="meta-line">
           <span class="meta-label">{{name}}</span>
-          <span class="meta-value">−{{applied}} PV <span class="mod-chip">prot {{prot}}</span></span>
+          <span class="meta-value">−{{applied}} PV <span class="mod-chip">prot {{prot}}</span>{{#if note}} <span class="mod-chip">{{note}}</span>{{/if}}</span>
         </div>
       {{/each}}
     </div>

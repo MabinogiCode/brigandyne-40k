@@ -311,6 +311,7 @@
 .brigandyne-40k.chat-card .mod-chip { display: inline-block; padding: 0 5px; border-radius: 3px; font-size: .75rem; margin-left: 3px; }
 .brigandyne-40k.chat-card .mod-chip.pos { background: rgba(79,122,58,.4); }
 .brigandyne-40k.chat-card .mod-chip.neg { background: rgba(140,28,19,.4); }
+.brigandyne-40k.chat-card .mod-chip.double { background: rgba(160,120,20,.45); text-transform: uppercase; letter-spacing: .04em; }
 .brigandyne-40k.chat-card .card-buttons { display: flex; gap: .4rem; padding: .4rem .5rem; border-top: 1px solid var(--brig-border); }
 .brigandyne-40k.chat-card .card-button {
   flex: 1; background: var(--brig-panel); border: 1px solid var(--brig-border);
@@ -543,3 +544,9 @@
 .brigandyne-40k .gen-context i { color: var(--brig-gold); margin-right: .25rem; }
 .brigandyne-40k .gen-context em { color: var(--brig-muted); font-style: italic; }
 .brigandyne-40k .derived-preview span[data-tooltip] { cursor: help; }
+
+/* --- Chargeurs, augmentations (40K) --- */
+.brigandyne-40k .item-detail.ammo { font-variant-numeric: tabular-nums; }
+.brigandyne-40k .item-detail.ammo.empty { color: #b3261e; font-weight: 700; }
+.brigandyne-40k .aug-count { font-size: .75rem; font-weight: 400; margin-left: .6em; opacity: .85; }
+.brigandyne-40k .aug-count.over { color: #b3261e; font-weight: 700; opacity: 1; }

@@ -53,7 +53,8 @@ export class BrigItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
     // Qualités disponibles (filtrées selon mêlée/distance pour les armes)
     if (["weapon", "armor"].includes(this.item.type)) {
       const wt = this.item.system.weaponType;
-      ctx.availableQualities = Object.entries(BRIGANDYNE.weaponQualities)
+      const pool = this.item.type === "armor" ? BRIGANDYNE.armorQualities : BRIGANDYNE.weaponQualities;
+      ctx.availableQualities = Object.entries(pool)
         .filter(([, q]: [string, any]) => this.item.type === "armor" ? true
           : (q.target === "both" || q.target === wt))
         .map(([key, q]: [string, any]) => ({ key, label: q.label, hasValue: q.hasValue }));
@@ -64,7 +65,7 @@ export class BrigItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
 
   static async #onQualityAdd(event, target) {
     const list = foundry.utils.deepClone(this.item.system.qualities ?? []);
-    list.push({ key: "perceArmure", value: null });
+    list.push({ key: this.item.type === "armor" ? "couvert" : "perceArmure", value: null });
     await this.item.update({ "system.qualities": list });
   }
 

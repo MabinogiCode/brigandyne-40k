@@ -103,6 +103,7 @@ export class TraitModel extends BaseItemModel {
       traitType: choice({ vice: "BRIG.TraitType.vice", vertu: "BRIG.TraitType.vertu", capacite: "BRIG.TraitType.capacite", particularite: "BRIG.TraitType.particularite" }, "capacite"),
       rating: int(0),                // niveau de Vice/Vertu, ou rang (PEUR (X))
       god: str(""),                  // dieu du Chaos associé pour un Vice
+      viceKey: str(""),              // clé du vice/de la vertu (BRIGANDYNE.vices/virtues) ; à défaut, déduite du nom
       effect: html("")
     };
   }
@@ -128,6 +129,7 @@ export class CriticalInjuryModel extends BaseItemModel {
   static defineSchema() {
     return {
       ...super.defineSchema(),
+      roll: str(""),                 // ligne de la table des séquelles (d100), ex. « 01-05 »
       location: str(""),
       severity: int(1, { min: 1 }),
       condition: str(""),            // condition liée éventuelle

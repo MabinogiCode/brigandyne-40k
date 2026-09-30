@@ -100,7 +100,10 @@
       "viseur": "Viseur",
       "maniable": "Maniable",
       "armureMoitie": "Armure /2",
-      "antiVehicule": "Anti-véhicule"
+      "antiVehicule": "Anti-véhicule",
+      "pointFaible": "Point faible",
+      "couvert": "Couvert",
+      "decupleur": "Décupleur"
     },
     "WeaponType": {
       "melee": "Mêlée",
@@ -173,7 +176,8 @@
       "ralenti": "Ralenti",
       "sonne": "Sonné",
       "terrorise": "Terrorisé",
-      "vaincu": "Vaincu"
+      "vaincu": "Vaincu",
+      "enflamme": "Enflammé"
     },
     "Tactic": {
       "label": "Tactique de combat",
@@ -182,7 +186,8 @@
       "enForce": "En force (−1 Désav., +FOR dégâts)",
       "enFinesse": "En finesse (+1 Avantage, dégâts ÷2)",
       "surLaDefensive": "Sur la défensive (+2 Avantages, 0 dégât)",
-      "viser": "Viser (−10, ignore l'armure)"
+      "viser": "Viser (−5 à −20 selon l'armure adverse, ignore l'armure)",
+      "attaquesMultiples": "Attaques multiples (−1 Désav., blesse 2 adversaires)"
     },
     "Corruption": {
       "test": "Résistance à la Corruption",
@@ -192,7 +197,15 @@
       "median": "Médiane",
       "major": "Majeure",
       "resistWith": "Résister avec",
-      "lost": "Corruption : −{loss} points de Sang-froid."
+      "lost": "Corruption : −{loss} points de Sang-froid.",
+      "depletedTitle": "Sang-froid épuisé par la Corruption",
+      "depleted": "Votre Sang-froid est épuisé par la Corruption. Subir la crise de folie classique, ou l'annuler en subissant une mutation (D10 : pair = Grâce, impair = Fardeau) ?",
+      "madness": "Crise de folie",
+      "mutation": "Mutation (D10)",
+      "mutationTitle": "Mutation — {name}",
+      "mutationLine": "D10 = {roll} : le personnage subit un(e) {kind} (voir la liste du Livre Second, ou le compendium Mutations).",
+      "grace": "Grâce",
+      "fardeau": "Fardeau"
     },
     "Rest": {
       "title": "Repos",
@@ -210,7 +223,11 @@
       "label": "Riposte de {name}"
     },
     "Faith": {
-      "overLimit": "Au-delà de la limite quotidienne"
+      "overLimit": "Au-delà de la limite quotidienne",
+      "notEligible": "{name} ne peut pas canaliser la Vraie Foi : il faut une Vertu Généreux, Bienveillant, Valeureux, Chaste ou Loyal, ou le Vice Colérique +2 (ou cocher « Vraie Foi » sur la fiche).",
+      "prayer": "prière : {turns} tours",
+      "deafTitle": "L'Empereur est sourd — {name}",
+      "deafLine": "Échec majeur ou critique : l'Empereur-Dieu devient sourd aux prières du personnage pendant {hours} heure(s)."
     },
     "Discipline": {
       "generique": "Pouvoirs génériques",
@@ -326,7 +343,9 @@
       "advantage": "Avantage",
       "disadvantage": "Désavantage",
       "roll": "Lancer",
-      "cancel": "Annuler"
+      "cancel": "Annuler",
+      "aimed": "Visée (round précédent passé à viser)",
+      "spendSf": "Dépenser {cost} SF pour 1 Avantage (SF : {sf})"
     },
     "Confirm": {
       "deleteTitle": "Confirmer la suppression",
@@ -334,20 +353,25 @@
     },
     "Warn": {
       "noDestin": "Aucun point de Destin disponible.",
+      "noSf": "Sang-froid insuffisant (coût : {cost}).",
       "notOwner": "Vous n'êtes pas propriétaire de cet acteur.",
       "noXp": "XP insuffisante (coût : {cost}).",
       "maxAdvance": "{char} : maximum de progression atteint (6 cases / +30).",
       "noOperator": "Aucun personnage opérateur : assignez-vous un personnage ou sélectionnez un jeton.",
       "noOpposer": "Aucun acteur pour s'opposer : assignez-vous un personnage ou sélectionnez un jeton.",
       "noRiposte": "Riposte impossible : attaquant ou cible introuvable.",
-      "psyOverflow": "Dépassement de limite psychique : −{cost} PV."
+      "psyOverflow": "Dépassement de limite psychique : −{cost} PV.",
+      "emptyMagazine": "{name} : chargeur insuffisant — rechargez (bouton ↻).",
+      "armorWorn": "Armure abîmée : {name} passe à {value} de Protection.",
+      "noDestinSurvive": "Aucun point de Destin à sacrifier : le personnage ne peut pas survivre in extremis (p.147)."
     },
     "Info": {
       "advanced": "{char} améliorée (−{cost} XP).",
       "advancedOff": "{char} améliorée hors-profil de carrière (−{cost} XP, +50).",
       "learned": "{name} appris(e) (−{cost} XP).",
       "rested": "Repos de {nights} nuit(s) : +{pv} PV, +{sf} SF.",
-      "scenarioEnd": "Fin de scénario : repos et Destin rechargé."
+      "scenarioEnd": "Fin de scénario : repos et Destin rechargé.",
+      "ammoMigrated": "Migration 0.7 : {n} arme(s) à chargeur remise(s) pleine(s) (suivi des munitions)."
     },
     "Oppose": {
       "title": "Jet opposé",
@@ -358,7 +382,11 @@
     "Vehicle": {
       "maneuver": "Test de manœuvre",
       "maneuverability": "Maniabilité",
-      "resisted": "Le blindage résiste aux armes à échelle humaine."
+      "resisted": "Le blindage résiste aux armes à échelle humaine.",
+      "undermanned": "Pilotes insuffisants ({n} requis) : 1 Désavantage.",
+      "ram": "Percuter",
+      "chase": "Course-poursuite",
+      "chaseStep": "Réussite : l'écart varie de {step} (RU {ru} + Vitesse {speed}, minimum 1) — il diminue si vous poursuivez, augmente si vous fuyez."
     },
     "Chat": {
       "noDamageOnFail": "Le test est un échec : aucun dégât.",
@@ -459,6 +487,55 @@
         "name": "Afficher l'écran d'accueil",
         "hint": "Affiche l'écran de bienvenue de Warhammer 40,000 : Brigandyne au lancement du monde, une fois par nouvelle version."
       }
+    },
+    "Mod": {
+      "armor": "Armure",
+      "helmet": "Casque",
+      "decupleur": "Décupleur",
+      "augmentation": "Augmentation",
+      "paria": "Gêne du Paria"
+    },
+    "Weapon": {
+      "riskyTitle": "Arme Risquée — {name}",
+      "riskyLine": "Doublé : {name} se blesse avec son arme et encaisse {dmg} dégâts.",
+      "reloadTitle": "{name} recharge",
+      "reloadLine": "{weapon} : chargeur rempli ({loaded}/{magazine}) — {turns} tour(s) complet(s).",
+      "reloadLost": "En combat, les {lost} munition(s) restante(s) sont perdues.",
+      "overheatLabel": "Surchauffe — {name}"
+    },
+    "Power": {
+      "minorAuto": "Pouvoir mineur : réussite automatique (aucun test, p.208).",
+      "forcedUsed": "Vous avez déjà forcé le Warp aujourd'hui (une fois par jour)."
+    },
+    "Defeat": {
+      "title": "Hors de combat — {name}",
+      "dying": "0 PV : vaincu et hors-jeu. Il agonise pendant END ({rounds}) rounds ; un test de premiers soins (TEC) le ramène à 1 PV, sans pouvoir agir en combat. Achever un agonisant : une action, aucun test.",
+      "other": "Le MJ peut aussi le faire prisonnier (il implore la pitié) ou le laisser mourir sur le coup (p.167).",
+      "destin": "Éviter la mort : dépenser DÉFINITIVEMENT 1 Destin (bouton « Destin définitif » de la fiche)."
+    },
+    "Destin": {
+      "survivedTitle": "{name} échappe à la mort",
+      "survivedLine": "Un point de Destin est sacrifié pour toujours (score de départ : {max}). Le personnage agonise à 1 PV et ne peut plus agir jusqu'à la prochaine scène.",
+      "permanentTitle": "Destin définitif",
+      "permanentConfirm": "Sacrifier définitivement 1 point de Destin pour éviter la mort ? Le score de départ baisse de 1 ; le personnage agonise à 1 PV et ne peut plus agir jusqu'à la prochaine scène."
+    },
+    "Madness": {
+      "title": "Crise de folie — {name}",
+      "crisis": "Le Sang-froid de base baisse DÉFINITIVEMENT de {loss} points (nouvelle limite : {base}).",
+      "control": "Le MJ prend le contrôle du personnage pendant la crise et lui donne un trouble mental d'après son archétype (p.174).",
+      "mad": "Le Sang-froid définitif est tombé sous l'Instabilité : le personnage sombre dans la folie et n'est plus jouable (p.176).",
+      "test": "Test de Folie",
+      "lost": "Choc psychologique : −{loss} points de Sang-froid."
+    },
+    "Sequela": {
+      "choose": "Compétence touchée (au choix du joueur)",
+      "apply": "Appliquer"
+    },
+    "FireMode": {
+      "label": "Mode de tir",
+      "single": "Coup par coup",
+      "semi": "Semi-auto (2 tirs, 1 Désavantage, 2 munitions par tir)",
+      "burst": "Rafale (1 Désavantage, dégâts ×2, moitié du chargeur)"
     },
     "Sheet": {
       "character": "Personnage Brigandyne 40K",

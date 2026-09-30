@@ -1,5 +1,6 @@
 import { BRIGANDYNE } from "../../../config/config.ts";
 import { BrigCharGen } from "../../char-gen.ts";
+import { undermannedDisadvantage, chaseStep } from "../../../data/combat-rules.ts";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 const { ActorSheetV2 } = foundry.applications.sheets;
@@ -33,9 +34,32 @@ export class BrigActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       endScenario: BrigActorSheet.#onEndScenario,
       salary: BrigActorSheet.#onSalary,
       corruption: BrigActorSheet.#onCorruption,
-      recalcStats: BrigActorSheet.#onRecalcStats
+      recalcStats: BrigActorSheet.#onRecalcStats,
+      reloadWeapon: BrigActorSheet.#onReloadWeapon,
+      destinPermanent: BrigActorSheet.#onDestinPermanent,
+      madness: BrigActorSheet.#onMadness,
+      vehicleRam: BrigActorSheet.#onVehicleRam,
+      vehicleChase: BrigActorSheet.#onVehicleChase
     }
   };
+
+  /** Recharge une arme à distance (40K, Chargeurs). */
+  static #onReloadWeapon(event, target) {
+    const item = this.actor.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+    if (item) this.actor.reloadWeapon(item);
+  }
+
+  /** Éviter la mort : dépense définitive de Destin (p.147), après confirmation. */
+  static async #onDestinPermanent() {
+    const ok = await foundry.applications.api.DialogV2.confirm({
+      window: { title: game.i18n.localize("BRIG.Destin.permanentTitle"), icon: "fa-solid fa-star" },
+      content: `<p>${game.i18n.localize("BRIG.Destin.permanentConfirm")}</p>`
+    });
+    if (ok) this.actor.spendDestinPermanent();
+  }
+
+  /** Test de Folie (p.143). */
+  static #onMadness(event) { this.actor.rollMadness({ event }); }
 
   static #onLearnAtout(event, target) { this.actor.learnAtout(target.dataset.kind); }
 
@@ -95,12 +119,58 @@ export class BrigActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     if (!char) return ui.notifications?.warn(game.i18n.localize("BRIG.Warn.noOperator"));
     const tec = char.system.characteristics.tec;
     const maneuver = this.actor.system.maneuver || 0;
+    // Un seul pilote pour un véhicule qui en exige plus : 1 Désavantage (40K, Manœuvres de base)
+    const disadvantage = undermannedDisadvantage(this.actor.system.pilotsMin ?? 1);
+    if (disadvantage) ui.notifications?.warn(game.i18n.format("BRIG.Vehicle.undermanned", { n: this.actor.system.pilotsMin }));
     char._performTest({
       label: game.i18n.localize("BRIG.Vehicle.maneuver"), flavor: this.actor.name,
-      characteristic: "tec", base: tec.total,
+      characteristic: "tec", base: tec.total, disadvantage,
       modifiers: maneuver ? [{ label: game.i18n.localize("BRIG.Vehicle.maneuverability"), value: maneuver }] : [],
       rollType: "test"
     }, { event });
+  }
+
+  /**
+   * Percuter une cible (40K, Contact) : opposition TEC/TEC, ou TEC/MOU contre un piéton.
+   * Réussite : RU + Taille de dégâts, doublés contre une cible à taille humaine.
+   */
+  static async #onVehicleRam(event, target) {
+    const char = this._operator();
+    if (!char) return ui.notifications?.warn(game.i18n.localize("BRIG.Warn.noOperator"));
+    const victim = (Array.from(game.user.targets)[0] as any)?.actor;
+    const modifiers: Array<{ label: string; value: number }> = [];
+    const maneuver = this.actor.system.maneuver || 0;
+    if (maneuver) modifiers.push({ label: game.i18n.localize("BRIG.Vehicle.maneuverability"), value: maneuver });
+    if (victim?.system?.characteristics?.mou) {
+      modifiers.push({ label: `MODO MOU (${victim.name})`, value: BRIGANDYNE.mechanics.modoCenter - victim.system.characteristics.mou.total });
+    }
+    await char._performTest({
+      label: game.i18n.localize("BRIG.Vehicle.ram"), flavor: this.actor.name,
+      characteristic: "tec", base: char.system.characteristics.tec.total,
+      disadvantage: undermannedDisadvantage(this.actor.system.pilotsMin ?? 1),
+      modifiers, rollType: "attack",
+      damage: { raw: `RU+${this.actor.system.size ?? 1}`, type: "physique", scale: "vehicle" },
+      targetActorUuid: victim?.uuid ?? null
+    }, { event });
+  }
+
+  /** Course-poursuite (40K) : opposition TEC/TEC ; en cas de réussite l'écart varie de RU + Vitesse (minimum 1). */
+  static async #onVehicleChase(event, target) {
+    const char = this._operator();
+    if (!char) return ui.notifications?.warn(game.i18n.localize("BRIG.Warn.noOperator"));
+    const test = await char._performTest({
+      label: game.i18n.localize("BRIG.Vehicle.chase"), flavor: this.actor.name,
+      characteristic: "tec", base: char.system.characteristics.tec.total,
+      disadvantage: undermannedDisadvantage(this.actor.system.pilotsMin ?? 1),
+      modifiers: this.actor.system.maneuver ? [{ label: game.i18n.localize("BRIG.Vehicle.maneuverability"), value: this.actor.system.maneuver }] : [],
+      rollType: "test"
+    }, { event });
+    if (!test?.result?.success) return;
+    const step = chaseStep(test.result.ru, this.actor.system.speed ?? 0);
+    ChatMessage.create({
+      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      content: `<div class="brigandyne-40k chat-card"><p>${game.i18n.format("BRIG.Vehicle.chaseStep", { step, ru: test.result.ru, speed: this.actor.system.speed ?? 0 })}</p></div>`
+    });
   }
 
   static #onVehicleFire(event, target) {

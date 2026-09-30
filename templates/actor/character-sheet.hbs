@@ -17,13 +17,15 @@
         <label>PV</label>
         <input type="number" name="system.pv.value" value="{{system.pv.value}}" /><span>/</span>
         <span class="res-max" data-tooltip="Vitalité max — dérivée (FOR/5 + END/5 + *VOL*). « Ajust. » modifie ce maximum.">{{system.pv.max}}</span>
-        <input class="res-bonus" type="number" name="system.pv.bonus" value="{{system.pv.bonus}}" data-tooltip="Ajustement du PV max (bonus d'espèce, blessure permanente…)" />
+        <input class="res-bonus" type="number" name="system.pv.bonus" value="{{system.pv.bonus}}" data-tooltip="Ajustement du PV max (bonus d'espèce, modifs manuelles…)" />
+        <input class="res-bonus" type="number" min="0" name="system.pv.lost" value="{{system.pv.lost}}" data-tooltip="Perte DÉFINITIVE de PV (séquelle « Douleurs chroniques », p.197)" />
       </div>
       <div class="resource sf">
         <label>SF</label>
         <input type="number" name="system.sf.value" value="{{system.sf.value}}" /><span>/</span>
         <span class="res-max" data-tooltip="Sang-froid max — dérivé (VOL/5 + CNS/5 + *COM*). « Ajust. » modifie ce maximum.">{{system.sf.max}}</span>
         <input class="res-bonus" type="number" name="system.sf.bonus" value="{{system.sf.bonus}}" data-tooltip="Ajustement du SF max" />
+        <input class="res-bonus" type="number" min="0" name="system.sf.lost" value="{{system.sf.lost}}" data-tooltip="Perte DÉFINITIVE de SF (crises de folie, p.176) — le SF de base baisse d'autant" />
       </div>
       <div class="resource destin">
         <label>Destin</label>
@@ -41,6 +43,8 @@
       <button type="button" data-action="endScenario" data-tooltip="Fin de scénario : repos d'une semaine + Destin rechargé"><i class="fa-solid fa-flag-checkered"></i> Fin de scénario</button>
       <button type="button" data-action="salary" data-tooltip="Jet de salaire hebdomadaire (Trônes Gelt)"><i class="fa-solid fa-coins"></i> Salaire</button>
       <button type="button" data-action="corruption" data-tooltip="Test de résistance à la Corruption"><i class="fa-solid fa-skull"></i> Corruption</button>
+      <button type="button" data-action="madness" data-tooltip="Test de Folie (VOL) : −2/−4/−6 SF sur un échec (p.143)"><i class="fa-solid fa-brain"></i> Folie</button>
+      <button type="button" data-action="destinPermanent" data-tooltip="Éviter la mort : dépense DÉFINITIVE de 1 Destin, le personnage agonise à 1 PV (p.147)"><i class="fa-solid fa-star"></i> Destin définitif</button>
       <button type="button" data-action="recalcStats" data-tooltip="Recalcule tous les attributs secondaires et enregistre la version du schéma"><i class="fa-solid fa-calculator"></i> Recalculer</button>
       <input type="hidden" name="system.schemaVersion" value="{{system.schemaVersion}}" />
     </div>
@@ -74,7 +78,7 @@
 
     <div class="secondary-stats">
       <div class="stat"><label>Initiative</label><span>{{system.initiative.value}}</span></div>
-      <div class="stat"><label data-tooltip="Seuil de Blessure (PV/2) — des dégâts supérieurs à ce seuil en un seul coup infligent une blessure grave">Seuil Blessure</label><span>{{system.pv.seuil}}</span></div>
+      <div class="stat"><label data-tooltip="Seuil de blessure grave (PV/2) — perdre au moins autant de PV en une seule passe d'armes inflige une séquelle (p.196)">Seuil Blessure</label><span>{{system.pv.seuil}}</span></div>
       <div class="stat"><label>Protection</label><span>{{system.protection.value}}</span></div>
       <div class="stat"><label>Encombrement</label><span>{{system.encumbrance.value}}</span></div>
       <div class="stat"><label>Niveau de vie</label>
@@ -93,13 +97,16 @@
       <div class="section-head"><h3><i class="fa-solid fa-gun"></i> Armes</h3><button type="button" data-action="itemCreate" data-type="weapon"><i class="fa-solid fa-plus"></i></button></div>
       <ol class="items-list weapons">
         {{#each items.weapon as |i|}}
-          <li class="item" data-item-id="{{i.id}}">
+          <li class="item {{#if i.system.equipped}}equipped{{/if}}" data-item-id="{{i.id}}">
             <img class="item-img" src="{{i.img}}" data-action="rollItem" data-tooltip="Attaquer" />
             <span class="item-name" data-action="itemEdit" data-tooltip="{{descTip i.system.specialText i.system.description}}">{{i.name}}</span>
             <span class="item-detail">{{i.system.damageLabel}}</span>
             <span class="item-detail">{{#if i.system.isMelee}}All. {{i.system.reach}}{{else}}Port. {{i.system.range}}m{{/if}}</span>
+            {{#if i.system.magazine}}<span class="item-detail ammo {{#unless i.system.currentAmmo}}empty{{/unless}}" data-tooltip="Munitions restantes / chargeur">{{i.system.currentAmmo}}/{{i.system.magazine}}</span>{{/if}}
             <span class="item-controls">
               <a data-action="rollItem" data-tooltip="Attaque"><i class="fa-solid fa-dice-d10"></i></a>
+              <a data-action="toggleEquip" data-tooltip="Arme en main (une arme encombrante, Initiative −x, pénalise l'Initiative tant qu'elle est en main)"><i class="fa-solid fa-hand-fist"></i></a>
+              {{#if i.system.magazine}}<a data-action="reloadWeapon" data-tooltip="Recharger (en combat, les munitions restantes sont perdues)"><i class="fa-solid fa-rotate"></i></a>{{/if}}
               <a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a>
               <a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a>
             </span>
@@ -128,7 +135,8 @@
     </div>
 
     <div class="items-section">
-      <div class="section-head"><h3><i class="fa-solid fa-box"></i> Équipement, munitions, augmentations</h3>
+      <div class="section-head"><h3><i class="fa-solid fa-box"></i> Équipement, munitions, augmentations
+          {{#if system.augmentations}}<span class="aug-count {{#if system.augmentations.over}}over{{/if}}" data-tooltip="Un personnage ne peut recevoir que *VOL* augmentations (l'esthétique ne compte pas). Au-delà : crise de folie et perte de SF de base égale à l'Instabilité par augmentation en trop.">Augm. {{system.augmentations.count}}/{{system.augmentations.max}}</span>{{/if}}</h3>
         <span><button type="button" data-action="itemCreate" data-type="equipment"><i class="fa-solid fa-plus"></i> Objet</button>
         <button type="button" data-action="itemCreate" data-type="ammunition"><i class="fa-solid fa-plus"></i> Munition</button>
         <button type="button" data-action="itemCreate" data-type="augmentation"><i class="fa-solid fa-plus"></i> Augm.</button></span>
@@ -178,9 +186,10 @@
   <div class="tab {{#if (eq activeTab 'powers')}}active{{/if}}" data-tab="powers">
     <div class="powers-info">
       <span>PSY : <strong>{{system.psy.rating}}</strong></span>
-      <span>Pouvoirs/jour : <strong>{{system.psy.powersPerDay}}</strong></span>
-      <label class="faith-toggle"><input type="checkbox" name="system.faith.devoted" {{#if system.faith.devoted}}checked{{/if}} /> Vraie Foi</label>
-      <span>Actes/jour : <strong>{{system.faith.actsPerDay}}</strong></span>
+      <span data-tooltip="Pouvoirs lancés aujourd'hui / limite (*PSY*). Au-delà : −4 PV par pouvoir">Pouvoirs : <strong>{{system.dailyUse.powers}}/{{system.psy.limits.power}}</strong></span>
+      <span data-tooltip="Pouvoirs mineurs lancés aujourd'hui / limite (*PSY*). Réussite automatique. Au-delà : −2 PV par pouvoir">Mineurs : <strong>{{system.dailyUse.minors}}/{{system.psy.limits.minor}}</strong></span>
+      <label class="faith-toggle" data-tooltip="Coché : peut canaliser la Vraie Foi (Vertu Généreux, Bienveillant, Valeureux, Chaste ou Loyal, ou Colérique +2)"><input type="checkbox" name="system.faith.devoted" {{#if system.faith.devoted}}checked{{/if}} /> Vraie Foi</label>
+      <span data-tooltip="Actes de Foi aujourd'hui / limite (*VOL*/2). Au-delà : −20 %">Actes : <strong>{{system.dailyUse.faith}}/{{system.faith.actsPerDay}}</strong></span>
     </div>
     <div class="items-section">
       <div class="section-head"><h3><i class="fa-solid fa-brain"></i> Pouvoirs psychiques</h3><button type="button" data-action="itemCreate" data-type="psychicPower"><i class="fa-solid fa-plus"></i></button></div>

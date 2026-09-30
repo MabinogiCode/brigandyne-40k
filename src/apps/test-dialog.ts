@@ -26,6 +26,29 @@ export async function promptTest({ actor, testData }: { actor?: any; testData?: 
         </select>
       </div>` : "";
 
+  // Mode de tir (Automatique / Semi-automatique) et visée — armes à distance (40K)
+  const modes = testData?.fireModes ?? [];
+  const fireBlock = modes.length > 1 ? `
+      <div class="form-group">
+        <label><i class="fa-solid fa-gun"></i> ${game.i18n.localize("BRIG.FireMode.label")}</label>
+        <select name="fireMode">
+          ${modes.map(m => `<option value="${m}">${game.i18n.localize("BRIG.FireMode." + m)}</option>`).join("")}
+        </select>
+      </div>` : "";
+  const aimBlock = testData?.canAim ? `
+      <div class="form-group check">
+        <label><input type="checkbox" name="aimed" /> ${game.i18n.localize("BRIG.Dialog.aimed")}</label>
+      </div>` : "";
+
+  // Bon stress : 2 SF = 1 Avantage (p.142)
+  const sfCost = BRIGANDYNE.mechanics.sfForAdvantage;
+  const sfAvailable = actor?.system?.sf?.value ?? 0;
+  const sfBlock = actor?.system?.sf ? `
+      <div class="form-group check">
+        <label><input type="checkbox" name="spendSf" ${sfAvailable < sfCost ? "disabled" : ""} />
+          ${game.i18n.format("BRIG.Dialog.spendSf", { cost: sfCost, sf: sfAvailable })}</label>
+      </div>` : "";
+
   const content = `
     <form class="brigandyne-40k test-dialog">
       <p class="dialog-target">
@@ -51,6 +74,9 @@ export async function promptTest({ actor, testData }: { actor?: any; testData?: 
         </div>
       </div>
       ${tacticBlock}
+      ${fireBlock}
+      ${aimBlock}
+      ${sfBlock}
     </form>`;
 
   const parse = (form) => ({
@@ -58,7 +84,10 @@ export async function promptTest({ actor, testData }: { actor?: any; testData?: 
     situational: Number(form.situational.value) || 0,
     advantage: Number(form.advantage.value) || 0,
     disadvantage: Number(form.disadvantage.value) || 0,
-    tactic: form.tactic?.value || ""
+    tactic: form.tactic?.value || "",
+    fireMode: form.fireMode?.value || "",
+    aimed: !!form.aimed?.checked,
+    spendSf: !!form.spendSf?.checked
   });
 
   // Instance + Promise manuelle pour pouvoir forcer le premier plan (bringToFront)

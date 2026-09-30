@@ -1,6 +1,8 @@
 import { BRIGANDYNE } from "../config/config.ts";
 import { BrigTest, rerollCostFor } from "../dice/roll.ts";
 import { CHARACTERISTIC_KEYS } from "../data/fields.ts";
+import { weaponScale, weaponFamily, armorWear, scaleEffect, targetKind, qualityValue, hasQuality } from "../data/combat-rules.ts";
+import { SEQUELAE } from "../data/sequelae.ts";
 
 const { renderTemplate } = foundry.applications.handlebars;
 const { DialogV2 } = foundry.applications.api;
@@ -16,6 +18,12 @@ export function registerChatListeners() {
       b.addEventListener("click", () => onRiposte(message, b)));
     html.querySelectorAll("[data-action='oppose']").forEach(b =>
       b.addEventListener("click", () => onOppose(message)));
+    html.querySelectorAll("[data-action='overheat']").forEach(b =>
+      b.addEventListener("click", () => onOverheat(message, b)));
+    html.querySelectorAll("[data-action='forceWarp']").forEach(b =>
+      b.addEventListener("click", () => onForceWarp(message, b)));
+    html.querySelectorAll("[data-action='applySequela']").forEach(b =>
+      b.addEventListener("click", () => onApplySequela(message, b)));
   });
 }
 
@@ -113,7 +121,7 @@ function resolveRawDamage(raw, ctx) {
   return Number.isFinite(v) ? Math.max(0, Math.round(v)) : (ctx.ru ?? 0);
 }
 
-async function onApplyDamage(message) {
+export async function onApplyDamage(message) {
   const flags = message.flags?.["brigandyne-40k"];
   if (!flags) return;
   const { test, result } = flags;
@@ -127,24 +135,36 @@ async function onApplyDamage(message) {
   if (result.degree === "critSuccess") ru = await explodeD10();
 
   const dmg = test.damage || {};
-  let total, ap = 0, ignoreArmor = false, halveArmor = false, vehicleScale = false;
+  let total, ap = 0, ignoreArmor = false, halveArmor = false;
+  let weapon = { scale: "human", family: "other" };
   const dtype = dmg.type || "physique";
   const typeDef = BRIGANDYNE.damageTypes[dtype];
   if (typeDef?.ignoreArmor) ignoreArmor = true;
+  let wear = armorWear([], dtype);          // dégâts acides : −1 point d'armure
 
   if (dmg.raw) {
     total = resolveRawDamage(dmg.raw, { ru, psyBonus: dmg.psyBonus, volBonus: dmg.volBonus, forBonus: dmg.forBonus });
+    if (dmg.scale) weapon = { scale: dmg.scale, family: "other" };     // ex. Percuter : dégâts de véhicule (×2 sur cible humaine)
   } else {
     const bonus = dmg.base === "for" ? (dmg.forBonus ?? 0) + (dmg.mod ?? 0) : (dmg.mod ?? 0);
     total = ru + bonus;
     const item = dmg.weaponUuid ? await fromUuid(dmg.weaponUuid) : null;
-    if (item?.system?.qualityValue) {
-      const v = item.system.qualityValue("perceArmure");
+    if (item?.system?.qualities) {
+      const q = item.system.qualities;
+      const v = qualityValue(q, "perceArmure");
       if (typeof v === "number") ap = v;
-      if (item.system.hasQuality?.("ignoreArmures")) ignoreArmor = true;
-      if (item.system.hasQuality?.("armureMoitie")) halveArmor = true;     // armes à feu : armure ÷2
-      if (item.system.hasQuality?.("antiVehicule")) vehicleScale = true;   // touche les blindages résistants
+      if (hasQuality(q, "ignoreArmures")) ignoreArmor = true;
+      if (hasQuality(q, "armureMoitie")) halveArmor = true;     // armes à poudre : armure ÷2
+      weapon = { scale: weaponScale(item.system.group, hasQuality(q, "antiVehicule")), family: weaponFamily(item.system.ammoType) };
+      wear = armorWear(q, dtype);                                // Destruction : −1 point d'armure
     }
+    // Décupleur (armure énergétique) : +1 aux dégâts de mêlée (40K)
+    if (dmg.isMelee && test.actorUuid) {
+      const attacker = await fromUuid(test.actorUuid);
+      if (attacker?.system?._gear?.decupleur) total += 1;
+    }
+    // Rafale : dégâts totaux doublés (40K)
+    if (dmg.fireMode === "burst") total *= 2;
   }
 
   // Tactique de combat (mêlée) : ajuste les dégâts.
@@ -161,10 +181,12 @@ async function onApplyDamage(message) {
 
   const rows = [];
   for (const actor of targets) {
-    const applied = await actor.applyDamage(total, { ignoreArmor, ap, halveArmor, vehicleScale, minDamage: 1 });
+    const applied = await actor.applyDamage(total, { ignoreArmor, ap, halveArmor, weapon, damageType: dtype, armorWear: wear, minDamage: 1 });
     let prot: string | number = "—";
     if (!ignoreArmor) { let p = actor.system.protection?.value ?? 0; if (halveArmor) p = Math.floor(p / 2); prot = Math.max(0, p - ap); }
-    rows.push({ name: actor.name, raw: total, applied, prot });
+    const eff = scaleEffect(weapon.scale as any, weapon.family as any, targetKind(actor.type, actor.system.vehicleType));
+    const note = eff.immune ? "immunisé" : eff.halve ? "Résistance ÷2" : eff.double ? "×2 (taille humaine)" : "";
+    rows.push({ name: actor.name, raw: total, applied, prot, note });
   }
 
   const content = await renderTemplate("systems/brigandyne-40k/templates/chat/damage-card.hbs", {
@@ -172,6 +194,63 @@ async function onApplyDamage(message) {
     hasTargets: rows.length > 0
   });
   ChatMessage.create({ speaker: message.speaker, content });
+}
+
+/** Surchauffe (40K) : sur un E+, le tireur subit les dégâts de l'arme (sans le RU). */
+export async function onOverheat(message, button) {
+  const flags = message.flags?.["brigandyne-40k"];
+  if (!flags) return;
+  const { test } = flags;
+  const actor = test.actorUuid ? await fromUuid(test.actorUuid) : null;
+  const weapon = test.damage?.weaponUuid ? await fromUuid(test.damage.weaponUuid) : null;
+  if (!actor || !weapon) return;
+  if (!actor.isOwner) return ui.notifications?.warn(game.i18n.localize("BRIG.Warn.notOwner"));
+  button.disabled = true;
+  const s = weapon.system;
+  const dmg = Math.max(0, s.damageBase === "for" ? (actor.system.characteristics?.for?.bonus ?? 0) + (s.damageMod ?? 0) : (s.damageMod ?? 0));
+  const applied = await actor.applyDamage(dmg, { minDamage: 1, damageType: s.damageType });
+  const content = await renderTemplate("systems/brigandyne-40k/templates/chat/damage-card.hbs", {
+    label: game.i18n.format("BRIG.Weapon.overheatLabel", { name: weapon.name }), total: dmg,
+    type: game.i18n.localize(BRIGANDYNE.damageTypes[s.damageType]?.label ?? "BRIG.Damage.physique"), ap: 0, ignoreArmor: false,
+    rows: [{ name: actor.name, raw: dmg, applied, prot: actor.system.protection?.value ?? 0 }], hasTargets: true
+  });
+  ChatMessage.create({ speaker: message.speaker, content });
+}
+
+/** « Forcer le Warp » : le pouvoir fonctionne, une complication est tirée (1×/jour, p.211-213). */
+export async function onForceWarp(message, button) {
+  const flags = message.flags?.["brigandyne-40k"];
+  if (!flags) return;
+  const actor = flags.test.actorUuid ? await fromUuid(flags.test.actorUuid) : null;
+  if (!actor) return;
+  if (!actor.isOwner) return ui.notifications?.warn(game.i18n.localize("BRIG.Warn.notOwner"));
+  const ok = await actor.forceWarp(button.dataset.kind === "peril" ? "peril" : "phenomenon");
+  if (ok) button.disabled = true;
+}
+
+/** Applique une séquelle (p.197) ; le joueur choisit la compétence quand le livre dit « au choix ». */
+export async function onApplySequela(message, button) {
+  const f = message.flags?.["brigandyne-40k"]?.sequela;
+  if (!f) return;
+  const actor = await fromUuid(f.actorUuid);
+  const s = SEQUELAE[f.index];
+  if (!actor || !s) return;
+  if (!actor.isOwner) return ui.notifications?.warn(game.i18n.localize("BRIG.Warn.notOwner"));
+  const choices: string[] = [];
+  for (const p of s.penalties) {
+    if (p.chars.length > 1) {
+      const opts = p.chars.map(k => `<option value="${k}">${game.i18n.localize(BRIGANDYNE.characteristics[k].label)} (${p.value} %)</option>`).join("");
+      const pick = await DialogV2.prompt({
+        window: { title: s.name, icon: "fa-solid fa-heart-crack" },
+        content: `<form class="brigandyne-40k"><div class="form-group"><label>${game.i18n.localize("BRIG.Sequela.choose")}</label><select name="c">${opts}</select></div></form>`,
+        ok: { label: game.i18n.localize("BRIG.Sequela.apply"), callback: (e, b) => b.form.c.value }, rejectClose: false
+      }).catch(() => null);
+      if (!pick) return;                       // annulé : rien n'est appliqué
+      choices.push(pick);
+    } else choices.push(p.chars[0]);
+  }
+  button.disabled = true;
+  await actor.applySequela(f.index, choices, f.armorHit);
 }
 
 /** Relance un test en dépensant du Sang-froid (4, ou 6 sur un échec critique — RAW). */

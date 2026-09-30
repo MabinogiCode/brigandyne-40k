@@ -52,10 +52,20 @@ Hooks.once("init", async function () {
   DSC.registerSheet(Actor, SYSTEM_ID, BrigVehicleSheet, { types: ["vehicle"], makeDefault: true, label: "BRIG.Sheet.vehicle" });
   DSC.registerSheet(Item, SYSTEM_ID, BrigItemSheet, { makeDefault: true, label: "BRIG.Sheet.item" });
 
+  // Migration 0.7 (suivi des munitions) : exécutée une seule fois par monde, par le MJ.
+  game.settings.register(SYSTEM_ID, "ammoMigrated", { scope: "world", config: false, type: Boolean, default: false });
+
   registerHandlebarsHelpers();
   registerChatListeners();
   registerWelcome();
   await preloadHandlebarsTemplates();
+});
+
+// Une arme à chargeur remise à un acteur arrive chargée (le suivi des munitions est actif, voir 40K « Chargeurs »).
+Hooks.on("preCreateItem", (item) => {
+  if (item.type === "weapon" && item.parent && item.system.magazine > 0 && !item.system.currentAmmo) {
+    item.updateSource({ "system.currentAmmo": item.system.magazine });
+  }
 });
 
 Hooks.once("i18nInit", function () {
@@ -72,8 +82,30 @@ Hooks.once("i18nInit", function () {
 
 Hooks.once("ready", function () {
   registerCharGenSocket();
+  migrateAmmo();
   console.log(`${SYSTEM_ID} | Système prêt — Pour l'Empereur !`);
 });
+
+/**
+ * Migration 0.7 : les armes à chargeur des acteurs existants (currentAmmo = 0 par défaut, jamais renseigné
+ * avant le suivi des munitions) sont remises pleines, sinon elles refuseraient de tirer.
+ */
+async function migrateAmmo() {
+  if (!game.user.isGM || game.settings.get(SYSTEM_ID, "ammoMigrated")) return;
+  let n = 0;
+  try {
+    for (const actor of game.actors) {
+      const updates = actor.items
+        .filter(i => i.type === "weapon" && i.system.magazine > 0 && !i.system.currentAmmo)
+        .map(i => ({ _id: i.id, "system.currentAmmo": i.system.magazine }));
+      if (updates.length) { await actor.updateEmbeddedDocuments("Item", updates); n += updates.length; }
+    }
+    await game.settings.set(SYSTEM_ID, "ammoMigrated", true);
+    if (n) ui.notifications.info(game.i18n.format("BRIG.Info.ammoMigrated", { n }));
+  } catch (e) {
+    console.error(`${SYSTEM_ID} | migration des munitions`, e);
+  }
+}
 
 // Bouton « Assistant de création » dans le répertoire des Acteurs
 Hooks.on("renderActorDirectory", (app, html) => {

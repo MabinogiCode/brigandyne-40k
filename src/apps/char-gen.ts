@@ -24,6 +24,7 @@ const EQUIP_PACKS = [
   "brigandyne-40k.armor",
   "brigandyne-40k.weapons",
   "brigandyne-40k.ammunition",
+  "brigandyne-40k.equipment",
   "brigandyne-40k.augmentations"
 ];
 
@@ -760,7 +761,7 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
         ? game.i18n.localize((isVice ? BRIGANDYNE.virtues : BRIGANDYNE.vices)[mirrorKey])
         : "";
       const effect = mirrorLabel ? `<p>Effet miroir : <strong>${mirrorLabel} −1</strong>.</p>` : "";
-      items.push({ name: label, type: "trait", system: { traitType: isVice ? "vice" : "vertu", rating: 1, god: "", effect } });
+      items.push({ name: label, type: "trait", system: { traitType: isVice ? "vice" : "vertu", rating: 1, god: "", viceKey: key, effect } });
     };
     const fixedTraits = archetypeDoc?.system?.traitsFixed ?? [];
     const allowed = new Set(archetypeDoc?.system?.traitsChoices ?? []);

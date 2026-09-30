@@ -60,6 +60,8 @@
     </label>
     <label>Init <input type="number" name="system.initiativeMod" value="{{system.initiativeMod}}" /></label>
     <label>MOU % <input type="number" name="system.mouMod" value="{{system.mouMod}}" /></label>
+    <label>PER % <input type="number" name="system.perMod" value="{{system.perMod}}" /></label>
+    <label data-tooltip="Armures « X/+Y » (Combinaison composite 2/+1, Synthéderme 4/+2) : Protection = X seule ; ce champ = Y, le bonus quand l'armure se porte SOUS une autre armure. 0 = armure ordinaire.">Sous armure <input type="number" min="0" name="system.underBonus" value="{{system.underBonus}}" /></label>
   </div>
   {{> qualities-editor}}
   {{/if}}
@@ -127,6 +129,7 @@
     </label>
     <label>Rang <input type="number" name="system.rating" value="{{system.rating}}" /></label>
     <label>Dieu (Vice) <input type="text" name="system.god" value="{{system.god}}" /></label>
+    <label data-tooltip="Clé du vice/de la vertu (ex. colerique, genereux). Facultatif : déduite du nom sinon.">Clé <input type="text" name="system.viceKey" value="{{system.viceKey}}" /></label>
   </div>
   {{/if}}
 
@@ -144,6 +147,7 @@
   {{#if flags.criticalInjury}}
   <div class="field-row">
     <label>Localisation <input type="text" name="system.location" value="{{system.location}}" /></label>
+    <label>Table (d100) <input type="text" name="system.roll" value="{{system.roll}}" /></label>
     <label>Gravité <input type="number" name="system.severity" value="{{system.severity}}" /></label>
     <label>Condition <input type="text" name="system.condition" value="{{system.condition}}" /></label>
   </div>
@@ -190,7 +194,7 @@
   </div>
   <p class="hint">Caractéristiques de départ</p>
   <div class="char-mini-grid">
-    {{#each charChoices as |c key|}}<label>{{localize c.abbr}}<input type="number" name="system.base.{{key}}" value="{{lookup ../system.base key}}" /></label>{{/each}}
+    {{#each charChoices as |c key|}}<label>{{localize c.abbrev}}<input type="number" name="system.base.{{key}}" value="{{lookup ../system.base key}}" /></label>{{/each}}
   </div>
   {{/if}}
 
@@ -206,7 +210,7 @@
   <label class="field-block">Citation <input type="text" name="system.quote" value="{{system.quote}}" /></label>
   <p class="hint">Avancées (0–6 par caractéristique)</p>
   <div class="char-mini-grid">
-    {{#each charChoices as |c key|}}<label>{{localize c.abbr}}<input type="number" name="system.advances.{{key}}" value="{{lookup ../system.advances key}}" min="0" max="6" /></label>{{/each}}
+    {{#each charChoices as |c key|}}<label>{{localize c.abbrev}}<input type="number" name="system.advances.{{key}}" value="{{lookup ../system.advances key}}" min="0" max="6" /></label>{{/each}}
   </div>
   {{/if}}
 
