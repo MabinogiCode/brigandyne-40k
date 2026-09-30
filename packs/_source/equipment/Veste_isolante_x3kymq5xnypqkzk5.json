@@ -1,0 +1,16 @@
+{
+  "_id": "x3kymq5xnypqkzk5",
+  "name": "Veste isolante",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Vêtements",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 20,
+    "source": "40K"
+  },
+  "folder": "xyznun7xn34w4wp2"
+}

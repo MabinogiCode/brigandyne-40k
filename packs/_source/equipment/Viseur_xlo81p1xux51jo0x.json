@@ -1,0 +1,16 @@
+{
+  "_id": "xlo81p1xux51jo0x",
+  "name": "Viseur",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Amélioration d’armes à distance",
+    "effect": "Octroie la caractéristique Viseur à l’arme : 2 Avantages pour toucher avec l’action viser (au lieu de 1). Les viseurs aux grossissements plus ou moins importants qui peuvent s’appliquer à la plupart des armes.",
+    "description": "<p>Octroie la caractéristique Viseur à l’arme : 2 Avantages pour toucher avec l’action viser (au lieu de 1). Les viseurs aux grossissements plus ou moins importants qui peuvent s’appliquer à la plupart des armes.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 35,
+    "source": "40K"
+  },
+  "folder": "6tpq5814xtpu4zw4"
+}

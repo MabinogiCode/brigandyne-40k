@@ -1,0 +1,15 @@
+{
+  "_id": "4n035j14m5yx28rp",
+  "name": "Belle cicatrice",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "roll": "31-45",
+    "location": "—",
+    "severity": 1,
+    "condition": "",
+    "effect": "<p>Juste de quoi plastronner dans les tavernes. Vous vous en tirez bien pour cette fois.</p>",
+    "description": "<p>Juste de quoi plastronner dans les tavernes. Vous vous en tirez bien pour cette fois.</p>",
+    "source": "Livre Premier p.197"
+  }
+}

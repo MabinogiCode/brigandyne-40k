@@ -1,0 +1,16 @@
+{
+  "_id": "x120t8711lwz4xxp",
+  "name": "Logement de luxe",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Logement",
+    "effect": "(prix par nuit)",
+    "description": "<p>(prix par nuit)</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 100,
+    "source": "40K"
+  },
+  "folder": "x34w31xxp07w5247"
+}

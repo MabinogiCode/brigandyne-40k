@@ -5,8 +5,10 @@
   "img": "icons/svg/upgrade.svg",
   "system": {
     "specialtyType": "standard",
-    "bonus": 10,
-    "source": "Carrière"
+    "bonus": 20,
+    "source": "Carrière",
+    "characteristic": "cns",
+    "effect": "Savoir se repérer sur une carte spatiale, connaître les secteurs de la galaxie"
   },
   "folder": "xx3oqmxm4yo07x47"
 }

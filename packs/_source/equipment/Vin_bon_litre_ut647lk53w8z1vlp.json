@@ -1,0 +1,16 @@
+{
+  "_id": "ut647lk53w8z1vlp",
+  "name": "Vin, bon, ½ litre",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Nourriture et boissons",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 3,
+    "source": "40K"
+  },
+  "folder": "x4t2j225xwous8tt"
+}

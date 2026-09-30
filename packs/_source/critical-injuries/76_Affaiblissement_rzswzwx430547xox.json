@@ -1,0 +1,15 @@
+{
+  "_id": "rzswzwx430547xox",
+  "name": "Affaiblissement",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "roll": "76-85",
+    "location": "Torse",
+    "severity": 1,
+    "condition": "",
+    "effect": "<p>Choc à l'épaule, au dos, au poumon, côtes cassées… FOR ou END −5 % (au choix du joueur).</p>",
+    "description": "<p>Choc à l'épaule, au dos, au poumon, côtes cassées… FOR ou END −5 % (au choix du joueur).</p>",
+    "source": "Livre Premier p.197"
+  }
+}

@@ -11,10 +11,11 @@
     "range": "Longue",
     "resistance": "VOL",
     "rPlus": "Dégâts +1",
-    "damage": "",
+    "damage": "RU",
     "effect": "<p>Vous générez une pression mentale dans l’esprit de votre cible qui subit RU dégâts psychiques.</p>",
     "description": "<p>Vous générez une pression mentale dans l’esprit de votre cible qui subit RU dégâts psychiques.</p>",
-    "source": "L1"
+    "source": "L1",
+    "damageType": "psychique"
   },
   "folder": "xrt0tjrxjlulqx0x"
 }

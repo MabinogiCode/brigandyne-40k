@@ -1,0 +1,16 @@
+{
+  "_id": "5wjr1ytuw0t020w0",
+  "name": "Cape de caméléonine",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Vêtements",
+    "effect": "Confère un bonus de +20% aux tests de discrétion.",
+    "description": "<p>Confère un bonus de +20% aux tests de discrétion.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 500,
+    "source": "40K"
+  },
+  "folder": "xyznun7xn34w4wp2"
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "35x4z4nzzwznl72m",
+  "name": "Pointeur laser",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Amélioration d’armes à distance",
+    "effect": "Octroie la caractéristique Pointeur laser à l’arme : Bonus de +5% pour les jets de tir avec cette arme. Boîtier fixé au canon qui diffuse un rayon laser en ligne droite permettant une meilleure précision.",
+    "description": "<p>Octroie la caractéristique Pointeur laser à l’arme : Bonus de +5% pour les jets de tir avec cette arme. Boîtier fixé au canon qui diffuse un rayon laser en ligne droite permettant une meilleure précision.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 45,
+    "source": "40K"
+  },
+  "folder": "6tpq5814xtpu4zw4"
+}

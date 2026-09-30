@@ -1,0 +1,15 @@
+{
+  "_id": "xu3yw2px5l5wmrow",
+  "name": "Tour de main",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>La cible gagne 1 Avantage aux tests de TEC pendant *PSY* tours.</p>",
+    "description": "<p>La cible gagne 1 Avantage aux tests de TEC pendant *PSY* tours.</p>",
+    "source": "L1"
+  },
+  "folder": "zy01lzxxmrm4y884"
+}

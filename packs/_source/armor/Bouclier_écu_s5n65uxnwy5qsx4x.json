@@ -7,9 +7,14 @@
     "protection": 2,
     "coverage": "bonus",
     "initiativeMod": -1,
-    "mouMod": 0,
-    "qualities": [],
-    "specialText": "Couvert (1)",
+    "mouMod": -5,
+    "qualities": [
+      {
+        "key": "couvert",
+        "value": 1
+      }
+    ],
+    "specialText": "",
     "price": 0,
     "source": "Brigandyne"
   },

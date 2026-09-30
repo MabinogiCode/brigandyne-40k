@@ -1,0 +1,15 @@
+{
+  "_id": "xyy0q0qx1u0z08o1",
+  "name": "Torche",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "pyromancie",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Vous formez une petite sphère de flammes dans votre main qui peut vous éclairer ou bien vous servir à allumer des feux. Si vous touchez une cible avec, elle subit 1 dégât.</p>",
+    "description": "<p>Vous formez une petite sphère de flammes dans votre main qui peut vous éclairer ou bien vous servir à allumer des feux. Si vous touchez une cible avec, elle subit 1 dégât.</p>",
+    "source": "L1"
+  },
+  "folder": "v5x1swvt13srxxr6"
+}

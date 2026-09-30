@@ -6,9 +6,10 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "effect": "Conduire des véhicules terrestres, se diriger sur des terrains accidentés",
+    "effect": "Conduire des véhicules terrestres,  se diriger sur des terrains accidentés",
     "description": "<p>Conduire des véhicules terrestres, se diriger sur des terrains accidentés</p>",
-    "source": "L1"
+    "source": "L1",
+    "characteristic": "tec"
   },
   "folder": "xx3oqmxm4yo07x47"
 }

@@ -1,0 +1,20 @@
+{
+  "_id": "brg4plates0alourd1",
+  "name": "Armure de plates alourdie",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 6,
+    "coverage": "complete",
+    "initiativeMod": -4,
+    "mouMod": -10,
+    "perMod": 0,
+    "underBonus": 0,
+    "longToDon": false,
+    "qualities": [],
+    "specialText": "Plus de 50 kg ; tombé à terre, le chevalier ne peut plus se relever (Livre Premier p.192-194).",
+    "price": 0,
+    "source": "Brigandyne"
+  },
+  "folder": "x1v34j3xx5s4y51p"
+}

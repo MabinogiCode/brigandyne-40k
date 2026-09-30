@@ -6,7 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
+    "source": "Carrière",
+    "characteristic": "vol",
+    "effect": "Résister aux pouvoirs psychiques, aux effets néfastes du Warp et à la corruption du Chaos"
   },
   "folder": "xx3oqmxm4yo07x47"
 }

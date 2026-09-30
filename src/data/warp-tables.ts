@@ -2,8 +2,6 @@
  * Tables des Phénomènes psychiques et des Périls du Warp.
  * Déclenchées automatiquement sur échec majeur / critique d'un pouvoir psy.
  */
-const { renderTemplate } = foundry.applications.handlebars;
-
 export const PHENOMENA = [
   [1, 2, "Sombre pressentiment", "Tout le monde perd 1 point de SF."],
   [3, 5, "Écho du Warp", "Des voix et des bruits étranges résonnent quelques secondes."],
@@ -64,6 +62,7 @@ function lookup(table, roll) {
  * @param {"phenomenon"|"peril"} kind
  */
 export async function postWarpResult(actor, kind) {
+  const { renderTemplate } = foundry.applications.handlebars;   // résolu paresseusement (tables testables hors Foundry)
   let table = kind === "peril" ? PERILS : PHENOMENA;
   let title = kind === "peril" ? "Péril du Warp" : "Phénomène psychique";
   let r = await new Roll("1d100").evaluate();

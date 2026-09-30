@@ -1,0 +1,16 @@
+{
+  "_id": "lwwy12xxxm260x5u",
+  "name": "Spray moulant",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Drogues et substances",
+    "effect": "Permet de refermer les plaies et de rendre 2 PV à la cible. Une fois après la fin d’un combat.",
+    "description": "<p>Permet de refermer les plaies et de rendre 2 PV à la cible. Une fois après la fin d’un combat.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 50,
+    "source": "40K"
+  },
+  "folder": "xy3s0s3x52k4x160"
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "x5wt1y3xzz54016n",
+  "name": "Slaught",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Drogues et substances",
+    "effect": "(Injecteur/Drogue) Confère un bonus de +20% aux tests de perception pendant 10 minutes",
+    "description": "<p>(Injecteur/Drogue) Confère un bonus de +20% aux tests de perception pendant 10 minutes</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 75,
+    "source": "40K"
+  },
+  "folder": "xy3s0s3x52k4x160"
+}

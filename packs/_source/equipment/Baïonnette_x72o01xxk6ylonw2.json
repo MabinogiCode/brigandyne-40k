@@ -1,0 +1,16 @@
+{
+  "_id": "x72o01xxk6ylonw2",
+  "name": "Baïonnette",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Amélioration d’armes à distance",
+    "effect": "Octroie la caractéristique Baïonnette à l’arme. Elle peut être utilisée au corps-à-corps avec des dégâts de *FOR*-1. Une lame attachée au bout du canon de l’arme, permettant de l’utiliser en guise d’arme de mêlée.",
+    "description": "<p>Octroie la caractéristique Baïonnette à l’arme. Elle peut être utilisée au corps-à-corps avec des dégâts de *FOR*-1. Une lame attachée au bout du canon de l’arme, permettant de l’utiliser en guise d’arme de mêlée.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 5,
+    "source": "40K"
+  },
+  "folder": "6tpq5814xtpu4zw4"
+}

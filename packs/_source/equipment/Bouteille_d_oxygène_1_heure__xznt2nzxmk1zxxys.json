@@ -1,0 +1,16 @@
+{
+  "_id": "xznt2nzxmk1zxxys",
+  "name": "Bouteille d’oxygène (1 heure)",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Survie",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 50,
+    "source": "40K"
+  },
+  "folder": "xu27yznq6rvu33pw"
+}

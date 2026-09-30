@@ -1,0 +1,15 @@
+{
+  "_id": "75syqnvpm3wxlr7n",
+  "name": "Vision nocturne",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "biomancie",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Ce pouvoir vous confère pendant *PSY* minutes une vision nocturne qui vous prémunit des malus dus à l’obscurité. Ce sort est inutile dans le noir total.</p>",
+    "description": "<p>Ce pouvoir vous confère pendant *PSY* minutes une vision nocturne qui vous prémunit des malus dus à l’obscurité. Ce sort est inutile dans le noir total.</p>",
+    "source": "L1"
+  },
+  "folder": "xv36x51kwu18rx4u"
+}

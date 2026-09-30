@@ -1,0 +1,15 @@
+{
+  "_id": "xpz2y4oxmj44k6y4",
+  "name": "Ruse",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>La cible gagne 1 Avantage aux tests impliquant des jeux de hasard pendant *PSY* tours.</p>",
+    "description": "<p>La cible gagne 1 Avantage aux tests impliquant des jeux de hasard pendant *PSY* tours.</p>",
+    "source": "L1"
+  },
+  "folder": "zy01lzxxmrm4y884"
+}

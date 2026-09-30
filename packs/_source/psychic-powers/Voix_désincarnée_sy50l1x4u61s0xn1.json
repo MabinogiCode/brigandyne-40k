@@ -1,0 +1,15 @@
+{
+  "_id": "sy50l1x4u61s0xn1",
+  "name": "Voix désincarnée",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telepathie",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Vous « projetez » votre voix à une dizaine de pas, et vous pouvez donc vous exprimer même si vous êtes bâillonné. Ce tour dure *PSY* minutes.</p>",
+    "description": "<p>Vous « projetez » votre voix à une dizaine de pas, et vous pouvez donc vous exprimer même si vous êtes bâillonné. Ce tour dure *PSY* minutes.</p>",
+    "source": "L1"
+  },
+  "folder": "xrt0tjrxjlulqx0x"
+}

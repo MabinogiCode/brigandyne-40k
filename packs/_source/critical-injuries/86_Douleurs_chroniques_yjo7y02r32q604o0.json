@@ -1,0 +1,15 @@
+{
+  "_id": "yjo7y02r32q604o0",
+  "name": "Douleurs chroniques",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "roll": "86-95",
+    "location": "—",
+    "severity": 1,
+    "condition": "",
+    "effect": "<p>Perte définitive de 2 PV.</p>",
+    "description": "<p>Perte définitive de 2 PV.</p>",
+    "source": "Livre Premier p.197"
+  }
+}

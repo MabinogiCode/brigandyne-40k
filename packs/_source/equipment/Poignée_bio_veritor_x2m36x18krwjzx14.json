@@ -1,0 +1,16 @@
+{
+  "_id": "x2m36x18krwjzx14",
+  "name": "Poignée bio-veritor",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Amélioration d’armes de mêlée",
+    "effect": "Intègre la bio-signature du propriétaire qui verrouille tous les systèmes de l’arme pour que seule la personne autorisée puisse l’utiliser. Populaire au sein des forces de l’ordre ou des porte-flingues paranoïaques.",
+    "description": "<p>Intègre la bio-signature du propriétaire qui verrouille tous les systèmes de l’arme pour que seule la personne autorisée puisse l’utiliser. Populaire au sein des forces de l’ordre ou des porte-flingues paranoïaques.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 250,
+    "source": "40K"
+  },
+  "folder": "pkwjnztoxyp2486w"
+}

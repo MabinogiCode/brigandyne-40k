@@ -10,8 +10,13 @@
     "damageMod": 0,
     "reach": "B",
     "hands": 1,
-    "qualities": [],
-    "specialText": "Point faible",
+    "qualities": [
+      {
+        "key": "pointFaible",
+        "value": null
+      }
+    ],
+    "specialText": "",
     "price": 0,
     "source": "Brigandyne"
   },

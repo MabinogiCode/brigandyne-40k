@@ -1,0 +1,15 @@
+{
+  "_id": "xxx16n8x10umjumu",
+  "name": "Pied-léger",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telekinesie",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>La cible gagne 1 Avantage en MOU pendant *PSY* tours.</p>",
+    "description": "<p>La cible gagne 1 Avantage en MOU pendant *PSY* tours.</p>",
+    "source": "L1"
+  },
+  "folder": "x2u5wno1w47lyx7v"
+}

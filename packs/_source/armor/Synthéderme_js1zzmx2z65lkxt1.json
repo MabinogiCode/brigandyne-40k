@@ -5,14 +5,15 @@
   "img": "icons/svg/shield.svg",
   "system": {
     "protection": 4,
-    "coverage": "bonus",
+    "coverage": "complete",
     "initiativeMod": 0,
     "mouMod": 0,
     "longToDon": true,
     "qualities": [],
     "specialText": "Longue à mettre, Peut se porter sous la plupart des armures",
     "price": 750,
-    "source": "L1"
+    "source": "L1",
+    "underBonus": 2
   },
-  "folder": "xxt2ryu75x5u0xjr"
+  "folder": "x1v34j3xx5s4y51p"
 }

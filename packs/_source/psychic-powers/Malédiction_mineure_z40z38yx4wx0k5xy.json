@@ -1,0 +1,15 @@
+{
+  "_id": "z40z38yx4wx0k5xy",
+  "name": "Malédiction mineure",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Ce sort affuble une cible d’un inconvénient mineur : un zézaiement, des verrues, une odeur désagréable, une pilosité gênante, des boutons, etc. Ce qui lui cause une perte de 5% en SOC pendant *PSY* jours.</p>",
+    "description": "<p>Ce sort affuble une cible d’un inconvénient mineur : un zézaiement, des verrues, une odeur désagréable, une pilosité gênante, des boutons, etc. Ce qui lui cause une perte de 5% en SOC pendant *PSY* jours.</p>",
+    "source": "L1"
+  },
+  "folder": "zy01lzxxmrm4y884"
+}

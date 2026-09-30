@@ -1,0 +1,16 @@
+{
+  "_id": "x3s22n5pq3q12xww",
+  "name": "Stimm",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Drogues et substances",
+    "effect": "(Injecteur) Permet de stabiliser une personne mourante en lui rendant 1 PV.",
+    "description": "<p>(Injecteur) Permet de stabiliser une personne mourante en lui rendant 1 PV.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 75,
+    "source": "40K"
+  },
+  "folder": "xy3s0s3x52k4x160"
+}

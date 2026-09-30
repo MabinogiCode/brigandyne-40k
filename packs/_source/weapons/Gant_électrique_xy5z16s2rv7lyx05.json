@@ -29,7 +29,8 @@
       }
     ],
     "specialText": "",
-    "source": "L1"
+    "source": "L1",
+    "damageType": "electrique"
   },
   "folder": "3007yvxxun441x4y"
 }

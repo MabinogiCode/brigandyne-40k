@@ -1,0 +1,16 @@
+{
+  "_id": "xl1uw43xznm0k5u8",
+  "name": "Icone religieux, fer",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Objets divers",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 50,
+    "source": "40K"
+  },
+  "folder": "qn3jzy5w0kk3t6yo"
+}

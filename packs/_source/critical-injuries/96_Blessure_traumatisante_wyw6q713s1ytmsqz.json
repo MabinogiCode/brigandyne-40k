@@ -1,0 +1,15 @@
+{
+  "_id": "wyw6q713s1ytmsqz",
+  "name": "Blessure traumatisante",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "roll": "96-00",
+    "location": "—",
+    "severity": 1,
+    "condition": "",
+    "effect": "<p>Le PJ a vu la mort de si près qu'il en est devenu moins téméraire. COM ou VOL −5 % (au choix du joueur).</p>",
+    "description": "<p>Le PJ a vu la mort de si près qu'il en est devenu moins téméraire. COM ou VOL −5 % (au choix du joueur).</p>",
+    "source": "Livre Premier p.197"
+  }
+}

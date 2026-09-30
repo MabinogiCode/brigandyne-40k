@@ -1,0 +1,15 @@
+{
+  "_id": "mpw5xpozo4qry53r",
+  "name": "Présage",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "divination",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Ce pouvoir vous permet de lancer un d100 et de garder le résultat « en réserve » pendant une heure. Vous pourrez utiliser ce résultat (ou non) à un prochain test demandé par le MJ. Attention : si vous obtenez un double un revers de fortune vous fera perdre 1 PV. Vous ne pouvez lancer ce pouvoir qu’une fois par jour.</p>",
+    "description": "<p>Ce pouvoir vous permet de lancer un d100 et de garder le résultat « en réserve » pendant une heure. Vous pourrez utiliser ce résultat (ou non) à un prochain test demandé par le MJ. Attention : si vous obtenez un double un revers de fortune vous fera perdre 1 PV. Vous ne pouvez lancer ce pouvoir qu’une fois par jour.</p>",
+    "source": "L1"
+  },
+  "folder": "xq32wyrx5vqyxx3x"
+}

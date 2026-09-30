@@ -1,0 +1,16 @@
+{
+  "_id": "puqsltx2xm05vx48",
+  "name": "Combinaison spatiale",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Survie",
+    "effect": "Permet de survivre dans l’espace.",
+    "description": "<p>Permet de survivre dans l’espace.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 300,
+    "source": "40K"
+  },
+  "folder": "xu27yznq6rvu33pw"
+}

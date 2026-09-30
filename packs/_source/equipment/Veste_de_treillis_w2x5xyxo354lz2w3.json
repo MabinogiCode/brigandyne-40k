@@ -1,0 +1,16 @@
+{
+  "_id": "w2x5xyxo354lz2w3",
+  "name": "Veste de treillis",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Vêtements",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 5,
+    "source": "40K"
+  },
+  "folder": "xyznun7xn34w4wp2"
+}

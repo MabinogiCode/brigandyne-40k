@@ -8,7 +8,8 @@
     "bonus": 5,
     "effect": "Tirer avec des fusils de chasse, des carabines ou des fusils à pompe, les manipuler, les réparer",
     "description": "<p>Tirer avec des fusils de chasse, des carabines ou des fusils à pompe, les manipuler, les réparer</p>",
-    "source": "L1"
+    "source": "L1",
+    "characteristic": "tir"
   },
   "folder": "xr2p012xn1tmr061"
 }

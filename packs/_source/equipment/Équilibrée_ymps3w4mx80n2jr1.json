@@ -1,0 +1,16 @@
+{
+  "_id": "ymps3w4mx80n2jr1",
+  "name": "Équilibrée",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Amélioration d’armes de mêlée",
+    "effect": "Octroie la caractéristique Équilibrée à l’arme : Bonus de +5% pour les tests de COM avec cette arme. Une arme bien équilibrée peut devenir une véritable extension du bras.",
+    "description": "<p>Octroie la caractéristique Équilibrée à l’arme : Bonus de +5% pour les tests de COM avec cette arme. Une arme bien équilibrée peut devenir une véritable extension du bras.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 175,
+    "source": "40K"
+  },
+  "folder": "pkwjnztoxyp2486w"
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "yy0wu4utyo1zswx1",
+  "name": "ATH",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Amélioration d’armure",
+    "effect": "Octroie un bonus de +10% aux tests de tir et aux tests basés sur la vue. S’applique sur un casque intégral. L’Affichage Tête Haute est un dispositif qui permet d’afficher toutes sortes d’informations destinées à assister l’utilisateur.",
+    "description": "<p>Octroie un bonus de +10% aux tests de tir et aux tests basés sur la vue. S’applique sur un casque intégral. L’Affichage Tête Haute est un dispositif qui permet d’afficher toutes sortes d’informations destinées à assister l’utilisateur.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 750,
+    "source": "40K"
+  },
+  "folder": "k0617s3xr0u5r842"
+}

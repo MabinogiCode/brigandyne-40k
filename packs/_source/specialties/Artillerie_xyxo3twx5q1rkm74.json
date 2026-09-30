@@ -4,9 +4,11 @@
   "type": "specialty",
   "img": "icons/svg/upgrade.svg",
   "system": {
-    "specialtyType": "standard",
-    "bonus": 10,
-    "source": "Carrière"
+    "specialtyType": "martiale",
+    "bonus": 5,
+    "source": "Carrière",
+    "characteristic": "tir",
+    "effect": "Tirer avec des pièces d’artillerie, les manipuler, les réparer."
   },
   "folder": "xx3oqmxm4yo07x47"
 }

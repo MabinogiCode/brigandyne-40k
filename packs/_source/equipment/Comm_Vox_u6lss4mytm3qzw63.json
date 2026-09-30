@@ -1,0 +1,16 @@
+{
+  "_id": "u6lss4mytm3qzw63",
+  "name": "Comm-Vox",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Objets divers",
+    "effect": "Poste émetteur/récepteur permettant de communiquer sur de très grandes distances (Jusqu’à un vaisseau en orbite par exemple).",
+    "description": "<p>Poste émetteur/récepteur permettant de communiquer sur de très grandes distances (Jusqu’à un vaisseau en orbite par exemple).</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 250,
+    "source": "40K"
+  },
+  "folder": "qn3jzy5w0kk3t6yo"
+}

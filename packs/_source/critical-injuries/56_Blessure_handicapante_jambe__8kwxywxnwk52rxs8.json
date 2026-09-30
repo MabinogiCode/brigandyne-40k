@@ -1,0 +1,15 @@
+{
+  "_id": "8kwxywxnwk52rxs8",
+  "name": "Blessure handicapante (jambe)",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "roll": "56-65",
+    "location": "Jambe",
+    "severity": 1,
+    "condition": "",
+    "effect": "<p>Choc ou déchirure (jambe, genou, pied ou hanche). MOU ou DIS −5 % (au choix du joueur).</p>",
+    "description": "<p>Choc ou déchirure (jambe, genou, pied ou hanche). MOU ou DIS −5 % (au choix du joueur).</p>",
+    "source": "Livre Premier p.197"
+  }
+}

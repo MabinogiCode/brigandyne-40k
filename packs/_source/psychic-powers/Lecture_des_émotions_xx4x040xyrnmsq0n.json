@@ -1,0 +1,15 @@
+{
+  "_id": "xx4x040xyrnmsq0n",
+  "name": "Lecture des émotions",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telepathie",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Vous pouvez connaître l’état d’esprit d’une personne. Si elle est en colère, triste, joyeuse, etc.</p>",
+    "description": "<p>Vous pouvez connaître l’état d’esprit d’une personne. Si elle est en colère, triste, joyeuse, etc.</p>",
+    "source": "L1"
+  },
+  "folder": "xrt0tjrxjlulqx0x"
+}

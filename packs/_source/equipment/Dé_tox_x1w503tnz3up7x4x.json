@@ -1,0 +1,16 @@
+{
+  "_id": "x1w503tnz3up7x4x",
+  "name": "Dé-tox",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Drogues et substances",
+    "effect": "(Injecteur) Met fin aux effets d’un poison ou d’un gaz persistant qui touche un personnage.",
+    "description": "<p>(Injecteur) Met fin aux effets d’un poison ou d’un gaz persistant qui touche un personnage.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 50,
+    "source": "40K"
+  },
+  "folder": "xy3s0s3x52k4x160"
+}

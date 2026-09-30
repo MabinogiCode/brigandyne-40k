@@ -1,0 +1,15 @@
+{
+  "_id": "x40wm8yz4lw1sx01",
+  "name": "Bourrasque",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telekinesie",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Vous pouvez provoquer de faibles vagues d’énergie cinétique qui peuvent soulever une cape ou éteindre une petite flamme.</p>",
+    "description": "<p>Vous pouvez provoquer de faibles vagues d’énergie cinétique qui peuvent soulever une cape ou éteindre une petite flamme.</p>",
+    "source": "L1"
+  },
+  "folder": "x2u5wno1w47lyx7v"
+}

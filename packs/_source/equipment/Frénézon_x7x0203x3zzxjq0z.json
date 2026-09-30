@@ -1,0 +1,16 @@
+{
+  "_id": "x7x0203x3zzxjq0z",
+  "name": "Frénézon",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Drogues et substances",
+    "effect": "(Injecteur/Drogue) Immunise contre l’effet PEUR et octroie un bonus de +10% aux tests de COM et +1 aux dégâts de mêlée.",
+    "description": "<p>(Injecteur/Drogue) Immunise contre l’effet PEUR et octroie un bonus de +10% aux tests de COM et +1 aux dégâts de mêlée.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 150,
+    "source": "40K"
+  },
+  "folder": "xy3s0s3x52k4x160"
+}

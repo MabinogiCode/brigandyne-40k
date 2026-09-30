@@ -1,0 +1,15 @@
+{
+  "_id": "y0lzw2ns50mk2x5t",
+  "name": "Feux follets",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "pyromancie",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Vous créez *PSY* lumières dansantes que vous dirigez à distance pendant une heure. Ces lumières ne brûlent pas, mais elles attirent l’attention.</p>",
+    "description": "<p>Vous créez *PSY* lumières dansantes que vous dirigez à distance pendant une heure. Ces lumières ne brûlent pas, mais elles attirent l’attention.</p>",
+    "source": "L1"
+  },
+  "folder": "v5x1swvt13srxxr6"
+}

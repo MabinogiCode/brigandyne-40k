@@ -1,0 +1,15 @@
+{
+  "_id": "x57xz12xjq44wszm",
+  "name": "Choc au crâne",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "roll": "21-30",
+    "location": "Tête",
+    "severity": 1,
+    "condition": "",
+    "effect": "<p>Perte de neurones, trous de mémoire, légers troubles cognitifs… CNS −5 %.</p>",
+    "description": "<p>Perte de neurones, trous de mémoire, légers troubles cognitifs… CNS −5 %.</p>",
+    "source": "Livre Premier p.197"
+  }
+}

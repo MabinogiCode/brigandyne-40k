@@ -1,12 +1,24 @@
 /**
- * Importeur de contenu : transforme les .md extraits des .docx d'adaptation
+ * Importeur de contenu HISTORIQUE : transforme les .md extraits des .docx d'adaptation
  * en sources JSON de compendiums (packs/_source/<pack>/*.json).
  *
- *   node tools/import-content.mjs
+ * ⚠️ OBSOLÈTE — il ÉCRASE les compendiums, désormais corrigés et complétés à la main
+ * (carrières « 10 spécialités + 10 talents », pouvoirs mineurs, armes sans munitions
+ * parasites, séquelles RAW, espèces…). Sa relance annule ces corrections (80 fichiers
+ * différents au dernier essai). Source de vérité = packs/_source, verrouillée par la
+ * suite de tests. Scripts sûrs à la place : `npm run import:equipment`, `npm run import:sequelae`.
+ *
+ *   node tools/import-content.ts --force     (à vos risques)
  */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+
+if (!process.argv.includes("--force")) {
+  console.error("import-content.ts est OBSOLÈTE : il écraserait les compendiums corrigés à la main.");
+  console.error("Relancez avec --force si vous savez ce que vous faites (puis `git checkout -- packs/` pour annuler).");
+  process.exit(1);
+}
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");

@@ -1,0 +1,16 @@
+{
+  "_id": "45qz34yvy2ru100z",
+  "name": "Câbles, 10 mètres",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Technologie",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 25,
+    "source": "40K"
+  },
+  "folder": "t2581zytw3y4rj15"
+}

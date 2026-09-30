@@ -1,0 +1,16 @@
+{
+  "_id": "x0t7112xvu36slr2",
+  "name": "Jumelles",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Objets divers",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 100,
+    "source": "40K"
+  },
+  "folder": "qn3jzy5w0kk3t6yo"
+}

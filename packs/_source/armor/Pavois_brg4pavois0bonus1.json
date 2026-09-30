@@ -1,0 +1,25 @@
+{
+  "_id": "brg4pavois0bonus1",
+  "name": "Pavois",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "protection": 0,
+    "coverage": "bonus",
+    "initiativeMod": -3,
+    "mouMod": -5,
+    "perMod": 0,
+    "underBonus": 0,
+    "longToDon": false,
+    "qualities": [
+      {
+        "key": "couvert",
+        "value": 2
+      }
+    ],
+    "specialText": "Bouclier planté au sol : 2 Désavantages au tireur (Livre Premier p.192-194). Un Ogrin ou Ogre de FOR 70+ peut s’en servir comme bouclier (Protection +3, Init −3).",
+    "price": 0,
+    "source": "Brigandyne"
+  },
+  "folder": "xxt2ryu75x5u0xjr"
+}

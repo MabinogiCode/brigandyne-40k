@@ -1,0 +1,15 @@
+{
+  "_id": "xo4w08vxo372xtxq",
+  "name": "Connaissance du temps écoulé",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "divination",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Ce pouvoir a une double utilité : connaître l’âge d’une chose ou d’une personne, et connaître le temps exact qui s’est écoulé à partir d’un moment précis.</p>",
+    "description": "<p>Ce pouvoir a une double utilité : connaître l’âge d’une chose ou d’une personne, et connaître le temps exact qui s’est écoulé à partir d’un moment précis.</p>",
+    "source": "L1"
+  },
+  "folder": "xq32wyrx5vqyxx3x"
+}

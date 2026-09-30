@@ -4,9 +4,11 @@
   "type": "specialty",
   "img": "icons/svg/upgrade.svg",
   "system": {
-    "specialtyType": "standard",
-    "bonus": 10,
-    "source": "Carrière"
+    "specialtyType": "occulte",
+    "bonus": 5,
+    "source": "Carrière",
+    "characteristic": "vol",
+    "effect": "Ressentir la présence de l’Empereur, provoquer des Actes de Foi et des Miracles"
   },
   "folder": "xx3oqmxm4yo07x47"
 }

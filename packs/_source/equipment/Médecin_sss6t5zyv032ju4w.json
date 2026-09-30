@@ -1,0 +1,16 @@
+{
+  "_id": "sss6t5zyv032ju4w",
+  "name": "Médecin",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Services (salaire par jour)",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 25,
+    "source": "40K"
+  },
+  "folder": "72rqqryx0244j5nj"
+}

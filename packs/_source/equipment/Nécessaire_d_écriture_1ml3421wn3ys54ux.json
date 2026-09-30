@@ -1,0 +1,16 @@
+{
+  "_id": "1ml3421wn3ys54ux",
+  "name": "Nécessaire d’écriture",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Objets divers",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 50,
+    "source": "40K"
+  },
+  "folder": "qn3jzy5w0kk3t6yo"
+}

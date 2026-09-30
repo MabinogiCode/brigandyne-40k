@@ -1,0 +1,16 @@
+{
+  "_id": "x51r1zmk30y1kxz4",
+  "name": "Encens omnimessique",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Drogues et substances",
+    "effect": "Nécessite un Encensoir. Une dose correspond à une scène. Pendant une scène, le porteur peut concentrer les fumées de l’encensoir sur un objet technologique de l’Imperium à la fois. Tout test concernant l’utilisation de l’objet se fait avec un Avantage.",
+    "description": "<p>Nécessite un Encensoir. Une dose correspond à une scène. Pendant une scène, le porteur peut concentrer les fumées de l’encensoir sur un objet technologique de l’Imperium à la fois. Tout test concernant l’utilisation de l’objet se fait avec un Avantage.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 300,
+    "source": "40K"
+  },
+  "folder": "xy3s0s3x52k4x160"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "x12mv0xxury523k3",
+  "name": "Blessure sale, infection",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "roll": "46-55",
+    "location": "—",
+    "severity": 1,
+    "condition": "",
+    "effect": "<p>−1 PV/jour tant que la blessure n'est pas soignée par un médecin ou le membre amputé.</p>",
+    "description": "<p>−1 PV/jour tant que la blessure n'est pas soignée par un médecin ou le membre amputé.</p>",
+    "source": "Livre Premier p.197"
+  }
+}

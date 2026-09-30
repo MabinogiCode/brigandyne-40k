@@ -8,7 +8,8 @@
     "bonus": 10,
     "effect": "Piloter des vaisseaux spatiaux, connaître les systèmes d’un vaisseau",
     "description": "<p>Piloter des vaisseaux spatiaux, connaître les systèmes d’un vaisseau</p>",
-    "source": "L1"
+    "source": "L1",
+    "characteristic": "tec"
   },
   "folder": "xx3oqmxm4yo07x47"
 }

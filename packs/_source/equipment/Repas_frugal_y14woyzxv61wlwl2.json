@@ -1,0 +1,16 @@
+{
+  "_id": "y14woyzxv61wlwl2",
+  "name": "Repas frugal",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Nourriture et boissons",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 2,
+    "source": "40K"
+  },
+  "folder": "x4t2j225xwous8tt"
+}

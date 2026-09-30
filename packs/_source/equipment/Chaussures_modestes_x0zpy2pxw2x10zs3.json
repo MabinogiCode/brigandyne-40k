@@ -1,0 +1,16 @@
+{
+  "_id": "x0zpy2pxw2x10zs3",
+  "name": "Chaussures, modestes",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Vêtements",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 5,
+    "source": "40K"
+  },
+  "folder": "xyznun7xn34w4wp2"
+}

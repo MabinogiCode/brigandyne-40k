@@ -1,0 +1,15 @@
+{
+  "_id": "u8lvk8x1u2ytxxxy",
+  "name": "Regard de flammes",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "pyromancie",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Vos yeux se mettent à brûler d’un éclat de flammes qui vous confère 1 Avantage en intimidation.</p>",
+    "description": "<p>Vos yeux se mettent à brûler d’un éclat de flammes qui vous confère 1 Avantage en intimidation.</p>",
+    "source": "L1"
+  },
+  "folder": "v5x1swvt13srxxr6"
+}

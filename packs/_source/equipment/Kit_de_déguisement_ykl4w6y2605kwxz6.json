@@ -1,0 +1,16 @@
+{
+  "_id": "ykl4w6y2605kwxz6",
+  "name": "Kit de déguisement",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Outils",
+    "effect": "Permet de modifier son apparence dans les moindres détails voir plus, comme de la Peau synthétique pour modeler son visage.",
+    "description": "<p>Permet de modifier son apparence dans les moindres détails voir plus, comme de la Peau synthétique pour modeler son visage.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 150,
+    "source": "40K"
+  },
+  "folder": "vww7oqr2kys80z1z"
+}

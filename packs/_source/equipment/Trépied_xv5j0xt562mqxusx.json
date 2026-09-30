@@ -1,0 +1,16 @@
+{
+  "_id": "xv5j0xt562mqxusx",
+  "name": "Trépied",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Objets divers",
+    "effect": "Annule l’effet “Lourde” sur les armes à distance.",
+    "description": "<p>Annule l’effet “Lourde” sur les armes à distance.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 50,
+    "source": "40K"
+  },
+  "folder": "qn3jzy5w0kk3t6yo"
+}

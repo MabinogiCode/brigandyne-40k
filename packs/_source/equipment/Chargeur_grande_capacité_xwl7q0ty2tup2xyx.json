@@ -1,0 +1,16 @@
+{
+  "_id": "xwl7q0ty2tup2xyx",
+  "name": "Chargeur grande capacité",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Amélioration d’armes à distance",
+    "effect": "Uniquement les armes à munitions solides et les armes à Bolt. Double le nombre de munitions de l’arme. Un chargeur de grande taille pour contenir plus de munitions.",
+    "description": "<p>Uniquement les armes à munitions solides et les armes à Bolt. Double le nombre de munitions de l’arme. Un chargeur de grande taille pour contenir plus de munitions.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 25,
+    "source": "40K"
+  },
+  "folder": "6tpq5814xtpu4zw4"
+}

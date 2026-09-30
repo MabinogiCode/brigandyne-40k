@@ -1,0 +1,15 @@
+{
+  "_id": "x3qzn3oxrkzsw6zp",
+  "name": "Mauvais oeil",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "divination",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>La cible perd D10% pendant *PSY* heures dans une compétence au choix (sauf COM et PSY).</p>",
+    "description": "<p>La cible perd D10% pendant *PSY* heures dans une compétence au choix (sauf COM et PSY).</p>",
+    "source": "L1"
+  },
+  "folder": "xq32wyrx5vqyxx3x"
+}

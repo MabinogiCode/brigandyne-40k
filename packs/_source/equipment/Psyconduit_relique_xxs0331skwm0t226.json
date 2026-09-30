@@ -1,0 +1,16 @@
+{
+  "_id": "xxs0331skwm0t226",
+  "name": "Psyconduit, relique",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Outils",
+    "effect": "Bonus de +10% aux tests de PSY pour canaliser un pouvoir.",
+    "description": "<p>Bonus de +10% aux tests de PSY pour canaliser un pouvoir.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 2500,
+    "source": "40K"
+  },
+  "folder": "vww7oqr2kys80z1z"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "x7w55z7xo5vq30s1",
+  "name": "Blessure handicapante (main)",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "roll": "66-75",
+    "location": "Bras",
+    "severity": 1,
+    "condition": "",
+    "effect": "<p>Choc ou déchirure (main, doigts, coude ou poignet). TEC ou TIR −5 % (au choix du joueur).</p>",
+    "description": "<p>Choc ou déchirure (main, doigts, coude ou poignet). TEC ou TIR −5 % (au choix du joueur).</p>",
+    "source": "Livre Premier p.197"
+  }
+}

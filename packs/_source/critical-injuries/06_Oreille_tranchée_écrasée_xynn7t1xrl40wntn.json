@@ -1,0 +1,15 @@
+{
+  "_id": "xynn7t1xrl40wntn",
+  "name": "Oreille tranchée, écrasée",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "roll": "06-10",
+    "location": "Tête",
+    "severity": 1,
+    "condition": "",
+    "effect": "<p>Tous les tests de PER auditive se font à −10 %.</p>",
+    "description": "<p>Tous les tests de PER auditive se font à −10 %.</p>",
+    "source": "Livre Premier p.197"
+  }
+}

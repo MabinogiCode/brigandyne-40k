@@ -1,0 +1,15 @@
+{
+  "_id": "xn0t4q1xz041yzo8",
+  "name": "Souvenir enlaidissant",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "roll": "11-20",
+    "location": "Visage",
+    "severity": 1,
+    "condition": "",
+    "effect": "<p>Nez de travers, entaille à la bouche, dents en moins, crâne pelé, vilaine cicatrice… SOC −5 %.</p>",
+    "description": "<p>Nez de travers, entaille à la bouche, dents en moins, crâne pelé, vilaine cicatrice… SOC −5 %.</p>",
+    "source": "Livre Premier p.197"
+  }
+}

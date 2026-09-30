@@ -1,0 +1,15 @@
+{
+  "_id": "p2x08wsx1s436l62",
+  "name": "Œil crevé",
+  "type": "criticalInjury",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "roll": "01-05",
+    "location": "Tête",
+    "severity": 1,
+    "condition": "",
+    "effect": "<p>Pas de chance, le personnage devient borgne. TIR, TEC et PER −5 %.</p>",
+    "description": "<p>Pas de chance, le personnage devient borgne. TIR, TEC et PER −5 %.</p>",
+    "source": "Livre Premier p.197"
+  }
+}

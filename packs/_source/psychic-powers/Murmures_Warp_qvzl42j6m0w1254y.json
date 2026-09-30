@@ -1,0 +1,15 @@
+{
+  "_id": "qvzl42j6m0w1254y",
+  "name": "Murmures Warp",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Vous faite retentir d’étranges murmures ou sons jusqu’à *PSY* mètres de vous.</p>",
+    "description": "<p>Vous faite retentir d’étranges murmures ou sons jusqu’à *PSY* mètres de vous.</p>",
+    "source": "L1"
+  },
+  "folder": "zy01lzxxmrm4y884"
+}

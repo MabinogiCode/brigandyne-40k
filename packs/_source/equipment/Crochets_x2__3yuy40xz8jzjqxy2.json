@@ -1,0 +1,16 @@
+{
+  "_id": "3yuy40xz8jzjqxy2",
+  "name": "Crochets (x2)",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Outils",
+    "effect": "Permet de crocheter des serrures manuelles.",
+    "description": "<p>Permet de crocheter des serrures manuelles.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 10,
+    "source": "40K"
+  },
+  "folder": "vww7oqr2kys80z1z"
+}

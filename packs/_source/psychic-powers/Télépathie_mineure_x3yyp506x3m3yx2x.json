@@ -1,0 +1,15 @@
+{
+  "_id": "x3yyp506x3m3yx2x",
+  "name": "Télépathie mineure",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telepathie",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Vous pouvez communiquer dans l’esprit d’une personne mais vous êtes limité à une phrase courte. La personne peut vous répondre de la même manière.</p>",
+    "description": "<p>Vous pouvez communiquer dans l’esprit d’une personne mais vous êtes limité à une phrase courte. La personne peut vous répondre de la même manière.</p>",
+    "source": "L1"
+  },
+  "folder": "xrt0tjrxjlulqx0x"
+}

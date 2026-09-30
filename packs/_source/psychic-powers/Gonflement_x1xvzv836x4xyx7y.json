@@ -1,0 +1,15 @@
+{
+  "_id": "x1xvzv836x4xyx7y",
+  "name": "Gonflement",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "biomancie",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Vous gonflez jusqu’à devenir beaucoup plus impressionnant. Vous gagnez +10% à tous vos tests d’intimidation.</p>",
+    "description": "<p>Vous gonflez jusqu’à devenir beaucoup plus impressionnant. Vous gagnez +10% à tous vos tests d’intimidation.</p>",
+    "source": "L1"
+  },
+  "folder": "xv36x51kwu18rx4u"
+}

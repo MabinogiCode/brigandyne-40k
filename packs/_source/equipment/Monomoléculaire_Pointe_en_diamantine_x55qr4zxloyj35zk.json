@@ -1,0 +1,16 @@
+{
+  "_id": "x55qr4zxloyj35zk",
+  "name": "Monomoléculaire - Pointe/ en diamantine",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Amélioration d’armes de mêlée",
+    "effect": "Octroie la caractéristique Perce-armure (1) (ou +1 si l’arme possède déjà la caractéristique). Les armes monomoléculaires possèdent une ou plusieurs lames dont le tranchant, qui ne s’émousse jamais, traverse facilement les armures. De la même manière, une pointe en diamantine sur une masse renforce sa perforation.",
+    "description": "<p>Octroie la caractéristique Perce-armure (1) (ou +1 si l’arme possède déjà la caractéristique). Les armes monomoléculaires possèdent une ou plusieurs lames dont le tranchant, qui ne s’émousse jamais, traverse facilement les armures. De la même manière, une pointe en diamantine sur une masse renforce sa perforation.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 200,
+    "source": "40K"
+  },
+  "folder": "pkwjnztoxyp2486w"
+}

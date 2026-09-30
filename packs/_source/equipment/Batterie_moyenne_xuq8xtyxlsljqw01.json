@@ -1,0 +1,16 @@
+{
+  "_id": "xuq8xtyxlsljqw01",
+  "name": "Batterie, moyenne",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Technologie",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 100,
+    "source": "40K"
+  },
+  "folder": "t2581zytw3y4rj15"
+}

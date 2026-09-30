@@ -1,0 +1,15 @@
+{
+  "_id": "13r43s541sqm1tmy",
+  "name": "Guérison cutanée",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "biomancie",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Ce pouvoir guérit instantanément les petits désagréments cutanés (boutons, verrues, rougeurs…) et permet de recouvrer une peau sans défaut. Ce sort ne fonctionne pas sur les furoncles issus de maladies graves comme la peste.</p>",
+    "description": "<p>Ce pouvoir guérit instantanément les petits désagréments cutanés (boutons, verrues, rougeurs…) et permet de recouvrer une peau sans défaut. Ce sort ne fonctionne pas sur les furoncles issus de maladies graves comme la peste.</p>",
+    "source": "L1"
+  },
+  "folder": "xv36x51kwu18rx4u"
+}

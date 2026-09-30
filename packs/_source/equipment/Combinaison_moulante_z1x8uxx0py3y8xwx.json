@@ -1,0 +1,16 @@
+{
+  "_id": "z1x8uxx0py3y8xwx",
+  "name": "Combinaison moulante",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Vêtements",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 10,
+    "source": "40K"
+  },
+  "folder": "xyznun7xn34w4wp2"
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "7nspz3xkyp354xuz",
+  "name": "Tord-boyaux, ½ litre",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Nourriture et boissons",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 1,
+    "source": "40K"
+  },
+  "folder": "x4t2j225xwous8tt"
+}

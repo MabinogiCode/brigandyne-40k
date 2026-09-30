@@ -1,0 +1,14 @@
+{
+  "_id": "qv35v1oj3t3zylz3",
+  "name": "Arme lourde",
+  "type": "specialty",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "specialtyType": "martiale",
+    "characteristic": "tir",
+    "bonus": 5,
+    "effect": "Tirer avec les armes lourdes comme des canons à plasma ou des Bolters lourds, les manipuler, les réparer",
+    "source": "40K"
+  },
+  "folder": "xx3oqmxm4yo07x47"
+}

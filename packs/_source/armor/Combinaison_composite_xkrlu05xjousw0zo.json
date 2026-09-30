@@ -5,14 +5,15 @@
   "img": "icons/svg/shield.svg",
   "system": {
     "protection": 2,
-    "coverage": "bonus",
+    "coverage": "complete",
     "initiativeMod": 0,
     "mouMod": 0,
     "longToDon": false,
     "qualities": [],
     "specialText": "Peut se porter sous la plupart des armures",
     "price": 450,
-    "source": "L1"
+    "source": "L1",
+    "underBonus": 1
   },
-  "folder": "xxt2ryu75x5u0xjr"
+  "folder": "x1v34j3xx5s4y51p"
 }

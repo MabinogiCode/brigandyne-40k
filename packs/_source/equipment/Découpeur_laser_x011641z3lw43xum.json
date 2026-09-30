@@ -1,0 +1,16 @@
+{
+  "_id": "x011641z3lw43xum",
+  "name": "Découpeur laser",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Outils",
+    "effect": "Outil encombrant pour découper le métal.",
+    "description": "<p>Outil encombrant pour découper le métal.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 125,
+    "source": "40K"
+  },
+  "folder": "vww7oqr2kys80z1z"
+}

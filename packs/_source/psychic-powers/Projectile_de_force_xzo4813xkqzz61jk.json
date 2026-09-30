@@ -8,13 +8,14 @@
     "isMinor": false,
     "difficulty": 10,
     "duration": "Instantanée",
-    "range": "M0yenne",
+    "range": "Moyenne",
     "resistance": "-",
     "rPlus": "Dégâts +1",
-    "damage": "",
+    "damage": "RU+2",
     "effect": "<p>Vous invoquez une force invisible au creux de vos mains avant de la relâcher vers votre cible pour lui infliger RU+2 dégâts. Si le pouvoir inflige 6 dégâts, la cible tombe à terre.</p>",
     "description": "<p>Vous invoquez une force invisible au creux de vos mains avant de la relâcher vers votre cible pour lui infliger RU+2 dégâts. Si le pouvoir inflige 6 dégâts, la cible tombe à terre.</p>",
-    "source": "L1"
+    "source": "L1",
+    "damageType": "physique"
   },
   "folder": "x2u5wno1w47lyx7v"
 }

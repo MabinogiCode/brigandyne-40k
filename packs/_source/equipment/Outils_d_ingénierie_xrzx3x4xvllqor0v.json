@@ -1,0 +1,16 @@
+{
+  "_id": "xrzx3x4xvllqor0v",
+  "name": "Outils d'ingénierie",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Outils",
+    "effect": "Permet d’effectuer des réparations importantes.",
+    "description": "<p>Permet d’effectuer des réparations importantes.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 100,
+    "source": "40K"
+  },
+  "folder": "vww7oqr2kys80z1z"
+}

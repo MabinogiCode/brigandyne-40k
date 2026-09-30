@@ -1,0 +1,16 @@
+{
+  "_id": "4tlpyyx0v5x64x62",
+  "name": "Bure religieuse, riche",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Vêtements",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 35,
+    "source": "40K"
+  },
+  "folder": "xyznun7xn34w4wp2"
+}

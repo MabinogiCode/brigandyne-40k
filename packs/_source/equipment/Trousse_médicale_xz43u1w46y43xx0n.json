@@ -1,0 +1,16 @@
+{
+  "_id": "xz43u1w46y43xx0n",
+  "name": "Trousse médicale",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Outils",
+    "effect": "Permet de pratique des premier soins de bonne qualité.",
+    "description": "<p>Permet de pratique des premier soins de bonne qualité.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 85,
+    "source": "40K"
+  },
+  "folder": "vww7oqr2kys80z1z"
+}

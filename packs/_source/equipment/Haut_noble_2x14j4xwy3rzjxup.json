@@ -1,0 +1,16 @@
+{
+  "_id": "2x14j4xwy3rzjxup",
+  "name": "Haut noble",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Vêtements",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 75,
+    "source": "40K"
+  },
+  "folder": "xyznun7xn34w4wp2"
+}

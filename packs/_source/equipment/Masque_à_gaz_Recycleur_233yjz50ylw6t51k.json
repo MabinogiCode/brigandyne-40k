@@ -1,0 +1,16 @@
+{
+  "_id": "233yjz50ylw6t51k",
+  "name": "Masque à gaz/Recycleur",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Survie",
+    "effect": "Confère un bonus de +20% contre les effets des gaz.",
+    "description": "<p>Confère un bonus de +20% contre les effets des gaz.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 150,
+    "source": "40K"
+  },
+  "folder": "xu27yznq6rvu33pw"
+}

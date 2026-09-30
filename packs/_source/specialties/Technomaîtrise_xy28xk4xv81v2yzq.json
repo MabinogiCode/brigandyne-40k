@@ -6,7 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
+    "source": "Carrière",
+    "characteristic": "tec",
+    "effect": "Connaissance sur la technologie de l’Imperium, manipuler les objets technologiques de l’Imperium"
   },
   "folder": "xx3oqmxm4yo07x47"
 }

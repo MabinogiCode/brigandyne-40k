@@ -1,0 +1,15 @@
+{
+  "_id": "zwrykxxrt8zj3xu5",
+  "name": "Solide comme un roc",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "biomancie",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>La cible gagne 1 point de protection pendant *PSY* minutes. Ce point est à usage unique et disparaît dès qu’il a été utilisé.</p>",
+    "description": "<p>La cible gagne 1 point de protection pendant *PSY* minutes. Ce point est à usage unique et disparaît dès qu’il a été utilisé.</p>",
+    "source": "L1"
+  },
+  "folder": "xv36x51kwu18rx4u"
+}

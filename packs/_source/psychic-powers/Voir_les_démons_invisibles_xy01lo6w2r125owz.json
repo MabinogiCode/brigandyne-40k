@@ -1,0 +1,15 @@
+{
+  "_id": "xy01lo6w2r125owz",
+  "name": "Voir les démons invisibles",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "divination",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Vous pouvez voir les démons autour de vous pendant *PSY* minutes. Ainsi, les démons camouflés, déguisés ou bien qui possèdent un corps de mortel seront découverts.</p>",
+    "description": "<p>Vous pouvez voir les démons autour de vous pendant *PSY* minutes. Ainsi, les démons camouflés, déguisés ou bien qui possèdent un corps de mortel seront découverts.</p>",
+    "source": "L1"
+  },
+  "folder": "xq32wyrx5vqyxx3x"
+}

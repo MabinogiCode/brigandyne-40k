@@ -9,8 +9,13 @@
     "initiativeMod": -1,
     "mouMod": -5,
     "longToDon": true,
-    "qualities": [],
-    "specialText": "Décupleur, Longue à mettre",
+    "qualities": [
+      {
+        "key": "decupleur",
+        "value": null
+      }
+    ],
+    "specialText": "Longue à mettre",
     "price": 3500,
     "source": "L1"
   },

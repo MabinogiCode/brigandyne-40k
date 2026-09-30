@@ -14,8 +14,13 @@
     "magazine": 0,
     "ammoType": "",
     "price": 5,
-    "qualities": [],
-    "specialText": "Poing faible",
+    "qualities": [
+      {
+        "key": "pointFaible",
+        "value": null
+      }
+    ],
+    "specialText": "",
     "source": "L1"
   },
   "folder": "3007yvxxun441x4y"

@@ -1,0 +1,16 @@
+{
+  "_id": "yw35oxyp38w6xyp8",
+  "name": "Batterie, grande",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Technologie",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 400,
+    "source": "40K"
+  },
+  "folder": "t2581zytw3y4rj15"
+}

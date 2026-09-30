@@ -8,7 +8,8 @@
     "bonus": 5,
     "effect": "Utiliser des grenades, manipuler des explosifs, désamorcer des explosifs.",
     "description": "<p>Utiliser des grenades, manipuler des explosifs, désamorcer des explosifs.</p>",
-    "source": "L1"
+    "source": "L1",
+    "characteristic": "tir"
   },
   "folder": "xr2p012xn1tmr061"
 }

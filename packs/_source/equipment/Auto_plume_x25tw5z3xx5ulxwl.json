@@ -1,0 +1,16 @@
+{
+  "_id": "x25tw5z3xx5ulxwl",
+  "name": "Auto-plume",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Objets divers",
+    "effect": "Plume motorisée capable d’écrire automatiquement les paroles de son utilisateur.",
+    "description": "<p>Plume motorisée capable d’écrire automatiquement les paroles de son utilisateur.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 70,
+    "source": "40K"
+  },
+  "folder": "qn3jzy5w0kk3t6yo"
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "j3u3lur81n2o0u20",
+  "name": "Générateur, intermédiaire",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Technologie",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 750,
+    "source": "40K"
+  },
+  "folder": "t2581zytw3y4rj15"
+}

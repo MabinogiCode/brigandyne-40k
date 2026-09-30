@@ -1,0 +1,16 @@
+{
+  "_id": "x0xqz1z53ymx1x0l",
+  "name": "Outils de mécanique",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Outils",
+    "effect": "Permet d’effectuer des réparations simples.",
+    "description": "<p>Permet d’effectuer des réparations simples.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 75,
+    "source": "40K"
+  },
+  "folder": "vww7oqr2kys80z1z"
+}

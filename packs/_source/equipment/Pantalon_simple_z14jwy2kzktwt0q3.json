@@ -1,0 +1,16 @@
+{
+  "_id": "z14jwy2kzktwt0q3",
+  "name": "Pantalon simple",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Vêtements",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 2,
+    "source": "40K"
+  },
+  "folder": "xyznun7xn34w4wp2"
+}

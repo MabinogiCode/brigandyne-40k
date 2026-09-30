@@ -1,0 +1,16 @@
+{
+  "_id": "xy0w56w4sq24jx1p",
+  "name": "Filtre nasal",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Survie",
+    "effect": "Confère un bonus de +10% pour résister à l’effet d’un gaz.",
+    "description": "<p>Confère un bonus de +10% pour résister à l’effet d’un gaz.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 75,
+    "source": "40K"
+  },
+  "folder": "xu27yznq6rvu33pw"
+}

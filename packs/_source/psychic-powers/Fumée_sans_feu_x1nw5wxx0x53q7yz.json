@@ -1,0 +1,15 @@
+{
+  "_id": "x1nw5wxx0x53q7yz",
+  "name": "Fumée sans feu",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "pyromancie",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Une fumée (blanche, grise ou noire) s’échappe du sol et envahit peu à peu une zone de *PSY* mètres de rayon pendant une heure. Cela peut faire croire à un incendie ou l’oeuvre d’un démon.</p>",
+    "description": "<p>Une fumée (blanche, grise ou noire) s’échappe du sol et envahit peu à peu une zone de *PSY* mètres de rayon pendant une heure. Cela peut faire croire à un incendie ou l’oeuvre d’un démon.</p>",
+    "source": "L1"
+  },
+  "folder": "v5x1swvt13srxxr6"
+}

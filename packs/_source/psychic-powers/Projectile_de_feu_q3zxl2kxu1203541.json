@@ -11,10 +11,11 @@
     "range": "Extrême",
     "resistance": "MOU",
     "rPlus": "Cible +1",
-    "damage": "",
+    "damage": "RU+6",
     "effect": "<p>Vous projetez de votre main un projectile d’énergie en fusion qui inflige à votre cible RU+6 dégâts de feu.</p>",
     "description": "<p>Vous projetez de votre main un projectile d’énergie en fusion qui inflige à votre cible RU+6 dégâts de feu.</p>",
-    "source": "L1"
+    "source": "L1",
+    "damageType": "feu"
   },
   "folder": "v5x1swvt13srxxr6"
 }

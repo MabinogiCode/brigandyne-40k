@@ -1,0 +1,16 @@
+{
+  "_id": "x54yz5kxwkk1zy6x",
+  "name": "Outils de torture",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Outils",
+    "effect": "Permet d’interroger efficacement une cible.",
+    "description": "<p>Permet d’interroger efficacement une cible.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 75,
+    "source": "40K"
+  },
+  "folder": "vww7oqr2kys80z1z"
+}

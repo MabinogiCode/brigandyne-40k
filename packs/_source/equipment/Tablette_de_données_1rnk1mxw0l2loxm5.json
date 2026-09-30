@@ -1,0 +1,16 @@
+{
+  "_id": "1rnk1mxw0l2loxm5",
+  "name": "Tablette de données",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Technologie",
+    "effect": "Permet de stocker des données.",
+    "description": "<p>Permet de stocker des données.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 25,
+    "source": "40K"
+  },
+  "folder": "t2581zytw3y4rj15"
+}

@@ -6,7 +6,9 @@
   "system": {
     "specialtyType": "standard",
     "bonus": 10,
-    "source": "Carrière"
+    "source": "Carrière",
+    "characteristic": "tec",
+    "effect": "Accéder à des bases de données informatiques, pirater des ordinateurs"
   },
   "folder": "xx3oqmxm4yo07x47"
 }

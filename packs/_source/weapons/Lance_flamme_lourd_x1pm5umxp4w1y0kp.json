@@ -28,8 +28,9 @@
         "value": null
       }
     ],
-    "specialText": "Dégâts de feu",
-    "source": "L1"
+    "specialText": "",
+    "source": "L1",
+    "damageType": "feu"
   },
   "folder": "ypwu24tsz5321yyp"
 }

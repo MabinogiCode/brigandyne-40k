@@ -1,0 +1,16 @@
+{
+  "_id": "nytl68qykrw5ymy3",
+  "name": "Auspex",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Outils",
+    "effect": "Détecteur fonctionnant sur 100 mètres. Dispose de plusieurs modes de détection (gaz, sources de chaleur, créatures vivantes ou radiation).",
+    "description": "<p>Détecteur fonctionnant sur 100 mètres. Dispose de plusieurs modes de détection (gaz, sources de chaleur, créatures vivantes ou radiation).</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 175,
+    "source": "40K"
+  },
+  "folder": "vww7oqr2kys80z1z"
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "xwsv40yoqz3t0xny",
+  "name": "Pix-enregistreur",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Objets divers",
+    "effect": "Permet d’enregistrer et de lire des images ou vidéos sous format holographique.",
+    "description": "<p>Permet d’enregistrer et de lire des images ou vidéos sous format holographique.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 250,
+    "source": "40K"
+  },
+  "folder": "qn3jzy5w0kk3t6yo"
+}

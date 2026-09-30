@@ -1,0 +1,15 @@
+{
+  "_id": "1l1ors1jr1065ry1",
+  "name": "Protection de force",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "telekinesie",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>La cible gagne 1 point de protection pendant *PSY* minutes. Ce point est à usage unique et disparaît dès qu’il a été utilisé.</p>",
+    "description": "<p>La cible gagne 1 point de protection pendant *PSY* minutes. Ce point est à usage unique et disparaît dès qu’il a été utilisé.</p>",
+    "source": "L1"
+  },
+  "folder": "x2u5wno1w47lyx7v"
+}

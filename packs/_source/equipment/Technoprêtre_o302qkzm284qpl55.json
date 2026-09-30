@@ -1,0 +1,16 @@
+{
+  "_id": "o302qkzm284qpl55",
+  "name": "Technoprêtre",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Services (salaire par jour)",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 45,
+    "source": "40K"
+  },
+  "folder": "72rqqryx0244j5nj"
+}

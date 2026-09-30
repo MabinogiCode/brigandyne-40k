@@ -1,0 +1,16 @@
+{
+  "_id": "v8w3k5xv212uj84w",
+  "name": "Outils de chirurgie",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Outils",
+    "effect": "Permet d’effectuer des opérations de chirurgie.",
+    "description": "<p>Permet d’effectuer des opérations de chirurgie.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 125,
+    "source": "40K"
+  },
+  "folder": "vww7oqr2kys80z1z"
+}

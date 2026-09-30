@@ -8,7 +8,8 @@
     "bonus": 10,
     "effect": "Connaissances des espèces xeno, de leurs cultures, de leurs technologies.",
     "description": "<p>Connaissances des espèces xeno, de leurs cultures, de leurs technologies.</p>",
-    "source": "L1"
+    "source": "L1",
+    "characteristic": "cns"
   },
   "folder": "xx3oqmxm4yo07x47"
 }

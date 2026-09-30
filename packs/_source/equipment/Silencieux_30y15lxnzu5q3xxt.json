@@ -1,0 +1,16 @@
+{
+  "_id": "30y15lxnzu5q3xxt",
+  "name": "Silencieux",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Amélioration d’armes à distance",
+    "effect": "Octroie la caractéristique Silencieux à l’arme : Les tirs de l’arme peuvent être entendus à 15 mètres mais pas au-delà. Les silencieux réduisent le bruit (et à un certain degré, le cône de flamme) que produisent les armes à feu, ce qui leur évite d’être repérées.",
+    "description": "<p>Octroie la caractéristique Silencieux à l’arme : Les tirs de l’arme peuvent être entendus à 15 mètres mais pas au-delà. Les silencieux réduisent le bruit (et à un certain degré, le cône de flamme) que produisent les armes à feu, ce qui leur évite d’être repérées.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 30,
+    "source": "40K"
+  },
+  "folder": "6tpq5814xtpu4zw4"
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "xzmypn7xmyysx4v4",
+  "name": "Psyconduit, riche",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Outils",
+    "effect": "Bonus de +5% aux tests de PSY pour canaliser un pouvoir.",
+    "description": "<p>Bonus de +5% aux tests de PSY pour canaliser un pouvoir.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 1000,
+    "source": "40K"
+  },
+  "folder": "vww7oqr2kys80z1z"
+}

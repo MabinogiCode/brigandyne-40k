@@ -1,0 +1,15 @@
+{
+  "_id": "583x5t6v3omr0nw4",
+  "name": "Main spectrale",
+  "type": "psychicPower",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "discipline": "generique",
+    "isMinor": true,
+    "difficulty": 0,
+    "effect": "<p>Vous pouvez déplacer et manipuler un objet de *PSY* kilo dans une portée courte. L’objet ne peut pas être projeté avec violence.</p>",
+    "description": "<p>Vous pouvez déplacer et manipuler un objet de *PSY* kilo dans une portée courte. L’objet ne peut pas être projeté avec violence.</p>",
+    "source": "L1"
+  },
+  "folder": "zy01lzxxmrm4y884"
+}

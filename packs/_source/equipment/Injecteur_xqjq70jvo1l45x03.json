@@ -1,0 +1,16 @@
+{
+  "_id": "xqjq70jvo1l45x03",
+  "name": "Injecteur",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Outils",
+    "effect": "Permet d’injecter des substances.",
+    "description": "<p>Permet d’injecter des substances.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 75,
+    "source": "40K"
+  },
+  "folder": "vww7oqr2kys80z1z"
+}

@@ -7,11 +7,12 @@
     "protection": 1,
     "coverage": "bonus",
     "initiativeMod": 0,
-    "mouMod": -5,
+    "mouMod": 0,
     "qualities": [],
-    "specialText": "PER -5%",
+    "specialText": "",
     "price": 0,
-    "source": "Brigandyne"
+    "source": "Brigandyne",
+    "perMod": -5
   },
   "folder": "xxt2ryu75x5u0xjr"
 }

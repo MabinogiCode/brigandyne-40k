@@ -9,8 +9,13 @@
     "initiativeMod": -2,
     "mouMod": -10,
     "longToDon": false,
-    "qualities": [],
-    "specialText": "Couvert (2)",
+    "qualities": [
+      {
+        "key": "couvert",
+        "value": 2
+      }
+    ],
+    "specialText": "",
     "price": 45,
     "source": "L1"
   },

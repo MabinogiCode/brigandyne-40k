@@ -1,0 +1,16 @@
+{
+  "_id": "xyt5lok12j126xus",
+  "name": "Bure religieuse, modeste",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Vêtements",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 5,
+    "source": "40K"
+  },
+  "folder": "xyznun7xn34w4wp2"
+}

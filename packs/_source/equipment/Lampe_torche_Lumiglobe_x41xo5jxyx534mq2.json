@@ -1,0 +1,16 @@
+{
+  "_id": "x41xo5jxyx534mq2",
+  "name": "Lampe torche, Lumiglobe",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Objets divers",
+    "effect": "",
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 15,
+    "source": "40K"
+  },
+  "folder": "qn3jzy5w0kk3t6yo"
+}

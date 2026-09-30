@@ -8,7 +8,8 @@
     "bonus": 5,
     "effect": "Employer la discipline de la Télépathie, la comprendre, en apprendre les secrets et la ressentir",
     "description": "<p>Employer la discipline de la Télépathie, la comprendre, en apprendre les secrets et la ressentir</p>",
-    "source": "L1"
+    "source": "L1",
+    "characteristic": "psy"
   },
   "folder": "x33pwwnx70mxxl1t"
 }

@@ -26,6 +26,10 @@
       {
         "key": "risquee",
         "value": null
+      },
+      {
+        "key": "initiative",
+        "value": -1
       }
     ],
     "specialText": "",
