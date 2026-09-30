@@ -127,6 +127,12 @@ export class BrigTest {
     // Surchauffe (40K) : sur un E+, le tireur subit les dégâts de l'arme (sans le RU).
     const weapon = this.data.damage?.weaponUuid ? await fromUuid(this.data.damage.weaponUuid) : null;
     const overheat = !!weapon && this.data.rollType === "attack" && overheats(weapon.system?.qualities, this.result.tier);
+    // R+ « Flux d'énergie » : le pouvoir n'est pas décompté du nombre de pouvoirs par jour (p.211)
+    let flux = false;
+    if (this.data.rollType === "power" && this.result.success && this.result.tier >= 2 && this.data.itemUuid) {
+      const power = await fromUuid(this.data.itemUuid);
+      flux = /flux d.énergie/i.test(power?.system?.rPlus ?? "");
+    }
     // « Forcer le Warp » (p.211-213) : échec mineur/majeur ou réussite mineure d'un pouvoir psychique.
     const forceKind = this.data.rollType === "power"
       ? ({ majorFailure: "peril", minorFailure: "phenomenon", minorSuccess: "phenomenon" } as Record<string, string>)[this.result.degree] ?? null
@@ -141,7 +147,7 @@ export class BrigTest {
       canReroll, rerollCost,
       canRiposte: isMeleeAttack && !this.result.success,
       fireMode: this.data.damage?.fireMode && this.data.damage.fireMode !== "single" ? this.data.damage.fireMode : null,
-      overheat, forceKind,
+      overheat, forceKind, flux,
       degrees: BRIGANDYNE.degrees
     };
     const content = await renderTemplate("systems/brigandyne-40k/templates/chat/test-card.hbs", templateData);

@@ -309,6 +309,10 @@
           {{/if}}
           {{#if atoutsRemaining}}<p class="warn-soft"><i class="fa-solid fa-triangle-exclamation"></i> Il reste {{atoutsRemaining}} atout{{#if (gt atoutsRemaining 1)}}s{{/if}} à tirer (étape Atouts).</p>{{/if}}
         {{/if}}
+        {{#if psyker}}
+          <p class="chip-label"><i class="fa-solid fa-hand-sparkles"></i> Psyker (PSY {{psyTotal}}) : pouvoirs de départ</p>
+          <p class="lore">À la création vous disposez de <strong>{{startMinor}}</strong> pouvoirs mineurs et <strong>{{startPower}}</strong> pouvoirs (*CNS*), choisis dans les disciplines accessibles (Génériques + un nombre de disciplines selon votre PSY). Un pouvoir exige au moins <strong>40 %</strong> de chances de le lancer (PSY + difficulté). Ouvrez la fiche, onglet <em>Pouvoirs</em>, bouton <i class="fa-solid fa-graduation-cap"></i>.</p>
+        {{else if careerName}}{{#if (eq faction 'psykana')}}<p class="warn-soft"><i class="fa-solid fa-triangle-exclamation"></i> PSY = 0 : prélevez des points vers le PSY (étape Caractéristiques) pour pouvoir manifester des pouvoirs.</p>{{/if}}{{/if}}
         {{#if careerBaseEquipment}}
           <p class="chip-label"><i class="fa-solid fa-box"></i> Équipement de base du groupe</p>
           <div class="lore starting-equip">{{{careerBaseEquipment}}}</div>

@@ -345,7 +345,9 @@
       "roll": "Lancer",
       "cancel": "Annuler",
       "aimed": "Visée (round précédent passé à viser)",
-      "spendSf": "Dépenser {cost} SF pour 1 Avantage (SF : {sf})"
+      "spendSf": "Dépenser {cost} SF pour 1 Avantage (SF : {sf})",
+      "pvSacrifice": "Sacrifier des PV (+1 % par PV)",
+      "pvSacrificeLabel": "{pv} PV sacrifiés"
     },
     "Confirm": {
       "deleteTitle": "Confirmer la suppression",
@@ -465,7 +467,10 @@
         "colDiceTip": "Somme des 12 dés conservés (méthode aléatoire)",
         "colActions": "Actions",
         "noPlayers": "Aucun joueur (hors MJ) dans ce monde."
-      }
+      },
+      "psykerHint": "Psyker : ouvrez l'onglet Pouvoirs de la fiche (bouton diplôme) pour choisir vos {n} pouvoirs mineurs et {n} pouvoirs de départ.",
+      "disciplineTitle": "Discipline psychique",
+      "disciplineHint": "Choisissez la discipline (spécialité occulte +5) que votre carrière vous accorde : vous en apprendrez les pouvoirs en priorité."
     },
     "Welcome": {
       "title": "Warhammer 40,000 : Brigandyne",
@@ -505,7 +510,19 @@
     },
     "Power": {
       "minorAuto": "Pouvoir mineur : réussite automatique (aucun test, p.208).",
-      "forcedUsed": "Vous avez déjà forcé le Warp aujourd'hui (une fois par jour)."
+      "forcedUsed": "Vous avez déjà forcé le Warp aujourd'hui (une fois par jour).",
+      "psyconduit": "Psyconduit",
+      "noPsy": "{name} n'a pas de Psychisme (PSY = 0) : impossible d'apprendre un pouvoir.",
+      "minorTag": "mineur",
+      "free": "gratuit (départ)",
+      "outOfDomain": "hors domaine, +50",
+      "learnTitle": "Apprendre un pouvoir",
+      "learnPick": "Pouvoir",
+      "learnDo": "Apprendre",
+      "learnInfo": "PSY {psy} — disciplines spécialisées {disciplines}/{max} (les pouvoirs Génériques sont toujours connus). Pouvoirs de départ restants : {minor} mineur(s), {power} pouvoir(s). PX disponibles : {xp}.",
+      "learnHint": "Il faut au moins 40 % de chances de lancer un pouvoir (PSY + difficulté) ; les pouvoirs mineurs sont libres. Coût : 50 PX (mineur) ou 100 PX ; +50 PX hors de vos disciplines. Un professeur, un grimoire ou une autre source de savoir est nécessaire (p.217).",
+      "nothingToLearn": "Aucun pouvoir accessible : PSY trop faible ou tout est déjà connu.",
+      "learned": "{name} appris ({cost})."
     },
     "Defeat": {
       "title": "Hors de combat — {name}",

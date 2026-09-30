@@ -71,6 +71,69 @@ export function disciplineCount(psy: number, thresholds: Array<{ max: number; co
 }
 
 /* ------------------------------------------------------------------ */
+/*  Apprentissage des pouvoirs (Magie p.216-218, adapté au Psychisme)   */
+/* ------------------------------------------------------------------ */
+
+/** Pouvoirs de départ : *CNS* pouvoirs mineurs et *CNS* pouvoirs (p.216, exemple Silas : CNS 43 → 4 + 4). */
+export function startingPowerAllowance(cnsBonus: number): { minor: number; power: number } {
+  return { minor: Math.max(0, cnsBonus), power: Math.max(0, cnsBonus) };
+}
+
+/**
+ * « Pour apprendre un sort, il faut que le mage ait au moins 40 % de chances de pouvoir le lancer » (p.216) :
+ * PSY + difficulté ≥ 40. Les pouvoirs mineurs, qui ne demandent aucun test, restent accessibles.
+ */
+export function canLearnPower(psy: number, difficulty: number, isMinor: boolean): boolean {
+  return isMinor || psy + difficulty >= 40;
+}
+
+/** Coût en PX : pouvoir mineur 50, pouvoir 100 ; hors de ses domaines +50 (p.217). */
+export function powerXpCost(isMinor: boolean, outOfDomain: boolean): number {
+  return (isMinor ? 50 : 100) + (outOfDomain ? 50 : 0);
+}
+
+export interface PowerLearning {
+  ok: boolean;
+  /** psyTooLow : moins de 40 % de chances de le lancer. */
+  reason: "" | "psyTooLow";
+  /** Discipline non maîtrisée : exception d'histoire (p.217), +50 PX. */
+  outOfDomain: boolean;
+  cost: number;
+}
+
+/**
+ * Faisabilité et coût d'un pouvoir pour un Psyker. Les pouvoirs Génériques sont toujours connus ;
+ * le nombre de disciplines spécialisées connues est borné par le PSY (table p.216 / 40K).
+ * @param known  disciplines spécialisées déjà maîtrisées (via les pouvoirs possédés)
+ */
+export function powerLearning(o: {
+  psy: number; difficulty: number; isMinor: boolean; discipline: string;
+  known: string[]; thresholds: Array<{ max: number; count: number }>;
+}): PowerLearning {
+  if (!canLearnPower(o.psy, o.difficulty, o.isMinor)) return { ok: false, reason: "psyTooLow", outOfDomain: false, cost: 0 };
+  const generic = o.discipline === "generique";
+  const inDomain = generic || o.known.includes(o.discipline) || o.known.length < disciplineCount(o.psy, o.thresholds);
+  return { ok: true, reason: "", outOfDomain: !inDomain, cost: powerXpCost(o.isMinor, !inDomain) };
+}
+
+/** Psyconduit : riche +5 %, relique +10 % aux tests de PSY (40K, Outils) ; on garde le meilleur possédé. */
+export function psyconduitBonus(items: Array<{ name?: string }>): number {
+  let best = 0;
+  for (const i of items) {
+    const n = normalizeTraitKey(i.name ?? "");
+    if (/^psyconduit,?\s*relique/.test(n)) best = Math.max(best, 10);
+    else if (/^psyconduit,?\s*riche/.test(n)) best = Math.max(best, 5);
+  }
+  return best;
+}
+
+/** Sacrifier des PV avant un pouvoir : +1 % par PV, sans jamais tomber sous 1 PV (p.211). */
+export function pvSacrifice(requested: number, pvNow: number, perPv = 1): { pv: number; bonus: number } {
+  const pv = Math.max(0, Math.min(Math.floor(requested || 0), Math.max(0, pvNow - 1)));
+  return { pv, bonus: pv * perPv };
+}
+
+/* ------------------------------------------------------------------ */
 /*  Corruption & mutations                                             */
 /* ------------------------------------------------------------------ */
 

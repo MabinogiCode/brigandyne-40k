@@ -36,12 +36,16 @@ export class BrigActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       corruption: BrigActorSheet.#onCorruption,
       recalcStats: BrigActorSheet.#onRecalcStats,
       reloadWeapon: BrigActorSheet.#onReloadWeapon,
+      learnPower: BrigActorSheet.#onLearnPower,
       destinPermanent: BrigActorSheet.#onDestinPermanent,
       madness: BrigActorSheet.#onMadness,
       vehicleRam: BrigActorSheet.#onVehicleRam,
       vehicleChase: BrigActorSheet.#onVehicleChase
     }
   };
+
+  /** Apprendre un pouvoir (Magie p.216-218) ; le MJ peut attribuer gratuitement. */
+  static #onLearnPower(event) { this.actor.learnPower({ asGM: game.user.isGM && event?.shiftKey }); }
 
   /** Recharge une arme à distance (40K, Chargeurs). */
   static #onReloadWeapon(event, target) {

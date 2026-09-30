@@ -90,7 +90,7 @@ Option OCI : instantané du *boot volume* / *block volume* depuis la console (St
 
 ```bash
 npm ci
-npm run typecheck && npm test          # 261 tests : rien ne doit échouer
+npm run typecheck && npm test          # 283 tests : rien ne doit échouer
 # 1. version dans system.json ET package.json (identiques) — npm le fait pour package.json :
 npm version 0.7.1 --no-git-tag-version   # puis reporter la même valeur dans system.json ("version")
 git add -A && git commit -m "release: v0.7.1"

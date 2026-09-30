@@ -40,6 +40,13 @@ export async function promptTest({ actor, testData }: { actor?: any; testData?: 
         <label><input type="checkbox" name="aimed" /> ${game.i18n.localize("BRIG.Dialog.aimed")}</label>
       </div>` : "";
 
+  // Pouvoirs psychiques : sacrifier des PV, +1 % par PV (Magie p.211)
+  const pvBlock = testData?.rollType === "power" && (actor?.system?.pv?.value ?? 0) > 1 ? `
+      <div class="form-group">
+        <label><i class="fa-solid fa-droplet"></i> ${game.i18n.localize("BRIG.Dialog.pvSacrifice")}</label>
+        <input type="number" name="pvSacrifice" value="0" min="0" max="${(actor?.system?.pv?.value ?? 1) - 1}" />
+      </div>` : "";
+
   // Bon stress : 2 SF = 1 Avantage (p.142)
   const sfCost = BRIGANDYNE.mechanics.sfForAdvantage;
   const sfAvailable = actor?.system?.sf?.value ?? 0;
@@ -76,6 +83,7 @@ export async function promptTest({ actor, testData }: { actor?: any; testData?: 
       ${tacticBlock}
       ${fireBlock}
       ${aimBlock}
+      ${pvBlock}
       ${sfBlock}
     </form>`;
 
@@ -87,6 +95,7 @@ export async function promptTest({ actor, testData }: { actor?: any; testData?: 
     tactic: form.tactic?.value || "",
     fireMode: form.fireMode?.value || "",
     aimed: !!form.aimed?.checked,
+    pvSacrifice: Number(form.pvSacrifice?.value) || 0,
     spendSf: !!form.spendSf?.checked
   });
 

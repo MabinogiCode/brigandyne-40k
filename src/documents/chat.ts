@@ -3,6 +3,7 @@ import { BrigTest, rerollCostFor } from "../dice/roll.ts";
 import { CHARACTERISTIC_KEYS } from "../data/fields.ts";
 import { weaponScale, weaponFamily, armorWear, scaleEffect, targetKind, qualityValue, hasQuality } from "../data/combat-rules.ts";
 import { SEQUELAE } from "../data/sequelae.ts";
+import { normalizeTraitKey } from "../data/warp-rules.ts";
 
 const { renderTemplate } = foundry.applications.handlebars;
 const { DialogV2 } = foundry.applications.api;
@@ -22,6 +23,8 @@ export function registerChatListeners() {
       b.addEventListener("click", () => onOverheat(message, b)));
     html.querySelectorAll("[data-action='forceWarp']").forEach(b =>
       b.addEventListener("click", () => onForceWarp(message, b)));
+    html.querySelectorAll("[data-action='fluxEnergy']").forEach(b =>
+      b.addEventListener("click", () => onFluxEnergy(message, b)));
     html.querySelectorAll("[data-action='applySequela']").forEach(b =>
       b.addEventListener("click", () => onApplySequela(message, b)));
   });
@@ -145,6 +148,12 @@ export async function onApplyDamage(message) {
   if (dmg.raw) {
     total = resolveRawDamage(dmg.raw, { ru, psyBonus: dmg.psyBonus, volBonus: dmg.volBonus, forBonus: dmg.forBonus });
     if (dmg.scale) weapon = { scale: dmg.scale, family: "other" };     // ex. Percuter : dégâts de véhicule (×2 sur cible humaine)
+    // Talent « Magie destructrice » : tous les dégâts psychiques/magiques sont augmentés d'1 point
+    if (test.rollType === "power" && test.actorUuid) {
+      const caster = await fromUuid(test.actorUuid);
+      const destructive = Array.from(caster?.items ?? []).some((i: any) => i.type === "talent" && normalizeTraitKey(i.name) === "magie destructrice");
+      if (destructive) total += 1;
+    }
   } else {
     const bonus = dmg.base === "for" ? (dmg.forBonus ?? 0) + (dmg.mod ?? 0) : (dmg.mod ?? 0);
     total = ru + bonus;
@@ -226,6 +235,18 @@ export async function onForceWarp(message, button) {
   if (!actor.isOwner) return ui.notifications?.warn(game.i18n.localize("BRIG.Warn.notOwner"));
   const ok = await actor.forceWarp(button.dataset.kind === "peril" ? "peril" : "phenomenon");
   if (ok) button.disabled = true;
+}
+
+/** R+ « Flux d'énergie » : rend l'usage journalier du pouvoir (p.211). */
+export async function onFluxEnergy(message, button) {
+  const flags = message.flags?.["brigandyne-40k"];
+  if (!flags) return;
+  const actor = flags.test.actorUuid ? await fromUuid(flags.test.actorUuid) : null;
+  const power = flags.test.itemUuid ? await fromUuid(flags.test.itemUuid) : null;
+  if (!actor || !power) return;
+  if (!actor.isOwner) return ui.notifications?.warn(game.i18n.localize("BRIG.Warn.notOwner"));
+  button.disabled = true;
+  await actor.refundPowerUse(!!power.system.isMinor);
 }
 
 /** Applique une séquelle (p.197) ; le joueur choisit la compétence quand le livre dit « au choix ». */

@@ -10,7 +10,8 @@ import {
 import {
   psyDailyLimits, psyOverflowCost, resistanceModifier, isAutomaticCast, parseResistanceKey, pariaDisadvantage,
   PARIA_WARP_BONUS, corruptionViceLevels, corruptionSfLoss, mutationKind, madnessSfLoss, madnessPermanentLoss, isMad,
-  permanentDestinSpend, canChannelFaith, faithPrayerTurns, FAITH_OVERLIMIT_MALUS
+  permanentDestinSpend, canChannelFaith, faithPrayerTurns, FAITH_OVERLIMIT_MALUS, normalizeTraitKey,
+  startingPowerAllowance, powerLearning, psyconduitBonus, pvSacrifice, disciplineCount
 } from "../data/warp-rules.ts";
 import { augmentationStatus } from "../data/augmentations.ts";
 import { SEQUELAE, sequelaFor } from "../data/sequelae.ts";
@@ -43,6 +44,7 @@ export class BrigActor extends Actor {
     this.system._gear = gear;
     this._prepareEncumbrance();
     this._prepareAugmentations();
+    this._preparePsyker();
   }
 
   _prepareEncumbrance() {
@@ -99,6 +101,34 @@ export class BrigActor extends Actor {
       if (d != null && d <= BRIGANDYNE.mechanics.pariaRange) n++;
     }
     return n;
+  }
+
+  /** Bonus d'une spécialité possédée (ex. « Pyromancie » +5, « Vraie Foi » +5, « Résistance au Warp » +10), sinon null. */
+  _specialtyMod(name: string): { label: string; value: number } | null {
+    const target = normalizeTraitKey(name);
+    const spec: any = Array.from(this.items).find((i: any) => i.type === "specialty" && normalizeTraitKey(i.name) === target);
+    return spec && spec.system.bonus ? { label: spec.name, value: spec.system.bonus } : null;
+  }
+
+  /** Possède le talent `name` (comparaison sans accents ni casse) ? */
+  _hasTalent(name: string): boolean {
+    const target = normalizeTraitKey(name);
+    return Array.from(this.items).some((i: any) => i.type === "talent" && normalizeTraitKey(i.name) === target);
+  }
+
+  /** Disciplines spécialisées connues (via les pouvoirs possédés) et maximum selon le PSY (table p.216). */
+  _preparePsyker() {
+    const psy = this.system.characteristics?.psy?.total;
+    if (psy == null || !this.system.psy) return;
+    const known = [...new Set(Array.from(this.items)
+      .filter((i: any) => i.type === "psychicPower" && i.system.discipline && i.system.discipline !== "generique")
+      .map((i: any) => i.system.discipline))] as string[];
+    const max = psy > 0 ? disciplineCount(psy, BRIGANDYNE.psyDisciplineThresholds) : 0;
+    this.system.psy.disciplines = { known, max };
+    // Talent « Magie innée » : un pouvoir mineur et un pouvoir de plus par jour
+    if (this._hasTalent("Magie innée") && this.system.psy.limits) {
+      this.system.psy.limits = { minor: this.system.psy.limits.minor + 1, power: this.system.psy.limits.power + 1 };
+    }
   }
 
   /** Modificateurs automatiques d'un test de caractéristique : armure, casque, Décupleur, augmentations. */
@@ -271,6 +301,12 @@ export class BrigActor extends Actor {
       difficulty = resistanceModifier(difficulty, scores, BRIGANDYNE.mechanics.modoCenter);
     }
     const modifiers = difficulty ? [{ label: L("BRIG.Difficulty.label"), value: difficulty }] : [];
+    // Spécialité de la discipline (ex. Pyromancie +5) et Psyconduit (riche +5, relique +10)
+    // (la clé de discipline, ex. « telekinesie », correspond au nom normalisé de la spécialité « Télékinésie »)
+    const specialty = s.discipline && s.discipline !== "generique" ? this._specialtyMod(s.discipline) : null;
+    if (specialty) modifiers.push(specialty);
+    const conduit = psyconduitBonus(Array.from(this.items) as any);
+    if (conduit) modifiers.push({ label: L("BRIG.Power.psyconduit"), value: conduit });
 
     let test: any = null;
     if (isAutomaticCast(isMinor) && !pariaDis && !options.forceTest) {
@@ -331,6 +367,8 @@ export class BrigActor extends Actor {
     }
     const char = this.system.characteristics?.vol;
     const modifiers = item.system.difficulty ? [{ label: game.i18n.localize("BRIG.Difficulty.label"), value: item.system.difficulty }] : [];
+    const faithSpecialty = this._specialtyMod("Vraie Foi");
+    if (faithSpecialty) modifiers.push(faithSpecialty);
 
     // Au-delà de VOL/2 Actes par jour : malus de −20 % (40K)
     const perDay = this.system.faith?.actsPerDay ?? 0;
@@ -376,6 +414,17 @@ export class BrigActor extends Actor {
     let advantage = (testData.advantage || 0) + (dialogResult.advantage || 0);
     let disadvantage = (testData.disadvantage || 0) + (dialogResult.disadvantage || 0);
     const damage = testData.damage ? { ...testData.damage } : null;
+
+    // Sacrifier des PV : +1 % par PV (p.211), jamais sous 1 PV
+    if (dialogResult.pvSacrifice) {
+      // Talent « Magie sanglante » : chaque PV sacrifié rapporte le double
+      const perPv = BRIGANDYNE.mechanics.pvForBonus * (this._hasTalent("Magie sanglante") ? 2 : 1);
+      const sac = pvSacrifice(dialogResult.pvSacrifice, this.system.pv?.value ?? 0, perPv);
+      if (sac.pv > 0) {
+        await this.update({ "system.pv.value": (this.system.pv?.value ?? 0) - sac.pv });
+        modifiers.push({ label: L("BRIG.Dialog.pvSacrificeLabel", { pv: sac.pv }), value: sac.bonus });
+      }
+    }
 
     // Bon stress : 2 SF = 1 Avantage avant le test (p.142) — une seule fois
     if (dialogResult.spendSf) {
@@ -626,6 +675,79 @@ export class BrigActor extends Actor {
     return test;
   }
 
+  /** Rend un usage journalier (R+ « Flux d'énergie » : le pouvoir n'est pas décompté, p.211). */
+  async refundPowerUse(isMinor: boolean) {
+    const key = isMinor ? "minors" : "powers";
+    const used = this.system.dailyUse?.[key] ?? 0;
+    if (used > 0) await this.update({ [`system.dailyUse.${key}`]: used - 1 });
+  }
+
+  /**
+   * Apprend un pouvoir depuis le compendium (Magie p.216-218) :
+   *  - à la création (aucun PX reçu) : *CNS* pouvoirs mineurs et *CNS* pouvoirs, gratuits ;
+   *  - ensuite : 50 PX (mineur) ou 100 PX (pouvoir), +50 PX hors de ses disciplines ;
+   *  - il faut au moins 40 % de chances de le lancer (PSY + difficulté), sauf pouvoirs mineurs ;
+   *  - le nombre de disciplines spécialisées est borné par le PSY.
+   */
+  async learnPower({ asGM = false }: { asGM?: boolean } = {}) {
+    const psy = this.system.characteristics?.psy?.total ?? 0;
+    if (!(psy > 0)) return ui.notifications?.warn(L("BRIG.Power.noPsy", { name: this.name }));
+    const pack = game.packs.get("brigandyne-40k.psychic-powers");
+    if (!pack) return ui.notifications?.warn("Compendium introuvable.");
+    const index = await pack.getIndex({ fields: ["system.discipline", "system.isMinor", "system.difficulty"] });
+    const owned = Array.from(this.items).filter((i: any) => i.type === "psychicPower") as any[];
+    const ownedNames = new Set(owned.map(i => normalizeTraitKey(i.name)));
+    const known = this.system.psy.disciplines?.known ?? [];
+
+    // Pouvoirs de départ gratuits : uniquement tant que le personnage n'a reçu aucun PX (création) ou sur décision du MJ
+    const creation = asGM || (this.system.xp?.total ?? 0) === 0;
+    const allowance = startingPowerAllowance(this.system.characteristics?.cns?.bonus ?? 0);
+    const left = {
+      minor: creation ? Math.max(0, allowance.minor - owned.filter(i => i.system.isMinor).length) : 0,
+      power: creation ? Math.max(0, allowance.power - owned.filter(i => !i.system.isMinor).length) : 0
+    };
+
+    const rows = index.contents
+      .filter((e: any) => e.system && !ownedNames.has(normalizeTraitKey(e.name)))
+      .map((e: any) => {
+        const isMinor = !!e.system.isMinor;
+        const plan = powerLearning({ psy, difficulty: e.system.difficulty ?? 0, isMinor, discipline: e.system.discipline, known, thresholds: BRIGANDYNE.psyDisciplineThresholds });
+        const free = plan.ok && !plan.outOfDomain && (isMinor ? left.minor : left.power) > 0;
+        return { e, isMinor, plan, free };
+      })
+      .filter(r => r.plan.ok)
+      .sort((a, b) => a.e.system.discipline.localeCompare(b.e.system.discipline) || Number(b.isMinor) - Number(a.isMinor) || a.e.name.localeCompare(b.e.name));
+    if (!rows.length) return ui.notifications?.warn(L("BRIG.Power.nothingToLearn"));
+
+    const options = rows.map(r => {
+      const disc = L(BRIGANDYNE.psychicDisciplines[r.e.system.discipline] ?? r.e.system.discipline);
+      const tag = r.isMinor ? L("BRIG.Power.minorTag") : `${r.e.system.difficulty >= 0 ? "+" : ""}${r.e.system.difficulty}`;
+      const cost = r.free ? L("BRIG.Power.free") : `${r.plan.cost} PX${r.plan.outOfDomain ? " " + L("BRIG.Power.outOfDomain") : ""}`;
+      return `<option value="${r.e._id}">${esc(disc)} · ${esc(r.e.name)} (${tag}) — ${cost}</option>`;
+    }).join("");
+    const content = `<form class="brigandyne-40k">
+      <p>${L("BRIG.Power.learnInfo", {
+        psy, disciplines: known.length, max: this.system.psy.disciplines?.max ?? 0,
+        minor: left.minor, power: left.power, xp: this.system.xp?.available ?? 0
+      })}</p>
+      <div class="form-group"><label>${L("BRIG.Power.learnPick")}</label><select name="pick">${options}</select></div>
+      <p class="hint">${L("BRIG.Power.learnHint")}</p></form>`;
+    const id = await foundry.applications.api.DialogV2.prompt({
+      window: { title: L("BRIG.Power.learnTitle"), icon: "fa-solid fa-hand-sparkles" },
+      content, ok: { label: L("BRIG.Power.learnDo"), callback: (ev, btn) => btn.form.pick.value }, rejectClose: false
+    }).catch(() => null);
+    if (!id) return;
+    const row = rows.find(r => r.e._id === id);
+    if (!row) return;
+    if (!row.free && (this.system.xp?.available ?? 0) < row.plan.cost) {
+      return ui.notifications?.warn(game.i18n.format("BRIG.Warn.noXp", { cost: row.plan.cost }));
+    }
+    const doc = await pack.getDocument(id);
+    await this.createEmbeddedDocuments("Item", [doc.toObject()]);
+    if (!row.free) await this.update({ "system.xp.spent": (this.system.xp?.spent ?? 0) + row.plan.cost });
+    ui.notifications?.info(L("BRIG.Power.learned", { name: doc.name, cost: row.free ? L("BRIG.Power.free") : `${row.plan.cost} PX` }));
+  }
+
   /** Nombre de cases de progression accessibles pour `key` selon la carrière. */
   careerProfile(key) {
     const career = this.items.find(i => i.type === "career");
@@ -801,6 +923,8 @@ export class BrigActor extends Actor {
       ? [{ label: game.i18n.localize("BRIG.Corruption.source"), value: Number(source) }] : [];
     // Gêne du Paria : +10 % pour résister aux effets du Warp (40K)
     if (this.hasGeneParia()) modifiers.push({ label: L("BRIG.Mod.paria"), value: PARIA_WARP_BONUS });
+    const warpResistance = this._specialtyMod("Résistance au Warp");
+    if (warpResistance) modifiers.push(warpResistance);
 
     // Désavantage par niveau de Vice lié au dieu invoqué (40K, Effets secondaires)
     const traits = Array.from(this.items).filter((i: any) => i.type === "trait");

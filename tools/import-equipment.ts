@@ -92,6 +92,13 @@ for (const line of between(/^### Améliorations/m, /\n## /).split("\n")) {
   entries.push({ name, category, price: parsePrice(price), effect: clean(`${effect} ${description}`) });
 }
 
+/* --- Objet de départ cité par le document mais absent de ses listes de prix --------------- */
+// Possession de départ des Psykers (« Psyconduit ») : la version de base n'a pas de bonus ; les versions riche/relique sont dans « Outils ».
+entries.push({
+  name: "Psyconduit", category: "Outils", price: 0,
+  effect: "Relique ou objet courant (sceptre, bâton de pouvoir, osselets sculptés…) qui aide le Psyker à canaliser ses pouvoirs. Sans bonus ; les versions riche (+5 %) et relique (+10 %) en apportent aux tests de PSY."
+});
+
 /* --- Écriture ------------------------------------------------------------------------- */
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(OUT, { recursive: true });

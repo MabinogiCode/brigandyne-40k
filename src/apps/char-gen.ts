@@ -368,6 +368,9 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       archFixed, archChoices, archCount, archTalents, archSlots, archGranted,
       vices: BRIGANDYNE.vices, virtues: BRIGANDYNE.virtues,
       noPsy: this._noPsy,
+      // Psyker : pouvoirs de départ (Magie p.216) à choisir sur la fiche
+      psyker: totals.psy > 0, psyTotal: totals.psy, startMinor: cnsBonus, startPower: cnsBonus,
+      faction: careerDoc?.system.faction ?? "",
       // Atouts (tirage RAW p.110)
       numAtouts, cnsBonus, poolSize, cnsValue: totals.cns,
       atoutsChosen, atoutsRemaining, pendingDraw, occulteExcluded,
@@ -608,7 +611,13 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       if (!half) return;                       // annulé : le tirage reste en attente
       name = half;
     }
-    if (NEEDS_PRECISION.test(name)) {
+    if (/^Domaine Psychique/i.test(name)) {
+      // « Domaine Psychique (au choix) » : le joueur retient une VRAIE spécialité de discipline (+5, occulte), jamais deux fois la même
+      const taken = new Set((this.draft.atouts ?? []).map(a => a.name));
+      const discipline = await this._promptDiscipline(["Biomancie", "Divination", "Pyromancie", "Télékinésie", "Télépathie"].filter(n => !taken.has(n)));
+      if (!discipline) return;                 // annulé : le tirage reste en attente
+      name = discipline;
+    } else if (NEEDS_PRECISION.test(name)) {
       const precision = await this._promptPrecision(name);
       if (precision === null) return;          // annulé
       name = precisedName(name, precision);
@@ -626,6 +635,16 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       window: { title: game.i18n.localize("BRIG.CharGen.atouts.halfTitle"), icon: "fa-solid fa-code-branch" },
       content: `<p>${game.i18n.localize("BRIG.CharGen.atouts.halfHint")}</p>`,
       buttons: halves.map((h, i) => ({ action: h, label: h, default: i === 0 })),
+      rejectClose: false
+    }).catch(() => null);
+  }
+
+  /** Choix de la discipline psychique d'une entrée « Domaine Psychique (au choix) » (Scholastica Psykana). */
+  async _promptDiscipline(names: string[]): Promise<string | null> {
+    return DialogV2.wait({
+      window: { title: game.i18n.localize("BRIG.CharGen.disciplineTitle"), icon: "fa-solid fa-hand-sparkles" },
+      content: `<p>${game.i18n.localize("BRIG.CharGen.disciplineHint")}</p>`,
+      buttons: names.map((h, i) => ({ action: h, label: h, default: i === 0 })),
       rejectClose: false
     }).catch(() => null);
   }
@@ -787,6 +806,7 @@ export class BrigCharGen extends HandlebarsApplicationMixin(ApplicationV2) {
       await game.user.update({ character: actor.id });
       if (this.locksApply) await setChargenLock(game.user, { complete: true, actorId: actor.id });
       ui.notifications?.info(game.i18n.format("BRIG.CharGen.created", { name: actor.name }));
+      if (totals.psy > 0) ui.notifications?.info(game.i18n.format("BRIG.CharGen.psykerHint", { n: bonusOf(totals.cns) }));
       actor.sheet?.render(true);
     }
   }

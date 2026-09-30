@@ -1,0 +1,16 @@
+{
+  "_id": "8ym6m4xz6rs22x3q",
+  "name": "Psyconduit",
+  "type": "equipment",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "category": "Outils",
+    "effect": "Relique ou objet courant (sceptre, bâton de pouvoir, osselets sculptés…) qui aide le Psyker à canaliser ses pouvoirs. Sans bonus ; les versions riche (+5 %) et relique (+10 %) en apportent aux tests de PSY.",
+    "description": "<p>Relique ou objet courant (sceptre, bâton de pouvoir, osselets sculptés…) qui aide le Psyker à canaliser ses pouvoirs. Sans bonus ; les versions riche (+5 %) et relique (+10 %) en apportent aux tests de PSY.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "price": 0,
+    "source": "40K"
+  },
+  "folder": "vww7oqr2kys80z1z"
+}

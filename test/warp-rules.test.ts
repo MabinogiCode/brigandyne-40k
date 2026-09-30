@@ -182,3 +182,63 @@ test("40K — Actes de Foi : *VOL*/2 par jour ; −20 % au-delà ; 2 tours de pr
   assert.equal(faithPrayerTurns(false), 2);
   assert.equal(faithPrayerTurns(true), 3);
 });
+
+/* ------------------------------------------------------------------ */
+/* Apprentissage des pouvoirs (Magie p.216-218 adapté au Psychisme)    */
+/* ------------------------------------------------------------------ */
+
+import { startingPowerAllowance, canLearnPower, powerXpCost, powerLearning, psyconduitBonus, pvSacrifice } from "../src/data/warp-rules.ts";
+
+test("p.216 — pouvoirs de départ : *CNS* mineurs + *CNS* pouvoirs (exemple Silas : CNS 43 → 4 + 4)", () => {
+  assert.deepEqual(startingPowerAllowance(4), { minor: 4, power: 4 });
+  assert.deepEqual(startingPowerAllowance(0), { minor: 0, power: 0 });
+});
+
+test("p.216 — un pouvoir exige 40 % de chances de le lancer (PSY + difficulté) ; les mineurs sont libres", () => {
+  assert.equal(canLearnPower(40, 0, false), true);
+  assert.equal(canLearnPower(39, 0, false), false);
+  assert.equal(canLearnPower(20, 20, false), true, "exemple RAW : 20 % en MAG → difficulté +20 seulement");
+  assert.equal(canLearnPower(20, 10, false), false);
+  assert.equal(canLearnPower(50, -10, false), true);
+  assert.equal(canLearnPower(5, -30, true), true, "tour de magie : aucun test");
+});
+
+test("p.217 — coût : mineur 50 PX, pouvoir 100 PX, +50 PX hors de ses disciplines", () => {
+  assert.equal(powerXpCost(true, false), 50);
+  assert.equal(powerXpCost(false, false), 100);
+  assert.equal(powerXpCost(false, true), 150);
+  assert.equal(powerXpCost(true, true), 100);
+});
+
+test("40K + p.216 — disciplines : Génériques toujours connues ; nombre de disciplines spécialisées borné par le PSY", () => {
+  const t = BRIGANDYNE.psyDisciplineThresholds;
+  const base = { psy: 45, difficulty: 0, isMinor: false, thresholds: t };
+  // PSY 45 → 1 discipline
+  assert.deepEqual(powerLearning({ ...base, discipline: "generique", known: [] }), { ok: true, reason: "", outOfDomain: false, cost: 100 });
+  assert.equal(powerLearning({ ...base, discipline: "pyromancie", known: [] }).outOfDomain, false, "1re discipline : dans le domaine");
+  assert.equal(powerLearning({ ...base, discipline: "pyromancie", known: ["pyromancie"] }).outOfDomain, false, "déjà connue");
+  const second = powerLearning({ ...base, discipline: "telepathie", known: ["pyromancie"] });
+  assert.equal(second.outOfDomain, true, "2e discipline avec PSY 45 : exception d'histoire");
+  assert.equal(second.cost, 150);
+  // PSY 50 → 2 disciplines
+  assert.equal(powerLearning({ ...base, psy: 50, discipline: "telepathie", known: ["pyromancie"] }).outOfDomain, false);
+});
+
+test("40K — un PSY trop faible refuse le pouvoir (moins de 40 %)", () => {
+  const r = powerLearning({ psy: 25, difficulty: 0, isMinor: false, discipline: "generique", known: [], thresholds: BRIGANDYNE.psyDisciplineThresholds });
+  assert.deepEqual([r.ok, r.reason], [false, "psyTooLow"]);
+});
+
+test("40K Outils — Psyconduit : riche +5 %, relique +10 % (le meilleur possédé), base sans bonus", () => {
+  assert.equal(psyconduitBonus([{ name: "Psyconduit" }]), 0);
+  assert.equal(psyconduitBonus([{ name: "Psyconduit, riche" }]), 5);
+  assert.equal(psyconduitBonus([{ name: "Psyconduit, riche" }, { name: "Psyconduit, relique" }]), 10);
+  assert.equal(psyconduitBonus([{ name: "Épée" }]), 0);
+});
+
+test("p.211 — sacrifier des PV : +1 % par PV, jamais sous 1 PV", () => {
+  assert.deepEqual(pvSacrifice(5, 20), { pv: 5, bonus: 5 });     // exemple RAW : 5 PV → +5 %
+  assert.deepEqual(pvSacrifice(30, 12), { pv: 11, bonus: 11 });
+  assert.deepEqual(pvSacrifice(3, 1), { pv: 0, bonus: 0 });
+  assert.deepEqual(pvSacrifice(-4, 10), { pv: 0, bonus: 0 });
+});

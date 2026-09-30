@@ -6,7 +6,7 @@ Audit du système Foundry « Warhammer 40,000 : Brigandyne » face aux sources :
 - **Warhammer 40.000 : Brigandyne** (adaptation, `.docx`), **Armurerie xeno** et **Rencontres**
   (les trois `.docx` ont été ré-extraits : identiques aux sources déjà importées, aucune dérive).
 
-Chaque écart corrigé est verrouillé par un test ; la suite compte **261 tests** (`npm test`).
+Chaque écart corrigé est verrouillé par un test ; la suite compte **283 tests** (`npm test`).
 
 ## 1. Méthode et limites
 
@@ -50,6 +50,8 @@ Armurerie xeno · augmentations (prix, effets texte).
 | 13 | Dégâts pairs (feu, froid, électrique, psychique) et acides sans effet | p.135 | Statuts Enflammé/Ralenti/Sonné/Confus ; acide −1 armure |
 | 14 | Tactique **Viser** : malus fixe −10 | p.180 | −5/−10 selon l'armure, casque et bouclier −5 chacun (max −20) ; Sur la défensive +3 avec bouclier ; Attaques multiples |
 | 15 | Clé i18n `BRIG.Warn.noSf` absente ; libellés vides des grilles espèce/carrière | — | Ajoutés (nouveau test i18n) |
+| 16 | **Psyker : aucun pouvoir n'était attribué à la création ni appris ensuite** (l'assistant ne gérait que le PSY) ; aucune règle d'apprentissage | Magie p.216-218, 40K Psyker | Bouton *Apprendre un pouvoir* : *CNS* mineurs + *CNS* pouvoirs gratuits à la création, puis 50/100 PX (+50 hors domaine), ≥ 40 % de chances de lancer (PSY + difficulté), disciplines bornées par le PSY ; « Domaine Psychique (au choix) » = vraie spécialité de discipline |
+| 17 | Psyker : bonus de spécialité de discipline, Psyconduit, PV sacrifiés, Flux d'énergie, talents de Magie non appliqués | p.210-212, 40K Outils | +5 % (spécialité) et Psyconduit riche/relique ; sacrifice de PV (+1 %/PV) ; R+ Flux d'énergie ; Magie innée / sanglante / destructrice ; Vraie Foi et Résistance au Warp |
 
 ## 4. Armes à distance (40K) — comportement implémenté
 
@@ -80,7 +82,7 @@ etc.). Les corrections sont donc faites **dans `packs/_source`** (source de vér
 | Spécialités | Astrogation +20 ; Vraie Foi occulte +5 ; Fusil de précision et Artillerie martiaux +5 ; **Arme lourde** ajoutée ; caractéristique testée et effet pour les 21 spécialités 40K (un test de spécialité utilisait TEC pour tout) |
 | Bestiaire | L'**Horreur Rose** (COM 40, PV 13) manquait : l'entrée existante était en fait l'**Horreur Bleue** (erreur de copier-coller du document) |
 | Blessures graves | 8 entrées « Exemple » → **11 lignes RAW p.197** |
-| Équipement | **Nouveau compendium** (107 objets, 12 dossiers) : listes de prix, drogues avec leurs effets, améliorations d'armes/armures, services |
+| Équipement | **Nouveau compendium** (108 objets, 12 dossiers) : listes de prix, drogues avec leurs effets, améliorations d'armes/armures, services |
 
 ## 6. Interprétations à valider (la source est ambiguë)
 
@@ -100,6 +102,7 @@ Chaque point est un réglage isolé, facile à changer ; dites-moi si vous tranc
 ## 7. Non automatisé / hors périmètre (assumé)
 
 - **Grâces et Fardeaux** : le document renvoie au **Livre Second** (non fourni) ; le compendium *Mutations* contient des exemples non officiels.
+- Test d'apprentissage d'un pouvoir (CNS, durée en jours/semaines, p.217), talents de Magie « inverser les chiffres » (Magie contrôlée, Sort fétiche), Esprit gardien, Calme : à gérer à la main.
 - Rituels et actions longues, ivresse, maladies et poisons (tables), apprentissage/entraînement, familiers, Certamen.
 - Coup tordu (chifoumi), attaques d'opportunité, surnombre : décisions du MJ (Avantages saisis à la main).
 - Souffle (X) et Rayon (X) : les dégâts s'appliquent à **toutes les cibles ciblées** ; choisir les cibles reste au MJ.

@@ -63,6 +63,11 @@
         <i class="fa-solid fa-fire"></i> Surchauffe
       </button>
     {{/if}}
+    {{#if flux}}
+      <button type="button" class="card-button" data-action="fluxEnergy" data-tooltip="R+ : le pouvoir n'est pas décompté de votre limite journalière">
+        <i class="fa-solid fa-bolt"></i> Flux d'énergie
+      </button>
+    {{/if}}
     {{#if forceKind}}
       <button type="button" class="card-button" data-action="forceWarp" data-kind="{{forceKind}}" data-tooltip="Le pouvoir fonctionne quand même, au prix d'une complication (1×/jour)">
         <i class="fa-solid fa-hand-fist"></i> Forcer le Warp

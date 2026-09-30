@@ -190,9 +190,10 @@
       <span data-tooltip="Pouvoirs mineurs lancés aujourd'hui / limite (*PSY*). Réussite automatique. Au-delà : −2 PV par pouvoir">Mineurs : <strong>{{system.dailyUse.minors}}/{{system.psy.limits.minor}}</strong></span>
       <label class="faith-toggle" data-tooltip="Coché : peut canaliser la Vraie Foi (Vertu Généreux, Bienveillant, Valeureux, Chaste ou Loyal, ou Colérique +2)"><input type="checkbox" name="system.faith.devoted" {{#if system.faith.devoted}}checked{{/if}} /> Vraie Foi</label>
       <span data-tooltip="Actes de Foi aujourd'hui / limite (*VOL*/2). Au-delà : −20 %">Actes : <strong>{{system.dailyUse.faith}}/{{system.faith.actsPerDay}}</strong></span>
+      <span data-tooltip="Disciplines spécialisées connues / maximum selon le PSY (les pouvoirs Génériques sont toujours connus)">Disciplines : <strong>{{system.psy.disciplines.known.length}}/{{system.psy.disciplines.max}}</strong></span>
     </div>
     <div class="items-section">
-      <div class="section-head"><h3><i class="fa-solid fa-brain"></i> Pouvoirs psychiques</h3><button type="button" data-action="itemCreate" data-type="psychicPower"><i class="fa-solid fa-plus"></i></button></div>
+      <div class="section-head"><h3><i class="fa-solid fa-brain"></i> Pouvoirs psychiques</h3><span><button type="button" data-action="learnPower" data-tooltip="Apprendre un pouvoir : *CNS* mineurs + *CNS* pouvoirs gratuits à la création, puis 50 PX (mineur) ou 100 PX ; il faut au moins 40 % de chances de le lancer. MJ : Maj+clic = gratuit"><i class="fa-solid fa-graduation-cap"></i></button><button type="button" data-action="itemCreate" data-type="psychicPower"><i class="fa-solid fa-plus"></i></button></span></div>
       <ol class="items-list">
         {{#each items.psychicPower as |i|}}<li class="item" data-item-id="{{i.id}}"><span class="item-name" data-action="rollItem" data-tooltip="{{descTip i.system.effect i.system.description}}">{{i.name}}</span><span class="item-detail">{{localize (concat "BRIG.Discipline." i.system.discipline)}}</span><span class="item-detail">{{signed i.system.difficulty}}</span><span class="item-controls"><a data-action="rollItem"><i class="fa-solid fa-dice-d10"></i></a><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></span></li>{{/each}}
       </ol>

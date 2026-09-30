@@ -197,6 +197,10 @@ Le **Psychisme (PSY)** remplace la magie. Trois types de manifestations :
 - **Pouvoirs** : un **test de PSY** (modifié par la difficulté du pouvoir — ou par le **MODO** de la cible si la Résistance est plus difficile).
 - (Rituels : action longue.)
 
+**Créer un Psyker** : PSY commence à 0 — prélève des points vers le PSY à la création (max 10 par compétence, COM compte double). Tu disposes ensuite de `*CNS*` pouvoirs mineurs **et** `*CNS*` pouvoirs **gratuits** (onglet *Pouvoirs*, bouton diplôme). Il faut au moins **40 %** de chances de lancer un pouvoir (PSY + sa difficulté) ; les mineurs sont libres. Plus tard : **50 PX** (mineur) ou **100 PX**, +50 PX hors de tes disciplines. Ta carrière te donne une **spécialité de discipline** (+5 % à ses pouvoirs) ; un **Psyconduit** riche (+5 %) ou relique (+10 %) aide tous tes tests de PSY.
+
+**Augmenter ses chances** : dépenser 2 SF (+1 Avantage), ou **sacrifier des PV** : +1 % par PV perdu (le double avec *Magie sanglante*), jamais sous 1 PV. Sur une réussite majeure ou critique, l'effet **Flux d'énergie** (quand le pouvoir le propose) ne compte pas dans ta limite du jour.
+
 **Limite** : `*PSY*` pouvoirs **et** `*PSY*` pouvoirs mineurs par jour (deux compteurs). Au-delà, tu puises dans ta **Vitalité** : −4 PV par pouvoir, −2 par pouvoir mineur (que le pouvoir réussisse ou non). Tu connais **1 à 5 disciplines** selon ton PSY (Biomancie, Divination, Pyromancie, Télékinésie, Télépathie + Générique).
 
 **Quand ça tourne mal** :
